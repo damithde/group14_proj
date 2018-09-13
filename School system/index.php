@@ -31,6 +31,31 @@
                             <div class="inner">
                                 <h3>44</h3>
                                 <p>User Registrations</p>
+
+                            </div>
+                            <div class="icon">
+                                <i class="ion ion-person-add"></i>
+                            </div>
+                            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                        </div>
+
+                        <div class="small-box bg-yellow">
+                            <div class="inner">
+                                <h3>44</h3>
+                                <p>User Registrations</p>
+
+                            </div>
+                            <div class="icon">
+                                <i class="ion ion-person-add"></i>
+                            </div>
+                            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                        </div>
+
+                        <div class="small-box bg-yellow">
+                            <div class="inner">
+                                <h3>44</h3>
+                                <p>User Registrations</p>
+
                             </div>
                             <div class="icon">
                                 <i class="ion ion-person-add"></i>
@@ -45,16 +70,10 @@
                 <!-- Calendar -->
                 <div class="small-box bg-aqua">
                     <div class="inner">
-                        <h3>Calendar</h3>
-                        <p>d
-                            d
-                            d
-                            d</p>
+
+                        <?php include_once('calendar.php'); ?>
                     </div>
-                    <div class="icon">
-                        <i class="ion ion-bag"></i>
-                    </div>
-                    <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+
                 </div>
 
                 <!--                        Notification Panel-->
@@ -73,42 +92,42 @@
                                     <img src="http://placehold.it/50x50/d2d6de/ffffff" alt="Product Image"/>
                                 </div>
                                 <div class="product-info">
-                                    <a href="javascript::;" class="product-title">Samsung TV <span class="label label-warning pull-right">$1800</span></a>
+                                    <a href="javascript::;" class="product-title">Sport day <span class="label label-warning pull-right">Sport club</span></a>
                                     <span class="product-description">
-                          Samsung 32" 1080p 60Hz LED Smart HDTV.
+                          Sport event.
                         </span>
                                 </div>
                             </li><!-- /.item -->
                             <li class="item">
                                 <div class="product-img">
-                                    <img src="dist/img/default-50x50.gif" alt="Product Image"/>
+                                    <img src="http://placehold.it/50x50/d2d6de/ffffff" alt="Product Image"/>
                                 </div>
                                 <div class="product-info">
-                                    <a href="javascript::;" class="product-title">Bicycle <span class="label label-info pull-right">$700</span></a>
+                                    <a href="javascript::;" class="product-title">Sport day <span class="label label-warning pull-right">Sport club</span></a>
                                     <span class="product-description">
-                          26" Mongoose Dolomite Men's 7-speed, Navy Blue.
+                          Sport event.
                         </span>
                                 </div>
                             </li><!-- /.item -->
                             <li class="item">
                                 <div class="product-img">
-                                    <img src="dist/img/default-50x50.gif" alt="Product Image"/>
+                                    <img src="http://placehold.it/50x50/d2d6de/ffffff" alt="Product Image"/>
                                 </div>
                                 <div class="product-info">
-                                    <a href="javascript::;" class="product-title">Xbox One <span class="label label-danger pull-right">$350</span></a>
+                                    <a href="javascript::;" class="product-title">Sport day <span class="label label-warning pull-right">Sport club</span></a>
                                     <span class="product-description">
-                          Xbox One Console Bundle with Halo Master Chief Collection.
+                          Sport event.
                         </span>
                                 </div>
                             </li><!-- /.item -->
                             <li class="item">
                                 <div class="product-img">
-                                    <img src="dist/img/default-50x50.gif" alt="Product Image"/>
+                                    <img src="http://placehold.it/50x50/d2d6de/ffffff" alt="Product Image"/>
                                 </div>
                                 <div class="product-info">
-                                    <a href="javascript::;" class="product-title">PlayStation 4 <span class="label label-success pull-right">$399</span></a>
+                                    <a href="javascript::;" class="product-title">Sport day <span class="label label-warning pull-right">Sport club</span></a>
                                     <span class="product-description">
-                          PlayStation 4 500GB Console (PS4)
+                          Sport event.
                         </span>
                                 </div>
                             </li><!-- /.item -->

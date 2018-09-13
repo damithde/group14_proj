@@ -25,9 +25,15 @@
         <!-- sidebar menu: : style can be found in sidebar.less -->
         <ul class="sidebar-menu">
             <li class="header">MAIN NAVIGATION</li>
-            <li><a  href="index.php"><i class="fa fa-dashboard"></i> <span>Dashboard</span> <i class="fa fa-angle-left pull-right"></i></a></li>
-            <li><a href="pages/forms/student.php"><i class="fa fa-circle-o"></i>Student</a></li>
-            <li><a href="pages/forms/teacher.php"><i class="fa fa-circle-o"></i>Teacher</a></li>
+            <li><a  href="index.php"><i class="fa fa-home"></i> <span>Home</span> </a></li>
+            <li><a href="pages/forms/student.php"><i class="fa fa-users"></i>Student</a></li>
+            <li><a href="pages/forms/teacher.php"><i class="fa fa-users"></i>Teacher</a></li>
+            <li>
+                <a href="pages/calendar.html">
+                    <i class="fa fa-calendar"></i> <span>Calendar</span>
+<!--                    <small class="label pull-right bg-red">3</small>-->
+                </a>
+            </li>
             <li class="treeview">
                 <a href="#">
                     <i class="fa fa-files-o"></i>
