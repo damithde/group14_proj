@@ -9,61 +9,82 @@
     <section class="content-header">
         <div class="row">
             <div class="col-md-9">
-                <div class="row">
+                <div class="box box-primary">
+                    <div class="box-header with-border">
+                        <div class="row">
                     <div class="col-md-4">
                         <!--                        event-->
-                        <div class="small-box bg-green">
+                        <div class="small-box bg-aqua">
                             <div class="inner">
-                                <h3> Events <sup style="font-size: 100px"></sup></h3>
-                                <p>Bounce Rate</p>
+                                <h1> No of Students <sup style="font-size: 80px"></sup></h1>
+                                <p><h3>1345</h3></p>
                             </div>
-                            <div class="icon">
-                                <i class="ion ion-stats-bars"></i>
-                            </div>
-                            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
                         </div>
                     </div>
                     <div class="col-md-4">
-
+                        <div class="small-box bg-blue">
+                            <div class="inner">
+                                <h1> No of Teachers <sup style="font-size: 80px"></sup></h1>
+                                <p><h3>134</h3></p>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="small-box bg-yellow">
+                        <div class="small-box bg-light-blue">
                             <div class="inner">
-                                <h3>44</h3>
-                                <p>User Registrations</p>
-
+                                <h1> No of Teachers <sup style="font-size: 80px"></sup></h1>
+                                <p><h3>134</h3></p>
                             </div>
-                            <div class="icon">
-                                <i class="ion ion-person-add"></i>
-                            </div>
-                            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
-                        </div>
-
-                        <div class="small-box bg-yellow">
-                            <div class="inner">
-                                <h3>44</h3>
-                                <p>User Registrations</p>
-
-                            </div>
-                            <div class="icon">
-                                <i class="ion ion-person-add"></i>
-                            </div>
-                            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
-                        </div>
-
-                        <div class="small-box bg-yellow">
-                            <div class="inner">
-                                <h3>44</h3>
-                                <p>User Registrations</p>
-
-                            </div>
-                            <div class="icon">
-                                <i class="ion ion-person-add"></i>
-                            </div>
-                            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
                         </div>
                     </div>
                 </div>
+                    </div>
+                </div>
+
+                <div class="box box-primary">
+                    <div class="box-header with-border">
+                        <a class="btn btn-app">
+                            <span class="badge bg-purple"></span>
+                            <i class="fa fa-users"></i>Students
+                        </a>
+
+                        <a class="btn btn-app">
+                            <span class="badge bg-purple"></span>
+                            <i class="fa fa-users"></i>Teachers
+                        </a>
+
+                        <a class="btn btn-app">
+                            <i class="fa fa-edit"></i> Edit
+                        </a>
+
+                        <a class="btn btn-app">
+                            <i class="fa fa-repeat"></i> Repeat
+                        </a>
+
+                        <a class="btn btn-app">
+                            <i class="fa fa-save"></i> Save
+                        </a>
+
+                        <a class="btn btn-app">
+                            <span class="badge bg-yellow">3</span>
+                            <i class="fa fa-bullhorn"></i> Notifications
+                        </a>
+
+                        <a class="btn btn-app">
+                            <span class="badge bg-teal">67</span>
+                            <i class="fa fa-inbox"></i> Orders
+                        </a>
+
+                        <a class="btn btn-app">
+                            <span class="badge bg-aqua">12</span>
+                            <i class="fa fa-envelope"></i> Inbox
+                        </a>
+
+
+                    </div>
+                </div>
+
+
 
             </div>
             <div class="col-md-3">

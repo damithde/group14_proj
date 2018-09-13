@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08bfacf1-91f5-4fab-8498-8c51a7b6f37e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/School system/calendar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/School system/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/School system/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/School system/sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/School system/sidebar.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,10 +46,10 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="15" />
+          <entry key="css" value="17" />
           <entry key="html" value="29" />
           <entry key="js" value="4" />
-          <entry key="less" value="6" />
+          <entry key="less" value="8" />
           <entry key="map" value="1" />
           <entry key="php" value="39" />
           <entry key="rnc" value="1" />
@@ -60,10 +57,10 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="15" />
+          <entry key="CSS" value="17" />
           <entry key="HTML" value="29" />
           <entry key="JavaScript" value="4" />
-          <entry key="Less" value="6" />
+          <entry key="Less" value="8" />
           <entry key="PHP" value="39" />
           <entry key="RNG Compact" value="1" />
           <entry key="SourceMap" value="1" />
@@ -74,7 +71,7 @@
           <entry key="css" value="86" />
           <entry key="html" value="197" />
           <entry key="less" value="27" />
-          <entry key="php" value="2196" />
+          <entry key="php" value="2367" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -82,27 +79,69 @@
           <entry key="CSS" value="86" />
           <entry key="HTML" value="197" />
           <entry key="Less" value="27" />
-          <entry key="PHP" value="2196" />
+          <entry key="PHP" value="2367" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/School system/pages/forms/student.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="568">
+            <state relative-caret-position="1071">
               <caret line="63" column="30" lean-forward="true" selection-start-line="63" selection-start-column="30" selection-end-line="63" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/School system/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-17">
-              <caret line="2" column="23" lean-forward="true" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+            <state relative-caret-position="112">
+              <caret line="46" column="58" selection-start-line="46" selection-start-column="58" selection-end-line="46" selection-end-column="58" />
+              <folding>
+                <element signature="n#div#0;n#div#0;n#div#0;n#section#0;n#section#0;n#div#0;n#body#0;n#!!top" />
+                <element signature="n#style#0;n#sup#0;n#h3#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#section#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#sup#0;n#h1#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#0;n#section#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#sup#0;n#h1#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#section#0;n#section#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/School system/build/less/miscellaneous.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="310">
+              <caret line="91" column="1" selection-start-line="91" selection-start-column="1" selection-end-line="91" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/School system/dist/css/AdminLTE.min.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="65133" selection-start-line="6" selection-start-column="65133" selection-end-line="6" selection-end-column="65133" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/School system/build/less/small-box.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/School system/dist/css/AdminLTE.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="1894" column="1" selection-start-line="1894" selection-start-column="1" selection-end-line="1894" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -135,56 +174,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/School system/old_index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1530">
-              <caret line="499" column="20" selection-start-line="490" selection-start-column="14" selection-end-line="499" selection-end-column="20" />
-              <folding>
-                <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#aside#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#0;n#div#2;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#2;n#section#1;n#div#1;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#2;n#section#1;n#div#1;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/School system/head.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="35" column="7" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/School system/script.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="39" column="62" selection-start-line="39" selection-start-column="62" selection-end-line="39" selection-end-column="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/School system/pages/forms/advanced.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="464" column="12" selection-start-line="464" selection-start-column="12" selection-end-line="464" selection-end-column="12" />
-              <folding>
-                <element signature="n#head#0;n#html#0;n#!!top" />
-                <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#aside#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#1;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#script#13;n#body#0;n#html#0;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/School system/pages/forms/general.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="224">
@@ -202,7 +191,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>quick-actions_homepage</find>
       <find>quick-actions</find>
       <find>box</find>
       <find>icon-dashboard</find>
@@ -232,6 +220,7 @@
       <find>Calendar</find>
       <find>cale</find>
       <find>School Notifications</find>
+      <find>Eve</find>
     </findStrings>
     <replaceStrings>
       <replace>Admin</replace>
@@ -276,8 +265,8 @@
         <option value="$PROJECT_DIR$/School system/script.php" />
         <option value="$PROJECT_DIR$/School system/head.php" />
         <option value="$PROJECT_DIR$/School system/calendar.php" />
-        <option value="$PROJECT_DIR$/School system/index.php" />
         <option value="$PROJECT_DIR$/School system/sidebar.php" />
+        <option value="$PROJECT_DIR$/School system/index.php" />
       </list>
     </option>
   </component>
@@ -412,12 +401,12 @@
       <workItem from="1536681236908" duration="26000" />
       <workItem from="1536681264892" duration="2211000" />
       <workItem from="1536720591356" duration="31564000" />
-      <workItem from="1536806498870" duration="4636000" />
+      <workItem from="1536806498870" duration="7254000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69525000" />
+    <option name="totallyTimeSpent" value="72143000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -472,19 +461,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/School system/build/less/header.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3213" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/School system/build/less/right_sidebar.less" />
-    <entry file="file://$PROJECT_DIR$/School system/dist/js/pages/dashboard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="50" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/School system/dist/js/pages/dashboard2.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-357" />
@@ -555,13 +531,6 @@
     <entry file="file://$PROJECT_DIR$/HTML/old_index.html" />
     <entry file="file://$PROJECT_DIR$/HTML/css/boostrap-responsiveGrop14.css" />
     <entry file="file://$PROJECT_DIR$/HTML/sidebar.php" />
-    <entry file="file://$PROJECT_DIR$/School system/dist/css/AdminLTE.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="72657" lean-forward="true" selection-start-line="6" selection-start-column="72657" selection-end-line="6" selection-end-column="72657" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HTML/css/matrix-login.css" />
     <entry file="file://$PROJECT_DIR$/HTML/css/bootstrap-responsive.min.css" />
     <entry file="file://$PROJECT_DIR$/HTML/head.php" />
@@ -737,17 +706,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/School system/index.php">
+    <entry file="file://$PROJECT_DIR$/School system/pages/forms/student.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
-          <caret line="2" column="23" lean-forward="true" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+        <state relative-caret-position="1071">
+          <caret line="63" column="30" lean-forward="true" selection-start-line="63" selection-start-column="30" selection-end-line="63" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/School system/pages/forms/student.php">
+    <entry file="file://$PROJECT_DIR$/School system/build/less/small-box.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="568">
-          <caret line="63" column="30" lean-forward="true" selection-start-line="63" selection-start-column="30" selection-end-line="63" selection-end-column="30" />
+        <state relative-caret-position="204">
+          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School system/dist/css/AdminLTE.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="65133" selection-start-line="6" selection-start-column="65133" selection-end-line="6" selection-end-column="65133" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School system/build/less/miscellaneous.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="91" column="1" selection-start-line="91" selection-start-column="1" selection-end-line="91" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School system/dist/css/AdminLTE.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="1894" column="1" selection-start-line="1894" selection-start-column="1" selection-end-line="1894" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School system/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="46" column="58" selection-start-line="46" selection-start-column="58" selection-end-line="46" selection-end-column="58" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#0;n#section#0;n#section#0;n#div#0;n#body#0;n#!!top" />
+            <element signature="n#style#0;n#sup#0;n#h3#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#section#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#sup#0;n#h1#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#0;n#section#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#sup#0;n#h1#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#section#0;n#section#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
