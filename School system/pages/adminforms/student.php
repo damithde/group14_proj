@@ -17,11 +17,11 @@
                                     <div class="box-body">
                                         <div class="form-group">
                                             <label for="exampleInputEmail1">Student Name:</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Name">
+                                            <input type="email" class="form-control" id="studentNameTxt" placeholder="Enter Name">
                                         </div>
                                         <div class="form-group">
                                             <label for="exampleInputEmail1">Admission No:</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Admission No">
+                                            <input type="email" class="form-control" id="addmissionNoTxt" placeholder="Enter Admission No">
                                         </div>
                                         <div class="form-group">
                                             <label>Birth Day:</label>
@@ -34,7 +34,7 @@
                                         </div>
                                         <div class="form-group">
                                             <label for="exampleInputEmail1">Address:</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Address">
+                                            <textarea class="form-control" id="addressTxt" rows="3" placeholder="Enter Address"></textarea>
                                         </div>
                                         <div class="form-group">
                                             <label>Phone No:</label>
@@ -47,7 +47,7 @@
                                         </div>
                                         <div class="form-group">
                                             <label for="exampleInputEmail1">Email:</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Email">
+                                            <input type="email" class="form-control" id="emailTxt" placeholder="Enter Email">
                                         </div>
                                         <div class="form-group">
                                             <label for="exampleInputFile">File input</label>
@@ -78,11 +78,11 @@
                                     <div class="box-body">
                                         <div class="form-group">
                                             <label for="exampleInputEmail1">Mother's Name:</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Name">
+                                            <input type="email" class="form-control" id="motherNameTxt" placeholder="Enter Name">
                                         </div>
                                         <div class="form-group">
-                                            <label for="exampleInputEmail1">Employee:</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Admission No">
+                                            <label for="exampleInputEmail1">Occupation:</label>
+                                            <input type="email" class="form-control" id="motherOcupationTxt" placeholder="Enter Occupation">
                                         </div>
                                         <div class="form-group">
                                             <label>Phone No:</label>
@@ -95,17 +95,19 @@
                                         </div>
                                         <div class="form-group">
                                             <label for="exampleInputEmail1">Address:</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Address">
+                                            <textarea class="form-control" id="motherAddressTxt" rows="3" placeholder="Enter Address"></textarea>
                                         </div>
-                                        <div><h4>Father's Details</h4></div>
 
+                                        <div class="box-header">
+                                            <h3 class="box-title">Father's Details</h3>
+                                        </div><!-- /.box-header -->
                                         <div class="form-group">
                                             <label for="exampleInputEmail1">Father's Name:</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Name">
+                                            <input type="email" class="form-control" id="fatherNameTxt" placeholder="Enter Name">
                                         </div>
                                         <div class="form-group">
-                                            <label for="exampleInputEmail1">Employee:</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Admission No">
+                                            <label for="exampleInputEmail1">Occupation:</label>
+                                            <input type="email" class="form-control" id="fatherOccupationTxt" placeholder="Enter Occupation">
                                         </div>
                                         <div class="form-group">
                                             <label>Phone No:</label>
@@ -118,7 +120,7 @@
                                         </div>
                                         <div class="form-group">
                                             <label for="exampleInputEmail1">Address:</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Address">
+                                            <textarea class="form-control" id="fatherAddressTxt" rows="3" placeholder="Enter Address"></textarea>
                                         </div>
                                     </div><!-- /.box-body -->
 

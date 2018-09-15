@@ -2,13 +2,15 @@
 <div class="wrapper">
 
     <header class="main-header">
-        <!-- Logo -->
-        <a href="index2.html" class="logo"><b>Admin</b>LTE</a>
+        <a href="../../index2.html" class="logo"><b>Student</b></a>
         <!-- Header Navbar: style can be found in header.less -->
         <nav class="navbar navbar-static-top" role="navigation">
             <!-- Sidebar toggle button-->
             <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
                 <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
             </a>
             <div class="navbar-custom-menu">
                 <ul class="nav navbar-nav">
@@ -26,7 +28,7 @@
                                     <li><!-- start message -->
                                         <a href="#">
                                             <div class="pull-left">
-                                                <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image"/>
+                                                <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image"/>
                                             </div>
                                             <h4>
                                                 Support Team
@@ -38,7 +40,7 @@
                                     <li>
                                         <a href="#">
                                             <div class="pull-left">
-                                                <img src="dist/img/user3-128x128.jpg" class="img-circle" alt="user image"/>
+                                                <img src="../../dist/img/user3-128x128.jpg" class="img-circle" alt="user image"/>
                                             </div>
                                             <h4>
                                                 AdminLTE Design Team
@@ -50,7 +52,7 @@
                                     <li>
                                         <a href="#">
                                             <div class="pull-left">
-                                                <img src="dist/img/user4-128x128.jpg" class="img-circle" alt="user image"/>
+                                                <img src="../../dist/img/user4-128x128.jpg" class="img-circle" alt="user image"/>
                                             </div>
                                             <h4>
                                                 Developers
@@ -62,7 +64,7 @@
                                     <li>
                                         <a href="#">
                                             <div class="pull-left">
-                                                <img src="dist/img/user3-128x128.jpg" class="img-circle" alt="user image"/>
+                                                <img src="../../dist/img/user3-128x128.jpg" class="img-circle" alt="user image"/>
                                             </div>
                                             <h4>
                                                 Sales Department
@@ -74,7 +76,7 @@
                                     <li>
                                         <a href="#">
                                             <div class="pull-left">
-                                                <img src="dist/img/user4-128x128.jpg" class="img-circle" alt="user image"/>
+                                                <img src="../../dist/img/user4-128x128.jpg" class="img-circle" alt="user image"/>
                                             </div>
                                             <h4>
                                                 Reviewers
@@ -203,13 +205,13 @@
                     <!-- User Account: style can be found in dropdown.less -->
                     <li class="dropdown user user-menu">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image"/>
+                            <img src="../../dist/img/user2-160x160.jpg" class="user-image" alt="User Image"/>
                             <span class="hidden-xs">Admin</span>
                         </a>
                         <ul class="dropdown-menu">
                             <!-- User image -->
                             <li class="user-header">
-                                <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
+                                <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
                                 <p>
                                     Alexander Pierce - Web Developer
                                     <small>Member since Nov. 2012</small>
