@@ -2,7 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08bfacf1-91f5-4fab-8498-8c51a7b6f37e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/School system/createAnnouncement.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/School system/dailyAttendanceGraph.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/School system/notificationPanel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/School system/pages/forms/calendar.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/School system/pages/forms/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/School system/calendar.php" beforeDir="false" afterPath="$PROJECT_DIR$/School system/calendar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/School system/head.php" beforeDir="false" afterPath="$PROJECT_DIR$/School system/head.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/School system/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/School system/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/School system/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/School system/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/School system/pages/forms/head.php" beforeDir="false" afterPath="$PROJECT_DIR$/School system/pages/forms/head.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/School system/pages/forms/sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/School system/pages/forms/sidebar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/School system/sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/School system/sidebar.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,30 +50,31 @@
           <entry key="project.open.time.44" value="1" />
           <entry key="project.open.time.46" value="1" />
           <entry key="project.open.time.49" value="1" />
+          <entry key="project.open.time.54" value="1" />
           <entry key="project.open.time.65" value="1" />
           <entry key="project.open.time.69" value="1" />
           <entry key="project.open.time.94" value="1" />
-          <entry key="project.opened" value="10" />
+          <entry key="project.opened" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="17" />
-          <entry key="html" value="29" />
+          <entry key="html" value="31" />
           <entry key="js" value="4" />
           <entry key="less" value="8" />
           <entry key="map" value="1" />
-          <entry key="php" value="39" />
+          <entry key="php" value="52" />
           <entry key="rnc" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="17" />
-          <entry key="HTML" value="29" />
+          <entry key="HTML" value="31" />
           <entry key="JavaScript" value="4" />
           <entry key="Less" value="8" />
-          <entry key="PHP" value="39" />
+          <entry key="PHP" value="52" />
           <entry key="RNG Compact" value="1" />
           <entry key="SourceMap" value="1" />
         </counts>
@@ -71,7 +84,7 @@
           <entry key="css" value="86" />
           <entry key="html" value="197" />
           <entry key="less" value="27" />
-          <entry key="php" value="2367" />
+          <entry key="php" value="2881" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -79,7 +92,7 @@
           <entry key="CSS" value="86" />
           <entry key="HTML" value="197" />
           <entry key="Less" value="27" />
-          <entry key="PHP" value="2367" />
+          <entry key="PHP" value="2881" />
         </counts>
       </usages-collector>
     </session>
@@ -89,59 +102,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/School system/pages/forms/student.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1071">
-              <caret line="63" column="30" lean-forward="true" selection-start-line="63" selection-start-column="30" selection-end-line="63" selection-end-column="30" />
+            <state>
+              <caret selection-end-line="2" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/School system/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="46" column="58" selection-start-line="46" selection-start-column="58" selection-end-line="46" selection-end-column="58" />
-              <folding>
-                <element signature="n#div#0;n#div#0;n#div#0;n#section#0;n#section#0;n#div#0;n#body#0;n#!!top" />
-                <element signature="n#style#0;n#sup#0;n#h3#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#section#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#sup#0;n#h1#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#0;n#section#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#sup#0;n#h1#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#section#0;n#section#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="323">
+              <caret line="21" column="38" lean-forward="true" selection-start-line="16" selection-start-column="32" selection-end-line="21" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/School system/build/less/miscellaneous.less">
+        <entry file="file://$PROJECT_DIR$/School system/pages/forms/teacher.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="91" column="1" selection-start-line="91" selection-start-column="1" selection-end-line="91" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/School system/dist/css/AdminLTE.min.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="65133" selection-start-line="6" selection-start-column="65133" selection-end-line="6" selection-end-column="65133" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/School system/build/less/small-box.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/School system/dist/css/AdminLTE.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="1894" column="1" selection-start-line="1894" selection-start-column="1" selection-end-line="1894" selection-end-column="1" />
+            <state>
+              <caret selection-end-line="2" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -149,40 +129,72 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/School system/sidebar.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="36" column="33" lean-forward="true" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
+            <state relative-caret-position="204">
+              <caret line="12" column="18" lean-forward="true" selection-end-line="45" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/common.rnc">
+        <entry file="file://$PROJECT_DIR$/School system/pages/forms/sidebar.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="127" column="18" selection-start-line="127" selection-start-column="18" selection-end-line="127" selection-end-column="18" />
+            <state>
+              <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/School system/calendar.php">
+        <entry file="file://$PROJECT_DIR$/School system/pages/calendar.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
+            <state relative-caret-position="192">
+              <caret line="275" column="5" selection-end-line="703" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/School system/pages/forms/general.html">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/School system/pages/forms/calendar.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="474" column="26" lean-forward="true" selection-start-line="470" selection-start-column="20" selection-end-line="474" selection-end-column="26" />
+            <state relative-caret-position="396">
+              <caret line="32" column="18" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
               <folding>
-                <element signature="n#head#0;n#html#0;n#!!top" />
-                <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#aside#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#td#6;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#2;n#div#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#2;n#div#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#td#3;n#tr#1;n#tbody#0;n#table#0;n#div#1;n#div#2;n#div#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#3;n#div#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#3;n#div#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#4;n#div#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#td#5;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#4;n#div#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#5;n#div#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/School system/pages/forms/footer.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/School system/pages/forms/script.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="500">
+              <caret line="83" column="9" selection-start-line="83" selection-start-column="9" selection-end-line="83" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/School system/pages/forms/head.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="13" column="119" selection-start-line="13" selection-start-column="119" selection-end-line="13" selection-end-column="119" />
             </state>
           </provider>
         </entry>
@@ -191,17 +203,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>quick-actions</find>
-      <find>box</find>
-      <find>icon-dashboard</find>
-      <find>bg-green-gradient</find>
-      <find>span2</find>
-      <find>Box</find>
-      <find>js</find>
-      <find>Different Height</find>
-      <find>Charts</find>
-      <find>Stu</find>
-      <find>&lt;header class=&quot;main-header&quot;&gt;</find>
       <find>&lt;head&gt;</find>
       <find>Date masks:</find>
       <find>US phone mask:</find>
@@ -218,9 +219,20 @@
       <find>Alex</find>
       <find>Recently Added Products</find>
       <find>Calendar</find>
-      <find>cale</find>
       <find>School Notifications</find>
       <find>Eve</find>
+      <find>cale</find>
+      <find>&lt;div class=&quot;datepicker datepicker-inline&quot;&gt;&lt;div class=&quot;datepicker-days&quot; style=&quot;display: block;&quot;&gt;&lt;table class=&quot;table table-condensed&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th class=&quot;prev&quot; style=&quot;visibility: visible;&quot;&gt;«&lt;/th&gt;&lt;th colspan=&quot;5&quot; class=&quot;datepicker-switch&quot;&gt;September 2018&lt;/th&gt;&lt;th class=&quot;next&quot; style=&quot;visibility: visible;&quot;&gt;»&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th class=&quot;dow&quot;&gt;Su&lt;/th&gt;&lt;th class=&quot;dow&quot;&gt;Mo&lt;/th&gt;&lt;th class=&quot;dow&quot;&gt;Tu&lt;/th&gt;&lt;th class=&quot;dow&quot;&gt;We&lt;/th&gt;&lt;th class=&quot;dow&quot;&gt;Th&lt;/th&gt;&lt;th class=&quot;dow&quot;&gt;Fr&lt;/th&gt;&lt;th class=&quot;dow&quot;&gt;Sa&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;old day&quot;&gt;26&lt;/td&gt;&lt;td class=&quot;old day&quot;&gt;27&lt;/td&gt;&lt;td class=&quot;old day&quot;&gt;28&lt;/td&gt;&lt;td class=&quot;old day&quot;&gt;29&lt;/td&gt;&lt;td class=&quot;old day&quot;&gt;30&lt;/td&gt;&lt;td class=&quot;old day&quot;&gt;31&lt;/td&gt;&lt;td class=&quot;day&quot;&gt;1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;day&quot;&gt;2&lt;/td&gt;&lt;td class=&quot;day&quot;&gt;3&lt;/td&gt;&lt;td class=&quot;day&quot;&gt;4&lt;/td&gt;&lt;td class=&quot;day&quot;&gt;5&lt;/td&gt;&lt;td class=&quot;day&quot;&gt;6&lt;/td&gt;&lt;td class=&quot;day&quot;&gt;7&lt;/td&gt;&lt;td class=&quot;day&quot;&gt;8&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;day&quot;&gt;9&lt;/td&gt;&lt;td class=&quot;day&quot;&gt;10&lt;/td&gt;&lt;td class=&quot;day&quot;&gt;11&lt;/td&gt;&lt;td class=&quot;day&quot;&gt;12&lt;/td&gt;&lt;td class=&quot;day&quot;&gt;13&lt;/td&gt;&lt;td class=&quot;day&quot;&gt;14&lt;/td&gt;&lt;td class=&quot;day&quot;&gt;15&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;day&quot;&gt;16&lt;/td&gt;&lt;td class=&quot;day&quot;&gt;17&lt;/td&gt;&lt;td class=&quot;day&quot;&gt;18&lt;/td&gt;&lt;td class=&quot;day&quot;&gt;19&lt;/td&gt;&lt;td class=&quot;day&quot;&gt;20&lt;/td&gt;&lt;td class=&quot;day&quot;&gt;21&lt;/td&gt;&lt;td class=&quot;day&quot;&gt;22&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;day&quot;&gt;23&lt;/td&gt;&lt;td class=&quot;day&quot;&gt;24&lt;/td&gt;&lt;td class=&quot;day&quot;&gt;25&lt;/td&gt;&lt;td class=&quot;day&quot;&gt;26&lt;/td&gt;&lt;td class=&quot;day&quot;&gt;27&lt;/td&gt;&lt;td class=&quot;day&quot;&gt;28&lt;/td&gt;&lt;td class=&quot;day&quot;&gt;29&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;day&quot;&gt;30&lt;/td&gt;&lt;td class=&quot;new day&quot;&gt;1&lt;/td&gt;&lt;td class=&quot;new day&quot;&gt;2&lt;/td&gt;&lt;td class=&quot;new day&quot;&gt;3&lt;/td&gt;&lt;td class=&quot;new day&quot;&gt;4&lt;/td&gt;&lt;td class=&quot;new day&quot;&gt;5&lt;/td&gt;&lt;td class=&quot;new day&quot;&gt;6&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;tfoot&gt;&lt;tr&gt;&lt;th colspan=&quot;7&quot; class=&quot;today&quot; style=&quot;display: none;&quot;&gt;Today&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th colspan=&quot;7&quot; class=&quot;clear&quot; style=&quot;display: none;&quot;&gt;Clear&lt;/th&gt;&lt;/tr&gt;&lt;/tfoot&gt;&lt;/table&gt;&lt;/div&gt;&lt;div class=&quot;datepicker-months&quot; style=&quot;display: none;&quot;&gt;&lt;table class=&quot;table table-condensed&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th class=&quot;prev&quot; style=&quot;visibility: visible;&quot;&gt;«&lt;/th&gt;&lt;th colspan=&quot;5&quot; class=&quot;datepicker-switch&quot;&gt;2018&lt;/th&gt;&lt;th class=&quot;next&quot; style=&quot;visibility: visible;&quot;&gt;»&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td colspan=&quot;7&quot;&gt;&lt;span class=&quot;month&quot;&gt;Jan&lt;/span&gt;&lt;span class=&quot;month&quot;&gt;Feb&lt;/span&gt;&lt;span class=&quot;month&quot;&gt;Mar&lt;/span&gt;&lt;span class=&quot;month&quot;&gt;Apr&lt;/span&gt;&lt;span class=&quot;month&quot;&gt;May&lt;/span&gt;&lt;span class=&quot;month&quot;&gt;Jun&lt;/span&gt;&lt;span class=&quot;month&quot;&gt;Jul&lt;/span&gt;&lt;span class=&quot;month&quot;&gt;Aug&lt;/span&gt;&lt;span class=&quot;month&quot;&gt;Sep&lt;/span&gt;&lt;span class=&quot;month&quot;&gt;Oct&lt;/span&gt;&lt;span class=&quot;month&quot;&gt;Nov&lt;/span&gt;&lt;span class=&quot;month&quot;&gt;Dec&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;tfoot&gt;&lt;tr&gt;&lt;th colspan=&quot;7&quot; class=&quot;today&quot; style=&quot;display: none;&quot;&gt;Today&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th colspan=&quot;7&quot; class=&quot;clear&quot; style=&quot;display: none;&quot;&gt;Clear&lt;/th&gt;&lt;/tr&gt;&lt;/tfoot&gt;&lt;/table&gt;&lt;/div&gt;&lt;div class=&quot;datepicker-years&quot; style=&quot;display: none;&quot;&gt;&lt;table class=&quot;table table-condensed&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th class=&quot;prev&quot; style=&quot;visibility: visible;&quot;&gt;«&lt;/th&gt;&lt;th colspan=&quot;5&quot; class=&quot;datepicker-switch&quot;&gt;2010-2019&lt;/th&gt;&lt;th class=&quot;next&quot; style=&quot;visibility: visible;&quot;&gt;»&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td colspan=&quot;7&quot;&gt;&lt;span class=&quot;year old&quot;&gt;2009&lt;/span&gt;&lt;span class=&quot;year&quot;&gt;2010&lt;/span&gt;&lt;span class=&quot;year&quot;&gt;2011&lt;/span&gt;&lt;span class=&quot;year&quot;&gt;2012&lt;/span&gt;&lt;span class=&quot;year&quot;&gt;2013&lt;/span&gt;&lt;span class=&quot;year&quot;&gt;2014&lt;/span&gt;&lt;span class=&quot;year&quot;&gt;2015&lt;/span&gt;&lt;span class=&quot;year&quot;&gt;2016&lt;/span&gt;&lt;span class=&quot;year&quot;&gt;2017&lt;/span&gt;&lt;span class=&quot;year&quot;&gt;2018&lt;/span&gt;&lt;span class=&quot;year&quot;&gt;2019&lt;/span&gt;&lt;span class=&quot;year new&quot;&gt;2020&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;tfoot&gt;&lt;tr&gt;&lt;th colspan=&quot;7&quot; class=&quot;today&quot; style=&quot;display: none;&quot;&gt;Today&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th colspan=&quot;7&quot; class=&quot;clear&quot; style=&quot;display: none;&quot;&gt;Clear&lt;/th&gt;&lt;/tr&gt;&lt;/tfoot&gt;&lt;/table&gt;&lt;/div&gt;&lt;/div&gt;</find>
+      <find>calendar</find>
+      <find>calen</find>
+      <find>school</find>
+      <find>textAre</find>
+      <find>quic</find>
+      <find>noti</find>
+      <find>sear</find>
+      <find>&lt;meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'&gt;</find>
+      <find>&lt;link href=&quot;../../../plugins/fullcalendar/fullcalendar.print.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; media='print' /&gt;</find>
+      <find>content-w</find>
     </findStrings>
     <replaceStrings>
       <replace>Admin</replace>
@@ -254,19 +266,24 @@
         <option value="$PROJECT_DIR$/HTML/css/matrix-style.css" />
         <option value="$PROJECT_DIR$/HTML/forms/student.php" />
         <option value="$PROJECT_DIR$/School system/pages/forms/general.html" />
-        <option value="$PROJECT_DIR$/School system/pages/forms/head.php" />
         <option value="$PROJECT_DIR$/School system/pages/forms/script.php" />
         <option value="$PROJECT_DIR$/School system/pages/forms/teacher.php" />
-        <option value="$PROJECT_DIR$/School system/pages/forms/sidebar.php" />
-        <option value="$PROJECT_DIR$/School system/header.php" />
         <option value="$PROJECT_DIR$/School system/old_index.html" />
         <option value="$PROJECT_DIR$/School system/pages/forms/header.php" />
         <option value="$PROJECT_DIR$/School system/pages/forms/student.php" />
         <option value="$PROJECT_DIR$/School system/script.php" />
-        <option value="$PROJECT_DIR$/School system/head.php" />
         <option value="$PROJECT_DIR$/School system/calendar.php" />
-        <option value="$PROJECT_DIR$/School system/sidebar.php" />
+        <option value="$PROJECT_DIR$/School system/dailyAttendanceGraph.php" />
+        <option value="$PROJECT_DIR$/School system/createAnnouncement.php" />
+        <option value="$PROJECT_DIR$/School system/plugins/notificationPanel.php" />
+        <option value="$PROJECT_DIR$/School system/notificationPanel.php" />
         <option value="$PROJECT_DIR$/School system/index.php" />
+        <option value="$PROJECT_DIR$/School system/sidebar.php" />
+        <option value="$PROJECT_DIR$/School system/head.php" />
+        <option value="$PROJECT_DIR$/School system/header.php" />
+        <option value="$PROJECT_DIR$/School system/pages/forms/sidebar.php" />
+        <option value="$PROJECT_DIR$/School system/pages/forms/head.php" />
+        <option value="$PROJECT_DIR$/School system/pages/forms/calendar.php" />
       </list>
     </option>
   </component>
@@ -293,7 +310,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -323,6 +339,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -330,9 +347,12 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp1\htdocs\group14_proj\School system" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp1\htdocs\group14_proj\School system\pages\forms" />
+      <recent name="C:\xampp1\htdocs\group14_proj\School system" />
       <recent name="C:\xampp1\htdocs\group14_proj\School system\build\less" />
     </key>
   </component>
@@ -401,18 +421,19 @@
       <workItem from="1536681236908" duration="26000" />
       <workItem from="1536681264892" duration="2211000" />
       <workItem from="1536720591356" duration="31564000" />
-      <workItem from="1536806498870" duration="7254000" />
+      <workItem from="1536806498870" duration="10935000" />
+      <workItem from="1536946089902" duration="9792000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72143000" />
+    <option name="totallyTimeSpent" value="85616000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2193646" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22239032" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -461,24 +482,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/School system/dist/js/pages/dashboard2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-357" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/School system/dist/js/app.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/School system/dist/js/demo.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/School system/pages/UI/sliders.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4648">
-          <caret line="304" selection-start-line="304" selection-end-line="304" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/School system/plugins/dashboard.php" />
     <entry file="file://$PROJECT_DIR$/School system/first.php" />
     <entry file="file://$PROJECT_DIR$/School system/footer.php">
@@ -525,8 +528,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HTML/calendar.html" />
     <entry file="file://$PROJECT_DIR$/School system/bootstrap/css/bootstrap.css.map">
-      <provider selected="true" editor-type-id="text-editor" />
       <provider editor-type-id="sourcemapFileViewerProvider" />
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/HTML/old_index.html" />
     <entry file="file://$PROJECT_DIR$/HTML/css/boostrap-responsiveGrop14.css" />
@@ -538,51 +541,6 @@
     <entry file="file://$PROJECT_DIR$/HTML/index.php" />
     <entry file="file://$PROJECT_DIR$/HTML/css/matrix-style.css" />
     <entry file="file://$PROJECT_DIR$/HTML/forms/student.php" />
-    <entry file="file://$PROJECT_DIR$/School system/pages/calendar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="275" column="5" selection-start-line="275" selection-start-column="5" selection-end-line="435" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/School system/pages/forms/head.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="33" column="7" lean-forward="true" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/School system/pages/forms/script.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="83" column="9" selection-start-line="83" selection-start-column="9" selection-end-line="83" selection-end-column="9" />
-          <folding>
-            <element signature="n#script#13;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/School system/pages/forms/teacher.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="20" column="63" selection-start-line="20" selection-start-column="63" selection-end-line="20" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/School system/pages/forms/sidebar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/School system/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="206" column="57" selection-start-line="206" selection-start-column="57" selection-end-line="206" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/School system/pages/forms/header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="139">
@@ -594,9 +552,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17629">
           <caret line="1037" column="14" selection-start-line="1037" selection-start-column="14" selection-end-line="1096" selection-end-column="34" />
-          <folding>
-            <element signature="n#div#0;n#div#1;n#div#4;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -621,27 +576,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/School system/old_index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1530">
-          <caret line="499" column="20" selection-start-line="490" selection-start-column="14" selection-end-line="499" selection-end-column="20" />
-          <folding>
-            <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#aside#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#2;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#2;n#section#1;n#div#1;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#2;n#section#1;n#div#1;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/School system/head.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="7" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/School system/script.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="663">
@@ -653,13 +587,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="464" column="12" selection-start-line="464" selection-start-column="12" selection-end-line="464" selection-end-column="12" />
-          <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" />
-            <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#aside#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#script#13;n#body#0;n#html#0;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -667,56 +594,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
           <caret line="474" column="26" lean-forward="true" selection-start-line="470" selection-start-column="20" selection-end-line="474" selection-end-column="26" />
-          <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" />
-            <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#aside#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/School system/calendar.php">
+    <entry file="file://$PROJECT_DIR$/School system/calendar.css" />
+    <entry file="file://$PROJECT_DIR$/School system/build/less/miscellaneous.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/School system/calendar.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/School system/calendar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/common.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="127" column="18" selection-start-line="127" selection-start-column="18" selection-end-line="127" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/School system/sidebar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="36" column="33" lean-forward="true" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/School system/pages/forms/student.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1071">
-          <caret line="63" column="30" lean-forward="true" selection-start-line="63" selection-start-column="30" selection-end-line="63" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/School system/build/less/small-box.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+        <state relative-caret-position="1547">
+          <caret line="91" column="1" selection-start-line="91" selection-start-column="1" selection-end-line="91" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -727,29 +612,213 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/School system/build/less/miscellaneous.less">
+    <entry file="file://$PROJECT_DIR$/School system/build/less/small-box.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="91" column="1" selection-start-line="91" selection-start-column="1" selection-end-line="91" selection-end-column="14" />
+        <state relative-caret-position="204">
+          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/School system/dist/css/AdminLTE.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
+        <state relative-caret-position="32198">
           <caret line="1894" column="1" selection-start-line="1894" selection-start-column="1" selection-end-line="1894" selection-end-column="1" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/School system/old_index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6851">
+          <caret line="812" column="27" selection-start-line="812" selection-start-column="19" selection-end-line="812" selection-end-column="27" />
+          <folding>
+            <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#aside#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#2;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#2;n#section#1;n#div#1;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/common.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2159">
+          <caret line="127" column="18" selection-start-line="127" selection-start-column="18" selection-end-line="127" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School system/calendar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="33" selection-start-column="33" selection-end-column="33" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School system/dailyAttendanceGraph.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="6" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#svg#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#desc#0;n#svg#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#defs#0;n#svg#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#text#0;n#svg#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tspan#0;n#text#0;n#svg#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#path#0;n#svg#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#text#1;n#svg#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tspan#0;n#text#1;n#svg#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#path#1;n#svg#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#text#2;n#svg#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tspan#0;n#text#2;n#svg#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#path#2;n#svg#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#text#3;n#svg#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tspan#0;n#text#3;n#svg#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#path#3;n#svg#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#text#4;n#svg#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tspan#0;n#text#4;n#svg#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#path#4;n#svg#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#text#5;n#svg#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tspan#0;n#text#5;n#svg#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#text#6;n#svg#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tspan#0;n#text#6;n#svg#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#path#5;n#svg#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#circle#0;n#svg#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#circle#1;n#svg#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#circle#2;n#svg#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#circle#3;n#svg#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#circle#4;n#svg#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#circle#5;n#svg#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#circle#6;n#svg#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#circle#7;n#svg#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#circle#8;n#svg#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#circle#9;n#svg#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School system/createAnnouncement.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="42" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#textarea#0;n#div#2;n#form#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#iframe#0;n#div#2;n#form#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School system/notificationPanel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="40" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School system/head.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School system/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="55" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School system/sidebar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="18" lean-forward="true" selection-end-line="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School system/pages/forms/teacher.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="2" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School system/pages/forms/sidebar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School system/pages/calendar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="275" column="5" selection-end-line="703" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School system/pages/forms/student.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="2" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School system/pages/forms/head.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="13" column="119" selection-start-line="13" selection-start-column="119" selection-end-line="13" selection-end-column="119" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School system/pages/forms/script.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="83" column="9" selection-start-line="83" selection-start-column="9" selection-end-line="83" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School system/pages/forms/footer.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/School system/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="46" column="58" selection-start-line="46" selection-start-column="58" selection-end-line="46" selection-end-column="58" />
+        <state relative-caret-position="323">
+          <caret line="21" column="38" lean-forward="true" selection-start-line="16" selection-start-column="32" selection-end-line="21" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School system/pages/forms/calendar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="32" column="18" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
           <folding>
-            <element signature="n#div#0;n#div#0;n#div#0;n#section#0;n#section#0;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#style#0;n#sup#0;n#h3#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#section#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#sup#0;n#h1#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#0;n#section#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#sup#0;n#h1#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#section#0;n#section#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#td#6;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#2;n#div#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#2;n#div#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#td#3;n#tr#1;n#tbody#0;n#table#0;n#div#1;n#div#2;n#div#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#3;n#div#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#4;n#div#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#td#5;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#4;n#div#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#5;n#div#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

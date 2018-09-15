@@ -1,71 +1,129 @@
-<?php
-//http://keithdevens.com/software/php_calendar
-$time = time();
-$today = date('j', $time);
-$days = array($today => array(null, null,'<div id="today">' . $today . '</div>'));
-$pn = array('&laquo;' => date('n', $time) - 1, '&raquo;' => date('n', $time) + 1);
-echo generate_calendar(date('Y', $time), date('n', $time), $days, 1, null, 0);
-
-// PHP Calendar (version 2 . 3), written by Keith Devens
-// http://keithdevens . com/software/php_calendar
-//  see example at http://keithdevens . com/weblog
-// License: http://keithdevens . com/software/license
-
-function generate_calendar($year, $month, $days = array(), $day_name_length = 3, $month_href = NULL, $first_day = 0, $pn = array())
-{
-    $first_of_month = gmmktime(0, 0, 0, $month, 1, $year);
-    // remember that mktime will automatically correct if invalid dates are entered
-    // for instance, mktime(0,0,0,12,32,1997) will be the date for Jan 1, 1998
-    // this provides a built in "rounding" feature to generate_calendar()
-
-    $day_names = array(); //generate all the day names according to the current locale
-    for ($n = 0, $t = (3 + $first_day) * 86400; $n < 7; $n++, $t+=86400) //January 4, 1970 was a Sunday
-        $day_names[$n] = ucfirst(gmstrftime('%A', $t)); //%A means full textual day name
-
-    list($month, $year, $month_name, $weekday) = explode(',', gmstrftime('%m, %Y, %B, %w', $first_of_month));
-    $weekday = ($weekday + 7 - $first_day) % 7; //adjust for $first_day
-    $title   = htmlentities(ucfirst($month_name)) . $year;  //note that some locales don't capitalize month and day names
-
-    //Begin calendar .  Uses a real <caption> .  See http://diveintomark . org/archives/2002/07/03
-    @list($p, $pl) = each($pn); @list($n, $nl) = each($pn); //previous and next links, if applicable
-    if($p) $p = '<span class="calendar-prev">' . ($pl ? '<a href="' . htmlspecialchars($pl) . '">' . $p . '</a>' : $p) . '</span>&nbsp;';
-    if($n) $n = '&nbsp;<span class="calendar-next">' . ($nl ? '<a href="' . htmlspecialchars($nl) . '">' . $n . '</a>' : $n) . '</span>';
-    $calendar = "<div class=\"mini_calendar\">\n<table>" . "\n" .
-        '<caption class="calendar-month">' . $p . ($month_href ? '<a href="' . htmlspecialchars($month_href) . '">' . $title . '</a>' : $title) . $n . "</caption>\n<tr>";
-
-    if($day_name_length)
-    {   //if the day names should be shown ($day_name_length > 0)
-        //if day_name_length is >3, the full name of the day will be printed
-        foreach($day_names as $d)
-            $calendar  .= '<th abbr="' . htmlentities($d) . '">' . htmlentities($day_name_length < 4 ? substr($d,0,$day_name_length) : $d) . '</th>';
-        $calendar  .= "</tr>\n<tr>";
-    }
-
-    if($weekday > 0)
-    {
-        for ($i = 0; $i < $weekday; $i++)
-        {
-            $calendar  .= '<td>&nbsp;</td>'; //initial 'empty' days
-        }
-    }
-    for($day = 1, $days_in_month = gmdate('t',$first_of_month); $day <= $days_in_month; $day++, $weekday++)
-    {
-        if($weekday == 7)
-        {
-            $weekday   = 0; //start a new week
-            $calendar  .= "</tr>\n<tr>";
-        }
-        if(isset($days[$day]) and is_array($days[$day]))
-        {
-            @list($link, $classes, $content) = $days[$day];
-            if(is_null($content))  $content  = $day;
-            $calendar  .= '<td' . ($classes ? ' class="' . htmlspecialchars($classes) . '">' : '>') .
-                ($link ? '<a href="' . htmlspecialchars($link) . '">' . $content . '</a>' : $content) . '</td>';
-        }
-        else $calendar  .= "<td>$day</td>";
-    }
-    if($weekday != 7) $calendar  .= '<td id="emptydays" colspan="' . (7-$weekday) . '">&nbsp;</td>'; //remaining "empty" days
-
-    return $calendar . "</tr>\n</table>\n</div>\n";
-}
-?>
+<div class="box box-solid bg-aqua">
+    <div class="box-header ui-sortable-handle" style="cursor: move;">
+        <i class="fa fa-calendar"></i>
+        <h3 class="box-title">Calendar</h3>
+        <!-- tools box -->
+        <div class="pull-right box-tools">
+            <!-- button with a dropdown -->
+            <div class="btn-group">
+                <button class="btn btn-success btn-sm dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bars"></i></button>
+                <ul class="dropdown-menu pull-right" role="menu">
+                    <li><a href="#">Add new event</a></li>
+                    <li><a href="#">Clear events</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">View calendar</a></li>
+                </ul>
+            </div>
+            <button class="btn btn-success btn-sm" data-widget="collapse"><i class="fa fa-minus"></i></button>
+            <button class="btn btn-success btn-sm" data-widget="remove"><i class="fa fa-times"></i></button>
+        </div><!-- /. tools -->
+    </div><!-- /.box-header -->
+    <div class="box-body no-padding" style="display: block;">
+        <!--The calendar -->
+        <div id="calendar" style="width: 100%">
+            <!--                                    <div class="datepicker datepicker-inline">-->
+            <!--                                        <div class="datepicker-days" style="display: block;">-->
+            <!--                                            <table class="table table-condensed">-->
+            <!--                                                <thead><tr><th class="prev" style="visibility: visible;">«</th>-->
+            <!--                                                    <th colspan="5" class="datepicker-switch">September 2018</th>-->
+            <!--                                                    <th class="next" style="visibility: visible;">»</th>-->
+            <!--                                                </tr><tr><th class="dow">Su</th><th class="dow">Mo</th>-->
+            <!--                                                    <th class="dow">Tu</th><th class="dow">We</th>-->
+            <!--                                                    <th class="dow">Th</th><th class="dow">Fr</th>-->
+            <!--                                                    <th class="dow">Sa</th></tr></thead>-->
+            <!--                                                <tbody><tr><td class="old day">26</td><td class="old day">27</td>-->
+            <!--                                                    <td class="old day">28</td><td class="old day">29</td>-->
+            <!--                                                    <td class="old day">30</td><td class="old day">31</td>-->
+            <!--                                                    <td class="day">1</td></tr><tr><td class="day">2</td>-->
+            <!--                                                    <td class="day">3</td><td class="day">4</td>-->
+            <!--                                                    <td class="day">5</td><td class="day">6</td>-->
+            <!--                                                    <td class="day">7</td><td class="day">8</td></tr>-->
+            <!--                                                <tr><td class="day">9</td><td class="day">10</td>-->
+            <!--                                                    <td class="day">11</td><td class="day">12</td>-->
+            <!--                                                    <td class="day">13</td><td class="day">14</td>-->
+            <!--                                                    <td class="day">15</td></tr><tr><td class="day">16</td>-->
+            <!--                                                    <td class="day">17</td><td class="day">18</td>-->
+            <!--                                                    <td class="day">19</td><td class="day">20</td>-->
+            <!--                                                    <td class="day">21</td><td class="day">22</td>-->
+            <!--                                                </tr><tr><td class="day">23</td><td class="day">24</td>-->
+            <!--                                                    <td class="day">25</td><td class="day">26</td>-->
+            <!--                                                    <td class="day">27</td><td class="day">28</td>-->
+            <!--                                                    <td class="day">29</td></tr><tr><td class="day">30</td>-->
+            <!--                                                    <td class="new day">1</td><td class="new day">2</td>-->
+            <!--                                                    <td class="new day">3</td><td class="new day">4</td>-->
+            <!--                                                    <td class="new day">5</td><td class="new day">6</td>-->
+            <!--                                                </tr></tbody><tfoot><tr>-->
+            <!--                                                    <th colspan="7" class="today" style="display: none;">Today</th></tr>-->
+            <!--                                                <tr><th colspan="7" class="clear" style="display: none;">Clear</th></tr>-->
+            <!--                                                </tfoot>-->
+            <!--                                            </table>-->
+            <!--                                        </div>-->
+            <!--                                        <div class="datepicker-months" style="display: none;">-->
+            <!--                                            <table class="table table-condensed"><thead>-->
+            <!--                                                <tr><th class="prev" style="visibility: visible;">«</th>-->
+            <!--                                                    <th colspan="5" class="datepicker-switch">2018</th>-->
+            <!--                                                    <th class="next" style="visibility: visible;">»</th>-->
+            <!--                                                </tr>-->
+            <!--                                                </thead>-->
+            <!--                                                <tbody><tr><td colspan="7"><span class="month">Jan</span><span class="month">Feb</span><span class="month">Mar</span><span class="month">Apr</span><span class="month">May</span><span class="month">Jun</span><span class="month">Jul</span><span class="month">Aug</span><span class="month">Sep</span><span class="month">Oct</span><span class="month">Nov</span><span class="month">Dec</span></td>-->
+            <!--                                                </tr>-->
+            <!--                                                </tbody>-->
+            <!--                                                <tfoot>-->
+            <!--                                                <tr><th colspan="7" class="today" style="display: none;">Today</th></tr><tr><th colspan="7" class="clear" style="display: none;">Clear</th></tr>-->
+            <!--                                                </tfoot>-->
+            <!--                                            </table>-->
+            <!--                                        </div>-->
+            <!--                                        <div class="datepicker-years" style="display: none;">-->
+            <!--                                            <table class="table table-condensed">-->
+            <!--                                                <thead><tr><th class="prev" style="visibility: visible;">«</th>-->
+            <!--                                                    <th colspan="5" class="datepicker-switch">2010-2019</th>-->
+            <!--                                                    <th class="next" style="visibility: visible;">»</th>-->
+            <!--                                                </tr></thead>-->
+            <!--                                                <tbody><tr><td colspan="7"><span class="year old">2009</span><span class="year">2010</span><span class="year">2011</span><span class="year">2012</span><span class="year">2013</span><span class="year">2014</span><span class="year">2015</span><span class="year">2016</span><span class="year">2017</span><span class="year">2018</span><span class="year">2019</span><span class="year new">2020</span></td></tr>-->
+            <!--                                                </tbody>-->
+            <!--                                                <tfoot><tr><th colspan="7" class="today" style="display: none;">Today</th></tr>-->
+            <!--                                                <tr><th colspan="7" class="clear" style="display: none;">Clear</th></tr></tfoot></table>-->
+            <!--                                        </div>-->
+            <!--                                    </div>-->
+        </div>
+    </div><!-- /.box-body -->
+    <!--                            <div class="box-footer text-black" style="display: block;">-->
+    <!--                                <div class="row">-->
+    <!--                                    <div class="col-sm-6">-->
+    <!--                                        <!-- Progress bars -->
+    <!--                                        <div class="clearfix">-->
+    <!--                                            <span class="pull-left">Task #1</span>-->
+    <!--                                            <small class="pull-right">90%</small>-->
+    <!--                                        </div>-->
+    <!--                                        <div class="progress xs">-->
+    <!--                                            <div class="progress-bar progress-bar-green" style="width: 90%;"></div>-->
+    <!--                                        </div>-->
+    <!---->
+    <!--                                        <div class="clearfix">-->
+    <!--                                            <span class="pull-left">Task #2</span>-->
+    <!--                                            <small class="pull-right">70%</small>-->
+    <!--                                        </div>-->
+    <!--                                        <div class="progress xs">-->
+    <!--                                            <div class="progress-bar progress-bar-green" style="width: 70%;"></div>-->
+    <!--                                        </div>-->
+    <!--                                    </div><!-- /.col -->
+    <!--                                    <div class="col-sm-6">-->
+    <!--                                        <div class="clearfix">-->
+    <!--                                            <span class="pull-left">Task #3</span>-->
+    <!--                                            <small class="pull-right">60%</small>-->
+    <!--                                        </div>-->
+    <!--                                        <div class="progress xs">-->
+    <!--                                            <div class="progress-bar progress-bar-green" style="width: 60%;"></div>-->
+    <!--                                        </div>-->
+    <!---->
+    <!--                                        <div class="clearfix">-->
+    <!--                                            <span class="pull-left">Task #4</span>-->
+    <!--                                            <small class="pull-right">40%</small>-->
+    <!--                                        </div>-->
+    <!--                                        <div class="progress xs">-->
+    <!--                                            <div class="progress-bar progress-bar-green" style="width: 40%;"></div>-->
+    <!--                                        </div>-->
+    <!--                                    </div><!-- /.col -->
+    <!--                                </div><!-- /.row -->
+    <!--                            </div>-->
+</div>
