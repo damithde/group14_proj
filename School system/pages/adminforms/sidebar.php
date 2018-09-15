@@ -25,15 +25,15 @@
         <!-- sidebar menu: : style can be found in sidebar.less -->
         <ul class="sidebar-menu">
             <li class="header">MAIN NAVIGATION</li>
-            <li><a  href="../../index.php"><i class="fa fa-home"></i> <span>Home</span> </a></li>
+            <li><a  href="admindashboard.php"><i class="fa fa-home"></i> <span>Home</span> </a></li>
             <li><a href="student.php"><i class="fa fa-users"></i>Student</a></li>
             <li><a href="teacher.php"><i class="fa fa-users"></i>Teacher</a></li>
-            <li><a href="calendar.php"><i class="fa fa-calendar"></i> <span>Calendar</span></a></li>
-            <li><a href="calendar.php"><i class="fa fa-puzzle-piece"></i> <span>Exams</span></a></li>
-            <li><a href="calendar.php"><i class="fa fa-clock-o"></i> <span>Time Table</span></a></li>
-            <li><a href="calendar.php"><i class="fa fa-certificate"></i> <span>Certificates</span></a></li>
-            <li><a href="calendar.php"><i class="fa fa-envelope-o"></i> <span></span>Messege</span></a></li>
-            <li><a href="calendar.php"><i class="fa fa-edit"></i> <span>Attendance</span></a></li>
+            <li><a href="eventcalendar.php"><i class="fa fa-calendar"></i> <span>Calendar</span></a></li>
+            <li><a href="eventcalendar.php"><i class="fa fa-puzzle-piece"></i> <span>Exams</span></a></li>
+            <li><a href="eventcalendar.php"><i class="fa fa-clock-o"></i> <span>Time Table</span></a></li>
+            <li><a href="eventcalendar.php"><i class="fa fa-certificate"></i> <span>Certificates</span></a></li>
+            <li><a href="eventcalendar.php"><i class="fa fa-envelope-o"></i> <span></span>Messege</span></a></li>
+            <li><a href="eventcalendar.php"><i class="fa fa-edit"></i> <span>Attendance</span></a></li>
         </ul>
     </section>
     <!-- /.sidebar -->

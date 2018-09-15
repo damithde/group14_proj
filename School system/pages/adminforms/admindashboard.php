@@ -1,5 +1,5 @@
 <?php include_once('head.php'); ?>
-<?php include_once('header.php'); ?>
+<?php include_once('header2.php'); ?>
 <?php include_once('sidebar.php'); ?>
 <?php //include_once('right_panel.php'); ?>
 
@@ -43,12 +43,12 @@
 
                 <div class="box box-primary">
                     <div class="box-header with-border">
-                        <a href="pages/forms/student.php" class="btn btn-app">
+                        <a href="pages/adminforms/student.php" class="btn btn-app">
                             <span class="badge bg-purple"></span>
                             <i class="fa fa-users"></i>Students
                         </a>
 
-                        <a href="pages/forms/teacher.php" class="btn btn-app">
+                        <a href="pages/adminforms/teacher.php" class="btn btn-app">
                             <span class="badge bg-purple"></span>
                             <i class="fa fa-user"></i>Teachers
                         </a>
@@ -61,7 +61,7 @@
                             <i class="fa fa-check-square-o"></i> Results
                         </a>
 
-                        <a href="pages/forms/calendar.php" class="btn btn-app">
+                        <a href="pages/adminforms/calendar.php" class="btn btn-app">
                             <i class="fa  fa-calendar"></i> Calendar
                         </a>
 
@@ -111,5 +111,5 @@
 
 
 <?php include_once('footer.php'); ?>
-<?php include_once('script.php'); ?>
+<?php include_once('script2.php'); ?>
 
