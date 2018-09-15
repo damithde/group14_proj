@@ -21,17 +21,17 @@
 <body class="login-page">
 <div class="login-box">
     <div class="login-logo">
-<!--        <a href="../../index2.html"><b>W</b>elcome</a>-->
+        <a href="../../index2.html"><b>W</b>elcome</a>
     </div><!-- /.login-logo -->
     <div class="login-box-body">
         <p class="login-box-msg">Sign in to start your session</p>
-<!--        <form action="../../index2.html" method="post">-->
+        <form action="login.php" method="post">
             <div class="form-group has-feedback">
-                <input type="text" class="form-control" id="emailTxt" placeholder="Email"/>
+                <input type="text" class="form-control" name="emailTxt" placeholder="Email"/>
                 <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
             </div>
             <div class="form-group has-feedback">
-                <input type="password" class="form-control" id="passwordTxt" placeholder="Password"/>
+                <input type="password" class="form-control" name="passwordTxt" placeholder="Password"/>
                 <span class="glyphicon glyphicon-lock form-control-feedback"></span>
             </div>
             <div class="row">
@@ -43,7 +43,7 @@
                     </div>
                 </div><!-- /.col -->
                 <div class="col-xs-4">
-                    <button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
+                    <button type="submit" name="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
                 </div><!-- /.col -->
             </div>
         </form>
@@ -53,20 +53,24 @@
 
 <!--        test action for demo version-->
         <?php
-            if ( isset( $_POST['submit'] ) ) {
+            if(isset($_POST['submit'])){
+                $username=$_POST['emailTxt'];
+                $passowrd=$_POST['passwordTxt'];
 
-                // retrieve the form data by using the element's name attributes value as key
+                if($username=="admin"){
+                    header("Location:pages/adminforms/admindashboard.php");
 
+                }else if($username=="teacher"){
+                    header("Location:pages/teacherforms/teacherdashboard.php");
 
-                echo '<form action="../../index2.html" method="post">';
-                $firstname = $_REQUEST['emailTxt'];
-                $lastname = $_REQUEST['passwordTxt'];
+                }else if($username=="student"){
+                    header("Location:pages/studentforms/studentdashboard.php");
 
-                if ($firstname == 'admin' ){
-                    echo '<a href="pages/adminforms/admindashboard.php"></a>';
+                }else{
+                    echo "<script type='text/javascript'>alert('Wrong Details!')</script>";
                 }
-            }
 
+            }
         ?>
 <!--        end test for demo-->
 
