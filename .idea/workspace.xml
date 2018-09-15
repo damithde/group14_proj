@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08bfacf1-91f5-4fab-8498-8c51a7b6f37e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/School system/db/connection.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/School system/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/School system/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/School system/pages/forms/student.php" beforeDir="false" afterPath="$PROJECT_DIR$/School system/pages/forms/student.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -74,7 +72,7 @@
           <entry key="css" value="86" />
           <entry key="html" value="197" />
           <entry key="less" value="27" />
-          <entry key="php" value="2906" />
+          <entry key="php" value="3069" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -82,23 +80,23 @@
           <entry key="CSS" value="86" />
           <entry key="HTML" value="197" />
           <entry key="Less" value="27" />
-          <entry key="PHP" value="2906" />
+          <entry key="PHP" value="3069" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/School system/pages/forms/student.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="2" selection-end-column="37" />
+            <state relative-caret-position="500">
+              <caret line="101" column="47" selection-start-line="101" selection-start-column="47" selection-end-line="101" selection-end-column="47" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/School system/index.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
@@ -260,7 +258,6 @@
         <option value="$PROJECT_DIR$/School system/pages/forms/teacher.php" />
         <option value="$PROJECT_DIR$/School system/old_index.html" />
         <option value="$PROJECT_DIR$/School system/pages/forms/header.php" />
-        <option value="$PROJECT_DIR$/School system/pages/forms/student.php" />
         <option value="$PROJECT_DIR$/School system/script.php" />
         <option value="$PROJECT_DIR$/School system/calendar.php" />
         <option value="$PROJECT_DIR$/School system/dailyAttendanceGraph.php" />
@@ -275,6 +272,7 @@
         <option value="$PROJECT_DIR$/School system/pages/forms/calendar.php" />
         <option value="$PROJECT_DIR$/School system/db/connection.php" />
         <option value="$PROJECT_DIR$/School system/index.php" />
+        <option value="$PROJECT_DIR$/School system/pages/forms/student.php" />
       </list>
     </option>
   </component>
@@ -420,12 +418,12 @@
       <workItem from="1536681264892" duration="2211000" />
       <workItem from="1536720591356" duration="31564000" />
       <workItem from="1536806498870" duration="10935000" />
-      <workItem from="1536946089902" duration="11642000" />
+      <workItem from="1536946089902" duration="13931000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87466000" />
+    <option name="totallyTimeSpent" value="89755000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -754,13 +752,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/School system/pages/forms/student.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="2" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/School system/pages/forms/head.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -824,6 +815,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="63" column="57" selection-start-line="63" selection-start-column="57" selection-end-line="63" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School system/pages/forms/student.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="101" column="47" selection-start-line="101" selection-start-column="47" selection-end-line="101" selection-end-column="47" />
         </state>
       </provider>
     </entry>
