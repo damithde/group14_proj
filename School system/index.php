@@ -43,12 +43,12 @@
 
                 <div class="box box-primary">
                     <div class="box-header with-border">
-                        <a class="btn btn-app">
+                        <a href="pages/forms/student.php" class="btn btn-app">
                             <span class="badge bg-purple"></span>
                             <i class="fa fa-users"></i>Students
                         </a>
 
-                        <a class="btn btn-app">
+                        <a href="pages/forms/teacher.php" class="btn btn-app">
                             <span class="badge bg-purple"></span>
                             <i class="fa fa-user"></i>Teachers
                         </a>
@@ -61,7 +61,7 @@
                             <i class="fa fa-check-square-o"></i> Results
                         </a>
 
-                        <a class="btn btn-app">
+                        <a href="pages/forms/calendar.php" class="btn btn-app">
                             <i class="fa  fa-calendar"></i> Calendar
                         </a>
 

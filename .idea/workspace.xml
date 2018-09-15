@@ -2,19 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08bfacf1-91f5-4fab-8498-8c51a7b6f37e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/School system/createAnnouncement.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/School system/dailyAttendanceGraph.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/School system/notificationPanel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/School system/pages/forms/calendar.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/School system/pages/forms/footer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/School system/db/connection.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/School system/calendar.php" beforeDir="false" afterPath="$PROJECT_DIR$/School system/calendar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/School system/head.php" beforeDir="false" afterPath="$PROJECT_DIR$/School system/head.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/School system/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/School system/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/School system/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/School system/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/School system/pages/forms/head.php" beforeDir="false" afterPath="$PROJECT_DIR$/School system/pages/forms/head.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/School system/pages/forms/sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/School system/pages/forms/sidebar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/School system/sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/School system/sidebar.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,9 +52,9 @@
           <entry key="css" value="17" />
           <entry key="html" value="31" />
           <entry key="js" value="4" />
-          <entry key="less" value="8" />
+          <entry key="less" value="9" />
           <entry key="map" value="1" />
-          <entry key="php" value="52" />
+          <entry key="php" value="53" />
           <entry key="rnc" value="1" />
         </counts>
       </usages-collector>
@@ -73,8 +63,8 @@
           <entry key="CSS" value="17" />
           <entry key="HTML" value="31" />
           <entry key="JavaScript" value="4" />
-          <entry key="Less" value="8" />
-          <entry key="PHP" value="52" />
+          <entry key="Less" value="9" />
+          <entry key="PHP" value="53" />
           <entry key="RNG Compact" value="1" />
           <entry key="SourceMap" value="1" />
         </counts>
@@ -84,7 +74,7 @@
           <entry key="css" value="86" />
           <entry key="html" value="197" />
           <entry key="less" value="27" />
-          <entry key="php" value="2881" />
+          <entry key="php" value="2906" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -92,7 +82,7 @@
           <entry key="CSS" value="86" />
           <entry key="HTML" value="197" />
           <entry key="Less" value="27" />
-          <entry key="PHP" value="2881" />
+          <entry key="PHP" value="2906" />
         </counts>
       </usages-collector>
     </session>
@@ -108,29 +98,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/School system/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="21" column="38" lean-forward="true" selection-start-line="16" selection-start-column="32" selection-end-line="21" selection-end-column="38" />
+            <state relative-caret-position="119">
+              <caret line="63" column="57" selection-start-line="63" selection-start-column="57" selection-end-line="63" selection-end-column="57" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/School system/pages/forms/teacher.php">
+        <entry file="file://$PROJECT_DIR$/School system/build/less/miscellaneous.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="2" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/School system/sidebar.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="18" lean-forward="true" selection-end-line="45" />
+            <state relative-caret-position="285">
+              <caret line="85" column="1" selection-start-line="85" selection-start-column="1" selection-end-line="85" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -138,8 +119,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/School system/pages/forms/sidebar.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+            <state relative-caret-position="374">
+              <caret line="28" column="37" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -153,10 +134,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/School system/pages/forms/calendar.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
+            <state relative-caret-position="544">
               <caret line="32" column="18" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -172,6 +153,15 @@
                 <element signature="n#style#0;n#a#0;n#td#5;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#4;n#div#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#5;n#div#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/School system/db/connection.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -277,13 +267,14 @@
         <option value="$PROJECT_DIR$/School system/createAnnouncement.php" />
         <option value="$PROJECT_DIR$/School system/plugins/notificationPanel.php" />
         <option value="$PROJECT_DIR$/School system/notificationPanel.php" />
-        <option value="$PROJECT_DIR$/School system/index.php" />
         <option value="$PROJECT_DIR$/School system/sidebar.php" />
         <option value="$PROJECT_DIR$/School system/head.php" />
         <option value="$PROJECT_DIR$/School system/header.php" />
         <option value="$PROJECT_DIR$/School system/pages/forms/sidebar.php" />
         <option value="$PROJECT_DIR$/School system/pages/forms/head.php" />
         <option value="$PROJECT_DIR$/School system/pages/forms/calendar.php" />
+        <option value="$PROJECT_DIR$/School system/db/connection.php" />
+        <option value="$PROJECT_DIR$/School system/index.php" />
       </list>
     </option>
   </component>
@@ -326,6 +317,12 @@
               <item name="group14_proj" type="b2602c69:ProjectViewProjectNode" />
               <item name="group14_proj" type="462c0819:PsiDirectoryNode" />
               <item name="School system" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="group14_proj" type="b2602c69:ProjectViewProjectNode" />
+              <item name="group14_proj" type="462c0819:PsiDirectoryNode" />
+              <item name="School system" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -351,6 +348,7 @@
       <recent name="C:\xampp1\htdocs\group14_proj\School system" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp1\htdocs\group14_proj\School system\db" />
       <recent name="C:\xampp1\htdocs\group14_proj\School system\pages\forms" />
       <recent name="C:\xampp1\htdocs\group14_proj\School system" />
       <recent name="C:\xampp1\htdocs\group14_proj\School system\build\less" />
@@ -422,12 +420,12 @@
       <workItem from="1536681264892" duration="2211000" />
       <workItem from="1536720591356" duration="31564000" />
       <workItem from="1536806498870" duration="10935000" />
-      <workItem from="1536946089902" duration="9792000" />
+      <workItem from="1536946089902" duration="11642000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85616000" />
+    <option name="totallyTimeSpent" value="87466000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -482,7 +480,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/School system/plugins/dashboard.php" />
     <entry file="file://$PROJECT_DIR$/School system/first.php" />
     <entry file="file://$PROJECT_DIR$/School system/footer.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -598,13 +595,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/School system/calendar.css" />
-    <entry file="file://$PROJECT_DIR$/School system/build/less/miscellaneous.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1547">
-          <caret line="91" column="1" selection-start-line="91" selection-start-column="1" selection-end-line="91" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/School system/dist/css/AdminLTE.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -757,13 +747,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/School system/pages/forms/sidebar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/School system/pages/calendar.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
@@ -795,16 +778,9 @@
     <entry file="file://$PROJECT_DIR$/School system/pages/forms/footer.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/School system/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="21" column="38" lean-forward="true" selection-start-line="16" selection-start-column="32" selection-end-line="21" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/School system/pages/forms/calendar.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
+        <state relative-caret-position="544">
           <caret line="32" column="18" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -820,6 +796,34 @@
             <element signature="n#style#0;n#a#0;n#td#5;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#4;n#div#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#5;n#div#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School system/db/connection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School system/build/less/miscellaneous.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="85" column="1" selection-start-line="85" selection-start-column="1" selection-end-line="85" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School system/pages/forms/sidebar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="28" column="37" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School system/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="63" column="57" selection-start-line="63" selection-start-column="57" selection-end-line="63" selection-end-column="57" />
         </state>
       </provider>
     </entry>
