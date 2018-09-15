@@ -25,7 +25,7 @@
     </div><!-- /.login-logo -->
     <div class="login-box-body">
         <p class="login-box-msg">Sign in to start your session</p>
-        <form action="login.php" method="post">
+        <form action="index.php" method="post">
             <div class="form-group has-feedback">
                 <input type="text" class="form-control" name="emailTxt" placeholder="Email"/>
                 <span class="glyphicon glyphicon-envelope form-control-feedback"></span>

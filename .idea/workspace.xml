@@ -1,34 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="08bfacf1-91f5-4fab-8498-8c51a7b6f37e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/School system/pages/studentforms/calendar.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/School system/pages/studentforms/footer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/School system/pages/studentforms/head.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/School system/pages/studentforms/header.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/School system/pages/studentforms/header2.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/School system/pages/studentforms/notificationPanel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/School system/pages/studentforms/script.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/School system/pages/studentforms/script2.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/School system/pages/studentforms/sidebar.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/School system/pages/studentforms/student.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/School system/pages/studentforms/studentdashboard.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/School system/pages/studentforms/teacher.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/School system/pages/teacherforms/calendar.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/School system/pages/teacherforms/footer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/School system/pages/teacherforms/head.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/School system/pages/teacherforms/header.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/School system/pages/teacherforms/header2.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/School system/pages/teacherforms/notificationPanel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/School system/pages/teacherforms/script.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/School system/pages/teacherforms/script2.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/School system/pages/teacherforms/sidebar.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/School system/pages/teacherforms/student.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/School system/pages/teacherforms/teacher.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/School system/pages/teacherforms/teacherdashboard.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/School system/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/School system/login.php" afterDir="false" />
-    </list>
+    <list default="true" id="08bfacf1-91f5-4fab-8498-8c51a7b6f37e" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -442,12 +415,12 @@
       <workItem from="1536681264892" duration="2211000" />
       <workItem from="1536720591356" duration="31564000" />
       <workItem from="1536806498870" duration="10935000" />
-      <workItem from="1536946089902" duration="24541000" />
+      <workItem from="1536946089902" duration="24760000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100365000" />
+    <option name="totallyTimeSpent" value="100584000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
