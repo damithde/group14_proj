@@ -1,5 +1,5 @@
 <?php include_once('head.php'); ?>
-<?php include_once('header2.php'); ?>
+<?php include_once('header.php'); ?>
 <?php include_once('sidebar.php'); ?>
 <?php //include_once('right_panel.php'); ?>
 
@@ -9,38 +9,6 @@
     <section class="content-header">
         <div class="row">
             <div class="col-md-9">
-<!--                <div class="box box-primary">-->
-<!--                    <div class="box-header with-border">-->
-<!--                        <div class="row">-->
-<!--                            <div class="col-md-4">-->
-<!--                                <!--                        event-->
-<!--                                <div class="small-box bg-aqua">-->
-<!--                                    <div class="inner">-->
-<!--                                        <h1> No of Students <sup style="font-size: 80px"></sup></h1>-->
-<!--                                        <p><h3>1345</h3></p>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                            <div class="col-md-4">-->
-<!--                                <div class="small-box bg-blue">-->
-<!--                                    <div class="inner">-->
-<!--                                        <h1> No of Teachers <sup style="font-size: 80px"></sup></h1>-->
-<!--                                        <p><h3>134</h3></p>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                            <div class="col-md-4">-->
-<!--                                <div class="small-box bg-light-blue">-->
-<!--                                    <div class="inner">-->
-<!--                                        <h1> No of Teachers <sup style="font-size: 80px"></sup></h1>-->
-<!--                                        <p><h3>134</h3></p>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-
                 <div class="box box-primary">
                     <div class="box-header with-border">
 
