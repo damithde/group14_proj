@@ -16,7 +16,7 @@
                                 <!--                        event-->
                                 <div class="small-box bg-aqua">
                                     <div class="inner">
-                                        <h1> No of Students <sup style="font-size: 80px"></sup></h1>
+                                        <h1> Present Students <sup style="font-size: 80px"></sup></h1>
                                         <p><h3>1345</h3></p>
                                     </div>
                                 </div>
@@ -24,7 +24,7 @@
                             <div class="col-md-4">
                                 <div class="small-box bg-blue">
                                     <div class="inner">
-                                        <h1> No of Teachers <sup style="font-size: 80px"></sup></h1>
+                                        <h1> Present Teachers <sup style="font-size: 80px"></sup></h1>
                                         <p><h3>134</h3></p>
                                     </div>
                                 </div>
@@ -32,7 +32,7 @@
                             <div class="col-md-4">
                                 <div class="small-box bg-light-blue">
                                     <div class="inner">
-                                        <h1> No of Teachers <sup style="font-size: 80px"></sup></h1>
+                                        <h1> Total Number of Students <sup style="font-size: 80px"></sup></h1>
                                         <p><h3>134</h3></p>
                                     </div>
                                 </div>
