@@ -52,8 +52,8 @@
 
 <!--        test action for demo version-->
         <?php
-            //include 'db/Database.php';
-            //$db=Database();
+            include 'db/Database.php';
+            $db=Database::getInstance();
             if(isset($_POST['submit'])){
                 $username=$_POST['emailTxt'];
                 $passowrd=$_POST['passwordTxt'];
