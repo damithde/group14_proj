@@ -7,7 +7,7 @@
                 <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
             </div>
             <div class="pull-left info">
-                <p>Admin</p>
+                <p>Teacher</p>
 
                 <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
             </div>
@@ -29,11 +29,11 @@
             <li><a href="student.php"><i class="fa fa-users"></i>Student</a></li>
             <li><a href="teacher.php"><i class="fa fa-users"></i>Teacher</a></li>
             <li><a href="eventcalendar.php"><i class="fa fa-calendar"></i> <span>Calendar</span></a></li>
-            <li><a href="eventcalendar.php"><i class="fa fa-puzzle-piece"></i> <span>Exams</span></a></li>
-            <li><a href="eventcalendar.php"><i class="fa fa-clock-o"></i> <span>Time Table</span></a></li>
-            <li><a href="eventcalendar.php"><i class="fa fa-certificate"></i> <span>Certificates</span></a></li>
-            <li><a href="eventcalendar.php"><i class="fa fa-envelope-o"></i> <span></span>Messege</span></a></li>
-            <li><a href="eventcalendar.php"><i class="fa fa-edit"></i> <span>Attendance</span></a></li>
+            <li><a href=""><i class="fa fa-puzzle-piece"></i> <span>Exams</span></a></li>
+            <li><a href=""><i class="fa fa-clock-o"></i> <span>Time Table</span></a></li>
+
+            <li><a href=""><i class="fa fa-envelope-o"></i> <span></span>Messege</span></a></li>
+            <li><a href=""><i class="fa fa-edit"></i> <span>Attendance</span></a></li>
         </ul>
     </section>
     <!-- /.sidebar -->

@@ -127,7 +127,7 @@ function showSubject1($sid){
 }
 
 
-function create_subject($cshort,$cfull,$sub1,$sub2,$sub3){
+function create_teacher($fname,$lname,$contact,$address,$email){
 		
 				if($cshort==""){
 			 
@@ -165,7 +165,44 @@ function create_subject($cshort,$cfull,$sub1,$sub2,$sub3){
 		}				
 	}
 
-	
+    function create_student($cshort,$cfull,$sub1,$sub2,$sub3){
+
+        if($cshort==""){
+
+            echo "<script>alert('Select  Course Short Name')</script>";
+
+        }
+
+
+        else if($cfull==""){
+
+            echo "<script>alert('Select  Course Full Name')</script>";
+
+        }
+
+        else{
+
+
+            $db = Database::getInstance();
+            $mysqli = $db->getConnection();
+            $query = "insert into subject(cshort,cfull,sub1,sub2,sub3)values(?,?,?,?,?)";
+            $stmt= $mysqli->prepare($query);
+            if(false===$stmt){
+
+                trigger_error("Error in query: " . mysqli_connect_error(),E_USER_ERROR);
+            }
+
+            else{
+
+                $stmt->bind_param('sssss',$cshort,$cfull,$sub1,$sub2,$sub3);
+                $stmt->execute();
+                echo "<script>alert('Course Added Successfully')</script>";
+
+
+            }
+        }
+    }
+
 function showCountry(){
 	
 	$db = Database::getInstance();

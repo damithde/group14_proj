@@ -70,10 +70,6 @@
                             <i class="fa fa-clock-o"></i> Time Table
                         </a>
 
-                        <a class="btn btn-app">
-                            <span class="badge bg-teal"></span>
-                            <i class="fa fa-puzzle-piece"></i> Term Test
-                        </a>
 
                         <a class="btn btn-app">
                             <span class="badge bg-aqua"></span>

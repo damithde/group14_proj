@@ -2,7 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08bfacf1-91f5-4fab-8498-8c51a7b6f37e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/School system/db/DbFunction.php" beforeDir="false" afterPath="$PROJECT_DIR$/School system/db/DbFunction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/School system/db/connection.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/School system/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/School system/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/School system/pages/adminforms/admindashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/School system/pages/adminforms/admindashboard.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/School system/pages/adminforms/header2.php" beforeDir="false" afterPath="$PROJECT_DIR$/School system/pages/adminforms/header2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/School system/pages/adminforms/student.php" beforeDir="false" afterPath="$PROJECT_DIR$/School system/pages/adminforms/student.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/School system/pages/adminforms/teacher.php" beforeDir="false" afterPath="$PROJECT_DIR$/School system/pages/adminforms/teacher.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/School system/pages/studentforms/head.php" beforeDir="false" afterPath="$PROJECT_DIR$/School system/pages/studentforms/head.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/School system/pages/studentforms/header2.php" beforeDir="false" afterPath="$PROJECT_DIR$/School system/pages/studentforms/header2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/School system/pages/studentforms/sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/School system/pages/studentforms/sidebar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/School system/pages/teacherforms/head.php" beforeDir="false" afterPath="$PROJECT_DIR$/School system/pages/teacherforms/head.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/School system/pages/teacherforms/header2.php" beforeDir="false" afterPath="$PROJECT_DIR$/School system/pages/teacherforms/header2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/School system/pages/teacherforms/sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/School system/pages/teacherforms/sidebar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/School system/pages/teacherforms/student.php" beforeDir="false" afterPath="$PROJECT_DIR$/School system/pages/teacherforms/student.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/School system/pages/teacherforms/teacher.php" beforeDir="false" afterPath="$PROJECT_DIR$/School system/pages/teacherforms/teacher.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -83,50 +98,46 @@
     <session id="-1225648667">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.open.time.12" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.12" value="2" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="php" value="5" />
+          <entry key="php" value="24" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PHP" value="5" />
+          <entry key="PHP" value="24" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="php" value="152" />
+          <entry key="php" value="946" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PHP" value="152" />
+          <entry key="PHP" value="946" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/School system/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="38" column="30" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
+            <state relative-caret-position="32">
+              <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/School system/pages/adminforms/student.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-528">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/School system/pages/teacherforms/teacherdashboard.php">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -138,11 +149,61 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/School system/db/DbFunction.php">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/School system/pages/teacherforms/header2.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="59" column="165" selection-start-line="59" selection-start-column="165" selection-end-line="59" selection-end-column="165" />
+            <state relative-caret-position="1152">
+              <caret line="72" column="58" selection-start-line="72" selection-start-column="58" selection-end-line="72" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/School system/pages/teacherforms/head.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="48">
+              <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/School system/pages/studentforms/studentdashboard.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/School system/pages/studentforms/header2.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="79" column="43" selection-start-line="79" selection-start-column="43" selection-end-line="79" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/School system/pages/studentforms/sidebar.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/School system/pages/studentforms/head.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="48">
+              <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/School system/pages/teacherforms/sidebar.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="560">
+              <caret line="35" column="25" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -225,9 +286,21 @@
         <option value="$PROJECT_DIR$/School system/pages/forms/student.php" />
         <option value="$PROJECT_DIR$/School system/script.php" />
         <option value="$PROJECT_DIR$/School system/head.php" />
-        <option value="$PROJECT_DIR$/School system/index.php" />
         <option value="$PROJECT_DIR$/School system/db/Database.php" />
         <option value="$PROJECT_DIR$/School system/db/DbFunction.php" />
+        <option value="$PROJECT_DIR$/School system/pages/adminforms/admindashboard.php" />
+        <option value="$PROJECT_DIR$/School system/pages/adminforms/teacher.php" />
+        <option value="$PROJECT_DIR$/School system/pages/adminforms/student.php" />
+        <option value="$PROJECT_DIR$/School system/pages/adminforms/header2.php" />
+        <option value="$PROJECT_DIR$/School system/pages/teacherforms/teacher.php" />
+        <option value="$PROJECT_DIR$/School system/pages/teacherforms/student.php" />
+        <option value="$PROJECT_DIR$/School system/pages/teacherforms/header2.php" />
+        <option value="$PROJECT_DIR$/School system/pages/teacherforms/sidebar.php" />
+        <option value="$PROJECT_DIR$/School system/pages/teacherforms/head.php" />
+        <option value="$PROJECT_DIR$/School system/pages/studentforms/sidebar.php" />
+        <option value="$PROJECT_DIR$/School system/pages/studentforms/head.php" />
+        <option value="$PROJECT_DIR$/School system/pages/studentforms/header2.php" />
+        <option value="$PROJECT_DIR$/School system/index.php" />
       </list>
     </option>
   </component>
@@ -243,10 +316,10 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="9" />
-    <option name="y" value="18" />
-    <option name="width" value="1347" />
-    <option name="height" value="729" />
+    <option name="x" value="8" />
+    <option name="y" value="17" />
+    <option name="width" value="1348" />
+    <option name="height" value="730" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -254,6 +327,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -276,7 +350,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -355,18 +428,19 @@
       <workItem from="1536681236908" duration="26000" />
       <workItem from="1536681264892" duration="2211000" />
       <workItem from="1536720591356" duration="30964000" />
-      <workItem from="1537191332130" duration="4101000" />
+      <workItem from="1537191332130" duration="5305000" />
+      <workItem from="1537249788025" duration="4688000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68390000" />
+    <option name="totallyTimeSpent" value="74282000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1431" height="772" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21922797" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15294975" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -415,55 +489,10 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/School system/dist/js/pages/dashboard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="50" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/School system/dist/js/pages/dashboard2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-357" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/School system/dist/js/app.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/School system/dist/js/demo.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/School system/pages/UI/sliders.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4648">
-          <caret line="304" selection-start-line="304" selection-end-line="304" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/School system/plugins/dashboard.php" />
-    <entry file="file://$PROJECT_DIR$/School system/first.php" />
-    <entry file="file://$PROJECT_DIR$/School system/footer.php" />
-    <entry file="file://$PROJECT_DIR$/School system/build/less/sidebar.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="43" column="14" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/School system/add_class.php" />
-    <entry file="file://$PROJECT_DIR$/School system/build/less/dropdown.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/School system/dashboard.php" />
-    <entry file="file://$PROJECT_DIR$/School system/right_panel.php" />
     <entry file="file://$PROJECT_DIR$/HTML/calendar.html" />
     <entry file="file://$PROJECT_DIR$/School system/bootstrap/css/bootstrap.css.map">
-      <provider editor-type-id="sourcemapFileViewerProvider" />
       <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="sourcemapFileViewerProvider" />
     </entry>
     <entry file="file://$PROJECT_DIR$/HTML/old_index.html" />
     <entry file="file://$PROJECT_DIR$/HTML/css/boostrap-responsiveGrop14.css" />
@@ -501,20 +530,10 @@
     <entry file="file://$PROJECT_DIR$/School system/pages/forms/student.php" />
     <entry file="file://$PROJECT_DIR$/School system/script.php" />
     <entry file="file://$PROJECT_DIR$/School system/head.php" />
-    <entry file="file://$PROJECT_DIR$/School system/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="38" column="30" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/School system/index2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="16592">
           <caret line="1037" column="14" selection-start-line="1037" selection-start-column="14" selection-end-line="1096" selection-end-column="34" />
-          <folding>
-            <element signature="n#div#0;n#div#1;n#div#4;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -543,20 +562,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1440">
           <caret line="499" column="20" selection-start-line="490" selection-start-column="14" selection-end-line="499" selection-end-column="20" />
-          <folding>
-            <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#aside#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#2;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#2;n#section#1;n#div#1;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#2;n#section#1;n#div#1;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/School system/pages/adminforms/student.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-528">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
@@ -572,6 +577,103 @@
         <state relative-caret-position="-320" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/School system/db/DbFunction.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="129" column="62" selection-start-line="129" selection-start-column="62" selection-end-line="129" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School system/pages/adminforms/admindashboard.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="1" column="27" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School system/pages/adminforms/teacher.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="1" column="27" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School system/pages/adminforms/student.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-143">
+          <caret line="49" column="18" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School system/pages/adminforms/header2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="80" column="72" selection-start-line="80" selection-start-column="72" selection-end-line="80" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School system/pages/teacherforms/student.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="1" column="27" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School system/pages/teacherforms/teacher.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="1" column="27" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School system/pages/teacherforms/teacherdashboard.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School system/pages/teacherforms/sidebar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="35" column="25" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School system/pages/teacherforms/header2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1152">
+          <caret line="72" column="58" selection-start-line="72" selection-start-column="58" selection-end-line="72" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School system/pages/teacherforms/head.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School system/pages/studentforms/studentdashboard.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School system/pages/studentforms/sidebar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School system/pages/studentforms/head.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School system/pages/studentforms/header2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="79" column="43" selection-start-line="79" selection-start-column="43" selection-end-line="79" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/School system/db/connection.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -582,10 +684,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/School system/db/DbFunction.php">
+    <entry file="file://$PROJECT_DIR$/School system/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="59" column="165" selection-start-line="59" selection-start-column="165" selection-end-line="59" selection-end-column="165" />
+        <state relative-caret-position="32">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
         </state>
       </provider>
     </entry>

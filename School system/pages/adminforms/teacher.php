@@ -1,5 +1,5 @@
 <?php include_once('head.php'); ?>
-<?php include_once('header.php'); ?>
+<?php include_once('header2.php'); ?>
 <?php include_once('sidebar.php'); ?>
 <?php //include_once('right_panel.php'); ?>
 
@@ -66,6 +66,11 @@
         </div><!-- /.box -->
     </div>
 </div>
+        <div>
+            <div class="box-footer">
+                <button type="submit" class="btn btn-primary">View Teachers</button>
+            </div>
+        </div>
     </section>
 </div>
 

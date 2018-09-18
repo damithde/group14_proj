@@ -7,9 +7,9 @@
                 <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
             </div>
             <div class="pull-left info">
-                <p>Admin</p>
+                <p>Student name</p>
 <!--test comment-->
-                <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+                <a href="#"><i class="fa fa-circle text-success"></i> Present</a>
             </div>
         </div>
         <!-- search form -->

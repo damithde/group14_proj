@@ -1,6 +1,6 @@
 <head>
     <meta charset="UTF-8">
-    <title>Admin| Log in</title>
+    <title>Futura| Log in</title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
     <!-- Bootstrap 3.3.2 -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -48,11 +48,12 @@
             </div>
         </form>
 
-        <a href="#">I forgot my password</a><br>
-        <a href="register.html" class="text-center">Register a new membership</a>
+
 
 <!--        test action for demo version-->
         <?php
+            //include 'db/Database.php';
+            //$db=Database();
             if(isset($_POST['submit'])){
                 $username=$_POST['emailTxt'];
                 $passowrd=$_POST['passwordTxt'];
