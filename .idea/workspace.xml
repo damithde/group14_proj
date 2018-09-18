@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="08bfacf1-91f5-4fab-8498-8c51a7b6f37e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/School system/db/DbFunction.php" beforeDir="false" afterPath="$PROJECT_DIR$/School system/db/DbFunction.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/School system/db/connection.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/School system/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/School system/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/School system/pages/adminforms/admindashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/School system/pages/adminforms/admindashboard.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/School system/pages/adminforms/header2.php" beforeDir="false" afterPath="$PROJECT_DIR$/School system/pages/adminforms/header2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/School system/pages/adminforms/student.php" beforeDir="false" afterPath="$PROJECT_DIR$/School system/pages/adminforms/student.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/School system/pages/adminforms/teacher.php" beforeDir="false" afterPath="$PROJECT_DIR$/School system/pages/adminforms/teacher.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/School system/pages/studentforms/head.php" beforeDir="false" afterPath="$PROJECT_DIR$/School system/pages/studentforms/head.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/School system/pages/studentforms/header2.php" beforeDir="false" afterPath="$PROJECT_DIR$/School system/pages/studentforms/header2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/School system/pages/studentforms/sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/School system/pages/studentforms/sidebar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/School system/pages/teacherforms/head.php" beforeDir="false" afterPath="$PROJECT_DIR$/School system/pages/teacherforms/head.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/School system/pages/teacherforms/header2.php" beforeDir="false" afterPath="$PROJECT_DIR$/School system/pages/teacherforms/header2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/School system/pages/teacherforms/sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/School system/pages/teacherforms/sidebar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/School system/pages/teacherforms/student.php" beforeDir="false" afterPath="$PROJECT_DIR$/School system/pages/teacherforms/student.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/School system/pages/teacherforms/teacher.php" beforeDir="false" afterPath="$PROJECT_DIR$/School system/pages/teacherforms/teacher.php" afterDir="false" />
-    </list>
+    <list default="true" id="08bfacf1-91f5-4fab-8498-8c51a7b6f37e" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +109,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/School system/index.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="32">
@@ -140,11 +123,11 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/School system/db/Database.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+            <state relative-caret-position="496">
+              <caret line="31" column="37" lean-forward="true" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -315,7 +298,7 @@
       <path value="$PROJECT_DIR$/School system/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="8" />
     <option name="y" value="17" />
     <option name="width" value="1348" />
@@ -429,12 +412,12 @@
       <workItem from="1536681264892" duration="2211000" />
       <workItem from="1536720591356" duration="30964000" />
       <workItem from="1537191332130" duration="5305000" />
-      <workItem from="1537249788025" duration="4688000" />
+      <workItem from="1537249788025" duration="5522000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74282000" />
+    <option name="totallyTimeSpent" value="75116000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1431" height="772" extended-state="6" />
@@ -677,17 +660,17 @@
     <entry file="file://$PROJECT_DIR$/School system/db/connection.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/School system/db/Database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/School system/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="32">
           <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School system/db/Database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="31" column="37" lean-forward="true" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
         </state>
       </provider>
     </entry>
