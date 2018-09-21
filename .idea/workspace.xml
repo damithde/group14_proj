@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08bfacf1-91f5-4fab-8498-8c51a7b6f37e" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/School system/pages/adminforms/studentmanage/editstudent.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/School system/pages/adminforms/studentmanage/studenthead.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/School system/pages/adminforms/studentmanage/studentheader.php" afterDir="false" />
@@ -14,6 +15,12 @@
       <change beforePath="$PROJECT_DIR$/School system/pages/adminforms/sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/School system/pages/adminforms/sidebar.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/School system/pages/adminforms/student.php" beforeDir="false" afterPath="$PROJECT_DIR$/School system/pages/adminforms/studentmanage/registerstudent.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/School system/pages/adminforms/teacher.php" beforeDir="false" afterPath="$PROJECT_DIR$/School system/pages/adminforms/teacher.php" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/School system/db/Database.php" beforeDir="false" afterPath="$PROJECT_DIR$/School system/db/Database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/School system/db/DbFunction.php" beforeDir="false" afterPath="$PROJECT_DIR$/School system/db/DbFunction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/School system/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/School system/index.php" afterDir="false" />
+>>>>>>> 840eba71e77bccdc730250f67419513be8dafa42
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -96,33 +103,37 @@
     <session id="-1225648667">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.12" value="2" />
           <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="php" value="24" />
+          <entry key="php" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PHP" value="24" />
+          <entry key="PHP" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="php" value="946" />
+          <entry key="php" value="961" />
+          <entry key="txt" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PHP" value="946" />
+          <entry key="PHP" value="961" />
+          <entry key="PLAIN_TEXT" value="6" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
+<<<<<<< HEAD
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/School system/pages/adminforms/studentmanage/viewstudent.php">
@@ -214,6 +225,9 @@
         </entry>
       </file>
     </leaf>
+=======
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+>>>>>>> 840eba71e77bccdc730250f67419513be8dafa42
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -286,8 +300,6 @@
         <option value="$PROJECT_DIR$/School system/pages/forms/student.php" />
         <option value="$PROJECT_DIR$/School system/script.php" />
         <option value="$PROJECT_DIR$/School system/head.php" />
-        <option value="$PROJECT_DIR$/School system/db/Database.php" />
-        <option value="$PROJECT_DIR$/School system/db/DbFunction.php" />
         <option value="$PROJECT_DIR$/School system/pages/adminforms/admindashboard.php" />
         <option value="$PROJECT_DIR$/School system/pages/adminforms/teacher.php" />
         <option value="$PROJECT_DIR$/School system/pages/adminforms/student.php" />
@@ -301,6 +313,7 @@
         <option value="$PROJECT_DIR$/School system/pages/studentforms/head.php" />
         <option value="$PROJECT_DIR$/School system/pages/studentforms/header2.php" />
         <option value="$PROJECT_DIR$/School system/index.php" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/School system/pages/adminforms/eventcalendar.php" />
         <option value="$PROJECT_DIR$/School system/pages/adminforms/studentmanage/studentheader.php" />
         <option value="$PROJECT_DIR$/School system/pages/adminforms/studentmanage/studentscript.php" />
@@ -311,6 +324,10 @@
         <option value="$PROJECT_DIR$/School system/pages/adminforms/studentmanage/viewstudent.php" />
         <option value="$PROJECT_DIR$/School system/pages/adminforms/studentmanage/studentsidebar.php" />
         <option value="$PROJECT_DIR$/School system/pages/adminforms/studentmanage/editstudent.php" />
+=======
+        <option value="$PROJECT_DIR$/School system/db/Database.php" />
+        <option value="$PROJECT_DIR$/School system/db/DbFunction.php" />
+>>>>>>> 840eba71e77bccdc730250f67419513be8dafa42
       </list>
     </option>
   </component>
@@ -333,11 +350,32 @@
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="group14_proj" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="group14_proj" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="School system" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="group14_proj" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="School system" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="db" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -349,6 +387,12 @@
               <item name="group14_proj" type="b2602c69:ProjectViewProjectNode" />
               <item name="group14_proj" type="462c0819:PsiDirectoryNode" />
               <item name="School system" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="group14_proj" type="b2602c69:ProjectViewProjectNode" />
+              <item name="group14_proj" type="462c0819:PsiDirectoryNode" />
+              <item name="School system" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="group14_proj" type="b2602c69:ProjectViewProjectNode" />
@@ -379,7 +423,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/blog" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -458,13 +502,26 @@
       <workItem from="1536681264892" duration="2211000" />
       <workItem from="1536720591356" duration="30964000" />
       <workItem from="1537191332130" duration="5305000" />
+<<<<<<< HEAD
       <workItem from="1537249788025" duration="5522000" />
       <workItem from="1537343273988" duration="4146000" />
       <workItem from="1537537411866" duration="6226000" />
+=======
+      <workItem from="1537249788025" duration="9130000" />
     </task>
+    <task id="LOCAL-00001" summary="db con">
+      <created>1537282017446</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1537282017446</updated>
+>>>>>>> 840eba71e77bccdc730250f67419513be8dafa42
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="85488000" />
   </component>
   <component name="ToolWindowManager">
@@ -473,6 +530,15 @@
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25189108" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+=======
+    <option name="totallyTimeSpent" value="78724000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1431" height="772" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4984375" weight="0.15294975" />
+      <window_info active="true" id="Structure" order="1" sideWeight="0.5015625" side_tool="true" visible="true" weight="0.15294975" />
+>>>>>>> 840eba71e77bccdc730250f67419513be8dafa42
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3276923" />
@@ -483,7 +549,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3296875" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -518,6 +584,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="db con" />
+    <option name="LAST_COMMIT_MESSAGE" value="db con" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/HTML/form-common.html" />
@@ -587,6 +657,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/School system/pages/teacherforms/student.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="16">
@@ -595,6 +666,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/School system/pages/teacherforms/teacher.php">
+=======
+    <entry file="file://$PROJECT_DIR$/../../schoolmanagement/config/DbFunction.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-320" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School system/pages/adminforms/admindashboard.php">
+>>>>>>> 840eba71e77bccdc730250f67419513be8dafa42
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="16">
           <caret line="1" column="27" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
@@ -650,6 +729,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/School system/db/Database.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="496">
@@ -751,6 +831,67 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
+=======
+    <entry file="file://$PROJECT_DIR$/School system/pages/studentforms/head.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School system/db/connection.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School system/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School system/db/Database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="20" column="71" lean-forward="true" selection-start-line="20" selection-start-column="71" selection-end-line="20" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School system/db/DbFunction.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School system/pages/teacherforms/header2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1152">
+          <caret line="72" column="58" selection-start-line="72" selection-start-column="58" selection-end-line="72" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School system/pages/teacherforms/head.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School system/pages/studentforms/studentdashboard.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School system/pages/studentforms/sidebar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School system/pages/studentforms/header2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="79" column="43" selection-start-line="79" selection-start-column="43" selection-end-line="79" selection-end-column="43" />
+>>>>>>> 840eba71e77bccdc730250f67419513be8dafa42
         </state>
       </provider>
     </entry>

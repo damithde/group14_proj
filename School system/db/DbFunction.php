@@ -15,7 +15,7 @@ class DbFunction{
    else{		
 	$db = Database::getInstance();
 	$mysqli = $db->getConnection();
-	$query = "SELECT iduser, password FROM user where iduser=$loginid and password=$password ";
+	$query = "SELECT type FROM user where iduser=? and password=? ";
 	$stmt= $mysqli->prepare($query);
 	if(false===$stmt){
 		
@@ -24,7 +24,7 @@ class DbFunction{
 	
 	else{
 		
-		$stmt->bind_param('ss',$loginid,$password);
+		$stmt->bind_param( 'ss',$loginid,$password);
 		$stmt->execute();
 		$stmt -> bind_result($loginid,$password);
 		$rs=$stmt->fetch();
