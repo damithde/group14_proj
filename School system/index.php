@@ -56,7 +56,7 @@
             $db=Database::getInstance();
             if(isset($_POST['submit'])){
                 $username=$_POST['emailTxt'];
-                $passowrd=$_POST['passwordTxt'];
+                $password=$_POST['passwordTxt'];
 
                 if($username=="admin"){
                     header("Location:pages/adminforms/admindashboard.php");
