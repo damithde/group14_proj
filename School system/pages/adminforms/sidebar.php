@@ -17,7 +17,7 @@
             <li class="header">MAIN NAVIGATION</li>
             <li><a  href="admindashboard.php"><i class="fa fa-home"></i> <span>Home</span> </a></li>
             <li><a href="studentmanage/registerstudent.php"><i class="fa fa-users"></i>Student</a></li>
-            <li><a href="teacher.php"><i class="fa fa-users"></i>Teacher</a></li>
+            <li><a href="teachermanage/registerteacher.php"><i class="fa fa-users"></i>Teacher</a></li>
             <li><a href="eventcalendar.php"><i class="fa fa-calendar"></i> <span>Calendar</span></a></li>
             <li><a href="eventcalendar.php"><i class="fa fa-puzzle-piece"></i> <span>Exams</span></a></li>
             <li><a href="eventcalendar.php"><i class="fa fa-clock-o"></i> <span>Time Table</span></a></li>
