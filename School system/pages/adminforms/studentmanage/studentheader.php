@@ -1,9 +1,8 @@
 <body class="skin-blue">
 <div class="wrapper">
-
     <header class="main-header">
         <!-- Logo -->
-        <a href="../../index2.html" class="logo"><b>Admin</b></a>
+        <a href="../../../index2.html" class="logo"><b>Admin</b></a>
         <!-- Header Navbar: style can be found in header.less -->
         <nav class="navbar navbar-static-top" role="navigation">
             <!-- Sidebar toggle button-->
@@ -26,7 +25,7 @@
                                     <li><!-- start message -->
                                         <a href="#">
                                             <div class="pull-left">
-                                                <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image"/>
+                                                <img src="../../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image"/>
                                             </div>
                                             <h4>
                                                 Leave notice
@@ -35,8 +34,6 @@
                                             <p>I will not be able to </p>
                                         </a>
                                     </li><!-- end message -->
-
-
                                 </ul>
                             </li>
                             <li class="footer"><a href="#">See All Messages</a></li>
@@ -58,7 +55,6 @@
                                             <i class="fa fa-users text-aqua"></i> 5 teachers requested leave today
                                         </a>
                                     </li>
-
                                 </ul>
                             </li>
                             <li class="footer"><a href="#">View all</a></li>
@@ -69,13 +65,13 @@
                     <!-- User Account: style can be found in dropdown.less -->
                     <li class="dropdown user user-menu">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            <img src="../../dist/img/user2-160x160.jpg" class="user-image" alt="User Image"/>
+                            <img src="../../../dist/img/user2-160x160.jpg" class="user-image" alt="User Image"/>
                             <span class="hidden-xs">Admin</span>
                         </a>
                         <ul class="dropdown-menu">
                             <!-- User image -->
                             <li class="user-header">
-                                <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
+                                <img src="../../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
                                 <p>
                                     Admin
                                     <small>School name : D.S. Senanayake</small>
@@ -89,7 +85,7 @@
                                     <a href="#" class="btn btn-default btn-flat">Profile</a>
                                 </div>
                                 <div class="pull-right">
-                                    <a href="../../index.php" class="btn btn-default btn-flat">Sign out</a>
+                                    <a href="../../../index.php" class="btn btn-default btn-flat">Sign out</a>
                                 </div>
                             </li>
                         </ul>
