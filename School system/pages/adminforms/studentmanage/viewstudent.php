@@ -39,71 +39,105 @@
                         <div class="box-body">
                         <!--Lable field-->
                             <div class="row">
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label for="exampleInputEmail1">First Name:</label>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="exampleInputEmail1">Last Name:</label>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="exampleInputEmail1">Admission No:</label>
-                                    </div>
-                                    <div class="form-group">
-                                        <label>Birth Day:</label>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="exampleInputEmail1">Nationality:</label>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="exampleInputEmail1">Religion:</label>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="exampleInputEmail1">Address:</label>
-                                    </div>
-                                    <div class="form-group">
-                                        <label>Phone No:</label>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="exampleInputEmail1">Email:</label>
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                        <!-- Profile picture -->
+                                                <div class="small-box bg-blue">
+                                                    <div class="inner">
+                                                        <h3>
+                                                           Pic
+                                                        </h3>
+                                                        <p>
+                                                            Sales
+                                                            ss
+                                                        </p>
+                                                        <p>
+                                                            Sales
+                                                            ss
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            <div class="form-group">
+                                                <div class="col-md-2">
+                                                    <label><a href="../teachermanage/registerteacher.php"><i class="fa fa-edit"></i></a></label>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <label><a href="../teachermanage/registerteacher.php"><i class="fa  fa-print"></i></a></label>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <label><a href="../teachermanage/registerteacher.php"><i class="fa fa-download"></i></a></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                        <!--Lable names-->
+                                            <div class="form-group">
+                                                <label class="text-muted" for="exampleInputEmail1">Name:</label>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="text-muted" for="exampleInputEmail1">Gender:</label>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="text-muted" for="exampleInputEmail1">Date Of Birth:</label>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="text-muted" for="exampleInputEmail1">Religion:</label>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="text-muted" >Email:</label>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="text-muted" for="exampleInputEmail1">Admission Date:</label>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="text-muted" for="exampleInputEmail1">Class:</label>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="text-muted" for="exampleInputEmail1">Section:</label>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="text-muted" for="exampleInputEmail1">Address:</label>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="text-muted" for="exampleInputEmail1">Phone:</label>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
 
-                                <div class="col-md-8">
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label for="exampleInputEmail1">Dinuka </label>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputEmail1">Kasun</label>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputEmail1">2016cs089</label>
-                                        </div>
-                                        <div class="form-group">
-                                            <label>1995 Sep 20</label>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputEmail1">Srilankan</label>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputEmail1">Buddhist</label>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputEmail1">73, dampe, madapatha</label>
-                                        </div>
-                                        <div class="form-group">
-                                            <label>0717275722</label>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputEmail1">dinuka.kasunds@gmail.com</label>
-                                        </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Y.Dinuka Kasun Medis</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Male</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">1995/09/20</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Srilankan</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">dinuka.kasunds@gmail.com</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">2015/02/02</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">m1</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>12</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">73,Dampe,Madapatha</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">0717275722</label>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleInputFile">Select Photo</label>
-                                <input type="file" id="exampleInputFile">
                             </div>
                         </div><!-- /.box-body -->
                         <div class="box-footer">
@@ -113,6 +147,7 @@
             </div>
             <!--        parent details-->
             <div class="col-md-6">
+<!--                Guardian's detail form  -->
                 <div class="box box-primary">
                     <div class="box-header">
                         <h3 class="box-title">Guardian's Details</h3>
@@ -139,44 +174,32 @@
                             <div class="row">
                                 <div class="col-md-3">
                                     <div class="form-group">
-                                        <label for="exampleInputEmail1">First Name:</label>
+                                        <label class="text-muted" for="exampleInputEmail1">Name:</label>
                                     </div>
                                     <div class="form-group">
-                                        <label for="exampleInputEmail1">Last Name:</label>
+                                        <label class="text-muted" for="exampleInputEmail1">Occupation:</label>
                                     </div>
                                     <div class="form-group">
-                                        <label for="exampleInputEmail1">Occupation:</label>
+                                        <label class="text-muted" for="exampleInputEmail1">Email:</label>
                                     </div>
                                     <div class="form-group">
-                                        <label>Birth Day:</label>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="exampleInputEmail1">Email:</label>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="exampleInputEmail1">Phone:</label>
+                                        <label class="text-muted" for="exampleInputEmail1">Phone:</label>
                                     </div>
                                 </div>
 
                                 <div class="col-md-8">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="exampleInputEmail1">Dinuka </label>
+                                            <label for="exampleInputEmail1">Test Test</label>
                                         </div>
                                         <div class="form-group">
-                                            <label for="exampleInputEmail1">Kasun</label>
+                                            <label for="exampleInputEmail1">Test</label>
                                         </div>
                                         <div class="form-group">
-                                            <label for="exampleInputEmail1">2016cs089</label>
+                                            <label for="exampleInputEmail1">Test @ gmail.com</label>
                                         </div>
                                         <div class="form-group">
-                                            <label>1995 Sep 20</label>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputEmail1">Srilankan</label>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputEmail1">Buddhist</label>
+                                            <label>0717275722</label>
                                         </div>
                                     </div>
                                 </div>
