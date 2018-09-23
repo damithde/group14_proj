@@ -5,28 +5,6 @@
 
 <section class="content-wrapper">
     <section class="content-header">
-        <div class="box box-primary">
-            <div class="row">
-                <form class="form-group">
-
-                </form>
-                <div class="col-md-1">
-
-                </div>
-                <div class="col-md-5">
-                    <!-- search form -->
-                    <form action="#" method="get" class="form-group">
-                        <div class="input-group">
-                            <input type="text" name="q" class="form-control" placeholder="Search..."/>
-                            <span class="input-group-btn">
-                                <button type='submit' name='search' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
-                            </span>
-                        </div>
-                    </form>
-                    <!-- /.search form -->
-                </div>
-            </div>
-        </div>
         <div class="row">
             <div class="col-md-6">
                 <!-- general form elements -->
@@ -34,6 +12,23 @@
                     <div class="box-header">
                         <h3 class="box-title">Student Details</h3>
                     </div><!-- /.box-header -->
+                    <div class="row">
+                        <div class="col-md-3">
+
+                        </div>
+                        <div class="col-md-8">
+                            <!-- search form -->
+                            <form action="#" method="get" class="form-group">
+                                <div class="input-group">
+                                    <input type="text" name="q" class="form-control" placeholder="Search..."/>
+                                    <span class="input-group-btn">
+                                <button type='submit' name='search' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
+                            </span>
+                                </div>
+                            </form>
+                            <!-- /.search form -->
+                        </div>
+                    </div>
                     <!-- form start -->
                     <form role="form">
                         <div class="box-body">
