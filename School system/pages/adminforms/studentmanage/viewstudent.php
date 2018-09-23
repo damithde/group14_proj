@@ -6,12 +6,17 @@
 <section class="content-wrapper">
     <section class="content-header">
         <div class="row">
+
+
+
+<!--            left side panel-->
             <div class="col-md-6">
-                <!-- general form elements -->
+<!--                student details-->
                 <div class="box box-primary">
-                    <div class="box-header">
+                    <div class="box-header with-border">
                         <h3 class="box-title">Student Details</h3>
                     </div><!-- /.box-header -->
+                    <br>
                     <div class="row">
                         <div class="col-md-3">
 
@@ -39,19 +44,7 @@
                                         <div class="col-md-6">
                                         <!-- Profile picture -->
                                                 <div class="small-box bg-blue">
-                                                    <div class="inner">
-                                                        <h3>
-                                                           Pic
-                                                        </h3>
-                                                        <p>
-                                                            Sales
-                                                            ss
-                                                        </p>
-                                                        <p>
-                                                            Sales
-                                                            ss
-                                                        </p>
-                                                    </div>
+                                                    <img src="../../../dist/img/user_100x128.png" alt="User Image">
                                                 </div>
                                             <div class="form-group">
                                                 <div class="col-md-2">
@@ -140,11 +133,16 @@
                     </form>
                 </div><!-- /.box -->
             </div>
-            <!--        parent details-->
-            <div class="col-md-6">
+
+
+
+
+<!--            right side panel-->
+            <div class="col-md-6 ">
+
 <!--                Guardian's detail form  -->
                 <div class="box box-primary">
-                    <div class="box-header">
+                    <div class="box-header  with-border">
                         <h3 class="box-title">Guardian's Details</h3>
                     </div><!-- /.box-header -->
                     <!-- form start -->
@@ -201,7 +199,65 @@
                             </div>
                     </form>
                 </div><!-- /.box -->
+
+<!--                Exam results-->
+                <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <h3 class="box-title">Exam Results</h3>
+                        </div><!-- /.box-header -->
+                        <div class="box-body">
+                            <div class="table-responsive">
+                                <table class="table no-margin">
+                                    <thead>
+                                    <tr>
+                                        <th>Exam Name</th>
+                                        <th>Date</th>
+                                        <th>Subject</th>
+                                        <th>Grade Point</th>
+                                        <th>Precentage Point</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td><a href="pages/examples/invoice.html">Math in class</a></td>
+                                        <td>2012/02/02</td>
+                                        <td>Math</td>
+                                        <td>4</td>
+                                        <td><span class="label label-warning">57</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="pages/examples/invoice.html">Math in class</a></td>
+                                        <td>2012/02/02</td>
+                                        <td>Math</td>
+                                        <td>4</td>
+                                        <td><span class="label label-danger">10</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="pages/examples/invoice.html">Math in class</a></td>
+                                        <td>2012/02/02</td>
+                                        <td>Math</td>
+                                        <td>4</td>
+                                        <td><span class="label label-info">70</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="pages/examples/invoice.html">Math in class</a></td>
+                                        <td>2012/02/02</td>
+                                        <td>Math</td>
+                                        <td>4</td>
+                                        <td><span class="label label-success">85</span></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div><!-- /.table-responsive -->
+                        </div><!-- /.box-body -->
+                        <div class="box-footer clearfix">
+                            <a href="javascript::;" class="btn btn-sm btn-default btn-flat pull-right">View All Exams</a>
+                        </div><!-- /.box-footer -->
+                    </div><!-- /.box -->
             </div>
+
+
+
         </div>
     </section>
 </section>
