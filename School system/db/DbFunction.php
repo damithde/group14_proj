@@ -26,7 +26,7 @@ class DbFunction{
 		
 		$stmt->bind_param( 'ss',$loginid,$password);
 		$stmt->execute();
-		$stmt -> bind_result($loginid,$password);
+		$stmt -> bind_result($type);
 		$rs=$stmt->fetch();
 		if(!$rs)
 		{
