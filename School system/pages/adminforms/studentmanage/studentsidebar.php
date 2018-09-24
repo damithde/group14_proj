@@ -26,7 +26,16 @@
                     <li><a href="editstudent.php"><i class="fa fa-folder-open-o"></i> Edit Student</a></li>
                 </ul>
             </li>
-            <li><a href="../teachermanage/registerteacher.php"><i class="fa fa-users"></i>Teacher</a></li>
+            <li class="active treeview">
+                <a href="#">
+                    <i class="fa fa-users"></i> <span>Teacher</span> <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <ul class="treeview-menu">
+                    <li class="active"><a href="../teachermanage/registerteacher.php"><i class="fa fa-folder-open-o"></i> Register Teacher</a></li>
+                    <li><a href="../teachermanage/viewteacher.php"><i class="fa fa-folder-open-o"></i> View Teacher</a></li>
+                    <li><a href="../teachermanage/editteacher.php"><i class="fa fa-folder-open-o"></i> Edit Teacher</a></li>
+                </ul>
+            </li>
             <li><a href="../eventcalendar.php"><i class="fa fa-calendar"></i> <span>Calendar</span></a></li>
             <li><a href="../eventcalendar.php"><i class="fa fa-puzzle-piece"></i> <span>Exams</span></a></li>
             <li><a href="../eventcalendar.php"><i class="fa fa-clock-o"></i> <span>Time Table</span></a></li>

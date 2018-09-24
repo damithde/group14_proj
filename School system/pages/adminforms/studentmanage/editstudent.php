@@ -11,7 +11,7 @@
 <!--                student details-->
                 <div class="box box-primary">
                     <!-- .box-header -->
-                    <div class="box-header">
+                    <div class="box-header  with-border">
                         <h3 class="box-title">Student Details</h3>
                     </div><!-- /.box-header -->
 
@@ -142,7 +142,7 @@
 
 <!--                guardian details-->
                 <div class="box box-primary">
-                    <div class="box-header">
+                    <div class="box-header  with-border">
                         <h3 class="box-title">Guardian's Details</h3>
                     </div><!-- /.box-header -->
                     <!-- form start -->

@@ -9,7 +9,7 @@
         <div class="col-md-6">
             <!-- general form elements -->
             <div class="box box-primary">
-                <div class="box-header">
+                <div class="box-header with-border">
                     <h3 class="box-title">Student Details</h3>
                 </div><!-- /.box-header -->
                 <!-- form start -->
@@ -87,7 +87,7 @@
 <!--        parent details-->
         <div class="col-md-6">
             <div class="box box-primary">
-                <div class="box-header">
+                <div class="box-header with-border">
                     <h3 class="box-title">Guardian's Details</h3>
                 </div><!-- /.box-header -->
                 <!-- form start -->
