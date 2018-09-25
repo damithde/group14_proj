@@ -1,6 +1,6 @@
-<?php include_once('head.php'); ?>
-<?php include_once('header.php'); ?>
-<?php include_once('sidebar.php'); ?>
+<?php include_once('dashboardhead.php'); ?>
+<?php include_once('dashboardheader.php'); ?>
+<?php include_once('dashboardsidebar.php'); ?>
 <?php //include_once('right_panel.php'); ?>
 
 <body class="skin-blue">
@@ -242,7 +242,7 @@
 <!--                </div>-->
 
                 <div>
-                    <?php include_once('notificationPanel.php'); ?>
+                    <?php include_once('dashboardnotificationPanel.php'); ?>
                 </div>
 
             </div>
@@ -250,7 +250,7 @@
                 <!-- Calendar -->
                 <div class="small-box bg-aqua">
                     <div class="inner">
-                        <?php include_once('calendar.php'); ?>
+                        <?php include_once('dashboardcalendar.php'); ?>
                     </div>
                 </div>
 
@@ -288,6 +288,6 @@
 </body>
 
 
-<?php include_once('footer.php'); ?>
-<?php include_once('script2.php'); ?>
+<?php include_once('dashboardfooter.php'); ?>
+<?php include_once('dashboardscript.php'); ?>
 

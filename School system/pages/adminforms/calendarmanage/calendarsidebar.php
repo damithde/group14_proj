@@ -14,7 +14,7 @@
         </div>
         <ul class="sidebar-menu">
             <li class="header">MAIN NAVIGATION</li>
-            <li><a  href="../admindashboard.php"><i class="fa fa-home"></i> <span>Home</span> </a></li>
+            <li><a  href="../admindashboard/admindashboard.php"><i class="fa fa-home"></i> <span>Home</span> </a></li>
 
             <li class="active treeview">
                 <a href="#">
