@@ -59,7 +59,7 @@
                 $password=$_POST['passwordTxt'];
 
                 if($username=="admin"){
-                    header("Location:pages/adminforms/admindashboard.php");
+                    header("Location:pages/adminforms/attendance.php");
 
                 }else if($username=="teacher"){
                     header("Location:pages/teacherforms/teacherdashboard.php");

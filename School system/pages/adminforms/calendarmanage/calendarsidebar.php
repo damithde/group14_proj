@@ -40,8 +40,8 @@
             <li><a href="../eventcalendar.php"><i class="fa fa-puzzle-piece"></i> <span>Exams</span></a></li>
             <li><a href="../eventcalendar.php"><i class="fa fa-clock-o"></i> <span>Time Table</span></a></li>
             <li><a href="../eventcalendar.php"><i class="fa fa-certificate"></i> <span>Certificates</span></a></li>
-            <li><a href="../eventcalendar.php"><i class="fa fa-envelope-o"></i> <span></span>Messege</span></a></li>
-            <li><a href="../eventcalendar.php"><i class="fa fa-edit"></i> <span>Attendance</span></a></li>
+            <li><a href="../messagebox/messagebox.php"><i class="fa fa-envelope-o"></i> <span></span>Messege</span></a></li>
+            <li><a href="../attendancemanage/attendance.php"><i class="fa fa-edit"></i> <span>Attendance</span></a></li>
         </ul>
     </section>
     <!-- /.sidebar -->
