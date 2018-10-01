@@ -84,6 +84,7 @@
                 </form>
             </div><!-- /.box -->
         </div>
+
 <!--        parent details-->
         <div class="col-md-6">
             <div class="box box-primary">

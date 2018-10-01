@@ -37,7 +37,7 @@
                 </ul>
             </li>
             <li><a href="../calendarmanage/calendar.php"><i class="fa fa-calendar"></i> <span>Calendar</span></a></li>
-            <li><a href="../eventcalendar.php"><i class="fa fa-puzzle-piece"></i> <span>Exams</span></a></li>
+            <li><a href="../exammanage/exam.php"><i class="fa fa-puzzle-piece"></i> <span>Exams</span></a></li>
             <li><a href="../eventcalendar.php"><i class="fa fa-clock-o"></i> <span>Time Table</span></a></li>
             <li><a href="../eventcalendar.php"><i class="fa fa-certificate"></i> <span>Certificates</span></a></li>
             <li><a href="messagebox.php"><i class="fa fa-envelope-o"></i> <span></span>Messege</span></a></li>
