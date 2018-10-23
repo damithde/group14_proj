@@ -10,6 +10,8 @@
     <link href="dist/css/AdminLTE.min.css" rel="stylesheet" type="text/css" />
     <!-- iCheck -->
     <link href="plugins/iCheck/square/blue.css" rel="stylesheet" type="text/css" />
+    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -25,13 +27,13 @@
     </div><!-- /.login-logo -->
     <div class="login-box-body">
         <p class="login-box-msg">Sign in to start your session</p>
-        <form action="index.php" method="post">
+        <form >
             <div class="form-group has-feedback">
-                <input type="text" class="form-control" name="emailTxt" placeholder="Email"/>
+                <input id="uname" type="text" class="form-control" name="uname" placeholder="Email"/>
                 <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
             </div>
             <div class="form-group has-feedback">
-                <input type="password" class="form-control" name="passwordTxt" placeholder="Password"/>
+                <input id="pass" type="password" class="form-control" name="pass" placeholder="Password"/>
                 <span class="glyphicon glyphicon-lock form-control-feedback"></span>
             </div>
             <div class="row">
@@ -43,7 +45,7 @@
                     </div>
                 </div><!-- /.col -->
                 <div class="col-xs-4">
-                    <button type="submit" name="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
+                    <button id="sign" onclick="login()" type="submit"  class="btn btn-primary btn-block btn-flat">Sign In</button>
                 </div><!-- /.col -->
             </div>
         </form>
@@ -51,28 +53,7 @@
 
 
 <!--        test action for demo version-->
-        <?php
-            include 'db/Database.php';
-            $db=Database::getInstance();
-            if(isset($_POST['submit'])){
-                $username=$_POST['emailTxt'];
-                $password=$_POST['passwordTxt'];
-
-                if($username=="admin"){
-                    header("Location:pages/adminforms/exam.php");
-
-                }else if($username=="teacher"){
-                    header("Location:pages/teacherforms/teacherdashboard.php");
-
-                }else if($username=="student"){
-                    header("Location:pages/studentforms/studentdashboard.php");
-
-                }else{
-                    echo "<script type='text/javascript'>alert('Wrong Details!')</script>";
-                }
-
-            }
-        ?>
+        
 <!--        end test for demo-->
 
 
@@ -93,4 +74,45 @@
             increaseArea: '20%' // optional
         });
     });
+
+    
+</script>
+
+
+
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyADepCBKJ8-gSMFrJgKCzrH-QHwmUbAb-I",
+    authDomain: "group-project-14.firebaseapp.com",
+    databaseURL: "https://group-project-14.firebaseio.com",
+    projectId: "group-project-14",
+    storageBucket: "group-project-14.appspot.com",
+    messagingSenderId: "845098797813"
+  };
+firebase.initializeApp(config);
+const db=firebase.firestore();
+db.settings({timestampsInSnapshots:true});
+
+
+
+function login(){
+    var uname= document.getElementById("uname").value;
+    var pass= document.getElementById("pass").value;
+    //function log(){alert(uname);};
+    //var users=db.collection('users');
+    //var querry =users.where("username","==","admin");
+
+    firebase.auth().signInWithEmailAndPassword(uname, pass).catch(function(error) {
+
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    console.log('Error :' + errorCode+ errorMessage);
+
+    });
+
+};
+
+    
+
 </script>
