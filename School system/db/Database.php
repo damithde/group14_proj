@@ -10,6 +10,7 @@ class Database {
 	Get an instance of the Database
 	@return Instance
 	*/
+	
 	public static function getInstance() {
 		if(!self::$_instance) { // If no instance then make one
 			self::$_instance = new self();
@@ -33,6 +34,4 @@ class Database {
 		return $this->_connection;
 	}
 }
-
-
 ?>
