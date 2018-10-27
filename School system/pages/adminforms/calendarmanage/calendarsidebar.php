@@ -16,7 +16,7 @@
             <li class="header">MAIN NAVIGATION</li>
             <li><a  href="../admindashboard/admindashboard.php"><i class="fa fa-home"></i> <span>Home</span> </a></li>
 
-            <li class="active treeview">
+            <li>
                 <a href="#">
                     <i class="fa fa-users"></i> <span>Student</span> <i class="fa fa-angle-left pull-right"></i>
                 </a>
@@ -26,7 +26,7 @@
                     <li><a href="../studentmanage/editstudent.php"><i class="fa fa-folder-open-o"></i> Edit Student</a></li>
                 </ul>
             </li>
-            <li class="active treeview">
+            <li>
                 <a href="#">
                     <i class="fa fa-users"></i> <span>Teacher</span> <i class="fa fa-angle-left pull-right"></i>
                 </a>
@@ -37,7 +37,16 @@
                 </ul>
             </li>
             <li><a href="calendar.php"><i class="fa fa-calendar"></i> <span>Calendar</span></a></li>
-            <li><a href="../exammanage/exam.php"><i class="fa fa-puzzle-piece"></i> <span>Exams</span></a></li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-users"></i> <span>Exams</span> <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <ul class="treeview-menu">
+                    <li class="active"><a href="../exammanage/exam.php"><i class="fa fa-folder-open-o"></i> View Results</a></li>
+                    <li><a href="../teachermanage/viewteacher.php"><i class="fa fa-folder-open-o"></i> Manage Results</a></li>
+                </ul>
+            </li>
+
             <li><a href="../eventcalendar.php"><i class="fa fa-clock-o"></i> <span>Time Table</span></a></li>
             <li><a href="../eventcalendar.php"><i class="fa fa-certificate"></i> <span>Certificates</span></a></li>
             <li><a href="../messagebox/messagebox.php"><i class="fa fa-envelope-o"></i> <span></span>Messege</span></a></li>

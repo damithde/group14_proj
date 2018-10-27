@@ -13,7 +13,7 @@
                 <div class="box box-primary">
                     <!-- .box-header -->
                     <div class="box-header  with-border">
-                        <h3 class="box-title">Student Details</h3>
+                        <h3 class="box-title">Teacher Details</h3>
                     </div><!-- /.box-header -->
 
                     <!-- form start -->

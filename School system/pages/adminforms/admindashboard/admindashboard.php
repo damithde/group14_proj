@@ -27,7 +27,7 @@
                                         <div class="icon">
                                             <i class="fa fa-group"></i>
                                         </div>
-                                        <a href="#" class="small-box-footer">
+                                        <a href="../studentmanage/viewstudent.php" class="small-box-footer">
                                             Student <i class="fa fa-arrow-circle-right"></i>
                                         </a>
                                     </div>
@@ -47,7 +47,7 @@
                                         <div class="icon">
                                             <i class="fa fa-user"></i>
                                         </div>
-                                        <a href="#" class="small-box-footer">
+                                        <a href="../teachermanage/viewteacher.php" class="small-box-footer">
                                             Teacher <i class="fa fa-arrow-circle-right"></i>
                                         </a>
                                     </div>
@@ -66,7 +66,7 @@
                                         <div class="icon">
                                             <i class="fa fa-edit"></i>
                                         </div>
-                                        <a href="#" class="small-box-footer">
+                                        <a href="../attendancemanage/attendance.php" class="small-box-footer">
                                             Attendance <i class="fa fa-arrow-circle-right"></i>
                                         </a>
                                     </div>
@@ -85,7 +85,7 @@
                                         <div class="icon">
                                             <i class="fa fa-check-square-o"></i>
                                         </div>
-                                        <a href="#" class="small-box-footer">
+                                        <a href="../exammanage/exam.php" class="small-box-footer">
                                             Results <i class="fa fa-arrow-circle-right"></i>
                                         </a>
                                     </div>
@@ -106,7 +106,7 @@
                                         <div class="icon">
                                             <i class="fa fa-calendar"></i>
                                         </div>
-                                        <a href="#" class="small-box-footer">
+                                        <a href="../eventcalendar.php" class="small-box-footer">
                                             Calendar <i class="fa fa-arrow-circle-right"></i>
                                         </a>
                                     </div>
@@ -125,7 +125,7 @@
                                         <div class="icon">
                                             <i class="fa fa-clock-o"></i>
                                         </div>
-                                        <a href="#" class="small-box-footer">
+                                        <a href="../eventcalendar.php" class="small-box-footer">
                                             Time Table <i class="fa fa-arrow-circle-right"></i>
                                         </a>
                                     </div>
@@ -144,7 +144,7 @@
                                         <div class="icon">
                                             <i class="fa  fa-certificate"></i>
                                         </div>
-                                        <a href="#" class="small-box-footer">
+                                        <a href="../eventcalendar.php" class="small-box-footer">
                                             Certificate <i class="fa fa-arrow-circle-right"></i>
                                         </a>
                                     </div>
@@ -163,7 +163,7 @@
                                         <div class="icon">
                                             <i class="fa fa-bullhorn"></i>
                                         </div>
-                                        <a href="#" class="small-box-footer">
+                                        <a href="../messagebox/messagebox.php" class="small-box-footer">
                                             Notifications <i class="fa fa-arrow-circle-right"></i>
                                         </a>
                                     </div>
