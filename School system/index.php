@@ -1,3 +1,4 @@
+<html>
 <head>
     <meta charset="UTF-8">
     <title>Futura| Log in</title>
@@ -12,6 +13,8 @@
     <link href="plugins/iCheck/square/blue.css" rel="stylesheet" type="text/css" />
     <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-database.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -27,7 +30,7 @@
     </div><!-- /.login-logo -->
     <div class="login-box-body">
         <p class="login-box-msg">Sign in to start your session</p>
-        <form >
+        
             <div class="form-group has-feedback">
                 <input id="uname" type="text" class="form-control" name="uname" placeholder="Email"/>
                 <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
@@ -45,10 +48,13 @@
                     </div>
                 </div><!-- /.col -->
                 <div class="col-xs-4">
+                    <button id="signout" onclick="logout()"  class="btn btn-primary btn-block btn-flat">Sign out</button>
+                </div><!-- /.col -->
+                <div class="col-xs-4">
                     <button id="sign" onclick="login()" type="submit"  class="btn btn-primary btn-block btn-flat">Sign In</button>
                 </div><!-- /.col -->
             </div>
-        </form>
+        
 
 
 
@@ -94,25 +100,39 @@ firebase.initializeApp(config);
 const db=firebase.firestore();
 db.settings({timestampsInSnapshots:true});
 
-
+function logout(){
+    firebase.auth().signOut().then(function() {
+     alert('signed out');
+    }).catch(function(error) {
+        alert('error');
+    });
+}
 
 function login(){
     var uname= document.getElementById("uname").value;
     var pass= document.getElementById("pass").value;
     //function log(){alert(uname);};
-    //var users=db.collection('users');
-    //var querry =users.where("username","==","admin");
-
+    // var users=db.collection('users');
+    // var querry =users.where("username","==","admin");
+    // console.log(querry.data());
     firebase.auth().signInWithEmailAndPassword(uname, pass).catch(function(error) {
 
-    var errorCode = error.code;
-    var errorMessage = error.message;
-    console.log('Error :' + errorCode+ errorMessage);
-
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        alert('Error :' + errorCode+ errorMessage);
     });
 
 };
 
-    
+firebase.auth().onAuthStateChanged(function(user) {
+  if (user) {
+    alert('logged in');
+  } else {
+  }
 
+});
+
+    
 </script>
+
+</html>
