@@ -10,6 +10,7 @@ class Database {
 	Get an instance of the Database
 	@return Instance
 	*/
+	
 	public static function getInstance() {
 		if(!self::$_instance) { // If no instance then make one
 			self::$_instance = new self();
@@ -18,7 +19,7 @@ class Database {
 	}
 	// Constructor
 	public function __construct() {
-		$this->_connection = new mysqli($this->_host, $this->_username,	$this->_password, $this->_database);
+		$this->_connection = new mysqli($this->_host, $this->_username,$this->_password, $this->_database);
 	
 		// Error handling
 		if(mysqli_connect_error()) {
@@ -33,6 +34,4 @@ class Database {
 		return $this->_connection;
 	}
 }
-
-
 ?>

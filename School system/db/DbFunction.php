@@ -15,7 +15,7 @@ class DbFunction{
    else{		
 	$db = Database::getInstance();
 	$mysqli = $db->getConnection();
-	$query = "SELECT iduser, password FROM user where iduser=$loginid and password=$password ";
+	$query = "SELECT type FROM user where iduser=? and password=? ";
 	$stmt= $mysqli->prepare($query);
 	if(false===$stmt){
 		
@@ -24,9 +24,9 @@ class DbFunction{
 	
 	else{
 		
-		$stmt->bind_param('ss',$loginid,$password);
+		$stmt->bind_param( 'ss',$loginid,$password);
 		$stmt->execute();
-		$stmt -> bind_result($loginid,$password);
+		$stmt -> bind_result($type);
 		$rs=$stmt->fetch();
 		if(!$rs)
 		{
@@ -47,7 +47,7 @@ class DbFunction{
 		
 		if($idparent==""){
 			 
-			echo "<script>alert('Select  Course Short Name')</script>";
+			echo "<script>alert('Enter parent Details')</script>";
 		
 		}
 
@@ -58,7 +58,9 @@ class DbFunction{
 			$db = Database::getInstance();
 			$mysqli = $db->getConnection();
 			$query = "insert into student(idstudent,class_idclass,class_school_idschool,parent_idparent,first_name,last_name,contact,address,dob,nationality,religion)values(?,?,?)";
+            $query2 = "insert into parent()values(?,?,?)";
 			$stmt= $mysqli->prepare($query);
+            $stmt2= $mysqli->prepare($query2);
 			if(false===$stmt){
 			
 				trigger_error("Error in query: " . mysqli_connect_error(),E_USER_ERROR);
@@ -68,7 +70,9 @@ class DbFunction{
 			
 				$stmt->bind_param('sss',$cshort,$cfull,$cdate);
 				$stmt->execute();
-				echo "<script>alert('Course Added Successfully')</script>";
+                $stmt2->bind_param('sss',$cshort,$cfull,$cdate);
+                $stmt2->execute();
+				echo "<script>alert('Student Added Successfully')</script>";
 					//header('location:login.php');
 				
 			}
@@ -203,11 +207,11 @@ function create_teacher($fname,$lname,$contact,$address,$email){
         }
     }
 
-function showCountry(){
+function showTeacher(){
 	
 	$db = Database::getInstance();
 	$mysqli = $db->getConnection();
-	$query = "SELECT * FROM countries ";
+	$query = "SELECT * FROM teacher ";
 	$stmt= $mysqli->query($query);
 	return $stmt;
 	
@@ -216,7 +220,7 @@ function showStudents(){
 	
 	$db = Database::getInstance();
 	$mysqli = $db->getConnection();
-	$query = "SELECT * FROM registration ";
+	$query = "SELECT * FROM student ";
 	$stmt= $mysqli->query($query);
 	return $stmt;
 	
@@ -226,50 +230,15 @@ function showStudents1($id){
 	
 	$db = Database::getInstance();
 	$mysqli = $db->getConnection();
-	$query = "SELECT * FROM registration  where id='".$id."'";
+	$query = "SELECT * FROM student  where id='".$id."'";
 	$stmt= $mysqli->query($query);
 	return $stmt;
 	
 }	
 
-function register($cshort,$cfull,$fname,$mname,$lname,$gender,$gname,$ocp,$income,$category,$ph,
-                  $nation,$mobno,$email,$country,$state,$city,$padd,$cadd,$board1,$board2,$roll1,$roll2,
-				   $pyear1,$pyear2,$sub1,$sub2,$marks1,$marks2,$fmarks1,$fmarks2,$session){
- 			          
- 			        $db = Database::getInstance();
-		           	$mysqli = $db->getConnection();
-		           	
-		           //	echo $session;exit;
-   $query = "INSERT INTO `registration` (`course`, `subject`, `fname`, `mname`, `lname`, `gender`, `gname`, `ocp`,
-                     `income`, `category`, `pchal`, `nationality`, `mobno`, `emailid`, `country`, `state`, `dist`, 
-					 `padd`, `cadd`, `board`, `board1`,`roll`,`roll1`,`pyear`,`yop1`,`sub`,`sub1`,`marks`,`marks1`,
-					 `fmarks`,`fmarks1`,`session`,regno) 
-                   VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
-			        $reg=rand();
-			        $stmt= $mysqli->prepare($query);
-			        if(false===$stmt){
-			
-			     	trigger_error("Error in query: " . mysqli_connect_error(),E_USER_ERROR);
-			    }
-			
-			    else{
-			
-			$stmt->bind_param('sssssssssssssssssssssssssssssssss',
-		         	$cshort,$cfull,$fname,$mname,$lname,$gender,$gname,$ocp,$income,$category,$ph,$nation,$mobno,
-					$email,$country,$state,$city,$padd,$cadd,$board1,$board2,$roll1,$roll2,$pyear1,$pyear2,
-					$sub1,$sub2,$marks1,$marks2,$fmarks1,$fmarks2,$session,$reg);
-			$stmt->execute();
-		   	echo "<script>alert('Successfully Registered , your registration number is $reg')</script>";
-		 	//header('location:login.php');
-				
-		  }
-				
 
 
-       }
-
-
-function edit_course($cshort,$cfull,$udate,$id){
+function edit_student($cshort,$cfull,$udate,$id){
 
     $db = Database::getInstance();
 	$mysqli = $db->getConnection();
@@ -285,7 +254,7 @@ function edit_course($cshort,$cfull,$udate,$id){
 }
 
 
-function edit_subject($sub1,$sub2,$sub3,$udate,$id){
+function edit_teacher($sub1,$sub2,$sub3,$udate,$id){
 
     $db = Database::getInstance();
 	$mysqli = $db->getConnection();
@@ -339,7 +308,7 @@ function edit_std($cshort,$cfull,$fname,$mname,$lname,$gender,$gname,$ocp,$incom
 }
 
 
-function del_course($id){
+function del_teacher($id){
 
    //  echo $id;exit;
     $db = Database::getInstance();
@@ -352,7 +321,7 @@ function del_course($id){
     echo "<script>window.location.href='view-course.php'</script>";
 }
 
-function del_std($id){
+function del_student($id){
 
    $db = Database::getInstance();
     $mysqli = $db->getConnection();

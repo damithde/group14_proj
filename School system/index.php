@@ -1,3 +1,4 @@
+<html>
 <head>
     <meta charset="UTF-8">
     <title>Futura| Log in</title>
@@ -10,7 +11,12 @@
     <link href="dist/css/AdminLTE.min.css" rel="stylesheet" type="text/css" />
     <!-- iCheck -->
     <link href="plugins/iCheck/square/blue.css" rel="stylesheet" type="text/css" />
-
+    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-database.js"></script>
+    <script src="db.js"></script>
+    <script src="login.js"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -24,14 +30,19 @@
         <a href="../../index2.html"><b>W</b>elcome</a>
     </div><!-- /.login-logo -->
     <div class="login-box-body">
+<<<<<<< HEAD
         <p class="login-box-msg">Sign in to start your session right now</p>
         <form action="index.php" method="post">
+=======
+        <p class="login-box-msg">Sign in to start your session</p>
+        
+>>>>>>> 1204f58772325c25b2a1f0d1db0345a8e41a9f1d
             <div class="form-group has-feedback">
-                <input type="text" class="form-control" name="emailTxt" placeholder="Email"/>
+                <input id="uname" type="text" class="form-control" name="uname" placeholder="Email"/>
                 <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
             </div>
             <div class="form-group has-feedback">
-                <input type="password" class="form-control" name="passwordTxt" placeholder="Password"/>
+                <input id="pass" type="password" class="form-control" name="pass" placeholder="Password"/>
                 <span class="glyphicon glyphicon-lock form-control-feedback"></span>
             </div>
             <div class="row">
@@ -43,36 +54,15 @@
                     </div>
                 </div><!-- /.col -->
                 <div class="col-xs-4">
-                    <button type="submit" name="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
+                    <button id="signout" onclick="logout()"  class="btn btn-primary btn-block btn-flat">Sign out</button>
+                </div><!-- /.col -->
+                <div class="col-xs-4">
+                    <button id="sign" onclick="login()" type="submit"  class="btn btn-primary btn-block btn-flat">Sign In</button>
                 </div><!-- /.col -->
             </div>
-        </form>
-
-
-
+        
 <!--        test action for demo version-->
-        <?php
-            //include 'db/Database.php';
-            //$db=Database();
-            if(isset($_POST['submit'])){
-                $username=$_POST['emailTxt'];
-                $passowrd=$_POST['passwordTxt'];
-
-                if($username=="admin"){
-                    header("Location:pages/adminforms/admindashboard.php");
-
-                }else if($username=="teacher"){
-                    header("Location:pages/teacherforms/teacherdashboard.php");
-
-                }else if($username=="student"){
-                    header("Location:pages/studentforms/studentdashboard.php");
-
-                }else{
-                    echo "<script type='text/javascript'>alert('Wrong Details!')</script>";
-                }
-
-            }
-        ?>
+        
 <!--        end test for demo-->
 
 
@@ -93,4 +83,26 @@
             increaseArea: '20%' // optional
         });
     });
+
+    
 </script>
+
+
+
+<script>
+
+firebase.auth().onAuthStateChanged(function(user) {
+  if (user) {
+    alert('logged in');
+    getuserdata();
+    
+  } else {
+  }
+
+});
+
+
+    
+</script>
+
+</html>
