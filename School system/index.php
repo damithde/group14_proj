@@ -24,7 +24,7 @@
         <a href="../../index2.html"><b>W</b>elcome</a>
     </div><!-- /.login-logo -->
     <div class="login-box-body">
-        <p class="login-box-msg">Sign in to start your session</p>
+        <p class="login-box-msg">Sign in to start your session right now</p>
         <form action="index.php" method="post">
             <div class="form-group has-feedback">
                 <input type="text" class="form-control" name="emailTxt" placeholder="Email"/>
