@@ -48,7 +48,15 @@
             </li>
 
             <li><a href="../eventcalendar.php"><i class="fa fa-clock-o"></i> <span>Time Table</span></a></li>
-            <li><a href="../eventcalendar.php"><i class="fa fa-certificate"></i> <span>Certificates</span></a></li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-certificate"></i> <span>Certificate</span> <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <ul class="treeview-menu">
+                    <li class="active"><a href="../certificatemanage/certificate.php"><i class="fa fa-folder-open-o"></i> New Certificate</a></li>
+                    <li><a href="../certificatemanage/viewissuedcertificate.php"><i class="fa fa-folder-open-o"></i> View issue certificate</a></li>
+                </ul>
+            </li>
             <li><a href="../messagebox/messagebox.php"><i class="fa fa-envelope-o"></i> <span></span>Messege</span></a></li>
             <li><a href="attendance.php"><i class="fa fa-edit"></i> <span>Attendance</span></a></li>
         </ul>

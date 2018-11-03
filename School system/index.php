@@ -30,8 +30,13 @@
         <a href="../../index2.html"><b>W</b>elcome</a>
     </div><!-- /.login-logo -->
     <div class="login-box-body">
+<<<<<<< HEAD
+        <p class="login-box-msg">Sign in to start your session right now</p>
+        <form action="index.php" method="post">
+=======
         <p class="login-box-msg">Sign in to start your session</p>
         
+>>>>>>> 1204f58772325c25b2a1f0d1db0345a8e41a9f1d
             <div class="form-group has-feedback">
                 <input id="uname" type="text" class="form-control" name="uname" placeholder="Email"/>
                 <span class="glyphicon glyphicon-envelope form-control-feedback"></span>

@@ -16,7 +16,7 @@
                                 <!--                        event-->
                                 <div class="small-box bg-aqua">
                                     <div class="inner">
-                                        <h1> No of Students <sup style="font-size: 80px"></sup></h1>
+                                        <h1> No of Student <sup style="font-size: 80px"></sup></h1>
                                         <p><h3>1345</h3></p>
                                     </div>
                                 </div>

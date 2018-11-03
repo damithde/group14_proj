@@ -1,7 +1,7 @@
-<?php include_once('messageboxhead.php'); ?>
-<?php include_once('messageboxheader.php'); ?>
-<?php include_once('messageboxsidebar.php'); ?>
-<?php include_once('calendarscript.php'); ?>
+<?php include_once('certificatehead.php'); ?>
+<?php include_once('certificateheader.php'); ?>
+<?php include_once('certificatesidebar.php'); ?>
+
 <section class="content-wrapper">
     <section class="content-header">
 <!--        main row-->
@@ -11,7 +11,7 @@
 <!--                guardian details-->
                 <div class="box box-primary">
                     <div class="box-header  with-border">
-                        <h3 class="box-title">Message </h3>
+                        <h3 class="box-title">Certificate Details</h3>
                     </div><!-- /.box-header -->
                     <!-- form start -->
                     <form role="form">
@@ -21,14 +21,15 @@
                                 <input type="email" class="form-control" id="parentNameTxt" placeholder="Enter Student Id">
                             </div>
                             <div class="form-group">
-                                <label for="exampleInputEmail1">Student Name:</label>
-                                <input type="email" class="form-control" id="parentNameTxt" placeholder="Enter Studenr Name">
+                                <label for="exampleInputEmail1">Full Name:</label>
+                                <input type="email" class="form-control" id="parentNameTxt" placeholder="Enter Full Name">
                             </div>
                             <div class="form-group">
-                                <label for="exampleInputEmail1">Message:</label>
-                                <textarea class="form-control" id="motherAddressTxt" rows="3" placeholder="Enter messege here"></textarea>
+                                <label for="exampleInputEmail1">Discription:</label>
+                                <textarea class="form-control" id="motherAddressTxt" rows="3" placeholder="Enter Discription"></textarea>
                             </div>
                             <div class="box-footer">
+                                <button type="submit" class="btn btn-primary">Add certificate</button>
                                 <button type="submit" class="btn btn-primary">Send</button>
                             </div>
 
@@ -40,3 +41,6 @@
         </div>
     </section>
 </section>
+
+
+<?php include_once('certificatescript.php'); ?>
