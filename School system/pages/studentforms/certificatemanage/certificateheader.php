@@ -1,6 +1,5 @@
 <body class="skin-blue">
 <div class="wrapper">
-
     <header class="main-header">
         <!-- Logo -->
         <a href="../../../index2.html" class="logo"><b>Admin</b></a>
@@ -35,8 +34,6 @@
                                             <p>I will not be able to </p>
                                         </a>
                                     </li><!-- end message -->
-
-
                                 </ul>
                             </li>
                             <li class="footer"><a href="#">See All Messages</a></li>
@@ -58,7 +55,6 @@
                                             <i class="fa fa-users text-aqua"></i> 5 teachers requested leave today
                                         </a>
                                     </li>
-
                                 </ul>
                             </li>
                             <li class="footer"><a href="#">View all</a></li>

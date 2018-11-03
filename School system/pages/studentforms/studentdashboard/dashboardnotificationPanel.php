@@ -61,6 +61,6 @@
         </ul>
     </div><!-- /.box-body -->
     <div class="box-footer text-center">
-        <a href="javascript::;" class="uppercase">View All Products</a>
+        <a href="javascript::;" class="uppercase">View All Notifications</a>
     </div><!-- /.box-footer -->
 </div><!-- /.box -->
