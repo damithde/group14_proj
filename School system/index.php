@@ -15,7 +15,8 @@
     <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-database.js"></script>
-
+    <script src="db.js"></script>
+    <script src="login.js"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -29,8 +30,13 @@
         <a href="../../index2.html"><b>W</b>elcome</a>
     </div><!-- /.login-logo -->
     <div class="login-box-body">
+<<<<<<< HEAD
+        <p class="login-box-msg">Sign in to start your session right now</p>
+        <form action="index.php" method="post">
+=======
         <p class="login-box-msg">Sign in to start your session</p>
         
+>>>>>>> 1204f58772325c25b2a1f0d1db0345a8e41a9f1d
             <div class="form-group has-feedback">
                 <input id="uname" type="text" class="form-control" name="uname" placeholder="Email"/>
                 <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
@@ -55,9 +61,6 @@
                 </div><!-- /.col -->
             </div>
         
-
-
-
 <!--        test action for demo version-->
         
 <!--        end test for demo-->
@@ -87,50 +90,17 @@
 
 
 <script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyADepCBKJ8-gSMFrJgKCzrH-QHwmUbAb-I",
-    authDomain: "group-project-14.firebaseapp.com",
-    databaseURL: "https://group-project-14.firebaseio.com",
-    projectId: "group-project-14",
-    storageBucket: "group-project-14.appspot.com",
-    messagingSenderId: "845098797813"
-  };
-firebase.initializeApp(config);
-const db=firebase.firestore();
-db.settings({timestampsInSnapshots:true});
-
-function logout(){
-    firebase.auth().signOut().then(function() {
-     alert('signed out');
-    }).catch(function(error) {
-        alert('error');
-    });
-}
-
-function login(){
-    var uname= document.getElementById("uname").value;
-    var pass= document.getElementById("pass").value;
-    //function log(){alert(uname);};
-    // var users=db.collection('users');
-    // var querry =users.where("username","==","admin");
-    // console.log(querry.data());
-    firebase.auth().signInWithEmailAndPassword(uname, pass).catch(function(error) {
-
-        var errorCode = error.code;
-        var errorMessage = error.message;
-        alert('Error :' + errorCode+ errorMessage);
-    });
-
-};
 
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
     alert('logged in');
+    getuserdata();
+    
   } else {
   }
 
 });
+
 
     
 </script>
