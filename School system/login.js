@@ -75,8 +75,6 @@ function createuser(email,password){
         // ...
       });
 
-
-
 }
 
 function verifyemail(){
