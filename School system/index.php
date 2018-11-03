@@ -49,6 +49,9 @@
                     </div>
                 </div><!-- /.col -->
                 <div class="col-xs-4">
+                    <button id="test" onclick="addstudent1()"  class="btn btn-primary btn-block btn-flat">test</button>
+                </div><!-- /.col -->
+                <div class="col-xs-4">
                     <button id="signout" onclick="logout()"  class="btn btn-primary btn-block btn-flat">Sign out</button>
                 </div><!-- /.col -->
                 <div class="col-xs-4">
@@ -83,13 +86,27 @@
 </script>
 
 
-
+<script src="student.js"></script>
 <script>
+
+function addstudent1(){
+    var student=["2016cs027"];
+    var parent={id:"000", name:"hello"};
+    getstudents();
+}
+
 
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
-    alert('logged in');
-    getuserdata();
+      var loguser=firebase.auth().currentUser;
+      if (loguser.emailVerified==true){
+        alert('logged in');
+        getuserdata();// return a value based on that dirrect to user specific page
+        //pages
+      }
+      else{
+          alert('please veryfy ur email before logining in');
+      }
     
   } else {
   }
