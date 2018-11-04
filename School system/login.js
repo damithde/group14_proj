@@ -1,9 +1,4 @@
 
-var uname= document.getElementById("uname");
-var pass= document.getElementById("pass");
-
-// var users=db.collection('users');
-
 function logout(){
     firebase.auth().signOut().then(function() {
      alert('signed out');
@@ -64,4 +59,30 @@ function getuserdata(){
     //     <?php ?>
     // }
 
+}
+
+function createuser(email,password){
+    firebase.auth().createUserWithEmailAndPassword(email, password).then(function(){
+        var stat=verifyemail();        
+
+    })
+    
+    
+    .catch(function(error) {
+        // Handle Errors here.
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        // ...
+      });
+
+}
+
+function verifyemail(){
+    var user = firebase.auth().currentUser;
+
+    user.sendEmailVerification().then(function() {
+      return true;
+    }).catch(function(error) {
+      return false;
+    });
 }
