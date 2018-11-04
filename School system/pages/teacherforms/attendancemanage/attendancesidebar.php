@@ -25,6 +25,7 @@
             <li>
                 <a href="#">
                     <i class="fa fa-users"></i> <span>send Notice</span> <i class="fa fa-angle-left pull-right"></i>
+                    <i class="fa fa-users"></i> <span>Send Notification</span> <i class="fa fa-angle-left pull-right"></i>
                 </a>
 
             </li>
