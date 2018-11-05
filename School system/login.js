@@ -69,7 +69,7 @@ function createuser(email,password){
     
     
     .catch(function(error) {
-        // Handle Errors here.
+        alert('Error occured');
         var errorCode = error.code;
         var errorMessage = error.message;
         // ...
