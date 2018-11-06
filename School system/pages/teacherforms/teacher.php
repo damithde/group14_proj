@@ -18,7 +18,7 @@
             <form role="form">
                 <div class="box-body">
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Teacher Name:</label>
+                        <label for="exampleInputEmail1">Teacher Names:</label>
                         <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Name">
                     </div>
                     <div class="form-group">
