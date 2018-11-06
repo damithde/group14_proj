@@ -1,7 +1,7 @@
-<?php include_once('teacherhead.php'); ?>
-<?php include_once('teacherheader.php'); ?>
-<?php include_once('teachersidebar.php'); ?>
-<?php include_once('teacherscript.php'); ?>
+<?php include_once('../admincommon/head.php'); ?>
+<?php include_once('../admincommon/header.php'); ?>
+<?php include_once('../admincommon/sidebar.php'); ?>
+<?php include_once('../admincommon/script.php'); ?>
 
 <section class="content-wrapper">
     <section class="content-header">
@@ -149,5 +149,4 @@
     </section>
 </section>
 
-
-<?php include_once('calendarscript.php'); ?>
+<?php include_once('../admincommon/footer.php'); ?>

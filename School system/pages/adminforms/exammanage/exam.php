@@ -1,7 +1,7 @@
-<?php include_once('examhead.php'); ?>
-<?php include_once('examheader.php'); ?>
-<?php include_once('examsidebar.php'); ?>
-<?php //include_once('right_panel.php'); ?>
+<?php include_once('../admincommon/head.php'); ?>
+<?php include_once('../admincommon/header.php'); ?>
+<?php include_once('../admincommon/sidebar.php'); ?>
+<?php include_once('../admincommon/script.php'); ?>
 
 <body class="skin-blue">
 <div class="wrapper">
@@ -67,6 +67,6 @@
 </body>
 
 
-<?php include_once('examfooter.php'); ?>
-<?php include_once('examscript.php'); ?>
+<?php include_once('../admincommon/footer.php'); ?>
+
 

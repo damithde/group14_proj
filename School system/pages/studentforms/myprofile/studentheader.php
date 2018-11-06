@@ -2,7 +2,7 @@
 <div class="wrapper">
     <header class="main-header">
         <!-- Logo -->
-        <a href="../../../index2.html" class="logo"><b>Admin</b></a>
+        <a href="../../../index2.html" class="logo"><b>Student</b></a>
         <!-- Header Navbar: style can be found in header.less -->
         <nav class="navbar navbar-static-top" role="navigation">
             <!-- Sidebar toggle button-->
@@ -66,14 +66,14 @@
                     <li class="dropdown user user-menu">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                             <img src="../../../dist/img/s0005.png" class="user-image" alt="User Image"/>
-                            <span class="hidden-xs">Admin</span>
+                            <span class="hidden-xs">Student</span>
                         </a>
                         <ul class="dropdown-menu">
                             <!-- User image -->
                             <li class="user-header">
                                 <img src="../../../dist/img/s0005.png" class="img-circle" alt="User Image" />
                                 <p>
-                                    Admin
+                                    Student
                                     <small>School name : D.S. Senanayake</small>
                                 </p>
                             </li>

@@ -1,6 +1,7 @@
-<?php include_once('studenthead.php'); ?>
-<?php include_once('studentheader.php'); ?>
-<?php include_once('studentsidebar.php'); ?>
+<?php include_once('../admincommon/head.php'); ?>
+<?php include_once('../admincommon/header.php'); ?>
+<?php include_once('../admincommon/sidebar.php'); ?>
+<?php include_once('../admincommon/script.php'); ?>
 
 <section class="content-wrapper">
     <section class="content-header">
@@ -204,4 +205,4 @@
 </section>
 
 
-<?php include_once('studentscript.php'); ?>
+<?php include_once('../admincommon/footer.php'); ?>

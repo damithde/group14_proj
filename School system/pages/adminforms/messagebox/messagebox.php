@@ -1,7 +1,7 @@
-<?php include_once('messageboxhead.php'); ?>
-<?php include_once('messageboxheader.php'); ?>
-<?php include_once('messageboxsidebar.php'); ?>
-<?php include_once('calendarscript.php'); ?>
+<?php include_once('../admincommon/head.php'); ?>
+<?php include_once('../admincommon/header.php'); ?>
+<?php include_once('../admincommon/sidebar.php'); ?>
+<?php include_once('../admincommon/script.php'); ?>
 <section class="content-wrapper">
     <section class="content-header">
 <!--        main row-->
@@ -40,3 +40,4 @@
         </div>
     </section>
 </section>
+<?php include_once('../admincommon/footer.php'); ?>

@@ -1,6 +1,6 @@
-<?php include_once('calendarhead.php'); ?>
-<?php include_once('calendarheader.php'); ?>
-<?php include_once('calendarsidebar.php'); ?>
+<?php include_once('../admincommon/head.php'); ?>
+<?php include_once('../admincommon/header.php'); ?>
+<?php include_once('../admincommon/sidebar.php'); ?>
 <?php include_once('calendarscript.php'); ?>
 
 
@@ -80,3 +80,4 @@
     </div><!-- ./wrapper -->
   </body>
 </html>
+<?php include_once('../admincommon/footer.php'); ?>

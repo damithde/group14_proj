@@ -1,14 +1,11 @@
-<?php include_once('teacherhead.php'); ?>
-<?php include_once('teacherheader.php'); ?>
-<?php include_once('teachersidebar.php'); ?>
-<?php include_once('teacherscript.php'); ?>
+<?php include_once('../admincommon/head.php'); ?>
+<?php include_once('../admincommon/header.php'); ?>
+<?php include_once('../admincommon/sidebar.php'); ?>
+<?php include_once('../admincommon/script.php'); ?>
 
 <section class="content-wrapper">
     <section class="content-header">
         <div class="row">
-
-
-
             <!--            left side panel-->
             <div class="col-md-6">
                 <!--                student details-->
@@ -133,19 +130,13 @@
                     </form>
                 </div><!-- /.box -->
             </div>
-
-
-
-
             <!--            right side panel-->
             <div class="col-md-6 ">
 
 
             </div>
-
-
-
         </div>
     </section>
 </section>
 
+<?php include_once('../admincommon/footer.php'); ?>

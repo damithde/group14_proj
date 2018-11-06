@@ -1,7 +1,7 @@
-<?php include_once('certificatehead.php'); ?>
-<?php include_once('certificateheader.php'); ?>
-<?php include_once('certificatesidebar.php'); ?>
-<?php include_once('certificatescript.php'); ?>
+<?php include_once('../admincommon/head.php'); ?>
+<?php include_once('../admincommon/header.php'); ?>
+<?php include_once('../admincommon/sidebar.php'); ?>
+<?php include_once('../admincommon/script.php'); ?>
 
 <section class="content-wrapper">
     <section class="content-header">
@@ -84,3 +84,4 @@
     </section>
 </section>
 
+<?php include_once('../admincommon/footer.php'); ?>

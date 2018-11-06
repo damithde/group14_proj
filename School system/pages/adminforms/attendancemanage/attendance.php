@@ -1,7 +1,7 @@
-<?php include_once('attendancehead.php'); ?>
-<?php include_once('attendanceheader.php'); ?>
-<?php include_once('attendancesidebar.php'); ?>
-<?php //include_once('right_panel.php'); ?>
+<?php include_once('../admincommon/head.php'); ?>
+<?php include_once('../admincommon/header.php'); ?>
+<?php include_once('../admincommon/sidebar.php'); ?>
+<?php include_once('../admincommon/script.php'); ?>
 
 <body class="skin-blue">
 <div class="wrapper">
@@ -182,6 +182,6 @@
 </body>
 
 
-<?php include_once('attendancefooter.php'); ?>
-<?php include_once('attendancescript.php'); ?>
+<?php include_once('../admincommon/footer.php'); ?>
+
 

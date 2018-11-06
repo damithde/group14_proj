@@ -1,7 +1,7 @@
-<?php include_once('dashboardhead.php'); ?>
-<?php include_once('dashboardheader.php'); ?>
-<?php include_once('dashboardsidebar.php'); ?>
-<?php //include_once('right_panel.php'); ?>
+<?php include_once('../admincommon/head.php'); ?>
+<?php include_once('../admincommon/header.php'); ?>
+<?php include_once('../admincommon/sidebar.php'); ?>
+<?php include_once('../admincommon/script.php'); ?>
 
 <body class="skin-blue">
 <div class="wrapper">
@@ -170,76 +170,9 @@
                                 </div><!-- ./col -->
                             </div>
 
-
-
-
-<!--                            <div class="col-md-4">-->
-<!--                                <!--                        event-->
-<!--                                <div class="small-box bg-aqua">-->
-<!--                                    <div class="inner">-->
-<!--                                        <h1> Present Students <sup style="font-size: 80px"></sup></h1>-->
-<!--                                        <p><h3>1345</h3></p>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                            <div class="col-md-4">-->
-<!--                                <div class="small-box bg-blue">-->
-<!--                                    <div class="inner">-->
-<!--                                        <h1> Present Teachers <sup style="font-size: 80px"></sup></h1>-->
-<!--                                        <p><h3>134</h3></p>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                            <div class="col-md-4">-->
-<!--                                <div class="small-box bg-light-blue">-->
-<!--                                    <div class="inner">-->
-<!--                                        <h1> Total Number of Students <sup style="font-size: 80px"></sup></h1>-->
-<!--                                        <p><h3>134</h3></p>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
                         </div>
                     </div>
                 </div>
-
-<!--                <div class="box box-primary">-->
-<!--                    <div class="box-header with-border">-->
-<!--                        <a href="pages/adminforms/student.php" class="btn btn-app">-->
-<!--                            <span class="badge bg-purple"></span>-->
-<!--                            <i class="fa fa-users"></i>Students-->
-<!--                        </a>-->
-<!---->
-<!--                        <a href="pages/adminforms/teacher.php" class="btn btn-app">-->
-<!--                            <span class="badge bg-purple"></span>-->
-<!--                            <i class="fa fa-user"></i>Teachers-->
-<!--                        </a>-->
-<!---->
-<!--                        <a class="btn btn-app">-->
-<!--                            <i class="fa fa-edit"></i> Attendance-->
-<!--                        </a>-->
-<!---->
-<!--                        <a class="btn btn-app">-->
-<!--                            <i class="fa fa-check-square-o"></i> Results-->
-<!--                        </a>-->
-<!---->
-<!--                        <a href="pages/adminforms/calendar.php" class="btn btn-app">-->
-<!--                            <i class="fa  fa-calendar"></i> Calendar-->
-<!--                        </a>-->
-<!---->
-<!--                        <a class="btn btn-app">-->
-<!--                            <span class="badge bg-yellow"></span>-->
-<!--                            <i class="fa fa-clock-o"></i> Time Table-->
-<!--                        </a>-->
-<!---->
-<!---->
-<!--                        <a class="btn btn-app">-->
-<!--                            <span class="badge bg-aqua"></span>-->
-<!--                            <i class="fa fa-certificate"></i> Certificates-->
-<!--                        </a>-->
-<!---->
-<!---->
-<!--                    </div>-->
-<!--                </div>-->
 
                 <div>
                     <?php include_once('dashboardnotificationPanel.php'); ?>
@@ -288,6 +221,5 @@
 </body>
 
 
-<?php include_once('dashboardfooter.php'); ?>
-<?php include_once('dashboardscript.php'); ?>
+<?php include_once('../admincommon/footer.php'); ?>
 
