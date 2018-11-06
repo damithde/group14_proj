@@ -1,20 +1,33 @@
 function addteacher(teacher){
     db.collection("teachers").add({
-        regno: student[0],
-        Fname: student[1],
-        Lname: student[2],
-        country: student[3],
-        contact: student[4],
-        dob: student[5],
-        nationality: student[6],
-        religion: student[7],
-        school: student[8],
-        grade: student[9],
-        class: student[10],
+        regno: teacher[0],
+        Fname: teacher[1],
+        Lname: teacher[2],
+        country: teacher[3],
+        contact: teacher[4],
+        dob: teacher[5],
+        nationality: teacher[6],
+        religion: teacher[7],
+        school: teacher[8],
+        grade: teacher[9],
+        class: teacher[10],
 
     })
     .then(function(docRef) {
-        db.collection("schools").doc(student[8]).collection("class").doc(student[10])
+        db.collection("schools").doc(teacher[8]).collection("class").doc(teacher[10]).add({
+            regno: teacher[0],
+            Fname: teacher[1],
+            Lname: teacher[2],
+            country: teacher[3],
+            contact: teacher[4],
+            dob: teacher[5],
+            nationality: teacher[6],
+            religion: teacher[7],
+            school: teacher[8],
+            grade: teacher[9],
+            class: teacher[10],
+    
+        })
         console.log("Document written with ID: ", docRef.id);
     })
     .catch(function(error) {
@@ -22,7 +35,6 @@ function addteacher(teacher){
     });
 }
 
-   
 
 function getteachers(){
     db.collection("teachers")
@@ -39,20 +51,36 @@ function getteachers(){
 
 }
 
+function searchteacher(id){
+    db.collection("teachers").where("Fname", "==", id)
+    .get()
+    .then(function(querySnapshot) {
+        querySnapshot.forEach(function(doc) {
+            // doc.data() is never undefined for query doc snapshots
+            console.log(doc.id, " => ", doc.data());
+        });
+    })
+    .catch(function(error) {
+        alert('teacher not found');
+        console.log("Error getting documents: ", error);
+    });
+
+}
+
 
 function updateteacher(id,teacher){
-    db.collection("students").doc(id).update({
-        "regno": student[0],
-        "Fname": student[1],
-        "Lname": student[2],
-        "country": student[3],
-        "contact": student[4],
-        "dob": student[5],
-        "nationality": student[6],
-        "religion": student[7],
-        "school": student[8],
-        "grade": student[9],
-        "class": student[10],
+    db.collection("teachers").doc(id).update({
+        "regno": teacher[0],
+        "Fname": teacher[1],
+        "Lname": teacher[2],
+        "country": teacher[3],
+        "contact": teacher[4],
+        "dob": teacher[5],
+        "nationality": teacher[6],
+        "religion": teacher[7],
+        "school": teacher[8],
+        "grade": teacher[9],
+        "class": teacher[10],
         "parent": parent
     })
     .then(function() {

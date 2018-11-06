@@ -9,6 +9,7 @@ function logout(){
 
 
 function login(){
+    
     var uname= document.getElementById("uname").value;
     var pass= document.getElementById("pass").value;
     //function log(){alert(uname);};
@@ -21,7 +22,6 @@ function login(){
         var errorMessage = error.message;
         alert('Error :' + errorCode+ errorMessage);
     });
-
 };
 
 
@@ -62,12 +62,15 @@ function getuserdata(){
 }
 
 function createuser(email,password){
+    //verifty account details
+
     firebase.auth().createUserWithEmailAndPassword(email, password).then(function(){
-        var stat=verifyemail();        
+        var stat=verifyemail();   
+        alert('Account created sucessfully, Please check your confirm your email by checking your mail');
+        var user = firebase.auth().currentUser;
+        var token=user.getToken();
 
     })
-    
-    
     .catch(function(error) {
         alert('Error occured');
         var errorCode = error.code;
@@ -79,8 +82,8 @@ function createuser(email,password){
 
 function verifyemail(){
     var user = firebase.auth().currentUser;
-
     user.sendEmailVerification().then(function() {
+        
       return true;
     }).catch(function(error) {
       return false;

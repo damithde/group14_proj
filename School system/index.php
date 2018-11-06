@@ -27,16 +27,11 @@
 <body class="login-page">
 <div class="login-box">
     <div class="login-logo">
-        <a href="../../index2.html"><b>W</b>elcome</a>
+        <a href="../../index.php"><b>W</b>elcome</a>
     </div><!-- /.login-logo -->
     <div class="login-box-body">
-<<<<<<< HEAD
-        <p class="login-box-msg">Sign in to start your session right now</p>
-        <form action="index.php" method="post">
-=======
         <p class="login-box-msg">Sign in to start your session</p>
         
->>>>>>> 1204f58772325c25b2a1f0d1db0345a8e41a9f1d
             <div class="form-group has-feedback">
                 <input id="uname" type="text" class="form-control" name="uname" placeholder="Email"/>
                 <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
@@ -90,17 +85,23 @@
     
 </script>
 
-
 <script src="student.js"></script>
-<script>
+
+<script >
 
 function addstudent1(){
-    var student=["2016cs027"];
+    var student=["2016cs027","aa","aa","aa","aa","aaa","aa","aa","aa","aa","aa"];
     var parent={id:"000", name:"hello"};
-    getstudents();
+    var email="dd@gmail.com";
+    var pass="123456";
+    addstudent(student,parent);
+    
 }
 
 
+document.getElementById("sign").addEventListener("click",checking);
+
+function checking(){
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
       var loguser=firebase.auth().currentUser;
@@ -110,14 +111,14 @@ firebase.auth().onAuthStateChanged(function(user) {
         //pages
       }
       else{
-          alert('please veryfy ur email before logining in');
+          alert('please verify ur email before logining in');
       }
     
   } else {
   }
 
 });
-
+}
 
     
 </script>
