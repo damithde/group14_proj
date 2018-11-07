@@ -107,7 +107,7 @@ firebase.auth().onAuthStateChanged(function(user) {
       var loguser=firebase.auth().currentUser;
       if (loguser.emailVerified==false){
         alert('logged in');
-        getuserdata();// return a value based on that dirrect to user specific page
+        getuserdata();//  a value based on that dirrect to user specific page
       }
       else{
           alert('please verify ur email before logining in');
