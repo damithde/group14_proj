@@ -7,7 +7,7 @@
                 <img src="../../../dist/img/s0005.png" class="img-circle" alt="User Image" />
             </div>
             <div class="pull-left info">
-                <p>student</p>
+                <p>Y.D.K.Medis</p>
 
                 <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
             </div>
@@ -20,9 +20,9 @@
 
             <li><a  href="../myprogress/viewprogress.php"><i class="fa fa-home"></i> <span>My Progress</span> </a></li>
 
-            <li><a  href="studentdashboard.php"><i class="fa fa-certificate"></i> <span>Request Certificate</span> </a></li>
+            <li><a  href="../requestcertificate/certificate.php"><i class="fa fa-certificate"></i> <span>Request Certificate</span> </a></li>
 
-            <li><a  href="studentdashboard.php"><i class="fa fa-clock-o"></i> <span>Events</span> </a></li>
+            <li><a  href="../studentdashboard/studentdashboard.php"><i class="fa fa-clock-o"></i> <span>Events</span> </a></li>
         </ul>
     </section>
     <!-- /.sidebar -->

@@ -1,6 +1,7 @@
-<?php include_once('certificatehead.php'); ?>
-<?php include_once('certificateheader.php'); ?>
-<?php include_once('certificatesidebar.php'); ?>
+<?php include_once('../studentcommon/head.php'); ?>
+<?php include_once('../studentcommon/header.php'); ?>
+<?php include_once('../studentcommon/sidebar.php'); ?>
+<?php include_once('../studentcommon/script.php'); ?>
 
 <section class="content-wrapper">
     <section class="content-header">
@@ -29,8 +30,7 @@
                                 <textarea class="form-control" id="motherAddressTxt" rows="3" placeholder="Enter Discription"></textarea>
                             </div>
                             <div class="box-footer">
-                                <button type="submit" class="btn btn-primary">Add certificate</button>
-                                <button type="submit" class="btn btn-primary">Send</button>
+                                <button type="submit" class="btn btn-primary">Request Certificate</button>
                             </div>
 
                     </form>
@@ -43,4 +43,4 @@
 </section>
 
 
-<?php include_once('certificatescript.php'); ?>
+<?php include_once('../studentcommon/footer.php'); ?>

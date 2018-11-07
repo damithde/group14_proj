@@ -1,7 +1,7 @@
-<?php include_once('dashboardhead.php'); ?>
-<?php include_once('dashboardheader.php'); ?>
-<?php include_once('dashboardsidebar.php'); ?>
-<?php //include_once('right_panel.php'); ?>
+<?php include_once('../studentcommon/head.php'); ?>
+<?php include_once('../studentcommon/header.php'); ?>
+<?php include_once('../studentcommon/sidebar.php'); ?>
+<?php include_once('../studentcommon/script.php'); ?>
 
 <body class="skin-blue">
 <div class="wrapper">
@@ -29,6 +29,6 @@
 </body>
 
 
-<?php include_once('dashboardfooter.php'); ?>
-<?php include_once('dashboardscript.php'); ?>
+<?php include_once('../studentcommon/footer.php'); ?>
+
 

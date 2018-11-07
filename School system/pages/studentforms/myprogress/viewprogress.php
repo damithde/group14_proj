@@ -1,15 +1,13 @@
-<?php include_once('studenthead.php'); ?>
-<?php include_once('studentheader.php'); ?>
-<?php include_once('myprogresssidebar.php'); ?>
-<?php include_once('studentscript.php'); ?>
+<?php include_once('../studentcommon/head.php'); ?>
+<?php include_once('../studentcommon/header.php'); ?>
+<?php include_once('../studentcommon/sidebar.php'); ?>
+<?php include_once('../studentcommon/script.php'); ?>
 
 <section class="content-wrapper">
     <section class="content-header">
-
-
-<!--            left side panel-->
+            <!--            left side panel-->
             <div class="col-md-9">
-<!--                student details-->
+            <!--                student details-->
                 <div class="box box-primary">
                     <div class="box-header with-border">
                         <h3 class="box-title">Class Teacher's Note</h3>
@@ -43,7 +41,7 @@
             </div>
 
             <div class="col-md-3">
-<!--                student details-->
+            <!--                student details-->
                 <div class="box box-primary">
                     <div class="box-header with-border">
                         <h3 class="box-title">Your Possition</h3>
@@ -52,25 +50,17 @@
                     <!-- form start -->
                     <form role="form">
                         <div class="box-body">
-                        
-                        <label class="text-muted" for="exampleInputEmail1"> 
-                        
-                        <h1>45</h1>
-
-                        
-                        
-                        </label>
-                        
-                        
+                            <label> 
+                                <!-- class possition -->
+                                <h1>45</h1>
+                            </label>
                         </div><!-- /.box-body -->
                         <div class="box-footer">
+                        <!--  -->
                         </div>
                     </form>
                 </div><!-- /.box -->
             </div>
-
-
-
 
         <div class="col-md-12">
             <!--                Exam results-->
@@ -130,23 +120,9 @@
                         </table>
                     </div><!-- /.table-responsive -->
                 </div><!-- /.box-body -->
-                <div class="box-footer clearfix">
-                    <a href="javascript::;" class="btn btn-sm btn-default btn-flat pull-right">View All Exams</a>
-                </div><!-- /.box-footer -->
             </div><!-- /.box -->
 
         </div>
-
-
-
-    </section>
-
-
-    <section >
-
-        
-
-            
     </section>
 </section>
-
+<?php include_once('../studentcommon/footer.php'); ?>

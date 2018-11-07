@@ -1,37 +1,21 @@
-<?php include_once('studenthead.php'); ?>
-<?php include_once('studentheader.php'); ?>
-<?php include_once('myprofilesidebar.php'); ?>
-<?php include_once('studentscript.php'); ?>
+<?php include_once('../studentcommon/head.php'); ?>
+<?php include_once('../studentcommon/header.php'); ?>
+<?php include_once('../studentcommon/sidebar.php'); ?>
+<?php include_once('../studentcommon/script.php'); ?>
 
 <section class="content-wrapper">
     <section class="content-header">
         <div class="row">
 
-<!--            left side panel-->
+            <!--            left side panel-->
             <div class="col-md-12">
-<!--                student details-->
+                <!--                student details-->
                 <div class="box box-primary">
+                
                     <div class="box-header with-border">
-                        <h3 class="box-title">Student Details</h3>
+                        <h3 class="box-title">My Profile</h3>
                     </div><!-- /.box-header -->
-                    <br>
-                    <div class="row">
-                        <div class="col-md-3">
 
-                        </div>
-                        <div class="col-md-8">
-                            <!-- search form -->
-                            <form action="#" method="get" class="form-group">
-                                <div class="input-group">
-                                    <input type="text" name="q" class="form-control" placeholder="Search..."/>
-                                    <span class="input-group-btn">
-                                <button type='submit' name='search' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
-                            </span>
-                                </div>
-                            </form>
-                            <!-- /.search form -->
-                        </div>
-                    </div>
                     <!-- form start -->
                     <form role="form">
                         <div class="box-body">
@@ -39,11 +23,13 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="row">
-                                        <div class="col-md-6">
+                                        <div class="col-md-2">
+                                        </div>
+                                        <div class="col-md-4">
                                         <!-- Profile picture -->
-                                                <div class="small-box bg-blue">
-                                                    <img src="../../../dist/img/user_100x128.png" alt="User Image">
-                                                </div>
+                                            <div >
+                                                <img src="../../../dist/img/user_100x128.png" alt="User Image">
+                                            </div>
                                             <div class="form-group">
                                                 <div class="col-md-2">
                                                     <label><a href="../teachermanage/registerteacher.php"><i class="fa fa-edit"></i></a></label>
@@ -123,10 +109,6 @@
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">0717275722</label>
                                     </div>
-                                    <div class="form-group">;</div>
-                                    <div class="form-group">
-                                        <a href="javascript::;" class="btn btn-sm btn-default btn-flat pull-right">Edit details</a>
-                                    </div><!-- /.box-footer -->
                                 </div>
 
                             </div>
@@ -139,4 +121,5 @@
         </div>
     </section>
 </section>
+<?php include_once('../studentcommon/footer.php'); ?>
 
