@@ -41,23 +41,26 @@ function getuserdata(){
     .then(function(querySnapshot) {
         querySnapshot.forEach(function(doc) {
             // doc.data() is never undefined for query doc snapshots
-             type=doc.data().type;
-             console.log(type);    
+            //console.log(doc.data().type);   
+            if  ((doc.data().type)=='a'){
+                window.location.replace("pages/adminforms/admindashboard/admindashboard.php");
+                //console.log('here');
+            }
+            else if((doc.data().type)=='t'){
+                window.location.replace("pages/teacherforms/teacherdashboard/teacherdashboard.php");
+            }
+            else{
+                window.location.replace("pages/studentforms/studentdashboard/studentdashboard.php");
+            }
+            
+            //  
 
         });
     })
     .catch(function(error) {
         console.log("Error getting documents: ", error);
     });
-    // if (type=='admin'){
-    //     <?php ?>
-    // }
-    // else if (type=='teacher'){
-    //     <?php ?>
-    // }
-    // else{
-    //     <?php ?>
-    // }
+    
 
 }
 
@@ -68,7 +71,7 @@ function createuser(email,password){
         var stat=verifyemail();   
         alert('Account created sucessfully, Please check your confirm your email by checking your mail');
         var user = firebase.auth().currentUser;
-        var token=user.getToken();
+        var token=user.getToken();//put this token in the user doc and relavent doc
 
     })
     .catch(function(error) {

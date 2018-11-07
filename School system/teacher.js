@@ -1,5 +1,5 @@
 function addteacher(teacher){
-    db.collection("teachers").add({
+    db.collection("teachers").doc(teacher[0]).set({
         regno: teacher[0],
         Fname: teacher[1],
         Lname: teacher[2],
@@ -14,7 +14,7 @@ function addteacher(teacher){
 
     })
     .then(function(docRef) {
-        db.collection("schools").doc(teacher[8]).collection("class").doc(teacher[10]).add({
+        db.collection("schools").doc(teacher[8]).collection("classes").doc(teacher[10]).collection("teachers").doc(teacher[0]).set({
             regno: teacher[0],
             Fname: teacher[1],
             Lname: teacher[2],
@@ -28,7 +28,7 @@ function addteacher(teacher){
             class: teacher[10],
     
         })
-        console.log("Document written with ID: ", docRef.id);
+     //   console.log("Document written with ID: ", docRef.id);
     })
     .catch(function(error) {
         console.error("Error adding document: ", error);
@@ -84,6 +84,21 @@ function updateteacher(id,teacher){
         "parent": parent
     })
     .then(function() {
+        db.collection("schools").doc(teacher[8]).collection("classes").doc(teacher[10]).collection("teachers").update({
+            regno: teacher[0],
+            Fname: teacher[1],
+            Lname: teacher[2],
+            country: teacher[3],
+            contact: teacher[4],
+            dob: teacher[5],
+            nationality: teacher[6],
+            religion: teacher[7],
+            school: teacher[8],
+            grade: teacher[9],
+            class: teacher[10],
+    
+        })        
+
         console.log("Document successfully updated!");
     }); 
 
