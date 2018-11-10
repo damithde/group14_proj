@@ -24,24 +24,23 @@
             </li>
             <li>
                 <a href="#">
-                    <i class="fa fa-users"></i> <span>Send Notification</span> <i class="fa fa-angle-left pull-right"></i>
+                    <i class="fa fa-users"></i> <span>Send Notice</span> <i class="fa fa-angle-left pull-right"></i>
                 </a>
 
             </li>
-
-
-                <ul class="treeview-menu">
-                    <li class="active"><a href="../exammanage/exam.php"><i class="fa fa-folder-open-o"></i> View Results</a></li>
-                    <li><a href="../teachermanage/viewteacher.php"><i class="fa fa-folder-open-o"></i> Manage Results</a></li>
-                </ul>
-            </li>
-
-
-
+            <li>
+                <a  href="teacherdashboard.php"><i class="fa fa-certificate"></i> <span>View Class Performance</span> </a></li>
+            </a>
 
             </li>
 
-            <li><a href="attendance.php"><i class="fa fa-edit"></i> <span>Attendance</span></a></li>
+
+
+
+
+            </li>
+
+
         </ul>
     </section>
     <!-- /.sidebar -->

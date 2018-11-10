@@ -20,9 +20,15 @@
 
             <li><a  href="../myprogress/viewprogress.php"><i class="fa fa-home"></i> <span>send notice</span> </a></li>
 
-            <li><a  href="teacherdashboard.php"><i class="fa fa-certificate"></i> <span>View Results</span> </a></li>
+            <li><a  href="teacherdashboard.php"><i class="fa fa-certificate"></i> <span>View Class Performance</span> </a></li>
+
+            <li><a  href="teacherdashboard.php"><i class="fa fa-certificate"></i> <span>student</span> </a></li>
+            </a>
+
+            </li>
 
 
+           
         </ul>
     </section>
     <!-- /.sidebar -->

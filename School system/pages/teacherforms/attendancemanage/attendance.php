@@ -81,8 +81,8 @@
                             <td><span class="label label-warning">75%</span></td>
                         </tr>
                         <tr>
-                            <td><a href="pages/examples/invoice.html">16000897</a></td>
-                            <td>Y.D.K.Medis</td>
+                            <td><a href="pages/examples/invoice.html">16000895</a></td>
+                            <td>Y.Anjali Perera</td>
                             <td>
                                 <label>
                                     <div class="icheckbox_flat-green checked" aria-checked="false" aria-disabled="false" style="position: relative;"><input type="checkbox" class="flat-red" checked="" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
