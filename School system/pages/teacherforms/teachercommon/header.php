@@ -1,9 +1,8 @@
 <body class="skin-blue">
 <div class="wrapper">
-
     <header class="main-header">
         <!-- Logo -->
-        <a href="../../../index2.html" class="logo"><b>Teacher</b></a>
+        <a href="../../../index2.html" class="logo"><b>Student</b></a>
         <!-- Header Navbar: style can be found in header.less -->
         <nav class="navbar navbar-static-top" role="navigation">
             <!-- Sidebar toggle button-->
@@ -35,8 +34,6 @@
                                             <p>I will not be able to </p>
                                         </a>
                                     </li><!-- end message -->
-
-
                                 </ul>
                             </li>
                             <li class="footer"><a href="#">See All Messages</a></li>
@@ -58,7 +55,6 @@
                                             <i class="fa fa-users text-aqua"></i> 5 teachers requested leave today
                                         </a>
                                     </li>
-
                                 </ul>
                             </li>
                             <li class="footer"><a href="#">View all</a></li>
@@ -70,7 +66,7 @@
                     <li class="dropdown user user-menu">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                             <img src="../../../dist/img/s0005.png" class="user-image" alt="User Image"/>
-                            <span class="hidden-xs">Admin</span>
+                            <span class="hidden-xs">Y.D.K.Medis</span>
                         </a>
                         <ul class="dropdown-menu">
                             <!-- User image -->

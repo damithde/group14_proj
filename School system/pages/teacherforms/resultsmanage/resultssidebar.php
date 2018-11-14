@@ -17,7 +17,7 @@
             <li><a  href="../teacherdashboard/teacherdashboard.php"><i class="fa fa-home"></i> <span>Home</span> </a></li>
 
             <li>
-                <a href="#">
+                <a href="../attendancemanage/attendance.php">
                     <i class="fa fa-users"></i> <span>Mark Attendance</span> <i class="fa fa-angle-left pull-right"></i>
                 </a>
 
@@ -32,9 +32,9 @@
                 <a  href="../resultsmanage/results.php"><i class="fa fa-certificate"></i> <span>View Results</span> </a></li>
             </a>
 
+            <li><a  href="../reportmanage/viewreports.php"><i class="fa fa-certificate"></i> <span>View Reports</span> </a></li>
             </li>
-            <a  href="../reportmanage/viewreports.php"><i class="fa fa-certificate"></i> <span>View Reports</span> </a></li>
-            </a>
+
 
 
 
