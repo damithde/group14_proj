@@ -33,6 +33,7 @@
             </a>
 
             </li>
+            <li>
             <a  href="../reportmanage/viewreports.php"><i class="fa fa-certificate"></i> <span>View Reports</span> </a></li>
             </a>
 

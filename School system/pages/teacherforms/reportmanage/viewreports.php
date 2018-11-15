@@ -1,7 +1,7 @@
-<?php include_once('../teachercommon/head.php'); ?>
-<?php include_once('../teachercommon/header.php'); ?>
-<?php include_once('../teachercommon/sidebar.php'); ?>
-<?php include_once('../teachercommon/script.php'); ?>
+<?php include_once('reporthead.php'); ?>
+<?php include_once('reportheader.php'); ?>
+<?php include_once('reportssidebar.php'); ?>
+<?php include_once('reportscript.php'); ?>
 
 <section class="content-wrapper">
     <section class="content-header">
@@ -60,6 +60,9 @@
                                                 <label class="text-muted" >Class:</label>
                                             </div>
                                             <div class="form-group">
+                                                <label class="text-muted" >Position:</label>
+                                            </div>
+                                            <div class="form-group">
                                                 <label class="text-muted" for="exampleInputEmail1">Maths:</label>
                                             </div>
                                             <div class="form-group">
@@ -107,6 +110,10 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">11-B</label>
+
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">10</label>
 
                                     </div>
                                     <div class="form-group">
