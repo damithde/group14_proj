@@ -151,5 +151,11 @@
     </section>
 </section>
 
+<script src="student.js"></script>
+<script>
+
+
+
+</script>
 
 <?php include_once('../admincommon/footer.php'); ?>
