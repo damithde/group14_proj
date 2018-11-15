@@ -88,7 +88,6 @@
                                                 <label class="text-muted" for="exampleInputEmail1">Tamil:</label>
                                             </div>
 
-
                                         </div>
                                     </div>
                                 </div>
@@ -108,35 +107,41 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">11-B</label>
+
                                     </div>
                                     <div class="form-group">
-                                        <label for="exampleInputEmail1">A</label>
+
+                                        <td><span class="label label-success">75</span></td>
+
                                     </div>
                                     <div class="form-group">
-                                        <label for="exampleInputEmail1">A</label>
+                                        <td><span class="label label-success">62</span></td>
                                     </div>
                                     <div class="form-group">
-                                        <label>A</label>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="exampleInputEmail1">B</label>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="exampleInputEmail1">C</label>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="exampleInputEmail1">A</label>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="exampleInputEmail1">B</label>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="exampleInputEmail1">C</label>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="exampleInputEmail1">B</label>
+                                        <td><span class="label label-success">82</span></td>
                                     </div>
 
+                                    <div class="form-group">
+                                        <td><span class="label label-success">55</span></td>
+                                    </div>
+                                    <div class="form-group">
+                                        <td><span class="label label-success">70</span></td>
+                                    </div>
+                                    <div class="form-group">
+                                        <td><span class="label label-success">60</span></td>
+                                    </div>
+                                    <div class="form-group">
+                                        <td><span class="label label-success">80</span></td>
+                                    </div>
+                                    <div class="form-group">
+                                        <td><span class="label label-success">65</span></td>
+                                    </div>
+                                    <div class="form-group">
+                                        <td><span class="label label-success">60</span></td>
+                                    </div>
+                                    <div class="form-group">
+                                        <td><span class="label label-success">50</span></td>
+                                    </div>
 
                                 </div>
 
