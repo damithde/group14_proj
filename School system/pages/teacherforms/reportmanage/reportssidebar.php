@@ -23,7 +23,7 @@
 
             </li>
             <li>
-                <a href="#">
+                <a href="../techermessagebox/messagebox.php">
                     <i class="fa fa-users"></i> <span>Send Notice</span> <i class="fa fa-angle-left pull-right"></i>
                 </a>
 

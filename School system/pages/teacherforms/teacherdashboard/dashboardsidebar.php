@@ -18,7 +18,7 @@
 
             <li><a  href="../attendancemanage/attendance.php"><i class="fa fa-user"></i> <span>Mark Attendance</span> </a></li>
 
-            <li><a  href="../myprogress/viewprogress.php"><i class="fa fa-home"></i> <span>send notice</span> </a></li>
+            <li><a  href="../techermessagebox/messagebox.php"><i class="fa fa-home"></i> <span>Send notice</span> </a></li>
 
             <li><a  href="../resultsmanage/results.php."><i class="fa fa-certificate"></i> <span>View Results</span> </a></li>
             <li><a  href="../reportmanage/viewreports.php"><i class="fa fa-certificate"></i> <span>View Reports</span> </a></li>
