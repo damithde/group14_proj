@@ -37,7 +37,7 @@
                             <th>Name</th>
 
 
-                            <th>Grade</th>
+                            <th>Marks</th>
 
 
                         </tr>
@@ -47,81 +47,91 @@
                             <td><a href="pages/examples/invoice.html">16000897</a></td>
                             <td>Y.D.K.Medis</td>
 
-                            <td>A</td>
+                            <td><span class="label label-success">82</span></td>
 
                         </tr>
                         <tr>
                             <td><a href="pages/examples/invoice.html">16000898</a></td>
                             <td>Y.D.K.Madhushani</td>
 
-                            <td>B</td>
+                            <td><span class="label label-success">65</span></td>
 
                         <tr>
                             <td><a href="pages/examples/invoice.html">16000899</a></td>
                             <td>Y.D.K.Menaka</td>
+                            <td><span class="label label-success">50</span></td>
 
-                            <td>A</td>
+
 
                         <tr>
                             <td><a href="pages/examples/invoice.html">16000900</a></td>
                             <td>Y.D.K.perera</td>
 
-                            <td>C</td>
+                            <td><span class="label label-success">40</span></td>
+
 
                         <tr>
                             <td><a href="pages/examples/invoice.html">16000901</a></td>
                             <td>Y.Anjali Perera</td>
 
-                            <td>B</td>
+                            <td><span class="label label-success">65</span></td>
+
 
                         </tr>
                         <tr>
                             <td><a href="pages/examples/invoice.html">16000902</a></td>
                             <td>A.K.Thilini kumari</td>
 
-                            <td>C</td>
+                            <td><span class="label label-success">54</span></td>
+
 
                         </tr>
                         <tr>
                             <td><a href="pages/examples/invoice.html">16000903</a></td>
                             <td>D.Y.Vinodya Maheshani</td>
 
-                            <td>S</td>
+                            <td><span class="label label-success">82</span></td>
+
 
                         </tr>
                         <tr>
                             <td><a href="pages/examples/invoice.html">16000904</a></td>
                             <td>H.A.Piyumika weerasinghe</td>
 
-                            <td>A</td>
+                            <td><span class="label label-success">60</span></td>
+
 
                         </tr>
                         <tr>
                             <td><a href="pages/examples/invoice.html">16000905</a></td>
                             <td>G.P.Dilrukshi Pramodya</td>
 
-                            <td>B</td>
+                            <td><span class="label label-success">35</span></td>
+
 
                         </tr>
                         <tr>
                             <td><a href="pages/examples/invoice.html">16000906</a></td>
                             <td>Y.D.Chathura Rathnayake</td>
 
-                            <td>S</td>
+                            <td><span class="label label-success">71</span></td>
+
 
                         </tr>
                         <tr>
                             <td><a href="pages/examples/invoice.html">16000907</a></td>
                             <td>A.R.Rashmi Hansani</td>
 
-                            <td>F</td>
+                            <td><span class="label label-success">65</span></td>
+
 
                         </tr>
                         <tr>
                             <td><a href="pages/examples/invoice.html">16000908</a></td>
                             <td>A.Y.Mahesh Rathnaweera</td>
 
-                            <td>B</td>
+                            <td><span class="label label-success">58</span></td>
+
 
                         </tr>
                         </tbody>
