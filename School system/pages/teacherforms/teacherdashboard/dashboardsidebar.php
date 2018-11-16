@@ -22,7 +22,7 @@
 
             <li><a  href="../resultsmanage/results.php."><i class="fa fa-certificate"></i> <span>View Results</span> </a></li>
             <li><a  href="../reportmanage/viewreports.php"><i class="fa fa-certificate"></i> <span>View Reports</span> </a></li>
-
+            <li><a  href="../sportstumanage/sportstu.php"><i class="fa fa-certificate"></i> <span>View Sports</span> </a></li>
             </a>
 
             </li>
