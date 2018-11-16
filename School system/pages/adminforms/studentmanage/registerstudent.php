@@ -16,8 +16,8 @@
                 <form role="form">
                     <div class="box-body">
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Name:</label>
-                            <input type="email" class="form-control" id="studentNameTxt" placeholder="Enter Name">
+                            <label  >Name:</label>
+                            <input type="input" class="form-control" id="studentNameTxt" placeholder="Enter Name">
                         </div>
                         <div class="form-group">
                             <label >Gender:</label>
@@ -40,28 +40,28 @@
                             </div><!-- /.input group -->
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Religion:</label>
-                            <input type="email" class="form-control" id="studentNameTxt" placeholder="Enter Religion">
+                            <label  >Religion:</label>
+                            <input type="input" class="form-control" id="studentReligionTxt" placeholder="Enter Religion">
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Email:</label>
-                            <input type="email" class="form-control" id="addmissionNoTxt" placeholder="Enter Admission No">
+                            <label  >Email:</label>
+                            <input type="email" class="form-control" id="studentEmailTxt" placeholder="Enter Email">
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Admission No:</label>
-                            <input type="email" class="form-control" id="studentNameTxt" placeholder="Enter Nationality">
+                            <label  >Admission No:</label>
+                            <input type="input" class="form-control" id="studentAdmissionNoTxt" placeholder="Enter Admission No">
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Class:</label>
-                            <input type="email" class="form-control" id="studentNameTxt" placeholder="Enter Nationality">
+                            <label >Class:</label>
+                            <input type="input" class="form-control" id="studentClassTxt" placeholder="Enter Class">
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Section:</label>
-                            <input type="email" class="form-control" id="studentNameTxt" placeholder="Enter Nationality">
+                            <label  >Section:</label>
+                            <input type="input" class="form-control" id="studentSectionTxt" placeholder="Enter Section">
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Address:</label>
-                            <textarea class="form-control" id="addressTxt" rows="3" placeholder="Enter Address"></textarea>
+                            <label  >Address:</label>
+                            <textarea class="form-control" id="studentAddressTxt" rows="3" placeholder="Enter Address"></textarea>
                         </div>
                         <div class="form-group">
                             <label>Phone No:</label>
@@ -73,7 +73,7 @@
                             </div><!-- /.input group -->
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputFile">Select Photo</label>
+                            <label >Select Photo</label>
                             <input type="file" id="exampleInputFile">
                         </div>
                     </div><!-- /.box-body -->
@@ -109,12 +109,8 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputEmail1">First Name:</label>
-                            <input type="email" class="form-control" id="parentNameTxt" placeholder="Enter First Name">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">Last Name:</label>
-                            <input type="email" class="form-control" id="parentNameTxt" placeholder="Enter Last Name">
+                            <label  >Full Name:</label>
+                            <input type="input" class="form-control" id="parentNameTxt" placeholder="Enter Full Name">
                         </div>
                         <div class="form-group">
                             <label for="InputOccupation">Occupation:</label>
@@ -122,7 +118,7 @@
                         </div>
                         <div class="form-group">
                             <label for="InputEmail1">Email:</label>
-                            <input type="Email" class="form-control" id="email" placeholder="Enter Email">
+                            <input type="Email" class="form-control" id="parentEmail" placeholder="Enter Email">
                         </div>
                         <div class="form-group">
                             <label>Phone No:</label>
@@ -134,8 +130,8 @@
                             </div><!-- /.input group -->
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Address:</label>
-                            <textarea class="form-control" id="motherAddressTxt" rows="3" placeholder="Enter Address"></textarea>
+                            <label  >Address:</label>
+                            <textarea class="form-control" id="parentAddressTxt" rows="3" placeholder="Enter Address"></textarea>
                         </div>
 
 
@@ -153,6 +149,17 @@
 
 <script src="student.js"></script>
 <script>
+    var studentNameTxt='';
+    var studentReligionTxt
+    var studentEmailTxt
+    var studentAdmissionNoTxt
+    var studentClassTxt
+    var studentSectionTxt
+    var studentAddressTxt
+    var parentNameTxt
+    var parentOcupationTxt
+    var parentEmail
+    var parentAddressTxt
 
 
 
