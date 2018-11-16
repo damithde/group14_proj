@@ -41,7 +41,7 @@
                                     <div class="row">
                                         <div class="col-md-6">
                                         <!-- Profile picture -->
-                                                <div class="small-box bg-blue">
+                                                <div >
                                                     <img src="../../../dist/img/user_100x128.png" alt="User Image">
                                                 </div>
                                             <div class="form-group">
@@ -59,34 +59,34 @@
                                         <div class="col-md-6">
                                         <!--Lable names-->
                                             <div class="form-group">
-                                                <label class="text-muted" for="exampleInputEmail1">Name:</label>
+                                                <label class="text-muted"  >Name:</label>
                                             </div>
                                             <div class="form-group">
-                                                <label class="text-muted" for="exampleInputEmail1">Gender:</label>
+                                                <label class="text-muted"  >Gender:</label>
                                             </div>
                                             <div class="form-group">
-                                                <label class="text-muted" for="exampleInputEmail1">Date Of Birth:</label>
+                                                <label class="text-muted"  >Date Of Birth:</label>
                                             </div>
                                             <div class="form-group">
-                                                <label class="text-muted" for="exampleInputEmail1">Religion:</label>
+                                                <label class="text-muted"  >Religion:</label>
                                             </div>
                                             <div class="form-group">
                                                 <label class="text-muted" >Email:</label>
                                             </div>
                                             <div class="form-group">
-                                                <label class="text-muted" for="exampleInputEmail1">Admission Date:</label>
+                                                <label class="text-muted"  >Admission Date:</label>
                                             </div>
                                             <div class="form-group">
-                                                <label class="text-muted" for="exampleInputEmail1">Class:</label>
+                                                <label class="text-muted"  >Class:</label>
                                             </div>
                                             <div class="form-group">
-                                                <label class="text-muted" for="exampleInputEmail1">Section:</label>
+                                                <label class="text-muted"  >Section:</label>
                                             </div>
                                             <div class="form-group">
-                                                <label class="text-muted" for="exampleInputEmail1">Address:</label>
+                                                <label class="text-muted"  >Address:</label>
                                             </div>
                                             <div class="form-group">
-                                                <label class="text-muted" for="exampleInputEmail1">Phone:</label>
+                                                <label class="text-muted"  >Phone:</label>
                                             </div>
                                         </div>
                                     </div>
@@ -94,36 +94,35 @@
 
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="exampleInputEmail1">Y.Dinuka Kasun Medis</label>
+                                        <label id="studentNameLbl">Y.Dinuka Kasun Medis</label>
                                     </div>
                                     <div class="form-group">
-                                        <label for="exampleInputEmail1">Male</label>
+                                        <label id="studentGenderLbl">Male</label>
                                     </div>
                                     <div class="form-group">
-                                        <label for="exampleInputEmail1">1995/09/20</label>
+                                        <label id="studentBdyLbl">1995/09/20</label>
                                     </div>
                                     <div class="form-group">
-                                        <label>Srilankan</label>
+                                        <label id="studentReligionLbl">Srilankan</label>
                                     </div>
                                     <div class="form-group">
-                                        <label for="exampleInputEmail1">dinuka.kasunds@gmail.com</label>
+                                        <label id="studentEmailLbl">dinuka.kasunds@gmail.com</label>
                                     </div>
                                     <div class="form-group">
-                                        <label for="exampleInputEmail1">2015/02/02</label>
+                                        <label id="studentAdtLbl">2015/02/02</label>
                                     </div>
                                     <div class="form-group">
-                                        <label for="exampleInputEmail1">m1</label>
+                                        <label id="studentClassLbl">m1</label>
                                     </div>
                                     <div class="form-group">
-                                        <label>12</label>
+                                        <label id="studentSectionLbl">12</label>
                                     </div>
                                     <div class="form-group">
-                                        <label for="exampleInputEmail1">73,Dampe,Madapatha</label>
+                                        <label id="studentAddressLbl">73,Dampe,Madapatha</label>
                                     </div>
                                     <div class="form-group">
-                                        <label for="exampleInputEmail1">0717275722</label>
+                                        <label id="studentPhoneLbl">0717275722</label>
                                     </div>
-                                    <div class="form-group">;</div>
                                     <div class="form-group">
                                         <a href="javascript::;" class="btn btn-sm btn-default btn-flat pull-right">Edit details</a>
                                     </div><!-- /.box-footer -->
@@ -170,32 +169,32 @@
                             <div class="row">
                                 <div class="col-md-3">
                                     <div class="form-group">
-                                        <label class="text-muted" for="exampleInputEmail1">Name:</label>
+                                        <label class="text-muted"  >Name:</label>
                                     </div>
                                     <div class="form-group">
-                                        <label class="text-muted" for="exampleInputEmail1">Occupation:</label>
+                                        <label class="text-muted"  >Occupation:</label>
                                     </div>
                                     <div class="form-group">
-                                        <label class="text-muted" for="exampleInputEmail1">Email:</label>
+                                        <label class="text-muted"  >Email:</label>
                                     </div>
                                     <div class="form-group">
-                                        <label class="text-muted" for="exampleInputEmail1">Phone:</label>
+                                        <label class="text-muted"  >Phone:</label>
                                     </div>
                                 </div>
 
                                 <div class="col-md-8">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="exampleInputEmail1">Test Test</label>
+                                            <label  id="parentNameLbl">Test Test</label>
                                         </div>
                                         <div class="form-group">
-                                            <label for="exampleInputEmail1">Test</label>
+                                            <label id="parentOccupationLbl">Test</label>
                                         </div>
                                         <div class="form-group">
-                                            <label for="exampleInputEmail1">Test @ gmail.com</label>
+                                            <label id="parentEmailLbl">Test @ gmail.com</label>
                                         </div>
                                         <div class="form-group">
-                                            <label>0717275722</label>
+                                            <label id="parentPhoneLbl">0717275722</label>
                                         </div>
                                     </div>
                                 </div>
@@ -322,5 +321,22 @@
 
     </section>
 </section>
+
+<script>
+    var studentNameLbl
+    var studentGenderLbl
+    var studentBdyLbl
+    var studentReligionLbl
+    var studentEmailLbl
+    var studentAdtLbl
+    var studentClassLbl
+    var studentSectionLbl
+    var studentAddressLbl
+    var studentPhoneLbl
+    var parentNameLbl
+    var parentOccupationLbl
+    var parentEmailLbl
+    var parentPhoneLbl
+</script>
 
 <?php include_once('../admincommon/footer.php'); ?>
