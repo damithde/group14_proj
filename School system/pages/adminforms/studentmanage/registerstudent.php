@@ -23,10 +23,10 @@
                             <label >Gender:</label>
                             <div class="row">
                                 <div class="col-md-4">
-                                    <input type="radio"  name="parent"  id="father" class="form-check-input" value="Father" > Male
+                                    <input type="radio"  name="gender" class="form-check-input" value="Male" > Male
                                 </div>
                                 <div class="col-md-4">
-                                    <input type="radio"  name="parent" id="mother" class="form-check-input" value="Mother">  Female
+                                    <input type="radio"  name="gender" class="form-check-input" value="Female">  Female
                                 </div>
                             </div>
                         </div>
@@ -149,20 +149,18 @@
 
 <script src="student.js"></script>
 <script>
-    var studentNameTxt='';
-    var studentReligionTxt
-    var studentEmailTxt
-    var studentAdmissionNoTxt
-    var studentClassTxt
-    var studentSectionTxt
-    var studentAddressTxt
-    var parentNameTxt
-    var parentOcupationTxt
-    var parentEmail
-    var parentAddressTxt
-
-
-
+    var stdName = document.getElementById("studentNameTxt").value;
+    var stdGend = document.querySelector('input[name=gender]:checked').value;
+    var stdReli = document.getElementById("studentReligionTxt").value;
+    var stdEmail = document.getElementById("studentEmailTxt").value;
+    var stdAdNo = document.getElementById("studentAdmissionNoTxt").value;
+    var stdClass = document.getElementById("studentClassTxt").value;
+    var stdSection = document.getElementById("studentSectionTxt").value;
+    var stdAddress = document.getElementById("studentAddressTxt").value;
+    var parName = document.getElementById("parentNameTxt").value;
+    var parOcupation = document.getElementById("parentOcupationTxt").value;
+    var parEmail = document.getElementById("parentEmail").value;
+    var parAddress = document.getElementById("parentAddressTxt").value;
 </script>
 
 <?php include_once('../admincommon/footer.php'); ?>
