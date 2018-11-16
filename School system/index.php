@@ -83,21 +83,6 @@
     });
 
     
-</script>
-
-<script src="student.js"></script>
-
-<script >
-
-function addstudent1(){
-    var student=["2016cs027","aa","aa","aa","aa","aaa","aa","aa","aa","aa","aa"];
-    var parent={id:"000", name:"hello"};
-    var email="dd@gmail.com";
-    var pass="123456";
-    addstudent(student,parent);
-    
-}
-
 
 document.getElementById("sign").addEventListener("click",checking);
 
