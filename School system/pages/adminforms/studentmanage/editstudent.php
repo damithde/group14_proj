@@ -28,7 +28,7 @@
                                             <div class="input-group">
                                                 <input type="text" name="q" class="form-control" placeholder="Search..."/>
                                                 <span class="input-group-btn">
-                                                    <button type='submit' name='search' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
+                                                    <button type='submit' name='search' name='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
                                                 </span>
                                             </div>
                                         </form>
@@ -74,16 +74,16 @@
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Name:</label>
-                                <input type="email" class="form-control" id="studentNameTxt" placeholder="Enter Name">
+                                <input type="email" class="form-control" name="studentNameTxt" placeholder="Enter Name">
                             </div>
                             <div class="form-group">
                                 <label >Gender:</label>
                                 <div class="row">
                                     <div class="col-md-4">
-                                        <input type="radio"  name="parent"  id="father" class="form-check-input" value="Father" > Male
+                                        <input type="radio"  name="gender" class="form-check-input" value="Male" > Male
                                     </div>
                                     <div class="col-md-4">
-                                        <input type="radio"  name="parent" id="mother" class="form-check-input" value="Mother">  Female
+                                        <input type="radio"  name="gender" class="form-check-input" value="Female">  Female
                                     </div>
                                 </div>
                             </div>
@@ -93,32 +93,32 @@
                                     <div class="input-group-addon">
                                         <i class="fa fa-calendar"></i>
                                     </div>
-                                    <input type="text" class="form-control pull-right" id="date"/>
+                                    <input type="text" class="form-control pull-right" name="date"/>
                                 </div><!-- /.input group -->
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Religion:</label>
-                                <input type="email" class="form-control" id="studentNameTxt" placeholder="Enter Religion">
+                                <input type="email" class="form-control" name="studentReligionTxt" placeholder="Enter Religion">
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Email:</label>
-                                <input type="email" class="form-control" id="addmissionNoTxt" placeholder="Enter Admission No">
+                                <input type="email" class="form-control" name="studentEmailTxt" placeholder="Enter Email">
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Admission No:</label>
-                                <input type="email" class="form-control" id="studentNameTxt" placeholder="Enter Nationality">
+                                <input type="input" class="form-control" name="studentAdmissionNoTxt" placeholder="Enter Admission No">
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Class:</label>
-                                <input type="email" class="form-control" id="studentNameTxt" placeholder="Enter Nationality">
+                                <input type="input" class="form-control" name="studentNameTxt" placeholder="Enter Nationality">
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Section:</label>
-                                <input type="email" class="form-control" id="studentNameTxt" placeholder="Enter Nationality">
+                                <input type="input" class="form-control" name="studentNameTxt" placeholder="Enter Nationality">
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Address:</label>
-                                <textarea class="form-control" id="addressTxt" rows="3" placeholder="Enter Address"></textarea>
+                                <textarea class="form-control" name="studentAddressTxt" rows="3" placeholder="Enter Address"></textarea>
                             </div>
                             <div class="form-group">
                                 <label>Phone No:</label>
@@ -164,20 +164,16 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="exampleInputEmail1">First Name:</label>
-                                <input type="email" class="form-control" id="parentNameTxt" placeholder="Enter First Name">
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Last Name:</label>
-                                <input type="email" class="form-control" id="parentNameTxt" placeholder="Enter Last Name">
+                                <label for="exampleInputEmail1">Full Name:</label>
+                                <input type="email" class="form-control" name="parentNameTxt" placeholder="Enter Full Name">
                             </div>
                             <div class="form-group">
                                 <label for="InputOccupation">Occupation:</label>
-                                <input type="text" class="form-control" id="parentOcupationTxt" placeholder="Enter Occupation">
+                                <input type="text" class="form-control" name="parentOcupationTxt" placeholder="Enter Occupation">
                             </div>
                             <div class="form-group">
                                 <label for="InputEmail1">Email:</label>
-                                <input type="Email" class="form-control" id="email" placeholder="Enter Email">
+                                <input type="Email" class="form-control" name="parentEmail" placeholder="Enter Email">
                             </div>
                             <div class="form-group">
                                 <label>Phone No:</label>
@@ -190,7 +186,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Address:</label>
-                                <textarea class="form-control" id="motherAddressTxt" rows="3" placeholder="Enter Address"></textarea>
+                                <textarea class="form-control" name="parentAddressTxt" rows="3" placeholder="Enter Address"></textarea>
                             </div>
                             <div class="box-footer">
                                 <button type="submit" class="btn btn-primary">Save Changes</button>
@@ -204,5 +200,19 @@
     </section>
 </section>
 
+<script>
+    var stdName = document.getElementById("studentNameTxt").value;
+    var stdGend = document.querySelector('input[name=gender]:checked').value;
+    var stdReli = document.getElementById("studentReligionTxt").value;
+    var stdEmail = document.getElementById("studentEmailTxt").value;
+    var stdAdNo = document.getElementById("studentAdmissionNoTxt").value;
+    var stdClass = document.getElementById("studentClassTxt").value;
+    var stdSection = document.getElementById("studentSectionTxt").value;
+    var stdAddress = document.getElementById("studentAddressTxt").value;
+    var parName = document.getElementById("parentNameTxt").value;
+    var parOcupation = document.getElementById("parentOcupationTxt").value;
+    var parEmail = document.getElementById("parentEmail").value;
+    var parAddress = document.getElementById("parentAddressTxt").value;
+</script>
 
 <?php include_once('../admincommon/footer.php'); ?>

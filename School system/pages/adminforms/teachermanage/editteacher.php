@@ -8,7 +8,9 @@
         <!--        main row-->
         <div class="row">
             <!--            left side-->
-            <div class="col-md-6">
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-8">
                 <!--                student details-->
                 <div class="box box-primary">
                     <!-- .box-header -->
@@ -73,19 +75,8 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="exampleInputEmail1">Name:</label>
-                                <input type="email" class="form-control" id="studentNameTxt" placeholder="Enter Name">
-                            </div>
-                            <div class="form-group">
-                                <label >Gender:</label>
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <input type="radio"  name="parent"  id="father" class="form-check-input" value="Father" > Male
-                                    </div>
-                                    <div class="col-md-4">
-                                        <input type="radio"  name="parent" id="mother" class="form-check-input" value="Mother">  Female
-                                    </div>
-                                </div>
+                                <label >Name:</label>
+                                <input type="email" class="form-control" id="teacherNameTxt" placeholder="Enter Name">
                             </div>
                             <div class="form-group">
                                 <label>Birth Day:</label>
@@ -93,31 +84,31 @@
                                     <div class="input-group-addon">
                                         <i class="fa fa-calendar"></i>
                                     </div>
-                                    <input type="text" class="form-control pull-right" id="date"/>
+                                    <input type="text" class="form-control pull-right" id="birthDayTxt"/>
                                 </div><!-- /.input group -->
                             </div>
                             <div class="form-group">
-                                <label for="exampleInputEmail1">Religion:</label>
-                                <input type="email" class="form-control" id="studentNameTxt" placeholder="Enter Religion">
+                                <label >Language Known:</label>
+                                <input type="input" class="form-control" id="teacherLanguageTxt" placeholder="Enter Language Known">
                             </div>
                             <div class="form-group">
-                                <label for="exampleInputEmail1">Email:</label>
-                                <input type="email" class="form-control" id="addmissionNoTxt" placeholder="Enter Admission No">
+                                <label >Qualification:</label>
+                                <input type="input" class="form-control" id="teacherQualificationTxt" placeholder="Enter Qualification">
                             </div>
                             <div class="form-group">
-                                <label for="exampleInputEmail1">Admission No:</label>
+                                <label >NIC:</label>
+                                <input type="input" class="form-control" id="teacherNICTxt" placeholder="Enter NIC">
+                            </div>
+                            <div class="form-group">
+                                <label >Class:</label>
                                 <input type="email" class="form-control" id="studentNameTxt" placeholder="Enter Nationality">
                             </div>
                             <div class="form-group">
-                                <label for="exampleInputEmail1">Class:</label>
+                                <label >Section:</label>
                                 <input type="email" class="form-control" id="studentNameTxt" placeholder="Enter Nationality">
                             </div>
                             <div class="form-group">
-                                <label for="exampleInputEmail1">Section:</label>
-                                <input type="email" class="form-control" id="studentNameTxt" placeholder="Enter Nationality">
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Address:</label>
+                                <label >Address:</label>
                                 <textarea class="form-control" id="addressTxt" rows="3" placeholder="Enter Address"></textarea>
                             </div>
                             <div class="form-group">

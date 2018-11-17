@@ -6,8 +6,10 @@
 <section class="content-wrapper">
     <section class="content-header">
         <div class="row">
+            <div class="col-md-2">
+            </div>
             <!--            left side panel-->
-            <div class="col-md-6">
+            <div class="col-md-8">
                 <!--                student details-->
                 <div class="box box-primary">
                     <div class="box-header with-border">
@@ -40,7 +42,7 @@
                                     <div class="row">
                                         <div class="col-md-6">
                                             <!-- Profile picture -->
-                                            <div class="small-box bg-blue">
+                                            <div >
                                                 <img src="../../../dist/img/user_100x128.png" alt="User Image">
                                             </div>
                                             <div class="form-group">
