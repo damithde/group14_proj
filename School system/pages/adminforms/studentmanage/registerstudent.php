@@ -2,6 +2,12 @@
 <?php include_once('../admincommon/header.php'); ?>
 <?php include_once('../admincommon/sidebar.php'); ?>
 <?php include_once('../admincommon/script.php'); ?>
+<head></head>
+
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-database.js"></script>
 
 <section class="content-wrapper">
     <section class="content-header">
@@ -147,8 +153,9 @@
     </section>
 </section>
 
-<script src="firebase models/student.js"></script>
-<script src="firebase models/db.js"></script>
+
+<script src="../../../firebase models/db.js"></script>
+<script src="../../../firebase models/student.js"></script>
 <script>
     var stdName = document.getElementById("studentNameTxt").value;
     var stdGend = document.querySelector('input[name=gender]:checked').value;
