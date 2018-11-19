@@ -213,6 +213,7 @@
     var parOcupation = document.getElementById("parentOcupationTxt").value;
     var parEmail = document.getElementById("parentEmail").value;
     var parAddress = document.getElementById("parentAddressTxt").value;
+    
 </script>
 
 <?php include_once('../admincommon/footer.php'); ?>

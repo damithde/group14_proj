@@ -73,6 +73,8 @@
 <script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 <!-- iCheck -->
 <script src="plugins/iCheck/icheck.min.js" type="text/javascript"></script>
+
+
 <script>
     $(function () {
         $('input').iCheck({
@@ -85,6 +87,8 @@
     
 
 document.getElementById("sign").addEventListener("click",checking);
+
+
 
 function checking(){
 firebase.auth().onAuthStateChanged(function(user) {

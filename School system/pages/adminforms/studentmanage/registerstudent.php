@@ -147,7 +147,8 @@
     </section>
 </section>
 
-<script src="student.js"></script>
+<script src="firebase models/student.js"></script>
+<script src="firebase models/db.js"></script>
 <script>
     var stdName = document.getElementById("studentNameTxt").value;
     var stdGend = document.querySelector('input[name=gender]:checked').value;
@@ -161,6 +162,11 @@
     var parOcupation = document.getElementById("parentOcupationTxt").value;
     var parEmail = document.getElementById("parentEmail").value;
     var parAddress = document.getElementById("parentAddressTxt").value;
+    var parent=[parName,parOcupation,parEmail];
+    var student= [stdAdNo,country,contact,dob,nationality,religion,school,grade,class,parent];
+    addstudent(student);
+
+
 </script>
 
 <?php include_once('../admincommon/footer.php'); ?>

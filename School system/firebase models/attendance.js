@@ -12,17 +12,7 @@ function getattendance(date,cls){
     });
 }
 
-function getDate() {
-    var d = new Date(),
-        month = '' + (d.getMonth() + 1),
-        day = '' + d.getDate(),
-        year = d.getFullYear();
 
-    if (month.length < 2) month = '0' + month;
-    if (day.length < 2) day = '0' + day;
-
-    return [year, month, day].join('/');
-}
 
 function addattendance(student){
     db.collection("attendance").doc(getDate()).collection("students").set({
@@ -37,4 +27,17 @@ function addattendance(student){
     .catch(function(error) {
         console.error("Error adding document: ", error);
     });
+}
+
+
+function getDate() {
+    var d = new Date(),
+        month = '' + (d.getMonth() + 1),
+        day = '' + d.getDate(),
+        year = d.getFullYear();
+
+    if (month.length < 2) month = '0' + month;
+    if (day.length < 2) day = '0' + day;
+
+    return [year, month, day].join('/');
 }
