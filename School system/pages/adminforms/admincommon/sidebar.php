@@ -48,9 +48,8 @@
                 </ul>
             </li>
 
-            <!-- <li><a href="../exammanage/exam.php"><i class="fa fa-puzzle-piece"></i> <span>Exams</span></a></li> -->
             <li><a href="../timetablemanage/timetable.php"><i class="fa fa-clock-o"></i> <span>Time Table</span></a></li>
-            <!-- <li><a href="../certificatemanage/certificate.php"><i class="fa fa-certificate"></i> <span>Certificates</span></a></li> -->
+            
             <li>
                 <a href="#">
                     <i class="fa fa-certificate"></i> <span>Certificate</span> <i class="fa fa-angle-left pull-right"></i>
