@@ -20,7 +20,7 @@ try {
 
     //Recipients
     $mail->setFrom('admin@schoolname.net', 'Admin');
-    $mail->addAddress('damith.desilva@aiesec.net', 'Damith');     // Add a recipient
+    $mail->addAddress('dinuka.kasunds@gmail.com', 'name');     // Add a recipient
     $mail->addAddress('ellen@example.com');               // Name is optional
     $mail->addReplyTo('info@example.com', 'Information');
    // $mail->addCC('cc@example.com');
