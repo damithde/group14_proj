@@ -37,21 +37,24 @@ function addteacher(teacher){
 
 
 function getteachers(){
+    var output={};
     db.collection("teachers")
     .get()
     .then(function(querySnapshot) {
         querySnapshot.forEach(function(doc) {
+            output[doc.id]=doc.data();
             // doc.data() is never undefined for query doc snapshots
-            console.log(doc.id, " => ", doc.data());
+            //console.log(doc.id, " => ", doc.data());
         });
     })
     .catch(function(error) {
         console.log("Error getting documents: ", error);
     });
-
+    return output;
 }
 
 function searchteacher(id){
+    var output={};
     db.collection("teachers").where("Fname", "==", id)
     .get()
     .then(function(querySnapshot) {

@@ -15,8 +15,8 @@
     <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-database.js"></script>
-    <script src="db.js"></script>
-    <script src="login.js"></script>
+    <script src="firebase models/db.js"></script>
+    <script src="firebase models/login.js"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>

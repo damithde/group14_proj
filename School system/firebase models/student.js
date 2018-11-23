@@ -40,33 +40,36 @@ function addstudent(student,parent){
    
 
 function getstudentsfromname(fname,lname){
+    var output={};
     db.collection("schools").doc(student[8]).collection("classes").doc(student[10]).collection("students").where("Fname","==",fname).where("Lname","==",lname)
     .get()
     .then(function(querySnapshot) {
         querySnapshot.forEach(function(doc) {
-        
-            console.log(doc.id, " => ", doc.data());
+            output[doc.id]=doc.data();
+            //console.log(doc.id, " => ", doc.data());
         });
     })
     .catch(function(error) {
         console.log("Error getting documents: ", error);
     });
+    return output;
 
 }
 
 function getstudentsfromreg(reg){
+    var output={};
     db.collection("students").where("regno","==",reg)
     .get()
     .then(function(querySnapshot) {
         querySnapshot.forEach(function(doc) {
-            
-            console.log(doc.id, " => ", doc.data());
+            output[doc.id]=doc.data();
+           // console.log(doc.id, " => ", doc.data());
         });
     })
     .catch(function(error) {
         console.log("Error getting documents: ", error);
     });
-
+    return output;
 }
 
 

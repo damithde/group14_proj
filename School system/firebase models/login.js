@@ -17,7 +17,6 @@ function login(){
     // var querry =users.where("username","==","admin");
     // console.log(querry.data());
     firebase.auth().signInWithEmailAndPassword(uname, pass).catch(function(error) {
-
         var errorCode = error.code;
         var errorMessage = error.message;
         alert('Error :' + errorCode+ errorMessage);
@@ -40,6 +39,7 @@ function getuserdata(){
     userdata.get()
     .then(function(querySnapshot) {
         querySnapshot.forEach(function(doc) {
+
             // doc.data() is never undefined for query doc snapshots
             //console.log(doc.data().type);   
             if  ((doc.data().type)=='a'){

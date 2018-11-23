@@ -1,15 +1,17 @@
 function getattendance(date,cls){
+    var output={};
     db.collection("attendance").doc(date).collection("students").where("class","==",cls)
     .get()
     .then(function(querySnapshot) {
         querySnapshot.forEach(function(doc) {
-            
-            console.log(" => ", doc.data());
+            output[doc.id]=doc.data();
+            //console.log(" => ", doc.data());
         });
     })
     .catch(function(error) {
         console.log("Error getting documents: ", error);
     });
+    return output;
 }
 
 

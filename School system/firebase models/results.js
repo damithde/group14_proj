@@ -16,17 +16,19 @@ function addsubjects(subject,regno){
 }
 
 function getresults(reg){
+    var output={};
     db.collection("students").where("regno","==",reg)
     .get()
     .then(function(querySnapshot) {
         querySnapshot.forEach(function(doc) {
-            
-            console.log(" => ", doc.data());
+            output[doc.id]=doc.data();
+            //console.log(" => ", doc.data());
         });
     })
     .catch(function(error) {
         console.log("Error getting documents: ", error);
     });
+    return output;
 }
 
 function getallresults(school){
