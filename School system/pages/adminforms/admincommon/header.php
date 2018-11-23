@@ -19,7 +19,7 @@
                             <span class="label label-success">1</span>
                         </a>
                         <ul class="dropdown-menu">
-                            <li class="header">You have 1 messages</li>
+                            <li name="msgNotification" class="header">You have 1 messages</li>
                             <li>
                                 <!-- inner menu: contains the actual data -->
                                 <ul class="menu">
