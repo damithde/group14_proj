@@ -59,6 +59,7 @@ function searchteacher(id){
     .get()
     .then(function(querySnapshot) {
         querySnapshot.forEach(function(doc) {
+            output[doc.id]=doc.data();
             // doc.data() is never undefined for query doc snapshots
             console.log(doc.id, " => ", doc.data());
         });

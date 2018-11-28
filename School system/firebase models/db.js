@@ -1,4 +1,4 @@
-// Initialize Firebase
+// Initialize Firebase call this bd.js script in ur htm file to connet to ur db
 var config = {
     apiKey: "AIzaSyADepCBKJ8-gSMFrJgKCzrH-QHwmUbAb-I",
     authDomain: "group-project-14.firebaseapp.com",
@@ -11,7 +11,7 @@ firebase.initializeApp(config);
 const db=firebase.firestore();
 db.settings({timestampsInSnapshots:true});
 
-//include these in the html file
+//include these in the html file to connect firebase support files
 {/* <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-auth.js"></script>
