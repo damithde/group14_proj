@@ -12,10 +12,9 @@
                 <div class="box box-primary">
                     <div class="box-header with-border">
                         <div >
-
                             <div class="row">
                                 <div class="col-lg-3 col-xs-6">
-                                    <div class="small-box bg-aqua">
+                                    <div class="small-box bg-green">
                                         <div class="inner">
                                             <h3>
                                                 <br>
@@ -54,7 +53,7 @@
                                 </div><!-- ./col -->
                                 <div class="col-lg-3 col-xs-6">
                                     <!-- small box -->
-                                    <div class="small-box bg-aqua">
+                                    <div class="small-box bg-red">
                                         <div class="inner">
                                             <h3>
                                                 <br>
@@ -73,7 +72,7 @@
                                 </div><!-- ./col -->
                                 <div class="col-lg-3 col-xs-6">
                                     <!-- small box -->
-                                    <div class="small-box bg-aqua">
+                                    <div class="small-box bg-blue">
                                         <div class="inner">
                                             <h3>
                                                 <br>
@@ -92,82 +91,7 @@
                                 </div><!-- ./col -->
                             </div>
                             <div class="row">
-                                <div class="col-lg-3 col-xs-6">
-                                    <!-- small box -->
-                                    <div class="small-box bg-aqua">
-                                        <div class="inner">
-                                            <h3>
-                                                <br>
-                                            </h3>
-                                            <p>
-                                                <br>
-                                            </p>
-                                        </div>
-                                        <div class="icon">
-                                            <i class="fa fa-calendar"></i>
-                                        </div>
-                                        <a href="../eventcalendar.php" class="small-box-footer">
-                                            Calendar <i class="fa fa-arrow-circle-right"></i>
-                                        </a>
-                                    </div>
-                                </div><!-- ./col -->
-                                <div class="col-lg-3 col-xs-6">
-                                    <!-- small box -->
-                                    <div class="small-box bg-aqua">
-                                        <div class="inner">
-                                            <h3>
-                                                <br>
-                                            </h3>
-                                            <p>
-                                                <br>
-                                            </p>
-                                        </div>
-                                        <div class="icon">
-                                            <i class="fa fa-clock-o"></i>
-                                        </div>
-                                        <a href="../eventcalendar.php" class="small-box-footer">
-                                            Time Table <i class="fa fa-arrow-circle-right"></i>
-                                        </a>
-                                    </div>
-                                </div><!-- ./col -->
-                                <div class="col-lg-3 col-xs-6">
-                                    <!-- small box -->
-                                    <div class="small-box bg-aqua">
-                                        <div class="inner">
-                                            <h3>
-                                                <br>
-                                            </h3>
-                                            <p>
-                                                <br>
-                                            </p>
-                                        </div>
-                                        <div class="icon">
-                                            <i class="fa  fa-certificate"></i>
-                                        </div>
-                                        <a href="../eventcalendar.php" class="small-box-footer">
-                                            Certificate <i class="fa fa-arrow-circle-right"></i>
-                                        </a>
-                                    </div>
-                                </div><!-- ./col -->
-                                <div class="col-lg-3 col-xs-6">
-                                    <!-- small box -->
-                                    <div class="small-box bg-aqua">
-                                        <div class="inner">
-                                            <h3>
-                                                <br>
-                                            </h3>
-                                            <p>
-                                                <br>
-                                            </p>
-                                        </div>
-                                        <div class="icon">
-                                            <i class="fa fa-bullhorn"></i>
-                                        </div>
-                                        <a href="../messagebox/messagebox.php" class="small-box-footer">
-                                            Notifications <i class="fa fa-arrow-circle-right"></i>
-                                        </a>
-                                    </div>
-                                </div><!-- ./col -->
+                                
                             </div>
 
                         </div>
