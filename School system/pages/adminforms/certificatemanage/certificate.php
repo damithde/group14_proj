@@ -30,7 +30,13 @@
                                 <textarea class="form-control" id="motherAddressTxt" rows="3" placeholder="Enter Discription"></textarea>
                             </div>
                             <div class="box-footer">
-                                <button type="submit" class="btn btn-primary">Add certificate</button>
+                                <input type="file" id="exampleInputFile" class="btn btn-primary">
+                                <!-- <button type="submit" class="btn btn-primary">Add certificate</button> -->
+                                <!-- <button type="submit" class="btn btn-primary">Send</button> -->
+                            </div>
+                            <div class="box-footer">
+                                <!-- <input type="file" id="exampleInputFile" class="btn btn-primary"> -->
+                                <!-- <button type="submit" class="btn btn-primary">Add certificate</button> -->
                                 <button type="submit" class="btn btn-primary">Send</button>
                             </div>
 

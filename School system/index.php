@@ -58,14 +58,8 @@
                     <button id="sign" onclick="login()" type="submit"  class="btn btn-primary btn-block btn-flat">Sign In</button>
                 </div><!-- /.col -->
             </div>
-        
-<!--        test action for demo version-->
-        
-<!--        end test for demo-->
-
-
-    </div><!-- /.login-box-body -->
-</div><!-- /.login-box -->
+    </div>
+</div>
 
 <!-- jQuery 2.1.3 -->
 <script src="plugins/jQuery/jQuery-2.1.3.min.js"></script>
