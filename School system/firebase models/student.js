@@ -3,14 +3,13 @@ function addstudent(student,parent){
         regno: student[0],
         Fname: student[1],
         Lname: student[2],
-        country: student[3],
-        contact: student[4],
-        dob: student[5],
-        nationality: student[6],
-        religion: student[7],
-        school: student[8],
-        grade: student[9],
-        class: student[10],
+        contact: student[3],
+        dob: student[4],
+        nationality: "SriLankan",
+        religion: student[5],
+        school: student[6],
+        grade: student[7],
+        class: student[8],
         parent: parent
 
     })
@@ -29,11 +28,11 @@ function addstudent(student,parent){
             class: student[10],
             parent: parent
         })
-
+        alert("student added successfully");
        // console.log("Document written with ID: ", docRef.id);
     })
     .catch(function(error) {
-        console.error("Error adding document: ", error);
+        alert("Error adding document: ", error);
     });
 }
 
