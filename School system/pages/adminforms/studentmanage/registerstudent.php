@@ -22,8 +22,12 @@
                 <form role="form">
                     <div class="box-body">
                         <div class="form-group">
-                            <label  >Name:</label>
-                            <input type="input" class="form-control" id="studentNameTxt" placeholder="Enter Name">
+                            <label  >First Name:</label>
+                            <input type="input" class="form-control" id="studentFNameTxt" placeholder="Enter First Name">
+                        </div>
+                        <div class="form-group">
+                            <label  >Last Name:</label>
+                            <input type="input" class="form-control" id="studentLNameTxt" placeholder="Enter Last Name">
                         </div>
                         <div class="form-group">
                             <label >Gender:</label>
@@ -157,7 +161,8 @@
 <script src="../../../firebase models/db.js"></script>
 <script src="../../../firebase models/student.js"></script>
 <script>
-    var stdName = document.getElementById("studentNameTxt").value;
+    var stdFName = document.getElementById("studentFNameTxt").value;
+    var stdLName = document.getElementById("studentLNameTxt").value;
     var stdGend = document.querySelector('input[name=gender]:checked').value;
     var stdReli = document.getElementById("studentReligionTxt").value;
     var stdEmail = document.getElementById("studentEmailTxt").value;
