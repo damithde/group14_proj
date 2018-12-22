@@ -104,13 +104,13 @@
                             <label >Guardian type:</label>
                             <div class="row">
                                 <div class="col-md-4">
-                                    <input type="radio"  name="parent"  id="father" class="form-check-input" value="Father" > Father
+                                    <input type="radio"  name="parent"   class="form-check-input" value="Father" > Father
                                 </div>
                                 <div class="col-md-4">
-                                    <input type="radio"  name="parent" id="mother" class="form-check-input" value="Mother">  Mother
+                                    <input type="radio"  name="parent"  class="form-check-input" value="Mother">  Mother
                                 </div>
                                 <div class="col-md-4">
-                                    <input type="radio"  name="parent" id="guardian" class="form-check-input" value="Guardian">  Guardian
+                                    <input type="radio"  name="parent"  class="form-check-input" value="Guardian">  Guardian
                                 </div>
                             </div>
                         </div>
@@ -157,6 +157,7 @@
 <script src="../../../firebase models/db.js"></script>
 <script src="../../../firebase models/student.js"></script>
 <script>
+
     var stdName = document.getElementById("studentNameTxt").value;
     var stdGend = document.querySelector('input[name=gender]:checked').value;
     var stdReli = document.getElementById("studentReligionTxt").value;
@@ -165,13 +166,14 @@
     var stdClass = document.getElementById("studentClassTxt").value;
     var stdSection = document.getElementById("studentSectionTxt").value;
     var stdAddress = document.getElementById("studentAddressTxt").value;
+    var par = document.querySelector('input[name=parent]:checked').value;
     var parName = document.getElementById("parentNameTxt").value;
     var parOcupation = document.getElementById("parentOcupationTxt").value;
     var parEmail = document.getElementById("parentEmail").value;
     var parAddress = document.getElementById("parentAddressTxt").value;
     var parent=[parName,parOcupation,parEmail];
-    var student= [stdAdNo,country,contact,dob,nationality,religion,school,grade,class,parent];
-    addstudent(student);
+    var student= [stdAdNo,country,contact,dob,nationality,religion,school,grade,class];
+    addstudent(student,parent);
 
 
 </script>
