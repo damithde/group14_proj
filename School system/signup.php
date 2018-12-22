@@ -34,15 +34,15 @@
 
                     <div class="form-group has-feedback">
                         <input id="admissionNoTxt" type="text" class="form-control" placeholder="Admission No"/>
-                        <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+                        <span class="glyphicon glyphicon-pushpin form-control-feedback"></span>
                     </div>
                     <div class="form-group has-feedback">
                         <input id="studentNameTxt" type="text" class="form-control" placeholder="Student Name"/>
-                        <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+                        <span class="glyphicon glyphicon-user form-control-feedback"></span>
                     </div>
                     <div class="form-group has-feedback">
                         <input id="studentParentNameTxt" type="text" class="form-control" placeholder="Registered Parent Name"/>
-                        <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+                        <span class="glyphicon glyphicon-edit form-control-feedback"></span>
                     </div>
                     <div class="form-group has-feedback">
                         <input id="studentEmailTxt" type="text" class="form-control" placeholder="Email"/>
@@ -58,20 +58,27 @@
                     </div>
                 </div>
 
-                <div id="teacherDev" class="login-box-body" style="display:none" >
-                
+                <div id="teacherDev" class="login-box-body">
+                    <!-- <label class="col-md-5">
+                        <input id="up_radio" type="radio" name="optionsRadios" value="student" >
+                        Student
+                    </label>
+                    <label class="radio inline">
+                        <input id="ov_radio" type="radio" name="optionsRadios" value="teacher" >  
+                        Teacher
+                    </label> -->
 
                     <div class="form-group has-feedback">
                         <input id="teacherRegistrationNoTxt" type="text" class="form-control" placeholder="Registration No"/>
-                        <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+                        <span class="glyphicon glyphicon-pushpin form-control-feedback"></span>
                     </div>
                     <div class="form-group has-feedback">
                         <input id="teacherNameTxt" type="text" class="form-control" placeholder="Name"/>
-                        <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+                        <span class="glyphicon glyphicon-user form-control-feedback"></span>
                     </div>
                     <div class="form-group has-feedback">
                         <input id="teacherNicTxt" type="text" class="form-control" placeholder="NIC"/>
-                        <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+                        <span class="glyphicon glyphicon-edit form-control-feedback"></span>
                     </div>
                     <div class="form-group has-feedback">
                         <input id="teacherEmailTxt" type="text" class="form-control" placeholder="Email"/>
@@ -91,20 +98,22 @@
     </div>
 		
 	<script>
-	$('input[name="optionsRadios"]').on('change', function(){
-    if ($(this).val()=='student') {
-         
-        
-        document.getElementById("studentDev").style.display = 'block';
-        document.getElementById("teacherDev").style.display = 'none';
 
-    } else  {
-       
-        // $("#cont").text("show Overwritten");
-        document.getElementById("studentDev").style.display = 'none';
-        document.getElementById("teacherDev").style.display = 'block';
-    }
-});
+	$('input[name="optionsRadios"]').on('change', function(){
+        if ($(this).val()=='student') {
+            
+            
+            document.getElementById("studentDev").style.display = 'block';
+            document.getElementById("teacherDev").style.display = 'none';
+
+        } else  {
+        
+            // $("#cont").text("show Overwritten");
+            document.getElementById("studentDev").style.display = 'none';
+            document.getElementById("teacherDev").style.display = 'block';
+        }
+    });
+    
 </script>
 
 </body>
@@ -113,6 +122,16 @@
 <script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 <!-- iCheck -->
 <script src="plugins/iCheck/icheck.min.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+function setValue(){
+    // document.getElementById("ov_radio").checked=true;
+    document.getElementById("studentDev").style.display = 'block';
+    document.getElementById("teacherDev").style.display = 'none'; 
+}
+
+window.onload = setValue();
+</script>
 
 <script>
     var stdAdNo = document.getElementById("admissionNoTxt").value;
