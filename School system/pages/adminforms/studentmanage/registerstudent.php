@@ -168,15 +168,15 @@
     var stdEmail = document.getElementById("studentEmailTxt").value;
     var stdAdNo = document.getElementById("studentAdmissionNoTxt").value;
     var stdClass = document.getElementById("studentClassTxt").value;
-    var stdSection = document.getElementById("studentSectionTxt").value;
+    var stdGrade = document.getElementById("studentSectionTxt").value;
     var stdAddress = document.getElementById("studentAddressTxt").value;
     var par = document.querySelector('input[name=parent]:checked').value;
     var parName = document.getElementById("parentNameTxt").value;
     var parOcupation = document.getElementById("parentOcupationTxt").value;
     var parEmail = document.getElementById("parentEmail").value;
     var parAddress = document.getElementById("parentAddressTxt").value;
-    var parent=[parName,parOcupation,parEmail];
-    var student= [stdAdNo,country,contact,dob,nationality,religion,school,grade,class];
+    var parent={name:parName,parent:par,occupation:parOcupation,email:parEmail};
+    var student= [stdAdNo,stdFName,stdLName,contact,dob,stdAddress,stdReli,school,stdGrade,stdClass,stdEmail];
     addstudent(student,parent);
 
 
