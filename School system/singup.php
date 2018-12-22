@@ -63,7 +63,7 @@
                         Student
                     </label>
                     <label class="radio inline">
-                        <input id="ov_radio" type="radio" name="optionsRadios" value="teacher" checked="checked">  
+                        <input id="ov_radio" type="radio" name="optionsRadios" value="teacher" >  
                         Teacher
                     </label>
 
@@ -97,20 +97,22 @@
     </div>
 		
 	<script>
-	$('input[name="optionsRadios"]').on('change', function(){
-    if ($(this).val()=='student') {
-         
-        
-        document.getElementById("studentDev").style.display = 'block';
-        document.getElementById("teacherDev").style.display = 'none';
 
-    } else  {
-       
-        // $("#cont").text("show Overwritten");
-        document.getElementById("studentDev").style.display = 'none';
-        document.getElementById("teacherDev").style.display = 'block';
-    }
-});
+	$('input[name="optionsRadios"]').on('change', function(){
+        if ($(this).val()=='student') {
+            
+            
+            document.getElementById("studentDev").style.display = 'block';
+            document.getElementById("teacherDev").style.display = 'none';
+
+        } else  {
+        
+            // $("#cont").text("show Overwritten");
+            document.getElementById("studentDev").style.display = 'none';
+            document.getElementById("teacherDev").style.display = 'block';
+        }
+    });
+    
 </script>
 
 </body>
@@ -119,6 +121,16 @@
 <script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 <!-- iCheck -->
 <script src="plugins/iCheck/icheck.min.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+function setValue(){
+    // document.getElementById("ov_radio").checked=true;
+    document.getElementById("studentDev").style.display = 'block';
+    document.getElementById("teacherDev").style.display = 'none'; 
+}
+
+window.onload = setValue();
+</script>
 
 <script>
     var stdAdNo = document.getElementById("admissionNoTxt").value;
