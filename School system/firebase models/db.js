@@ -1,4 +1,4 @@
-// Initialize Firebase call this bd.js script in ur htm file to connet to ur db
+// Initialize Firebase call this db.js script in ur html file to connet to ur db
 var config = {
     apiKey: "AIzaSyADepCBKJ8-gSMFrJgKCzrH-QHwmUbAb-I",
     authDomain: "group-project-14.firebaseapp.com",

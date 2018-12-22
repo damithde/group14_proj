@@ -18,10 +18,9 @@
             <div class="row">
             <div class="col-md-2"></div>
                 
-
-                <div id="studentDev" class="login-box-body">
-
-                    <label class="col-md-5">
+                <div class="login-box-body"> 
+                        <p>I am a</p> 
+                <label class="col-md-5">
                         <input id="up_radio" type="radio" name="optionsRadios" value="student" checked="checked">
                         Student
                     </label>
@@ -29,7 +28,9 @@
                         <input id="ov_radio" type="radio" name="optionsRadios" value="teacher">  
                         Teacher
                     </label>
+                </div>
 
+                <div id="studentDev" class="login-box-body" >
 
                     <div class="form-group has-feedback">
                         <input id="admissionNoTxt" type="text" class="form-control" placeholder="Admission No"/>
@@ -57,15 +58,8 @@
                     </div>
                 </div>
 
-                <div id="teacherDev" class="login-box-body">
-                    <label class="col-md-5">
-                        <input id="up_radio" type="radio" name="optionsRadios" value="student" >
-                        Student
-                    </label>
-                    <label class="radio inline">
-                        <input id="ov_radio" type="radio" name="optionsRadios" value="teacher" checked="checked">  
-                        Teacher
-                    </label>
+                <div id="teacherDev" class="login-box-body" style="display:none" >
+                
 
                     <div class="form-group has-feedback">
                         <input id="teacherRegistrationNoTxt" type="text" class="form-control" placeholder="Registration No"/>
