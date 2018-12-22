@@ -34,15 +34,15 @@
 
                     <div class="form-group has-feedback">
                         <input id="admissionNoTxt" type="text" class="form-control" placeholder="Admission No"/>
-                        <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+                        <span class="glyphicon glyphicon-pushpin form-control-feedback"></span>
                     </div>
                     <div class="form-group has-feedback">
                         <input id="studentNameTxt" type="text" class="form-control" placeholder="Student Name"/>
-                        <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+                        <span class="glyphicon glyphicon-user form-control-feedback"></span>
                     </div>
                     <div class="form-group has-feedback">
                         <input id="studentParentNameTxt" type="text" class="form-control" placeholder="Registered Parent Name"/>
-                        <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+                        <span class="glyphicon glyphicon-edit form-control-feedback"></span>
                     </div>
                     <div class="form-group has-feedback">
                         <input id="studentEmailTxt" type="text" class="form-control" placeholder="Email"/>
@@ -70,15 +70,15 @@
 
                     <div class="form-group has-feedback">
                         <input id="teacherRegistrationNoTxt" type="text" class="form-control" placeholder="Registration No"/>
-                        <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+                        <span class="glyphicon glyphicon-pushpin form-control-feedback"></span>
                     </div>
                     <div class="form-group has-feedback">
                         <input id="teacherNameTxt" type="text" class="form-control" placeholder="Name"/>
-                        <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+                        <span class="glyphicon glyphicon-user form-control-feedback"></span>
                     </div>
                     <div class="form-group has-feedback">
                         <input id="teacherNicTxt" type="text" class="form-control" placeholder="NIC"/>
-                        <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+                        <span class="glyphicon glyphicon-edit form-control-feedback"></span>
                     </div>
                     <div class="form-group has-feedback">
                         <input id="teacherEmailTxt" type="text" class="form-control" placeholder="Email"/>
