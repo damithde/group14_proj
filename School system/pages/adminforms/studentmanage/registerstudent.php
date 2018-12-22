@@ -186,7 +186,7 @@
     var parEmail = document.getElementById("parentEmail").value;
     var parAddress = document.getElementById("parentAddressTxt").value;
     var parent={name:parName,parent:par,occupation:parOcupation,email:parEmail};
-    var student= [stdAdNo,stdFName,stdLName,contact,dob,stdAddress,stdReli,school,stdGrade,stdClass,stdEmail];
+    var student= [stdAdNo,stdFName,stdLName,contact,stdbd,stdAddress,stdReli,school,stdGrade,stdClass,stdEmail];
     addstudent(student,parent);
 
 

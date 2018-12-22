@@ -206,19 +206,22 @@
 </section>
 
 <script>
+    var regno= ;
     var stdName = document.getElementById("studentNameTxt").value;
     var stdGend = document.querySelector('input[name=gender]:checked').value;
     var stdReli = document.getElementById("studentReligionTxt").value;
     var stdEmail = document.getElementById("studentEmailTxt").value;
     var stdAdNo = document.getElementById("studentAdmissionNoTxt").value;
     var stdClass = document.getElementById("studentClassTxt").value;
-    var stdSection = document.getElementById("studentSectionTxt").value;
+    var stdGrade = document.getElementById("studentSectionTxt").value;
     var stdAddress = document.getElementById("studentAddressTxt").value;
     var parName = document.getElementById("parentNameTxt").value;
     var parOcupation = document.getElementById("parentOcupationTxt").value;
     var parEmail = document.getElementById("parentEmail").value;
     var parAddress = document.getElementById("parentAddressTxt").value;
-
+    var parent={name:parName,parent:par,occupation:parOcupation,email:parEmail};
+    var student= [stdAdNo,stdFName,stdLName,contact,stdbd,stdAddress,stdReli,school,stdGrade,stdClass,stdEmail];
+    updatestudent(regno,student,parent);
 </script>
 
 <?php include_once('../admincommon/footer.php'); ?>
