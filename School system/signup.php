@@ -59,14 +59,14 @@
                 </div>
 
                 <div id="teacherDev" class="login-box-body">
-                    <label class="col-md-5">
+                    <!-- <label class="col-md-5">
                         <input id="up_radio" type="radio" name="optionsRadios" value="student" >
                         Student
                     </label>
                     <label class="radio inline">
                         <input id="ov_radio" type="radio" name="optionsRadios" value="teacher" >  
                         Teacher
-                    </label>
+                    </label> -->
 
                     <div class="form-group has-feedback">
                         <input id="teacherRegistrationNoTxt" type="text" class="form-control" placeholder="Registration No"/>
