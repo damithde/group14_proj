@@ -66,8 +66,17 @@
                             <input type="input" class="form-control" id="studentClassTxt" placeholder="Enter Class">
                         </div>
                         <div class="form-group">
-                            <label  >Section:</label>
-                            <input type="input" class="form-control" id="studentSectionTxt" placeholder="Enter Section">
+                            <label  >Grade:</label>
+                            <!-- <input type="input" class="form-control" id="studentGradeTxt" placeholder="Enter Grade"> -->
+                            <select>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            </select>
                         </div>
                         <div class="form-group">
                             <label  >Address:</label>
@@ -164,11 +173,12 @@
     var stdFName = document.getElementById("studentFNameTxt").value;
     var stdLName = document.getElementById("studentLNameTxt").value;
     var stdGend = document.querySelector('input[name=gender]:checked').value;
+    var stdbd = document.querySelector('date').value;
     var stdReli = document.getElementById("studentReligionTxt").value;
     var stdEmail = document.getElementById("studentEmailTxt").value;
     var stdAdNo = document.getElementById("studentAdmissionNoTxt").value;
     var stdClass = document.getElementById("studentClassTxt").value;
-    var stdSection = document.getElementById("studentSectionTxt").value;
+    var stdGrade = document.getElementById("studentGradeTxt").value;
     var stdAddress = document.getElementById("studentAddressTxt").value;
     var par = document.querySelector('input[name=parent]:checked').value;
     var parName = document.getElementById("parentNameTxt").value;
