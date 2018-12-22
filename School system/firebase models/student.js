@@ -6,10 +6,12 @@ function addstudent(student,parent){
         contact: student[3],
         dob: student[4],
         nationality: "SriLankan",
-        religion: student[5],
-        school: student[6],
-        grade: student[7],
-        class: student[8],
+        address:student[5],
+        religion: student[6],
+        school: student[7],
+        grade: student[8],
+        class: student[9],
+        email: student[10],
         parent: parent
 
     })

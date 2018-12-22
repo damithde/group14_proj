@@ -185,8 +185,8 @@
     var parOcupation = document.getElementById("parentOcupationTxt").value;
     var parEmail = document.getElementById("parentEmail").value;
     var parAddress = document.getElementById("parentAddressTxt").value;
-    var parent=[parName,parOcupation,parEmail];
-    var student= [stdAdNo,country,contact,dob,nationality,religion,school,grade,class];
+    var parent={name:parName,parent:par,occupation:parOcupation,email:parEmail};
+    var student= [stdAdNo,stdFName,stdLName,contact,dob,stdAddress,stdReli,school,stdGrade,stdClass,stdEmail];
     addstudent(student,parent);
 
 
