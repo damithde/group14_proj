@@ -10,18 +10,48 @@
         <!--                Exam results-->
         <div class="box box-primary">
             <div class="box-header with-border">
-                <div class="col-md-6">
-                    <!-- search form -->
-                    <form action="#" method="get" class="form-group">
-                        <div class="input-group">
-                            <input type="text" name="q" class="form-control" placeholder="Search..."/>
-                            <span class="input-group-btn">
+
+                <div class="row">
+
+
+
+
+                    <div class="col-md-3">
+                        <!-- search form -->
+                        <form action="#" method="get" class="form-group">
+                            <div class="input-group">
+                                <input type="text" name="q" class="form-control" placeholder="Enter Class Name  ..."/>
+                                <span class="input-group-btn">
                                 <button type='submit' name='search' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
                             </span>
+                            </div>
+
+                                <div class="box box-solid bg-aqua">
+                                <div class="box-header ui-sortable-handle" style="cursor: move;">
+                                    <i class="fa fa-calendar"></i>
+                                    <h3 class="box-title">Date</h3>
+
+                                </div><!-- /.box-header -->
+                                <div class="box-body no-padding" style="display: block;">
+                                    <!--The calendar -->
+                                    <div id="calendar" style="width: 100%">
+
+                                    </div>
+                                </div><!-- /.box-body -->
+
+
+
+                            </div><!-- /.box-body -->
+
                         </div>
+
+
+
+                        </div>
+            </div>
                     </form>
                     <!-- /.search form -->
-                </div>
+
             </div><!-- /.box-header -->
             <div class="box-body">
                 <div class="table-responsive">

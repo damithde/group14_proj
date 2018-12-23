@@ -1,4 +1,4 @@
-<body class="skin-blue">
+<body class="skin-green">
 <div class="wrapper">
     <header class="main-header">
         <!-- Logo -->

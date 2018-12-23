@@ -18,7 +18,7 @@
 
             <li>
                 <a href="#">
-                    <i class="fa fa-users"></i> <span>Mark Attendance</span> <i class="fa fa-angle-left pull-right"></i>
+                    <i class="fa fa-users"></i> <span>View Attendance</span> <i class="fa fa-angle-left pull-right"></i>
                 </a>
 
             </li>
@@ -28,16 +28,7 @@
                 </a>
 
             </li>
-            <li>
-                <a  href="../resultsmanage/results.php"><i class="fa fa-certificate"></i> <span>View Results</span> </a></li>
-            </a>
 
-            </li>
-            <li>
-            <a  href="../reportmanage/viewreports.php"><i class="fa fa-certificate"></i> <span>View Reports</span> </a></li>
-            </a>
-
-            <li><a  href="../sportstumanage/sportstu.php"><i class="fa fa-certificate"></i> <span>View Sports</span> </a></li>
 
             <li><a  href="../myprofile/profile.php"><i class="fa fa-certificate"></i> <span>My Profile</span> </a></li>
             </li>

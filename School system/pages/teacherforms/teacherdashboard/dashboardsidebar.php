@@ -16,13 +16,11 @@
             <li class="header">MAIN NAVIGATION</li>
             <li><a  href="../teacherdashboard/teacherdashboard.php"><i class="fa fa-home"></i> <span>Home</span> </a></li>
 
-            <li><a  href="../attendancemanage/attendance.php"><i class="fa fa-user"></i> <span>Mark Attendance</span> </a></li>
+            <li><a  href="../attendancemanage/attendance.php"><i class="fa fa-user"></i> <span>View Attendance</span> </a></li>
 
             <li><a  href="../techermessagebox/messagebox.php"><i class="fa fa-home"></i> <span>Send notice</span> </a></li>
 
-            <li><a  href="../resultsmanage/results.php."><i class="fa fa-certificate"></i> <span>View Results</span> </a></li>
-            <li><a  href="../reportmanage/viewreports.php"><i class="fa fa-certificate"></i> <span>View Reports</span> </a></li>
-            <li><a  href="../sportstumanage/sportstu.php"><i class="fa fa-certificate"></i> <span>View Sports</span> </a></li>
+
             <li><a  href="../myprofile/profile.php"><i class="fa fa-certificate"></i> <span>My Profile</span> </a></li>
             <li><a  href="../studentprofile/viewstu.php"><i class="fa fa-certificate"></i> <span>Student Profile</span> </a></li>
 

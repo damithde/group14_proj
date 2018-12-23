@@ -208,10 +208,12 @@
         </div><!-- /.box -->
     </section>
 </section>
+
+
 </div>
 </body>
 
 
 <?php include_once('sportstufooter.php'); ?>
-<?php include_once('sportstuscript.php'); ?>
+
 
