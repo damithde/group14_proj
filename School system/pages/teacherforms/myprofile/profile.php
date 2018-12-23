@@ -5,9 +5,55 @@
 
 <section class="content-wrapper">
     <section class="content-header">
-        <div class="row">
+        <section class="content-header">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <div >
+                                <div class="row">
+                                    <!-- ./col -->
+                                    <div class="col-lg-3 col-xs-6">
+                                        <!-- small box -->
+                                        <div class="small-box bg-aqua">
+                                            <div class="inner">
+                                                <h3>
+                                                    <br>
+                                                </h3>
+                                                <p>
+                                                    <br>
+                                                </p>
+                                            </div>
+                                            <div class="icon">
+                                                <i class="fa fa-user"></i>
+                                            </div>
+                                            <a href="../myprofile/profile.php" class="small-box-footer">
+                                                My Details <i class="fa fa-arrow-circle-right"></i>
+                                            </a>
+                                        </div>
 
-            <!--            left side panel-->
+                                    </div>
+                                    <div class="col-lg-3 col-xs-6">
+                                        <!-- small box -->
+                                        <div class="small-box bg-red">
+                                            <div class="inner">
+                                                <h3>
+                                                    <br>
+                                                </h3>
+                                                <p>
+                                                    <br>
+                                                </p>
+                                            </div>
+                                            <div class="icon">
+                                                <i class="fa fa-edit"></i>
+                                            </div>
+                                            <a href="../leave/leave.php" class="small-box-footer">
+                                                Leave Request <i class="fa fa-arrow-circle-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <!--            left side panel-->
             <div class="col-md-12">
                 <!--                student details-->
                 <div class="box box-primary">
@@ -123,7 +169,9 @@
                     </form>
                 </div><!-- /.box -->
             </div>
-        </div>
+                                </div>
+
+
     </section>
 </section>
 <?php include_once('../teachercommon/footer.php'); ?>

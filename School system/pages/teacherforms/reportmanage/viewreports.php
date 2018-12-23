@@ -8,13 +8,28 @@
         <div class="row">
 
             <!--            left side panel-->
-            <div class="col-md-12">
+
+
                 <!--                student details-->
                 <div class="box box-primary">
                 
                     <div class="box-header with-border">
+                        <div class="col-md-6">
+                            <form action="#" method="get" class="form-group">
+
+                                <div class="input-group">
+                                    <input type="text" name="q" class="form-control" placeholder="Enter Reg Number..."/>
+                                    <span class="input-group-btn">
+                                                                           <button type='submit' name='search' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
+                                                                                   </span>
+
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-md-12">
                         <h3 class="box-title">Student Report</h3>
                     </div><!-- /.box-header -->
+
 
                     <!-- form start -->
                     <form role="form">

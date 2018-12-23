@@ -3,7 +3,7 @@
 <?php include_once('stuprofileheader.php'); ?>
 <?php include_once('stuprofilessidebar.php'); ?>
 <?php include_once('stuprofilescript.php'); ?>
-<body class="skin-blue">
+<body class="skin-green">
 <div class="wrapper">
     <section class="content-wrapper">
         <section class="content-header">
@@ -96,15 +96,36 @@
                                 </div>
 
                                         <div class="row">
+                                            <div class="col-md-12">
 
                                             <!--            left side panel-->
-                                            <div class="col-md-12">
+
                                                 <!--                student details-->
                                                 <div class="box box-primary">
 
                                                     <div class="box-header with-border">
-                                                        <h3 class="box-title">Student Profile</h3>
+                                                        <div class="col-md-6">
+                                                        <form action="#" method="get" class="form-group">
+
+                                                            <div class="input-group">
+                                                                <input type="text" name="q" class="form-control" placeholder="Enter Reg Number..."/>
+                                                                <span class="input-group-btn">
+                                                                           <button type='submit' name='search' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
+                                                                                   </span>
+
+                                                            </div>
+                                                        </form>
+                                                        </div>
+
+                                                        <div class="col-md-12">
+
+                                                        <h3 class="box-title">Student Details</h3>
                                                     </div><!-- /.box-header -->
+                                                    </div>
+                                                        <!-- search form -->
+
+
+
 
                                                     <!-- form start -->
                                                     <form role="form">
@@ -132,6 +153,7 @@
                                                                                 </div>
                                                                             </div>
                                                                         </div>
+
 
                                                                         <div class="col-md-6">
                                                                             <!--Lable names-->
