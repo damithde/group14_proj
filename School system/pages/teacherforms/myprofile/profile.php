@@ -91,6 +91,9 @@
                                         <div class="col-md-6">
                                         <!--Lable names-->
                                             <div class="form-group">
+                                                <label class="text-muted" for="exampleInputEmail1">Teacher ID:</label>
+                                            </div>
+                                            <div class="form-group">
                                                 <label class="text-muted" for="exampleInputEmail1">Teacher Name:</label>
                                             </div>
                                             <div class="form-group">
@@ -126,6 +129,9 @@
                                 </div>
 
                                 <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">2145</label>
+                                    </div>
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">A.H.T.Perera</label>
                                     </div>

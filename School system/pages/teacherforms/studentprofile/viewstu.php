@@ -36,25 +36,7 @@
                                     </div>
 
                                     <!-- ./col -->
-                                    <div class="col-lg-3 col-xs-6">
-                                        <div class="small-box bg-green">
-                                            <div class="inner">
-                                                <h3>
-                                                    <br>
-                                                </h3>
-                                                <p>
-                                                    <br>
-                                                </p>
-                                            </div>
-                                            <div class="icon">
-                                                <i class="fa fa-group"></i>
-                                            </div>
-                                            <a href="../sportstumanage/sportstu.php" class="small-box-footer">
-                                                Sport Student <i class="fa fa-arrow-circle-right"></i>
-                                            </a>
-                                        </div>
-                                        <!-- small box -->
-                                    </div>
+
                                     <div class="col-lg-3 col-xs-6">
                                         <!-- small box -->
                                         <div class="small-box bg-red">

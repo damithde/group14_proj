@@ -17,9 +17,19 @@
                     <form role="form">
                         <div class="box-body">
                             <div class="form-group">
+                                <label for="exampleInputEmail1">School ID:1101</label>
+
+                            </div>
+                            <div class="form-group">
                                 <label for="exampleInputEmail1">Name:</label>
                                 <input type="email" class="form-control" id="parentNameTxt" placeholder="Enter Name">
                             </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Teacher ID:</label>
+                                <input type="email" class="form-control" id="parentNameTxt" placeholder="Enter Name">
+                            </div>
+
+
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Number Of Leave days:</label>
                                 <input type="email" class="form-control" id="parentNameTxt" placeholder="Enter No Of days">
