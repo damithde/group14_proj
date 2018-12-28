@@ -17,6 +17,11 @@
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-database.js"></script>
 <script src="firebase models/db.js"></script>
 <script src="firebase models/student.js"></script>
+<!-- alertify -->    
+<script src="plugins/alertify/alertify.min.js"></script>
+    <link rel="stylesheet" href="plugins/alertify/css/alertify.min.css" />
+    <link rel="stylesheet" href="plugins/alertify/css/themes/default.min.css" />
+    <!-- alertify -->
 </head>
 	<body class="login-page">
     <div class="login-box">
@@ -68,7 +73,7 @@
                     </div>
                 </div>
 
-                <div id="teacherDev" class="login-box-body">
+                <div id="teacherDev" class="login-box-body" style="display:none">
                     <!-- <label class="col-md-5">
                         <input id="up_radio" type="radio" name="optionsRadios" value="student" >
                         Student
@@ -138,19 +143,13 @@
 <script src="plugins/iCheck/icheck.min.js" type="text/javascript"></script>
 
 <script type="text/javascript">
-function setValue(){
-    // document.getElementById("ov_radio").checked=true;
-    document.getElementById("studentDev").style.display = 'block';
-    document.getElementById("teacherDev").style.display = 'none'; 
-}
 
-window.onload = setValue();
 </script>
 
 <script>
     var stdAdNo = document.getElementById("admissionNoTxt").value;
     var stdName = document.getElementById("studentNameTxt").value;
-    var stdParEmail = document.querySelector("studentParentNameTxt").value;
+    var stdParEmail = document.getElementById("studentParentNameTxt").value;
     var stdEmail = document.getElementById("studentEmailTxt").value;
     var tchrRegNo = document.getElementById("teacherRegistrationNoTxt").value;
     var tchrName = document.getElementById("teacherNameTxt").value;
@@ -162,25 +161,27 @@ window.onload = setValue();
     
 
     function addstudent(){
-        verifystudent(stdAdNo,stdName,stdEmail,stdParName);
+        verifystudent(stdAdNo,stdName,stdEmail,stdParName,stdPass);
     }
     function addteacher(){
-        verifyteacher(tchrRegNo,tchrName,tchrEmail,tchrNIC);
+        verifyteacher(tchrRegNo,tchrName,tchrEmail,tchrNIC,tchrPass);
     }
 
-    function verifystudent(stdAdNo,stdName,stdEmail,stdParEmail) {
+    function verifystudent(stdAdNo,stdName,stdEmail,stdParEmail,stdPass) {
         db.collection("students").where("regno","==",stdAdNo)
         .get()
         .then(function(querySnapshot) {
             querySnapshot.forEach(function(doc) {
                 var output=doc.data();
-                if(output.email==stdEmail)&&(output.parent.email==stdParEmail){
-                    createuser(email,password,"student",stdAdNo);
+                if((output.email==stdEmail)&&(output.parent.email==stdParEmail)){
+                    createuser(email,stdPass,"student",stdAdNo);
+                    alertify.alert('Hello student Your Account was created sucessfully,\n Please confirm your email!').setHeader('<em> Almost Done </em> ');
+                    window.location.replace("index.php");
                 }
                 else{
-                    alert('Entered details do not match with our system please contact ur school admin');
+                    alertify.alert('Entered details do not match with our system, please contact ur school admin').setHeader('<em> Oops </em> ');
                 }
-            //console.log(doc.id, " => ", doc.data());
+            
             });
         })
         .catch(function(error) {
@@ -189,17 +190,19 @@ window.onload = setValue();
     }
 
 
-    function verifyteacher(tchrRegNo,tchrName,tchrEmail,tchrNIC) {
+    function verifyteacher(tchrRegNo,tchrName,tchrEmail,tchrNIC,tchrPass) {
         db.collection("teachers").where("regno","==",tchrRegNo)
         .get()
         .then(function(querySnapshot) {
             querySnapshot.forEach(function(doc) {
                 var output=doc.data();
-                if(output.email==tchrEmail)&&(output.nic==tchrNIC){
-                    createuser(email,password,"teacher",tchrRegNo);
+                if((output.email==tchrEmail)&&(output.nic==tchrNIC)){
+                    createuser(tchrEmail,tchrPass,"teacher",tchrRegNo);
+                    alertify.alert('Hello Teacher Your Account was created sucessfully,\n Please confirm your email!').setHeader('<em> Almost Done </em> ');
+                    window.location.replace("index.php");
                 }
                 else{
-                    alert('Entered details do not match with our system please contact ur school admin');
+                    alertify.alert('Entered details do not match with our system please contact ur school admin').setHeader('<em> Oops </em> ');
                 }
             //console.log(doc.id, " => ", doc.data());
             });

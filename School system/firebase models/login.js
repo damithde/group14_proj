@@ -92,7 +92,7 @@ function createuser(email,password,type,regno){
 
         }
         verifyemail();   
-        alert('Account created sucessfully, Please confirm your email');
+        
 
     })
     
