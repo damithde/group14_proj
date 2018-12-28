@@ -16,6 +16,11 @@
     <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-database.js"></script>
     <script src="firebase models/db.js"></script>
+    <!-- alertify -->    
+    <script src="plugins/alertify/alertify.min.js"></script>
+    <link rel="stylesheet" href="plugins/alertify/css/alertify.min.css" />
+    <link rel="stylesheet" href="plugins/alertify/css/themes/default.min.css" />
+    <!-- alertify -->
     <script src="firebase models/login.js"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -49,7 +54,7 @@
                     </div>
                 </div><!-- /.col -->
                 <div class="col-xs-4">
-                    <button id="test" onclick="addstudent1()"  class="btn btn-primary btn-block btn-flat">test</button>
+                    <button id="test" onclick="test()"  class="btn btn-primary btn-block btn-flat">test</button>
                 </div><!-- /.col -->
                 <div class="col-xs-4">
                     <button id="signout" onclick="logout()"  class="btn btn-primary btn-block btn-flat">Sign out</button>
@@ -82,18 +87,29 @@
 
 document.getElementById("sign").addEventListener("click",checking);
 
+firebase.auth().onAuthStateChanged(function(user) {
+  if (user) {
+    //getuserdata();
+  } else {
+    // No user is signed in.
+  }
+});
+
+function test(params) {
+    alertify.alert('Welcome!').setHeader('<em> Logged In </em> ');
+}
 
 
 function checking(){
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
       var loguser=firebase.auth().currentUser;
-      if (loguser.emailVerified==false){
-        alert('logged in');
+      if (loguser.emailVerified==false){//make this true
+        alertify.alert('Welcome!').setHeader('<em> Logged In </em> ');
         getuserdata();//  a value based on that dirrect to user specific page
       }
       else{
-          alert('please verify ur email before logining in');
+        alertify.alert('please verify ur email before logining in').setHeader('<em> Not Verified </em> ');
       }
     
   } else {

@@ -35,6 +35,7 @@ function getuserdata(){
     uid = user.uid; //get user id and match the record and direct to the specific land page then retireve the data relavent to that user 
     }
     var type;
+    
     var userdata=db.collection("users").where("userid", "==", uid);
     userdata.get()
     .then(function(querySnapshot) {
@@ -44,7 +45,6 @@ function getuserdata(){
             //console.log(doc.data().type);   
             if  ((doc.data().type)=='a'){
                 window.location.replace("pages/adminforms/admindashboard/admindashboard.php");
-                //console.log('here');
             }
             else if((doc.data().type)=='t'){
                 window.location.replace("pages/teacherforms/teacherdashboard/teacherdashboard.php");
@@ -53,8 +53,6 @@ function getuserdata(){
                 window.location.replace("pages/studentforms/studentdashboard/studentdashboard.php");
             }
             
-            //  
-
         });
     })
     .catch(function(error) {
@@ -94,7 +92,7 @@ function createuser(email,password,type,regno){
 
         }
         verifyemail();   
-        alert('Account created sucessfully, Please check your confirm your email by checking your mail');
+        alert('Account created sucessfully, Please confirm your email');
 
     })
     
