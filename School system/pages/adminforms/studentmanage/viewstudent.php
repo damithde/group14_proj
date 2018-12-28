@@ -331,6 +331,7 @@
     var studentNameLbl
     var studentGenderLbl
     var studentBdyLbl
+    var studentReligionLbl
     var studentEmailLbl
     var studentAdtLbl
     var studentClassLbl
@@ -345,11 +346,13 @@
     document.getElementById('studentNameLbl').innerHTML = studentNameLbl;
     document.getElementById('studentGenderLbl').innerHTML = studentGenderLbl;
     document.getElementById('studentBdyLbl').innerHTML = studentBdyLbl;
+    document.getElementById('studentReligionLbl').innerHTML = studentReligionLbl;
     document.getElementById('studentEmailLbl').innerHTML = studentEmailLbl;
     document.getElementById('studentAdtLbl').innerHTML = studentAdtLbl;
     document.getElementById('studentClassLbl').innerHTML = studentClassLbl;
     document.getElementById('studentSectionLbl').innerHTML = studentSectionLbl;
     document.getElementById('studentAddressLbl').innerHTML = studentAddressLbl;
+    document.getElementById('studentPhoneLbl').innerHTML = studentPhoneLbl;
     document.getElementById('parentNameLbl').innerHTML = parentNameLbl;
     document.getElementById('parentOccupationLbl').innerHTML = parentOccupationLbl;
     document.getElementById('parentEmailLbl').innerHTML = parentEmailLbl;
