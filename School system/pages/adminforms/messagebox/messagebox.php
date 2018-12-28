@@ -18,15 +18,15 @@
                         <div class="box-body">
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Student Id:</label>
-                                <input type="email" class="form-control" id="parentNameTxt" placeholder="Enter Student Id">
+                                <input type="email" class="form-control" id="studentIdText" placeholder="Enter Student Id">
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Student Name:</label>
-                                <input type="email" class="form-control" id="parentNameTxt" placeholder="Enter Studenr Name">
+                                <input type="email" class="form-control" id="studentNameTxt" placeholder="Enter Studenr Name">
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Message:</label>
-                                <textarea class="form-control" id="motherAddressTxt" rows="3" placeholder="Enter messege here"></textarea>
+                                <textarea class="form-control" id="messageTxt" rows="3" placeholder="Enter messege here"></textarea>
                             </div>
                             <div class="box-footer">
                                 <button type="submit" class="btn btn-primary">Send</button>
@@ -40,4 +40,11 @@
         </div>
     </section>
 </section>
+
+<script>
+    var stdFName = document.getElementById("studentIdText").value;
+    var stdLName = document.getElementById("studentNameTxt").value;
+    var stdLName = document.getElementById("messageTxt").value;
+</script>
+
 <?php include_once('../admincommon/footer.php'); ?>
