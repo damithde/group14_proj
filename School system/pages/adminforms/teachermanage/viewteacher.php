@@ -12,10 +12,10 @@
 <section class="content-wrapper">
     <section class="content-header">
         <div class="row">
-            <div class="col-md-2">
-            </div>
+            <!-- <div class="col-md-2">
+            </div> -->
             <!--            left side panel-->
-            <div class="col-md-8">
+            <div class="col-md-12">
                 <!--                student details-->
                 <div class="box box-primary">
                     <div class="box-header with-border">
@@ -75,19 +75,16 @@
                                                 <label class="text-muted" for="exampleInputEmail1">Date Of Birth:</label>
                                             </div>
                                             <div class="form-group">
-                                                <label class="text-muted" for="exampleInputEmail1">Religion:</label>
-                                            </div>
-                                            <div class="form-group">
                                                 <label class="text-muted" >Email:</label>
                                             </div>
                                             <div class="form-group">
                                                 <label class="text-muted" for="exampleInputEmail1">Admission Date:</label>
                                             </div>
                                             <div class="form-group">
-                                                <label class="text-muted" for="exampleInputEmail1">Class:</label>
+                                                <label class="text-muted" for="exampleInputEmail1">Current Class:</label>
                                             </div>
                                             <div class="form-group">
-                                                <label class="text-muted" for="exampleInputEmail1">Section:</label>
+                                                <label class="text-muted" for="exampleInputEmail1">Current Section:</label>
                                             </div>
                                             <div class="form-group">
                                                 <label class="text-muted" for="exampleInputEmail1">Address:</label>
@@ -108,9 +105,6 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">1995/09/20</label>
-                                    </div>
-                                    <div class="form-group">
-                                        <label>Srilankan</label>
                                     </div>
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">dinuka.kasunds@gmail.com</label>
