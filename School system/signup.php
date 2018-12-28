@@ -16,6 +16,7 @@
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-database.js"></script>
 <script src="firebase models/db.js"></script>
+<script src="firebase models/login.js"></script>
 <script src="firebase models/student.js"></script>
 <!-- alertify -->    
 <script src="plugins/alertify/alertify.min.js"></script>
@@ -148,7 +149,7 @@
 
 <script>
     var stdAdNo = document.getElementById("admissionNoTxt").value;
-    var stdName = document.getElementById("studentNameTxt").value;
+    var school = document.getElementById("studentNameTxt").value;
     var stdParEmail = document.getElementById("studentParentNameTxt").value;
     var stdEmail = document.getElementById("studentEmailTxt").value;
     var tchrRegNo = document.getElementById("teacherRegistrationNoTxt").value;
@@ -161,27 +162,29 @@
     
 
     function addstudent(){
-        verifystudent(stdAdNo,stdName,stdEmail,stdParName,stdPass);
+        
+        verifystudent("2016cs027","abc","ss@gmail.com","p","123456");
     }
     function addteacher(){
-        verifyteacher(tchrRegNo,tchrName,tchrEmail,tchrNIC,tchrPass);
+        verifyteacher(tchrRegNo,school,tchrEmail,tchrNIC,tchrPass);
     }
+    //(stdAdNo,school,stdEmail,stdParEmail,stdPass)
 
-    function verifystudent(stdAdNo,stdName,stdEmail,stdParEmail,stdPass) {
+    function verifystudent(stdAdNo,school,stdEmail,stdParEmail,stdPass) {
         db.collection("students").where("regno","==",stdAdNo)
         .get()
         .then(function(querySnapshot) {
             querySnapshot.forEach(function(doc) {
                 var output=doc.data();
-                if((output.email==stdEmail)&&(output.parent.email==stdParEmail)){
-                    createuser(email,stdPass,"student",stdAdNo);
-                    alertify.alert('Hello student Your Account was created sucessfully,\n Please confirm your email!').setHeader('<em> Almost Done </em> ');
-                    window.location.replace("index.php");
+                if((output.email==stdEmail)&&(output.parent.email==stdParEmail)){//add school 
+                    createuser(stdEmail,stdPass,"student",stdAdNo,school);
+                    alertify.alert('Hello student Your Account was created sucessfully,\n Please confirm your email!').setHeader('<em> Almost Done </em> ')
+                    .set('onok', function(closeEvent){ alertify.success('Redirecting..');setTimeout(function() { window.location.replace("index.php"); }, 200)} );
                 }
                 else{
                     alertify.alert('Entered details do not match with our system, please contact ur school admin').setHeader('<em> Oops </em> ');
                 }
-            
+                return;
             });
         })
         .catch(function(error) {
@@ -190,16 +193,16 @@
     }
 
 
-    function verifyteacher(tchrRegNo,tchrName,tchrEmail,tchrNIC,tchrPass) {
+    function verifyteacher(tchrRegNo,school,tchrEmail,tchrNIC,tchrPass) {
         db.collection("teachers").where("regno","==",tchrRegNo)
         .get()
         .then(function(querySnapshot) {
             querySnapshot.forEach(function(doc) {
                 var output=doc.data();
                 if((output.email==tchrEmail)&&(output.nic==tchrNIC)){
-                    createuser(tchrEmail,tchrPass,"teacher",tchrRegNo);
-                    alertify.alert('Hello Teacher Your Account was created sucessfully,\n Please confirm your email!').setHeader('<em> Almost Done </em> ');
-                    window.location.replace("index.php");
+                    createuser(tchrEmail,tchrPass,"teacher",tchrRegNo,school);
+                    alertify.alert('Hello Teacher Your Account was created sucessfully,\n Please confirm your email!').setHeader('<em> Almost Done </em> ')
+                    .set('onok', function(closeEvent){ alertify.success('Redirecting..');setTimeout(function() { window.location.replace("index.php"); }, 200)} );
                 }
                 else{
                     alertify.alert('Entered details do not match with our system please contact ur school admin').setHeader('<em> Oops </em> ');
