@@ -99,34 +99,34 @@
 
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label id="studentNameLbl">Y.Dinuka Kasun Medis</label>
+                                        <label id="studentNameLbl">-</label>
                                     </div>
                                     <div class="form-group">
-                                        <label id="studentGenderLbl">Male</label>
+                                        <label id="studentGenderLbl">-</label>
                                     </div>
                                     <div class="form-group">
-                                        <label id="studentBdyLbl">1995/09/20</label>
+                                        <label id="studentBdyLbl">-</label>
                                     </div>
                                     <div class="form-group">
-                                        <label id="studentReligionLbl">Srilankan</label>
+                                        <label id="studentReligionLbl">-</label>
                                     </div>
                                     <div class="form-group">
-                                        <label id="studentEmailLbl">dinuka.kasunds@gmail.com</label>
+                                        <label id="studentEmailLbl">-</label>
                                     </div>
                                     <div class="form-group">
-                                        <label id="studentAdtLbl">2015/02/02</label>
+                                        <label id="studentAdtLbl">-</label>
                                     </div>
                                     <div class="form-group">
-                                        <label id="studentClassLbl">m1</label>
+                                        <label id="studentClassLbl">-</label>
                                     </div>
                                     <div class="form-group">
-                                        <label id="studentSectionLbl">12</label>
+                                        <label id="studentSectionLbl">-</label>
                                     </div>
                                     <div class="form-group">
-                                        <label id="studentAddressLbl">73,Dampe,Madapatha</label>
+                                        <label id="studentAddressLbl">-</label>
                                     </div>
                                     <div class="form-group">
-                                        <label id="studentPhoneLbl">0717275722</label>
+                                        <label id="studentPhoneLbl">-</label>
                                     </div>
                                     <div class="form-group">
                                         <a href="javascript::;" class="btn btn-sm btn-default btn-flat pull-right">Edit details</a>
@@ -190,16 +190,16 @@
                                 <div class="col-md-8">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label  id="parentNameLbl">Test Test</label>
+                                            <label  id="parentNameLbl">-</label>
                                         </div>
                                         <div class="form-group">
-                                            <label id="parentOccupationLbl">Test</label>
+                                            <label id="parentOccupationLbl">-</label>
                                         </div>
                                         <div class="form-group">
-                                            <label id="parentEmailLbl">Test @ gmail.com</label>
+                                            <label id="parentEmailLbl">-</label>
                                         </div>
                                         <div class="form-group">
-                                            <label id="parentPhoneLbl">0717275722</label>
+                                            <label id="parentPhoneLbl">-</label>
                                         </div>
                                     </div>
                                 </div>
@@ -331,7 +331,6 @@
     var studentNameLbl
     var studentGenderLbl
     var studentBdyLbl
-    var studentReligionLbl
     var studentEmailLbl
     var studentAdtLbl
     var studentClassLbl
@@ -342,6 +341,20 @@
     var parentOccupationLbl
     var parentEmailLbl
     var parentPhoneLbl
+
+    document.getElementById('studentNameLbl').innerHTML = studentNameLbl;
+    document.getElementById('studentGenderLbl').innerHTML = studentGenderLbl;
+    document.getElementById('studentBdyLbl').innerHTML = studentBdyLbl;
+    document.getElementById('studentEmailLbl').innerHTML = studentEmailLbl;
+    document.getElementById('studentAdtLbl').innerHTML = studentAdtLbl;
+    document.getElementById('studentClassLbl').innerHTML = studentClassLbl;
+    document.getElementById('studentSectionLbl').innerHTML = studentSectionLbl;
+    document.getElementById('studentAddressLbl').innerHTML = studentAddressLbl;
+    document.getElementById('parentNameLbl').innerHTML = parentNameLbl;
+    document.getElementById('parentOccupationLbl').innerHTML = parentOccupationLbl;
+    document.getElementById('parentEmailLbl').innerHTML = parentEmailLbl;
+    document.getElementById('parentPhoneLbl').innerHTML = parentPhoneLbl;
+    
 </script>
 
 <?php include_once('../admincommon/footer.php'); ?>
