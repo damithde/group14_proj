@@ -57,14 +57,15 @@ function getstudentsfromname(fname,lname){
 
 }
 
+
 function getstudentsfromreg(reg){
-    var output={};
+    let output={};
     db.collection("students").where("regno","==",reg)
     .get()
     .then(function(querySnapshot) {
         querySnapshot.forEach(function(doc) {
-            output[doc.id]=doc.data();
-           // console.log(doc.id, " => ", doc.data());
+            output=doc.data();
+           //console.log(doc.id, " => ", doc.data());
         });
     })
     .catch(function(error) {

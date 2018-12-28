@@ -64,7 +64,7 @@ function getuserdata(){
 
 }
 
-function createuser(email,password){
+function createuser(email,password,type){
     //verifty account details
 
     firebase.auth().createUserWithEmailAndPassword(email, password).then(function(){
@@ -72,7 +72,17 @@ function createuser(email,password){
         alert('Account created sucessfully, Please check your confirm your email by checking your mail');
         var user = firebase.auth().currentUser;
         var token=user.getToken();//put this token in the user doc and relavent doc
-
+        db.collection("students").doc(student[0]).set({
+        
+        })
+        .then(function(docRef) {
+          
+            alert("student added successfully");
+           // console.log("Document written with ID: ", docRef.id);
+        })
+        .catch(function(error) {
+            alert("Error adding document: ", error);
+        });
     })
     .catch(function(error) {
         alert('Error occured');
