@@ -162,14 +162,11 @@
     
 
     function addstudent(){
-        
-        verifystudent("2016cs027","abc","ss@gmail.com","p","123456");
+        verifystudent(stdAdNo,school,stdEmail,stdParEmail,stdPass);
     }
     function addteacher(){
         verifyteacher(tchrRegNo,school,tchrEmail,tchrNIC,tchrPass);
     }
-    //(stdAdNo,school,stdEmail,stdParEmail,stdPass)
-
     function verifystudent(stdAdNo,school,stdEmail,stdParEmail,stdPass) {
         db.collection("students").where("regno","==",stdAdNo)
         .get()

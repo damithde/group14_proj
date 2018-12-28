@@ -97,9 +97,9 @@ function createuser(email,password,type,regno,school){
         verifyemail();   
     })
     .catch(function(error) {
-        alert('Error occured');
         var errorCode = error.code;
         var errorMessage = error.message;
+        alert('Error occured',errorMessage);
         console.log(errorMessage);
       });
 
