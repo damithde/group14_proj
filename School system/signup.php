@@ -11,6 +11,12 @@
     <!-- iCheck -->
     <link href="plugins/iCheck/square/blue.css" rel="stylesheet" type="text/css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-database.js"></script>
+<script src="firebase models/db.js"></script>
+<script src="firebase models/student.js"></script>
 </head>
 	<body class="login-page">
     <div class="login-box">
@@ -41,11 +47,15 @@
                         <span class="glyphicon glyphicon-user form-control-feedback"></span>
                     </div>
                     <div class="form-group has-feedback">
-                        <input id="studentParentNameTxt" type="text" class="form-control" placeholder="Registered Parent Name"/>
+                        <input id="studentParentNameTxt" type="text" class="form-control" placeholder="Registered Parent Email"/>
                         <span class="glyphicon glyphicon-edit form-control-feedback"></span>
                     </div>
                     <div class="form-group has-feedback">
                         <input id="studentEmailTxt" type="text" class="form-control" placeholder="Email"/>
+                        <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+                    </div>
+                    <div class="form-group has-feedback">
+                        <input id="studentPassword" type="text" class="form-control" placeholder="Password"/>
                         <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
                     </div>
                     
@@ -82,6 +92,10 @@
                     </div>
                     <div class="form-group has-feedback">
                         <input id="teacherEmailTxt" type="text" class="form-control" placeholder="Email"/>
+                        <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+                    </div>
+                    <div class="form-group has-feedback">
+                        <input id="teacherPassword" type="text" class="form-control" placeholder="Password"/>
                         <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
                     </div>
                     
@@ -136,13 +150,81 @@ window.onload = setValue();
 <script>
     var stdAdNo = document.getElementById("admissionNoTxt").value;
     var stdName = document.getElementById("studentNameTxt").value;
-    var stdParName = document.querySelector("studentParentNameTxt").value;
+    var stdParEmail = document.querySelector("studentParentNameTxt").value;
     var stdEmail = document.getElementById("studentEmailTxt").value;
-
     var tchrRegNo = document.getElementById("teacherRegistrationNoTxt").value;
     var tchrName = document.getElementById("teacherNameTxt").value;
     var tchrNIC = document.getElementById("teacherNicTxt").value;
     var tchrEmail = document.getElementById("teacherEmailTxt").value;
+    var type = document.querySelector('input[name=optionsRadios]:checked').value;
+    var stdPass = document.getElementById("studentPassword").value;
+    var tchrPass = document.getElementById("teacherPassword").value;
+    
+
+    function addstudent(){
+        verifystudent(stdAdNo,stdName,stdEmail,stdParName);
+    }
+    function addteacher(){
+        verifyteacher(tchrRegNo,tchrName,tchrEmail,tchrNIC);
+    }
+
+    function verifystudent(stdAdNo,stdName,stdEmail,stdParEmail) {
+        db.collection("students").where("regno","==",stdAdNo)
+        .get()
+        .then(function(querySnapshot) {
+            querySnapshot.forEach(function(doc) {
+                var output=doc.data();
+                if(output.Email==stdEmail)&&(output.parent.email==stdParEmail){
+                    createuser(email,password,"student");
+                }
+                else{
+                    alert('Entered details do not match with our system please contact ur school admin');
+                }
+            //console.log(doc.id, " => ", doc.data());
+            });
+        })
+        .catch(function(error) {
+            console.log("Error getting documents: ", error);
+        });    
+    }
+
+
+    function verifyteacher(tchrRegNo,tchrName,tchrEmail,tchrNIC) {
+        db.collection("teachers").where("regno","==",tchrRegNo)
+        .get()
+        .then(function(querySnapshot) {
+            querySnapshot.forEach(function(doc) {
+                var output=doc.data();
+                if(output.Email==stdEmail)&&(output.parent.email==stdParEmail){
+                    createuser(email,password,"teacher");
+                }
+                else{
+                    alert('Entered details do not match with our system please contact ur school admin');
+                }
+            //console.log(doc.id, " => ", doc.data());
+            });
+        })
+        .catch(function(error) {
+            console.log("Error getting documents: ", error);
+        });    
+    }
+
+
+    function getstudentsfromreg(reg){
+    let output={};
+    db.collection("students").where("regno","==",reg)
+    .get()
+    .then(function(querySnapshot) {
+        querySnapshot.forEach(function(doc) {
+            output=doc.data();
+           //console.log(doc.id, " => ", doc.data());
+        });
+    })
+    .catch(function(error) {
+        console.log("Error getting documents: ", error);
+    });
+    return output;
+}
 
 
 </script>
