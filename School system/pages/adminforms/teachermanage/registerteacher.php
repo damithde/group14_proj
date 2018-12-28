@@ -138,25 +138,25 @@
 
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label id="previewName">Y.Dinuka Kasun Medis</label>
+                                        <label id="previewName">-</label>
                                     </div>
                                     <div class="form-group">
-                                        <label id="previewGender">Male</label>
+                                        <label id="previewGender">-</label>
                                     </div>
                                     <div class="form-group">
-                                        <label id="previewDOB">1995/09/20</label>
+                                        <label id="previewDOB">-</label>
                                     </div>
                                     <div class="form-group">
-                                        <label id="previewEmail">dinuka.kasunds@gmail.com</label>
+                                        <label id="previewEmail">-</label>
                                     </div>
                                     <div class="form-group">
-                                        <label id="previewRegNo">2015/02/02</label>
+                                        <label id="previewRegNo">-</label>
                                     </div>
                                     <div class="form-group">
-                                        <label id="previewAddress">73,Dampe,Madapatha</label>
+                                        <label id="previewAddress">-</label>
                                     </div>
                                     <div class="form-group">
-                                        <label id="previewPhoneNo">0717275722</label>
+                                        <label id="previewPhoneNo">-</label>
                                     </div>
                                     <div >
                                         <button type="submit" class="btn btn-primary">Register</button>
@@ -204,43 +204,72 @@
 <script>
     function prvName() {
         var tchrName = document.getElementById("teacherNameTxt").value;
-        document.getElementById('previewName').innerHTML = tchrName;
+        if (tchrName === "") {
+            document.getElementById('previewName').innerHTML = "-";
+        }else{
+            document.getElementById('previewName').innerHTML = tchrName;
+        }
+        
     }
 </script>
 <script>
     function prvGender() {
         var tchrGender = document.getElementById("input[name=parent]:checked").value;
-        document.getElementById('previewGender').innerHTML = tchrGender;
+        if (tchrName === "") {
+            document.getElementById('previewGender').innerHTML = "-";
+        }else{
+            document.getElementById('previewGender').innerHTML = tchrGender;
+        }
     }
 </script>
 <script>
     function prvDOB() {
         var tchrDOB = document.getElementById("teacherDOBTxt").value;
-        document.getElementById('previewDOB').innerHTML = tchrDOB;
+        if (tchrName === "") {
+            document.getElementById('previewDOB').innerHTML = "-";
+        }else{
+            document.getElementById('previewDOB').innerHTML = tchrDOB;
+        }
     }
 </script>
 <script>
     function prvEmail() {
         var tchrEmail = document.getElementById("teacherEmailText").value;
-        document.getElementById('previewEmail').innerHTML = tchrEmail;
+        if (tchrName === "") {
+            document.getElementById('previewEmail').innerHTML = "-";
+        }else{
+            document.getElementById('previewEmail').innerHTML = tchrEmail;
+        }
     }
 </script>
 <script>
     function prvRegNo() {
         var tchrReg = document.getElementById("teacherRegNoTxt").value;
-        document.getElementById('previewRegNo').innerHTML = tchrReg;
+        if (tchrName === "") {
+            document.getElementById('previewRegNo').innerHTML = "-";
+        }else{
+            document.getElementById('previewRegNo').innerHTML = tchrReg;
+        }
     }
 </script>
 <script>
     function prvAddress() {
         var tchrAddress = document.getElementById("teacherAddressTxt").value;
-        document.getElementById('previewAddress').innerHTML = tchrAddress;
+        if (tchrName === "") {
+            document.getElementById('previewAddress').innerHTML = "-";
+        }else{
+            document.getElementById('previewAddress').innerHTML = tchrAddress;
+        } 
     }
 </script>
 <script>
     function prvPhoneNo() {
         var tchrTel = document.getElementById("teacherTelNoTxt").value;
-        document.getElementById('previewPhoneNo').innerHTML = tchrTel;
+        if (tchrName === "") {
+            document.getElementById('previewPhoneNo').innerHTML = "-";
+        }else{
+            document.getElementById('previewPhoneNo').innerHTML = tchrTel;
+        } 
     }
 </script>
 
