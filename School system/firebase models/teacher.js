@@ -1,8 +1,8 @@
 function addteacher(teacher){
     db.collection("teachers").doc(teacher[0]).set({
         regno: teacher[0],
-        Fname: teacher[1],
-        Lname: teacher[2],
+        fname: teacher[1],
+        lname: teacher[2],
         country: teacher[3],
         contact: teacher[4],
         dob: teacher[5],
@@ -16,8 +16,8 @@ function addteacher(teacher){
     .then(function(docRef) {
         db.collection("schools").doc(teacher[8]).collection("classes").doc(teacher[10]).collection("teachers").doc(teacher[0]).set({
             regno: teacher[0],
-            Fname: teacher[1],
-            Lname: teacher[2],
+            fname: teacher[1],
+            lname: teacher[2],
             country: teacher[3],
             contact: teacher[4],
             dob: teacher[5],
@@ -55,7 +55,7 @@ function getteachers(){
 
 function searchteacher(id){
     var output={};
-    db.collection("teachers").where("Fname", "==", id)
+    db.collection("teachers").where("fname","==", id)
     .get()
     .then(function(querySnapshot) {
         querySnapshot.forEach(function(doc) {

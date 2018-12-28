@@ -174,8 +174,8 @@ window.onload = setValue();
         .then(function(querySnapshot) {
             querySnapshot.forEach(function(doc) {
                 var output=doc.data();
-                if(output.Email==stdEmail)&&(output.parent.email==stdParEmail){
-                    createuser(email,password,"student");
+                if(output.email==stdEmail)&&(output.parent.email==stdParEmail){
+                    createuser(email,password,"student",stdAdNo);
                 }
                 else{
                     alert('Entered details do not match with our system please contact ur school admin');
@@ -195,8 +195,8 @@ window.onload = setValue();
         .then(function(querySnapshot) {
             querySnapshot.forEach(function(doc) {
                 var output=doc.data();
-                if(output.Email==stdEmail)&&(output.parent.email==stdParEmail){
-                    createuser(email,password,"teacher");
+                if(output.email==tchrEmail)&&(output.nic==tchrNIC){
+                    createuser(email,password,"teacher",tchrRegNo);
                 }
                 else{
                     alert('Entered details do not match with our system please contact ur school admin');

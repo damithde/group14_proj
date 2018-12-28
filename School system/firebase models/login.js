@@ -64,26 +64,40 @@ function getuserdata(){
 
 }
 
-function createuser(email,password,type){
+function createuser(email,password,type,regno){
     //verifty account details
 
     firebase.auth().createUserWithEmailAndPassword(email, password).then(function(){
-        var stat=verifyemail();   
-        alert('Account created sucessfully, Please check your confirm your email by checking your mail');
         var user = firebase.auth().currentUser;
         var token=user.getToken();//put this token in the user doc and relavent doc
-        db.collection("students").doc(student[0]).set({
-        
-        })
-        .then(function(docRef) {
-          
-            alert("student added successfully");
-           // console.log("Document written with ID: ", docRef.id);
-        })
-        .catch(function(error) {
-            alert("Error adding document: ", error);
-        });
+        if (type=='student'){
+            db.collection("students").doc(regno).set({
+                usertoken:token
+            },{merge:true})
+            .then(function(docRef) {
+                console.log("Document written with ID: ", docRef.id);
+            })
+            .catch(function(error) {
+                alert("Error adding document: ", error);
+            });
+        }
+        else{
+            db.collection("teachers").doc(regno).set({
+                usertoken:token
+            },{merge:true})
+            .then(function(docRef) {
+             console.log("Document written with ID: ", docRef.id);
+            })
+            .catch(function(error) {
+                alert("Error adding document: ", error);
+            });
+
+        }
+        verifyemail();   
+        alert('Account created sucessfully, Please check your confirm your email by checking your mail');
+
     })
+    
     .catch(function(error) {
         alert('Error occured');
         var errorCode = error.code;
@@ -96,7 +110,6 @@ function createuser(email,password,type){
 function verifyemail(){
     var user = firebase.auth().currentUser;
     user.sendEmailVerification().then(function() {
-        
       return true;
     }).catch(function(error) {
       return false;
