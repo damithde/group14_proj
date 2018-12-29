@@ -12,7 +12,7 @@
         <ul class="products-list product-list-in-box">
             <li class="item">
                 <div class="product-img">
-                    <img src="http://placehold.it/50x50/d2d6de/ffffff" alt="Product Image"/>
+                    <img src="https://img.icons8.com/ios-glyphs/26/000000/open-envelope.png" alt="Product Image"/>
                 </div>
                 <div class="product-info">
                     <a href="javascript::;" class="product-title">Atten : CS Group I : SCS 1209 – Object Oriented Programming <span class="label label-warning pull-right">Attachment</span></a>
@@ -24,7 +24,7 @@
             </li><!-- /.item -->
             <li class="item">
                 <div class="product-img">
-                    <img src="http://placehold.it/50x50/d2d6de/ffffff" alt="Product Image"/>
+                    <img src="https://img.icons8.com/ios-glyphs/26/000000/open-envelope.png" alt="Product Image"/>
                 </div>
                 <div class="product-info">
                     <a href="javascript::;" class="product-title">Atten : CS Group I : SCS 1209 – Object Oriented Programming <span class="label label-warning pull-right">Attachment</span></a>
@@ -36,7 +36,7 @@
             </li><!-- /.item -->
             <li class="item">
                 <div class="product-img">
-                    <img src="http://placehold.it/50x50/d2d6de/ffffff" alt="Product Image"/>
+                    <img src="https://img.icons8.com/ios-glyphs/26/000000/open-envelope.png" alt="Product Image"/>
                 </div>
                 <div class="product-info">
                     <a href="javascript::;" class="product-title">Atten : CS Group I : SCS 1209 – Object Oriented Programming <span class="label label-warning pull-right">Attachment</span></a>
@@ -48,7 +48,7 @@
             </li><!-- /.item -->
             <li class="item">
                 <div class="product-img">
-                    <img src="http://placehold.it/50x50/d2d6de/ffffff" alt="Product Image"/>
+                    <img src="https://img.icons8.com/ios-glyphs/26/000000/open-envelope.png" alt="Product Image"/>
                 </div>
                 <div class="product-info">
                     <a href="javascript::;" class="product-title">Atten : CS Group I : SCS 1209 – Object Oriented Programming <span class="label label-warning pull-right">Attachment</span></a>
@@ -61,6 +61,6 @@
         </ul>
     </div><!-- /.box-body -->
     <div class="box-footer text-center">
-        <a href="javascript::;" class="uppercase">View All Notifications</a>
+        <!-- <a href="javascript::;" class="uppercase">View All Notifications</a> -->
     </div><!-- /.box-footer -->
 </div><!-- /.box -->

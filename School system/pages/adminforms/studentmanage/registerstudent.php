@@ -65,7 +65,7 @@
                             <label >Class:</label>
                             <input type="input" class="form-control" id="studentClassTxt" placeholder="Enter Class">
                         </div>
-                        <div class="form-group">
+                        <div id="studentGradeTxt" class="form-group">
                             <label  >Grade:</label>
                             <!-- <input type="input" class="form-control" id="studentGradeTxt" placeholder="Enter Grade"> -->
                             <select>
@@ -180,6 +180,7 @@
     var stdClass = document.getElementById("studentClassTxt").value;
     var stdGrade = document.getElementById("studentGradeTxt").value;
     var stdAddress = document.getElementById("studentAddressTxt").value;
+    
     var par = document.querySelector('input[name=parent]:checked').value;
     var parName = document.getElementById("parentNameTxt").value;
     var parOcupation = document.getElementById("parentOcupationTxt").value;
