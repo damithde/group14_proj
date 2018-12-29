@@ -22,7 +22,7 @@
 
             <li><a  href="../requestcertificate/certificate.php"><i class="fa fa-certificate"></i> <span>Request Certificate</span> </a></li>
 
-            <li><a  href="../studentdashboard/studentdashboard.php"><i class="fa fa-clock-o"></i> <span>Events</span> </a></li>
+            <!-- <li><a  href="../studentdashboard/studentdashboard.php"><i class="fa fa-clock-o"></i> <span>Events</span> </a></li> -->
         </ul>
     </section>
     <!-- /.sidebar -->

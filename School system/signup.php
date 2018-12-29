@@ -12,11 +12,11 @@
     <link href="plugins/iCheck/square/blue.css" rel="stylesheet" type="text/css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
-<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-auth.js"></script>
-<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-database.js"></script>
-<script src="firebase models/db.js"></script>
-<script src="firebase models/student.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-database.js"></script>
+    <script src="firebase models/db.js"></script>
+    <script src="firebase models/student.js"></script>
 <!-- alertify -->    
 <script src="plugins/alertify/alertify.min.js"></script>
     <link rel="stylesheet" href="plugins/alertify/css/alertify.min.css" />

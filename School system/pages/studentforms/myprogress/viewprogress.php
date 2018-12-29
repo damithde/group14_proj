@@ -3,6 +3,9 @@
 <?php include_once('../studentcommon/sidebar.php'); ?>
 <?php include_once('../studentcommon/script.php'); ?>
 
+
+<body class="skin-blue">
+<div class="wrapper">
 <section class="content-wrapper">
     <section class="content-header">
             <!--            left side panel-->
@@ -16,26 +19,10 @@
                     <!-- form start -->
                     <form role="form">
                         <div class="box-body">
-                        
-                        <label class="text-muted" for="exampleInputEmail1"> 
-                        
-                        * Good Student. Do more math past papers and Give more attention for chemistry.
-
-                        * test data test data test data
-
-                        * Good Student. Do more math past papers and Give more attention for chemistry.
-
-                        * test data test data test data
-                        * Good Student. Do more math past papers and Give more attention for chemistry.
-
-                        * test data test data test data
-                        
-                        </label>
-                        
-                        
+                        <label class="text-muted" id="classTeacherNote"> - </label>
                         </div><!-- /.box-body -->
-                        <div class="box-footer">
-                        </div>
+                        <!-- <div class="box-footer">
+                        </div> -->
                     </form>
                 </div><!-- /.box -->
             </div>
@@ -50,13 +37,8 @@
                     <!-- form start -->
                     <form role="form">
                         <div class="box-body">
-                            <label> 
-                                <!-- class possition -->
-                                <h1>45</h1>
-                            </label>
-                        </div><!-- /.box-body -->
-                        <div class="box-footer">
-                        <!--  -->
+                            <div class ="col-md-5"></div>
+                            <label id="studentpossition"><h1>45</h1></label>
                         </div>
                     </form>
                 </div><!-- /.box -->
@@ -79,8 +61,25 @@
                                 <th>Term Test 3</th>
                             </tr>
                             </thead>
+                            <script>
+                                var cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+                                var text = "";
+                                var i;
+                                for (i = 0; i < cars.length; i++) {
+                                text += cars[i] + "<br>";
+                                }
+                                document.getElementById("demo").innerHTML = text;
+                                <tbody>
+                                    <tr>
+                                        <td>Math</td>
+                                        <td><span class="label label-success">527</span></td>
+                                        <td><span class="label label-danger">57</span></td>
+                                        <td><span class="">--</span></td>
+                                    </tr>
+                                </tbody>
+                                </script>
                             <tbody>
-                            <tr>
+                            <!-- <tr>
                                 <td>Math</td>
                                 <td><span class="label label-success">57</span></td>
                                 <td><span class="label label-danger">57</span></td>
@@ -115,7 +114,7 @@
                                 <td><span class="label label-warning">57</span></td>
                                 <td><span class="label label-danger">57</span></td>
                                 <td><span class="">--</span></td>
-                            </tr>
+                            </tr> -->
                             </tbody>
                         </table>
                     </div><!-- /.table-responsive -->
@@ -125,4 +124,7 @@
         </div>
     </section>
 </section>
+</div>
+</body>
+
 <?php include_once('../studentcommon/footer.php'); ?>

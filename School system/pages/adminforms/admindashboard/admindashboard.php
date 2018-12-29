@@ -118,15 +118,15 @@
                         </div><!-- /.box-header -->
                         <div class="box-body">
                             <div class="progress">
-                                <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                <div id = "studentcount" class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
                                     Present Students
-                                    <span class="sr-only">40% Complete (success)</span>
+                                    <span id ="studentpresent" class="sr-only">40% Complete (success)</span>
                                 </div>
                             </div>
                             <div class="progress">
-                                <div class="progress-bar progress-bar-red" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+                                <div id = "teachercount" class="progress-bar progress-bar-red" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
                                     Present Teachers
-                                    <span class="sr-only">70% Complete</span>
+                                    <span id ="teacherpresent" class="sr-only">70% Complete</span>
                                 </div>
                             </div>
                         </div><!-- /.box-body -->
@@ -146,4 +146,9 @@
 
 
 <?php include_once('../admincommon/footer.php'); ?>
+
+<script>
+    var studentcount
+    var studentpresent
+</script>
 
