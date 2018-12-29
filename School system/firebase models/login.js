@@ -62,45 +62,45 @@ function getuserdata(){
 
 }
 
-function createuser(email,password,type,regno){
-    //verifty account details
-
+function createuser(email,password,type,regno,school){
     firebase.auth().createUserWithEmailAndPassword(email, password).then(function(){
         var user = firebase.auth().currentUser;
-        var token=user.getToken();//put this token in the user doc and relavent doc
-        if (type=='student'){
-            db.collection("students").doc(regno).set({
-                usertoken:token
-            },{merge:true})
+        var token=user.uid;//put this token in the user doc and relavent doc
+        if (type=='student'){ 
+            db.collection("users").doc(regno).set({
+                school:school,
+                regno:regno,
+                type:"s",
+                userid:token
+            })
             .then(function(docRef) {
-                console.log("Document written with ID: ", docRef.id);
+               // console.log("Document written with ID: ", docRef.id);
             })
             .catch(function(error) {
                 alert("Error adding document: ", error);
             });
         }
-        else{
-            db.collection("teachers").doc(regno).set({
-                usertoken:token
-            },{merge:true})
+        else if (type=='teacher'){
+            db.collection("users").doc(regno).set({
+                school:school,
+                regno:regno,
+                type:"t",
+                userid:token
+            })
             .then(function(docRef) {
              console.log("Document written with ID: ", docRef.id);
             })
             .catch(function(error) {
                 alert("Error adding document: ", error);
             });
-
         }
         verifyemail();   
-        
-
     })
-    
     .catch(function(error) {
-        alert('Error occured');
         var errorCode = error.code;
         var errorMessage = error.message;
-        // ...
+        alert('Error occured',errorMessage);
+        console.log(errorMessage);
       });
 
 }

@@ -3,6 +3,13 @@
 <?php include_once('resultssidebar.php'); ?>
 <?php //include_once('right_panel.php'); ?>
 
+
+
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-database.js"></script>
+
 <body class="skin-blue">
 <div class="wrapper">
 <section class="content-wrapper">

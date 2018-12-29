@@ -29,7 +29,7 @@
 
             </li>
 
-            <li><a  href="../myprofile/profile.php"><i class="fa fa-certificate"></i> <span>My Profile</span> </a></li>
+            <li><a  href="../myprofile/viewmyprofile.php"><i class="fa fa-certificate"></i> <span>My Profile</span> </a></li>
             <li><a  href="../studentprofile/viewstu.php"><i class="fa fa-certificate"></i> <span>Student Profile</span> </a></li>
 
 

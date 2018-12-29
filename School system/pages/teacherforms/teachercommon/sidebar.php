@@ -21,7 +21,7 @@
             <li><a  href="../techermessagebox/messagebox.php"><i class="fa fa-home"></i> <span>Send notice</span> </a></li>
 
 
-            <li><a  href="../myprofile/profile.php"><i class="fa fa-certificate"></i> <span>My Profile</span> </a></li>
+            <li><a  href="../myprofile/viewmyprofile.php"><i class="fa fa-certificate"></i> <span>My Profile</span> </a></li>
 
             <li><a  href="../studentprofile/viewstu.php"><i class="fa fa-certificate"></i> <span>Student Profile</span> </a></li>
         </ul>
