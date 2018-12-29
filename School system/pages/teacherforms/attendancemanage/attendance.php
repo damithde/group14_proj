@@ -1,7 +1,12 @@
-<?php include_once('attendancehead.php'); ?>
-<?php include_once('attendanceheader.php'); ?>
-<?php include_once('attendancesidebar.php'); ?>
-<?php //include_once('right_panel.php'); ?>
+<?php include_once('../teachercommon/head.php'); ?>
+<?php include_once('../teachercommon/header.php'); ?>
+<?php include_once('../teachercommon/sidebar.php'); ?>
+<?php include_once('../teachercommon/script.php'); ?>
+
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-database.js"></script>
 
 <body class="skin-blue">
 <div class="wrapper">
@@ -10,48 +15,26 @@
         <!--                Exam results-->
         <div class="box box-primary">
             <div class="box-header with-border">
-
-                <div class="row">
-
-
-
-
-                    <div class="col-md-3">
-                        <!-- search form -->
-                        <form action="#" method="get" class="form-group">
-                            <div class="input-group">
-                                <input type="text" name="q" class="form-control" placeholder="Enter Class Name  ..."/>
-                                <span class="input-group-btn">
+                <div class="col-md-6">
+                    <!-- search form -->
+                    <form action="#" method="get" class="form-group">
+                        <div class="input-group">
+                            <input type="text" name="q" class="form-control" placeholder="Class"/>
+                            <span class="input-group-btn">
                                 <button type='submit' name='search' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
                             </span>
-                            </div>
 
-                                <div class="box box-solid bg-aqua">
-                                <div class="box-header ui-sortable-handle" style="cursor: move;">
-                                    <i class="fa fa-calendar"></i>
-                                    <h3 class="box-title">Date</h3>
-
-                                </div><!-- /.box-header -->
-                                <div class="box-body no-padding" style="display: block;">
-                                    <!--The calendar -->
-                                    <div id="calendar" style="width: 100%">
-
-                                    </div>
-                                </div><!-- /.box-body -->
-
-
-
-                            </div><!-- /.box-body -->
-
+                            <input type="text" name="q" class="form-control" placeholder="Datae"/>
+                            <span class="input-group-btn">
+                                <button type='submit' name='search' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
+                            </span>
                         </div>
-
-
-
+                        <div class="input-group">
+                            
                         </div>
-            </div>
                     </form>
                     <!-- /.search form -->
-
+                </div>
             </div><!-- /.box-header -->
             <div class="box-body">
                 <div class="table-responsive">
@@ -79,7 +62,7 @@
                         </tr>
                         <tr>
                             <td><a href="pages/examples/invoice.html">16000897</a></td>
-                            <td>Y.D.K.Madhushani</td>
+                            <td>Y.D.K.Medis</td>
                             <td>
                                 <label>
                                     <div class="icheckbox_flat-green checked" aria-checked="false" aria-disabled="false" style="position: relative;"><input type="checkbox" class="flat-red" checked="" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
@@ -90,7 +73,7 @@
                         </tr>
                         <tr>
                             <td><a href="pages/examples/invoice.html">16000897</a></td>
-                            <td>Y.D.K.Menaka</td>
+                            <td>Y.D.K.Medis</td>
                             <td>
                                 <label>
                                     <div class="icheckbox_flat-green checked" aria-checked="false" aria-disabled="false" style="position: relative;"><input type="checkbox" class="flat-red" checked="" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
@@ -101,7 +84,7 @@
                         </tr>
                         <tr>
                             <td><a href="pages/examples/invoice.html">16000897</a></td>
-                            <td>Y.D.K.perera</td>
+                            <td>Y.D.K.Medis</td>
                             <td>
                                 <label>
                                     <div class="icheckbox_flat-green checked" aria-checked="false" aria-disabled="false" style="position: relative;"><input type="checkbox" class="flat-red" checked="" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
@@ -111,8 +94,8 @@
                             <td><span class="label label-warning">75%</span></td>
                         </tr>
                         <tr>
-                            <td><a href="pages/examples/invoice.html">16000895</a></td>
-                            <td>Y.Anjali Perera</td>
+                            <td><a href="pages/examples/invoice.html">16000897</a></td>
+                            <td>Y.D.K.Medis</td>
                             <td>
                                 <label>
                                     <div class="icheckbox_flat-green checked" aria-checked="false" aria-disabled="false" style="position: relative;"><input type="checkbox" class="flat-red" checked="" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
@@ -212,6 +195,6 @@
 </body>
 
 
-<?php include_once('attendancefooter.php'); ?>
-<?php include_once('attendancescript.php'); ?>
+<?php include_once('../teachercommon/footer.php'); ?>
+
 

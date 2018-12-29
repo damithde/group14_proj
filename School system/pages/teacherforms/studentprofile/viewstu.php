@@ -3,6 +3,14 @@
 <?php include_once('stuprofileheader.php'); ?>
 <?php include_once('stuprofilessidebar.php'); ?>
 <?php include_once('stuprofilescript.php'); ?>
+
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-database.js"></script>
+
+
+
 <body class="skin-green">
 <div class="wrapper">
     <section class="content-wrapper">

@@ -3,6 +3,14 @@
 <?php include_once('myprofilessidebar.php'); ?>
 <?php include_once('myprofilescript.php'); ?>
 
+
+
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-database.js"></script>
+
+
 <section class="content-wrapper">
     <section class="content-header">
         <section class="content-header">
@@ -27,7 +35,7 @@
                                             <div class="icon">
                                                 <i class="fa fa-user"></i>
                                             </div>
-                                            <a href="../myprofile/profile.php" class="small-box-footer">
+                                            <a href="viewmyprofile.php" class="small-box-footer">
                                                 My Details <i class="fa fa-arrow-circle-right"></i>
                                             </a>
                                         </div>
@@ -180,5 +188,28 @@
 
     </section>
 </section>
+    <script>
+        var regno= ;
+        var teaname = document.getElementById("studentNameTxt").value;
+        var stdGend = document.querySelector('input[name=gender]:checked').value;
+        var stdReli = document.getElementById("studentReligionTxt").value;
+        var stdEmail = document.getElementById("studentEmailTxt").value;
+        var stdAdNo = document.getElementById("studentAdmissionNoTxt").value;
+        var stdClass = document.getElementById("studentClassTxt").value;
+        var stdGrade = document.getElementById("studentSectionTxt").value;
+        var stdAddress = document.getElementById("studentAddressTxt").value;
+        var parName = document.getElementById("parentNameTxt").value;
+        var parOcupation = document.getElementById("parentOcupationTxt").value;
+        var parEmail = document.getElementById("parentEmail").value;
+        var parAddress = document.getElementById("parentAddressTxt").value;
+        var parent={name:parName,parent:par,occupation:parOcupation,email:parEmail};
+        var student= [stdAdNo,stdFName,stdLName,contact,stdbd,stdAddress,stdReli,school,stdGrade,stdClass,stdEmail];
+        updatestudent(regno,student,parent);
+
+
+
+
+
+    </script>
 <?php include_once('../teachercommon/footer.php'); ?>
 
