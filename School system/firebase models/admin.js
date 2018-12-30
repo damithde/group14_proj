@@ -13,7 +13,7 @@ function getschool() {
             output=doc.data();
             var school=output.school;
             // doc.data() is never undefined for query doc snapshots
-            console.log(doc.id, " => ", doc.data());
+            //console.log(doc.id, " => ", doc.data());
             return school;
         });
     })
@@ -22,3 +22,6 @@ function getschool() {
     });
     
 }
+
+
+
