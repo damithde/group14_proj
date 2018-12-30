@@ -21,50 +21,13 @@
                             <div >
                                 <div class="row">
                                     <!-- ./col -->
-                                    <div class="col-lg-3 col-xs-6">
-                                        <!-- small box -->
-                                        <div class="small-box bg-aqua">
-                                            <div class="inner">
-                                                <h3>
-                                                    <br>
-                                                </h3>
-                                                <p>
-                                                    <br>
-                                                </p>
-                                            </div>
-                                            <div class="icon">
-                                                <i class="fa fa-user"></i>
-                                            </div>
-                                            <a href="viewmyprofile.php" class="small-box-footer">
-                                                My Details <i class="fa fa-arrow-circle-right"></i>
-                                            </a>
-                                        </div>
 
-                                    </div>
-                                    <div class="col-lg-3 col-xs-6">
-                                        <!-- small box -->
-                                        <div class="small-box bg-red">
-                                            <div class="inner">
-                                                <h3>
-                                                    <br>
-                                                </h3>
-                                                <p>
-                                                    <br>
-                                                </p>
-                                            </div>
-                                            <div class="icon">
-                                                <i class="fa fa-edit"></i>
-                                            </div>
-                                            <a href="../leave/leave.php" class="small-box-footer">
-                                                Leave Request <i class="fa fa-arrow-circle-right"></i>
-                                            </a>
-                                        </div>
-                                    </div>
+
 
                                     <!--            left side panel-->
-            <div class="col-md-12">
+
                 <!--                student details-->
-                <div class="box box-primary">
+
                 
                     <div class="box-header with-border">
                         <h3 class="box-title">Teacher Details</h3>
@@ -98,81 +61,70 @@
                                         </div>
                                         <div class="col-md-6">
                                         <!--Lable names-->
-                                            <div class="form-group">
-                                                <label class="text-muted" for="exampleInputEmail1">Teacher ID:</label>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="text-muted" for="exampleInputEmail1">Teacher Name:</label>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="text-muted" for="exampleInputEmail1">Birth Day:</label>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="text-muted" for="exampleInputEmail1">Address:</label>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="text-muted" for="exampleInputEmail1">Phone No:</label>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="text-muted" >Gender:</label>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="text-muted" >NIC Number:</label>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="text-muted" for="exampleInputEmail1">Related Subjects:</label>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="text-muted" for="exampleInputEmail1">First Appoitnment Date:</label>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="text-muted" for="exampleInputEmail1">Current School Appoinment Date:</label>
-                                            </div>
 
+                                                <!--Lable names-->
 
-
-
+                                                <div class="form-group">
+                                                    <label class="text-muted" for="exampleInputEmail1">Name:</label>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="text-muted" for="exampleInputEmail1">Gender:</label>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="text-muted" for="exampleInputEmail1">Date Of Birth:</label>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="text-muted" >Email:</label>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="text-muted" for="exampleInputEmail1">Admission Date:</label>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="text-muted" for="exampleInputEmail1">Current Class:</label>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="text-muted" for="exampleInputEmail1">Current Section:</label>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="text-muted" for="exampleInputEmail1">Address:</label>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="text-muted" for="exampleInputEmail1">Phone:</label>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-
                                 <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="exampleInputEmail1">2145</label>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="exampleInputEmail1">A.H.T.Perera</label>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="exampleInputEmail1">1970/03/14</label>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="exampleInputEmail1">No.12,Galle Road,Matara.</label>
-                                    </div>
-                                    <div class="form-group">
-                                        <label>071-2541367</label>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="exampleInputEmail1">Male</label>
 
+                                    <div class="form-group">
+                                        <label id="teacherNameLbl">-</label>
                                     </div>
                                     <div class="form-group">
-                                        <label for="exampleInputEmail1">705236419V</label>
-
+                                        <label id="teacherGenderLbl">-</label>
                                     </div>
                                     <div class="form-group">
-
-                                        <label for="exampleInputEmail1">Maths</label>
-
+                                        <label id="teacherBdyLbl">-</label>
                                     </div>
                                     <div class="form-group">
-                                        <label for="exampleInputEmail1">1994/02/12</label>
+                                        <label id="teacherEmailLbl">-</label>
                                     </div>
                                     <div class="form-group">
-                                        <label for="exampleInputEmail1">2005/06/21</label>
+                                        <label id="teacherAdmissionLbl">-</label>
                                     </div>
 
+                                    <div class="form-group">
+                                        <label id="teacherClassLbl">-</label>
+                                    </div>
 
+                                    <div class="form-group">
+                                        <label id="teacherSectionLbl">-</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label id="teacherAddressLbl">-</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label id="teacherPhoneLbl">-</label>
+                                    </div>
 
                                 </div>
 
@@ -183,29 +135,89 @@
                     </form>
                 </div><!-- /.box -->
             </div>
+                            <div class="row">
+                                <div class="col-md-12">
+
+                                    <!--                guardian details-->
+                                    <div class="box box-primary">
+                                        <div class="box-header  with-border">
+                                            <h3 class="box-title">Application For Leave </h3>
+                                        </div><!-- /.box-header -->
+                                        <!-- form start -->
+                                        <form role="form">
+                                            <div class="box-body">
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail1">School ID:1101</label>
+
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail1">Name:</label>
+                                                    <input type="email" class="form-control" id="parentNameTxt" placeholder="Enter Name">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail1">Teacher ID:</label>
+                                                    <input type="email" class="form-control" id="parentNameTxt" placeholder="Enter Teacher ID">
+                                                </div>
+
+
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail1">Number Of Leave days:</label>
+                                                    <input type="email" class="form-control" id="parentNameTxt" placeholder="Enter No Of days">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Date Of Commencing leave:</label>
+                                                    <div class="input-group">
+                                                        <div class="input-group-addon">
+                                                            <i class="fa fa-calendar"></i>
+                                                        </div>
+                                                        <input type="text" class="form-control pull-right" id="date"/>
+                                                    </div><!-- /.input group -->
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Date Of Assuming duties:</label>
+                                                    <div class="input-group">
+                                                        <div class="input-group-addon">
+                                                            <i class="fa fa-calendar"></i>
+                                                        </div>
+                                                        <input type="text" class="form-control pull-right" id="date"/>
+                                                    </div><!-- /.input group -->
+                                                </div>
+                                                <div class="box-footer">
+                                                    <button type="submit" class="btn btn-primary">Send</button>
+                                                </div>
+
+                                        </form>
+                                    </div><!-- /.box -->
                                 </div>
+                            </div>
+                            <div>
+                            </div>
 
 
-    </section>
+
+        </section>
 </section>
     <script>
-        var regno= ;
-        var teaname = document.getElementById("studentNameTxt").value;
-        var stdGend = document.querySelector('input[name=gender]:checked').value;
-        var stdReli = document.getElementById("studentReligionTxt").value;
-        var stdEmail = document.getElementById("studentEmailTxt").value;
-        var stdAdNo = document.getElementById("studentAdmissionNoTxt").value;
-        var stdClass = document.getElementById("studentClassTxt").value;
-        var stdGrade = document.getElementById("studentSectionTxt").value;
-        var stdAddress = document.getElementById("studentAddressTxt").value;
-        var parName = document.getElementById("parentNameTxt").value;
-        var parOcupation = document.getElementById("parentOcupationTxt").value;
-        var parEmail = document.getElementById("parentEmail").value;
-        var parAddress = document.getElementById("parentAddressTxt").value;
-        var parent={name:parName,parent:par,occupation:parOcupation,email:parEmail};
-        var student= [stdAdNo,stdFName,stdLName,contact,stdbd,stdAddress,stdReli,school,stdGrade,stdClass,stdEmail];
-        updatestudent(regno,student,parent);
 
+            var teacherNameLbl
+            var teacherGenderLbl
+            var teacherBdyLbl
+            var teacherEmailLbl
+            var teacherAdmissionLbl
+            var teacherClassLbl
+            var teacherSectionLbl
+            var teacherAddressLbl
+            var teacherPhoneLbl
+
+            document.getElementById('teacherNameLbl').innerHTML = teacherNameLbl;
+            document.getElementById('teacherGenderLbl').innerHTML = teacherGenderLbl;
+            document.getElementById('teacherBdyLbl').innerHTML = teacherBdyLbl;
+            document.getElementById('teacherEmailLbl').innerHTML = teacherEmailLbl;
+            document.getElementById('teacherAdmissionLbl').innerHTML = teacherAdmissionLbl;
+            document.getElementById('teacherClassLbl').innerHTML = teacherClassLbl;
+            document.getElementById('teacherSectionLbl').innerHTML = teacherSectionLbl;
+            document.getElementById('teacherAddressLbl').innerHTML = teacherAddressLbl;
+            document.getElementById('teacherPhoneLbl').innerHTML = teacherPhoneLbl;
 
 
 
