@@ -81,16 +81,19 @@
                                                 <label class="text-muted" for="exampleInputEmail1">Admission Date:</label>
                                             </div>
                                             <div class="form-group">
-                                                <label class="text-muted" for="exampleInputEmail1">Current Class:</label>
+                                                <label class="text-muted" for="exampleInputEmail1">Class:</label>
                                             </div>
                                             <div class="form-group">
-                                                <label class="text-muted" for="exampleInputEmail1">Current Section:</label>
+                                                <label class="text-muted" for="exampleInputEmail1">Section:</label>
                                             </div>
                                             <div class="form-group">
                                                 <label class="text-muted" for="exampleInputEmail1">Address:</label>
                                             </div>
                                             <div class="form-group">
                                                 <label class="text-muted" for="exampleInputEmail1">Phone:</label>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="text-muted" for="exampleInputEmail1">Current Status:</label>
                                             </div>
                                         </div>
                                     </div>

@@ -8,6 +8,8 @@
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-database.js"></script>
+<script src="../../../firebase models/db.js"></script>
+<script src="../../../firebase models/student.js"></script>
 
 <section class="content-wrapper">
     <section class="content-header">
@@ -46,7 +48,7 @@
                                 <div class="input-group-addon">
                                     <i class="fa fa-calendar"></i>
                                 </div>
-                                <input type="text" class="form-control pull-right" id="date"/>
+                                <input type="date" class="form-control pull-right" id="date"/>
                             </div><!-- /.input group -->
                         </div>
                         <div class="form-group">
@@ -167,8 +169,7 @@
 </section>
 
 
-<script src="../../../firebase models/db.js"></script>
-<script src="../../../firebase models/student.js"></script>
+
 <script>
     var stdFName = document.getElementById("studentFNameTxt").value;
     var stdLName = document.getElementById("studentLNameTxt").value;
