@@ -14,7 +14,7 @@
         </div>
         <ul class="sidebar-menu">
             <li class="header">MAIN NAVIGATION</li>
-            <li><a  href="/teacherdashboard.php"><i class="fa fa-home"></i> <span>Home</span> </a></li>
+            <li><a  href="../teacherdashboard/teacherdashboard.php"><i class="fa fa-home"></i> <span>Home</span> </a></li>
 
             <li><a  href="../attendancemanage/attendance.php"><i class="fa fa-user"></i> <span>View Attendance</span> </a></li>
 

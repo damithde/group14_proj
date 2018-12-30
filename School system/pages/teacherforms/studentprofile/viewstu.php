@@ -163,6 +163,13 @@
             <div class="form-group">
                 <label class="text-muted" for="exampleInputEmail1">Admission Number:</label>
             </div>
+                            <div class="form-group">
+                                <label class="text-muted" for="exampleInputEmail1">Name:</label>
+                            </div>
+                            <div class="form-group">
+                                <label class="text-muted" for="exampleInputEmail1">Class:</label>
+                            </div>
+
             <div class="form-group">
                 <label class="text-muted" for="exampleInputEmail1">Term Test:</label>
             </div>
@@ -183,10 +190,10 @@
                 <label class="text-muted" for="exampleInputEmail1">Subject3:</label>
             </div>
             <div class="form-group">
-                <label class="text-muted" for="exampleInputEmail1">Subject4::</label>
+                <label class="text-muted" for="exampleInputEmail1">Subject4:</label>
             </div>
             <div class="form-group">
-                <label class="text-muted" for="exampleInputEmail1">Subject5::</label>
+                <label class="text-muted" for="exampleInputEmail1">Subject5:</label>
             </div>
             <div class="form-group">
                 <label class="text-muted" for="exampleInputEmail1">Subject6:</label>
@@ -211,6 +218,12 @@
                     <div class="form-group">
                         <label id="studentAdmissionNoLbl">-</label>
                     </div>
+                                        <div class="form-group">
+                                            <label id="stuNameLbl">-</label>
+                                        </div>
+                                        <div class="form-group">
+                                            <label id="stuClassLbl">-</label>
+                                        </div>
                     <div class="form-group">
                         <label id="studentTermTestNoLbl">-</label>
                     </div>
@@ -264,6 +277,53 @@
 
 
         </div>
+
+            <div class="box box-primary">
+                <div class="box-header with-border">
+                    <form action="#" method="get" class="form-group">
+                        <div class="input-group">
+                            <input type="text" name="q" class="form-control" placeholder="Enter Subject..."/>
+                            <span class="input-group-btn">
+                                <button type='submit' name='search' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
+                            </span>
+                        </div>
+                    </form>
+                    <h3 class="box-title">Exam Results</h3>
+                </div><!-- /.box-header -->
+                <div class="box-body">
+                    <div class="table-responsive">
+                        <table class="table no-margin">
+                            <thead>
+                            <tr>
+                                <th>Admission Number</th>
+
+                                <th>Student Name</th>
+                                <th>Marks</th>
+
+                            </tr>
+                            </thead>
+                            <tbody>
+
+                            <tr>
+                                <th><label id="admissionNoLbl">-</label></th>
+                                <th><label id="studentsNameLbl">-</label></>
+                                <th> <label id="marksLbl">-</label></th>
+
+
+                            </tr>
+
+
+                            </tbody>
+                        </table>
+                    </div><!-- /.table-responsive -->
+                </div><!-- /.box-body -->
+                <div class="box-footer clearfix">
+                    <a href="javascript::;" class="btn btn-sm btn-default btn-flat pull-right">View All Exams</a>
+                </div><!-- /.box-footer -->
+            </div><!-- /.box -->
+
+        </div>
+
     </section>
 
 
@@ -311,6 +371,8 @@
 
 
     var studentAdmissionNoLbl
+    var stuNameLbl
+    var stuClassLbl
     var studentTermTestNoLbl
     var studentYearLbl
 
@@ -327,6 +389,8 @@
 
 
     document.getElementById('studentAdmissionNoLbl').innerHTML=studentAdmissionNoLbl;
+    document.getElementById('stuNameLbl').innerHTML=stuNameLbl;
+    document.getElementById('stuClassLbl').innerHTML=stuClassLbl;
     document.getElementById('studentTermTestNoLbl').innerHTML=studentTermTestNoLbl;
     document.getElementById('studentYearLbl').innerHTML=studentYearLbl;
     document.getElementById('studentPositionLbl').innerHTML=studentPositionLbl;
@@ -341,5 +405,16 @@
     document.getElementById('studentSubject9Lbl').innerHTML=studentSubject9Lbl;
 
 </script>
-<?php include_once('../teachercommon/footer.php'); ?>
+        <script>
+            var  admissionNoLbl
+            var studentsNameLbl
+             var marksLbl
+
+            document.getElementById('admissionNoLbl').innerHTML=admissionNoLbl;
+            document.getElementById('studentsNameLbl').innerHTML=studentsNameLbl;
+            document.getElementById('marksLbl').innerHTML=marksLbl;
+
+
+        </script>
+            <?php include_once('../teachercommon/footer.php'); ?>
 
