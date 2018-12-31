@@ -15,7 +15,7 @@
                         <div class="row">
                             <div class="col-md-6 col-sm-6 col-12">
                                 <div class="info-box bg-green">
-                                <span class="info-box-icon"><i class="fa fa-bookmark-o"></i></span>
+                                <span class="info-box-icon"><i class="fa fa-users"></i></span>
 
                                 <div class="info-box-content">
                                     <span class="info-box-text">Total Students</span>
@@ -35,7 +35,7 @@
                             <!-- /.col -->
                             <div class="col-md-6 col-sm-6 col-12">
                                 <div class="info-box bg-blue">
-                                <span class="info-box-icon"><i class="fa fa-thumbs-o-up"></i></span>
+                                <span class="info-box-icon"><i class="fa fa-users"></i></span>
 
                                 <div class="info-box-content">
                                     <span class="info-box-text">Total Teachers</span>
@@ -44,9 +44,6 @@
                                     <div class="progress">
                                     <div id ="totTeachersNo" class="progress-bar" ></div>
                                     </div>
-                                    <!-- <span class="progress-description">
-                                    70% Increase in 30 Days
-                                    </span> -->
                                 </div>
                                 <!-- /.info-box-content -->
                                 </div>
@@ -58,7 +55,7 @@
                         <div class="row">
                             <div class="col-md-6 col-sm-6 col-12">
                                 <div class="info-box bg-orange">
-                                <span class="info-box-icon"><i class="fa fa-bookmark-o"></i></span>
+                                <span class="info-box-icon"><i class="fa fa-envelope-square"></i></span>
 
                                 <div class="info-box-content">
                                     <span class="info-box-text">Number of Notifications</span>
@@ -67,9 +64,6 @@
                                     <div class="progress">
                                     <div class="progress-bar" style="width: 70%"></div>
                                     </div>
-                                    <!-- <span class="progress-description">
-                                    70% Increase in 30 Days
-                                    </span> -->
                                 </div>
                                 <!-- /.info-box-content -->
                                 </div>
@@ -78,7 +72,7 @@
                             <!-- /.col -->
                             <div class="col-md-6 col-sm-6 col-12">
                                 <div class="info-box bg-red">
-                                <span class="info-box-icon"><i class="fa fa-thumbs-o-up"></i></span>
+                                <span class="info-box-icon"><i class="fa fa-users"></i></span>
 
                                 <div class="info-box-content">
                                     <span class="info-box-text">Non Acadamic Staff Total</span>
@@ -87,9 +81,6 @@
                                     <div class="progress">
                                     <div class="progress-bar" style="width: 70%"></div>
                                     </div>
-                                    <!-- <span class="progress-description">
-                                    70% Increase in 30 Days
-                                    </span> -->
                                 </div>
                                 <!-- /.info-box-content -->
                                 </div>

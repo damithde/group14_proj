@@ -19,8 +19,12 @@
                     <h3 class="box-title">Student Details</h3>
                 </div><!-- /.box-header -->
                 <!-- form start -->
-                <form role="form">
+                <form role="form" action="registerstudent.php" method="POST">
                     <div class="box-body">
+                        <div class="form-group">
+                            <label  >Student ID:</label>
+                            <label  id="studentIdLbl">2016/ws/rk/52667</label>
+                        </div>
                         <div class="form-group">
                             <label  >First Name:</label>
                             <input type="input" class="form-control" id="studentFNameTxt" placeholder="Enter First Name">
@@ -46,9 +50,10 @@
                                 <div class="input-group-addon">
                                     <i class="fa fa-calendar"></i>
                                 </div>
-                                <input type="text" class="form-control pull-right" id="date"/>
-                            </div><!-- /.input group -->
+                                <input type="text" class="form-control" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask="" id="date"/>
+                            </div>
                         </div>
+
                         <div class="form-group">
                             <label  >Religion:</label>
                             <input type="input" class="form-control" id="studentReligionTxt" placeholder="Enter Religion">
@@ -92,8 +97,12 @@
                             </div><!-- /.input group -->
                         </div>
                         <div class="form-group">
-                            <label >Select Photo</label>
+                            <!-- <label >Select Photo</label>
                             <input type="file" id="exampleInputFile">
+                            <input type="submit" value="Upload"> -->
+                            <label>Upload Image</label>
+                            <input type="file" name="fileToUpload" id="fileToUpload">
+                            <img id='img-upload'/>
                         </div>
                     </div><!-- /.box-body -->
 
@@ -170,6 +179,10 @@
 <script src="../../../firebase models/db.js"></script>
 <script src="../../../firebase models/student.js"></script>
 <script>
+
+    var studentIdLbl =" 2016 cs 089 ";//set auto generated student id
+    document.getElementById("studentIdLbl").innerHTML = studentIdLbl;
+
     var stdFName = document.getElementById("studentFNameTxt").value;
     var stdLName = document.getElementById("studentLNameTxt").value;
     var stdGend = document.querySelector('input[name=gender]:checked').value;
@@ -180,7 +193,6 @@
     var stdClass = document.getElementById("studentClassTxt").value;
     var stdGrade = document.getElementById("studentGradeTxt").value;
     var stdAddress = document.getElementById("studentAddressTxt").value;
-    
     var par = document.querySelector('input[name=parent]:checked').value;
     var parName = document.getElementById("parentNameTxt").value;
     var parOcupation = document.getElementById("parentOcupationTxt").value;
@@ -192,5 +204,96 @@
 
 
 </script>
+<script>
+$(document).ready( function() {
+    	$(document).on('change', '.btn-file :file', function() {
+		var input = $(this),
+			label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+		input.trigger('fileselect', [label]);
+		});
+
+		$('.btn-file :file').on('fileselect', function(event, label) {
+		    
+		    var input = $(this).parents('.input-group').find(':text'),
+		        log = label;
+		    
+		    if( input.length ) {
+		        input.val(log);
+		    } else {
+		        if( log ) alert(log);
+		    }
+	    
+		});
+		function readURL(input) {
+		    if (input.files && input.files[0]) {
+		        var reader = new FileReader();
+		        
+		        reader.onload = function (e) {
+		            $('#img-upload').attr('src', e.target.result);
+		        }
+		        
+		        reader.readAsDataURL(input.files[0]);
+		    }
+		}
+
+		$("#imgInp").change(function(){
+		    readURL(this);
+		}); 	
+	});
+</script>
 
 <?php include_once('../admincommon/footer.php'); ?>
+
+<?php
+
+$target_dir = "../../dist/img/";
+$target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
+$uploadOk = 1;
+$imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+
+// Check if file already exists
+if (file_exists($target_file)) {
+    echo "Sorry, file already exists.";
+    $uploadOk = 0;
+}
+    
+// if everything is ok, try to upload file
+else {
+    if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
+        echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
+    } 
+    else {
+        $message = base64_encode(urlencode("Sorry, there was an error uploading your file."));
+        // header('Location:vendor-product-add.php?msg=' . $message);
+        exit();
+    }
+}
+
+//Uploading to Database
+if (isset($_POST['submit'])){
+    
+$imageName = $_FILES["fileToUpload"]["name"];
+$imageData = $_FILES["fileToUpload"]["tmp_name"];
+$imageType = $_FILES["fileToUpload"]["type"];
+	
+    $productname = $_POST['name'];
+    $volume = $_POST['volume'];  
+    $price = $_POST['price'];
+    checkSession();
+    $userID = $_SESSION["userID"];
+    
+    $insertProduct = "INSERT INTO products (vendorID, name, volume, price, imageName) VALUES ('$userID','$productname', '$volume', '$price', '$imageName')";
+    
+    if (mysqli_query($connection,$insertProduct) === TRUE) {
+                $message = base64_encode(urlencode("Product Added."));
+				header('Location:vendor-product-add.php?msg=' . $message);
+				exit();
+        } 
+    else {
+        $message = base64_encode(urlencode("SQL Error while Registering"));
+        header('Location:vendor-product-add.php?msg=' . $message);
+        exit();
+        }
+
+ }
+?>

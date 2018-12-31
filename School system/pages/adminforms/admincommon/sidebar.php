@@ -22,7 +22,7 @@
                 </a>
                 <ul class="treeview-menu">
                     <li class="active"><a href="../studentmanage/registerstudent.php"><i class="fa fa-folder-open-o"></i> Register Student</a></li>
-                    <li><a href="../studentmanage/viewstudent.php"><i class="fa fa-folder-open-o"></i> View Student</a></li>
+                    <li><a href="../studentmanage/viewstudent.php"><i class="fa fa-folder-open-o"></i>Student Details</a></li>
                     <li><a href="../studentmanage/editstudent.php"><i class="fa fa-folder-open-o"></i> Edit Student</a></li>
                 </ul>
             </li>
@@ -61,6 +61,7 @@
             </li>
             <li><a href="../messagebox/messagebox.php"><i class="fa fa-envelope-o"></i> <span></span>Messege</span></a></li>
             <li><a href="../attendancemanage/attendance.php"><i class="fa fa-edit"></i> <span>Attendance</span></a></li>
+            <li><a href="../attendancemanage/attendance.php"><i class="fa fa-gear"></i> <span>School Configure</span></a></li>
         </ul>
     </section>
     <!-- /.sidebar -->
