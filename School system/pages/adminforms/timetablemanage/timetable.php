@@ -17,6 +17,7 @@
                     <table class="table no-margin">
                         <thead>
                             <tr>
+                                <th>Time Perod</th>
                                 <th>Monday</th>
                                 <th>Tuesday</th>
                                 <th>Wendsday</th>
@@ -86,7 +87,7 @@
                 </div><!-- /.table-responsive -->
             </div><!-- /.box-body -->
             <div class="box-footer clearfix">
-                <a href="javascript::;" class="btn btn-sm btn-default btn-flat pull-right">View All Exams</a>
+               
             </div><!-- /.box-footer -->
         </div><!-- /.box -->
     </section>

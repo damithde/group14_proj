@@ -80,6 +80,15 @@
                             <label  >Admission No:</label>
                             <input type="input" class="form-control" id="studentAdmissionNoTxt" placeholder="Enter Admission No">
                         </div>
+                        <div id="studentMediumTxt" class="form-group">
+                            <label  >Meadium:</label>
+                            <!-- <input type="input" class="form-control" id="studentGradeTxt" placeholder="Enter Grade"> -->
+                            <select>
+                            <option value="sinhala">Sinhala</option>
+                            <option value="english">English </option>
+                            <option value="tamil">Tamil</option>
+                            </select>
+                        </div>
                         <div class="form-group">
                             <label >Class:</label>
                             <input type="input" class="form-control" id="studentClassTxt" placeholder="Enter Class">
