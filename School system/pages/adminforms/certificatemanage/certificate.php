@@ -112,43 +112,43 @@ input[type=submit] {
 
 <script>
     var school;var studentlist=['abc'];
-    // var user = firebase.auth().currentUser;
-    // var name, email, uid;
-    // if (user != null) {
-    // name = user.displayName;
-    // email = user.email;
-    // uid = user.uid; //get user id and match the record and direct to the specific land page then retireve the data relavent to that user 
-    // }
-    // db.collection("users").where("userid","==", uid)
-    // .get()
-    // .then(function(querySnapshot) {
-    //     querySnapshot.forEach(function(doc) {
-    //         var output=doc.data();
-    //         school=output.school;
-    //         // doc.data() is never undefined for query doc snapshots
-    //         //console.log(doc.id, " => ", doc.data());
+    var user = firebase.auth().currentUser;
+    var name, email, uid;
+    if (user != null) {
+    name = user.displayName;
+    email = user.email;
+    uid = user.uid; //get user id and match the record and direct to the specific land page then retireve the data relavent to that user 
+    }
+    db.collection("users").where("userid","==", uid)
+    .get()
+    .then(function(querySnapshot) {
+        querySnapshot.forEach(function(doc) {
+            var output=doc.data();
+            school=output.school;
+            // doc.data() is never undefined for query doc snapshots
+            //console.log(doc.id, " => ", doc.data());
         
-    //     });
-    //         db.collection("students").where("school","==", school)
-    //         .get()
-    //         .then(function(querySnapshot) {
-    //             querySnapshot.forEach(function(doc) {
-    //                 studentlist.push(doc.data().regno);
+        });
+            db.collection("students").where("school","==", school)
+            .get()
+            .then(function(querySnapshot) {
+                querySnapshot.forEach(function(doc) {
+                    studentlist.push(doc.data().regno);
                     
-    //                 // doc.data() is never undefined for query doc snapshots
-    //                 //console.log(doc.id, " => ", doc.data());
-    //             });
-    //             console.log(studentlist);
+                    // doc.data() is never undefined for query doc snapshots
+                    //console.log(doc.id, " => ", doc.data());
+                });
+                console.log(studentlist);
                 
-    //         })
-    //         .catch(function(error) {
-    //             console.log("Error getting documents: ", error);
-    //         });
+            })
+            .catch(function(error) {
+                console.log("Error getting documents: ", error);
+            });
 
-    // })
-    // .catch(function(error) {
-    //     console.log("Error getting documents: ", error);
-    // });
+    })
+    .catch(function(error) {
+        console.log("Error getting documents: ", error);
+    });
 
     autocomplete(document.getElementById("stuid"), studentlist);
     
