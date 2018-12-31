@@ -12,8 +12,10 @@
     <section class="content-header">
         <div class="row">
 
-            <!--            left side panel-->
             <div class="col-md-6">
+
+            <!--            left side panel-->
+
                 <!--                student details-->
                 <div class="box box-primary">
                     <div class="box-header with-border">
@@ -62,6 +64,7 @@
                                             </div>
                                         </div>
                                         <div class="col-md-6">
+
                                             <!--Lable names-->
                                             <div class="form-group">
                                                 <label class="text-muted"  >Name:</label>
@@ -97,7 +100,8 @@
                                     </div>
                                 </div>
 
-                                <div class="col-md-6">
+
+                                        <div class="col-md-6">
                                     <div class="form-group">
                                         <label id="studentNameLbl">-</label>
                                     </div>
@@ -138,147 +142,220 @@
                     </form>
                 </div><!-- /.box -->
             </div>
-            <div class="col-md-6">
-                <!--                student details-->
-                <div class="box box-primary">
-                    <div class="box-header with-border">
-                        <h3 class="box-title">Student Report</h3>
-                    </div><!-- /.box-header -->
-                    <br>
-
-                        <form role="form">
-                            <div class="box-body">
-                                <!--Lable field-->
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="row">
-
-                                        </div>
-
-
-                                        <div class="col-md-6">
-                        <!--Lable names-->
-                        <div class="form-group">
-
-            <div class="form-group">
-                <label class="text-muted" for="exampleInputEmail1">Admission Number:</label>
-            </div>
-                            <div class="form-group">
-                                <label class="text-muted" for="exampleInputEmail1">Name:</label>
-                            </div>
-                            <div class="form-group">
-                                <label class="text-muted" for="exampleInputEmail1">Class:</label>
-                            </div>
-
-            <div class="form-group">
-                <label class="text-muted" for="exampleInputEmail1">Term Test:</label>
-            </div>
-            <div class="form-group">
-                <label class="text-muted" for="exampleInputEmail1">Year:</label>
-            </div>
-
-            <div class="form-group">
-                <label class="text-muted" >Position:</label>
-            </div>
-            <div class="form-group">
-                <label class="text-muted" for="exampleInputEmail1">Subject1:</label>
-            </div>
-            <div class="form-group">
-                <label class="text-muted" for="exampleInputEmail1">Subject2:</label>
-            </div>
-            <div class="form-group">
-                <label class="text-muted" for="exampleInputEmail1">Subject3:</label>
-            </div>
-            <div class="form-group">
-                <label class="text-muted" for="exampleInputEmail1">Subject4:</label>
-            </div>
-            <div class="form-group">
-                <label class="text-muted" for="exampleInputEmail1">Subject5:</label>
-            </div>
-            <div class="form-group">
-                <label class="text-muted" for="exampleInputEmail1">Subject6:</label>
-            </div>
-            <div class="form-group">
-                <label class="text-muted" for="exampleInputEmail1">Subject7::</label>
-            </div>
-
-            <div class="form-group">
-                <label class="text-muted" for="exampleInputEmail1">Subject8:</label>
-            </div>
-            <div class="form-group">
-                <label class="text-muted" for="exampleInputEmail1">Subject9:</label>
-                </div>
-
-
-            </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-
-                    <div class="form-group">
-                        <label id="studentAdmissionNoLbl">-</label>
-                    </div>
-                                        <div class="form-group">
-                                            <label id="stuNameLbl">-</label>
-                                        </div>
-                                        <div class="form-group">
-                                            <label id="stuClassLbl">-</label>
-                                        </div>
-                    <div class="form-group">
-                        <label id="studentTermTestNoLbl">-</label>
-                    </div>
-                    <div class="form-group">
-                        <label id="studentYearLbl">-</label>
-                    </div>
-
-                    <div class="form-group">
-                        <label id="studentPositionLbl">-</label>
-                    </div>
-                    <div class="form-group">
-                        <label id="studentSubject1Lbl">-</label>
-                    </div>
-                    <div class="form-group">
-                        <label id="studentSubject2Lbl">-</label>
-                    </div>
-                    <div class="form-group">
-                        <label id="studentSubject3Lbl">-</label>
-                    </div>
-                    <div class="form-group">
-                        <label id="studentSubject4Lbl">-</label>
-                    </div>
-                    <div class="form-group">
-                        <label id="studentSubject5Lbl">-</label>
-                    </div>
-                    <div class="form-group">
-                        <label id="studentSubject6Lbl">-</label>
-                    </div>
-                    <div class="form-group">
-                        <label id="studentSubject7Lbl">-</label>
-                    </div>
-                    <div class="form-group">
-                        <label id="studentSubject8Lbl">-</label>
-                    </div>
-                    <div class="form-group">
-                        <label id="studentSubject9Lbl">-</label>
-                    </div>
-                                    </div>
-
-
-                                </div>
-                            </div>
-
-
-        <!-- /.box-body -->
-        <div class="box-footer">
         </div>
-        </form>
-        </div><!-- /.box -->
+                                                   <div class="row">
+
+                                                  <div class="col-md-6">
+
+
+                                            <div class="box box-primary">
+                                            <div class="box-header  with-border">
+                                                <h3 class="box-title">Guardian's Details</h3>
+                                            </div><!-- /.box-header -->
+                                            <!-- form start -->
+                                            <form role="form">
+                                                <div class="box-body">
+                                                    <div class="form-group">
+                                                        <label >Guardian type:</label>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                                <input type="radio"  name="parent"  id="father" class="form-check-input" value="Father" > Father
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                                <input type="radio"  name="parent" id="mother" class="form-check-input" value="Mother">  Mother
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                                <input type="radio"  name="parent" id="guardian" class="form-check-input" value="Guardian">  Guardian
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-3">
+                                                            <div class="form-group">
+                                                                <label class="text-muted"  >Name:</label>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="text-muted"  >Occupation:</label>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="text-muted"  >Email:</label>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="text-muted"  >Phone:</label>
+                                                            </div>
+                                                        </div>
+
+                                                        
+
+
+                                                <div class="col-md-8">
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label  id="parentNameLbl">-</label>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label id="parentOccupationLbl">-</label>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label id="parentEmailLbl">-</label>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label id="parentPhoneLbl">-</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                                      </form>
+                                                  </div><!-- /.box -->
+                                                   </div>
 
 
 
-        </div>
 
-            <div class="box box-primary">
+                                                    <div class="box box-primary">
+                                                        <div class="box-header with-border">
+                                                            <h3 class="box-title">Student Report</h3>
+                                                        </div><!-- /.box-header -->
+                                                        <br>
+
+                                                        <form role="form">
+                                                            <div class="box-body">
+                                                                <!--Lable field-->
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <div class="row">
+
+                                                                        </div>
+
+
+                                                                        <div class="col-md-6">
+                                                                            <!--Lable names-->
+                                                                            <div class="form-group">
+
+                                                                                <div class="form-group">
+                                                                                    <label class="text-muted" for="exampleInputEmail1">Admission Number:</label>
+                                                                                </div>
+                                                                                <div class="form-group">
+                                                                                    <label class="text-muted" for="exampleInputEmail1">Name:</label>
+                                                                                </div>
+                                                                                <div class="form-group">
+                                                                                    <label class="text-muted" for="exampleInputEmail1">Class:</label>
+                                                                                </div>
+
+                                                                                <div class="form-group">
+                                                                                    <label class="text-muted" for="exampleInputEmail1">Term Test:</label>
+                                                                                </div>
+                                                                                <div class="form-group">
+                                                                                    <label class="text-muted" for="exampleInputEmail1">Year:</label>
+                                                                                </div>
+
+                                                                                <div class="form-group">
+                                                                                    <label class="text-muted" >Position:</label>
+                                                                                </div>
+                                                                                <div class="form-group">
+                                                                                    <label class="text-muted" for="exampleInputEmail1">Subject1:</label>
+                                                                                </div>
+                                                                                <div class="form-group">
+                                                                                    <label class="text-muted" for="exampleInputEmail1">Subject2:</label>
+                                                                                </div>
+                                                                                <div class="form-group">
+                                                                                    <label class="text-muted" for="exampleInputEmail1">Subject3:</label>
+                                                                                </div>
+                                                                                <div class="form-group">
+                                                                                    <label class="text-muted" for="exampleInputEmail1">Subject4:</label>
+                                                                                </div>
+                                                                                <div class="form-group">
+                                                                                    <label class="text-muted" for="exampleInputEmail1">Subject5:</label>
+                                                                                </div>
+                                                                                <div class="form-group">
+                                                                                    <label class="text-muted" for="exampleInputEmail1">Subject6:</label>
+                                                                                </div>
+                                                                                <div class="form-group">
+                                                                                    <label class="text-muted" for="exampleInputEmail1">Subject7::</label>
+                                                                                </div>
+
+                                                                                <div class="form-group">
+                                                                                    <label class="text-muted" for="exampleInputEmail1">Subject8:</label>
+                                                                                </div>
+                                                                                <div class="form-group">
+                                                                                    <label class="text-muted" for="exampleInputEmail1">Subject9:</label>
+                                                                                </div>
+
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+
+
+                                                                        <div class="col-md-6">
+
+                                                                            <div class="form-group">
+                                                                                <label id="studentAdmissionNoLbl">-</label>
+                                                                            </div>
+                                                                            <div class="form-group">
+                                                                                <label id="stuNameLbl">-</label>
+                                                                            </div>
+                                                                            <div class="form-group">
+                                                                                <label id="stuClassLbl">-</label>
+                                                                            </div>
+                                                                            <div class="form-group">
+                                                                                <label id="studentTermTestNoLbl">-</label>
+                                                                            </div>
+                                                                            <div class="form-group">
+                                                                                <label id="studentYearLbl">-</label>
+                                                                            </div>
+
+                                                                            <div class="form-group">
+                                                                                <label id="studentPositionLbl">-</label>
+                                                                            </div>
+                                                                            <div class="form-group">
+                                                                                <label id="studentSubject1Lbl">-</label>
+                                                                            </div>
+                                                                            <div class="form-group">
+                                                                                <label id="studentSubject2Lbl">-</label>
+                                                                            </div>
+                                                                            <div class="form-group">
+                                                                                <label id="studentSubject3Lbl">-</label>
+                                                                            </div>
+                                                                            <div class="form-group">
+                                                                                <label id="studentSubject4Lbl">-</label>
+                                                                            </div>
+                                                                            <div class="form-group">
+                                                                                <label id="studentSubject5Lbl">-</label>
+                                                                            </div>
+                                                                            <div class="form-group">
+                                                                                <label id="studentSubject6Lbl">-</label>
+                                                                            </div>
+                                                                            <div class="form-group">
+                                                                                <label id="studentSubject7Lbl">-</label>
+                                                                            </div>
+                                                                            <div class="form-group">
+                                                                                <label id="studentSubject8Lbl">-</label>
+                                                                            </div>
+                                                                            <div class="form-group">
+                                                                                <label id="studentSubject9Lbl">-</label>
+                                                                            </div>
+                                                                        </div>
+
+
+                                                                    </div>
+                                                                </div>
+
+
+                                                                <!-- /.box-body -->
+                                                                <div class="box-footer">
+                                                                </div>
+                                                        </form>
+                                                    </div><!-- /.box -->
+
+
+
+                                    <div class="box box-primary">
                 <div class="box-header with-border">
                     <form action="#" method="get" class="form-group">
                         <div class="input-group">
@@ -323,6 +400,8 @@
             </div><!-- /.box -->
 
         </div>
+                                                </div>
+
 
     </section>
 
@@ -342,7 +421,7 @@
     var studentSectionLbl
     var studentAddressLbl
     var studentPhoneLbl
-
+    var parentNameLbl
     var parentOccupationLbl
     var parentEmailLbl
     var parentPhoneLbl
@@ -366,7 +445,8 @@
     document.getElementById('parentEmailLbl').innerHTML = parentEmailLbl;
     document.getElementById('parentPhoneLbl').innerHTML = parentPhoneLbl;
 
-    </script>
+
+</script>
     <script>
 
 
