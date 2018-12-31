@@ -37,11 +37,11 @@
                             <table class="table no-margin">
                             <thead>
                             <tr>
-                                <th>Student Id</th>
-                                <th>Name</th>
-                                <th>Subject</th>
-                                <th>Date</th>
-                                <th>Details</th>
+                                <th>Title</th>
+                                <th>Request Date</th>
+                                <th>Issued Date</th>
+                                <th>Certified By</th>
+                                <th>Reason</th>
                             </tr>
                             </thead>
                             <tbody>

@@ -88,24 +88,13 @@
                             </div>
                             <!-- /.col -->
                         </div>
-
-                        
-
-
-
-                        
-                        <div class="row">
-                            
+                        <div class="row">   
                         </div>
-
                         </div>
-
                 </div>
-
                 <div>
                     <?php include_once('dashboardnotificationPanel.php'); ?>
                 </div>
-
             </div>
             <div class="col-md-3">
                 <!-- Calendar -->
@@ -152,10 +141,15 @@
 <?php include_once('../admincommon/footer.php'); ?>
 
 <script>
-    var studentcount = "test";
+    var studentcount = "";
     var studentpresent
     var teachercount
     var teacherpresent
+    document.getElementById('studentcount').innerHTML = studentcount;
+    // document.getElementById('studentpresent').innerHTML = studentpresent;
+    document.getElementById('teachercount').innerHTML = teachercount;
+    // document.getElementById('teacherpresent').innerHTML = teacherpresent;
+    
 
     var totNonAcadamicStaff
     var totNoOfNotifaications 

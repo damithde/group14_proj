@@ -59,7 +59,7 @@
                     <li><a href="../certificatemanage/viewissuedcertificate.php"><i class="fa fa-folder-open-o"></i> View issue certificate</a></li>
                 </ul>
             </li>
-            <li><a href="../messagebox/messagebox.php"><i class="fa fa-envelope-o"></i> <span></span>Messege</span></a></li>
+            <li><a href="../messagebox/messagebox.php"><i class="fa fa-envelope-o"></i> <span></span>Notification</span></a></li>
             <li><a href="../attendancemanage/attendance.php"><i class="fa fa-edit"></i> <span>Attendance</span></a></li>
             <li><a href="../attendancemanage/attendance.php"><i class="fa fa-gear"></i> <span>School Configure</span></a></li>
         </ul>

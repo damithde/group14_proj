@@ -17,8 +17,10 @@
                     <form role="form">
                         <div class="box-body">
                             <div class="form-group">
-                                <label for="exampleInputEmail1">Student Id:</label>
-                                <input type="email" class="form-control" id="studentIdText" placeholder="Enter Student Id">
+                                <div>
+                                    <label for="exampleInputEmail1">Student Id:</label>
+                                    <input type="email" class="form-control" id="studentIdText" placeholder="Enter Student Id">
+                                </div>
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Student Name:</label>
@@ -35,6 +37,11 @@
                     </form>
                 </div><!-- /.box -->
             </div>
+
+            <div >
+                    <?php include_once('dashboardnotificationPanel.php'); ?>
+                </div>
+
         </div>
         <div>
         </div>

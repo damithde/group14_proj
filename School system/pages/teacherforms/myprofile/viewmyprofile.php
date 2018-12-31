@@ -1,7 +1,7 @@
-<?php include_once('myprofilehead.php'); ?>
-<?php include_once('myprofileheader.php'); ?>
-<?php include_once('myprofilessidebar.php'); ?>
-<?php include_once('myprofilescript.php'); ?>
+<?php include_once('../teachercommon/head.php'); ?>
+<?php include_once('../teachercommon/header.php'); ?>
+<?php include_once('../teachercommon/sidebar.php'); ?>
+<?php include_once('../teachercommon/script.php'); ?>
 
 
 

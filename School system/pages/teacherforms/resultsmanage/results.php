@@ -1,7 +1,7 @@
-<?php include_once('resultshead.php'); ?>
-<?php include_once('resultsheader.php'); ?>
-<?php include_once('resultssidebar.php'); ?>
-<?php //include_once('right_panel.php'); ?>
+<?php include_once('../teachercommon/head.php'); ?>
+<?php include_once('../teachercommon/header.php'); ?>
+<?php include_once('../teachercommon/sidebar.php'); ?>
+<?php include_once('../teachercommon/script.php'); ?>
 
 
 
