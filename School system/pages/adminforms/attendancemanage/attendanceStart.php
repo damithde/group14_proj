@@ -27,7 +27,7 @@
                         </thead>
                         <tbody>
                         <tr>
-                            <td><a herf="">Grade 6</a></td>
+                            <td><a herf="../attendancemanage/attendance.php">Grade 6</a></td>
                             <td>5000</td>
                             <td>4568</td>
                             <td>432</td>
@@ -35,7 +35,7 @@
                             <td>8.64%</td>
                         </tr>
                         <tr>
-                            <td><a herf="">Grade 7</a></td>
+                            <td><a herf="../attendancemanage/attendance.php">Grade 7</a></td>
                             <td>5000</td>
                             <td>4568</td>
                             <td>432</td>
@@ -43,7 +43,7 @@
                             <td>8.64%</td>
                         </tr>
                         <tr>
-                            <td><a herf="">Grade 8</a></td>
+                            <td><a herf="../attendancemanage/attendance.php">Grade 8</a></td>
                             <td>5000</td>
                             <td>4568</td>
                             <td>432</td>
@@ -51,7 +51,7 @@
                             <td>8.64%</td>
                         </tr>
                         <tr>
-                            <td><a herf="">Grade 9</a></td>
+                            <td><a herf="../attendancemanage/attendance.php">Grade 9</a></td>
                             <td>5000</td>
                             <td>4568</td>
                             <td>432</td>
@@ -59,7 +59,7 @@
                             <td>8.64%</td>
                         </tr>
                         <tr>
-                             <td><a herf="">Grade 10</a></td>
+                             <td><a herf="../attendancemanage/attendance.php">Grade 10</a></td>
                             <td>5000</td>
                             <td>4568</td>
                             <td>432</td>
@@ -67,7 +67,7 @@
                             <td>8.64%</td>
                         </tr>
                         <tr>
-                            <td><a herf="">Grade 11</a></td>
+                            <td><a herf="../attendancemanage/attendance.php">Grade 11</a></td>
                             <td>5000</td>
                             <td>4568</td>
                             <td>432</td>
@@ -75,7 +75,7 @@
                             <td>8.64%</td>
                         </tr>
                         <tr>
-                            <td><a herf="">Grade 12</a></td>
+                            <td><a herf="../attendancemanage/attendance.php">Grade 12</a></td>
                             <td>5000</td>
                             <td>4568</td>
                             <td>432</td>
