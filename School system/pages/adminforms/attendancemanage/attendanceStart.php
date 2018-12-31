@@ -17,70 +17,70 @@
                     <table class="table no-margin">
                         <thead>
                             <tr>
-                                <th>Time Perod</th>
-                                <th>Monday</th>
-                                <th>Tuesday</th>
-                                <th>Wendsday</th>
-                                <th>Thersday</th>
-                                <th>Friday</th>
+                                <th>Grade</th>
+                                <th>Total Students</th>
+                                <th>Today Total attendance</th>
+                                <th>Total Absenties</th>
+                                <th>Total precentage</th>
+                                <th>Absent precentage</th>
                             </tr>
                         </thead>
                         <tbody>
                         <tr>
-                            <td>Subject 1</td>
-                            <td>Subject 1</td>
-                            <td>Subject 1</td>
-                            <td>Subject 1</td>
-                            <td>Subject 1</td>
+                            <td><a herf="">Grade 6</a></td>
+                            <td>5000</td>
+                            <td>4568</td>
+                            <td>432</td>
+                            <td>91.36%</td>
+                            <td>8.64%</td>
                         </tr>
                         <tr>
-                            <td>Subject 1</td>
-                            <td>Subject 1</td>
-                            <td>Subject 1</td>
-                            <td>Subject 1</td>
-                            <td>Subject 1</td>
+                            <td><a herf="">Grade 7</a></td>
+                            <td>5000</td>
+                            <td>4568</td>
+                            <td>432</td>
+                            <td>91.36%</td>
+                            <td>8.64%</td>
                         </tr>
                         <tr>
-                            <td>Subject 1</td>
-                            <td>Subject 1</td>
-                            <td>Subject 1</td>
-                            <td>Subject 1</td>
-                            <td>Subject 1</td>
+                            <td><a herf="">Grade 8</a></td>
+                            <td>5000</td>
+                            <td>4568</td>
+                            <td>432</td>
+                            <td>91.36%</td>
+                            <td>8.64%</td>
                         </tr>
                         <tr>
-                            <td>Subject 1</td>
-                            <td>Subject 1</td>
-                            <td>Subject 1</td>
-                            <td>Subject 1</td>
-                            <td>Subject 1</td>
+                            <td><a herf="">Grade 9</a></td>
+                            <td>5000</td>
+                            <td>4568</td>
+                            <td>432</td>
+                            <td>91.36%</td>
+                            <td>8.64%</td>
                         </tr>
                         <tr>
-                            <td>Subject 1</td>
-                            <td>Subject 1</td>
-                            <td>Subject 1</td>
-                            <td>Subject 1</td>
-                            <td>Subject 1</td>
+                             <td><a herf="">Grade 10</a></td>
+                            <td>5000</td>
+                            <td>4568</td>
+                            <td>432</td>
+                            <td>91.36%</td>
+                            <td>8.64%</td>
                         </tr>
                         <tr>
-                            <td>Subject 1</td>
-                            <td>Subject 1</td>
-                            <td>Subject 1</td>
-                            <td>Subject 1</td>
-                            <td>Subject 1</td>
+                            <td><a herf="">Grade 11</a></td>
+                            <td>5000</td>
+                            <td>4568</td>
+                            <td>432</td>
+                            <td>91.36%</td>
+                            <td>8.64%</td>
                         </tr>
                         <tr>
-                            <td>Subject 1</td>
-                            <td>Subject 1</td>
-                            <td>Subject 1</td>
-                            <td>Subject 1</td>
-                            <td>Subject 1</td>
-                        </tr>
-                        <tr>
-                            <td>Subject 1</td>
-                            <td>Subject 1</td>
-                            <td>Subject 1</td>
-                            <td>Subject 1</td>
-                            <td>Subject 1</td>
+                            <td><a herf="">Grade 12</a></td>
+                            <td>5000</td>
+                            <td>4568</td>
+                            <td>432</td>
+                            <td>91.36%</td>
+                            <td>8.64%</td>
                         </tr>
                         </tbody>
                     </table>
