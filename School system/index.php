@@ -54,17 +54,18 @@
                     </div>
                 </div><!-- /.col -->
                 <div class="col-xs-4">
-                    <button id="test" onclick="test()"  class="btn btn-primary btn-block btn-flat">test</button>
-                </div><!-- /.col -->
-                <div class="col-xs-4">
-                    <button id="signout" onclick="logout()"  class="btn btn-primary btn-block btn-flat">Sign out</button>
-                </div><!-- /.col -->
-                <div class="col-xs-4">
                     <button id="sign" onclick="login()" type="submit"  class="btn btn-primary btn-block btn-flat">Sign In</button>
                 </div><!-- /.col -->
+                
             </div>
+            <div class="row" style="margin-left: 1%">
+                    <a href="signup.php">Sign Up</a>
+                   
+                </div><!-- /.col -->
     </div>
+    
 </div>
+
 
 <!-- jQuery 2.1.3 -->
 <script src="plugins/jQuery/jQuery-2.1.3.min.js"></script>
