@@ -2,15 +2,18 @@
 <?php include_once('../admincommon/header.php'); ?>
 <?php include_once('../admincommon/sidebar.php'); ?>
 <?php include_once('../admincommon/script.php'); ?>
-<head></head>
+<head>
 
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-storage.js"></script>
 <script src="../../../firebase models/db.js"></script>
 <script src="../../../firebase models/student.js"></script>
 <script src="../../../firebase models/admin.js"></script>
+<script src="../../../firebase models/fileupload.js"></script>
+</head>
 <section class="content-wrapper">
     <section class="content-header">
     <div class="row">
@@ -103,13 +106,11 @@
                             </div><!-- /.input group -->
                         </div>
                         <div class="form-group">
-                            <form action="../../fileupload.php" method="post" enctype="multipart/form-data">
                             <label >Select Photo</label>
-                            <input type="file" id="myfile" >
-                            <input type="submit" value="upload" id="upload" >
+                            <input type="file" id="myfile">
                             <progress id="uploader" value="0" max="100">0%</progress>
-                            <img src="" alt="waiting for upload" id="propic">
-                            </form>
+                            <img width="100px" height="100px" src="" alt="waiting for upload" id="propic">
+
                         </div>
                     </div><!-- /.box-body -->
 
@@ -185,31 +186,31 @@
 
 
 <script>
-    getschool(stuschool);
-
+    //getschool(stuschool);
+    uploadstudentpic("students");
     function datasubmission(){
-    var school=document.getElementById("stuschool").value;    
-    var studentIdLbl =" 2016 cs 089 ";//set auto generated student id
-    document.getElementById("studentIdLbl").innerHTML = studentIdLbl;
-    var profileimg=document.getElementById("propic").src;
-    var stdFName = document.getElementById("studentFNameTxt").value;
-    var stdLName = document.getElementById("studentLNameTxt").value;
-    var stdGend = document.querySelector('input[name=gender]:checked').value;
-    var stdbd = document.querySelector('date').value;
-    var stdReli = document.getElementById("studentReligionTxt").value;
-    var stdEmail = document.getElementById("studentEmailTxt").value;
-    var stdAdNo = document.getElementById("studentAdmissionNoTxt").value;
-    var stdClass = document.getElementById("studentClassTxt").value;
-    var stdGrade = document.getElementById("studentGradeTxt").value;
-    var stdAddress = document.getElementById("studentAddressTxt").value;
-    var par = document.querySelector('input[name=parent]:checked').value;
-    var parName = document.getElementById("parentNameTxt").value;
-    var parOcupation = document.getElementById("parentOcupationTxt").value;
-    var parEmail = document.getElementById("parentEmail").value;
-    var parAddress = document.getElementById("parentAddressTxt").value;
-    var parent={name:parName,parent:par,occupation:parOcupation,email:parEmail};
-    var student= [stdAdNo,stdFName,stdLName,contact,stdbd,stdAddress,stdReli,school,stdGrade,stdClass,stdEmail,profileimg];
-    addstudent(student,parent);
+        var school=document.getElementById("stuschool").value;    
+        var studentIdLbl =" 2016 cs 089 ";//set auto generated student id
+        document.getElementById("studentIdLbl").innerHTML = studentIdLbl;
+        var profileimg=document.getElementById("propic").src;
+        var stdFName = document.getElementById("studentFNameTxt").value;
+        var stdLName = document.getElementById("studentLNameTxt").value;
+        var stdGend = document.querySelector('input[name=gender]:checked').value;
+        var stdbd = document.querySelector('date').value;
+        var stdReli = document.getElementById("studentReligionTxt").value;
+        var stdEmail = document.getElementById("studentEmailTxt").value;
+        var stdAdNo = document.getElementById("studentAdmissionNoTxt").value;
+        var stdClass = document.getElementById("studentClassTxt").value;
+        var stdGrade = document.getElementById("studentGradeTxt").value;
+        var stdAddress = document.getElementById("studentAddressTxt").value;
+        var par = document.querySelector('input[name=parent]:checked').value;
+        var parName = document.getElementById("parentNameTxt").value;
+        var parOcupation = document.getElementById("parentOcupationTxt").value;
+        var parEmail = document.getElementById("parentEmail").value;
+        var parAddress = document.getElementById("parentAddressTxt").value;
+        var parent={name:parName,parent:par,occupation:parOcupation,email:parEmail};
+        var student= [stdAdNo,stdFName,stdLName,contact,stdbd,stdAddress,stdReli,school,stdGrade,stdClass,stdEmail,profileimg];
+        addstudent(student,parent);
     }
 
 </script>
