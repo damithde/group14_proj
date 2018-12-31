@@ -383,7 +383,7 @@
     var studentAddressLbl
     var studentPhoneLbl
     var parentNameLbl
-    var parentOccupationLbl
+var parentOccupationLbl
     var parentEmailLbl
     var parentPhoneLbl
 

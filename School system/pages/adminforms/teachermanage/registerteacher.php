@@ -191,20 +191,12 @@
     var tchrName = document.getElementById("teacherNameTxt").value;
     var tchrGend = document.querySelector('input[name=gender]:checked').value;
     var tchrbd = document.querySelector('date').value;
-    var tchrReli = document.getElementById("teacherReligionTxt").value;
-    var tchrEmail = document.getElementById("teacherEmailTxt").value;
-    var tchrAdNo = document.getElementById("teacherAdmissionNoTxt").value;
-    var tchrClass = document.getElementById("teacherClassTxt").value;
-    var tchrGrade = document.getElementById("teacherGradeTxt").value;
-    var tchrAddress = document.getElementById("teacherAddressTxt").value;
-    var par = document.querySelector('input[name=parent]:checked').value;
-    var parName = document.getElementById("parentNameTxt").value;
-    var parOcupation = document.getElementById("parentOcupationTxt").value;
-    var parEmail = document.getElementById("parentEmail").value;
-    var parAddress = document.getElementById("parentAddressTxt").value;
-    var parent={name:parName,parent:par,occupation:parOcupation,email:parEmail};
-    var teacher= [tchrAdNo,tchrFName,tchrLName,contact,tchrbd,tchrAddress,tchrReli,school,tchrGrade,tchrClass,tchrEmail];
-    addteacher(teacher,parent);
+    var tchrEmail = document.getElementById("teacherEmailText").value;
+    var tchrAdNo = document.getElementById("teacherRegNoTxt").value;
+    var tchrClass = document.getElementById("teacherAddressTxt").value;
+    var tchrGrade = document.getElementById("teacherTelNoTxt").value;
+
+    
 
     // function prvUpdate() {
     //     //var tchrName = document.getElementById("teacherNameTxt").value;

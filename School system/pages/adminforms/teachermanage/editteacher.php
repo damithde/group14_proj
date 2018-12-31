@@ -175,32 +175,36 @@
         </div>
     </section>
 </section>
+
+<script>
+    var teacherNameTxt
+    var teacherGender
+    var teacherBDYTxt
+    var teacherEmailText
+    var teacherRegNoTxt
+    var teacherAddressTxt
+    var teacherTelNoTxt
+
+    document.getElementById("teacherNameTxt").value=teacherNameTxt;
+    // document.querySelector('input[name=gender]:checked').value;
+    // document.querySelector('date').value=date;
+    document.getElementById("teacherEmailText").value=teacherEmailText;
+    document.getElementById("teacherRegNoTxt").value=teacherRegNoTxt;
+    document.getElementById("teacherAddressTxt").value=teacherAddressTxt;
+    document.getElementById("teacherTelNoTxt").value=teacherTelNoTxt;
+</script>
+
 <script>
     var tchrName = document.getElementById("teacherNameTxt").value;
     var tchrGend = document.querySelector('input[name=gender]:checked').value;
     var tchrbd = document.querySelector('date').value;
-    var tchrReli = document.getElementById("teacherReligionTxt").value;
-    var tchrEmail = document.getElementById("teacherEmailTxt").value;
-    var tchrAdNo = document.getElementById("teacherAdmissionNoTxt").value;
-    var tchrClass = document.getElementById("teacherClassTxt").value;
-    var tchrGrade = document.getElementById("teacherGradeTxt").value;
-    var tchrAddress = document.getElementById("teacherAddressTxt").value;
-    var par = document.querySelector('input[name=parent]:checked').value;
-    var parName = document.getElementById("parentNameTxt").value;
-    var parOcupation = document.getElementById("parentOcupationTxt").value;
-    var parEmail = document.getElementById("parentEmail").value;
-    var parAddress = document.getElementById("parentAddressTxt").value;
-    var parent={name:parName,parent:par,occupation:parOcupation,email:parEmail};
-    var teacher= [tchrAdNo,tchrFName,tchrLName,contact,tchrbd,tchrAddress,tchrReli,school,tchrGrade,tchrClass,tchrEmail];
-    addteacher(teacher,parent);
-
-    // function prvUpdate() {
-    //     //var tchrName = document.getElementById("teacherNameTxt").value;
-    //     document.getElementById('previewName').innerHTML = tchrName;
-    // // alert("You pre   ssed a key inside the input field");
-    // }
+    var tchrEmail = document.getElementById("teacherEmailText").value;
+    var tchrAdNo = document.getElementById("teacherRegNoTxt").value;
+    var tchrClass = document.getElementById("teacherAddressTxt").value;
+    var tchrGrade = document.getElementById("teacherTelNoTxt").value;
 
 </script>
+
 <script>
     function prvName() {
         var tchrName = document.getElementById("teacherNameTxt").value;
