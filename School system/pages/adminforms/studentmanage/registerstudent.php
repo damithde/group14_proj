@@ -94,8 +94,11 @@
                             </div><!-- /.input group -->
                         </div>
                         <div class="form-group">
+                            <form action="../../fileupload.php" method="post" enctype="multipart/form-data">
                             <label >Select Photo</label>
-                            <input type="file" id="exampleInputFile">
+                            <input type="file" id="myfile" >
+                            <input type="submit" value="upload" id="upload" >
+                            </form>
                         </div>
                     </div><!-- /.box-body -->
 
@@ -131,7 +134,7 @@
                         </div>
                         <div class="form-group">
                             <label  >Full Name:</label>
-                            <input type="input" class="form-control" id="parentNameTxt" placeholder="Enter Full Name">
+                            <input type="text" class="form-control" id="parentNameTxt" placeholder="Enter Full Name">
                         </div>
                         <div class="form-group">
                             <label for="InputOccupation">Occupation:</label>
