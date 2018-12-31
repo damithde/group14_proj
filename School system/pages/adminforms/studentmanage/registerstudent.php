@@ -107,6 +107,8 @@
                             <label >Select Photo</label>
                             <input type="file" id="myfile" >
                             <input type="submit" value="upload" id="upload" >
+                            <progress id="uploader" value="0" max="100">0%</progress>
+                            <img src="" alt="waiting for upload" id="propic">
                             </form>
                         </div>
                     </div><!-- /.box-body -->
@@ -186,7 +188,7 @@
     getschool(stuschool);
     var studentIdLbl =" 2016 cs 089 ";//set auto generated student id
     document.getElementById("studentIdLbl").innerHTML = studentIdLbl;
-
+    
     var stdFName = document.getElementById("studentFNameTxt").value;
     var stdLName = document.getElementById("studentLNameTxt").value;
     var stdGend = document.querySelector('input[name=gender]:checked').value;

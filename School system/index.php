@@ -101,9 +101,6 @@ firebase.auth().onAuthStateChanged(function(user) {
   }
 });
 
-function test(params) {
-    alertify.alert('Welcome!').setHeader('<em> Logged In </em> ');
-}
 
 
 function checking(){
