@@ -9,6 +9,7 @@ var config = {
   };
 firebase.initializeApp(config);
 const db=firebase.firestore();
+const storage = firebase.storage();
 db.settings({timestampsInSnapshots:true});
 
 //include these in the html file to connect firebase support files

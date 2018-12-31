@@ -23,66 +23,66 @@
                     <div class="box-body">
                         <div class="form-group">
                             <label  >Admission Number:</label>
-                            <input type="input" class="form-control" id="studentAdmissionNoTxt" placeholder="Enter Admission Number">
+                            <input type="text" class="form-control" id="studentAdmissionNoTxt" placeholder="Enter Admission Number">
                         </div>
                         <div class="form-group">
                             <label  >Name:</label>
-                            <input type="input" class="form-control" id="studentLNameTxt" placeholder="Enter  Name">
+                            <input type="text" class="form-control" id="studentLNameTxt" placeholder="Enter  Name">
 
                         </div>
                         <div class="form-group">
                             <label  >Class:</label>
-                            <input type="input" class="form-control" id="studentClassTxt" placeholder="Enter Class">
+                            <input type="text" class="form-control" id="studentClassTxt" placeholder="Enter Class">
                         </div>
                         <div class="form-group">
                             <label  >Term Test:</label>
-                            <input type="email" class="form-control" id="studentTestNoTxt" placeholder="Enter Test No">
+                            <input type="text" class="form-control" id="studentTestNoTxt" placeholder="Enter Test No">
                         </div>
                         <div class="form-group">
                             <label  >Year:</label>
-                            <input type="input" class="form-control" id="studentYearTxt" placeholder="Enter Year">
+                            <input type="text" class="form-control" id="studentYearTxt" placeholder="Enter Year">
                         </div>
                         <div class="form-group">
                             <label >Position:</label>
-                            <input type="input" class="form-control" id="studentPositionTxt" placeholder="Enter Position">
+                            <input type="text" class="form-control" id="studentPositionTxt" placeholder="Enter Position">
                         </div>
 
                         <div class="form-group">
                             <label  >Subject1:</label>
-                            <input type="input" class="form-control" id="studentSubject1Txt" placeholder="Enter Sub1">
+                            <input type="text" class="form-control" id="studentSubject1Txt" placeholder="Enter Sub1">
                         </div>
                         <div class="form-group">
                             <label  >Subject2:</label>
-                            <input type="input" class="form-control" id="studentSubject2Txt" placeholder="Enter Sub2">
+                            <input type="text" class="form-control" id="studentSubject2Txt" placeholder="Enter Sub2">
                         </div>
                         <div class="form-group">
                             <label  >Subject3:</label>
-                            <input type="input" class="form-control" id="studentSubject3Txt" placeholder="Enter Sub3">
+                            <input type="text" class="form-control" id="studentSubject3Txt" placeholder="Enter Sub3">
                         </div>
                         <div class="form-group">
                             <label  >Subject4:</label>
-                            <input type="input" class="form-control" id="studentSubject4Txt" placeholder="Enter Sub4">
+                            <input type="text" class="form-control" id="studentSubject4Txt" placeholder="Enter Sub4">
                             </div>
                         <div class="form-group">
                             <label  >Subject5:</label>
-                            <input type="input" class="form-control" id="studentSubject5Txt" placeholder="Enter Sub5">
+                            <input type="text" class="form-control" id="studentSubject5Txt" placeholder="Enter Sub5">
                         </div>
                         <div class="form-group">
                             <label  >Subject6:</label>
-                            <input type="input" class="form-control" id="studentSubject6Txt" placeholder="Enter Sub6">
+                            <input type="text" class="form-control" id="studentSubject6Txt" placeholder="Enter Sub6">
                         </div>
 
                         <div class="form-group">
                             <label  >Subject7:</label>
-                            <input type="input" class="form-control" id="studentSubject7Txt" placeholder="Enter Sub7">
+                            <input type="text" class="form-control" id="studentSubject7Txt" placeholder="Enter Sub7">
                         </div>
                         <div class="form-group">
                             <label  >Subject8:</label>
-                            <input type="input" class="form-control" id="studentSubject8Txt" placeholder="Enter Sub8">
+                            <input type="text" class="form-control" id="studentSubject8Txt" placeholder="Enter Sub8">
                         </div>
                         <div class="form-group">
                             <label  >Subject9:</label>
-                            <input type="input" class="form-control" id="studentSubject9Txt" placeholder="Enter Sub9">
+                            <input type="text" class="form-control" id="studentSubject9Txt" placeholder="Enter Sub9">
                         </div>
 
 
@@ -106,6 +106,186 @@
     </div>
     <div>
     </div>
+
+        <body class="skin-blue">
+        <div class="wrapper">
+
+            <section class="content-wrapper">
+                <section class="content-header">
+                    <!--                Exam results-->
+
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <h3 class="box-title">Enter Marks</h3>
+                            <div class="col-md-6">
+                                <!-- search form -->
+                                <form action="#" method="get" class="form-group">
+                                    <div class="input-group">
+                                    <div class="form-group">
+
+                                        <div class="form-group">
+                                            <label  >Class:</label>
+                                            <label  id="studentIdLbl" class="text-muted">11-B</label>
+                                        </div>
+
+                                        <label  >Subject:</label>
+                                            <input type="text" class="form-control" id="studentSubjectsTxt" >
+                                        </div>
+
+
+                                    </div>
+                                    <div class="input-group">
+
+                                    </div>
+                                </form>
+                                <!-- /.search form -->
+                            </div>
+                        </div><!-- /.box-header -->
+                        <div class="box-body">
+                            <div class="table-responsive">
+                                <table class="table no-margin">
+                                    <thead>
+                                    <tr>
+                                        <th>Admission No</th>
+                                        <th>Name</th>
+                                        <th>Marks</th>
+
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td><a href="pages/examples/invoice.html">16000897</a></td>
+                                        <td>Y.D.K.Medis</td>
+
+                                        <td>
+                                            <div class="col-md-3">
+                                            <input type="text" class="form-control" id="studentMarkTxt">
+                                            </div>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="pages/examples/invoice.html">16000897</a></td>
+                                        <td>Y.D.K.Medis</td>
+                                        <td>
+                                            <div class="col-md-3">
+                                                <input type="text" class="form-control" id="studentMarkTxt">
+                                            </div>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="pages/examples/invoice.html">16000897</a></td>
+                                        <td>Y.D.K.Medis</td>
+                                        <td>
+                                            <div class="col-md-3">
+                                                <input type="text" class="form-control" id="studentLMarkTxt">
+                                            </div>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="pages/examples/invoice.html">16000897</a></td>
+                                        <td>Y.D.K.Medis</td>
+                                        <td>
+                                            <div class="col-md-3">
+                                                <input type="text" class="form-control" id="studentMarkTxt">
+                                            </div>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="pages/examples/invoice.html">16000897</a></td>
+                                        <td>Y.D.K.Medis</td>
+                                        <td>
+                                            <div class="col-md-3">
+                                                <input type="text" class="form-control" id="studentMarkTxt">
+                                            </div>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="pages/examples/invoice.html">16000897</a></td>
+                                        <td>Y.D.K.Medis</td>
+                                        <td>
+                                            <div class="col-md-3">
+                                                <input type="text" class="form-control" id="studentMarkTxt">
+                                            </div>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="pages/examples/invoice.html">16000897</a></td>
+                                        <td>Y.D.K.Medis</td>
+                                        <td>
+                                            <div class="col-md-3">
+                                                <input type="text" class="form-control" id="studentMarkTxt">
+                                            </div>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="pages/examples/invoice.html">16000897</a></td>
+                                        <td>Y.D.K.Medis</td>
+                                        <td>
+                                            <div class="col-md-3">
+                                                <input type="text" class="form-control" id="studentMarkTxt">
+                                            </div>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="pages/examples/invoice.html">16000897</a></td>
+                                        <td>Y.D.K.Medis</td>
+                                        <td>
+                                            <div class="col-md-3">
+                                                <input type="text" class="form-control" id="studentMarkTxt">
+                                            </div>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="pages/examples/invoice.html">16000897</a></td>
+                                        <td>Y.D.K.Medis</td>
+                                        <td>
+                                            <div class="col-md-3">
+                                                <input type="text" class="form-control" id="studentMarkTxt">
+                                            </div>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="pages/examples/invoice.html">16000897</a></td>
+                                        <td>Y.D.K.Medis</td>
+                                        <td>
+                                            <div class="col-md-3">
+                                                <input type="text" class="form-control" id="studentMarkTxt">
+                                            </div>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="pages/examples/invoice.html">16000897</a></td>
+                                        <td>Y.D.K.Medis</td>
+                                        <td>
+                                            <div class="col-md-3">
+                                                <input type="text" class="form-control" id="studentMarkTxt">
+                                            </div>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="pages/examples/invoice.html">16000897</a></td>
+                                        <td>Y.D.K.Medis</td>
+                                        <td>
+                                            <div class="col-md-3">
+                                                <input type="text" class="form-control" id="studentMarkTxt">
+                                            </div>
+                                    </tr>
+                                    </tbody>
+
+                                      <div>
+                                    </div>
+                                </table>
+                                <div class="box-footer">
+
+                                </div>
+                                </form>
+                            </div><!-- /.box -->
+                        </div>
+
+                        <!--        parent details-->
+
+
+                        <div class="box-footer">
+                            <button type="submit" class="btn btn-primary">Send</button>
+                        </div>
+                        </form>
+                    </div><!-- /.box -->
+        </div>
+        </div>
+        </body>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
     </section>
 </section>
 
@@ -113,6 +293,7 @@
 <script src="../../../firebase models/db.js"></script>
 <script src="../../../firebase models/reports.js"></script>
 <script>
+    getschool(reposchool);
     var stdAdmissionNo = document.getElementById("studentAdmissionNoTxt").value;
     var stdName = document.getElementById("studentLNameTxt").value;
     var stdClass = document.getElementById("studentClassTxt").value;
@@ -133,6 +314,17 @@
     var report= [stdAdmissionNo,stdName,stdClass,stdTestNo,stdAdNo,stdYear,stdPosition,stdSub1,stdSub2,stdSub3,stdSub4,stdSub5,stdSub6,stdSub7,stdSub8,stdSub9];
     addreport(report);
 
+    <script src="../../../firebase models/db.js"></script>
+    <script src="../../../firebase models/results.js"></script>
+</script>
+<script>
+getschool(reposchool);
+var studentClass =" 11-B ";//set auto generated student id
+document.getElementById("studentClass").innerHTML = studentClass;
+var stdSubjects = document.getElementById("studentSubjectsTxt").value;
+var stdMark = document.getElementById("studentMarkTxt").value;
+var results=[studentClass,stdSubjects,stdMark];
+addresult(stdAdmissionNo,stdMark)
 
 </script>
 

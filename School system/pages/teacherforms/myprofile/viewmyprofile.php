@@ -79,12 +79,7 @@
                                                 <div class="form-group">
                                                     <label class="text-muted" for="exampleInputEmail1">Admission Date:</label>
                                                 </div>
-                                                <div class="form-group">
-                                                    <label class="text-muted" for="exampleInputEmail1">Current Class:</label>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label class="text-muted" for="exampleInputEmail1">Current Section:</label>
-                                                </div>
+
                                                 <div class="form-group">
                                                     <label class="text-muted" for="exampleInputEmail1">Address:</label>
                                                 </div>
@@ -112,13 +107,7 @@
                                         <label id="teacherAdmissionLbl">-</label>
                                     </div>
 
-                                    <div class="form-group">
-                                        <label id="teacherClassLbl">-</label>
-                                    </div>
 
-                                    <div class="form-group">
-                                        <label id="teacherSectionLbl">-</label>
-                                    </div>
                                     <div class="form-group">
                                         <label id="teacherAddressLbl">-</label>
                                     </div>
@@ -152,17 +141,17 @@
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="exampleInputEmail1">Name:</label>
-                                                    <input type="email" class="form-control" id="parentNameTxt" placeholder="Enter Name">
+                                                    <input type="text" class="form-control" id="parentNameTxt" placeholder="Enter Name">
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="exampleInputEmail1">Teacher ID:</label>
-                                                    <input type="email" class="form-control" id="parentNameTxt" placeholder="Enter Teacher ID">
+                                                    <input type="text" class="form-control" id="parentNameTxt" placeholder="Enter Teacher ID">
                                                 </div>
 
 
                                                 <div class="form-group">
                                                     <label for="exampleInputEmail1">Number Of Leave days:</label>
-                                                    <input type="email" class="form-control" id="parentNameTxt" placeholder="Enter No Of days">
+                                                    <input type="text" class="form-control" id="parentNameTxt" placeholder="Enter No Of days">
                                                 </div>
                                                 <div class="form-group">
                                                     <label>Date Of Commencing leave:</label>
@@ -204,8 +193,6 @@
             var teacherBdyLbl
             var teacherEmailLbl
             var teacherAdmissionLbl
-            var teacherClassLbl
-            var teacherSectionLbl
             var teacherAddressLbl
             var teacherPhoneLbl
 
@@ -214,8 +201,6 @@
             document.getElementById('teacherBdyLbl').innerHTML = teacherBdyLbl;
             document.getElementById('teacherEmailLbl').innerHTML = teacherEmailLbl;
             document.getElementById('teacherAdmissionLbl').innerHTML = teacherAdmissionLbl;
-            document.getElementById('teacherClassLbl').innerHTML = teacherClassLbl;
-            document.getElementById('teacherSectionLbl').innerHTML = teacherSectionLbl;
             document.getElementById('teacherAddressLbl').innerHTML = teacherAddressLbl;
             document.getElementById('teacherPhoneLbl').innerHTML = teacherPhoneLbl;
 

@@ -6,7 +6,7 @@ function getschool(tagname) {
     email = user.email;
     uid = user.uid; //get user id and match the record and direct to the specific land page then retireve the data relavent to that user 
     }
-    db.collection("users").where("userid","==", uid)
+    db.collection("users").where("userid","==",uid)
     .get()
     .then(function(querySnapshot) {
         querySnapshot.forEach(function(doc) {
