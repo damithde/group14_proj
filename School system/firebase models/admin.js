@@ -1,4 +1,4 @@
-function getschool() {
+function getschool(tagname) {
     var user = firebase.auth().currentUser;
     var name, email, uid;var school;
     if (user != null) {
@@ -14,7 +14,7 @@ function getschool() {
             school=output.school;
             // doc.data() is never undefined for query doc snapshots
             //console.log(school);
-            
+            document.getElementById(tagname).value=school;
         });
         return school;
     })

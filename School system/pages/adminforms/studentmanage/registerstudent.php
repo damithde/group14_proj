@@ -10,7 +10,7 @@
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-database.js"></script>
 <script src="../../../firebase models/db.js"></script>
 <script src="../../../firebase models/student.js"></script>
-
+<script src="../../../firebase models/admin.js"></script>
 <section class="content-wrapper">
     <section class="content-header">
     <div class="row">
@@ -70,7 +70,7 @@
                         </div>
                         <div class="form-group">
                             <label >School:</label>
-                            <input type="text" class="form-control" id="stuschool" placeholder="Enter Class" disabled>
+                            <input type="text" class="form-control" id="stuschool"  disabled>
                         </div>
                         <div class="form-group">
                             <label >Class:</label>
@@ -183,7 +183,7 @@
 
 
 <script>
-
+    getschool(stuschool);
     var studentIdLbl =" 2016 cs 089 ";//set auto generated student id
     document.getElementById("studentIdLbl").innerHTML = studentIdLbl;
 
