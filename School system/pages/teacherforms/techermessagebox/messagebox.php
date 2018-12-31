@@ -19,11 +19,11 @@
                         <div class="box-body">
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Student Id:</label>
-                                <input type="email" class="form-control" id="parentNameTxt" placeholder="Enter Student Id">
+                                <input type="text" class="form-control" id="parentNameTxt" placeholder="Enter Student Id">
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Student Name:</label>
-                                <input type="email" class="form-control" id="parentNameTxt" placeholder="Enter Studenr Name">
+                                <input type="text" class="form-control" id="parentNameTxt" placeholder="Enter Studenr Name">
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Message:</label>

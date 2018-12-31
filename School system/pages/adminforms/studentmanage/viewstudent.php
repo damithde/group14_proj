@@ -79,6 +79,9 @@
                                                 <label class="text-muted"  >Admission Date:</label>
                                             </div>
                                             <div class="form-group">
+                                                <label class="text-muted"  >Medium:</label>
+                                            </div>
+                                            <div class="form-group">
                                                 <label class="text-muted"  >Class:</label>
                                             </div>
                                             <div class="form-group">
@@ -114,6 +117,9 @@
                                         <label id="studentAdtLbl">-</label>
                                     </div>
                                     <div class="form-group">
+                                        <label id="studentMediumLbl">-</label>
+                                    </div>
+                                    <div class="form-group">
                                         <label id="studentClassLbl">-</label>
                                     </div>
                                     <div class="form-group">
@@ -127,7 +133,7 @@
                                     </div>
                                     <div class="form-group">
                                     <div> </div>
-                                        <a href="javascript::;" class="btn btn-sm btn-default btn-flat pull-right">Edit details</a>
+                                        <a href="../studentmanage/editstudent.php" class="btn btn-sm btn-default btn-flat pull-right">Edit details</a>
                                     </div><!-- /.box-footer -->
                                 </div>
 
@@ -378,6 +384,7 @@
     var studentReligionLbl
     var studentEmailLbl
     var studentAdtLbl
+    var studentMediumLbl
     var studentClassLbl
     var studentSectionLbl
     var studentAddressLbl
@@ -393,6 +400,7 @@ var parentOccupationLbl
     document.getElementById('studentReligionLbl').innerHTML = studentReligionLbl;
     document.getElementById('studentEmailLbl').innerHTML = studentEmailLbl;
     document.getElementById('studentAdtLbl').innerHTML = studentAdtLbl;
+    document.getElementById('studentMediumLbl').innerHTML = studentMediumLbl;
     document.getElementById('studentClassLbl').innerHTML = studentClassLbl;
     document.getElementById('studentSectionLbl').innerHTML = studentSectionLbl;
     document.getElementById('studentAddressLbl').innerHTML = studentAddressLbl;

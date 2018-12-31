@@ -37,7 +37,6 @@
                 </ul>
             </li>
             <li><a href="../calendarmanage/calendar.php"><i class="fa fa-calendar"></i> <span>Calendar</span></a></li>
-
             <li>
                 <a href="#">
                     <i class="fa fa-users"></i> <span>Exams</span> <i class="fa fa-angle-left pull-right"></i>
@@ -60,7 +59,7 @@
                 </ul>
             </li>
             <li><a href="../messagebox/messagebox.php"><i class="fa fa-envelope-o"></i> <span></span>Notification</span></a></li>
-            <li><a href="../attendancemanage/attendance.php"><i class="fa fa-edit"></i> <span>Attendance</span></a></li>
+            <li><a href="../attendancemanage/attendanceStart.php"><i class="fa fa-edit"></i> <span>Attendance</span></a></li>
             <li><a href="../attendancemanage/attendance.php"><i class="fa fa-gear"></i> <span>School Configure</span></a></li>
         </ul>
     </section>
@@ -68,6 +67,6 @@
 </aside>
 
 
-
+attendanceStart.php
 
 
