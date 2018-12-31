@@ -35,6 +35,11 @@
                     </form>
                 </div><!-- /.box -->
             </div>
+
+            <div >
+                    <?php include_once('dashboardnotificationPanel.php'); ?>
+                </div>
+
         </div>
         <div>
         </div>
