@@ -169,5 +169,10 @@
     document.getElementById('totStudentsNo').style.width = "90%";
 
     document.getElementById('totStudents').innerHTML = totStudents;
+
+
+
+
+    
 </script>
 

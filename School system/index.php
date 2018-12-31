@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="plugins/alertify/css/alertify.min.css" />
     <link rel="stylesheet" href="plugins/alertify/css/themes/default.min.css" />
     <!-- alertify -->
+    <script src="firebase models/admin.js"></script>
     <script src="firebase models/login.js"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -55,6 +56,10 @@
                 </div><!-- /.col -->
                 <div class="col-xs-4">
                     <button id="sign" onclick="login()" type="submit"  class="btn btn-primary btn-block btn-flat">Sign In</button>
+                </div><!-- /.col -->
+                </div><!-- /.col -->
+                <div class="col-xs-4">
+                    <button id="sign" onclick="getstudentcount()" type="submit"  class="btn btn-primary btn-block btn-flat">test</button>
                 </div><!-- /.col -->
                 
             </div>
