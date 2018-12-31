@@ -66,34 +66,34 @@
                                         <div class="col-md-6">
                                             <!--Lable names-->
                                             <div class="form-group">
-                                                <label class="text-muted" for="exampleInputEmail1">Name:</label>
+                                                <label class="text-muted"  >Name:</label>
                                             </div>
                                             <div class="form-group">
-                                                <label class="text-muted" for="exampleInputEmail1">Gender:</label>
+                                                <label class="text-muted"  >Gender:</label>
                                             </div>
                                             <div class="form-group">
-                                                <label class="text-muted" for="exampleInputEmail1">Date Of Birth:</label>
+                                                <label class="text-muted"  >Date Of Birth:</label>
                                             </div>
                                             <div class="form-group">
                                                 <label class="text-muted" >Email:</label>
                                             </div>
                                             <div class="form-group">
-                                                <label class="text-muted" for="exampleInputEmail1">Admission Date:</label>
+                                                <label class="text-muted"  >Admission Date:</label>
                                             </div>
                                             <div class="form-group">
-                                                <label class="text-muted" for="exampleInputEmail1">Class:</label>
+                                                <label class="text-muted"  >Class:</label>
                                             </div>
                                             <div class="form-group">
-                                                <label class="text-muted" for="exampleInputEmail1">Section:</label>
+                                                <label class="text-muted"  >Section:</label>
                                             </div>
                                             <div class="form-group">
-                                                <label class="text-muted" for="exampleInputEmail1">Address:</label>
+                                                <label class="text-muted"  >Address:</label>
                                             </div>
                                             <div class="form-group">
-                                                <label class="text-muted" for="exampleInputEmail1">Phone:</label>
+                                                <label class="text-muted"  >Phone:</label>
                                             </div>
                                             <div class="form-group">
-                                                <label class="text-muted" for="exampleInputEmail1">Current Status:</label>
+                                                <label class="text-muted"  >Current Status:</label>
                                             </div>
                                         </div>
                                     </div>
@@ -101,31 +101,31 @@
 
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="exampleInputEmail1">Y.Dinuka Kasun Medis</label>
+                                        <label id = "teacherNameTxt">Y.Dinuka Kasun Medis</label>
                                     </div>
                                     <div class="form-group">
-                                        <label for="exampleInputEmail1">Male</label>
+                                        <label id="teacherGenderTxt">Male</label>
                                     </div>
                                     <div class="form-group">
-                                        <label for="exampleInputEmail1">1995/09/20</label>
+                                        <label id="teacherBDYTxt">1995/09/20</label>
                                     </div>
                                     <div class="form-group">
-                                        <label for="exampleInputEmail1">dinuka.kasunds@gmail.com</label>
+                                        <label id ="teacherEmailTxt">dinuka.kasunds@gmail.com</label>
                                     </div>
                                     <div class="form-group">
-                                        <label for="exampleInputEmail1">2015/02/02</label>
+                                        <label id="admissionDateTxt">2015/02/02</label>
                                     </div>
                                     <div class="form-group">
-                                        <label for="exampleInputEmail1">m1</label>
+                                        <label id="teacherClassTxt">m1</label>
                                     </div>
                                     <div class="form-group">
-                                        <label>12</label>
+                                        <label id="teacherGradeTxt">12</label>
                                     </div>
                                     <div class="form-group">
-                                        <label for="exampleInputEmail1">73,Dampe,Madapatha</label>
+                                        <label id="teacheraddressTxt">73,Dampe,Madapatha</label>
                                     </div>
                                     <div class="form-group">
-                                        <label for="exampleInputEmail1">0717275722</label>
+                                        <label id="teacherTelTxt">0717275722</label>
                                     </div>
                                 </div>
                             </div>
@@ -145,3 +145,28 @@
 </section>
 
 <?php include_once('../admincommon/footer.php'); ?>
+
+<script>
+
+    var teacherNameTxt="-";
+    var teacherGenderTxt="-";
+    var teacherBDYTxt
+    var teacherEmailTxt
+    var admissionDateTxt
+    var teacherClassTxt
+    var teacherGradeTxt
+    var teacheraddressTxt
+    var teacherTelTxt 
+    
+    // document.getElementById("teacherNameTxt").innerHTML = teacherNameTxt;
+    document.querySelector('teacherGenderTxt').innerHTML = teacherGenderTxt;
+    document.querySelector('teacherBDYTxt').innerHTML = teacherBDYTxt;
+    document.getElementById("teacherEmailTxt").innerHTML = teacherEmailTxt;
+    document.getElementById("admissionDateTxt").innerHTML = admissionDateTxt;
+    document.getElementById("teacherClassTxt").innerHTML = teacherClassTxt;
+    document.getElementById("teacherGradeTxt").innerHTML = teacherGradeTxt;
+    document.getElementById("teacheraddressTxt").innerHTML = teacheraddressTxt;
+    document.getElementById("teacherTelTxt").innerHTML = teacherTelTxt;
+
+    
+</script>

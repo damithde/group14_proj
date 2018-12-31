@@ -25,7 +25,7 @@
                     <div class="box-body">
                         <div class="form-group">
                             <label  >Student ID:</label>
-                            <label  id="studentIdLbl">2016/ws/rk/52667</label>
+                            <label  id="studentIdLbl" class="text-muted">2016/ws/rk/52667</label>
                         </div>
                         <div class="form-group">
                             <label  >First Name:</label>
