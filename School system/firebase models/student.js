@@ -12,6 +12,7 @@ function addstudent(student,parent){
         grade: student[8],
         class: student[9],
         email: student[10],
+        profileimg:student[11],
         parent: parent
 
     })

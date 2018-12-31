@@ -186,9 +186,12 @@
 
 <script>
     getschool(stuschool);
+
+    function datasubmission(){
+    var school=document.getElementById("stuschool").value;    
     var studentIdLbl =" 2016 cs 089 ";//set auto generated student id
     document.getElementById("studentIdLbl").innerHTML = studentIdLbl;
-    
+    var profileimg=document.getElementById("propic").src;
     var stdFName = document.getElementById("studentFNameTxt").value;
     var stdLName = document.getElementById("studentLNameTxt").value;
     var stdGend = document.querySelector('input[name=gender]:checked').value;
@@ -205,9 +208,9 @@
     var parEmail = document.getElementById("parentEmail").value;
     var parAddress = document.getElementById("parentAddressTxt").value;
     var parent={name:parName,parent:par,occupation:parOcupation,email:parEmail};
-    var student= [stdAdNo,stdFName,stdLName,contact,stdbd,stdAddress,stdReli,school,stdGrade,stdClass,stdEmail];
+    var student= [stdAdNo,stdFName,stdLName,contact,stdbd,stdAddress,stdReli,school,stdGrade,stdClass,stdEmail,profileimg];
     addstudent(student,parent);
-
+    }
 
 </script>
 <script>
