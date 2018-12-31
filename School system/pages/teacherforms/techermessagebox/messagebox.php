@@ -1,7 +1,8 @@
-<?php include_once('messagehead.php'); ?>
-<?php include_once('messageheader.php'); ?>
-<?php include_once('messagesidebar.php'); ?>
-<?php include_once('messagescript.php'); ?>
+<?php include_once('../teachercommon/head.php'); ?>
+<?php include_once('../teachercommon/header.php'); ?>
+<?php include_once('../teachercommon/sidebar.php'); ?>
+<?php include_once('../teachercommon/script.php'); ?>
+
 <section class="content-wrapper">
     <section class="content-header">
 <!--        main row-->

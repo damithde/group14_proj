@@ -1,7 +1,8 @@
-<?php include_once('reporthead.php'); ?>
-<?php include_once('reportheader.php'); ?>
-<?php include_once('reportssidebar.php'); ?>
-<?php include_once('reportscript.php'); ?>
+<?php include_once('../teachercommon/head.php'); ?>
+<?php include_once('../teachercommon/header.php'); ?>
+<?php include_once('../teachercommon/sidebar.php'); ?>
+<?php include_once('../teachercommon/script.php'); ?>
+
 
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
