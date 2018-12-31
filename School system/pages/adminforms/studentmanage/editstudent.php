@@ -29,7 +29,7 @@
                                 <div class="form-group">
                                     <form action="#" method="get" class="form-group">
                                         <div class="input-group">
-                                            <input type="text" name="q" class="form-control" placeholder="Search..."/>
+                                            <input type="text" id = "searchTxt" name="q" class="form-control" placeholder="Search..."/>
                                             <span class="input-group-btn">
                                         <button type='submit' name='search' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
                                     </span>
@@ -188,13 +188,47 @@
     </section>
 </section>
 
+<script>
+    var searchTxt
+    var stdFName ="sss";
+    var stdLName
+    var stdGend
+    var stdbd 
+    var stdReli
+    var stdEmail
+    var stdAdNo
+    var stdClass
+    var stdGrade
+    var stdAddress
+    var par
+    var parName
+    var parOcupation
+    var parEmail
+    var parAddress
+ 
 
+    document.getElementById("searchTxt").value = searchTxt;
+    document.getElementById("studentFNameTxt").value = stdFName;
+    document.getElementById("studentLNameTxt").value = stdLName;
+    // document.querySelector('input[name=gender]:checked').value = stdGend;
+    // document.querySelector('date').value = stdbd;
+    document.getElementById("studentReligionTxt").value = stdReli;
+    document.getElementById("studentEmailTxt").value = stdEmail;
+    document.getElementById("studentAdmissionNoTxt").value = stdAdNo;
+    document.getElementById("studentClassTxt").value = stdClass;
+    document.getElementById("studentGradeTxt").value = stdGrade;
+    document.getElementById("studentAddressTxt").value = stdAddress;
+    // document.querySelector('input[name=parent]:checked').value = par;
+    document.getElementById("parentNameTxt").value = parName;
+    document.getElementById("parentOcupationTxt").value = parOcupation;
+    document.getElementById("parentEmail").value = parEmail;
+    document.getElementById("parentAddressTxt").value = parAddress;
+
+
+</script>
 
 <script>
-
-    var studentIdLbl =" 2016 cs 089 ";//set auto generated student id
-    document.getElementById("studentIdLbl").innerHTML = studentIdLbl;
-
+    var studentIdLbl = document.getElementById("searchTxt").value;
     var stdFName = document.getElementById("studentFNameTxt").value;
     var stdLName = document.getElementById("studentLNameTxt").value;
     var stdGend = document.querySelector('input[name=gender]:checked').value;
