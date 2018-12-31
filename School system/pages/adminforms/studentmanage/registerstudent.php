@@ -10,7 +10,7 @@
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-database.js"></script>
 <script src="../../../firebase models/db.js"></script>
 <script src="../../../firebase models/student.js"></script>
-
+<script src="../../../firebase models/admin.js"></script>
 <section class="content-wrapper">
     <section class="content-header">
     <div class="row">
@@ -29,11 +29,11 @@
                         </div>
                         <div class="form-group">
                             <label  >First Name:</label>
-                            <input type="input" class="form-control" id="studentFNameTxt" placeholder="Enter First Name">
+                            <input type="text" class="form-control" id="studentFNameTxt" placeholder="Enter First Name">
                         </div>
                         <div class="form-group">
                             <label  >Last Name:</label>
-                            <input type="input" class="form-control" id="studentLNameTxt" placeholder="Enter Last Name">
+                            <input type="text" class="form-control" id="studentLNameTxt" placeholder="Enter Last Name">
                         </div>
                         <div class="form-group">
                             <label >Gender:</label>
@@ -58,7 +58,7 @@
 
                         <div class="form-group">
                             <label  >Religion:</label>
-                            <input type="input" class="form-control" id="studentReligionTxt" placeholder="Enter Religion">
+                            <input type="text" class="form-control" id="studentReligionTxt" placeholder="Enter Religion">
                         </div>
                         <div class="form-group">
                             <label  >Email:</label>
@@ -66,11 +66,15 @@
                         </div>
                         <div class="form-group">
                             <label  >Admission No:</label>
-                            <input type="input" class="form-control" id="studentAdmissionNoTxt" placeholder="Enter Admission No">
+                            <input type="text" class="form-control" id="studentAdmissionNoTxt" placeholder="Enter Admission No">
+                        </div>
+                        <div class="form-group">
+                            <label >School:</label>
+                            <input type="text" class="form-control" id="stuschool"  disabled>
                         </div>
                         <div class="form-group">
                             <label >Class:</label>
-                            <input type="input" class="form-control" id="studentClassTxt" placeholder="Enter Class">
+                            <input type="text" class="form-control" id="studentClassTxt" placeholder="Enter Class">
                         </div>
                         <div id="studentGradeTxt" class="form-group">
                             <label  >Grade:</label>
@@ -179,7 +183,7 @@
 
 
 <script>
-
+    getschool(stuschool);
     var studentIdLbl =" 2016 cs 089 ";//set auto generated student id
     document.getElementById("studentIdLbl").innerHTML = studentIdLbl;
 

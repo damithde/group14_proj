@@ -7,7 +7,9 @@
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-database.js"></script>
-
+<script src="../../../firebase models/db.js"></script>
+<script src="../../../firebase models/teacher.js"></script>
+<script src="../../../firebase models/admin.js"></script>
 <section class="content-wrapper">
     <section class="content-header">
         <div class="row">
@@ -57,6 +59,10 @@
                                 <label for="exampleInputEmail1">Registration No:</label>
                                 <input onkeyup="prvRegNo()" type="email" class="form-control" id="teacherRegNoTxt" placeholder="Enter Registration No">
                             </div>
+                            <div class="form-group">
+                            <label >School:</label>
+                            <input type="text" class="form-control" id="tchrschool"  disabled>
+                        </div>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Address:</label>
                                 <textarea onkeyup="prvaddress()" class="form-control" id="teacherAddressTxt" rows="3" placeholder="Enter Address"></textarea>
@@ -180,6 +186,7 @@
     </section>
 </section>
 <script>
+    getschool(tchrschool);
 
     var tchrName = document.getElementById("teacherNameTxt").value;
     var tchrGend = document.querySelector('input[name=gender]:checked').value;
@@ -196,6 +203,8 @@
     //     document.getElementById('previewName').innerHTML = tchrName;
     // // alert("You pre   ssed a key inside the input field");
     // }
+
+
 
 </script>
 <script>

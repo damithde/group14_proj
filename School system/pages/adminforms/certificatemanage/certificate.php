@@ -11,52 +11,7 @@
         <script src="../../../firebase models/db.js"></script>
 
         <style>
-        .autocomplete {
-  /*the container must be positioned relative:*/
-  position: relative;
-  display: inline-block;
-}
-input {
-  border: 1px solid transparent;
-  background-color: #f1f1f1;
-  padding: 10px;
-  font-size: 16px;
-}
-input[type=text] {
-  background-color: #f1f1f1;
-  width: 100%;
-}
-input[type=submit] {
-  background-color: DodgerBlue;
-  color: #fff;
-}
-.autocomplete-items {
-  position: absolute;
-  border: 1px solid #d4d4d4;
-  border-bottom: none;
-  border-top: none;
-  z-index: 99;
-  /*position the autocomplete items to be the same width as the container:*/
-  top: 100%;
-  left: 0;
-  right: 0;
-}
-.autocomplete-items div {
-  padding: 10px;
-  cursor: pointer;
-  background-color: #fff; 
-  border-bottom: 1px solid #d4d4d4; 
-}
-.autocomplete-items div:hover {
-  /*when hovering an item:*/
-  background-color: #e9e9e9; 
-}
-.autocomplete-active {
-  /*when navigating through the items using the arrow keys:*/
-  background-color: DodgerBlue !important; 
-  color: #ffffff; 
-}
-        
+
         </style>
 </head>
 <section class="content-wrapper">
@@ -71,7 +26,7 @@ input[type=submit] {
                         <h3 class="box-title">Certificate Details</h3>
                     </div><!-- /.box-header -->
                     <!-- form start -->
-                    <form role="form" autocomplete="off">
+                    <form role="form" utocomplete="off">
                         <div class="box-body">
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Student Id:</label>
@@ -81,7 +36,7 @@ input[type=submit] {
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Full Name:</label>
-                                <input type="email" class="form-control" id="parentNameTxt" placeholder="Enter Full Name">
+                                <input type="text" class="form-control" id="parentNameTxt" placeholder="Enter Full Name">
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Discription:</label>
@@ -112,6 +67,7 @@ input[type=submit] {
 
 <script>
     var school;var studentlist=['abc'];
+    autocomplete(document.getElementById("stuid"), studentlist);
     var user = firebase.auth().currentUser;
     var name, email, uid;
     if (user != null) {
@@ -139,7 +95,7 @@ input[type=submit] {
                     //console.log(doc.id, " => ", doc.data());
                 });
                 console.log(studentlist);
-                
+                //autocomplete(document.getElementById("stuid"), studentlist);
             })
             .catch(function(error) {
                 console.log("Error getting documents: ", error);
@@ -150,8 +106,8 @@ input[type=submit] {
         console.log("Error getting documents: ", error);
     });
 
-    autocomplete(document.getElementById("stuid"), studentlist);
     
+   
     function autocomplete(inp, arr) {
   /*the autocomplete function takes two arguments,
   the text field element and an array of possible autocompleted values:*/
@@ -248,7 +204,6 @@ document.addEventListener("click", function (e) {
     closeAllLists(e.target);
 });
 }
-
     
 
 
