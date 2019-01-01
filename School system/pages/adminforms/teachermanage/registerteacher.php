@@ -218,6 +218,9 @@
     var tchrGend = document.querySelector('input[name=gender]:checked').value;
     var tchrbd = document.querySelector('date').value;
     var tchrEmail = document.getElementById("teacherEmailText").value;
+    var tchrSchool = document.getElementById("teacherSchoolText").value;
+    var tchrGrade = document.getElementById("teacherGradeText").value;
+    var tchrClass = document.getElementById("teacherClassText").value;
     var tchrAdNo = document.getElementById("teacherRegNoTxt").value;
     var tchrClass = document.getElementById("teacherAddressTxt").value;
     var tchrGrade = document.getElementById("teacherTelNoTxt").value;
@@ -271,6 +274,36 @@
             document.getElementById('previewEmail').innerHTML = "-";
         }else{
             document.getElementById('previewEmail').innerHTML = tchrEmail;
+        }
+    }
+</script>
+<script>
+    function prvSchool() {
+        var tchrSchool = document.getElementById("teacherSchoolText").value;
+        if (tchrName === "") {
+            document.getElementById('previewSchool').innerHTML = "-";
+        }else{
+            document.getElementById('previewSchool').innerHTML = tchrSchool;
+        }
+    }
+</script>
+<script>
+    function prvGrade() {
+        var tchrGrade = document.getElementById("teacherGradeText").value;
+        if (tchrName === "") {
+            document.getElementById('previewGrade').innerHTML = "-";
+        }else{
+            document.getElementById('previewGrade').innerHTML = tchrGrade;
+        }
+    }
+</script>
+<script>
+    function prvClass() {
+        var tchrClass = document.getElementById("teacherClassText").value;
+        if (tchrName === "") {
+            document.getElementById('previewClass').innerHTML = "-";
+        }else{
+            document.getElementById('previewClass').innerHTML = tchrClass;
         }
     }
 </script>
