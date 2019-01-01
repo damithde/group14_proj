@@ -60,13 +60,11 @@
             </li>
             <li><a href="../messagebox/messagebox.php"><i class="fa fa-envelope-o"></i> <span></span>Notification</span></a></li>
             <li><a href="../attendancemanage/attendanceStart.php"><i class="fa fa-edit"></i> <span>Attendance</span></a></li>
-            <li><a href="../attendancemanage/attendance.php"><i class="fa fa-gear"></i> <span>School Configure</span></a></li>
+            <li><a href="../schoolconfigure/schoolconfigure.php"><i class="fa fa-gear"></i> <span>School Configure</span></a></li>
         </ul>
     </section>
     <!-- /.sidebar -->
 </aside>
 
-
-attendanceStart.php
 
 

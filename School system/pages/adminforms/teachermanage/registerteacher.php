@@ -60,9 +60,17 @@
                                 <input onkeyup="prvRegNo()" type="email" class="form-control" id="teacherRegNoTxt" placeholder="Enter Registration No">
                             </div>
                             <div class="form-group">
-                            <label >School:</label>
-                            <input type="text" class="form-control" id="tchrschool"  disabled>
-                        </div>
+                                <label >School:</label>
+                                <input type="text" class="form-control" id="tchrschool"  disabled>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Grade:</label>
+                                <input onkeyup="prvGrade()" type="email" class="form-control" id="teacherGradeTxt" placeholder="Enter Grade">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Class:</label>
+                                <input onkeyup="prvClass()" type="email" class="form-control" id="teacherClassTxt" placeholder="Enter Class">
+                            </div>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Address:</label>
                                 <textarea onkeyup="prvaddress()" class="form-control" id="teacherAddressTxt" rows="3" placeholder="Enter Address"></textarea>
@@ -134,6 +142,15 @@
                                                 <label class="text-muted" >Email:</label>
                                             </div>
                                             <div class="form-group">
+                                                <label class="text-muted" >School:</label>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="text-muted" >Grade:</label>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="text-muted" >Class:</label>
+                                            </div>
+                                            <div class="form-group">
                                                 <label class="text-muted" for="exampleInputEmail1">Registration No:</label>
                                             </div>
                                             <div class="form-group">
@@ -158,6 +175,15 @@
                                     </div>
                                     <div class="form-group">
                                         <label id="previewEmail">-</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label id="previewSchool">-</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label id="previewGrade">-</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label id="previewClass">-</label>
                                     </div>
                                     <div class="form-group">
                                         <label id="previewRegNo">-</label>

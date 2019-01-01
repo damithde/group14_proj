@@ -1,7 +1,7 @@
 <?php include_once('../admincommon/head.php'); ?>
 <?php include_once('../admincommon/header.php'); ?>
 <?php include_once('../admincommon/sidebar.php'); ?>
-<?php include_once('../admincommon/script.php'); ?>
+<?php include_once('../admincommon/script.php'); ?> 
 
 <body class="skin-blue">
 <div class="wrapper">
