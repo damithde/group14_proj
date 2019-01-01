@@ -13,6 +13,7 @@ function addstudent(student,parent){
         class: student[9],
         email: student[10],
         profileimg:student[11],
+        stuid:student[12],
         parent: parent
 
     })
@@ -29,6 +30,8 @@ function addstudent(student,parent){
             school: student[8],
             grade: student[9],
             class: student[10],
+            profileimg:student[11],
+            stuid:student[12],
             parent: parent
         })
         alert("student added successfully");
