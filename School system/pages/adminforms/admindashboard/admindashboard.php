@@ -142,19 +142,19 @@
 
 <script>
     var studentcount = "";
-    var studentpresent
-    var teachercount
-    var teacherpresent
+    var studentpresent;
+    var teachercount;
+    var teacherpresent;
     document.getElementById('studentcount').innerHTML = studentcount;
     // document.getElementById('studentpresent').innerHTML = studentpresent;
     document.getElementById('teachercount').innerHTML = teachercount;
     // document.getElementById('teacherpresent').innerHTML = teacherpresent;
     
 
-    var totNonAcadamicStaff
-    var totNoOfNotifaications 
-    var totTeachers
-    var totStudents
+    var totNonAcadamicStaff;
+    var totNoOfNotifaications; 
+    var totTeachers;
+    var totStudents;
     var totTeachersNo ="width: 90%";
 
     document.getElementById('totNonAcadamicStaff').innerHTML = totNonAcadamicStaff;
