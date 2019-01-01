@@ -121,12 +121,14 @@
                         </div><!-- /.box-body -->
                         <div class="box-footer">
                         </div>
-                    </form>
-                </div><!-- /.box -->
-            </div>
-                            <div class="row">
-                                <div class="col-md-12">
+                    </div>
+                            </div>
+                        </div>
+                    </div>
 
+
+                                <div class="col-md-12">
+                                </div>
                                     <!--                guardian details-->
                                     <div class="box box-primary">
                                         <div class="box-header  with-border">
