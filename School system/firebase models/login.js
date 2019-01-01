@@ -2,6 +2,7 @@
 function logout(){
     firebase.auth().signOut().then(function() {
      alert('signed out');
+     window.location.replace("../../../index.php");
     }).catch(function(error) {
         alert('error');
     });

@@ -1,6 +1,6 @@
 <body class="skin-green">
 <div class="wrapper">
-
+        <script src="../../../firebase models/login.js"></script>
     <header class="main-header">
         <!-- Logo -->
         <a href="../../../index.php" class="logo"><b>Admin</b></a>
@@ -90,7 +90,7 @@
                                     <a href="#" class="btn btn-default btn-flat">Profile</a>
                                 </div>
                                 <div class="pull-right">
-                                    <a href="../../../index.php" class="btn btn-default btn-flat">Sign out</a>
+                                    <a onclick="logout()" href="../../../index.php" class="btn btn-default btn-flat">Sign out</a>
                                 </div>
                             </li>
                         </ul>
