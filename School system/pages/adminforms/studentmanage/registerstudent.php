@@ -201,7 +201,7 @@
     uploadstudentpic("students");
     function datasubmission(){
         var school=document.getElementById("stuschool").value;    
-        var studentIdLbl =" 2016 cs 089 ";//set auto generated student id
+        //set auto generated student id
         document.getElementById("studentIdLbl").innerHTML = studentIdLbl;
         var profileimg=document.getElementById("propic").src;
         var stdFName = document.getElementById("studentFNameTxt").value;
@@ -219,8 +219,9 @@
         var parOcupation = document.getElementById("parentOcupationTxt").value;
         var parEmail = document.getElementById("parentEmail").value;
         var parAddress = document.getElementById("parentAddressTxt").value;
+        var studentId =school+stdAdNo;
         var parent={name:parName,parent:par,occupation:parOcupation,email:parEmail};
-        var student= [stdAdNo,stdFName,stdLName,contact,stdbd,stdAddress,stdReli,school,stdGrade,stdClass,stdEmail,profileimg];
+        var student= [stdAdNo,stdFName,stdLName,contact,stdbd,stdAddress,stdReli,school,stdGrade,stdClass,stdEmail,profileimg,studentId];
         addstudent(student,parent);
     }
 
