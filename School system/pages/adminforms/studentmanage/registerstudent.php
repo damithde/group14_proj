@@ -12,6 +12,7 @@
 <script src="../../../firebase models/db.js"></script>
 <script src="../../../firebase models/student.js"></script>
 <script src="../../../firebase models/admin.js"></script>
+<script src="../../../firebase models/login.js"></script>
 <script src="../../../firebase models/fileupload.js"></script>
 </head>
 <section class="content-wrapper">
@@ -181,7 +182,7 @@
 
 
                     <div class="box-footer">
-                        <button type="submit" class="btn btn-primary">Register</button>
+                        <button type="submit" class="btn btn-primary" onclick="datasubmission()" >Register</button>
                     </div>
                 </form>
             </div><!-- /.box -->
@@ -195,7 +196,8 @@
 
 
 <script>
-    //getschool(stuschool);
+    //getschool("stuschool");
+    getschool("stuschool");
     uploadstudentpic("students");
     function datasubmission(){
         var school=document.getElementById("stuschool").value;    
@@ -222,43 +224,47 @@
         addstudent(student,parent);
     }
 
+
+
+
+
 </script>
 <script>
-$(document).ready( function() {
-    	$(document).on('change', '.btn-file :file', function() {
-		var input = $(this),
-			label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
-		input.trigger('fileselect', [label]);
-		});
+// $(document).ready( function() {
+//     	$(document).on('change', '.btn-file :file', function() {
+// 		var input = $(this),
+// 			label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+// 		input.trigger('fileselect', [label]);
+// 		});
 
-		$('.btn-file :file').on('fileselect', function(event, label) {
+// 		$('.btn-file :file').on('fileselect', function(event, label) {
 		    
-		    var input = $(this).parents('.input-group').find(':text'),
-		        log = label;
+// 		    var input = $(this).parents('.input-group').find(':text'),
+// 		        log = label;
 		    
-		    if( input.length ) {
-		        input.val(log);
-		    } else {
-		        if( log ) alert(log);
-		    }
+// 		    if( input.length ) {
+// 		        input.val(log);
+// 		    } else {
+// 		        if( log ) alert(log);
+// 		    }
 	    
-		});
-		function readURL(input) {
-		    if (input.files && input.files[0]) {
-		        var reader = new FileReader();
+// 		});
+// 		function readURL(input) {
+// 		    if (input.files && input.files[0]) {
+// 		        var reader = new FileReader();
 		        
-		        reader.onload = function (e) {
-		            $('#img-upload').attr('src', e.target.result);
-		        }
+// 		        reader.onload = function (e) {
+// 		            $('#img-upload').attr('src', e.target.result);
+// 		        }
 		        
-		        reader.readAsDataURL(input.files[0]);
-		    }
-		}
+// 		        reader.readAsDataURL(input.files[0]);
+// 		    }
+// 		}
 
-		$("#imgInp").change(function(){
-		    readURL(this);
-		}); 	
-	});
+// 		$("#imgInp").change(function(){
+// 		    readURL(this);
+// 		}); 	
+// 	});
 </script>
 
 <?php include_once('../admincommon/footer.php'); ?>

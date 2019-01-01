@@ -1,25 +1,29 @@
 function getschool(tagname) {
-    var user = firebase.auth().currentUser;
-    var name, email, uid;var school;
-    if (user != null) {
-    name = user.displayName;
-    email = user.email;
-    uid = user.uid; //get user id and match the record and direct to the specific land page then retireve the data relavent to that user 
-    }
-    db.collection("users").where("userid","==",uid)
-    .get()
-    .then(function(querySnapshot) {
-        querySnapshot.forEach(function(doc) {
-            var output=doc.data();
-            school=output.school;
-            // doc.data() is never undefined for query doc snapshots
-            //console.log(school);
-            document.getElementById(tagname).value=school;
-        });
-        return school;
-    })
-    .catch(function(error) {
-        console.log("Error getting documents: ", error);
+    var userid;
+    firebase.auth().onAuthStateChanged(function(user) {
+        if (user) {
+            userid=user.uid;  
+            console.log(userid);
+            db.collection("users").where("userid","==",userid)
+            .get()
+            .then(function(querySnapshot) {
+                querySnapshot.forEach(function(doc) {
+                    var output=doc.data();
+                    school=output.school;
+                    // doc.data() is never undefined for query doc snapshots
+                    //console.log(school);
+                    document.getElementById(tagname).value=school;
+                });
+                
+            })
+            .catch(function(error) {
+                console.log("Error getting documents: ", error);
+            });
+                
+        }
+         else {
+        }
+      
     });
     
 }
