@@ -1,4 +1,4 @@
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"> </script>
 var canvas = document.getElementById('myChart');
 var data = {
     labels: ["January", "February", "March", "April", "May", "June", "July"],

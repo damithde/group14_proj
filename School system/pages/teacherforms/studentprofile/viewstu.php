@@ -85,6 +85,9 @@
                                                 <label class="text-muted"  >Admission Date:</label>
                                             </div>
                                             <div class="form-group">
+                                                <label class="text-muted"  >Medium:</label>
+                                            </div>
+                                            <div class="form-group">
                                                 <label class="text-muted"  >Class:</label>
                                             </div>
                                             <div class="form-group">
@@ -120,6 +123,9 @@
                                     <div class="form-group">
                                         <label id="studentAdtLbl">-</label>
                                     </div>
+                                            <div class="form-group">
+                                                <label id="studentMediumLbl">-</label>
+                                            </div>
                                     <div class="form-group">
                                         <label id="studentClassLbl">-</label>
                                     </div>
@@ -141,11 +147,7 @@
                         </div>
                     </form>
                 </div><!-- /.box -->
-            </div>
-        </div>
-                                                   <div class="row">
 
-                                                  <div class="col-md-6">
 
 
                                             <div class="box box-primary">
@@ -215,6 +217,10 @@
 
 
 
+                                                         </div>
+
+                                                 <div class="col-md-6 ">
+                                                                 <div>
 
                                                     <div class="box box-primary">
                                                         <div class="box-header with-border">
@@ -417,6 +423,7 @@
     var studentReligionLbl
     var studentEmailLbl
     var studentAdtLbl
+    var studentMediumLbl
     var studentClassLbl
     var studentSectionLbl
     var studentAddressLbl
@@ -436,6 +443,7 @@
     document.getElementById('studentReligionLbl').innerHTML = studentReligionLbl;
     document.getElementById('studentEmailLbl').innerHTML = studentEmailLbl;
     document.getElementById('studentAdtLbl').innerHTML = studentAdtLbl;
+    document.getElementById('studentMediumLbl').innerHTML = studentMediumLbl;
     document.getElementById('studentClassLbl').innerHTML = studentClassLbl;
     document.getElementById('studentSectionLbl').innerHTML = studentSectionLbl;
     document.getElementById('studentAddressLbl').innerHTML = studentAddressLbl;
