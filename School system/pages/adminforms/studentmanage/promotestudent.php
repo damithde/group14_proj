@@ -45,12 +45,6 @@
                                 </div>
                             </div>
 
-                            
-
-
-
-                            
-                            
                         </div>  
                     </form>
                     <div class="box-footer">

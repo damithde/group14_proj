@@ -24,6 +24,7 @@
                     <li class="active"><a href="../studentmanage/registerstudent.php"><i class="fa fa-folder-open-o"></i> Register Student</a></li>
                     <li><a href="../studentmanage/viewstudent.php"><i class="fa fa-folder-open-o"></i>Student Details</a></li>
                     <li><a href="../studentmanage/editstudent.php"><i class="fa fa-folder-open-o"></i> Edit Student</a></li>
+                    <li><a href="../studentmanage/searchstudent.php"><i class="fa fa-folder-open-o"></i> Search Student</a></li>
                     <li><a href="../studentmanage/promotestudent.php"><i class="fa fa-folder-open-o"></i> Promote Student</a></li>
                 </ul>
             </li>
