@@ -91,7 +91,7 @@
 
     
 
-document.getElementById("sign").addEventListener("click",checking);
+//document.getElementById("sign").addEventListener("click",login);
 
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
@@ -103,23 +103,7 @@ firebase.auth().onAuthStateChanged(function(user) {
 
 
 
-function checking(){
-firebase.auth().onAuthStateChanged(function(user) {
-  if (user) {
-      var loguser=firebase.auth().currentUser;
-      if (loguser.emailVerified==false){//make this true
-        alertify.alert('Welcome!').setHeader('<em> Logged In </em> ');
-        getuserdata();//  a value based on that dirrect to user specific page
-      }
-      else{
-        alertify.alert('please verify ur email before logining in').setHeader('<em> Not Verified </em> ');
-      }
-    
-  } else {
-  }
 
-});
-}
 
     
 </script>
