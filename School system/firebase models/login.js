@@ -17,11 +17,28 @@ function login(){
     // var users=db.collection('users');
     // var querry =users.where("username","==","admin");
     // console.log(querry.data());
+    var error=false;
     firebase.auth().signInWithEmailAndPassword(uname, pass).catch(function(error) {
         var errorCode = error.code;
         var errorMessage = error.message;
+        error=true;
         alert('Error :' + errorCode+ errorMessage);
     });
+    if(error==false){
+        firebase.auth().onAuthStateChanged(function(user) {
+            if (user) {
+                var loguser=firebase.auth().currentUser;
+                if (loguser.emailVerified==false){//make this true
+                  alertify.alert('Welcome!').setHeader('<em> Logged In </em> ');
+                  getuserdata();//  a value based on that dirrect to user specific page
+                }
+                else{
+                  alertify.alert('please verify ur email before logining in').setHeader('<em> Not Verified </em> ');
+                }
+              
+            } 
+          });
+    }
 };
 
 
