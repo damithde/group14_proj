@@ -25,31 +25,13 @@
                             <div class="row">
                             <form action="#" method="get" class="form-group">
                                 <div class="col-md-4">
-                                    <label class="text-muted">Search by Student ID:</label>
-                                </div>
-                                <div class="col-md-8">
-                                    <!-- search form -->
-                                    
-                                        <div class="input-group">
-                                            <input type="text" name="q" class="form-control" placeholder="Search by Student ID"/>
-                                            <span class="input-group-btn">
-                                        <button type='submit' name='search' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
-                                    </span>
-                                        </div>
-                                    
-                                    <!-- /.search form -->
-                                </div>
-                            </form>
-                            <form action="#" method="get" class="form-group">
-                                <div class="col-md-4">
-                                <br>
                                     <label class="text-muted">Search by Admission No</label>
                                 </div>
                                 <div class="col-md-8">
                                     <!-- search form -->
-                                    <br>
+                                    
                                         <div class="input-group">
-                                            <input type="text" name="q" class="form-control" placeholder="Search by Admission No"/>
+                                            <input id="addmissionSearch" type="text" name="q" class="form-control" placeholder="Search by  Admission No"/>
                                             <span class="input-group-btn">
                                         <button type='submit' name='search' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
                                     </span>
@@ -61,13 +43,31 @@
                             <form action="#" method="get" class="form-group">
                                 <div class="col-md-4">
                                 <br>
-                                    <label class="text-muted">Search by Name:</label>
+                                    <label class="text-muted">Search by First Name</label>
                                 </div>
                                 <div class="col-md-8">
                                     <!-- search form -->
                                     <br>
                                         <div class="input-group">
-                                            <input type="text" name="q" class="form-control" placeholder="Search by Name"/>
+                                            <input id="fNameSearch" type="text" name="q" class="form-control" placeholder="Search by First Name"/>
+                                            <span class="input-group-btn">
+                                        <button type='submit' name='search' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
+                                    </span>
+                                        </div>
+                                    
+                                    <!-- /.search form -->
+                                </div>
+                            </form>
+                            <form action="#" method="get" class="form-group">
+                                <div class="col-md-4">
+                                <br>
+                                    <label class="text-muted">Search by Last Name:</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <!-- search form -->
+                                    <br>
+                                        <div class="input-group">
+                                            <input id="lNameSearch" type="text" name="q" class="form-control" placeholder="Search by Last Name"/>
                                             <span class="input-group-btn">
                                         <button type='submit' name='search' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
                                     </span>
@@ -434,6 +434,11 @@
 
 
 <script>
+    var addmissionSearch
+    var fNameSearch
+    var lNameSearch
+
+
     var studentNameLbl
     var studentGenderLbl
     var studentBdyLbl
@@ -446,7 +451,7 @@
     var studentAddressLbl
     var studentPhoneLbl
     var parentNameLbl
-var parentOccupationLbl
+    var parentOccupationLbl
     var parentEmailLbl
     var parentPhoneLbl
 
