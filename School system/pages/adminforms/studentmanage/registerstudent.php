@@ -77,7 +77,7 @@
                             <input type="text" class="form-control" id="stuschool"  disabled>
                         </div>
                         <div id="studentMediumTxt" class="form-group">
-                            <label  >Meadium:</label>
+                            <label  >Medium:</label>
                             <!-- <input type="input" class="form-control" id="studentGradeTxt" placeholder="Enter Grade"> -->
                             <select class="form-control">
                             <option value="sinhala">Sinhala</option>
@@ -112,7 +112,7 @@
                                 <div class="input-group-addon">
                                     <i class="fa fa-phone"></i>
                                 </div>
-                                <input type="text" class="form-control" data-inputmask='"mask": "(999) 9999999"' data-mask/>
+                                <input type="text" id="contact" class="form-control" data-inputmask='"mask": "(999) 9999999"' data-mask/>
                             </div><!-- /.input group -->
                         </div>
                         <div class="form-group">
@@ -172,7 +172,7 @@
                                 <div class="input-group-addon">
                                     <i class="fa fa-phone"></i>
                                 </div>
-                                <input type="text" class="form-control" data-inputmask='"mask": "(999) 9999999"' data-mask/>
+                                <input type="text" id="gaurdiancontact" class="form-control" data-inputmask='"mask": "(999) 9999999"' data-mask/>
                             </div><!-- /.input group -->
                         </div>
                         <div class="form-group">
@@ -213,14 +213,16 @@
         var stdAdNo = document.getElementById("studentAdmissionNoTxt").value;
         var stdClass = document.getElementById("studentClassTxt").value;
         var stdGrade = document.getElementById("studentGradeTxt").value;
+        var contact=document.getElementById("contact").value;
         var stdAddress = document.getElementById("studentAddressTxt").value;
         var par = document.querySelector('input[name=parent]:checked').value;
         var parName = document.getElementById("parentNameTxt").value;
         var parOcupation = document.getElementById("parentOcupationTxt").value;
         var parEmail = document.getElementById("parentEmail").value;
         var parAddress = document.getElementById("parentAddressTxt").value;
+        var parContact = document.getElementById("gaurdiancontact").value;
         var studentId =school+stdAdNo;
-        var parent={name:parName,parent:par,occupation:parOcupation,email:parEmail};
+        var parent={name:parName,parent:par,occupation:parOcupation,email:parEmail,Econtact:parContact};
         var student= [stdAdNo,stdFName,stdLName,contact,stdbd,stdAddress,stdReli,school,stdGrade,stdClass,stdEmail,profileimg,studentId];
         addstudent(student,parent);
     }

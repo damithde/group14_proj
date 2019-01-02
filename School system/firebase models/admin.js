@@ -3,7 +3,7 @@ function getschool(tagname) {
     firebase.auth().onAuthStateChanged(function(user) {
         if (user) {
             userid=user.uid;  
-            console.log(userid);
+            //console.log(userid);
             db.collection("users").where("userid","==",userid)
             .get()
             .then(function(querySnapshot) {
