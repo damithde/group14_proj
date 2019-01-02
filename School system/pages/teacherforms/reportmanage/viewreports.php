@@ -65,12 +65,16 @@
                                         </div>
                                         <div class="col-md-6">
                                         <!--Lable names-->
+
+                                            <div class="form-group">
+                                                <label class="text-muted" for="exampleInputEmail1">Registration Number:</label>
+                                            </div>
+
+
                                             <div class="form-group">
                                                 <label class="text-muted" for="exampleInputEmail1">Name:</label>
                                             </div>
-                                            <div class="form-group">
-                                                <label class="text-muted" for="exampleInputEmail1">Admission Number:</label>
-                                            </div>
+
                                             <div class="form-group">
                                                 <label class="text-muted" for="exampleInputEmail1">Term Test:</label>
                                             </div>

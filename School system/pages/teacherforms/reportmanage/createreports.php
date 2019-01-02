@@ -22,7 +22,7 @@
                 <form role="form">
                     <div class="box-body">
                         <div class="form-group">
-                            <label  >Admission Number:</label>
+                            <label  >Registration Number:</label>
                             <input type="text" class="form-control" id="studentAdmissionNoTxt" placeholder="Enter Admission Number">
                         </div>
                         <div class="form-group">
@@ -85,20 +85,20 @@
                             <input type="text" class="form-control" id="studentSubject9Txt" placeholder="Enter Sub9">
                         </div>
 
+                        <button type="submit" class="btn btn-primary">Send</button>
 
 
-                    <div class="box-footer">
 
-                    </div>
+                        </div>
                 </form>
-            </div><!-- /.box -->
+            </div>
         </div>
 
 <!--        parent details-->
 
 
                     <div class="box-footer">
-                        <button type="submit" class="btn btn-primary">Send</button>
+
                     </div>
                 </form>
             </div><!-- /.box -->
@@ -109,11 +109,12 @@
 
         <body class="skin-blue">
         <div class="wrapper">
-
             <section class="content-wrapper">
                 <section class="content-header">
-                    <!--                Exam results-->
 
+                    <!--                Exam results-->
+                    <div class="col-md-6">
+                    </div>
                     <div class="box box-primary">
                         <div class="box-header with-border">
                             <h3 class="box-title">Enter Marks</h3>
@@ -125,7 +126,7 @@
 
                                         <div class="form-group">
                                             <label  >Class:</label>
-                                            <label  id="studentIdLbl" class="text-muted">11-B</label>
+                                            <input type="text" class="form-control" id="studentClassesTxt" >
                                         </div>
 
                                         <label  >Subject:</label>
@@ -146,7 +147,7 @@
                                 <table class="table no-margin">
                                     <thead>
                                     <tr>
-                                        <th>Admission No</th>
+                                        <th>Registration No</th>
                                         <th>Name</th>
                                         <th>Marks</th>
 
@@ -290,6 +291,7 @@
 </section>
 
 
+
 <script src="../../../firebase models/db.js"></script>
 <script src="../../../firebase models/reports.js"></script>
 <script>
@@ -319,8 +321,7 @@
 </script>
 <script>
 getschool(reposchool);
-var studentClass =" 11-B ";//set auto generated student id
-document.getElementById("studentClass").innerHTML = studentClass;
+var studentClass = document.getElementById("studentClassesTxt").value;
 var stdSubjects = document.getElementById("studentSubjectsTxt").value;
 var stdMark = document.getElementById("studentMarkTxt").value;
 var results=[studentClass,stdSubjects,stdMark];
