@@ -45,7 +45,7 @@
                                 </div>
                             </div>
                             <div class="col-md-2">
-                                <div id="studentGradeTxt" class="form-group">
+                                <div id="noOfTermTxt" class="form-group">
                                     <!-- <label  >Grade:</label> -->
                                     <!-- <input type="input" class="form-control" id="studentGradeTxt" placeholder="Enter Grade"> -->
                                     <select>
@@ -55,16 +55,16 @@
                                     </select>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" id="studentFNameTxt" placeholder="No of days">
+                                    <input type="text" class="form-control" id="schoolTotaldaysTxt" placeholder="No of days">
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" id="studentFNameTxt" placeholder="No of days">
+                                    <input type="text" class="form-control" id="term1daysTxt" placeholder="No of days">
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" id="studentFNameTxt" placeholder="No of days">
+                                    <input type="text" class="form-control" id="term2daysTxt" placeholder="No of days">
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" id="studentFNameTxt" placeholder="No of days">
+                                    <input type="text" class="form-control" id="term3daysTxt" placeholder="No of days">
                                 </div>
                             </div>
                             <div class="col-md-2">
@@ -93,7 +93,7 @@
                                         <div class="input-group-addon">
                                             <i class="fa fa-calendar"></i>
                                         </div>
-                                        <input type="date" class="form-control pull-right" id="date"/>
+                                        <input type="date" class="form-control pull-right" id="schoolStartDate"/>
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -101,7 +101,7 @@
                                         <div class="input-group-addon">
                                             <i class="fa fa-calendar"></i>
                                         </div>
-                                        <input type="date" class="form-control pull-right" id="date"/>
+                                        <input type="date" class="form-control pull-right" id="term1StartDate"/>
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -109,7 +109,7 @@
                                         <div class="input-group-addon">
                                             <i class="fa fa-calendar"></i>
                                         </div>
-                                        <input type="date" class="form-control pull-right" id="date"/>
+                                        <input type="date" class="form-control pull-right" id="term2StartDate"/>
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -117,7 +117,7 @@
                                         <div class="input-group-addon">
                                             <i class="fa fa-calendar"></i>
                                         </div>
-                                        <input type="date" class="form-control pull-right" id="date"/>
+                                        <input type="date" class="form-control pull-right" id="term3StartDate"/>
                                     </div>
                                 </div>
                             </div>
@@ -147,7 +147,7 @@
                                         <div class="input-group-addon">
                                             <i class="fa fa-calendar"></i>
                                         </div>
-                                        <input type="date" class="form-control pull-right" id="date"/>
+                                        <input type="date" class="form-control pull-right" id="schoolEndDate"/>
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -155,7 +155,7 @@
                                         <div class="input-group-addon">
                                             <i class="fa fa-calendar"></i>
                                         </div>
-                                        <input type="date" class="form-control pull-right" id="date"/>
+                                        <input type="date" class="form-control pull-right" id="term1EndDate"/>
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -163,7 +163,7 @@
                                         <div class="input-group-addon">
                                             <i class="fa fa-calendar"></i>
                                         </div>
-                                        <input type="date" class="form-control pull-right" id="date"/>
+                                        <input type="date" class="form-control pull-right" id="term2EndDate"/>
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -171,7 +171,7 @@
                                         <div class="input-group-addon">
                                             <i class="fa fa-calendar"></i>
                                         </div>
-                                        <input type="date" class="form-control pull-right" id="date"/>
+                                        <input type="date" class="form-control pull-right" id="term3EndDate"/>
                                     </div>
                                 </div>
                             </div>
@@ -191,3 +191,21 @@
     </div>
     </section>
 </section>
+
+<script>
+    var noOfTermTxt = document.querySelector('noOfTermTxt').value;
+    var schoolTotaldaysTxt = document.querySelector('schoolTotaldaysTxt').value;
+    var term1daysTxt = document.querySelector('term1daysTxt').value;
+    var term2daysTxt = document.querySelector('term2daysTxt').value;
+    var term3daysTxt = document.querySelector('term3daysTxt').value;
+    var schoolStartDate = document.querySelector('schoolStartDate').value;
+    var term1StartDate = document.querySelector('term1StartDate').value;
+    var term2StartDate = document.querySelector('term2StartDate').value;
+    var term3StartDate = document.querySelector('term3StartDate').value;
+    var schoolEndDate = document.querySelector('schoolEndDate').value;
+    var term1EndDate = document.querySelector('term1EndDate').value;
+    var term2EndDate = document.querySelector('term2EndDate').value;
+    var term3EndDate = document.querySelector('term3EndDate').value;
+
+
+</script>
