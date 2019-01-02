@@ -1,8 +1,8 @@
 function createschool(params) {
     db.collection("schools").doc(school[0]).set({
-        regno: school[0],
-        Fname: school[1],
-        Lname: school[2],
+        schoolid: school[0],
+        Name: school[1],
+        location: school[2],
         contact: school[3],
         dob: school[4],
    
