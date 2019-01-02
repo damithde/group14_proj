@@ -13,28 +13,84 @@
     <section class="content-header">
         <div class="row">
             <div class="col-md-6">
+            
+                <div class="box box-primary">
+                    <div class="box-header with-border">
+                        <h3 class="box-title">Search Student</h3>
+                    </div><!-- /.box-header -->
+                    <!-- form start -->
+                    <form role="form">
+                        <div class="box-body">
+                        <!--Lable field-->
+                            <div class="row">
+                            <form action="#" method="get" class="form-group">
+                                <div class="col-md-4">
+                                    <label class="text-muted">Search by Student ID:</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <!-- search form -->
+                                    
+                                        <div class="input-group">
+                                            <input type="text" name="q" class="form-control" placeholder="Search by Student ID"/>
+                                            <span class="input-group-btn">
+                                        <button type='submit' name='search' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
+                                    </span>
+                                        </div>
+                                    
+                                    <!-- /.search form -->
+                                </div>
+                            </form>
+                            <form action="#" method="get" class="form-group">
+                                <div class="col-md-4">
+                                <br>
+                                    <label class="text-muted">Search by Admission No</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <!-- search form -->
+                                    <br>
+                                        <div class="input-group">
+                                            <input type="text" name="q" class="form-control" placeholder="Search by Admission No"/>
+                                            <span class="input-group-btn">
+                                        <button type='submit' name='search' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
+                                    </span>
+                                        </div>
+                                    
+                                    <!-- /.search form -->
+                                </div>
+                            </form>
+                            <form action="#" method="get" class="form-group">
+                                <div class="col-md-4">
+                                <br>
+                                    <label class="text-muted">Search by Name:</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <!-- search form -->
+                                    <br>
+                                        <div class="input-group">
+                                            <input type="text" name="q" class="form-control" placeholder="Search by Name"/>
+                                            <span class="input-group-btn">
+                                        <button type='submit' name='search' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
+                                    </span>
+                                        </div>
+                                    
+                                    <!-- /.search form -->
+                                </div>
+                            </form>
+                            
+                            </div>
+                            
+                        </div><!-- /.box-body -->
+                        <div class="box-footer">
+                        </div>
+                    </form>
+                </div><!-- /.box -->
+
                 <div class="box box-primary">
                     <div class="box-header with-border">
                         <h3 class="box-title">Student Details</h3>
                     </div><!-- /.box-header -->
                     <br>
-                    <div class="row">
-                        <div class="col-md-3">
-
-                        </div>
-                        <div class="col-md-8">
-                            <!-- search form -->
-                            <form action="#" method="get" class="form-group">
-                                <div class="input-group">
-                                    <input type="text" name="q" class="form-control" placeholder="Search..."/>
-                                    <span class="input-group-btn">
-                                <button type='submit' name='search' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
-                            </span>
-                                </div>
-                            </form>
-                            <!-- /.search form -->
-                        </div>
-                    </div>
+                    
 
                     <!-- form start -->
                     <form role="form">

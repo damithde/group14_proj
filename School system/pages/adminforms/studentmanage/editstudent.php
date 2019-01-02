@@ -83,7 +83,7 @@
                         <div id="studentMediumTxt" class="form-group">
                             <label  >Meadium:</label>
                             <!-- <input type="input" class="form-control" id="studentGradeTxt" placeholder="Enter Grade"> -->
-                            <select>
+                            <select class="form-control">
                             <option value="sinhala">Sinhala</option>
                             <option value="english">English </option>
                             <option value="tamil">Tamil</option>
@@ -96,7 +96,7 @@
                         <div id="studentGradeTxt" class="form-group">
                             <label  >Grade:</label>
                             <!-- <input type="input" class="form-control" id="studentGradeTxt" placeholder="Enter Grade"> -->
-                            <select>
+                            <select class="form-control" >
                             <option value="6">6</option>
                             <option value="7">7</option>
                             <option value="8">8</option>

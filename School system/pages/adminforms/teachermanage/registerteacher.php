@@ -48,7 +48,7 @@
                                     <div class="input-group-addon">
                                         <i class="fa fa-calendar"></i>
                                     </div>
-                                    <input type="text" class="form-control pull-right" id="date"/>
+                                    <input type="date" class="form-control pull-right" id="date"/>
                                 </div><!-- /.input group -->
                             </div>
                             <div class="form-group">
@@ -65,25 +65,39 @@
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Grade:</label>
-                                <input onkeyup="prvGrade()" type="email" class="form-control" id="teacherGradeTxt" placeholder="Enter Grade">
+                                <select onkeyup="prvGrade()" id="teacherGradeTxt" class="form-control">
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                </select>
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Class:</label>
-                                <input onkeyup="prvClass()" type="email" class="form-control" id="teacherClassTxt" placeholder="Enter Class">
+                                <select onkeyup="prvClass()" id="teacherClassTxt" class="form-control">
+                                <option value="6">A</option>
+                                <option value="7">B</option>
+                                <option value="8">C</option>
+                                <option value="9">D</option>
+                                <option value="10">E</option>
+                                <option value="11">F</option>
+                                <option value="12">G</option>
+                                <option value="12">H</option>
+                                </select>
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Address:</label>
                                 <textarea onkeyup="prvaddress()" class="form-control" id="teacherAddressTxt" rows="3" placeholder="Enter Address"></textarea>
                             </div>
-                            <div class="form-group">
-                                <label>Phone No:</label>
-                                <div class="input-group">
-                                    <div class="input-group-addon">
-                                        <i class="fa fa-phone"></i>
-                                    </div>
-                                    <input onkeyup="prvPhoneNo()" type="text" id="teacherTelNoTxt" class="form-control" data-inputmask='"mask": "(999) 9999999"' data-mask/>
-                                </div><!-- /.input group -->
-                            </div>
+                            <div class="input-group">
+                                <div class="input-group-addon">
+                                    <i class="fa fa-phone"></i>
+                                </div>
+                                <input onkeyup="prvPhoneNo()" id="teacherTelNoTxt" type="text" class="form-control" data-inputmask="&quot;mask&quot;: &quot;(999) 999-9999&quot;" data-mask="">
+                                </div>
                             <div class="form-group">
                                 <label for="exampleInputFile">Select Photo</label>
                                 <input type="file" id="exampleInputFile">

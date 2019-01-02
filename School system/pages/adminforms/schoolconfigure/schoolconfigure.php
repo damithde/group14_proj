@@ -188,6 +188,27 @@
                 </form>
             </div><!-- /.box -->
         </div>
+
+        <div class="col-md-12">
+            <!-- general form elements -->
+            <div class="box box-primary">
+                <div class="box-header with-border">
+                    <h3 class="box-title">Subjects</h3>
+                </div><!-- /.box-header -->
+                <!-- form start -->
+                <form role="form" action="registerstudent.php" method="POST">
+                    <div class="box-body">
+                        <div class="row">
+                            
+                        </div>
+                    </div><!-- /.box-body -->
+
+                    <div class="box-footer">
+
+                    </div>
+                </form>
+            </div><!-- /.box -->
+        </div>
     </div>
     </section>
 </section>
