@@ -28,8 +28,20 @@
                                 <label  id="studentIdLbl" class="text-muted">2016/ws/rk/52667</label>
                             </div>
                             <div class="form-group">
-                                <label for="exampleInputEmail1">Name:</label>
-                                <input  onkeyup="prvName()"  class="form-control" id="teacherNameTxt" placeholder="Enter Name">
+                                <label for="exampleInputEmail1">First Name:</label>
+                                <input  onkeyup="prvName()"  class="form-control" id="teacherNameTxt" placeholder="Enter First Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Middle Name:</label>
+                                <input  onkeyup="prvName()"  class="form-control" id="teacherMNameTxt" placeholder="Enter Middle Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Last Name:</label>
+                                <input  onkeyup="prvName()"  class="form-control" id="teacherLNameTxt" placeholder="Enter Last Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Name With Initials:</label>
+                                <input  onkeyup="prvName()"  class="form-control" id="teacherINameTxt" placeholder="Enter Name With Initials">
                             </div>
                             <div class="form-group">
                                 <label >Gender:</label>

@@ -4,11 +4,11 @@
 <?php include_once('../admincommon/script.php'); ?>
 <section class="content-wrapper">
     <section class="content-header">
-<!--        main row-->
+    <!--        main row-->
         <div class="row">
             <div class="col-md-12">
 
-<!--                guardian details-->
+    <!--                guardian details-->
                 <div class="box box-primary">
                     <div class="box-header  with-border">
                         <h3 class="box-title">Message </h3>
@@ -27,11 +27,16 @@
                                 <input type="email" class="form-control" id="studentNameTxt" placeholder="Enter Studenr Name">
                             </div>
                             <div class="form-group">
+                                <label for="exampleInputEmail1">Student Email:</label>
+                                <input type="email" class="form-control" id="studentNameTxt" placeholder="Enter Studenr Name">
+                            </div>
+                            <div class="form-group">
                                 <label for="exampleInputEmail1">Message:</label>
                                 <textarea class="form-control" id="messageTxt" rows="3" placeholder="Enter messege here"></textarea>
                             </div>
                             <div class="box-footer">
-                                <button type="submit" class="btn btn-primary">Send</button>
+                                <div class="col-md-10"></div>
+                                <button type="submit" class="btn btn-primary" style="width:150px">Send</button>
                             </div>
 
                     </form>

@@ -41,11 +41,19 @@
                         </div>
                         <div class="form-group">
                             <label  >First Name:</label>
-                            <input type="input" class="form-control" id="studentFNameTxt" placeholder="Enter First Name">
+                            <input type="text" class="form-control" id="studentFNameTxt" placeholder="Enter First Name">
+                        </div>
+                        <div class="form-group">
+                            <label  >Middle Name:</label>
+                            <input type="text" class="form-control" id="studentMNameTxt" placeholder="Enter Middle Name">
                         </div>
                         <div class="form-group">
                             <label  >Last Name:</label>
-                            <input type="input" class="form-control" id="studentLNameTxt" placeholder="Enter Last Name">
+                            <input type="text" class="form-control" id="studentLNameTxt" placeholder="Enter Last Name">
+                        </div>
+                        <div class="form-group">
+                            <label  >Name With Initials:</label>
+                            <input type="text" class="form-control" id="studentiNameTxt" placeholder="Enter Name With Initials">
                         </div>
                         <div class="form-group">
                             <label >Gender:</label>
@@ -186,7 +194,8 @@
 
 
                     <div class="box-footer">
-                        <button type="submit" class="btn btn-primary">Edit</button>
+                        <div class="col-md-8"></div>
+                        <button type="submit" class="btn btn-primary" style="width:150px">Update</button>
                     </div>
                 </form>
             </div><!-- /.box -->

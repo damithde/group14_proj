@@ -21,14 +21,22 @@
                     <form role="form">
                         <div class="box-body">
                             <div class="row">
-                                <div class="col-md-4">
+                                <div class="col-md-6">
                                     <div class="form-group">
                                         <label ><h3>Generally Promote Student:</h3></label>
                                         <div class="form-group">
                                             <label  class="text-muted">Unqualified Student List:</label>
                                             <textarea class="form-control" id="studentAddressTxt" rows="3" placeholder="Enter Student Admission Numbers"></textarea>
                                         </div>
-                                        <button type="button" class="btn btn-block btn-primary btn-lg">Promote</button>
+                                        <div class="form-group">
+                                            <div class="checkbox">
+                                                <label >
+                                                    <input type="checkbox"> Student divide into classes
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5"></div>
+                                        <button type="button" class="btn btn-block btn-primary btn-lg" style="width:300px">Promote</button>
                                     </div>
                                 </div>
                             </div>

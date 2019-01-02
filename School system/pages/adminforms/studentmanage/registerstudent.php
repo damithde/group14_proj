@@ -36,8 +36,16 @@
                             <input type="text" class="form-control" id="studentFNameTxt" placeholder="Enter First Name">
                         </div>
                         <div class="form-group">
+                            <label  >Middle Name:</label>
+                            <input type="text" class="form-control" id="studentMNameTxt" placeholder="Enter Middle Name">
+                        </div>
+                        <div class="form-group">
                             <label  >Last Name:</label>
                             <input type="text" class="form-control" id="studentLNameTxt" placeholder="Enter Last Name">
+                        </div>
+                        <div class="form-group">
+                            <label  >Name With Initials:</label>
+                            <input type="text" class="form-control" id="studentiNameTxt" placeholder="Enter Name With Initials">
                         </div>
                         <div class="form-group">
                             <label >Gender:</label>
@@ -131,7 +139,7 @@
             </div><!-- /.box -->
         </div>
 
-<!--        parent details-->
+    <!--        parent details-->
         <div class="col-md-6">
             <div class="box box-primary">
                 <div class="box-header with-border">

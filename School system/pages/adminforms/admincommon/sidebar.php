@@ -39,6 +39,7 @@
                 </ul>
             </li>
             <li><a href="../calendarmanage/calendar.php"><i class="fa fa-calendar"></i> <span>Calendar</span></a></li>
+            
             <li>
                 <a href="#">
                     <i class="fa fa-users"></i> <span>Exams</span> <i class="fa fa-angle-left pull-right"></i>
@@ -49,8 +50,16 @@
                 </ul>
             </li>
 
-            <li><a href="../timetablemanage/timetable.php"><i class="fa fa-clock-o"></i> <span>Time Table</span></a></li>
-            
+            <li>
+                <a href="#">
+                    <i class="fa  fa-table "></i> <span>Time Table</span> <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <ul class="treeview-menu">
+                    <li class="active"><a href="../timetablemanage/timetable.php"><i class="fa fa-folder-open-o"></i> View Time Table</a></li>
+                    <li><a href="../timetablemanage/timetableCreate.php"><i class="fa fa-folder-open-o"></i> Manage Time Table</a></li>
+                </ul>
+            </li>
+
             <li>
                 <a href="#">
                     <i class="fa fa-certificate"></i> <span>Certificate</span> <i class="fa fa-angle-left pull-right"></i>
@@ -60,7 +69,8 @@
                     <li><a href="../certificatemanage/viewissuedcertificate.php"><i class="fa fa-folder-open-o"></i> View issue certificate</a></li>
                 </ul>
             </li>
-            <li><a href="../messagebox/messagebox.php"><i class="fa fa-envelope-o"></i> <span></span>Notification</span></a></li>
+            <li><a href="../messagebox/messagebox.php"><i class="fa fa-envelope-o"></i> <span></span>Messages</span></a></li>
+            <li><a href="../notifications/notification.php"><i class="fa fa-send"></i> <span></span>Notifications</span></a></li>
             <li><a href="../attendancemanage/attendanceStart.php"><i class="fa fa-edit"></i> <span>Attendance</span></a></li>
             <li><a href="../schoolconfigure/schoolconfigure.php"><i class="fa fa-gear"></i> <span>School Configure</span></a></li>
         </ul>
