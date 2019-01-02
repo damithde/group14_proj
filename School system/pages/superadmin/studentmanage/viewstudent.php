@@ -328,6 +328,8 @@
 </section>
 
 <script>
+
+
     var studentNameLbl
     var studentGenderLbl
     var studentBdyLbl
