@@ -9,11 +9,10 @@
 <!--        main row-->
         <div class="row">
             <div class="col-md-12">
-
 <!--                guardian details-->
                 <div class="box box-primary">
                     <div class="box-header  with-border">
-                        <h3 class="box-title">Configuration</h3>
+                        <h3 class="box-title">Promote Student</h3>
                     </div><!-- /.box-header -->
                     <!-- form start -->
                     <div class="col-md-4">
@@ -24,83 +23,29 @@
                             <div class="row">
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label >No of terms per year:</label>
-                                        <select onkeyup="prvGrade()" id="teacherGradeTxt" class="form-control">
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                        </select>
+                                        <label ><h3>Generally Promote Student:</h3></label>
+                                        <div class="form-group">
+                                            <label  class="text-muted">Unqualified Student List:</label>
+                                            <textarea class="form-control" id="studentAddressTxt" rows="3" placeholder="Enter Student Admission Numbers"></textarea>
+                                        </div>
+                                        <button type="button" class="btn btn-block btn-primary btn-lg">Promote</button>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="row">
-                                <div class="col-md-4">
+                                <div class="col-md-12">
                                     <div class="form-group">
-                                        <label >Meadium:</label>
-                                        <div class="checkbox">
-                                            <label class="form-control">
-                                                <input id="sinhalaMeadium" type="checkbox"> Sinhala
-                                            </label>
-                                        </div>
-                                        <div class="checkbox">
-                                            <label class="form-control">
-                                                <input id="englishMeadium" type="checkbox"> English
-                                            </label>
-                                        </div>
-                                        <div class="checkbox">
-                                            <label class="form-control">
-                                                <input id="tamilMeadium" type="checkbox"> Tamil
-                                            </label>
-                                        </div>
+                                        <label style="color:red">
+                                        Please manually promote grade 9 students to grade 10.<br>
+                                        **Sybject combinations are available
+                                        </label>
+                                        <hr>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="row">
-                                <div class="col-md-10">
-                                <div class="form-group">
-                                    <label >Subjects:</label>
-                                    <table class="table table-bordered">
-                                        <tbody>
-                                            <tr>
-                                                <th>Grade</th>
-                                                <th>No Of Subjects</th>
-                                                <th>Is Fixed</th>
-                                            </tr>
-                                            <tr>
-                                                <td>6</td>
-                                                <td>
-                                                    <input type="input" class="form-control" id="studentFNameTxt" >
-                                                </td>
-                                                <td>
-                                                    <div class="input-group">
-                                                        <span class="input-group-addon">
-                                                            <input type="checkbox">
-                                                        </span>
-                                                        <input type="text" class="form-control">
-                                                    </div>
-
-                                                    <div class="input-group">
-                                                        <span class="input-group-addon">
-                                                            <input type="checkbox">
-                                                        </span>
-                                                        <input type="text" class="form-control">
-                                                    </div>
-
-                                                    <div class="input-group">
-                                                        <span class="input-group-addon">
-                                                            <input type="checkbox">
-                                                        </span>
-                                                        <input type="text" class="form-control">
-                                                    </div>
-                                                </td>
-                                                
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
+                            
 
 
 
