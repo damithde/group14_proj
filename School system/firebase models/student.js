@@ -114,20 +114,27 @@ function updatestudent(regno,student,parent){
 
 }
 
-function promotestudent(idlist,tograde,toclass){
+function promotestudent(idlist,tograde,toclass,year){
     idlist.forEach(function(stid){
         db.collection("students").where("regno","==",stid)
         .get()
         .then(function(querySnapshot) {
             querySnapshot.forEach(function(doc) {
-                db.collection("students").doc(doc.id).update({
-                    "grade": tograde,
-                    "class": toclass
-                })
-                .then(function() {
-                        console.log("Document successfully updated!");
+                    db.collection("archive").doc(year).collection("Students").add(doc.data())
+                    .then(function() {
+                            console.log("Document successfully added to archive!");
                     }).catch(function(error) {
-                        console.error("Error removing document: ", error);
+                            console.error("Error removing document: ", error);
+                    }); 
+
+                    db.collection("students").doc(doc.id).update({
+                        grade:tograde,
+                        class:toclass
+                    })
+                    .then(function() {
+                            console.log("Document successfully updated!");
+                    }).catch(function(error) {
+                            console.error("Error removing document: ", error);
                     });      
                     
                     
@@ -140,6 +147,7 @@ function promotestudent(idlist,tograde,toclass){
         });    
 
 }
+
     
 
 
