@@ -64,6 +64,9 @@
 
                                                 <!--Lable names-->
 
+                                            <div class="form-group">
+                                                <label class="text-muted" for="exampleInputEmail1">Teacher ID:</label>
+                                            </div>
                                                 <div class="form-group">
                                                     <label class="text-muted" for="exampleInputEmail1">Name:</label>
                                                 </div>
@@ -90,7 +93,9 @@
                                         </div>
                                     </div>
                                 <div class="col-md-6">
-
+                                    <div class="form-group">
+                                        <label id="teacherIDLbl">-</label>
+                                    </div>
                                     <div class="form-group">
                                         <label id="teacherNameLbl">-</label>
                                     </div>
@@ -161,16 +166,17 @@
                                                         <div class="input-group-addon">
                                                             <i class="fa fa-calendar"></i>
                                                         </div>
-                                                        <input type="text" class="form-control pull-right" id="date"/>
+                                                        <input type="date" class="form-control pull-right" id="date"/>
                                                     </div><!-- /.input group -->
                                                 </div>
+
                                                 <div class="form-group">
                                                     <label>Date Of Assuming duties:</label>
                                                     <div class="input-group">
                                                         <div class="input-group-addon">
                                                             <i class="fa fa-calendar"></i>
                                                         </div>
-                                                        <input type="text" class="form-control pull-right" id="date"/>
+                                                        <input type="date" class="form-control pull-right" id="date"/>
                                                     </div><!-- /.input group -->
                                                 </div>
                                                 <div class="box-footer">
@@ -189,7 +195,7 @@
         </section>
 </section>
     <script>
-
+            var teacherIDLbl
             var teacherNameLbl
             var teacherGenderLbl
             var teacherBdyLbl
@@ -198,6 +204,7 @@
             var teacherAddressLbl
             var teacherPhoneLbl
 
+            document.getElementById('teacherIDLbl').innerHTML = teacherIDLbl;
             document.getElementById('teacherNameLbl').innerHTML = teacherNameLbl;
             document.getElementById('teacherGenderLbl').innerHTML = teacherGenderLbl;
             document.getElementById('teacherBdyLbl').innerHTML = teacherBdyLbl;

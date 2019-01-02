@@ -24,7 +24,7 @@
                                 <button type='submit' name='search' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
                             </span>
 
-                            <input type="text" name="q" class="form-control" placeholder="Datae"/>
+                            <input type="date" name="q" class="form-control" placeholder="Date"/>
                             <span class="input-group-btn">
                                 <button type='submit' name='search' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
                             </span>
@@ -41,7 +41,7 @@
                     <table class="table no-margin">
                         <thead>
                         <tr>
-                            <th>Admission No</th>
+                            <th>Registration No</th>
                             <th>Name</th>
                             <th>Attendance</th>
                             <th>No of absent</th>

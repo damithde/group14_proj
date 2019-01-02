@@ -243,7 +243,7 @@
                                                                             <div class="form-group">
 
                                                                                 <div class="form-group">
-                                                                                    <label class="text-muted" for="exampleInputEmail1">Admission Number:</label>
+                                                                                    <label class="text-muted" for="exampleInputEmail1">Registration Number:</label>
                                                                                 </div>
                                                                                 <div class="form-group">
                                                                                     <label class="text-muted" for="exampleInputEmail1">Name:</label>
