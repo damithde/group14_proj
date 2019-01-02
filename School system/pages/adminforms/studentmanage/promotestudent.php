@@ -37,7 +37,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label >Meadium:</label>
+                                        <label >Mediums:</label>
                                         <div class="checkbox">
                                             <label class="form-control">
                                                 <input id="sinhalaMeadium" type="checkbox"> Sinhala
