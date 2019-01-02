@@ -27,8 +27,7 @@
                 <form role="form" action="registerstudent.php" method="POST">
                     <div class="box-body">
                         <div class="row">
-                            <div class="col-md-1"></div>
-                            <div class="col-md-3">
+                            <div class="col-md-2">
                                 <div class="form-group">
                                     <label  >No of terms:</label>
                                 </div>
@@ -45,23 +44,141 @@
                                     <label  >Term 3 no of days:</label>
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="studentFNameTxt" placeholder="Enter First Name">
+                            <div class="col-md-2">
+                                <div id="studentGradeTxt" class="form-group">
+                                    <!-- <label  >Grade:</label> -->
+                                    <!-- <input type="input" class="form-control" id="studentGradeTxt" placeholder="Enter Grade"> -->
+                                    <select>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    </select>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" id="studentFNameTxt" placeholder="Enter First Name">
+                                    <input type="text" class="form-control" id="studentFNameTxt" placeholder="No of days">
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" id="studentFNameTxt" placeholder="Enter First Name">
+                                    <input type="text" class="form-control" id="studentFNameTxt" placeholder="No of days">
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" id="studentFNameTxt" placeholder="Enter First Name">
+                                    <input type="text" class="form-control" id="studentFNameTxt" placeholder="No of days">
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" id="studentFNameTxt" placeholder="Enter First Name">
+                                    <input type="text" class="form-control" id="studentFNameTxt" placeholder="No of days">
                                 </div>
                             </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <br>
+                                </div>
+                                <div class="form-group">
+                                    <label  >Start Date:</label>
+                                </div>
+                                <div class="form-group">
+                                    <label  >Start Date:</label>
+                                </div>
+                                <div class="form-group">
+                                    <label  >Start Date:</label>
+                                </div>
+                                <div class="form-group">
+                                    <label  >Start Date:</label>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div id="studentGradeTxt" class="form-group">
+                                    <br>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <div class="input-group-addon">
+                                            <i class="fa fa-calendar"></i>
+                                        </div>
+                                        <input type="date" class="form-control pull-right" id="date"/>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <div class="input-group-addon">
+                                            <i class="fa fa-calendar"></i>
+                                        </div>
+                                        <input type="date" class="form-control pull-right" id="date"/>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <div class="input-group-addon">
+                                            <i class="fa fa-calendar"></i>
+                                        </div>
+                                        <input type="date" class="form-control pull-right" id="date"/>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <div class="input-group-addon">
+                                            <i class="fa fa-calendar"></i>
+                                        </div>
+                                        <input type="date" class="form-control pull-right" id="date"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-1">
+                                <div class="form-group">
+                                    <br>
+                                </div>
+                                <div class="form-group">
+                                    <label  >End Date:</label>
+                                </div>
+                                <div class="form-group">
+                                    <label  >End Date:</label>
+                                </div>
+                                <div class="form-group">
+                                    <label  >End Date:</label>
+                                </div>
+                                <div class="form-group">
+                                    <label  >End Date:</label>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div id="studentGradeTxt" class="form-group">
+                                    <br>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <div class="input-group-addon">
+                                            <i class="fa fa-calendar"></i>
+                                        </div>
+                                        <input type="date" class="form-control pull-right" id="date"/>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <div class="input-group-addon">
+                                            <i class="fa fa-calendar"></i>
+                                        </div>
+                                        <input type="date" class="form-control pull-right" id="date"/>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <div class="input-group-addon">
+                                            <i class="fa fa-calendar"></i>
+                                        </div>
+                                        <input type="date" class="form-control pull-right" id="date"/>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <div class="input-group-addon">
+                                            <i class="fa fa-calendar"></i>
+                                        </div>
+                                        <input type="date" class="form-control pull-right" id="date"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                            
+                            </div>
+
                         </div>
                     </div><!-- /.box-body -->
 
