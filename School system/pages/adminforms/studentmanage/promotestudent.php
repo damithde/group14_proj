@@ -64,9 +64,10 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6" id="subjectselection">
-                                    <label>fefefe</label>
+                                    <label><h4 class="box-title">Subject Selection</h6></label><br>
 
                                 </div>
+                                
                             </div>
 
                             <div class="row">
@@ -120,37 +121,41 @@
                                 
                         })
                         console.log(doc.id, " => ", classes);
+                        if((grade==10) || (grade==12)){
+                            document.getElementById("subjectselection").style.display = 'block';
+                            var subs=doc.data().subjects;
+                            subs.forEach(function(sub){
+                                var newCheckbox = document.createElement("input");
+                                newCheckbox.type = "checkbox";
+                                newCheckbox.value = sub;
+                                document.getElementById("subjectselection").appendChild(newCheckbox);
+                                var label = document.createElement('label');
+                                label.htmlFor = sub;
+                                label.appendChild(document.createTextNode(sub));
+
+                                document.getElementById("subjectselection").appendChild(label);
+                                document.getElementById("subjectselection").appendChild(document.createElement("br"));
+
+                             })
+                        }
+                        else{
+                            document.getElementById("subjectselection").style.display = 'none';
+                        }
                     });
                 })
                 .catch(function(error) {
                     console.log("Error getting documents: ", error);
                 });
-               
+            
             });
         })
         .catch(function(error) {
             console.log("Error getting documents: ", error);
         });
-        
-        if (grade==10) {
-            document.getElementById("studentDev").style.display = 'block';
-            document.getElementById("teacherDev").style.display = 'none';        
-        }
-        else if (grade==12) {
-            //show other div
-            document.getElementById("studentDev").style.display = 'none';
-            document.getElementById("teacherDev").style.display = 'block';
-        }
-        else{
-            document.getElementById("studentDev").style.display = 'none';
-            document.getElementById("teacherDev").style.display = 'none';
-        }
     
     }
 
-
-
-
+    
     //onclick of promote
     promotestudent(idlist,tograde,toclass,year,subjects);
 
