@@ -2,6 +2,7 @@ function addstudent(student,parent){
     db.collection("students").doc(student[0]).set({
         regno: student[0],
         Fname: student[1],
+        Mname:student[13],
         Lname: student[2],
         contact: student[3],
         dob: student[4],
@@ -14,6 +15,7 @@ function addstudent(student,parent){
         email: student[10],
         profileimg:student[11],
         stuid:student[12],
+        medium:student[14],
         parent: parent
 
     })

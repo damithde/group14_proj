@@ -51,10 +51,10 @@
                             <label >Gender:</label>
                             <div class="row">
                                 <div class="col-md-4">
-                                    <input type="radio"  name="gender" class="form-check-input" value="Male" > Male
+                                    <input type="radio" id="gm" name="gender" class="form-check-input" value="Male" checked> Male
                                 </div>
                                 <div class="col-md-4">
-                                    <input type="radio"  name="gender" class="form-check-input" value="Female">  Female
+                                    <input type="radio" id="gf" name="gender" class="form-check-input" value="Female">  Female
                                 </div>
                             </div>
                         </div>
@@ -64,7 +64,7 @@
                                 <div class="input-group-addon">
                                     <i class="fa fa-calendar"></i>
                                 </div>
-                                <input type="date" class="form-control pull-right" id="date"/>
+                                <input type="date" class="form-control pull-right" id="bdate"/>
                             </div><!-- /.input group -->
                         </div>
 
@@ -84,10 +84,10 @@
                             <label >School:</label>
                             <input type="text" class="form-control" id="stuschool"  disabled>
                         </div>
-                        <div id="studentMediumTxt" class="form-group">
+                        <div class="form-group">
                             <label  >Medium:</label>
                             <!-- <input type="input" class="form-control" id="studentGradeTxt" placeholder="Enter Grade"> -->
-                            <select class="form-control">
+                            <select class="form-control"  id="studentMediumTxt">
                             <option value="sinhala">Sinhala</option>
                             <option value="english">English </option>
                             <option value="tamil">Tamil</option>
@@ -97,10 +97,10 @@
                             <label >Class:</label>
                             <input type="text" class="form-control" id="studentClassTxt" placeholder="Enter Class">
                         </div>
-                        <div id="studentGradeTxt" class="form-group">
+                        <div class="form-group">
                             <label  >Grade:</label>
                             <!-- <input type="input" class="form-control" id="studentGradeTxt" placeholder="Enter Grade"> -->
-                            <select class="form-control" >
+                            <select class="form-control" id="studentGradeTxt" >
                             <option value="6">6</option>
                             <option value="7">7</option>
                             <option value="8">8</option>
@@ -120,7 +120,7 @@
                                 <div class="input-group-addon">
                                     <i class="fa fa-phone"></i>
                                 </div>
-                                <input type="text" id="contact" class="form-control" data-inputmask='"mask": "(999) 9999999"' data-mask/>
+                                <input type="text" id="contact" class="form-control" />
                             </div><!-- /.input group -->
                         </div>
                         <div class="form-group">
@@ -152,13 +152,13 @@
                             <label >Guardian type:</label>
                             <div class="row">
                                 <div class="col-md-4">
-                                    <input type="radio"  name="parent"   class="form-check-input" value="Father" > Father
+                                    <input type="radio"  name="parent"   class="form-check-input" value="Father" id="p1" checked> Father
                                 </div>
                                 <div class="col-md-4">
-                                    <input type="radio"  name="parent"  class="form-check-input" value="Mother">  Mother
+                                    <input type="radio"  name="parent"  class="form-check-input" value="Mother" id="p2">  Mother
                                 </div>
                                 <div class="col-md-4">
-                                    <input type="radio"  name="parent"  class="form-check-input" value="Guardian">  Guardian
+                                    <input type="radio"  name="parent"  class="form-check-input" value="Guardian" id="p2">  Guardian
                                 </div>
                             </div>
                         </div>
@@ -180,7 +180,7 @@
                                 <div class="input-group-addon">
                                     <i class="fa fa-phone"></i>
                                 </div>
-                                <input type="text" id="gaurdiancontact" class="form-control" data-inputmask='"mask": "(999) 9999999"' data-mask/>
+                                <input type="text" id="gaurdiancontact" class="form-control" />
                             </div><!-- /.input group -->
                         </div>
                         <div class="form-group">
@@ -190,7 +190,7 @@
 
 
                     <div class="box-footer">
-                        <button type="submit" class="btn btn-primary" onclick="datasubmission()" >Register</button>
+                        <button type="button" class="btn btn-primary" onclick="datasubmission()" >Register</button>
                     </div>
                 </form>
             </div><!-- /.box -->
@@ -204,26 +204,39 @@
 
 
 <script>
-    //getschool("stuschool");
     getschool("stuschool");
     uploadstudentpic("students");
     function datasubmission(){
         var school=document.getElementById("stuschool").value;    
         //set auto generated student id
-        document.getElementById("studentIdLbl").innerHTML = studentIdLbl;
-        var profileimg=document.getElementById("propic").src;
+       // document.getElementById("studentIdLbl").innerHTML = studentIdLbl;
         var stdFName = document.getElementById("studentFNameTxt").value;
+        var stdMName = document.getElementById("studentMNameTxt").value;
         var stdLName = document.getElementById("studentLNameTxt").value;
-        var stdGend = document.querySelector('input[name=gender]:checked').value;
-        var stdbd = document.querySelector('date').value;
+        if(document.getElementById('gm').checked){
+            var stdGend = document.getElementById('gm').value;
+        }else{
+            var stdGend = document.getElementById('gf').value;
+        }
+        //var stdGend = document.querySelector('input[name=gender]:checked').value;
+        var stdbd = document.getElementById('bdate').value;
         var stdReli = document.getElementById("studentReligionTxt").value;
+        var profileimg=document.getElementById("propic").src;
         var stdEmail = document.getElementById("studentEmailTxt").value;
         var stdAdNo = document.getElementById("studentAdmissionNoTxt").value;
         var stdClass = document.getElementById("studentClassTxt").value;
         var stdGrade = document.getElementById("studentGradeTxt").value;
         var contact=document.getElementById("contact").value;
         var stdAddress = document.getElementById("studentAddressTxt").value;
-        var par = document.querySelector('input[name=parent]:checked').value;
+        var stdmedium = document.getElementById("studentMediumTxt").value;
+        //var par = document.querySelector('input[name=parent]:checked').value;
+        if(document.getElementById('p1').checked){
+            var par = document.getElementById('p1').value;
+        }else if(document.getElementById('p2').checked){
+            var par = document.getElementById('p2').value;
+        }else{
+            var par = document.getElementById('p3').value;
+        }
         var parName = document.getElementById("parentNameTxt").value;
         var parOcupation = document.getElementById("parentOcupationTxt").value;
         var parEmail = document.getElementById("parentEmail").value;
@@ -231,7 +244,7 @@
         var parContact = document.getElementById("gaurdiancontact").value;
         var studentId =school+stdAdNo;
         var parent={name:parName,parent:par,occupation:parOcupation,email:parEmail,Econtact:parContact};
-        var student= [stdAdNo,stdFName,stdLName,contact,stdbd,stdAddress,stdReli,school,stdGrade,stdClass,stdEmail,profileimg,studentId];
+        var student= [stdAdNo,stdFName,stdLName,contact,stdbd,stdAddress,stdReli,school,stdGrade,stdClass,stdEmail,profileimg,studentId,stdFName,stdmedium];
         addstudent(student,parent);
     }
 
