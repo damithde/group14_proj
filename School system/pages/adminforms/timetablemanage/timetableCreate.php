@@ -14,7 +14,7 @@
             </div><!-- /.box-header -->
             <div class="box-body">
                 <div class="table-responsive">
-                    
+                   <form role="form" action="" method="POST"> 
                     <table class="table no-margin">
                         <thead>
                             <tr>
@@ -121,6 +121,7 @@
                             
                         </tbody>
                     </table>
+                    </form>
                 </div><!-- /.table-responsive -->
             </div><!-- /.box-body -->
             <div class="box-footer clearfix">
@@ -131,7 +132,7 @@
 </section>
 </div>
 <?php include_once('../admincommon/footer.php'); ?>
-</body>
+    </body>
 
 
 
