@@ -18,22 +18,6 @@ function addstudent(student,parent){
 
     })
     .then(function(docRef) {
-        db.collection("schools").doc(student[8]).collection("classes").doc(student[10]).collection("students").doc(student[0]).set({
-            regno: student[0],
-            Fname: student[1],
-            Lname: student[2],
-            country: student[3],
-            contact: student[4],
-            dob: student[5],
-            nationality: student[6],
-            religion: student[7],
-            school: student[8],
-            grade: student[9],
-            class: student[10],
-            profileimg:student[11],
-            stuid:student[12],
-            parent: parent
-        })
         alert("student added successfully");
        // console.log("Document written with ID: ", docRef.id);
     })
@@ -93,27 +77,13 @@ function updatestudent(regno,student,parent){
         "class": student[10],
         "parent": parent
     })
-    .then(function() {
-        db.collection("schools").doc(student[8]).collection("classes").doc(student[10]).collection("students").doc(regno).update({
-            regno: student[0],
-            Fname: student[1],
-            Lname: student[2],
-            country: student[3],
-            contact: student[4],
-            dob: student[5],
-            nationality: student[6],
-            religion: student[7],
-            school: student[8],
-            grade: student[9],
-            class: student[10],
-            parent: parent
-        })        
+    .then(function() {        
         console.log("Document successfully updated!");
     }); 
 
 }
 
-function promotestudent(idlist,tograde,toclass,year){
+function promotestudent(idlist,tograde,toclass,year,subjects){
     idlist.forEach(function(stid){
         db.collection("students").where("regno","==",stid)
         .get()
@@ -127,9 +97,12 @@ function promotestudent(idlist,tograde,toclass,year){
                             console.error("Error removing document: ", error);
                     }); 
                 //update data to promote students
+                //get the subjects 
+
                     db.collection("students").doc(doc.id).update({
                         grade:tograde,
-                        class:toclass
+                        class:toclass,
+                        currentsubjects:subjects
                     })
                     .then(function() {
                             console.log("Document successfully updated!");

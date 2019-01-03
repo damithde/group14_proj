@@ -116,10 +116,8 @@
                             var opt = document.createElement("option");
                             opt.value = cls;
                             opt.text = cls;
-
                             sel.add(opt);
-                            
-                        
+                                
                         })
                         console.log(doc.id, " => ", classes);
                     });
@@ -135,17 +133,26 @@
         });
         
         if (grade==10) {
-            //show the div 
-            
+            document.getElementById("studentDev").style.display = 'block';
+            document.getElementById("teacherDev").style.display = 'none';        
         }
         else if (grade==12) {
             //show other div
+            document.getElementById("studentDev").style.display = 'none';
+            document.getElementById("teacherDev").style.display = 'block';
+        }
+        else{
+            document.getElementById("studentDev").style.display = 'none';
+            document.getElementById("teacherDev").style.display = 'none';
         }
     
-    
-    
     }
-    
+
+
+
+
+    //onclick of promote
+    promotestudent(idlist,tograde,toclass,year,subjects);
 
 
 </script>
