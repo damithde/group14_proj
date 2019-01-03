@@ -119,13 +119,14 @@ function promotestudent(idlist,tograde,toclass,year){
         .get()
         .then(function(querySnapshot) {
             querySnapshot.forEach(function(doc) {
+                //archive data
                     db.collection("archive").doc(year).collection("Students").add(doc.data())
                     .then(function() {
                             console.log("Document successfully added to archive!");
                     }).catch(function(error) {
                             console.error("Error removing document: ", error);
                     }); 
-
+                //update data to promote students
                     db.collection("students").doc(doc.id).update({
                         grade:tograde,
                         class:toclass
@@ -154,6 +155,7 @@ function promotestudentspecial(idlist,tograde,toclass,year,subjects){
         .get()
         .then(function(querySnapshot) {
             querySnapshot.forEach(function(doc) {
+                //archive data
                     db.collection("archive").doc(year).collection("Students").add(doc.data())
                     .then(function() {
                             console.log("Document successfully added to archive!");

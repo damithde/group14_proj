@@ -23,21 +23,38 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label ><h3>Generally Promote Student:</h3></label>
+                                        
                                         <div class="form-group">
-                                            <label  class="text-muted">Unqualified Student List:</label>
-                                            <textarea class="form-control" id="studentAddressTxt" rows="3" placeholder="Enter Student Admission Numbers"></textarea>
+                                            <label  class="text-muted"> Student List:</label>
+                                            <textarea class="form-control" id="studentAddressTxt" rows="3" placeholder="Enter Student Admission Numbers seperated by commas"></textarea>
                                         </div>
                                         <div class="form-group">
-                                            <div class="checkbox">
-                                                <label >
-                                                    <input type="checkbox"> Student divide into classes
-                                                </label>
+                                            <div class="form-group">
+                                                    <label>Select grade to promote to  </label>
+                                                    <select class="form-control" id = "grade" style="margin-left: 15px ; width: 100px">
+                                                            <option value = "1">one</option>
+                                                            <option value = "2">two</option>
+                                                            <option value = "3">three</option>
+                                                            <option value = "4">four</option>
+                                                          </select>
+                                            </div>
+                                            <div class="form-group" >
+                                                    <label>Select class to promote to </label>
+                                                    <select class="form-control" id = "class" style="margin-left: 15px ; width: 100px">
+                                                            <option value = "1">one</option>
+                                                            <option value = "2">two</option>
+                                                            <option value = "3">three</option>
+                                                            <option value = "4">four</option>
+                                                          </select>
                                             </div>
                                         </div>
-                                        <div class="col-md-5"></div>
-                                        <button type="button" class="btn btn-block btn-primary btn-lg" style="width:300px">Promote</button>
+                                        <div class="row"></div>
+                                        <button type="button" class="btn btn-block btn-primary btn-lg" style="width:300px; margin-left: 200px">Promote</button>
                                     </div>
+                                </div>
+                                <div class="col-md-6">
+
+
                                 </div>
                             </div>
 
@@ -45,8 +62,7 @@
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <label style="color:red">
-                                        Please manually promote grade 9 students to grade 10.<br>
-                                        **Sybject combinations are available
+                                    
                                         </label>
                                         <hr>
                                     </div>
