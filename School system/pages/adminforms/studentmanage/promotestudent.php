@@ -36,7 +36,7 @@
                                         
                                         <div class="form-group">
                                             <label  class="text-muted"> Student List:</label>
-                                            <textarea class="form-control" id="studentAddressTxt" rows="3" placeholder="Enter Student Admission Numbers seperated by commas"></textarea>
+                                            <textarea class="form-control" id="studentidTxt" rows="3" placeholder="Enter Student Admission Numbers seperated by commas"></textarea>
                                         </div>
                                         <div class="form-group">
                                             <div class="form-group">
@@ -155,7 +155,9 @@
     
     }
 
-    
+    var tograde=document.getElementById("idgrade").value;
+    var toclass=document.getElementById("toclass").value;
+    var idlist=(document.getElementById("studentidTxt").value).split(',');
     //onclick of promote
     promotestudent(idlist,tograde,toclass,year,subjects);
 
