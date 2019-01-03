@@ -60,7 +60,7 @@
                                             </div>
                                         </div>
                                         <div class="row"></div>
-                                        <button type="button" class="btn btn-block btn-primary btn-lg" style="width:300px; margin-left: 200px">Promote</button>
+                                        <button type="button" onclick="promote()" class="btn btn-block btn-primary btn-lg" style="width:300px; margin-left: 200px">Promote</button>
                                     </div>
                                 </div>
                                 <div class="col-md-6" id="subjectselection">
@@ -155,12 +155,14 @@
     
     }
 
+    function promote(){
+
     var tograde=document.getElementById("idgrade").value;
     var toclass=document.getElementById("toclass").value;
     var idlist=(document.getElementById("studentidTxt").value).split(',');
-    //onclick of promote
+    //
     promotestudent(idlist,tograde,toclass,year,subjects);
-
+    }
 
 </script>
 
