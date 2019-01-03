@@ -14,8 +14,13 @@
             </div><!-- /.box-header -->
             <div class="box-body">
                 <div class="table-responsive">
-                   <form role="form" action="" method="POST"> 
+                   <form role="form" action="" method="POST">
+                       
                     <table class="table no-margin">
+                        <thead>
+                            <th><input type="radio" name="radioTimeTable" value="class">Class Time table</th>
+                            <th><input type="radio" name="radioTimeTable" value="teachers">Teachers Time table</th>
+                        </thead>
                         <thead>
                             <tr>
                                 <th>Time Perod</th>
