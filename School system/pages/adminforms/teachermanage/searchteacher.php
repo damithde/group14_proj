@@ -85,9 +85,9 @@
                                     <div class="form-group">
                                             <div class="col-md-8">
                                                 <div id="studentMediumTxt" class="form-group">
-                                                    <label class="text-muted">Search by Admission No</label>
+                                                    <label class="text-muted">Search by NIC</label>
                                                     <div class="input-group">
-                                                        <input id="lNameSearch" type="text" name="q" class="form-control" placeholder="Search by Admission No"/>
+                                                        <input id="lNameSearch" type="text" name="q" class="form-control" placeholder="Search by NIC"/>
                                                         <span class="input-group-addon">
                                                             <input type="checkbox">
                                                         </span>
@@ -134,20 +134,20 @@
                             </div>
 <hr>
                             <div class="row">
-                                <div class="col-md-10">
+                                <div class="col-md-12">
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">Student Details Details:</label>
                                     <table class="table table-bordered">
                                         <tbody>
                                             <tr>
-                                                <th>Admission No</th>
+                                                <th>Registration No</th>
                                                 <th>Name</th>
-                                                <th>Class</th>
-                                                <th>Address</th>
+                                                <th>Grade and Class</th>
+                                                <th>Contact No</th>
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <a href="../studentmanage/viewstudent.php">1600254</a>
+                                                    <a href="../teachermanage/viewteacher.php">1600254</a>
                                                 </td>
                                                 <td>
                                                     -

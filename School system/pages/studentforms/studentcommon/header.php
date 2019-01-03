@@ -1,8 +1,9 @@
-<body class="skin-blue">
+<body class="skin-green">
 <div class="wrapper">
+        <script src="../../../firebase models/login.js"></script>
     <header class="main-header">
         <!-- Logo -->
-        <a href="../../../index2.html" class="logo"><b>Student</b></a>
+        <a href="../../../index.php" class="logo"><b>Admin</b></a>
         <!-- Header Navbar: style can be found in header.less -->
         <nav class="navbar navbar-static-top" role="navigation">
             <!-- Sidebar toggle button-->
@@ -18,7 +19,7 @@
                             <span class="label label-success">1</span>
                         </a>
                         <ul class="dropdown-menu">
-                            <li class="header">You have 1 messages</li>
+                            <li name="msgNotification" class="header">You have 1 messages</li>
                             <li>
                                 <!-- inner menu: contains the actual data -->
                                 <ul class="menu">
@@ -34,11 +35,14 @@
                                             <p>I will not be able to </p>
                                         </a>
                                     </li><!-- end message -->
+
+
                                 </ul>
                             </li>
                             <li class="footer"><a href="#">See All Messages</a></li>
                         </ul>
                     </li>
+
                     <!-- Notifications: style can be found in dropdown.less -->
                     <li class="dropdown notifications-menu">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -55,6 +59,7 @@
                                             <i class="fa fa-users text-aqua"></i> 5 teachers requested leave today
                                         </a>
                                     </li>
+
                                 </ul>
                             </li>
                             <li class="footer"><a href="#">View all</a></li>
@@ -66,7 +71,7 @@
                     <li class="dropdown user user-menu">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                             <img src="../../../dist/img/s0005.png" class="user-image" alt="User Image"/>
-                            <span class="hidden-xs">Y.D.K.Medis</span>
+                            <span class="hidden-xs">Admin</span>
                         </a>
                         <ul class="dropdown-menu">
                             <!-- User image -->
@@ -85,7 +90,7 @@
                                     <a href="#" class="btn btn-default btn-flat">Profile</a>
                                 </div>
                                 <div class="pull-right">
-                                    <a href="../../../index.php" class="btn btn-default btn-flat">Sign out</a>
+                                    <a onclick="logout()" href="../../../index.php" class="btn btn-default btn-flat">Sign out</a>
                                 </div>
                             </li>
                         </ul>

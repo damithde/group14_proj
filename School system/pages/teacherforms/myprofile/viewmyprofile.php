@@ -67,9 +67,16 @@
                                             <div class="form-group">
                                                 <label class="text-muted" for="exampleInputEmail1">Teacher ID:</label>
                                             </div>
-                                                <div class="form-group">
-                                                    <label class="text-muted" for="exampleInputEmail1">Name:</label>
-                                                </div>
+                                            <div class="form-group">
+                                                <label class="text-muted" for="exampleInputEmail1">First name:</label>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="text-muted" for="exampleInputEmail1">Middle name:</label>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="text-muted" for="exampleInputEmail1">Last name:</label>
+                                            </div>
+                                            
                                                 <div class="form-group">
                                                     <label class="text-muted" for="exampleInputEmail1">Gender:</label>
                                                 </div>
@@ -97,7 +104,13 @@
                                         <label id="teacherIDLbl">-</label>
                                     </div>
                                     <div class="form-group">
-                                        <label id="teacherNameLbl">-</label>
+                                        <label id="teacherFirstNameLbl">-</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label id="teacherMiddleNameLbl">-</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label id="teacherLastNameLbl">-</label>
                                     </div>
                                     <div class="form-group">
                                         <label id="teacherGenderLbl">-</label>
@@ -196,7 +209,9 @@
 </section>
     <script>
             var teacherIDLbl
-            var teacherNameLbl
+            var teacherFirstNameLbl
+            var teacherMiddleNameLbl
+            var teacherLastNameLbl
             var teacherGenderLbl
             var teacherBdyLbl
             var teacherEmailLbl
@@ -205,7 +220,10 @@
             var teacherPhoneLbl
 
             document.getElementById('teacherIDLbl').innerHTML = teacherIDLbl;
-            document.getElementById('teacherNameLbl').innerHTML = teacherNameLbl;
+            document.getElementById('teacherFirstNameLbl').innerHTML = teacherFirstNameLbl;
+            document.getElementById('teacherMiddleNameLbl').innerHTML = teacherMiddleNameLbl;
+
+            document.getElementById('teacherLastNameLbl').innerHTML = teacherLastNameLbl;
             document.getElementById('teacherGenderLbl').innerHTML = teacherGenderLbl;
             document.getElementById('teacherBdyLbl').innerHTML = teacherBdyLbl;
             document.getElementById('teacherEmailLbl').innerHTML = teacherEmailLbl;

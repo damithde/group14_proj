@@ -3,13 +3,14 @@
 <?php include_once('../teachercommon/sidebar.php'); ?>
 <?php include_once('../teachercommon/script.php'); ?>
 
-<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-app.js" xmlns="http://www.w3.org/1999/html"
+        xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"></script>
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-database.js"></script>
 
 <section class="content-wrapper">
-    <section class="content-header">
+    <div class="content-header">
         <div class="row">
 
             <div class="col-md-6">
@@ -406,8 +407,70 @@
             </div><!-- /.box -->
 
         </div>
-                                                </div>
 
+
+
+
+
+
+
+
+
+
+
+                                <div class="input-group">
+                                    <input type="text" name="q" class="form-control" placeholder="Enter Subject..."/>
+                                    <span class="input-group-btn">
+                                <button type='submit' name='search' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
+                            </span>
+                                </div>
+
+                            </form>
+<?php
+    $dataPoints = array(
+        array("label"=>"55-65", "y"=>64.02),
+        array("label"=>"75-100", "y"=>12.55),
+        array("label"=>"0-35", "y"=>8.47),
+        array("label"=>"35-55", "y"=>6.08),
+        array("label"=>"65-75", "y"=>4.29),
+
+    )
+
+    ?>
+
+
+        <script>
+            window.onload = function() {
+
+
+                var chart = new CanvasJS.Chart("chartContainer", {
+                    animationEnabled: true,
+                    title: {
+                        text: "English"
+                    },
+
+                    data: [{
+                        type: "pie",
+                        yValueFormatString: "#,##0.00\"%\"",
+                        indexLabel: "{label} ({y})",
+                        dataPoints: <?php echo json_encode($dataPoints, JSON_NUMERIC_CHECK); ?>
+                    }]
+                });
+                chart.render();
+
+            }
+        </script>
+                                                 </div>
+    </div>
+    </head>
+    <body>
+    <div id="chartContainer" style="height: 370px; width: 100%;"></div>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    </body>
+    </html>
+
+</section>
+</section>
 
     </section>
 

@@ -8,76 +8,6 @@
     <section class="content-header">
         <div class="row">
             <div class="col-md-12">
-                <div class="box box-primary">
-                    <div class="box-header with-border">
-                        <h3 class="box-title">Search Teacher</h3>
-                    </div><!-- /.box-header -->
-                    <!-- form start -->
-                    <form role="form">
-                        <div class="box-body">
-                        <!--Lable field-->
-                        <div class="row">
-                            <div class="col-md-8">
-                                    <form action="#" method="get" class="form-group">
-                                        <div class="col-md-4">
-                                            <label class="text-muted">Search by Admission No</label>
-                                        </div>
-                                        <div class="col-md-8">
-                                            <!-- search form -->
-                                            
-                                                <div class="input-group">
-                                                    <input id="addmissionSearch" type="text" name="q" class="form-control" placeholder="Search by  Admission No"/>
-                                                    <span class="input-group-btn">
-                                                <button type='submit' name='search' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
-                                            </span>
-                                                </div>
-                                            
-                                            <!-- /.search form -->
-                                        </div>
-                                    </form>
-                                    <form action="#" method="get" class="form-group">
-                                        <div class="col-md-4">
-                                        <br>
-                                            <label class="text-muted">Search by First Name</label>
-                                        </div>
-                                        <div class="col-md-8">
-                                            <!-- search form -->
-                                            <br>
-                                                <div class="input-group">
-                                                    <input id="fNameSearch" type="text" name="q" class="form-control" placeholder="Search by First Name"/>
-                                                    <span class="input-group-btn">
-                                                <button type='submit' name='search' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
-                                            </span>
-                                                </div>
-                                            
-                                            <!-- /.search form -->
-                                        </div>
-                                    </form>
-                                    <form action="#" method="get" class="form-group">
-                                        <div class="col-md-4">
-                                        <br>
-                                            <label class="text-muted">Search by Last Name:</label>
-                                        </div>
-                                        <div class="col-md-8">
-                                            <!-- search form -->
-                                            <br>
-                                                <div class="input-group">
-                                                    <input id="lNameSearch" type="text" name="q" class="form-control" placeholder="Search by Last Name"/>
-                                                    <span class="input-group-btn">
-                                                <button type='submit' name='search' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
-                                            </span>
-                                                </div>
-                                            
-                                            <!-- /.search form -->
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div><!-- /.box-body -->
-                        <div class="box-footer">
-                        </div>
-                    </form>
-                </div><!-- /.box -->
 
                 <div class="box box-primary">
                     <div class="box-header with-border">
@@ -110,7 +40,16 @@
                                 <div class="col-md-6">
                                     <!--Lable names-->
                                     <div class="form-group">
-                                        <label class="text-muted"  >Name:</label>
+                                        <label class="text-muted"  >First Name:</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="text-muted"  >Middle Name:</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="text-muted"  >Last Name:</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="text-muted"  >Name with Initials:</label>
                                     </div>
                                     <div class="form-group">
                                         <label class="text-muted"  >Gender:</label>
@@ -145,31 +84,40 @@
 
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label id = "teacherNameTxt">Y.Dinuka Kasun Medis</label>
+                                <label id = "teacherfNameTxt">-</label>
                             </div>
                             <div class="form-group">
-                                <label id = "teacherGenderTxt">Male</label>
+                                <label id = "teachermNameTxt">-</label>
                             </div>
                             <div class="form-group">
-                                <label id="teacherBDYTxt">1995/09/20</label>
+                                <label id = "teacherlNameTxt">-</label>
                             </div>
                             <div class="form-group">
-                                <label id ="teacherEmailTxt">dinuka.kasunds@gmail.com</label>
+                                <label id = "teacheriNameTxt">-</label>
                             </div>
                             <div class="form-group">
-                                <label id="admissionDateTxt">2015/02/02</label>
+                                <label id = "teacherGenderTxt">-</label>
                             </div>
                             <div class="form-group">
-                                <label id="teacherClassTxt">m1</label>
+                                <label id="teacherBDYTxt">-</label>
                             </div>
                             <div class="form-group">
-                                <label id="teacherGradeTxt">12</label>
+                                <label id ="teacherEmailTxt">-</label>
                             </div>
                             <div class="form-group">
-                                <label id="teacheraddressTxt">73,Dampe,Madapatha</label>
+                                <label id="admissionDateTxt">-</label>
                             </div>
                             <div class="form-group">
-                                <label id="teacherTelTxt">0717275722</label>
+                                <label id="teacherClassTxt">-</label>
+                            </div>
+                            <div class="form-group">
+                                <label id="teacherGradeTxt">-</label>
+                            </div>
+                            <div class="form-group">
+                                <label id="teacheraddressTxt">-</label>
+                            </div>
+                            <div class="form-group">
+                                <label id="teacherTelTxt">-</label>
                             </div>
                         </div>
                     </div>
@@ -198,7 +146,10 @@
     var fNameSearch
     var lNameSearch
 
-    var teacherNameTxt
+    var teacherfNameTxt
+    var teachermNameTxt
+    var teacherlNameTxt
+    var teacheriNameTxt
     var teacherGenderTxt
     var teacherBDYTxt
     var teacherEmailTxt
@@ -208,8 +159,11 @@
     var teacheraddressTxt
     var teacherTelTxt 
     
-    document.getElementById("teacherNameTxt").innerHTML = teacherNameTxt;
-    document.querySelector('teacherGenderTxt').innerHTML = teacherGenderTxt;
+    document.getElementById("teacherfNameTxt").innerHTML = teacherfNameTxt;
+    document.getElementById("teachermNameTxt").innerHTML = teachermNameTxt;
+    document.getElementById("teacherlNameTxt").innerHTML = teacherlNameTxt;
+    document.getElementById("teacheriNameTxt").innerHTML = teacheriNameTxt;
+    // document.querySelector('teacherGenderTxt').innerHTML = teacherGenderTxt;
     document.querySelector('teacherBDYTxt').innerHTML = teacherBDYTxt;
     document.getElementById("teacherEmailTxt").innerHTML = teacherEmailTxt;
     document.getElementById("admissionDateTxt").innerHTML = admissionDateTxt;

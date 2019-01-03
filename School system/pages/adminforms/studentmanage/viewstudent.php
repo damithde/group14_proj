@@ -14,76 +14,7 @@
         <div class="row">
             <div class="col-md-6">
             
-                <div class="box box-primary">
-                    <div class="box-header with-border">
-                        <h3 class="box-title">Search Student</h3>
-                    </div><!-- /.box-header -->
-                    <!-- form start -->
-                    <form role="form">
-                        <div class="box-body">
-                        <!--Lable field-->
-                            <div class="row">
-                            <form action="#" method="get" class="form-group">
-                                <div class="col-md-4">
-                                    <label class="text-muted">Search by Admission No</label>
-                                </div>
-                                <div class="col-md-8">
-                                    <!-- search form -->
-                                    
-                                        <div class="input-group">
-                                            <input id="addmissionSearch" type="text" name="q" class="form-control" placeholder="Search by  Admission No"/>
-                                            <span class="input-group-btn">
-                                        <button type='submit' name='search' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
-                                    </span>
-                                        </div>
-                                    
-                                    <!-- /.search form -->
-                                </div>
-                            </form>
-                            <form action="#" method="get" class="form-group">
-                                <div class="col-md-4">
-                                <br>
-                                    <label class="text-muted">Search by First Name</label>
-                                </div>
-                                <div class="col-md-8">
-                                    <!-- search form -->
-                                    <br>
-                                        <div class="input-group">
-                                            <input id="fNameSearch" type="text" name="q" class="form-control" placeholder="Search by First Name"/>
-                                            <span class="input-group-btn">
-                                        <button type='submit' name='search' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
-                                    </span>
-                                        </div>
-                                    
-                                    <!-- /.search form -->
-                                </div>
-                            </form>
-                            <form action="#" method="get" class="form-group">
-                                <div class="col-md-4">
-                                <br>
-                                    <label class="text-muted">Search by Last Name:</label>
-                                </div>
-                                <div class="col-md-8">
-                                    <!-- search form -->
-                                    <br>
-                                        <div class="input-group">
-                                            <input id="lNameSearch" type="text" name="q" class="form-control" placeholder="Search by Last Name"/>
-                                            <span class="input-group-btn">
-                                        <button type='submit' name='search' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
-                                    </span>
-                                        </div>
-                                    
-                                    <!-- /.search form -->
-                                </div>
-                            </form>
-                            
-                            </div>
-                            
-                        </div><!-- /.box-body -->
-                        <div class="box-footer">
-                        </div>
-                    </form>
-                </div><!-- /.box -->
+                
 
                 <div class="box box-primary">
                     <div class="box-header with-border">
@@ -117,7 +48,16 @@
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <label class="text-muted"  >Name:</label>
+                                                <label class="text-muted"  >First Name:</label>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="text-muted"  >Middle Name:</label>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="text-muted"  >Last Name:</label>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="text-muted"  >Name Initials:</label>
                                             </div>
                                             <div class="form-group">
                                                 <label class="text-muted"  >Gender:</label>
@@ -155,7 +95,16 @@
 
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label id="studentNameLbl">-</label>
+                                        <label id="studentfNameLbl">-</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label id="studentmNameLbl">-</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label id="studentlNameLbl">-</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label id="studentiNameLbl">-</label>
                                     </div>
                                     <div class="form-group">
                                         <label id="studentGenderLbl">-</label>
@@ -434,12 +383,12 @@
 
 
 <script>
-    var addmissionSearch
-    var fNameSearch
-    var lNameSearch
 
 
-    var studentNameLbl
+    var studentfNameLbl
+    var studentmNameLbl
+    var studentlNameLbl
+    var studentiNameLbl
     var studentGenderLbl
     var studentBdyLbl
     var studentReligionLbl
@@ -455,7 +404,10 @@
     var parentEmailLbl
     var parentPhoneLbl
 
-    document.getElementById('studentNameLbl').innerHTML = studentNameLbl;
+    document.getElementById('studentfNameLbl').innerHTML = studentfNameLbl;
+    document.getElementById('studentmNameLbl').innerHTML = studentmNameLbl;
+    document.getElementById('studentlNameLbl').innerHTML = studentlNameLbl;
+    document.getElementById('studentiNameLbl').innerHTML = studentiNameLbl;
     document.getElementById('studentGenderLbl').innerHTML = studentGenderLbl;
     document.getElementById('studentBdyLbl').innerHTML = studentBdyLbl;
     document.getElementById('studentReligionLbl').innerHTML = studentReligionLbl;
