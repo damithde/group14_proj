@@ -41,7 +41,7 @@
                                         <div class="form-group">
                                             <div class="form-group">
                                                     <label>Select grade to promote to  </label>
-                                                    <select class="form-control" id = "grade" style="margin-left: 15px ; width: 100px" onchange="checksub()">
+                                                    <select class="form-control" id = "idgrade" style="margin-left: 15px ; width: 100px" onchange="setTimeout(p ,500)">
                                                             <option value = "6">Six</option>
                                                             <option value = "7">Seven</option>
                                                             <option value = "8">Eight</option>
@@ -54,12 +54,9 @@
                                             </div>
                                             <div class="form-group" >
                                                     <label>Select class to promote to </label>
-                                                    <select class="form-control" id = "class" style="margin-left: 15px ; width: 100px">
-                                                            <option value = "1">one</option>
-                                                            <option value = "2">two</option>
-                                                            <option value = "3">three</option>
-                                                            <option value = "4">four</option>
-                                                          </select>
+                                                    <select class="form-control" id = "classlist" style="margin-left: 15px ; width: 100px">
+         
+                                                    </select>
                                             </div>
                                         </div>
                                         <div class="row"></div>
@@ -100,18 +97,43 @@
 </html>
 <script>
     getschool("schoolid");
-    setTimeout(p ,2000);
-    
+    setTimeout(p ,1500);
     function p(){
+        var grade=document.getElementById("idgrade").value;
         var school=document.getElementById("schoolid").value;
-        
-    
-    
-    
-    }
-    function checksub() {
-        var grade = document.getElementById("grade").value;
+        $("#classlist").empty();
+        db.collection("schools").where("id","==",school)
+        .get()
+        .then(function(querySnapshot) {
+            querySnapshot.forEach(function(doc) {
+                db.collection("schools").doc(doc.id).collection("grades").where("grade","==",grade)
+                .get()
+                .then(function(querySnapshot) {
+                    querySnapshot.forEach(function(doc) {
+                        var classes=doc.data().classes;
+                        classes.forEach(function(cls){
+                            var sel = document.getElementById("classlist");
+                            var opt = document.createElement("option");
+                            opt.value = cls;
+                            opt.text = cls;
 
+                            sel.add(opt);
+                            
+                        
+                        })
+                        console.log(doc.id, " => ", classes);
+                    });
+                })
+                .catch(function(error) {
+                    console.log("Error getting documents: ", error);
+                });
+               
+            });
+        })
+        .catch(function(error) {
+            console.log("Error getting documents: ", error);
+        });
+        
         if (grade==10) {
             //show the div 
             
@@ -119,7 +141,11 @@
         else if (grade==12) {
             //show other div
         }
+    
+    
+    
     }
+    
 
 
 </script>
