@@ -9,21 +9,17 @@ function getschool(tagname) {
             .then(function(querySnapshot) {
                 querySnapshot.forEach(function(doc) {
                     var output=doc.data();
-                    school=output.school;
                     // doc.data() is never undefined for query doc snapshots
                     //console.log(school);
-                    document.getElementById(tagname).value=school;
+                    document.getElementById(tagname).value=output.school;
+                    //console.log(document.getElementById(tagname).value);
                 });
                 
             })
             .catch(function(error) {
                 console.log("Error getting documents: ", error);
-            });
-                
-        }
-         else {
-        }
-      
+            });       
+        }  
     });
     
 }

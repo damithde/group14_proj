@@ -15,6 +15,7 @@
     <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-storage.js"></script>
     <script src="firebase models/db.js"></script>
     <!-- alertify -->    
     <script src="plugins/alertify/alertify.min.js"></script>
