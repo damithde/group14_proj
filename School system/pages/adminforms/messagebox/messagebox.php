@@ -23,8 +23,8 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="exampleInputEmail1">Student Name:</label>
-                                <input type="email" class="form-control" id="studentNameTxt" placeholder="Enter Studenr Name">
+                                <label  > Student List:</label>
+                                <textarea class="form-control" id="studentAddressTxt" rows="3" placeholder="Enter Student Admission Numbers seperated by commas"></textarea>
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Student Email:</label>
@@ -42,11 +42,6 @@
                     </form>
                 </div><!-- /.box -->
             </div>
-
-            <div >
-                    <?php include_once('dashboardnotificationPanel.php'); ?>
-                </div>
-
         </div>
         <div>
         </div>

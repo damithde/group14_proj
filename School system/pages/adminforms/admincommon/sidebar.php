@@ -22,7 +22,7 @@
                 </a>
                 <ul class="treeview-menu">
                     <li class="active"><a href="../studentmanage/registerstudent.php"><i class="fa fa-folder-open-o"></i> Register Student</a></li>
-                    <li><a href="../studentmanage/viewstudent.php"><i class="fa fa-folder-open-o"></i>Student Details</a></li>
+                    <!-- <li><a href="../studentmanage/viewstudent.php"><i class="fa fa-folder-open-o"></i>Student Details</a></li> -->
                     <li><a href="../studentmanage/editstudent.php"><i class="fa fa-folder-open-o"></i> Edit Student</a></li>
                     <li><a href="../studentmanage/searchstudent.php"><i class="fa fa-folder-open-o"></i> Search Student</a></li>
                     <li><a href="../studentmanage/promotestudent.php"><i class="fa fa-folder-open-o"></i> Promote Student</a></li>
@@ -36,6 +36,7 @@
                     <li class="active"><a href="../teachermanage/registerteacher.php"><i class="fa fa-folder-open-o"></i> Register Teacher</a></li>
                     <li><a href="../teachermanage/viewteacher.php"><i class="fa fa-folder-open-o"></i> View Teacher</a></li>
                     <li><a href="../teachermanage/editteacher.php"><i class="fa fa-folder-open-o"></i> Edit Teacher</a></li>
+                    <li><a href="../teachermanage/searchteacher.php"><i class="fa fa-folder-open-o"></i> Search Teacher</a></li>
                 </ul>
             </li>
             <li><a href="../calendarmanage/calendar.php"><i class="fa fa-calendar"></i> <span>Calendar</span></a></li>
@@ -69,7 +70,7 @@
                     <li><a href="../certificatemanage/viewissuedcertificate.php"><i class="fa fa-folder-open-o"></i> View issue certificate</a></li>
                 </ul>
             </li>
-            <li><a href="../messagebox/messagebox.php"><i class="fa fa-envelope-o"></i> <span></span>Messages</span></a></li>
+            <li><a href="../messagebox/messagebox.php"><i class="fa fa-envelope-o"></i> <span></span>Email</span></a></li>
             <li><a href="../notifications/notification.php"><i class="fa fa-send"></i> <span></span>Notifications</span></a></li>
             <li><a href="../attendancemanage/attendanceStart.php"><i class="fa fa-edit"></i> <span>Attendance</span></a></li>
             <li><a href="../schoolconfigure/schoolconfigure.php"><i class="fa fa-gear"></i> <span>School Configure</span></a></li>
