@@ -119,6 +119,12 @@
                             <div class="form-group">
                                 <label id="teacherTelTxt">-</label>
                             </div>
+                            <div class="form-group">
+                                <div> 
+                                    
+                                </div>
+                                <a href="../teachermanage/editteacher.php" class="btn btn-sm btn-default btn-flat pull-right">Edit details</a>
+                            </div>
                         </div>
                     </div>
                     <div class="box-footer">
