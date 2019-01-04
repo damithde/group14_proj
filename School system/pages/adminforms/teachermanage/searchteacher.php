@@ -126,7 +126,7 @@
                                         <div class="form-group">
                                             <div class="col-md-8">
                                                 <div id="studentMediumTxt" class="form-group">
-                                                <button style="width:150px" type="submit" class="btn btn-primary">Search</button>
+                                                <button style="width:150px" type="button" class="btn btn-primary">Search</button>
                                                 </div>
                                             </div>
                                         </div>

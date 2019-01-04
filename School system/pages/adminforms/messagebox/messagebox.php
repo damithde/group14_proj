@@ -82,7 +82,7 @@
                             </div>
                             <div class="box-footer">
                                 <div class="col-md-10"></div>
-                                <button type="submit" class="btn btn-primary" style="width:150px">Send</button>
+                                <button type="button" class="btn btn-primary" style="width:150px">Send</button>
                             </div>
                             <div class="box-footer">
 

@@ -26,8 +26,6 @@
                         <h3 class="box-title">Search Student</h3>
                     </div><!-- /.box-header -->
                     <!-- form start -->
-                    
-
                     <div class="col-md-4">
 
                     </div>
@@ -134,13 +132,13 @@
                                         <div class="form-group">
                                             <div class="col-md-8">
                                                 <div id="studentMediumTxt" class="form-group">
-                                                <button style="width:150px" type="submit" class="btn btn-primary">Search</button>
+                                                <button style="width:150px" type="button" class="btn btn-primary">Search</button>
                                                 </div>
                                             </div>
                                         </div>
                                 </div>
                             </div>
-<hr>
+                        <hr>
                             <div class="row">
                                 <div class="col-md-10">
                                 <div class="form-group">
@@ -187,7 +185,7 @@
         </div>
     </section>
 </section>
-</html>
+
 <script>
     getschool("schoolid");
 
@@ -229,6 +227,5 @@
 
 
 </script>
-
 
 <?php include_once('../admincommon/footer.php'); ?>
