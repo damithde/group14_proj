@@ -31,7 +31,7 @@
                                         <div class="input-group">
                                             <input type="text" id = "searchTxt" name="q" class="form-control" placeholder="Search..."/>
                                             <span class="input-group-btn">
-                                        <button type='submit' name='search' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
+                                        <button type='button' name='search' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
                                     </span>
                                         </div>
                                     </form>
@@ -131,7 +131,7 @@
                             <form action="../../fileupload.php" method="post" enctype="multipart/form-data">
                             <label >Select Photo</label>
                             <input type="file" id="myfile" >
-                            <input type="submit" value="upload" id="upload" >
+                            <input type="button" value="upload" id="upload" >
                             </form>
                         </div>
                     </div><!-- /.box-body -->
@@ -195,7 +195,7 @@
 
                     <div class="box-footer">
                         <div class="col-md-8"></div>
-                        <button type="submit" class="btn btn-primary" style="width:150px">Update</button>
+                        <button type="button" class="btn btn-primary" style="width:150px">Update</button>
                     </div>
                 </form>
             </div><!-- /.box -->

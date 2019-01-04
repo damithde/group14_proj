@@ -48,12 +48,6 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <div>
-                                    <label for="exampleInputEmail1">Publisher Id:</label>
-                                    <input type="email" class="form-control" id="studentIdText" placeholder="Enter Student Id">
-                                </div>
-                            </div>
-                            <div class="form-group">
                                 <label for="exampleInputEmail1">Title:</label>
                                 <input type="email" class="form-control" id="studentNameTxt" placeholder="Enter Studenr Name">
                             </div>
@@ -67,7 +61,7 @@
 
                             <div class="box-footer">
                                 <div class="col-md-10"></div>
-                                <button type="submit" class="btn btn-primary" style="width:150px">Publish</button>
+                                <button type="button" class="btn btn-primary" style="width:150px">Publish</button>
                             </div>
 
                     </form>

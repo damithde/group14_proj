@@ -3,7 +3,7 @@
 
     <header class="main-header">
         <!-- Logo -->
-        <a href="../../../index2.html" class="logo"><b>Admin</b></a>
+        <a href="../../../index2.html" class="logo"><b>Super Admin</b></a>
         <!-- Header Navbar: style can be found in header.less -->
         <nav class="navbar navbar-static-top" role="navigation">
             <!-- Sidebar toggle button-->
