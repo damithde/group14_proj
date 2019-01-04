@@ -3,6 +3,20 @@
 <?php include_once('../admincommon/sidebar.php'); ?>
 <?php include_once('../admincommon/script.php'); ?>
 
+<head>
+    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-storage.js"></script>
+    <script src="../../../firebase models/db.js"></script>
+    <script src="../../../firebase models/student.js"></script>
+    <script src="../../../firebase models/admin.js"></script>
+    <script src="../../../firebase models/login.js"></script>
+    <script src="../../../firebase models/fileupload.js"></script>
+</head>
+
+
 <body class="skin-blue">
 <div class="wrapper">
 <section class="content-wrapper">
@@ -26,7 +40,7 @@
                                             <div class="col-md-8">
                                                 <div id="studentMediumTxt" class="form-group">
                                                     <label  >Exam Year:</label>
-                                                    <select class="form-control">
+                                                    <select id ="examYearTxt" class="form-control">
                                                         <option value="6">2019</option>
                                                         <option value="7">2018</option>
                                                         <option value="8">2017</option>
@@ -41,7 +55,7 @@
 
                                         <div class="form-group">
                                             <div class="col-md-8">
-                                                <div id="studentMediumTxt" class="form-group">
+                                                <div id="gradeTxt" class="form-group">
                                                     <label  >Exam Grade:</label>
                                                     <select class="form-control">
                                                         <option value="6">Grade 6</option>
@@ -58,7 +72,7 @@
 
                                         <div class="form-group">
                                             <div class="col-md-8">
-                                                <div id="studentMediumTxt" class="form-group">
+                                                <div id="classTxt" class="form-group">
                                                     <label  >Exam Class:</label>
                                                     <select class="form-control">
                                                         <option value="sinhala">All</option>
@@ -82,7 +96,7 @@
                                                 <div id="studentMediumTxt" class="form-group">
                                                     <label class="text-muted">Exam ID</label>
                                                     <div class="input-group">
-                                                        <input style ="width:300px" id="lNameSearch" type="text" name="q" class="form-control" placeholder="Search by Admission No"/>
+                                                        <input id="examIdTxt" style ="width:300px" id="lNameSearch" type="text" name="q" class="form-control" placeholder="Search by Admission No"/>
                                                         
                                                     </div>
                                                 </div>
@@ -94,7 +108,7 @@
                                                 <div id="studentMediumTxt" class="form-group">
                                                     <label class="text-muted">Exam Date</label>
                                                     <div class="input-group">
-                                                        <input style ="width:300px" id="lNameSearch" type="date" name="q" class="form-control" placeholder="Search by First Name"/>
+                                                        <input id = "examDateTxt" style ="width:300px" id="lNameSearch" type="date" name="q" class="form-control" placeholder="Search by First Name"/>
                                                         
                                                     </div>
                                                 </div>
@@ -104,7 +118,7 @@
                                         <div class="form-group">
                                             <div class="col-md-8">
                                                 <div id="studentMediumTxt" class="form-group">
-                                                    <label  >Subject:</label>
+                                                    <label id = "subjectTxt" >Subject:</label>
                                                     <select class="form-control">
                                                         <option value="sinhala">Sinhala</option>
                                                         <option value="english">English</option>
@@ -170,32 +184,16 @@
 
 
 <script>
-    if(10==10){
-        document.getElementById("subjectselection").style.display = 'block';
-        var i=0;
-        var subs=doc.data().subjects;
-        subs.forEach(function(sub){
-            var tableref=document.getElementById('s');
-            var newCheckbox = document.createElement("input");
-            newCheckbox.type = "checkbox";
-            newCheckbox.name = "subject"+i;
-            newCheckbox.value = sub;
-            //document.getElementById("subjectselection").appendChild(newCheckbox);
-            var row=tableref.insertRow(-1);
-            row.insertCell(0).appendChild(newCheckbox);
-            //var label = document.createElement('label');
-            // label.htmlFor = sub;
-            // label.appendChild(document.createTextNode(sub));
-            row.insertCell(1).innerHTML=sub ;
-            i++;
 
-            // document.getElementById("subjectselection").appendChild(label);
-            //document.getElementById("subjectselection").appendChild(document.createElement("br"));
-
-            })
-    }
-    else{
-        document.getElementById("subjectselection").style.display = 'none';
+    getschool("stuschool");
+    function datasubmission(){
+        var studentMediumTxt = document.getElementById("studentMediumTxt").value;
+        var gradeTxt = document.getElementById("gradeTxt").value;
+        var classTxt = document.getElementById("classTxt").value;
+        var studentMediumTxt = document.getElementById("studentMediumTxt").value;
+        var subjectTxt = document.getElementById("subjectTxt").value;
+        var examresult= [studentMediumTxt,gradeTxt,classTxt,studentMediumTxt,subjectTxt,subjectTxt];
+        addexamresult(examresult);
     }
 </script>
 
