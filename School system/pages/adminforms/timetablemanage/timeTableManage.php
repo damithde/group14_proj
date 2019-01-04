@@ -203,12 +203,19 @@
 		var teacherRegNo=document.getElementById("teacherRegNo").value;
 		var teacherName=document.getElementById("teacherName").value;
 		
-		var timeView1 = document.getElementById("timeView1").value;       
+		var timeView1 = document.getElementById("timeView1").value;       /*first row*/
         var subjectView1 = document.getElementById("subjectView1").value;
 		var subjectView2 = document.getElementById("subjectView2").value;
 		var subjectView3 = document.getElementById("subjectView3").value;
 		var subjectView4 = document.getElementById("subjectView4").value;
 		var subjectView5 = document.getElementById("subjectView5").value;
+		
+		var timeView12 = document.getElementById("timeView12").value;       /*second row*/
+        var subjectView12 = document.getElementById("subjectView12").value;
+		var subjectView22 = document.getElementById("subjectView22").value;
+		var subjectView32 = document.getElementById("subjectView32").value;
+		var subjectView42 = document.getElementById("subjectView42").value;
+		var subjectView52 = document.getElementById("subjectView52").value;
 		
 		
 		
