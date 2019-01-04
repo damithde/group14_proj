@@ -100,7 +100,6 @@ function promotestudent(idlist,tograde,toclass,year,subjects){
                     }); 
                 //update data to promote students
                 //get the subjects 
-
                     db.collection("students").doc(doc.id).update({
                         grade:tograde,
                         class:toclass,
