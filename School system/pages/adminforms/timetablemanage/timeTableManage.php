@@ -3,6 +3,20 @@
 <?php include_once('../admincommon/sidebar.php'); ?>
 <?php include_once('../admincommon/script.php'); ?>
 
+<head>
+
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-storage.js"></script>
+<script src="../../../firebase models/db.js"></script>
+<script src="../../../firebase%20models/timeTable.js"></script>
+<script src="../../../firebase models/admin.js"></script>
+<script src="../../../firebase models/login.js"></script>
+<script src="../../../firebase models/fileupload.js"></script>
+</head>
+
 <body class="skin-blue">
 <div class="wrapper">
 <section class="content-wrapper">
@@ -13,6 +27,7 @@
                 <h3 class="box-title">Create Time Table</h3>
             </div><!-- /.box-header -->
             <div class="box-body">
+<!--
                 <div class="table-responsive">
                     <thead>
                            <p>Time Table for</p> 
@@ -27,6 +42,7 @@
                             
                         </thead>
                 </div>
+-->
                 <div class="table-responsive">
                    <form role="form" action="" method="POST">
                        
@@ -176,6 +192,7 @@
 </div>
 <?php include_once('../admincommon/footer.php'); ?>
     
+<!--
     <script>
 
 	$('input[name="optionsRadios"]').on('change', function(){
@@ -194,7 +211,9 @@
     });
     
 </script>
-    
+-->
+<!--    <input type="hidden" id="myInput" value="W3Schools">-->
+
 <script>
     function datasubmission(){
         var school=document.getElementById("stuschool").value;
