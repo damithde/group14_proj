@@ -65,7 +65,7 @@
                         <div class="form-group">
                             <div class="col-md-8">
                                 <div id="studentMediumTxt" class="form-group">
-                                    <label class="text-muted">Enter Registration No</label>
+                                    <label class="text-muted">Enter Registration Number</label>
                                     <div class="input-group">
                                         <input id="lNameSearch" type="text" name="q" class="form-control" placeholder="Enter Register Number"/>
                                         <span class="input-group-addon">
@@ -351,7 +351,7 @@
                                                                         <div class="form-group">
 
                                                                                 <div id="studentMediumTxt" class="form-group">
-                                                                                    <label class="text-muted">Registration No</label>
+                                                                                    <label class="text-muted"> Enter Registration Number</label>
                                                                                     <div class="input-group">
                                                                                         <input id="lNameSearch" type="text" name="q" class="form-control" placeholder="Enter Register Number"/>
                                                                                         <span class="input-group-addon">
@@ -586,7 +586,7 @@
                                         <td>
                                             -
                                         </td>
-                                        
+
 
                                     </tr>
 
