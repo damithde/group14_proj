@@ -60,7 +60,7 @@
                         
                         <tbody>
                         <tr>
-                            <td><input name="time2" class="tableTxtEdit" value="07.30-07.50"></td>
+                            <td><input id="time2" class="tableTxtEdit" value="07.30-07.50"></td>
                             <td></td>
                             <td></td>
                             <td style="font-size:25px;font-weight: bold;" class="tableTxtEdit">Reminding Religion</td>
@@ -205,6 +205,9 @@
 		var teacherRegNo=document.getElementById("teacherRegNo").value;
 		var teacherName=document.getElementById("teacherName").value;
 		
+		/*time2*/
+		var time2 = document.getElementById("time2").value; 
+		
 		var timeView1 = document.getElementById("timeView1").value;       /*first row*/
         var subjectView1 = document.getElementById("subjectView1").value;
 		var subjectView2 = document.getElementById("subjectView2").value;
@@ -263,12 +266,26 @@
 		var subjectView48 = document.getElementById("subjectView48").value;
 		var subjectView58 = document.getElementById("subjectView58").value;
 		
+		//x < 10 && y > 1
 		
+		var timeTableList;
+        
+        if(classNo!=null && classTeacher!=null){
+            //var stdGend = document.getElementById('gm').value;
+			var classTimeTable=[classNo,classTeacher,timeView1,subjectView1,subjectView2,subjectView3,subjectView4,subjectView5,timeView12,subjectView12,subjectView22,subjectView32,subjectView42,subjectView52,timeView13,subjectView13,subjectView23,subjectView33,subjectView43,subjectView53,timeView14,subjectView14,subjectView24,subjectView34,subjectView44,subjectView54,timeView15,subjectView15,subjectView25,subjectView35,subjectView45,subjectView55,,timeView16,subjectView16,subjectView26,subjectView36,subjectView46,subjectView56,,timeView17,subjectView17,subjectView27,subjectView37,subjectView47,subjectView57,,timeView18,subjectView18,subjectView28,subjectView38,subjectView48,subjectView58,time2interval,time2];
+			timeTableList=classTimeTable;
+			
+        }else{
+            //var stdGend = document.getElementById('gf').value;
+			
+			var teacherTimeTable=[teacherRegNo,teacherName,timeView1,subjectView1,subjectView2,subjectView3,subjectView4,subjectView5,timeView12,subjectView12,subjectView22,subjectView32,subjectView42,subjectView52,timeView13,subjectView13,subjectView23,subjectView33,subjectView43,subjectView53,timeView14,subjectView14,subjectView24,subjectView34,subjectView44,subjectView54,timeView15,subjectView15,subjectView25,subjectView35,subjectView45,subjectView55,,timeView16,subjectView16,subjectView26,subjectView36,subjectView46,subjectView56,,timeView17,subjectView17,subjectView27,subjectView37,subjectView47,subjectView57,,timeView18,subjectView18,subjectView28,subjectView38,subjectView48,subjectView58,time2interval,time2];
+			timeTableList=teacherTimeTable;
+        }
 	
         //var parent={name:parName,parent:par,occupation:parOcupation,email:parEmail,Econtact:parContact};
         //var student= [stdAdNo,stdFName,stdLName,contact,stdbd,stdAddress,stdReli,school,stdGrade,stdClass,stdEmail,profileimg,studentId,stdFName,stdmedium];
         //addstudent(student,parent);
-        addTimeTable()
+        addTimeTable(timeTableList)
     }
     </script>
     
