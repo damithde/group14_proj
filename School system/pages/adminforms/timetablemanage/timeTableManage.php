@@ -197,9 +197,11 @@
     
 <script>
     function datasubmission(){
-        var school=document.getElementById("stuschool").value;    
+        var school=document.getElementById("stuschool").value;
+        
         var classNo=document.getElementById("classNo").value;
 		var classTeacher=document.getElementById("classTeacher").value;
+        
 		var teacherRegNo=document.getElementById("teacherRegNo").value;
 		var teacherName=document.getElementById("teacherName").value;
 		
@@ -224,52 +226,49 @@
 		var subjectView43 = document.getElementById("subjectView43").value;
 		var subjectView53 = document.getElementById("subjectView53").value;
 		
-		var timeView14 = document.getElementById("timeView14").value;       /*first row*/
+		var timeView14 = document.getElementById("timeView14").value;       /*fourth row*/
         var subjectView14 = document.getElementById("subjectView14").value;
 		var subjectView24 = document.getElementById("subjectView24").value;
 		var subjectView34 = document.getElementById("subjectView34").value;
 		var subjectView44 = document.getElementById("subjectView44").value;
 		var subjectView54 = document.getElementById("subjectView54").value;
 		
+		var time2interval = document.getElementById("time2interval").value;/*interval row*/
+		
+		var timeView15 = document.getElementById("timeView15").value;       /*fifth row*/
+        var subjectView15 = document.getElementById("subjectView15").value;
+		var subjectView25 = document.getElementById("subjectView25").value;
+		var subjectView35 = document.getElementById("subjectView35").value;
+		var subjectView45 = document.getElementById("subjectView45").value;
+		var subjectView55 = document.getElementById("subjectView55").value;
+		
+		var timeView16 = document.getElementById("timeView16").value;       /*sixth row*/
+        var subjectView16 = document.getElementById("subjectView16").value;
+		var subjectView26 = document.getElementById("subjectView26").value;
+		var subjectView36 = document.getElementById("subjectView36").value;
+		var subjectView46 = document.getElementById("subjectView46").value;
+		var subjectView56 = document.getElementById("subjectView56").value;
+		
+		var timeView17 = document.getElementById("timeView17").value;       /*seventh row*/
+        var subjectView17 = document.getElementById("subjectView17").value;
+		var subjectView27 = document.getElementById("subjectView27").value;
+		var subjectView37 = document.getElementById("subjectView37").value;
+		var subjectView47 = document.getElementById("subjectView47").value;
+		var subjectView57 = document.getElementById("subjectView57").value;
+		
+		var timeView18 = document.getElementById("timeView18").value;       /*eigth row*/
+        var subjectView18 = document.getElementById("subjectView18").value;
+		var subjectView28 = document.getElementById("subjectView28").value;
+		var subjectView38 = document.getElementById("subjectView38").value;
+		var subjectView48 = document.getElementById("subjectView48").value;
+		var subjectView58 = document.getElementById("subjectView58").value;
 		
 		
-        
-		
-		
-		
-        if(document.getElementById('gm').checked){
-            var stdGend = document.getElementById('gm').value;
-        }else{
-            var stdGend = document.getElementById('gf').value;
-        }
-        //var stdGend = document.querySelector('input[name=gender]:checked').value;
-        var stdbd = document.getElementById('bdate').value;
-        var stdReli = document.getElementById("studentReligionTxt").value;
-        var profileimg=document.getElementById("propic").src;
-        var stdEmail = document.getElementById("studentEmailTxt").value;
-        var stdAdNo = document.getElementById("studentAdmissionNoTxt").value;
-        var stdClass = document.getElementById("studentClassTxt").value;
-        var stdGrade = document.getElementById("studentGradeTxt").value;
-        var contact=document.getElementById("contact").value;
-        var stdAddress = document.getElementById("studentAddressTxt").value;
-        var stdmedium = document.getElementById("studentMediumTxt").value;
-        //var par = document.querySelector('input[name=parent]:checked').value;
-        if(document.getElementById('p1').checked){
-            var par = document.getElementById('p1').value;
-        }else if(document.getElementById('p2').checked){
-            var par = document.getElementById('p2').value;
-        }else{
-            var par = document.getElementById('p3').value;
-        }
-        var parName = document.getElementById("parentNameTxt").value;
-        var parOcupation = document.getElementById("parentOcupationTxt").value;
-        var parEmail = document.getElementById("parentEmail").value;
-        var parAddress = document.getElementById("parentAddressTxt").value;
-        var parContact = document.getElementById("gaurdiancontact").value;
-        var studentId =school+stdAdNo;
-        var parent={name:parName,parent:par,occupation:parOcupation,email:parEmail,Econtact:parContact};
-        var student= [stdAdNo,stdFName,stdLName,contact,stdbd,stdAddress,stdReli,school,stdGrade,stdClass,stdEmail,profileimg,studentId,stdFName,stdmedium];
-        addstudent(student,parent);
+	
+        //var parent={name:parName,parent:par,occupation:parOcupation,email:parEmail,Econtact:parContact};
+        //var student= [stdAdNo,stdFName,stdLName,contact,stdbd,stdAddress,stdReli,school,stdGrade,stdClass,stdEmail,profileimg,studentId,stdFName,stdmedium];
+        //addstudent(student,parent);
+        addTimeTable()
     }
     </script>
     
