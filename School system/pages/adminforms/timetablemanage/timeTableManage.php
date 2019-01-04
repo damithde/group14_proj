@@ -57,7 +57,7 @@
                             </tr>
                         </thead>
                         
-                            <p>test student</p>
+                        
                         <tbody>
                         <tr>
                             <td><input name="time2" class="tableTxtEdit" value="07.30-07.50"></td>
