@@ -71,37 +71,37 @@
                         </tr>
                         <tr>
                             <td><input id="timeView1" class="tableTxtEdit" value="07.50-08.30"></td>
-                            <td><input id="subjectView1" class="tableTxtEdit" value=""></td>
-                            <td><input id="subjectView2" class="tableTxtEdit" value=""></td>
-                            <td><input id="subjectView3" class="tableTxtEdit" value=""></td>
-                            <td><input id="subjectView4" class="tableTxtEdit" value=""></td>
-                            <td><input id="subjectView5" class="tableTxtEdit" value=""></td>
+                            <td><input id="subjectView1" class="tableTxtEdit" value="" placeholder="subject"></td>
+                            <td><input id="subjectView2" class="tableTxtEdit" value="" placeholder="subject"></td>
+                            <td><input id="subjectView3" class="tableTxtEdit" value="" placeholder="subject"></td>
+                            <td><input id="subjectView4" class="tableTxtEdit" value="" placeholder="subject"></td>
+                            <td><input id="subjectView5" class="tableTxtEdit" value="" placeholder="subject"></td>
                            
                             
                         </tr>
                         <tr>
                             <td><input id="timeView12" class="tableTxtEdit" value="08.30-09.10"></td>
-                            <td><input id="subjectView12" class="tableTxtEdit" value=""></td>
-                            <td><input id="subjectView22" class="tableTxtEdit" value=""></td>
-                            <td><input id="subjectView32" class="tableTxtEdit" value=""></td>
-                            <td><input id="subjectView42" class="tableTxtEdit" value=""></td>
-                            <td><input id="subjectView52" class="tableTxtEdit" value=""></td>
+                            <td><input id="subjectView12" class="tableTxtEdit" value="" placeholder="subject"></td>
+                            <td><input id="subjectView22" class="tableTxtEdit" value="" placeholder="subject"></td>
+                            <td><input id="subjectView32" class="tableTxtEdit" value="" placeholder="subject"></td>
+                            <td><input id="subjectView42" class="tableTxtEdit" value="" placeholder="subject"></td>
+                            <td><input id="subjectView52" class="tableTxtEdit" value="" placeholder="subject"></td>
                         </tr>
                         <tr>
                             <td><input id="timeView13" class="tableTxtEdit" value="09.10-09.50"></td>
-                            <td><input id="subjectView13" class="tableTxtEdit" value=""></td>
-                            <td><input id="subjectView23" class="tableTxtEdit" value=""></td>
-                            <td><input id="subjectView33" class="tableTxtEdit" value=""></td>
-                            <td><input id="subjectView43" class="tableTxtEdit" value=""></td>
-                            <td><input id="subjectView53" class="tableTxtEdit" value=""></td>
+                            <td><input id="subjectView13" class="tableTxtEdit" value="" placeholder="subject"></td>
+                            <td><input id="subjectView23" class="tableTxtEdit" value="" placeholder="subject"></td>
+                            <td><input id="subjectView33" class="tableTxtEdit" value="" placeholder="subject"></td>
+                            <td><input id="subjectView43" class="tableTxtEdit" value="" placeholder="subject"></td>
+                            <td><input id="subjectView53" class="tableTxtEdit" value="" placeholder="subject"></td>
                         </tr>
                         <tr>
                             <td><input id="timeView14" class="tableTxtEdit" value="09.50-10.30"></td>
-                            <td><input id="subjectView14" class="tableTxtEdit" value=""></td>
-                            <td><input id="subjectView24" class="tableTxtEdit" value=""></td>
-                            <td><input id="subjectView34" class="tableTxtEdit" value=""></td>
-                            <td><input id="subjectView44" class="tableTxtEdit" value=""></td>
-                            <td><input id="subjectView54" class="tableTxtEdit" value=""></td>
+                            <td><input id="subjectView14" class="tableTxtEdit" value="" placeholder="subject"></td>
+                            <td><input id="subjectView24" class="tableTxtEdit" value="" placeholder="subject"></td>
+                            <td><input id="subjectView34" class="tableTxtEdit" value="" placeholder="subject"></td>
+                            <td><input id="subjectView44" class="tableTxtEdit" value="" placeholder="subject"></td>
+                            <td><input id="subjectView54" class="tableTxtEdit" value="" placeholder="subject"></td>
                         </tr>
                         <tr>
                             <td><input id="time2interval" class="tableTxtEdit" value="10.30-10.50"></td>
@@ -114,40 +114,40 @@
                         </tr>
                         <tr>
                             <td><input id="timeView15" class="tableTxtEdit" value="10.50-11.30"></td>
-                            <td><input id="subjectView15" class="tableTxtEdit" value=""></td>
-                            <td><input id="subjectView25" class="tableTxtEdit" value=""></td>
-                            <td><input id="subjectView35" class="tableTxtEdit" value=""></td>
-                            <td><input id="subjectView45" class="tableTxtEdit" value=""></td>
-                            <td><input id="subjectView55" class="tableTxtEdit" value=""></td>
+                            <td><input id="subjectView15" class="tableTxtEdit" value="" placeholder="subject"></td>
+                            <td><input id="subjectView25" class="tableTxtEdit" value="" placeholder="subject"></td>
+                            <td><input id="subjectView35" class="tableTxtEdit" value="" placeholder="subject"></td>
+                            <td><input id="subjectView45" class="tableTxtEdit" value="" placeholder="subject"></td>
+                            <td><input id="subjectView55" class="tableTxtEdit" value="" placeholder="subject"></td>
                            
                         </tr>
                         <tr>
                             <td><input id="timeView16" class="tableTxtEdit" value="11.30-12.10"></td>
-                            <td><input id="subjectView16" class="tableTxtEdit" value=""></td>
-                            <td><input id="subjectView26" class="tableTxtEdit" value=""></td>
-                            <td><input id="subjectView36" class="tableTxtEdit" value=""></td>
-                            <td><input id="subjectView46" class="tableTxtEdit" value=""></td>
-                            <td><input id="subjectView56" class="tableTxtEdit" value=""></td>
+                            <td><input id="subjectView16" class="tableTxtEdit" value="" placeholder="subject"></td>
+                            <td><input id="subjectView26" class="tableTxtEdit" value="" placeholder="subject"></td>
+                            <td><input id="subjectView36" class="tableTxtEdit" value="" placeholder="subject"></td>
+                            <td><input id="subjectView46" class="tableTxtEdit" value="" placeholder="subject"></td>
+                            <td><input id="subjectView56" class="tableTxtEdit" value="" placeholder="subject"></td>
                            
                         </tr>
                             
                         <tr>
                             <td><input id="timeView17" class="tableTxtEdit" value="12.10-12.50"></td>
-                            <td><input id="subjectView17" class="tableTxtEdit" value=""></td>
-                            <td><input id="subjectView27" class="tableTxtEdit" value=""></td>
-                            <td><input id="subjectView37" class="tableTxtEdit" value=""></td>
-                            <td><input id="subjectView47" class="tableTxtEdit" value=""></td>
-                            <td><input id="subjectView57" class="tableTxtEdit" value=""></td>
+                            <td><input id="subjectView17" class="tableTxtEdit" value="" placeholder="subject"></td>
+                            <td><input id="subjectView27" class="tableTxtEdit" value="" placeholder="subject"></td>
+                            <td><input id="subjectView37" class="tableTxtEdit" value="" placeholder="subject"></td>
+                            <td><input id="subjectView47" class="tableTxtEdit" value="" placeholder="subject"></td>
+                            <td><input id="subjectView57" class="tableTxtEdit" value="" placeholder="subject"></td>
                            
                         </tr>
                         <tr>
                             
                             <td><input id="timeView18" class="tableTxtEdit" value="12.50-13.30"></td>
-                            <td><input id="subjectView18" class="tableTxtEdit" value=""></td>
-                            <td><input id="subjectView28" class="tableTxtEdit" value=""></td>
-                            <td><input id="subjectView38" class="tableTxtEdit" value=""></td>
-                            <td><input id="subjectView48" class="tableTxtEdit" value=""></td>
-                            <td><input id="subjectView58" class="tableTxtEdit" value=""></td>
+                            <td><input id="subjectView18" class="tableTxtEdit" value="" placeholder="subject"></td>
+                            <td><input id="subjectView28" class="tableTxtEdit" value="" placeholder="subject"></td>
+                            <td><input id="subjectView38" class="tableTxtEdit" value="" placeholder="subject"></td>
+                            <td><input id="subjectView48" class="tableTxtEdit" value="" placeholder="subject"></td>
+                            <td><input id="subjectView58" class="tableTxtEdit" value="" placeholder="subject"></td>
                                
                         </tr>
                             

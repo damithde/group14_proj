@@ -50,12 +50,12 @@
                             <div class="form-group">
                                 <div>
                                     <label for="exampleInputEmail1">Publisher Id:</label>
-                                    <input type="email" class="form-control" id="studentIdText" placeholder="Enter Student Id">
+                                    <input type="email" class="form-control" id="studentIdText" placeholder="Enter Publisher Name">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Title:</label>
-                                <input type="email" class="form-control" id="studentNameTxt" placeholder="Enter Studenr Name">
+                                <input type="email" class="form-control" id="studentNameTxt" placeholder="Enter Title of Notification">
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Content:</label>
