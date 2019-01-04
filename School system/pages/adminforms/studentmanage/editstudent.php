@@ -31,11 +31,7 @@
                                         <div class="input-group">
                                             <input type="text" id = "searchTxt" name="q" class="form-control" placeholder="Search..."/>
                                             <span class="input-group-btn">
-<<<<<<< HEAD
                                         <button type='button' name='search' id='search-btn' onclick="getstudentsfromreg(document.getElementById('searchTxt').value)" class="btn btn-flat"><i class="fa fa-search"></i></button>
-=======
-                                        <button type='button' name='search' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
->>>>>>> aa40b974fa43f447acb69f1a11c2ee1893bb0066
                                     </span>
                                         </div>
                                     </form>
@@ -135,7 +131,6 @@
                             <form action="../../fileupload.php" method="post" enctype="multipart/form-data">
                             <label >Select Photo</label>
                             <input type="file" id="myfile" >
-                            <input type="submit" value="upload" id="upload" >
                             <input type="button" value="upload" id="upload" >
                             </form>
                         </div>
@@ -200,7 +195,6 @@
 
                     <div class="box-footer">
                         <div class="col-md-8"></div>
-                        <button type="submit" class="btn btn-primary" style="width:150px">Update</button>
                         <button type="button" class="btn btn-primary" style="width:150px">Update</button>
                     </div>
                 </form>
