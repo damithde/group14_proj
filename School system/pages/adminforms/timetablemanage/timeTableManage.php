@@ -202,8 +202,16 @@
 		var classTeacher=document.getElementById("classTeacher").value;
 		var teacherRegNo=document.getElementById("teacherRegNo").value;
 		var teacherName=document.getElementById("teacherName").value;
-        
-        var stdFName = document.getElementById("studentFNameTxt").value;
+		
+		var timeView1 = document.getElementById("timeView1").value;       
+        var subjectView1 = document.getElementById("subjectView1").value;
+		var subjectView2 = document.getElementById("subjectView2").value;
+		var subjectView3 = document.getElementById("subjectView3").value;
+		var subjectView4 = document.getElementById("subjectView4").value;
+		var subjectView5 = document.getElementById("subjectView5").value;
+		
+		
+		
         
 		
 		
