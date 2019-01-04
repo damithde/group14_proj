@@ -37,8 +37,9 @@
                             <label  >Password :</label>
                             <input type="password" class="form-control" id="adminPasswordTxt" placeholder="Enter Password">
                         </div>
-                        <div class="box-footer">
-                            <button type="submit" class="btn btn-primary">Register</button>
+                        <div class="form-group">
+                            <div class="col-md-8"></div>
+                            <button style="width:170px" type="submit" class="btn btn-primary">Create Admin</button>
                         </div>
                         
                     </div><!-- /.box-body -->

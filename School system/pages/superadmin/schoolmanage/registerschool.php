@@ -29,8 +29,9 @@
                             <label  >Location :</label>
                             <input type="input" class="form-control" id="schoolLocationTxt" placeholder="Enter School Location">
                         </div>
-                        <div class="box-footer">
-                            <button type="submit" class="btn btn-primary">Register</button>
+                        <div class="form-group">
+                            <div class="col-md-8"></div>
+                            <button style="width:170px" type="submit" class="btn btn-primary">Register</button>
                         </div>
                         
                     </div><!-- /.box-body -->
