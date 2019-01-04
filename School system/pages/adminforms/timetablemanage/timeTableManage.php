@@ -217,6 +217,20 @@
 		var subjectView42 = document.getElementById("subjectView42").value;
 		var subjectView52 = document.getElementById("subjectView52").value;
 		
+		var timeView13 = document.getElementById("timeView13").value;       /*third row*/
+        var subjectView13 = document.getElementById("subjectView13").value;
+		var subjectView23 = document.getElementById("subjectView23").value;
+		var subjectView33 = document.getElementById("subjectView33").value;
+		var subjectView43 = document.getElementById("subjectView43").value;
+		var subjectView53 = document.getElementById("subjectView53").value;
+		
+		var timeView14 = document.getElementById("timeView14").value;       /*first row*/
+        var subjectView14 = document.getElementById("subjectView14").value;
+		var subjectView24 = document.getElementById("subjectView24").value;
+		var subjectView34 = document.getElementById("subjectView34").value;
+		var subjectView44 = document.getElementById("subjectView44").value;
+		var subjectView54 = document.getElementById("subjectView54").value;
+		
 		
 		
         
