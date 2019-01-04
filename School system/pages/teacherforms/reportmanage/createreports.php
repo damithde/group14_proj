@@ -195,8 +195,39 @@
                                     <div class="form-group">
 
 
+                                        <div class="form-group">
 
                                                 <div id="studentMediumTxt" class="form-group">
+                                                    <label  >Select Year:</label>
+                                                    <select class="form-control">
+                                                        <option value="6">2019</option>
+                                                        <option value="7">2018</option>
+                                                        <option value="8">2017</option>
+                                                        <option value="9">2016</option>
+                                                        <option value="10">2015</option>
+                                                        <option value="11">2014</option>
+                                                        <option value="1">2013</option>
+                                                    </select>
+                                                </div>
+
+                                        </div>
+                                        <div class="form-group">
+
+                                                <div id="studentMediumTxt" class="form-group">
+                                                    <label  >Term Test No:</label>
+                                                    <select class="form-control">
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+
+                                                    </select>
+
+                                            </div>
+
+                                    </div>
+
+
+                                        <div id="studentMediumTxt" class="form-group">
                                                     <label  >Select Grade:</label>
                                                     <select class="form-control">
                                                         <option value="6">Grade 6</option>
@@ -245,15 +276,29 @@
                                                     </select>
                                                 </div>
                                             </div>
-                                        </div>
-
-
-                                    <div class="input-group">
-
                                     </div>
                                 </form>
-                                <!-- /.search form -->
-                            </div>
+
+                                    <button type="button" class="btn btn-primary">Load student</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                <!-- /.search form -->
+                                </div>
+
+
                         </div><!-- /.box-header -->
                         <div class="box-body">
                             <div class="table-responsive">
