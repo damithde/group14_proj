@@ -22,8 +22,8 @@
                 </a>
                 <ul class="treeview-menu">
                     <li class="active"><a href="../studentmanage/registerstudent.php"><i class="fa fa-folder-open-o"></i> Register Student</a></li>
-                    <!-- <li><a href="../studentmanage/viewstudent.php"><i class="fa fa-folder-open-o"></i>Student Details</a></li> -->
-                    <!-- <li><a href="../studentmanage/editstudent.php"><i class="fa fa-folder-open-o"></i> Edit Student</a></li> -->
+                    <li><a href="../studentmanage/viewstudent.php"><i class="fa fa-folder-open-o"></i>Student Details</a></li>
+                    <li><a href="../studentmanage/editstudent.php"><i class="fa fa-folder-open-o"></i> Edit Student</a></li>
                     <li><a href="../studentmanage/searchstudent.php"><i class="fa fa-folder-open-o"></i> Search Student</a></li>
                     <li><a href="../studentmanage/promotestudent.php"><i class="fa fa-folder-open-o"></i> Promote Student</a></li>
                 </ul>
@@ -34,8 +34,8 @@
                 </a>
                 <ul class="treeview-menu">
                     <li class="active"><a href="../teachermanage/registerteacher.php"><i class="fa fa-folder-open-o"></i> Register Teacher</a></li>
-                    <!-- <li><a href="../teachermanage/viewteacher.php"><i class="fa fa-folder-open-o"></i> View Teacher</a></li> -->
-                    <!-- <li><a href="../teachermanage/editteacher.php"><i class="fa fa-folder-open-o"></i> Edit Teacher</a></li> -->
+                    <li><a href="../teachermanage/viewteacher.php"><i class="fa fa-folder-open-o"></i> View Teacher</a></li>
+                    <li><a href="../teachermanage/editteacher.php"><i class="fa fa-folder-open-o"></i> Edit Teacher</a></li>
                     <li><a href="../teachermanage/searchteacher.php"><i class="fa fa-folder-open-o"></i> Search Teacher</a></li>
                 </ul>
             </li>
