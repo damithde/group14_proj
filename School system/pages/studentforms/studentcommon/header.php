@@ -3,7 +3,7 @@
         <script src="../../../firebase models/login.js"></script>
     <header class="main-header">
         <!-- Logo -->
-        <a href="../../../index.php" class="logo"><b>Admin</b></a>
+        <a href="../../../index.php" class="logo"><b>Student</b></a>
         <!-- Header Navbar: style can be found in header.less -->
         <nav class="navbar navbar-static-top" role="navigation">
             <!-- Sidebar toggle button-->

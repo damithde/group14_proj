@@ -10,7 +10,7 @@
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-database.js"></script>
 <script src="../../../firebase models/db.js"></script>
 <script src="../../../firebase models/student.js"></script>
-
+<script src="../../../firebase models/admin.js"></script>
 <section class="content-wrapper">
     <section class="content-header">
     <div class="row">
@@ -31,7 +31,11 @@
                                         <div class="input-group">
                                             <input type="text" id = "searchTxt" name="q" class="form-control" placeholder="Search..."/>
                                             <span class="input-group-btn">
-                                        <button type='submit' name='search' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
+<<<<<<< HEAD
+                                        <button type='button' name='search' id='search-btn' onclick="getstudentsfromreg(document.getElementById('searchTxt').value)" class="btn btn-flat"><i class="fa fa-search"></i></button>
+=======
+                                        <button type='button' name='search' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
+>>>>>>> aa40b974fa43f447acb69f1a11c2ee1893bb0066
                                     </span>
                                         </div>
                                     </form>
@@ -132,6 +136,7 @@
                             <label >Select Photo</label>
                             <input type="file" id="myfile" >
                             <input type="submit" value="upload" id="upload" >
+                            <input type="button" value="upload" id="upload" >
                             </form>
                         </div>
                     </div><!-- /.box-body -->
@@ -196,6 +201,7 @@
                     <div class="box-footer">
                         <div class="col-md-8"></div>
                         <button type="submit" class="btn btn-primary" style="width:150px">Update</button>
+                        <button type="button" class="btn btn-primary" style="width:150px">Update</button>
                     </div>
                 </form>
             </div><!-- /.box -->
@@ -205,159 +211,47 @@
     </div>
     </section>
 </section>
+<input type="hidden" value="null" id="schoolid">
 
 <script>
-    var searchTxt
-    var stdFName ="sss";
-    var stdLName
-    var stdGend
-    var stdbd 
-    var stdReli
-    var stdEmail
-    var stdAdNo
-    var stdClass
-    var stdGrade
-    var stdAddress
-    var par
-    var parName
-    var parOcupation
-    var parEmail
-    var parAddress
- 
+     getschool("schoolid");
+     document.getElementById("searchTxt").value = searchTxt;
 
-    document.getElementById("searchTxt").value = searchTxt;
-    document.getElementById("studentFNameTxt").value = stdFName;
-    document.getElementById("studentLNameTxt").value = stdLName;
-    // document.querySelector('input[name=gender]:checked').value = stdGend;
-    // document.querySelector('date').value = stdbd;
-    document.getElementById("studentReligionTxt").value = stdReli;
-    document.getElementById("studentEmailTxt").value = stdEmail;
-    document.getElementById("studentAdmissionNoTxt").value = stdAdNo;
-    document.getElementById("studentClassTxt").value = stdClass;
-    document.getElementById("studentGradeTxt").value = stdGrade;
-    document.getElementById("studentAddressTxt").value = stdAddress;
-    // document.querySelector('input[name=parent]:checked').value = par;
-    document.getElementById("parentNameTxt").value = parName;
-    document.getElementById("parentOcupationTxt").value = parOcupation;
-    document.getElementById("parentEmail").value = parEmail;
-    document.getElementById("parentAddressTxt").value = parAddress;
-
-
-</script>
-
-<script>
-    var studentIdLbl = document.getElementById("searchTxt").value;
-    var stdFName = document.getElementById("studentFNameTxt").value;
-    var stdLName = document.getElementById("studentLNameTxt").value;
-    var stdGend = document.querySelector('input[name=gender]:checked').value;
-    var stdbd = document.querySelector('date').value;
-    var stdReli = document.getElementById("studentReligionTxt").value;
-    var stdEmail = document.getElementById("studentEmailTxt").value;
-    var stdAdNo = document.getElementById("studentAdmissionNoTxt").value;
-    var stdClass = document.getElementById("studentClassTxt").value;
-    var stdGrade = document.getElementById("studentGradeTxt").value;
-    var stdAddress = document.getElementById("studentAddressTxt").value;
-    var par = document.querySelector('input[name=parent]:checked').value;
-    var parName = document.getElementById("parentNameTxt").value;
-    var parOcupation = document.getElementById("parentOcupationTxt").value;
-    var parEmail = document.getElementById("parentEmail").value;
-    var parAddress = document.getElementById("parentAddressTxt").value;
-    var parent={name:parName,parent:par,occupation:parOcupation,email:parEmail};
-    var student= [stdAdNo,stdFName,stdLName,contact,stdbd,stdAddress,stdReli,school,stdGrade,stdClass,stdEmail];
-    addstudent(student,parent);
-
-
-</script>
-<script>
-$(document).ready( function() {
-    	$(document).on('change', '.btn-file :file', function() {
-		var input = $(this),
-			label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
-		input.trigger('fileselect', [label]);
-		});
-
-		$('.btn-file :file').on('fileselect', function(event, label) {
-		    
-		    var input = $(this).parents('.input-group').find(':text'),
-		        log = label;
-		    
-		    if( input.length ) {
-		        input.val(log);
-		    } else {
-		        if( log ) alert(log);
-		    }
-	    
-		});
-		function readURL(input) {
-		    if (input.files && input.files[0]) {
-		        var reader = new FileReader();
-		        
-		        reader.onload = function (e) {
-		            $('#img-upload').attr('src', e.target.result);
-		        }
-		        
-		        reader.readAsDataURL(input.files[0]);
-		    }
-		}
-
-		$("#imgInp").change(function(){
-		    readURL(this);
-		}); 	
-	});
-</script>
-
-<?php include_once('../admincommon/footer.php'); ?>
-
-<?php
-
-$target_dir = "../../dist/img/";
-$target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
-$uploadOk = 1;
-$imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
-
-// Check if file already exists
-if (file_exists($target_file)) {
-    echo "Sorry, file already exists.";
-    $uploadOk = 0;
-}
-    
-// if everything is ok, try to upload file
-else {
-    if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
-        echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
-    } 
-    else {
-        $message = base64_encode(urlencode("Sorry, there was an error uploading your file."));
-        // header('Location:vendor-product-add.php?msg=' . $message);
-        exit();
-    }
+function getstudentsfromreg(reg){
+    var school=document.getElementById("schoolid").value;
+    var output;
+    db.collection("students").where("school","==",school).where("regno","==",reg)
+    .get()
+    .then(function(querySnapshot) {
+        querySnapshot.forEach(function(doc) {
+            output=doc.data();
+            
+            document.getElementById("studentFNameTxt").value = ;
+            document.getElementById("studentLNameTxt").value = ;
+            document.getElementById('input[name=gender]:checked').value = ;
+            document.getElementById('date').value = ;
+            document.getElementById("studentReligionTxt").value = stdReli;
+            document.getElementById("studentEmailTxt").value = stdEmail;
+            document.getElementById("studentAdmissionNoTxt").value = stdAdNo;
+            document.getElementById("studentClassTxt").value = stdClass;
+            document.getElementById("studentGradeTxt").value = stdGrade;
+            document.getElementById("studentAddressTxt").value = stdAddress;
+            // document.querySelector('input[name=parent]:checked').value = par;
+            document.getElementById("parentNameTxt").value = parName;
+            document.getElementById("parentOcupationTxt").value = parOcupation;
+            document.getElementById("parentEmail").value = parEmail;
+            document.getElementById("parentAddressTxt").value = parAddress;
+           //console.log(doc.id, " => ", doc.data());
+        });
+    })
+    .catch(function(error) {
+        console.log("Error getting documents: ", error);
+    });
 }
 
-//Uploading to Database
-if (isset($_POST['submit'])){
-    
-$imageName = $_FILES["fileToUpload"]["name"];
-$imageData = $_FILES["fileToUpload"]["tmp_name"];
-$imageType = $_FILES["fileToUpload"]["type"];
-	
-    $productname = $_POST['name'];
-    $volume = $_POST['volume'];  
-    $price = $_POST['price'];
-    checkSession();
-    $userID = $_SESSION["userID"];
-    
-    $insertProduct = "INSERT INTO products (vendorID, name, volume, price, imageName) VALUES ('$userID','$productname', '$volume', '$price', '$imageName')";
-    
-    if (mysqli_query($connection,$insertProduct) === TRUE) {
-                $message = base64_encode(urlencode("Product Added."));
-				header('Location:vendor-product-add.php?msg=' . $message);
-				exit();
-        } 
-    else {
-        $message = base64_encode(urlencode("SQL Error while Registering"));
-        header('Location:vendor-product-add.php?msg=' . $message);
-        exit();
-        }
 
- }
+
+</script>
+
+
 ?>
