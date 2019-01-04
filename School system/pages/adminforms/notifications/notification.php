@@ -49,7 +49,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Title:</label>
-                                <input type="email" class="form-control" id="studentNameTxt" placeholder="Enter Studenr Name">
+                                <input type="email" class="form-control" id="messageTitleTxt" placeholder="Enter Title of Notification">
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Content:</label>
@@ -79,9 +79,9 @@
 </section>
 
 <script>
-    var stdFName = document.getElementById("studentIdText").value;
-    var stdLName = document.getElementById("studentNameTxt").value;
-    var stdLName = document.getElementById("messageTxt").value;
+    var publisherNameText = document.getElementById("publisherNameText").value;
+    var messageTitleTxt = document.getElementById("messageTitleTxt").value;
+    var messageTxt = document.getElementById("messageTxt").value;
 </script>
 
 <?php include_once('../admincommon/footer.php'); ?>
