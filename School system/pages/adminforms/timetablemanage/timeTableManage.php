@@ -32,13 +32,13 @@
                        
                         <div id="classDev" class="login-box-body" >
                             <form class="">
-                                <label>Class No</label><input name="classNo"><label>Class Teacher</label><input name="classTeacher">
+                                <label>Class No</label><input id="classNo"><label>Class Teacher</label><input id="classTeacher">
                             </form>
                        
                        </div>
                         <div id="teacherDev" class="login-box-body" style="display:none">
                             <form class="">
-                                <label>Teacher Reg No</label><input name="teacherRegNo"><label>Teacher Name</label><input name="teacherName">
+                                <label>Teacher Reg No</label><input id="teacherRegNo"><label>Teacher Name</label><input id="teacherName">
                             </form>
                             
                        </div>
@@ -196,7 +196,47 @@
 </script>
     
 <script>
-    
+    function datasubmission(){
+        var school=document.getElementById("stuschool").value;    
+        var 
+        
+        var stdFName = document.getElementById("studentFNameTxt").value;
+        var stdMName = document.getElementById("studentMNameTxt").value;
+        var stdLName = document.getElementById("studentLNameTxt").value;
+        if(document.getElementById('gm').checked){
+            var stdGend = document.getElementById('gm').value;
+        }else{
+            var stdGend = document.getElementById('gf').value;
+        }
+        //var stdGend = document.querySelector('input[name=gender]:checked').value;
+        var stdbd = document.getElementById('bdate').value;
+        var stdReli = document.getElementById("studentReligionTxt").value;
+        var profileimg=document.getElementById("propic").src;
+        var stdEmail = document.getElementById("studentEmailTxt").value;
+        var stdAdNo = document.getElementById("studentAdmissionNoTxt").value;
+        var stdClass = document.getElementById("studentClassTxt").value;
+        var stdGrade = document.getElementById("studentGradeTxt").value;
+        var contact=document.getElementById("contact").value;
+        var stdAddress = document.getElementById("studentAddressTxt").value;
+        var stdmedium = document.getElementById("studentMediumTxt").value;
+        //var par = document.querySelector('input[name=parent]:checked').value;
+        if(document.getElementById('p1').checked){
+            var par = document.getElementById('p1').value;
+        }else if(document.getElementById('p2').checked){
+            var par = document.getElementById('p2').value;
+        }else{
+            var par = document.getElementById('p3').value;
+        }
+        var parName = document.getElementById("parentNameTxt").value;
+        var parOcupation = document.getElementById("parentOcupationTxt").value;
+        var parEmail = document.getElementById("parentEmail").value;
+        var parAddress = document.getElementById("parentAddressTxt").value;
+        var parContact = document.getElementById("gaurdiancontact").value;
+        var studentId =school+stdAdNo;
+        var parent={name:parName,parent:par,occupation:parOcupation,email:parEmail,Econtact:parContact};
+        var student= [stdAdNo,stdFName,stdLName,contact,stdbd,stdAddress,stdReli,school,stdGrade,stdClass,stdEmail,profileimg,studentId,stdFName,stdmedium];
+        addstudent(student,parent);
+    }
     </script>
     
     </body>
