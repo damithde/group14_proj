@@ -98,7 +98,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label id="teacherIDLbl">-</label>
@@ -135,14 +135,16 @@
 
                                 </div>
 
+
                             </div>
                         </div><!-- /.box-body -->
-                        <div class="box-footer">
-                        </div>
+
                     </div>
                             </div>
                         </div>
                     </div>
+
+
 
 
                                 <div class="col-md-12">
@@ -191,6 +193,23 @@
                                                         </div>
                                                         <input type="date" class="form-control pull-right" id="date"/>
                                                     </div><!-- /.input group -->
+                                                </div>
+                                                <div class="form-group">
+
+                                                    <div id="studentMediumTxt" class="form-group">
+                                                        <label  >Leave Type:</label>
+                                                        <select class="form-control">
+                                                            <option value="1">Sick</option>
+                                                            <option value="2">Casual</option>
+                                                            <option value="3">Other</option>
+
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail1">Reasons For Leave:</label>
+                                                    <input type="text" class="form-control" id="parentNameTxt" placeholder="Enter Reason">
                                                 </div>
                                                 <div class="box-footer">
                                                     <button type="submit" class="btn btn-primary">Send</button>
