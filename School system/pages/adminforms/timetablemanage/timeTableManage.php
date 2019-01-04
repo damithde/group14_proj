@@ -123,21 +123,21 @@
                         </tr>
                         <tr>
                             <td><input id="timeView16" class="tableTxtEdit" value="11.30-12.10"></td>
-                            <td><input id="subjectView16" class="tableTxtEdit" value="" placeholder="subject"></td>
-                            <td><input id="subjectView26" class="tableTxtEdit" value="" placeholder="subject"></td>
-                            <td><input id="subjectView36" class="tableTxtEdit" value="" placeholder="subject"></td>
-                            <td><input id="subjectView46" class="tableTxtEdit" value="" placeholder="subject"></td>
-                            <td><input id="subjectView56" class="tableTxtEdit" value="" placeholder="subject"></td>
+                            <td><input id="subjectView16" class="tableTxtEdit" value="" placeholder="subject"><br><input id="teacherView16" class="tableTxtEdit" value="" placeholder="teacher"></td>
+                            <td><input id="subjectView26" class="tableTxtEdit" value="" placeholder="subject"><br><input id="teacherView26" class="tableTxtEdit" value="" placeholder="teacher"></td>
+                            <td><input id="subjectView36" class="tableTxtEdit" value="" placeholder="subject"><br><input id="teacherView36" class="tableTxtEdit" value="" placeholder="teacher"></td>
+                            <td><input id="subjectView46" class="tableTxtEdit" value="" placeholder="subject"><br><input id="teacherView46" class="tableTxtEdit" value="" placeholder="teacher"></td>
+                            <td><input id="subjectView56" class="tableTxtEdit" value="" placeholder="subject"><br><input id="teacherView56" class="tableTxtEdit" value="" placeholder="teacher"></td>
                            
                         </tr>
                             
                         <tr>
                             <td><input id="timeView17" class="tableTxtEdit" value="12.10-12.50"></td>
-                            <td><input id="subjectView17" class="tableTxtEdit" value="" placeholder="subject"></td>
-                            <td><input id="subjectView27" class="tableTxtEdit" value="" placeholder="subject"></td>
-                            <td><input id="subjectView37" class="tableTxtEdit" value="" placeholder="subject"></td>
-                            <td><input id="subjectView47" class="tableTxtEdit" value="" placeholder="subject"></td>
-                            <td><input id="subjectView57" class="tableTxtEdit" value="" placeholder="subject"></td>
+                            <td><input id="subjectView17" class="tableTxtEdit" value="" placeholder="subject"><br><input id="teacherView17" class="tableTxtEdit" value="" placeholder="teacher"></td>
+                            <td><input id="subjectView27" class="tableTxtEdit" value="" placeholder="subject"><br><input id="teacherView27" class="tableTxtEdit" value="" placeholder="teacher"></td>
+                            <td><input id="subjectView37" class="tableTxtEdit" value="" placeholder="subject"><br><input id="teacherView37" class="tableTxtEdit" value="" placeholder="teacher"></td>
+                            <td><input id="subjectView47" class="tableTxtEdit" value="" placeholder="subject"><br><input id="teacherView47" class="tableTxtEdit" value="" placeholder="teacher"></td>
+                            <td><input id="subjectView57" class="tableTxtEdit" value="" placeholder="subject"><br><input id="teacherView57" class="tableTxtEdit" value="" placeholder="teacher"></td>
                            
                         </tr>
                         <tr>
