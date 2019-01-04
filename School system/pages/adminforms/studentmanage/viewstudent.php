@@ -137,7 +137,9 @@
                                         <label id="studentPhoneLbl">-</label>
                                     </div>
                                     <div class="form-group">
-                                    <div> </div>
+                                        <div> 
+                                            
+                                        </div>
                                         <a href="../studentmanage/editstudent.php" class="btn btn-sm btn-default btn-flat pull-right">Edit details</a>
                                     </div><!-- /.box-footer -->
                                 </div>

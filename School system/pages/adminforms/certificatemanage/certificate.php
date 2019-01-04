@@ -44,13 +44,13 @@
                             </div>
                             <div class="box-footer">
                                 <input type="file" id="exampleInputFile" class="btn btn-primary">
-                                <!-- <button type="submit" class="btn btn-primary">Add certificate</button> -->
-                                <!-- <button type="submit" class="btn btn-primary">Send</button> -->
+                                <!-- <button type="button" class="btn btn-primary">Add certificate</button> -->
+                                <!-- <button type="button" class="btn btn-primary">Send</button> -->
                             </div>
                             <div class="box-footer">
                                 <!-- <input type="file" id="exampleInputFile" class="btn btn-primary"> -->
-                                <!-- <button type="submit" class="btn btn-primary">Add certificate</button> -->
-                                <button type="submit" class="btn btn-primary">Send</button>
+                                <!-- <button type="button" class="btn btn-primary">Add certificate</button> -->
+                                <button type="button" class="btn btn-primary">Send</button>
                             </div>
 
                     </form>
