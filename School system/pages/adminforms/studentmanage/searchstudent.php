@@ -3,8 +3,14 @@
 <?php include_once('../admincommon/header.php'); ?>
 <?php include_once('../admincommon/sidebar.php'); ?>
 <?php include_once('../admincommon/script.php'); ?>
-
-
+<html>
+    <head>
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-storage.js"></script>
+    </head>
 <section class="content-wrapper">
     <section class="content-header">
 <!--        main row-->
@@ -17,6 +23,8 @@
                         <h3 class="box-title">Search Student</h3>
                     </div><!-- /.box-header -->
                     <!-- form start -->
+                    
+
                     <div class="col-md-4">
 
                     </div>
@@ -29,6 +37,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                             <div class="col-md-8">
+                                                <input type="radio" name="catagory" value="1">Scearch by class
                                                 <div id="studentMediumTxt" class="form-group">
                                                     <label  >Select Year:</label>
                                                     <select class="form-control">
@@ -179,11 +188,12 @@
         </div>
     </section>
 </section>
-
+</html>
 <script>
     var stdFName = document.getElementById("studentIdText").value;
     var stdLName = document.getElementById("studentNameTxt").value;
     var stdLName = document.getElementById("messageTxt").value;
 </script>
+
 
 <?php include_once('../admincommon/footer.php'); ?>

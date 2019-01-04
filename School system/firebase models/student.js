@@ -85,9 +85,9 @@ function updatestudent(regno,student,parent){
 
 }
 
-function promotestudent(idlist,tograde,toclass,year,subjects){
+function promotestudent(idlist,tograde,toclass,year,subjects,school){
     idlist.forEach(function(stid){
-        db.collection("students").where("regno","==",stid)
+        db.collection("students").where("regno","==",stid).where("regno","==",school)
         .get()
         .then(function(querySnapshot) {
             querySnapshot.forEach(function(doc) {
@@ -114,12 +114,11 @@ function promotestudent(idlist,tograde,toclass,year,subjects){
                     
                 });
 
+            }).catch(function(error) {
+                console.error("Error removing document: ", error);
             });
         })
-        .catch(function(error) {
-            console.log("Error getting documents: ", error);
-        });    
-
+        
 }
 
 
