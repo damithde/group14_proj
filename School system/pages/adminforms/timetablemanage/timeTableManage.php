@@ -198,11 +198,16 @@
 <script>
     function datasubmission(){
         var school=document.getElementById("stuschool").value;    
-        var 
+        var classNo=document.getElementById("classNo").value;
+		var classTeacher=document.getElementById("classTeacher").value;
+		var teacherRegNo=document.getElementById("teacherRegNo").value;
+		var teacherName=document.getElementById("teacherName").value;
         
         var stdFName = document.getElementById("studentFNameTxt").value;
-        var stdMName = document.getElementById("studentMNameTxt").value;
-        var stdLName = document.getElementById("studentLNameTxt").value;
+        
+		
+		
+		
         if(document.getElementById('gm').checked){
             var stdGend = document.getElementById('gm').value;
         }else{
