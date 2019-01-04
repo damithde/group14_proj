@@ -53,26 +53,9 @@
 <script src="../../../firebase models/db.js"></script>
 <script src="../../../firebase models/student.js"></script>
 <script>
-    var stdFName = document.getElementById("studentFNameTxt").value;
-    var stdLName = document.getElementById("studentLNameTxt").value;
-    var stdGend = document.querySelector('input[name=gender]:checked').value;
-    var stdbd = document.querySelector('date').value;
-    var stdReli = document.getElementById("studentReligionTxt").value;
-    var stdEmail = document.getElementById("studentEmailTxt").value;
-    var stdAdNo = document.getElementById("studentAdmissionNoTxt").value;
-    var stdClass = document.getElementById("studentClassTxt").value;
-    var stdGrade = document.getElementById("studentGradeTxt").value;
-    var stdAddress = document.getElementById("studentAddressTxt").value;
+    var stdFName = document.getElementById("schoolNameTxt").value;
+    var stdLName = document.getElementById("schoolLocationTxt").value;
     
-    var par = document.querySelector('input[name=parent]:checked').value;
-    var parName = document.getElementById("parentNameTxt").value;
-    var parOcupation = document.getElementById("parentOcupationTxt").value;
-    var parEmail = document.getElementById("parentEmail").value;
-    var parAddress = document.getElementById("parentAddressTxt").value;
-    var parent={name:parName,parent:par,occupation:parOcupation,email:parEmail};
-    var student= [stdAdNo,stdFName,stdLName,contact,stdbd,stdAddress,stdReli,school,stdGrade,stdClass,stdEmail];
-    addstudent(student,parent);
-
 
 </script>
 
