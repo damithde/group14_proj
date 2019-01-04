@@ -23,7 +23,7 @@
                     <div class="box-body">
                         <div class="form-group">
                             <label  >Registration Number:</label>
-                            <input type="text" class="form-control" id="studentAdmissionNoTxt" placeholder="Enter Admission Number">
+                            <input type="text" class="form-control" id="studentRegNo" placeholder="Enter Admission Number">
                         </div>
                         <div class="form-group">
                             <label  >Name:</label>
@@ -31,21 +31,27 @@
 
                         </div>
                         <div class="form-group">
+                            <label  >School:</label>
+                            <input type="text" class="form-control" id="stuSchool" placeholder="Enter   Name">
+
+                        </div>
+                        <div class="form-group">
                             <label  >Class:</label>
-                            <input type="text" class="form-control" id="studentClassTxt" placeholder="Enter Class">
+                            <input type="text" class="form-control" id="stuClass" placeholder="Enter Class">
+                        </div>
+                        <div class="form-group">
+                            <label  >Grade:</label>
+                            <input type="text" class="form-control" id="stuGrade" placeholder="Enter Class">
                         </div>
                         <div class="form-group">
                             <label  >Term Test:</label>
-                            <input type="text" class="form-control" id="studentTestNoTxt" placeholder="Enter Test No">
+                            <input type="text" class="form-control" id="stuTestNo" placeholder="Enter Test No">
                         </div>
                         <div class="form-group">
                             <label  >Year:</label>
-                            <input type="text" class="form-control" id="studentYearTxt" placeholder="Enter Year">
+                            <input type="text" class="form-control" id="stuYear" placeholder="Enter Year">
                         </div>
-                        <div class="form-group">
-                            <label >Position:</label>
-                            <input type="text" class="form-control" id="studentPositionTxt" placeholder="Enter Position">
-                        </div>
+
 
                         <div class="form-group">
                             <label  >Subject1:</label>
@@ -83,6 +89,15 @@
                         <div class="form-group">
                             <label  >Subject9:</label>
                             <input type="text" class="form-control" id="studentSubject9Txt" placeholder="Enter Sub9">
+                        </div>
+                        <div class="form-group">
+                            <label >Total Marks:</label>
+                            <input type="text" class="form-control" id="studentTotalTxt" placeholder="Enter Position">
+                        </div>
+
+                        <div class="form-group">
+                            <label >Position:</label>
+                            <input type="text" class="form-control" id="studentPositionTxt" placeholder="Enter Position">
                         </div>
 
                         <button type="submit" class="btn btn-primary">Send</button>
@@ -275,7 +290,7 @@
 
 
                         <div class="box-footer">
-                            <button type="submit" class="btn btn-primary">Send</button>
+                            <button type="button" class="btn btn-primary" onclick="datasubmission()" >Submit</button>
                         </div>
                         </form>
                     </div><!-- /.box -->
@@ -294,27 +309,34 @@
 
 <script src="../../../firebase models/db.js"></script>
 <script src="../../../firebase models/reports.js"></script>
+    <script src="../../../firebase models/admin.js"></script>
+    <script src="../../../firebase models/login.js"></script>
 <script>
-    getschool(reposchool);
-    var stdAdmissionNo = document.getElementById("studentAdmissionNoTxt").value;
-    var stdName = document.getElementById("studentLNameTxt").value;
-    var stdClass = document.getElementById("studentClassTxt").value;
-    var stdTestNo = document.getElementById("studentTestNoTxt").value;
-    var stdAdNo = document.getElementById("studentAdmissionNoTxt").value;
-    var stdYear = document.getElementById("studentYearTxt").value;
-    var stdPosition = document.getElementById("studentPositionTxt").value;
-    var stdSub1 = document.getElementById("studentSubject1Txt").value;
-    var stdSub2 = document.getElementById("studentSubject2Txt").value;
-    var stdSub3 = document.getElementById("studentSubject3Txt").value;
-    var stdSub4 = document.getElementById("studentSubject4Txt").value;
-    var stdSub5 = document.getElementById("studentSubject5Txt").value;
-    var stdSub6 = document.getElementById("studentSubject6Txt").value;
-    var stdSub7 = document.getElementById("studentSubject7Txt").value;
-    var stdSub8 = document.getElementById("studentSubject8Txt").value;
-    var stdSub9 = document.getElementById("studentSubject9Txt").value;
+    getschool("stuSchool");
+    getreports("studentRegNo","stuClass","stuGrade","stuYear","stuTestNo");
+    function datasubmission() {
+        var stdRegNo = document.getElementById("studentRegNo").value;
+        var stdName = document.getElementById("studentLNameTxt").value;
+        var stdSchool = document.getElementById("stuSchool").value;
+        var stdClass = document.getElementById("stuClass").value;
+        var stdGrade = document.getElementById("stuGrade").value;
+        var stdYear = document.getElementById("stuYear").value;
+        var stdTestNo = document.getElementById("stuTestNo").value;
+        var stdSub1 = document.getElementById("studentSubject1Txt").value;
+        var stdSub2 = document.getElementById("studentSubject2Txt").value;
+        var stdSub3 = document.getElementById("studentSubject3Txt").value;
+        var stdSub4 = document.getElementById("studentSubject4Txt").value;
+        var stdSub5 = document.getElementById("studentSubject5Txt").value;
+        var stdSub6 = document.getElementById("studentSubject6Txt").value;
+        var stdSub7 = document.getElementById("studentSubject7Txt").value;
+        var stdSub8 = document.getElementById("studentSubject8Txt").value;
+        var stdSub9 = document.getElementById("studentSubject9Txt").value;
+        var stdTotal = document.getElementById("studentTotalTxt").value;
+        var stdPosition = document.getElementById("studentPositionTxt").value;
 
-    var report= [stdAdmissionNo,stdName,stdClass,stdTestNo,stdAdNo,stdYear,stdPosition,stdSub1,stdSub2,stdSub3,stdSub4,stdSub5,stdSub6,stdSub7,stdSub8,stdSub9];
-    addreport(report);
+        var student = [stdRegNo, stdName, stdSchool, stdClass, stdGrade, stdTestNo, stdAdNo, stdYear, stdSub1, stdSub2, stdSub3, stdSub4, stdSub5, stdSub6, stdSub7, stdSub8, stdSub9, stdTotal, stdPosition];
+        addreport(student);
+    }
 
     <script src="../../../firebase models/db.js"></script>
     <script src="../../../firebase models/results.js"></script>
