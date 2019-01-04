@@ -44,13 +44,10 @@
                                                 <div  class="form-group">
                                                     <label  >Select Year:</label>
                                                     <select class="form-control" id="studentyear">
-                                                        <option value="6">2019</option>
-                                                        <option value="7">2018</option>
-                                                        <option value="8">2017</option>
-                                                        <option value="9">2016</option>
-                                                        <option value="10">2015</option>
-                                                        <option value="11">2014</option>
-                                                        <option value="1">2013</option>
+                                                        <option value="2019">2019</option>
+                                                        <option value="2018">2018</option>
+                                                        <option value="2017">2017</option>
+                            
                                                     </select>
                                                 </div>
                                             </div>
@@ -60,7 +57,7 @@
                                             <div class="col-md-8">
                                                 <div  class="form-group">
                                                     <label  >Select Grade:</label>
-                                                    <select class="form-control" id="studentgrade" onchange="">
+                                                    <select class="form-control" id="studentgrade" >
                                                         <option value="6">Grade 6</option>
                                                         <option value="7">Grade 7</option>
                                                         <option value="8">Grade 8</option>
@@ -77,8 +74,7 @@
                                             <div class="col-md-8">
                                                 <div  class="form-group">
                                                     <label  >Select Class:</label>
-                                                    <select class="form-control" id="studentclass">
-                                                        <option value="sinhala">All</option>
+                                                    <select class="form-control" id="studentclass" onchange="getstudents()">
                                                         <option value="A">A</option>
                                                         <option value="B">B</option>
                                                         <option value="C">C</option>
@@ -194,19 +190,24 @@
 </html>
 <script>
     getschool("schoolid");
+
+    
+
+    function getstudents(){
     var year = document.getElementById("studentyear").value;
     var grade = document.getElementById("studentgrade").value;
     var cls = grade+document.getElementById("studentclass").value;
-
-    function getstudentsfromreg(reg){
+    var school=document.getElementById("schoolid").value;
     var output;
+    console.log(cls,school);
     db.collection("students").where("schoolid","==",school).where("grade","==",grade).where("class","==",cls)
     .get()
     .then(function(querySnapshot) {
         querySnapshot.forEach(function(doc) {
             output=doc.data();
             var tableref=document.getElementById('s');
-            var a = document.createElement('a');
+            var a = document.createElement('input');
+            a.type="button"
             a.href = '../studentmanage/viewstudent.php';    
             var row=tableref.insertRow(-1);
             row.insertCell(0).appendChild(a);

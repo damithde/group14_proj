@@ -220,21 +220,21 @@ function getstudentsfromreg(reg){
         querySnapshot.forEach(function(doc) {
             output=doc.data();
             
-            document.getElementById("studentFNameTxt").value = ;
-            document.getElementById("studentLNameTxt").value = ;
-            document.getElementById('input[name=gender]:checked').value = ;
-            document.getElementById('date').value = ;
-            document.getElementById("studentReligionTxt").value = stdReli;
-            document.getElementById("studentEmailTxt").value = stdEmail;
-            document.getElementById("studentAdmissionNoTxt").value = stdAdNo;
-            document.getElementById("studentClassTxt").value = stdClass;
-            document.getElementById("studentGradeTxt").value = stdGrade;
-            document.getElementById("studentAddressTxt").value = stdAddress;
+            document.getElementById("studentFNameTxt").value = output.Fname ;
+            document.getElementById("studentLNameTxt").value = output.Lname ;
+            //document.getElementById('input[name=gender]:checked').value = ;
+            document.getElementById('date').value = output.dob;
+            document.getElementById("studentReligionTxt").value = output.religion;
+            document.getElementById("studentEmailTxt").value = output.email;
+            document.getElementById("studentAdmissionNoTxt").value = output.regno;
+            document.getElementById("studentClassTxt").value = output.class;
+            document.getElementById("studentGradeTxt").value = output.grade;
+            document.getElementById("studentAddressTxt").value = output.address;
             // document.querySelector('input[name=parent]:checked').value = par;
-            document.getElementById("parentNameTxt").value = parName;
-            document.getElementById("parentOcupationTxt").value = parOcupation;
-            document.getElementById("parentEmail").value = parEmail;
-            document.getElementById("parentAddressTxt").value = parAddress;
+            document.getElementById("parentNameTxt").value = output.parent.name;
+            document.getElementById("parentOcupationTxt").value =  output.parent.occupation;
+            document.getElementById("parentEmail").value =  output.parent.email;
+            document.getElementById("parentAddressTxt").value =  output.parent.name;
            //console.log(doc.id, " => ", doc.data());
         });
     })
