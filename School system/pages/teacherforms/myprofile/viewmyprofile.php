@@ -76,7 +76,7 @@
                                             <div class="form-group">
                                                 <label class="text-muted" for="exampleInputEmail1">Last name:</label>
                                             </div>
-                                            
+
                                                 <div class="form-group">
                                                     <label class="text-muted" for="exampleInputEmail1">Gender:</label>
                                                 </div>

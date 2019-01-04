@@ -11,6 +11,7 @@
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-storage.js"></script>   
 <script src="../../../firebase models/db.js"></script>
 <script src="../../../firebase models/admin.js"></script>
+<script src="../../../firebase models/student.js"></script>
 </head>
 
 <body>
@@ -58,6 +59,13 @@
          
                                                     </select>
                                             </div>
+                                            <div class="form-group" >
+                                                    <label>Select Current year </label>
+                                                    <select class="form-control" id = "year" style="margin-left: 15px ; width: 100px">
+                                                            <option value = "2018">2018</option>
+                                                            
+                                                    </select>
+                                            </div>
                                         </div>
                                         <div class="row"></div>
                                         <button type="button" onclick="promote()" class="btn btn-block btn-primary btn-lg" style="width:300px; margin-left: 200px">Promote</button>
@@ -65,7 +73,9 @@
                                 </div>
                                 <div class="col-md-6" id="subjectselection">
                                     <label><h4 class="box-title">Subject Selection</h6></label><br>
+                                        <table id="s">
 
+                                        </table>
                                 </div>
                                 
                             </div>
@@ -121,20 +131,27 @@
                                 
                         })
                         console.log(doc.id, " => ", classes);
-                        if((grade==10) || (grade==12)){
+                        if((grade==10) || (grade==12) ||(grade==11) || (grade==13)){
                             document.getElementById("subjectselection").style.display = 'block';
+                            var i=0;
                             var subs=doc.data().subjects;
                             subs.forEach(function(sub){
+                                var tableref=document.getElementById('s');
                                 var newCheckbox = document.createElement("input");
                                 newCheckbox.type = "checkbox";
+                                newCheckbox.name = "subject"+i;
                                 newCheckbox.value = sub;
-                                document.getElementById("subjectselection").appendChild(newCheckbox);
-                                var label = document.createElement('label');
-                                label.htmlFor = sub;
-                                label.appendChild(document.createTextNode(sub));
+                                //document.getElementById("subjectselection").appendChild(newCheckbox);
+                                var row=tableref.insertRow(-1);
+                                row.insertCell(0).appendChild(newCheckbox);
+                                //var label = document.createElement('label');
+                               // label.htmlFor = sub;
+                               // label.appendChild(document.createTextNode(sub));
+                                row.insertCell(1).innerHTML=sub ;
+                                i++;
 
-                                document.getElementById("subjectselection").appendChild(label);
-                                document.getElementById("subjectselection").appendChild(document.createElement("br"));
+                               // document.getElementById("subjectselection").appendChild(label);
+                                //document.getElementById("subjectselection").appendChild(document.createElement("br"));
 
                              })
                         }
@@ -156,14 +173,28 @@
     }
 
     function promote(){
-
-    var tograde=document.getElementById("idgrade").value;
-    var toclass=document.getElementById("toclass").value;
-    var idlist=(document.getElementById("studentidTxt").value).split(',');
-    //
-    promotestudent(idlist,tograde,toclass,year,subjects);
+        var school=document.getElementById("schoolid").value;
+        var tograde=document.getElementById("idgrade").value;
+        var toclass=document.getElementById("classlist").value;
+        var idlist=(document.getElementById("studentidTxt").value).split(',');
+        var sublist=GetCellValues();
+        var year=document.getElementById("year").value;
+        promotestudent(idlist,tograde,toclass,year,sublist,school);
     }
 
+
+
+    function GetCellValues() {
+    var table = document.getElementById('s');
+    var sublist=[];
+    for (var r = 0, n = table.rows.length; r < n; r++) {    
+            var check=$('input:checkbox[name=subject'+r+']').is(':checked');
+            if(check==true)
+                sublist.push($('input:checkbox[name=subject'+r+']').val());
+        
+    }
+    return sublist;
+    }
 </script>
 
 <?php include_once('../admincommon/footer.php'); ?>
