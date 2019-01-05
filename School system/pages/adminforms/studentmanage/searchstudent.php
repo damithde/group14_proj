@@ -198,7 +198,7 @@
     var school=document.getElementById("schoolid").value;
     var output;
     console.log(cls,school);
-    db.collection("students").where("schoolid","==",school).where("grade","==",grade).where("class","==",cls)
+    db.collection("students").where("school","==",school).where("grade","==",grade).where("class","==",cls)
     .get()
     .then(function(querySnapshot) {
         querySnapshot.forEach(function(doc) {

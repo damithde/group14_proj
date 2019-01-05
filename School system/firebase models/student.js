@@ -50,7 +50,7 @@ function getstudentsfromname(fname,lname){
 
 function getstudentsfromreg(reg){
     var output;
-    db.collection("students").where("schoolid","==",school).where("regno","==",reg)
+    db.collection("students").where("school","==",school).where("regno","==",reg)
     .get()
     .then(function(querySnapshot) {
         querySnapshot.forEach(function(doc) {
@@ -66,18 +66,23 @@ function getstudentsfromreg(reg){
 
 function updatestudent(regno,student,parent){
     db.collection("students").doc(regno).update({
-        "regno": student[0],
-        "Fname": student[1],
-        "Lname": student[2],
-        "country": student[3],
-        "contact": student[4],
-        "dob": student[5],
-        "nationality": student[6],
-        "religion": student[7],
-        "school": student[8],
-        "grade": student[9],
-        "class": student[10],
-        "parent": parent
+        regno: student[0],
+        Fname: student[1],
+        Mname:student[13],
+        Lname: student[2],
+        contact: student[3],
+        dob: student[4],
+        nationality: "SriLankan",
+        address:student[5],
+        religion: student[6],
+        school: student[7],
+        grade: student[8],
+        class: student[9],
+        email: student[10],
+        profileimg:student[11],
+        stuid:student[12],
+        medium:student[14],
+        parent: parent
     })
     .then(function() {        
         console.log("Document successfully updated!");

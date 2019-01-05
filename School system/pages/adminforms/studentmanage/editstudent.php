@@ -8,6 +8,7 @@
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-storage.js"></script>
 <script src="../../../firebase models/db.js"></script>
 <script src="../../../firebase models/student.js"></script>
 <script src="../../../firebase models/admin.js"></script>
@@ -195,7 +196,7 @@
 
                     <div class="box-footer">
                         <div class="col-md-8"></div>
-                        <button type="button" class="btn btn-primary" style="width:150px">Update</button>
+                        <button type="button" class="btn btn-primary" onclick="update()" style="width:150px">Update</button>
                     </div>
                 </form>
             </div><!-- /.box -->
@@ -209,8 +210,6 @@
 
 <script>
      getschool("schoolid");
-     document.getElementById("searchTxt").value = searchTxt;
-
 function getstudentsfromreg(reg){
     var school=document.getElementById("schoolid").value;
     var output;
@@ -222,6 +221,7 @@ function getstudentsfromreg(reg){
             
             document.getElementById("studentFNameTxt").value = output.Fname ;
             document.getElementById("studentLNameTxt").value = output.Lname ;
+            document.getElementById("studentMNameTxt").value = output.Mname ;
             //document.getElementById('input[name=gender]:checked').value = ;
             document.getElementById('date').value = output.dob;
             document.getElementById("studentReligionTxt").value = output.religion;
@@ -241,6 +241,49 @@ function getstudentsfromreg(reg){
     .catch(function(error) {
         console.log("Error getting documents: ", error);
     });
+}
+
+
+function update() {
+    var school=document.getElementById("schoolid").value;    
+        //set auto generated student id
+       // document.getElementById("studentIdLbl").innerHTML = studentIdLbl;
+        var stdFName = document.getElementById("studentFNameTxt").value;
+        var stdMName = document.getElementById("studentMNameTxt").value;
+        var stdLName = document.getElementById("studentLNameTxt").value;
+        if(document.getElementById('gm').checked){
+            var stdGend = document.getElementById('gm').value;
+        }else{
+            var stdGend = document.getElementById('gf').value;
+        }
+        //var stdGend = document.querySelector('input[name=gender]:checked').value;
+        var stdbd = document.getElementById('bdate').value;
+        var stdReli = document.getElementById("studentReligionTxt").value;
+        var profileimg=document.getElementById("propic").src;
+        var stdEmail = document.getElementById("studentEmailTxt").value;
+        var stdAdNo = document.getElementById("studentAdmissionNoTxt").value;
+        var stdClass = document.getElementById("studentClassTxt").value;
+        var stdGrade = document.getElementById("studentGradeTxt").value;
+        var contact=document.getElementById("contact").value;
+        var stdAddress = document.getElementById("studentAddressTxt").value;
+        var stdmedium = document.getElementById("studentMediumTxt").value;
+        //var par = document.querySelector('input[name=parent]:checked').value;
+        if(document.getElementById('p1').checked){
+            var par = document.getElementById('p1').value;
+        }else if(document.getElementById('p2').checked){
+            var par = document.getElementById('p2').value;
+        }else{
+            var par = document.getElementById('p3').value;
+        }
+        var parName = document.getElementById("parentNameTxt").value;
+        var parOcupation = document.getElementById("parentOcupationTxt").value;
+        var parEmail = document.getElementById("parentEmail").value;
+        var parAddress = document.getElementById("parentAddressTxt").value;
+        var parContact = document.getElementById("gaurdiancontact").value;
+        var studentId =school+stdAdNo;
+        var parent={name:parName,parent:par,occupation:parOcupation,email:parEmail,Econtact:parContact};
+        var student= [stdAdNo,stdFName,stdLName,contact,stdbd,stdAddress,stdReli,school,stdGrade,stdClass,stdEmail,profileimg,studentId,stdFName,stdmedium];
+        updatestudent(regno,student,parent);   
 }
 
 

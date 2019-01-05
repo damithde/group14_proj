@@ -19,11 +19,12 @@ function sendmail($to,$subject,$messege,$attachment=null){
         $mail->Port = 587;                                    // TCP port to connect to
 
         //Recipients
+        $x=0;
         $mail->setFrom('admin@schoolname.net', 'Admin');
         $mail->addAddress($to[$x]);     // Add a recipient
         $mail->addAddress('ellen@example.com');               // Name is optional
         $mail->addReplyTo('info@example.com', 'Information');
-        $x=0;
+        $x=1;
         while (sizeof($to)>$x) {
             $mail->addBCC($to[$x]);
             $x++;
