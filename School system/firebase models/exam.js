@@ -1,7 +1,6 @@
 function addexam(exam){
-    db.collection("exam").doc(exam[1]).set({
-        examId:exam[1],
-        grade:exam[0],
+    db.collection("exam").doc(exam[0]).set({
+        grade:exam[1],
         class:exam[2],
         subject:exam[3],
         date:exam[4],
