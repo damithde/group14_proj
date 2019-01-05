@@ -228,40 +228,40 @@
 				var teacherView1 = document.getElementById("teacherView1").value;				
                 addTimeSlot(classNo,classTeacher,timeView1,subjectView1,teacherView1,mon);
         
-                var timeView2 = document.getElementById("timeView2").value;       /*second slot*/
+                var timeView12 = document.getElementById("timeView12").value;       /*second slot*/
 				var subjectView12 = document.getElementById("subjectView12").value;
 				var teacherView12 = document.getElementById("teacherView12").value;				
-                addTimeSlot(classNo,classTeacher,timeView2,subjectView12,teacherView12,mon);
+                addTimeSlot(classNo,classTeacher,timeView12,subjectView12,teacherView12,mon);
         
-                var timeView3 = document.getElementById("timeView3").value;       /*third slot*/
+                var timeView13 = document.getElementById("timeView13").value;       /*third slot*/
 				var subjectView13 = document.getElementById("subjectView13").value;
 				var teacherView13 = document.getElementById("teacherView13").value;				
-                addTimeSlot(classNo,classTeacher,timeView3,subjectView13,teacherView13,mon);
+                addTimeSlot(classNo,classTeacher,timeView13,subjectView13,teacherView13,mon);
         
-                var timeView4 = document.getElementById("timeView4").value;       /*fourth slot*/
+                var timeView14 = document.getElementById("timeView14").value;       /*fourth slot*/
 				var subjectView14 = document.getElementById("subjectView14").value;
 				var teacherView14 = document.getElementById("teacherView14").value;				
-                addTimeSlot(classNo,classTeacher,timeView4,subjectView14,teacherView14,mon);
+                addTimeSlot(classNo,classTeacher,timeView14,subjectView14,teacherView14,mon);
         
-                var timeView5 = document.getElementById("timeView5").value;       /*fifth slot*/
+                var timeView15 = document.getElementById("timeView15").value;       /*fifth slot*/
 				var subjectView15 = document.getElementById("subjectView15").value;
 				var teacherView15 = document.getElementById("teacherView15").value;				
-                addTimeSlot(classNo,classTeacher,timeView5,subjectView15,teacherView15,mon);
+                addTimeSlot(classNo,classTeacher,timeView15,subjectView15,teacherView15,mon);
         
-                var timeView6 = document.getElementById("timeView6").value;       /*sisth slot*/
+                var timeView16 = document.getElementById("timeView16").value;       /*sisth slot*/
 				var subjectView16 = document.getElementById("subjectView16").value;
 				var teacherView16 = document.getElementById("teacherView16").value;				
-                addTimeSlot(classNo,classTeacher,timeView6,subjectView16,teacherView16,mon);
+                addTimeSlot(classNo,classTeacher,timeView16,subjectView16,teacherView16,mon);
         
-                var timeView7 = document.getElementById("timeView7").value;       /*seventh slot*/
+                var timeView17 = document.getElementById("timeView17").value;       /*seventh slot*/
 				var subjectView17 = document.getElementById("subjectView17").value;
 				var teacherView17 = document.getElementById("teacherView17").value;				
-                addTimeSlot(classNo,classTeacher,timeView7,subjectView17,teacherView17,mon);
+                addTimeSlot(classNo,classTeacher,timeView17,subjectView17,teacherView17,mon);
         
-                var timeView8 = document.getElementById("timeView8").value;       /*eigth slot*/
+                var timeView18 = document.getElementById("timeView18").value;       /*eigth slot*/
 				var subjectView18 = document.getElementById("subjectView18").value;
 				var teacherView18 = document.getElementById("teacherView18").value;				
-                addTimeSlot(classNo,classTeacher,timeView8,subjectView18,teacherView18,mon);
+                addTimeSlot(classNo,classTeacher,timeView18,subjectView18,teacherView18,mon);
         
                 var tu="tuesday";
         
@@ -270,63 +270,40 @@
 				var teacherView2 = document.getElementById("teacherView2").value;				
                 addTimeSlot(classNo,classTeacher,timeView2,subjectView2,teacherView2,tu);
         
-                var timeView2 = document.getElementById("timeView2").value;       /*second colum second slot*/
+                var timeView22 = document.getElementById("timeView22").value;       /*second colum second slot*/
 				var subjectView22 = document.getElementById("subjectView22").value;
 				var teacherView22 = document.getElementById("teacherView22").value;				
-                addTimeSlot(classNo,classTeacher,timeView2,subjectView22,teacherView22,tu);
+                addTimeSlot(classNo,classTeacher,timeView22,subjectView22,teacherView22,tu);
         
-                var timeView3 = document.getElementById("timeView3").value;       /*second colum third slot*/
+                var timeView23 = document.getElementById("timeView23").value;       /*second colum third slot*/
 				var subjectView23 = document.getElementById("subjectView23").value;
 				var teacherView23 = document.getElementById("teacherView23").value;				
-                addTimeSlot(classNo,classTeacher,timeView3,subjectView23,teacherView23,tu);
+                addTimeSlot(classNo,classTeacher,timeView23,subjectView23,teacherView23,tu);
         
-                var timeView4 = document.getElementById("timeView4").value;       /*second colum fourth slot*/
+                var timeView24 = document.getElementById("timeView24").value;       /*second colum fourth slot*/
 				var subjectView24 = document.getElementById("subjectView24").value;
 				var teacherView24 = document.getElementById("teacherView24").value;				
-                addTimeSlot(classNo,classTeacher,timeView4,subjectView24,teacherView24,tu);
+                addTimeSlot(classNo,classTeacher,timeView24,subjectView24,teacherView24,tu);
         
-                var timeView5 = document.getElementById("timeView5").value;       /*second colum fifth slot*/
+                var timeView25 = document.getElementById("timeView25").value;       /*second colum fifth slot*/
 				var subjectView25 = document.getElementById("subjectView25").value;
 				var teacherView25 = document.getElementById("teacherView25").value;				
-                addTimeSlot(classNo,classTeacher,timeView5,subjectView25,teacherView25,tu);
+                addTimeSlot(classNo,classTeacher,timeView25,subjectView25,teacherView25,tu);
         
-                var timeView6 = document.getElementById("timeView6").value;       /*second colum sixth slot*/
+                var timeView26 = document.getElementById("timeView26").value;       /*second colum sixth slot*/
 				var subjectView26 = document.getElementById("subjectView26").value;
 				var teacherView26 = document.getElementById("teacherView26").value;				
-                addTimeSlot(classNo,classTeacher,timeView6,subjectView26,teacherView26,tu);
+                addTimeSlot(classNo,classTeacher,timeView26,subjectView26,teacherView26,tu);
         
-                var timeView7 = document.getElementById("timeView7").value;       /*second colum seventh slot*/
+                var timeView27 = document.getElementById("timeView27").value;       /*second colum first slot*/
 				var subjectView27 = document.getElementById("subjectView27").value;
 				var teacherView27 = document.getElementById("teacherView27").value;				
-                addTimeSlot(classNo,classTeacher,timeView7,subjectView27,teacherView27,tu);
+                addTimeSlot(classNo,classTeacher,timeView27,subjectView27,teacherView27,tu);
         
-                var timeView8 = document.getElementById("timeView8").value;       /*second colum eigth slot*/
+                var timeView28 = document.getElementById("timeView28").value;       /*second colum first slot*/
 				var subjectView28 = document.getElementById("subjectView28").value;
 				var teacherView28 = document.getElementById("teacherView28").value;				
-                addTimeSlot(classNo,classTeacher,timeView8,subjectView28,teacherView28,tu);
-        
-        
-                var wen="wednesday";
-        
-			    var timeView1 = document.getElementById("timeView1").value;       /*third row first slot*/
-				var subjectView3 = document.getElementById("subjectView3").value;
-				var teacherView3 = document.getElementById("teacherView3").value;				
-                addTimeSlot(classNo,classTeacher,timeView1,subjectView3,teacherView3,wen);
-        
-                var timeView2 = document.getElementById("timeView2").value;       /*third row second slot*/
-				var subjectView32 = document.getElementById("subjectView32").value;
-				var teacherView32 = document.getElementById("teacherView32").value;				
-                addTimeSlot(classNo,classTeacher,timeView2,subjectView32,teacherView3,wen);
-        
-                var timeView3 = document.getElementById("timeView3").value;       /*third row third slot*/
-				var subjectView33 = document.getElementById("subjectView33").value;
-				var teacherView33 = document.getElementById("teacherView33").value;				
-                addTimeSlot(classNo,classTeacher,timeView3,subjectView33,teacherView33,wen);
-        
-                var timeView4 = document.getElementById("timeView4").value;       /*third row fourth slot*/
-				var subjectView34 = document.getElementById("subjectView34").value;
-				var teacherView34 = document.getElementById("teacherView34").value;				
-                addTimeSlot(classNo,classTeacher,timeView4,subjectView34,teacherView34,wen);
+                addTimeSlot(classNo,classTeacher,timeView28,subjectView28,teacherView28,tu);
         
         
                 
