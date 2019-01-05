@@ -2,13 +2,19 @@
 <?php include_once('../teachercommon/header.php'); ?>
 <?php include_once('../teachercommon/sidebar.php'); ?>
 <?php include_once('../teachercommon/script.php'); ?>
-<head></head>
+<html>
+<head>
 
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-database.js"></script>
-
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-storage.js"></script>
+<script src="../../../firebase models/db.js"></script>
+<script src="../../../firebase models/reports.js"></script>
+<script src="../../../firebase models/admin.js"></script>
+<script src="../../../firebase models/login.js"></script>
+</head>
 
 
     <section class="content-wrapper">
@@ -453,16 +459,12 @@
                 </section>
     </section>
 </section>
+</html>
 
 
-
-<script src="../../../firebase models/db.js"></script>
-<script src="../../../firebase models/reports.js"></script>
-    <script src="../../../firebase models/admin.js"></script>
-    <script src="../../../firebase models/login.js"></script>
 <script>
     getschool("stuSchool");
-    getreports("studentRegNo","stuClass","stuGrade","stuYear","stuTestNo");
+    //getreports(studentRegNo,stuClass,stuGrade,stuYear,stuTestNo);
     function datasubmission() {
         var stdRegNo = document.getElementById("studentRegNo").value;
         var stdName = document.getElementById("studentLNameTxt").value;
@@ -487,16 +489,15 @@
         addreport(student);
     }
 
-    <script src="../../../firebase models/db.js"></script>
-    <script src="../../../firebase models/results.js"></script>
+
 </script>
 <script>
-getschool(reposchool);
-var studentClass = document.getElementById("studentClassesTxt").value;
-var stdSubjects = document.getElementById("studentSubjectsTxt").value;
-var stdMark = document.getElementById("studentMarkTxt").value;
-var results=[studentClass,stdSubjects,stdMark];
-addresult(stdAdmissionNo,stdMark)
+
+// var studentClass = document.getElementById("studentClassesTxt").value;
+// var stdSubjects = document.getElementById("studentSubjectsTxt").value;
+// var stdMark = document.getElementById("studentMarkTxt").value;
+// var results=[studentClass,stdSubjects,stdMark];
+//addresult(stdAdmissionNo,stdMark)
 
 </script>
 

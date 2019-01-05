@@ -49,7 +49,15 @@ function addreport(student) {
         totalmarks: student[16],
         position: student[17],
     })
-        db.collection("terms").doc(student[0]).set({
+    .then(function(docRef) {
+        alert("student added successfully");
+        // console.log("Document written with ID: ", docRef.id);
+    })
+    .catch(function(error) {
+        alert("Error adding document: ", error);
+    });
+        
+    db.collection("terms").doc(student[0]).set({
         school: student[2],
         class: student[3],
         grade: student[4],
@@ -57,13 +65,13 @@ function addreport(student) {
             termno: student[6],
 
     })
-            .then(function(docRef) {
-                alert("student added successfully");
+    .then(function(docRef) {
+            alert("student added successfully");
                 // console.log("Document written with ID: ", docRef.id);
-            })
-            .catch(function(error) {
-                alert("Error adding document: ", error);
-            });
+    })
+    .catch(function(error) {
+            alert("Error adding document: ", error);
+    });
 
 }
 function getreports(Regno,Class,Grade,Year,Term) {
