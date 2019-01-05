@@ -13,7 +13,7 @@
 <script src="../../../firebase models/db.js"></script>
 <script src="../../../firebase models/reports.js"></script>
 <script src="../../../firebase models/admin.js"></script>
-<script src="../../../firebase models/login.js"></script>
+
 </head>
  
 
@@ -328,20 +328,6 @@
 
                                     <button type="button" class="btn btn-primary">Load student</button>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                                                 <!-- /.search form -->
                                 </div>
 
@@ -521,7 +507,7 @@
         var stdTotal = document.getElementById("studentTotalTxt").value;
         var stdPosition = document.getElementById("studentPositionTxt").value;
 
-        var student = [stdRegNo, stdName, stdSchool, stdClass, stdGrade, stdTestNo, stdAdNo, stdYear, stdSub1, stdSub2, stdSub3, stdSub4, stdSub5, stdSub6, stdSub7, stdSub8, stdSub9, stdTotal, stdPosition];
+        var student = ["stdRegNo", "stdName", "stdSchool", "stdClass", "stdGrade", "stdTestNo", "stdAdNo", "stdYear", "stdSub1", "stdSub2", "stdSub3", "stdSub4", "stdSub5", "stdSub6", "stdSub7", "stdSub8", "stdSub9", "stdTotal", "stdPosition"];
         addreport(student);
     }
 
@@ -529,15 +515,16 @@
 </script>
 
 
+
+
+<script>
+
 // var studentClass = document.getElementById("studentClassesTxt").value;
 // var stdSubjects = document.getElementById("studentSubjectsTxt").value;
 // var stdMark = document.getElementById("studentMarkTxt").value;
 // var results=[studentClass,stdSubjects,stdMark];
 //addresult(stdAdmissionNo,stdMark)
 
-
-
-<script>
 
 // getschool(reposchool);
 // var studentClass = document.getElementById("studentClassesTxt").value;
