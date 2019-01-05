@@ -217,13 +217,38 @@
 <script>
     
     function addTimeTable(){
+               
                 var classNo=document.getElementById("classNo").value;
 		        var classTeacher=document.getElementById("classTeacher").value;
-			    var timeView1 = document.getElementById("timeView1").value;       /*first row*/
+        
+                var mon="monday";
+        
+			    var timeView1 = document.getElementById("timeView1").value;       /*first slot*/
 				var subjectView1 = document.getElementById("subjectView1").value;
-				var teacherView1 = document.getElementById("teacherView1").value;
-				var date="Monday";
-            addTimeSlot(classNo,classTeacher,timeView1,subjectView1,teacherView1,date)
+				var teacherView1 = document.getElementById("teacherView1").value;				
+                addTimeSlot(classNo,classTeacher,timeView1,subjectView1,teacherView1,mon);
+        
+                var timeView12 = document.getElementById("timeView12").value;       /*second slot*/
+				var subjectView12 = document.getElementById("subjectView12").value;
+				var teacherView12 = document.getElementById("teacherView12").value;				
+                addTimeSlot(classNo,classTeacher,timeView12,subjectView12,teacherView12,mon);
+        
+                var timeView13 = document.getElementById("timeView13").value;       /*third slot*/
+				var subjectView13 = document.getElementById("subjectView13").value;
+				var teacherView13 = document.getElementById("teacherView13").value;				
+                addTimeSlot(classNo,classTeacher,timeView13,subjectView13,teacherView13,mon);
+        
+                var timeView14 = document.getElementById("timeView14").value;       /*fourth slot*/
+				var subjectView14 = document.getElementById("subjectView14").value;
+				var teacherView14 = document.getElementById("teacherView14").value;				
+                addTimeSlot(classNo,classTeacher,timeView14,subjectView14,teacherView14,mon);
+        
+                
+        
+                
+        
+                alert("Time Table sent successfully");
+        
     
    
     }
@@ -247,7 +272,7 @@
 
         })
         .then(function(docRef) {
-            alert("Time Table sent successfully");
+            //alert("Time Table sent successfully");
            // console.log("Document written with ID: ", docRef.id);
         })
         .catch(function(error) {
