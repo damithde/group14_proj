@@ -15,28 +15,64 @@
         <!--                Exam results-->
         <div class="box box-primary">
             <div class="box-header with-border">
-                <div class="col-md-6">
-                    <!-- search form -->
-                    <form action="#" method="get" class="form-group">
-                        <div class="input-group">
-                            <input type="text" name="q" class="form-control" placeholder="Class"/>
-                            <span class="input-group-btn">
-                                <button type='submit' name='search' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
-                            </span>
 
-                            <input type="date" name="q" class="form-control" placeholder="Date"/>
-                            <span class="input-group-btn">
-                                <button type='submit' name='search' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
-                            </span>
+                    <!-- search form -->
+
+                    <div class="form-group">
+                        <div class="col-md-3"
+                    <div id="studentMediumTxt" class="form-group">
+                        <label  >Select Grade:</label>
+                        <select class="form-control">
+                            <option value="6">Grade 6</option>
+                            <option value="7">Grade 7</option>
+                            <option value="8">Grade 8</option>
+                            <option value="9">Grade 9</option>
+                            <option value="10">Grade 10</option>
+                            <option value="11">Grade 11</option>
+                            <option value="12">Grade 12</option>
+                        </select>
+                    </div>
+
+
+
+                    <div class="form-group">
+                        <div class="col-md-3"
+
+                        <div id="studentMediumTxt" class="form-group">
+                            <label  >Select Class:</label>
+                            <select class="form-control">
+                                <option value="sinhala">All</option>
+                                <option value="english">A</option>
+                                <option value="tamil">B</option>
+                                <option value="english">C</option>
+                                <option value="tamil">D</option>
+                                <option value="english">E</option>
+                                <option value="tamil">F</option>
+                                <option value="english">G</option>
+                                <option value="tamil">H</option>
+                            </select>
                         </div>
-                        <div class="input-group">
-                            
+                        <div class="form-group">
+
+
+                            <label>Date :</label>
+                            <div class="input-group">
+                                <div class="input-group-addon">
+                                    <i class="fa fa-calendar"></i>
+                                </div>
+                                <input type="date" class="form-control pull-right" id="date"/>
+                            </div><!-- /.input group -->
                         </div>
-                    </form>
-                    <!-- /.search form -->
-                </div>
-            </div><!-- /.box-header -->
-            <div class="box-body">
+                    </div>
+
+                        <button type="button" class="btn btn-primary">Load student</button>
+
+
+
+
+
+                <div class="box-body"
+                <div class="col-md-6"
                 <div class="table-responsive">
                     <table class="table no-margin">
                         <thead>
@@ -185,9 +221,7 @@
                     </table>
                 </div><!-- /.table-responsive -->
             </div><!-- /.box-body -->
-            <div class="box-footer clearfix">
-                <a href="javascript::;" class="btn btn-sm btn-default btn-flat pull-right">View All Exams</a>
-            </div><!-- /.box-footer -->
+            <!-- /.box-footer -->
         </div><!-- /.box -->
     </section>
 </section>

@@ -9,22 +9,28 @@
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-database.js"></script>
 
-<section class="content-wrapper">
+    <section class="content-wrapper">
     <section class="content-header">
-    <div class="row">
-        <div class="col-md-6">
+        <div class="row">
+
+            <div class="col-md-6">
             <!-- general form elements -->
-            <div class="box box-primary">
+                <div class="box box-primary">
+
                 <div class="box-header with-border">
+
                     <h3 class="box-title">Create Report</h3>
                 </div><!-- /.box-header -->
                 <!-- form start -->
-                <form role="form">
+                    <form role="form">
                     <div class="box-body">
                         <div class="form-group">
                             <label  >Registration Number:</label>
                             <input type="text" class="form-control" id="studentRegNo" placeholder="Enter Admission Number">
                         </div>
+
+
+
                         <div class="form-group">
                             <label  >Name:</label>
                             <input type="text" class="form-control" id="studentLNameTxt" placeholder="Enter  Name">
@@ -32,63 +38,111 @@
                         </div>
                         <div class="form-group">
                             <label  >School:</label>
-                            <input type="text" class="form-control" id="stuSchool" placeholder="Enter   Name">
+                            <input type="text" class="form-control" id="stuSchool" placeholder="Enter school">
 
                         </div>
-                        <div class="form-group">
-                            <label  >Class:</label>
-                            <input type="text" class="form-control" id="stuClass" placeholder="Enter Class">
+                    <div class="form-group">
+                        <div class="col-md-6">
+                            <div id="studentMediumTxt" class="form-group">
+                                <label  >Select Grade:</label>
+                                <select class="form-control">
+                                    <option value="6">Grade 6</option>
+                                    <option value="7">Grade 7</option>
+                                    <option value="8">Grade 8</option>
+                                    <option value="9">Grade 9</option>
+                                    <option value="10">Grade 10</option>
+                                    <option value="11">Grade 11</option>
+                                    <option value="12">Grade 12</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label  >Grade:</label>
-                            <input type="text" class="form-control" id="stuGrade" placeholder="Enter Class">
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-6">
+                            <div id="studentMediumTxt" class="form-group">
+                                <label  >Select Class:</label>
+                                <select class="form-control">
+                                    <option value="sinhala">All</option>
+                                    <option value="english">A</option>
+                                    <option value="tamil">B</option>
+                                    <option value="english">C</option>
+                                    <option value="tamil">D</option>
+                                    <option value="english">E</option>
+                                    <option value="tamil">F</option>
+                                    <option value="english">G</option>
+                                    <option value="tamil">H</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label  >Term Test:</label>
-                            <input type="text" class="form-control" id="stuTestNo" placeholder="Enter Test No">
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-6">
+                            <div id="studentMediumTxt" class="form-group">
+                                <label  >Select Year:</label>
+                                <select class="form-control">
+                                    <option value="6">2019</option>
+                                    <option value="7">2018</option>
+                                    <option value="8">2017</option>
+                                    <option value="9">2016</option>
+                                    <option value="10">2015</option>
+                                    <option value="11">2014</option>
+                                    <option value="1">2013</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label  >Year:</label>
-                            <input type="text" class="form-control" id="stuYear" placeholder="Enter Year">
-                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-6">
+                            <div id="studentMediumTxt" class="form-group">
+                                <label  >Term Test No:</label>
+                                <select class="form-control">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
 
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+                        <div class="box-body">
                         <div class="form-group">
                             <label  >Subject1:</label>
-                            <input type="text" class="form-control" id="studentSubject1Txt" placeholder="Enter Sub1">
+                            <input type="text" class="form-control" id="studentSubject1Txt" placeholder="Enter Marks">
                         </div>
                         <div class="form-group">
                             <label  >Subject2:</label>
-                            <input type="text" class="form-control" id="studentSubject2Txt" placeholder="Enter Sub2">
+                            <input type="text" class="form-control" id="studentSubject2Txt" placeholder="Enter Marks">
                         </div>
                         <div class="form-group">
                             <label  >Subject3:</label>
-                            <input type="text" class="form-control" id="studentSubject3Txt" placeholder="Enter Sub3">
+                            <input type="text" class="form-control" id="studentSubject3Txt" placeholder="Enter Marks">
                         </div>
                         <div class="form-group">
                             <label  >Subject4:</label>
-                            <input type="text" class="form-control" id="studentSubject4Txt" placeholder="Enter Sub4">
+                            <input type="text" class="form-control" id="studentSubject4Txt" placeholder="Enter Marks">
                             </div>
                         <div class="form-group">
                             <label  >Subject5:</label>
-                            <input type="text" class="form-control" id="studentSubject5Txt" placeholder="Enter Sub5">
+                            <input type="text" class="form-control" id="studentSubject5Txt" placeholder="Enter Marks">
                         </div>
                         <div class="form-group">
                             <label  >Subject6:</label>
-                            <input type="text" class="form-control" id="studentSubject6Txt" placeholder="Enter Sub6">
+                            <input type="text" class="form-control" id="studentSubject6Txt" placeholder="Enter Marks">
                         </div>
 
                         <div class="form-group">
                             <label  >Subject7:</label>
-                            <input type="text" class="form-control" id="studentSubject7Txt" placeholder="Enter Sub7">
+                            <input type="text" class="form-control" id="studentSubject7Txt" placeholder="Enter Marks">
                         </div>
                         <div class="form-group">
                             <label  >Subject8:</label>
-                            <input type="text" class="form-control" id="studentSubject8Txt" placeholder="Enter Sub8">
+                            <input type="text" class="form-control" id="studentSubject8Txt" placeholder="Enter Marks">
                         </div>
                         <div class="form-group">
                             <label  >Subject9:</label>
-                            <input type="text" class="form-control" id="studentSubject9Txt" placeholder="Enter Sub9">
+                            <input type="text" class="form-control" id="studentSubject9Txt" placeholder="Enter Marks">
                         </div>
                         <div class="form-group">
                             <label >Total Marks:</label>
@@ -100,10 +154,13 @@
                             <input type="text" class="form-control" id="studentPositionTxt" placeholder="Enter Position">
                         </div>
 
+
+
+
                         <button type="submit" class="btn btn-primary">Send</button>
 
 
-
+                        </div>
                         </div>
                 </form>
             </div>
@@ -112,9 +169,7 @@
 <!--        parent details-->
 
 
-                    <div class="box-footer">
 
-                    </div>
                 </form>
             </div><!-- /.box -->
         </div>
@@ -139,26 +194,115 @@
                                     <div class="input-group">
                                     <div class="form-group">
 
+
                                         <div class="form-group">
-                                            <label  >Class:</label>
-                                            <input type="text" class="form-control" id="studentClassesTxt" >
-                                        </div>
 
-                                        <label  >Subject:</label>
-                                            <input type="text" class="form-control" id="studentSubjectsTxt" >
-                                        </div>
+                                                <div id="studentMediumTxt" class="form-group">
+                                                    <label  >Select Year:</label>
+                                                    <select class="form-control">
+                                                        <option value="6">2019</option>
+                                                        <option value="7">2018</option>
+                                                        <option value="8">2017</option>
+                                                        <option value="9">2016</option>
+                                                        <option value="10">2015</option>
+                                                        <option value="11">2014</option>
+                                                        <option value="1">2013</option>
+                                                    </select>
+                                                </div>
 
+                                        </div>
+                                        <div class="form-group">
+
+                                                <div id="studentMediumTxt" class="form-group">
+                                                    <label  >Term Test No:</label>
+                                                    <select class="form-control">
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+
+                                                    </select>
+
+                                            </div>
 
                                     </div>
-                                    <div class="input-group">
 
+
+                                        <div id="studentMediumTxt" class="form-group">
+                                                    <label  >Select Grade:</label>
+                                                    <select class="form-control">
+                                                        <option value="6">Grade 6</option>
+                                                        <option value="7">Grade 7</option>
+                                                        <option value="8">Grade 8</option>
+                                                        <option value="9">Grade 9</option>
+                                                        <option value="10">Grade 10</option>
+                                                        <option value="11">Grade 11</option>
+                                                        <option value="12">Grade 12</option>
+                                                    </select>
+                                                </div>
+
+
+                                        <div class="form-group">
+
+                                                <div id="studentMediumTxt" class="form-group">
+                                                    <label  >Select Class:</label>
+                                                    <select class="form-control">
+                                                        <option value="sinhala">All</option>
+                                                        <option value="english">A</option>
+                                                        <option value="tamil">B</option>
+                                                        <option value="english">C</option>
+                                                        <option value="tamil">D</option>
+                                                        <option value="english">E</option>
+                                                        <option value="tamil">F</option>
+                                                        <option value="english">G</option>
+                                                        <option value="tamil">H</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-group">
+
+                                                <div id="studentMediumTxt" class="form-group">
+                                                    <label  >Select Subject :</label>
+                                                    <select class="form-control">
+                                                        <option value="1">Mathematics</option>
+                                                        <option value="2">English</option>
+                                                        <option value="3">Sinhala</option>
+                                                        <option value="4">Science</option>
+                                                        <option value="5">History</option>
+                                                        <option value="6">Buddhism</option>
+
+                                                    </select>
+                                                </div>
+                                            </div>
                                     </div>
                                 </form>
-                                <!-- /.search form -->
-                            </div>
+
+                                    <button type="button" class="btn btn-primary">Load student</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                <!-- /.search form -->
+                                </div>
+
+
                         </div><!-- /.box-header -->
                         <div class="box-body">
                             <div class="table-responsive">
+
                                 <table class="table no-margin">
                                     <thead>
                                     <tr>

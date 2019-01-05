@@ -21,9 +21,9 @@
                     <i class="fa fa-users"></i> <span>School</span> <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
-                    <li class="active"><a href="../studentmanage/registerstudent.php"><i class="fa fa-folder-open-o"></i> Register School</a></li>
-                    <li><a href="../studentmanage/viewstudent.php"><i class="fa fa-folder-open-o"></i> View School</a></li>
-                    <li><a href="../studentmanage/editstudent.php"><i class="fa fa-folder-open-o"></i> Edit School</a></li>
+                    <li class="active"><a href="../schoolmanage/registerschool.php"><i class="fa fa-folder-open-o"></i> Register School</a></li>
+                    <!-- <li><a href="../schoolmanage/viewschool.php"><i class="fa fa-folder-open-o"></i> View School</a></li> -->
+                    <li><a href="../schoolmanage/editschool.php"><i class="fa fa-folder-open-o"></i> Edit School</a></li>
                 </ul>
             </li>
             <li>
@@ -31,36 +31,14 @@
                     <i class="fa fa-users"></i> <span>Admin</span> <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
-                    <li class="active"><a href="../teachermanage/registerteacher.php"><i class="fa fa-folder-open-o"></i> Register Admin</a></li>
-                    <li><a href="../teachermanage/viewteacher.php"><i class="fa fa-folder-open-o"></i> View Admin</a></li>
-                    <li><a href="../teachermanage/editteacher.php"><i class="fa fa-folder-open-o"></i> Edit Admin</a></li>
+                    <li class="active"><a href="../adminmanage/registeradmin.php"><i class="fa fa-folder-open-o"></i> Register Admin</a></li>
+                    <!-- <li><a href="../adminmanage/viewadmin.php"><i class="fa fa-folder-open-o"></i> View Admin</a></li> -->
+                    <li><a href="../adminmanage/editadmin.php"><i class="fa fa-folder-open-o"></i> Edit Admin</a></li>
                 </ul>
             </li>
-            <li><a href="../calendarmanage/calendar.php"><i class="fa fa-calendar"></i> <span>Calendar</span></a></li>
+           
 
-            <li>
-                <a href="#">
-                    <i class="fa fa-users"></i> <span>Manage Database</span> <i class="fa fa-angle-left pull-right"></i>
-                </a>
-                <ul class="treeview-menu">
-                    <li class="active"><a href="../exammanage/exam.php"><i class="fa fa-folder-open-o"></i> View Results</a></li>
-                    <li><a href="../teachermanage/viewteacher.php"><i class="fa fa-folder-open-o"></i> Manage Results</a></li>
-                </ul>
-            </li>
-
-            <li><a href="../timetablemanage/timetable.php"><i class="fa fa-clock-o"></i> <span>Time Table</span></a></li>
             
-            <li>
-                <a href="#">
-                    <i class="fa fa-certificate"></i> <span>Certificate</span> <i class="fa fa-angle-left pull-right"></i>
-                </a>
-                <ul class="treeview-menu">
-                    <li class="active"><a href="../certificatemanage/certificate.php"><i class="fa fa-folder-open-o"></i> New Certificate</a></li>
-                    <li><a href="../certificatemanage/viewissuedcertificate.php"><i class="fa fa-folder-open-o"></i> View issue certificate</a></li>
-                </ul>
-            </li>
-            <li><a href="../messagebox/messagebox.php"><i class="fa fa-envelope-o"></i> <span></span>Messege</span></a></li>
-            <li><a href="../attendancemanage/attendance.php"><i class="fa fa-edit"></i> <span>Attendance</span></a></li>
         </ul>
     </section>
     <!-- /.sidebar -->
