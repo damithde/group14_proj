@@ -55,10 +55,10 @@ function addreport(student) {
     .then(function (docRef) {
             alert("report added successfully");
             // console.log("Document written with ID: ", docRef.id);
-        })
-        .catch(function (error) {
+    })
+    .catch(function (error) {
             alert("Error adding document: ", error);
-        });
+    });
 
     db.collection("terms").doc(student[0]).set({
         school: student[2],
