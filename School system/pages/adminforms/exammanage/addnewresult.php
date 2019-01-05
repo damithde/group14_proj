@@ -41,15 +41,11 @@
                                     <div class="form-group">
                                             <div class="col-md-8">
                                                 <div  class="form-group">
-                                                    <label  >Exam Year:</label>
+                                                    <label  >Exam Term:</label>
                                                     <select id ="examYearTxt" class="form-control">
-                                                        <option value="6">2019</option>
-                                                        <option value="7">2018</option>
-                                                        <option value="8">2017</option>
-                                                        <option value="9">2016</option>
-                                                        <option value="10">2015</option>
-                                                        <option value="11">2014</option>
-                                                        <option value="1">2013</option>
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
                                                     </select>
                                                 </div>
                                             </div>
@@ -57,9 +53,9 @@
 
                                         <div class="form-group">
                                             <div class="col-md-8">
-                                                <div id="gradeTxt" class="form-group">
+                                                <div  class="form-group">
                                                     <label  >Exam Grade:</label>
-                                                    <select class="form-control">
+                                                    <select id="gradeTxt" class="form-control">
                                                         <option value="6">Grade 6</option>
                                                         <option value="7">Grade 7</option>
                                                         <option value="8">Grade 8</option>
@@ -74,7 +70,7 @@
 
                                         <div class="form-group">
                                             <div class="col-md-8">
-                                                <div id="classTxt" class="form-group">
+                                                <div class="form-group">
                                                     <label  >Exam Class:</label>
                                                     <select id="classTxt" class="form-control">
                                                         <option value="sinhala">All</option>
@@ -119,7 +115,7 @@
                                                 <div id="studentMediumTxt" class="form-group">
                                                     <label class="text-muted">Exam Date</label>
                                                     <div class="input-group">
-                                                        <input id = "examDateTxt" style ="width:300px" id="lNameSearch" type="date" name="q" class="form-control" placeholder="Search by First Name"/>
+                                                        <input id = "examDateTxt" style ="width:300px" type="date" class="form-control pull-right" />
                                                         
                                                     </div>
                                                 </div>
@@ -129,7 +125,7 @@
                                         <div class="form-group">
                                             <div class="col-md-8">
                                                 <div  class="form-group">
-                                                    <label id = "subjectTxt" >Subject:</label>
+                                                    <label >Subject:</label>
                                                     <select id="subjectTxt" class="form-control">
                                                         <option value="sinhala">Sinhala</option>
                                                         <option value="english">English</option>
@@ -197,105 +193,18 @@
 <script>
     // getschool("stuschool");
     function add1(){
-        var school="abqqc";//document.getElementById("schoolid").value;
-        var year = "201432";//document.getElementById("examYearTxt").value;
-        var grade = "8";//document.getElementById("gradeTxt").value;
-        // var class = "A";//document.getElementById("classTxt").value;
-        var date = "2019-08-08";//document.getElementById("examDateTxt").value;
-        var subject = "Test";//document.getElementById("subjectTxt").value;
-        var examId =year+subject;
-        var exam=[examId,year,grade,date,subject,examId];
+        // var school = document.getElementById("schoolid").value;
+        var year = document.getElementById("examYearTxt").value;
+        var grade =document.getElementById("gradeTxt").value;
+        var class1 = document.getElementById("classTxt").value;
+        var date = document.getElementById('examDateTxt').value;
+        var subject = document.getElementById("subjectTxt").value;
+        var examId = year+subject;
+        var exam=[examId,class1,date,grade,subject,year];
         addexam(exam);
 
     }
 </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- <script>
-    function addexam(){
-        var school=document.getElementById("schoolid").value;
-        var year = "2014";//document.getElementById("examYearTxt").value;
-        var grade = "8";//document.getElementById("gradeTxt").value;
-        var class = "A";//document.getElementById("classTxt").value;
-        var date = "2019-08-08";document.getElementById("examDateTxt").value;
-        var subject = "Test";//document.getElementById("subjectTxt").value;
-        var examId =year+subject;
-        db.collection("exam").add({
-            examId:examId,
-            year:time,
-            grade:grade,
-            class: class,
-            date:date,
-            subject: subject
-
-        })
-        .then(function(docRef) {
-            alert("Notification sent successfully");
-        // console.log("Document written with ID: ", docRef.id);
-        })
-        .catch(function(error) {
-            alert("Error adding document: ", error);
-        });
-    } -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    // getschool("stuschool");
-    // function addexam(examId){
-    //     var year = "2014";//document.getElementById("examYearTxt").value;
-    //     var grade = "8";//document.getElementById("gradeTxt").value;
-    //     var class = "A";//document.getElementById("classTxt").value;
-    //     var date = "2019-08-08";document.getElementById("examDateTxt").value;
-    //     var subject = "Test";//document.getElementById("subjectTxt").value;
-    //     var examId =year+subject;
-         
-    // }
-    // var exam=[year,grade,class,date,subject,examId];
-    // addexam(exam);
-
-
 
 <?php include_once('../admincommon/footer.php'); ?>
 
