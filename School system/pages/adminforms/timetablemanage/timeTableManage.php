@@ -390,6 +390,33 @@
 				var teacherView48 = document.getElementById("teacherView48").value;				
                 addTimeSlot(classNo,classTeacher,timeView8,subjectView48,teacherView48,th);
         
+                var fri="friday";
+        
+			    var timeView1 = document.getElementById("timeView1").value;       /*fifth colum first slot*/
+				var subjectView5 = document.getElementById("subjectView5").value;
+				var teacherView5 = document.getElementById("teacherView5").value;				
+                addTimeSlot(classNo,classTeacher,timeView1,subjectView5,teacherView5,fri);
+        
+                var timeView2 = document.getElementById("timeView2").value;       /*fifth colum second slot*/
+				var subjectView52 = document.getElementById("subjectView52").value;
+				var teacherView52 = document.getElementById("teacherView52").value;				
+                addTimeSlot(classNo,classTeacher,timeView2,subjectView52,teacherView52,fri);
+        
+                var timeView3 = document.getElementById("timeView3").value;       /*fifth colum third slot*/
+				var subjectView53 = document.getElementById("subjectView53").value;
+				var teacherView53 = document.getElementById("teacherView53").value;				
+                addTimeSlot(classNo,classTeacher,timeView3,subjectView53,teacherView53,fri);
+        
+                var timeView4 = document.getElementById("timeView4").value;       /*fifth colum fourth slot*/
+				var subjectView54 = document.getElementById("subjectView54").value;
+				var teacherView54 = document.getElementById("teacherView54").value;				
+                addTimeSlot(classNo,classTeacher,timeView4,subjectView54,teacherView54,fri);
+        
+                var timeView5 = document.getElementById("timeView5").value;       /*fifth colum fifth slot*/
+				var subjectView55 = document.getElementById("subjectView55").value;
+				var teacherView55 = document.getElementById("teacherView55").value;				
+                addTimeSlot(classNo,classTeacher,timeView5,subjectView55,teacherView55,fri);
+        
         
                 
                 
