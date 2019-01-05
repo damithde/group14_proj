@@ -8,7 +8,9 @@
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-database.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-storage.js"></script>
 <script src="../../../firebase models/db.js"></script> 
-<script src="../../../firebase models/admin.js"></script> 
+<script src="../../../firebase models/admin.js">
+getschool("schoolid");
+</script> 
 <section class="content-wrapper">
     <section class="content-header">
     <!--        main row-->
@@ -52,7 +54,34 @@
             <input type="hidden" id="schoolid" value="">
 
             <div >
-                    <?php include_once('dashboardnotificationPanel.php'); ?>
+                    <div class="box box-primary">
+                            <div class="box-header with-border">
+                                <div class="fa fa-bullhorn">
+                                    <h3 class="box-title">School Notifications And Notices</h3>
+                                </div>
+                                <div class="box-tools pull-right">
+                        <!--            <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>-->
+                        <!--            <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>-->
+                                </div>
+                            </div><!-- /.box-header -->
+                            <div id="noti" class="box-body">
+                                <ul class="products-list product-list-in-box" id="list">
+                                    <li class="item">
+            
+                                            <h5>Atten : CS Group I : SCS 1209 – Object Oriented Programming <span class="label label-warning pull-right">Attachment</span></h5>
+                                            <span class="product-description">
+                                                  Please note that there will be an additional lecture of the above Subject on 21st September, 2018 (Friday)<br>
+                                                from 1.00 p.m.  to 3.00 p.m. at W002 Lecture room, UCSC.Lecturer In-charge 20.09.2018
+                                            </span>
+                                       
+                                    </li><!-- /.item -->
+                                    
+                                    </ul>
+                            </div><!-- /.box-body -->
+                            <div class="box-footer text-center">
+                                <!-- <a href="javascript::;" class="uppercase">View All Notifications</a> -->
+                            </div><!-- /.box-footer -->
+                        </div><!-- /.box -->
                 </div>
 
         </div>
@@ -61,8 +90,9 @@
     </section>
 </section>
 
+
 <script>
-    getschool("schoolid");
+    loadnotification();
 
     var today = new Date();
 var dd = today.getDate();
@@ -105,6 +135,49 @@ function addnotification(){
         alert("Error adding document: ", error);
     });
 }
+
+
+
+function loadnotification(){
+    var output;
+    var school=document.getElementById("schoolid").value;
+    db.collection("notification").where("school","==",school)
+    .get()
+    .then(function(querySnapshot) {
+        var i=0;
+        querySnapshot.forEach(function(doc) {
+
+            output=doc.data();
+            output.title;
+            output.time;
+            output.schooIId;
+            output.publisher;
+            output.date;
+            output.content;
+            output.attachment;
+            el = document.createElement('li');
+            el.id = 'l'+i;
+            document.getElementById('list').appendChild(el);
+           
+            var iDiv = document.createElement('h5');
+            iDiv.id = 'block'+i;
+            iDiv.innerHTML= output.title;
+            el.appendChild(iDiv);
+
+            var nSpan = document.createElement('span')
+            nSpan.innerHTML = output.content;
+            el.appendChild(nSpan);
+
+            i++;
+           //console.log(doc.id, " => ", doc.data());
+        });
+    })
+    .catch(function(error) {
+        console.log("Error getting documents: ", error);
+    });
+}
+
+
 
 
 </script>

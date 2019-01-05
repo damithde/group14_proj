@@ -254,8 +254,8 @@
     var parentOccupationLbl
     var parentEmailLbl
     var parentPhoneLbl
-
-    function getstudentsfromreg("1111111"){
+    getstudentsfromreg("11111");
+    function getstudentsfromreg(reg){
         var output;
         db.collection("students").where("schoolid","==",school).where("regno","==",reg)
         .get()
