@@ -157,6 +157,9 @@ function loadnotification(){
             nSpan.innerHTML = output.content;
             el.appendChild(nSpan);
 
+            var h = document.createElement('hr')
+            el.appendChild(h);
+            
             i++;
            //console.log(doc.id, " => ", doc.data());
         });
