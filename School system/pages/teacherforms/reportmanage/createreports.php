@@ -9,8 +9,12 @@
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-database.js"></script>
 
+
+
     <section class="content-wrapper">
+
     <section class="content-header">
+
         <div class="row">
 
             <div class="col-md-6">
@@ -157,7 +161,7 @@
 
 
 
-                        <button type="submit" class="btn btn-primary">Send</button>
+
 
 
                         </div>
@@ -183,8 +187,9 @@
                 <section class="content-header">
 
                     <!--                Exam results-->
-                    <div class="col-md-6">
-                    </div>
+                    <div class="row">
+                        <div class="col-md-10">
+
                     <div class="box box-primary">
                         <div class="box-header with-border">
                             <h3 class="box-title">Enter Marks</h3>
