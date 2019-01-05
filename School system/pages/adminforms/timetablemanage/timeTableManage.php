@@ -417,6 +417,21 @@
 				var teacherView55 = document.getElementById("teacherView55").value;				
                 addTimeSlot(classNo,classTeacher,timeView5,subjectView55,teacherView55,fri);
         
+                var timeView6 = document.getElementById("timeView6").value;       /*fifth colum sixth slot*/
+				var subjectView56 = document.getElementById("subjectView56").value;
+				var teacherView56 = document.getElementById("teacherView56").value;				
+                addTimeSlot(classNo,classTeacher,timeView6,subjectView56,teacherView56,fri);
+        
+                var timeView7 = document.getElementById("timeView7").value;       /*fifth colum seventh slot*/
+				var subjectView57 = document.getElementById("subjectView57").value;
+				var teacherView57 = document.getElementById("teacherView57").value;				
+                addTimeSlot(classNo,classTeacher,timeView7,subjectView57,teacherView57,fri);
+        
+                var timeView8 = document.getElementById("timeView8").value;       /*fifth colum eight slot*/
+				var subjectView58 = document.getElementById("subjectView58").value;
+				var teacherView58 = document.getElementById("teacherView58").value;				
+                addTimeSlot(classNo,classTeacher,timeView8,subjectView58,teacherView58,fri);
+        
         
                 
                 
