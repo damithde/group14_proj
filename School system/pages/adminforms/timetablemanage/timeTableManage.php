@@ -285,6 +285,28 @@
 				var teacherView24 = document.getElementById("teacherView24").value;				
                 addTimeSlot(classNo,classTeacher,timeView24,subjectView24,teacherView24,tu);
         
+                var timeView25 = document.getElementById("timeView25").value;       /*second colum fifth slot*/
+				var subjectView25 = document.getElementById("subjectView25").value;
+				var teacherView25 = document.getElementById("teacherView25").value;				
+                addTimeSlot(classNo,classTeacher,timeView25,subjectView25,teacherView25,tu);
+        
+                var timeView26 = document.getElementById("timeView26").value;       /*second colum sixth slot*/
+				var subjectView26 = document.getElementById("subjectView26").value;
+				var teacherView26 = document.getElementById("teacherView26").value;				
+                addTimeSlot(classNo,classTeacher,timeView26,subjectView26,teacherView26,tu);
+        
+                var timeView27 = document.getElementById("timeView27").value;       /*second colum first slot*/
+				var subjectView27 = document.getElementById("subjectView27").value;
+				var teacherView27 = document.getElementById("teacherView27").value;				
+                addTimeSlot(classNo,classTeacher,timeView27,subjectView27,teacherView27,tu);
+        
+                var timeView28 = document.getElementById("timeView28").value;       /*second colum first slot*/
+				var subjectView28 = document.getElementById("subjectView28").value;
+				var teacherView28 = document.getElementById("teacherView28").value;				
+                addTimeSlot(classNo,classTeacher,timeView28,subjectView28,teacherView28,tu);
+        
+        
+                
                 
         
                 
