@@ -55,6 +55,7 @@ function getstudentsfromreg(reg){
     .then(function(querySnapshot) {
         querySnapshot.forEach(function(doc) {
             output=doc.data();
+            
            //console.log(doc.id, " => ", doc.data());
         });
     })
