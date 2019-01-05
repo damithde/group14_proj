@@ -132,7 +132,7 @@
                             <form action="../../fileupload.php" method="post" enctype="multipart/form-data">
                             <label >Select Photo</label>
                             <input type="file" id="myfile" >
-                            <input type="button" value="upload" id="upload" >
+                            
                             </form>
                         </div>
                     </div><!-- /.box-body -->
