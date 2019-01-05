@@ -197,14 +197,14 @@
 <script>
     getschool("stuschool");
     function addexam(){
-        var school=document.getElementById("schoolid").value;
+        var school="abc";document.getElementById("schoolid").value;
         var year = "2014";//document.getElementById("examYearTxt").value;
         var grade = "8";//document.getElementById("gradeTxt").value;
-        var class = "A";//document.getElementById("classTxt").value;
+        // var class = "A";//document.getElementById("classTxt").value;
         var date = "2019-08-08";document.getElementById("examDateTxt").value;
         var subject = "Test";//document.getElementById("subjectTxt").value;
         var examId =year+subject;
-        var exam=[year,grade,class,date,subject,examId];
+        var exam=[examId,year,grade,date,subject,examId];
         addexam(exam);
 
     }
@@ -295,8 +295,7 @@
     // var exam=[year,grade,class,date,subject,examId];
     // addexam(exam);
 
-    
-</script>
+
 
 <?php include_once('../admincommon/footer.php'); ?>
 
