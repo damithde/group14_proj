@@ -25,15 +25,11 @@
                                     <div class="form-group">
                                             <div class="col-md-8">
                                                 <div id="studentMediumTxt" class="form-group">
-                                                    <label  >Select Year:</label>
+                                                    <label  >Select Term:</label>
                                                     <select class="form-control">
-                                                        <option value="6">2019</option>
-                                                        <option value="7">2018</option>
-                                                        <option value="8">2017</option>
-                                                        <option value="9">2016</option>
-                                                        <option value="10">2015</option>
-                                                        <option value="11">2014</option>
-                                                        <option value="1">2013</option>
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
                                                     </select>
                                                 </div>
                                             </div>
@@ -179,7 +175,7 @@
     getschool("schoolid");
     setTimeout(p ,1500);
 
-    
+
 
 
 

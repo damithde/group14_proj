@@ -1,9 +1,9 @@
 function addexam(exam){
     db.collection("exam").doc(exam[0]).set({
-        grade:exam[1],
-        class:exam[2],
-        subject:exam[3],
-        date:exam[4],
+        grade:exam[3],
+        class:exam[1],
+        subject:exam[4],
+        date:exam[2],
         year:exam[5]
     })
     .then(function(docRef) {
@@ -14,3 +14,4 @@ function addexam(exam){
         alert("Error adding document: ", error);
     });
 }
+ 
