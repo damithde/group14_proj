@@ -243,6 +243,16 @@
 				var teacherView14 = document.getElementById("teacherView14").value;				
                 addTimeSlot(classNo,classTeacher,timeView14,subjectView14,teacherView14,mon);
         
+                var timeView15 = document.getElementById("timeView15").value;       /*fifth slot*/
+				var subjectView15 = document.getElementById("subjectView15").value;
+				var teacherView15 = document.getElementById("teacherView15").value;				
+                addTimeSlot(classNo,classTeacher,timeView15,subjectView15,teacherView15,mon);
+        
+                var timeView16 = document.getElementById("timeView16").value;       /*sisth slot*/
+				var subjectView16 = document.getElementById("subjectView16").value;
+				var teacherView16 = document.getElementById("teacherView16").value;				
+                addTimeSlot(classNo,classTeacher,timeView16,subjectView16,teacherView16,mon);
+        
                 
         
                 
