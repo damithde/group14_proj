@@ -13,6 +13,7 @@
 <script src="../../../firebase models/db.js"></script>
 <script src="../../../firebase models/student.js"></script>
 <script src="../../../firebase models/admin.js"></script>
+<script src="../../../firebase models/exam.js"></script>
 <script src="../../../firebase models/login.js"></script>
 <script src="../../../firebase models/fileupload.js"></script>
 </head>
@@ -230,7 +231,7 @@
 
 
 
-<script>
+<!-- <script>
     function addexam(){
         var school=document.getElementById("schoolid").value;
         var year = "2014";//document.getElementById("examYearTxt").value;
@@ -255,7 +256,7 @@
         .catch(function(error) {
             alert("Error adding document: ", error);
         });
-    }
+    } -->
 
 
 
