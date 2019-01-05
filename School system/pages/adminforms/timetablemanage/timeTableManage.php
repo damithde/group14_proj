@@ -171,7 +171,7 @@
                             <td></td>
                             <td></td>
                             <td><button id="search" type="button" class="btn btn-primary">Search</button></td>
-                            <td><button id="add" type="button" class="btn btn-primary" onclick="datasubmission()">Add</button></td>
+                            <td><button id="add" type="button" class="btn btn-primary" onclick="addTimeSlot()">Add</button></td>
                             <td><button id="delete" type="button" class="btn btn-primary">Delete</button></td>
                           
                             </tr>
@@ -355,8 +355,47 @@
         //var parent={name:parName,parent:par,occupation:parOcupation,email:parEmail,Econtact:parContact};
         //var student= [stdAdNo,stdFName,stdLName,contact,stdbd,stdAddress,stdReli,school,stdGrade,stdClass,stdEmail,profileimg,studentId,stdFName,stdmedium];
         //addstudent(student,parent);
-        addTimeTable(timeTableList)
+        //addTimeTable(timeTableList)
     }
+    
+    
+    
+    function addTimeSlot(){
+                var classNo=document.getElementById("classNo").value;
+		        var classTeacher=document.getElementById("classTeacher").value;
+			    var timeView1 = document.getElementById("timeView1").value;       /*first row*/
+				var subjectView1 = document.getElementById("subjectView1").value;
+				var teacherView1 = document.getElementById("teacherView1").value;
+				var date="Monday";
+            
+    timeTableList=[classNo,classTeacher,timeView1,subjectView1,teacherView1,date];
+    
+    db.collection("timetable").add({
+        classNo:timeTableList[0],
+        classTeacher:timeTableList[1],
+        date:timeTableList[2],
+        time:timeTableList[3],
+        subjectCode:timeTableList[4],
+		regno:timeTableList[5]
+        
+        
+
+    })
+    .then(function(docRef) {
+        alert("Time Table sent successfully");
+       // console.log("Document written with ID: ", docRef.id);
+    })
+    .catch(function(error) {
+        alert("Error adding document: ", error);
+    });
+}
+    
+    
+    
+    
+    
+    
+    
     </script>
     
     </body>
