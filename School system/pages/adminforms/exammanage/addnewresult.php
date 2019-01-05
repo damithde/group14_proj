@@ -143,7 +143,7 @@
                                         <div class="form-group">
                                             <div class="col-md-8">
                                                 <div id="studentMediumTxt" class="form-group">
-                                                <button style="width:150px" onclick="addexam()" type="button" class="btn btn-primary">Load Student List</button>
+                                                <button style="width:150px" onclick="add1()" type="button" class="btn btn-primary">Load Student List</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -195,10 +195,10 @@
 </body>
 
 <script>
-    getschool("stuschool");
-    function addexam(){
-        var school="abc";//document.getElementById("schoolid").value;
-        var year = "2014";//document.getElementById("examYearTxt").value;
+    // getschool("stuschool");
+    function add1(){
+        var school="abqqc";//document.getElementById("schoolid").value;
+        var year = "201432";//document.getElementById("examYearTxt").value;
         var grade = "8";//document.getElementById("gradeTxt").value;
         // var class = "A";//document.getElementById("classTxt").value;
         var date = "2019-08-08";//document.getElementById("examDateTxt").value;
