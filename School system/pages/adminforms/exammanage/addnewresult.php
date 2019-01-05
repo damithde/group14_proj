@@ -197,11 +197,11 @@
 <script>
     getschool("stuschool");
     function addexam(){
-        var school="abc";document.getElementById("schoolid").value;
+        var school="abc";//document.getElementById("schoolid").value;
         var year = "2014";//document.getElementById("examYearTxt").value;
         var grade = "8";//document.getElementById("gradeTxt").value;
         // var class = "A";//document.getElementById("classTxt").value;
-        var date = "2019-08-08";document.getElementById("examDateTxt").value;
+        var date = "2019-08-08";//document.getElementById("examDateTxt").value;
         var subject = "Test";//document.getElementById("subjectTxt").value;
         var examId =year+subject;
         var exam=[examId,year,grade,date,subject,examId];

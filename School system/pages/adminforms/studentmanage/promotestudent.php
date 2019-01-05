@@ -106,6 +106,8 @@
 </body>
 <input type="text" id="schoolid" value="blank" >
 </html>
+
+
 <script>
     getschool("schoolid");
     setTimeout(p ,1500);
