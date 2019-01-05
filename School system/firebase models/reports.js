@@ -28,7 +28,7 @@ var myBarChart = Chart.Bar(canvas,{
 });
 
 
-<<<<<<< HEAD
+
 function addreport(student) {
     db.collection("reports").doc(student[0]).set({
         regno: student[0],
@@ -50,58 +50,23 @@ function addreport(student) {
         totalmarks: student[16],
         position: student[17],
     })
-    .then(function(docRef) {
-        alert("student added successfully");
-        // console.log("Document written with ID: ", docRef.id);
-    })
-    .catch(function(error) {
-        alert("Error adding document: ", error);
-    });
-        
+        .then(function (docRef) {
+            alert("report added successfully");
+            // console.log("Document written with ID: ", docRef.id);
+        })
+        .catch(function (error) {
+            alert("Error adding document: ", error);
+        });
+
     db.collection("terms").doc(student[0]).set({
         school: student[2],
         class: student[3],
         grade: student[4],
         year: student[5],
-            termno: student[6],
-=======
-function addreport(report) {
-    db.collection("reports").doc(report[0]).set({
-        regno: report[0],
-        name: report[1],
-        school: report[2],
->>>>>>> 64bfaf17babccdbf2b9924fb393c677fe8ffdc93
-
-        grade: report[3],
-        class: report[4],
-        year: report[5],
-        termno: report[6],
-        sub1: report[7],
-        sub2: report[8],
-        sub3: report[9],
-        sub4: report[10],
-        sub5: report[11],
-        sub6: report[12],
-        sub7: report[13],
-        sub8: report[14],
-        sub9: report[15],
-        totalmarks: report[16],
-        position: report[17],
+        termno: student[6],
     })
-<<<<<<< HEAD
-    .then(function(docRef) {
-            alert("student added successfully");
-=======
-        .then(function(docRef) {
-                alert("report added successfully");
->>>>>>> 64bfaf17babccdbf2b9924fb393c677fe8ffdc93
-                // console.log("Document written with ID: ", docRef.id);
-    })
-    .catch(function(error) {
-            alert("Error adding document: ", error);
-    });
-
 }
+
 function getreports(Regno,Class,Grade,Year,Term) {
     var output = {};
     db.collection("terms").where("school", "==",School ).where("regno", "==", Regno).where("class", "==", Class).where("grade", "==", Grade).where("year", "==", Year).where("termno", "==", Term)

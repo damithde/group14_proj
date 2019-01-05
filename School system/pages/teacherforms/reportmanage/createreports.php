@@ -217,8 +217,8 @@
             var stdTotal = document.getElementById("studentTotalTxt").value;
             var stdPosition = document.getElementById("studentPositionTxt").value;
 
-            var report = [stdRegNo, stdName, stdSchool,stdGrade,stdClass,stdYear, stdTestNo, stdSub1, stdSub2, stdSub3, stdSub4, stdSub5, stdSub6, stdSub7, stdSub8, stdSub9, stdTotal, stdPosition];
-            addreport(report);
+            var student = [stdRegNo, stdName, stdSchool,stdGrade,stdClass,stdYear, stdTestNo, stdSub1, stdSub2, stdSub3, stdSub4, stdSub5, stdSub6, stdSub7, stdSub8, stdSub9, stdTotal, stdPosition];
+            addreport(student);
         }
     </script>
 <script>
