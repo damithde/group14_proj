@@ -99,7 +99,31 @@
                         </div>
                 </div>
                 <div>
-                    <?php include_once('dashboardnotificationPanel.php'); ?>
+                <div >
+                    <div class="box box-primary">
+                            <div class="box-header with-border">
+                                <div class="fa fa-bullhorn">
+                                    <h3 class="box-title">School Notifications And Notices</h3>
+                                </div>
+                                <div class="box-tools pull-right">
+                        <!--            <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>-->
+                        <!--            <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>-->
+                                </div>
+                            </div><!-- /.box-header -->
+                            <div id="noti" class="box-body">
+                                <ul class="products-list product-list-in-box" id="list">
+                                    <li class="item">
+            
+                                       
+                                    </li><!-- /.item -->
+                                    
+                                    </ul>
+                            </div><!-- /.box-body -->
+                            <div class="box-footer text-center">
+                                <!-- <a href="javascript::;" class="uppercase">View All Notifications</a> -->
+                            </div><!-- /.box-footer -->
+                        </div><!-- /.box -->
+                </div>
                 </div>
             </div>
             <div class="col-md-3">
@@ -141,37 +165,117 @@
     </section>
 </section>
 </div>
+<input type="hidden" id="schoolid" value="abc">
 </body>
 
 
 <?php include_once('../admincommon/footer.php'); ?>
 
 <script>
-    var studentcount = "";
-    var studentpresent;
-    var teachercount;
-    var teacherpresent;
-    document.getElementById('studentcount').innerHTML = studentcount;
-    // document.getElementById('studentpresent').innerHTML = studentpresent;
-    document.getElementById('teachercount').innerHTML = teachercount;
-    // document.getElementById('teacherpresent').innerHTML = teacherpresent;
+    loadnotification();
+    gettotaalstudents();
+    gettotalteachers();
+    gettotalnotifications();
     
+    
+function loadnotification(){
+    var output;
+    var school=document.getElementById("schoolid").value;
+    db.collection("notification").where("schooIId","==",school)
+    .get()
+    .then(function(querySnapshot) {
+        var i=0;
+        querySnapshot.forEach(function(doc) {
 
-    var totNonAcadamicStaff;
-    var totNoOfNotifaications; 
-    var totTeachers;
-    var totStudents;
-    var totTeachersNo ="width: 90%";
+            output=doc.data();
+            
+            el = document.createElement('li');
+            el.id = 'l'+i;
+            document.getElementById('list').appendChild(el);
+           
+            var iDiv = document.createElement('h4');
+            iDiv.id = 'block'+i;
+            iDiv.innerHTML= output.title;
+            el.appendChild(iDiv);
 
-    document.getElementById('totNonAcadamicStaff').innerHTML = totNonAcadamicStaff;
-    document.getElementById('totNoOfNotifaications').innerHTML = totNoOfNotifaications;
-    document.getElementById('totTeachers').innerHTML = totTeachers;
-    document.getElementById('totStudentsNo').style.width = "90%";
+            var nSpan = document.createElement('span')
+            nSpan.innerHTML = output.content;
+            el.appendChild(nSpan);
 
-    document.getElementById('totStudents').innerHTML = totStudents;
+            var h = document.createElement('hr')
+            el.appendChild(h);
+            
+            i++;
+           //console.log(doc.id, " => ", doc.data());
+        });
+    })
+    .catch(function(error) {
+        console.log("Error getting documents: ", error);
+    });
+}
 
 
+function gettotaalstudents(){
+    var school=document.getElementById("schoolid").value;
+    var output,count;
+    count=0;
+    db.collection("students").where("school","==",school)
+    .get()
+    .then(function(querySnapshot) {
+        querySnapshot.forEach(function(doc) {
+            output=doc.data();
+            count++;
+            
+           //console.log(doc.id, " => ", doc.data());
+        });
+        document.getElementById("totStudents").innerHTML=count;
+    })
+    
+    .catch(function(error) {
+        console.log("Error getting documents: ", error);
+    });
+}
 
+
+function gettotalteachers(){
+    var school=document.getElementById("schoolid").value;
+    var output,count;
+    count=0;
+    db.collection("teachers").where("school","==",school)
+    .get()
+    .then(function(querySnapshot) {
+        querySnapshot.forEach(function(doc) {
+            output=doc.data();
+            count++;
+            
+           //console.log(doc.id, " => ", doc.data());
+        });
+        document.getElementById("totTeachers").innerHTML=count;
+    })
+    .catch(function(error) {
+        console.log("Error getting documents: ", error);
+    });
+}
+
+function gettotalnotifications(){
+    var school=document.getElementById("schoolid").value;
+    var output,count;
+    count=0;
+    db.collection("notification").where("school","==",school)
+    .get()
+    .then(function(querySnapshot) {
+        querySnapshot.forEach(function(doc) {
+            output=doc.data();
+            count++;
+            
+           //console.log(doc.id, " => ", doc.data());
+        });
+        document.getElementById("totNoOfNotifaications").innerHTML=count;
+    })
+    .catch(function(error) {
+        console.log("Error getting documents: ", error);
+    });
+}
 
     
 </script>
