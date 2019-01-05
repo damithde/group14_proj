@@ -527,7 +527,7 @@
 
 
 </script>
-<script>
+
 
 // var studentClass = document.getElementById("studentClassesTxt").value;
 // var stdSubjects = document.getElementById("studentSubjectsTxt").value;
