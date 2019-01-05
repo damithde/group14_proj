@@ -15,9 +15,6 @@ var data = {
     ]
 };
 var option = {
-animation: {
-				duration:5000
-}
     animation: {
         duration:5000
     }
@@ -26,8 +23,6 @@ animation: {
 
 
 var myBarChart = Chart.Bar(canvas,{
-	data:data,
-  options:option
     data:data,
     options:option
 });
