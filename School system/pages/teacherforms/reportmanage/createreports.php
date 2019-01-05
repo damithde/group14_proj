@@ -40,7 +40,6 @@
                     <h3 class="box-title">Create Report</h3>
                 </div><!-- /.box-header -->
                 <!-- form start -->
-                    <form role="form">
                     <form role="form" action="createreports.php" method="POST">
                     <div class="box-body">
                         <div class="form-group">
