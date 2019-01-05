@@ -15,50 +15,43 @@ var data = {
     ]
 };
 var option = {
-animation: {
-				duration:5000
-}
+    animation: {
+        duration:5000
+    }
 
 };
 
 
 var myBarChart = Chart.Bar(canvas,{
-	data:data,
-  options:option
+    data:data,
+    options:option
 });
 
 
-function addreport(student) {
-    db.collection("reports").doc(student[0]).set({
-        regno: student[0],
-        name: student[1],
-        school: student[2],
-        class: student[3],
-        grade: student[4],
-        year: student[5],
-        termno: student[6],
-        sub1: student[7],
-        sub2: student[8],
-        sub3: student[9],
-        sub4: student[10],
-        sub5: student[11],
-        sub6: student[12],
-        sub7: student[13],
-        sub8: student[14],
-        sub9: student[15],
-        totalmarks: student[16],
-        position: student[17],
-    })
-        db.collection("terms").doc(student[0]).set({
-        school: student[2],
-        class: student[3],
-        grade: student[4],
-        year: student[5],
-            termno: student[6],
+function addreport(report) {
+    db.collection("reports").doc(report[0]).set({
+        regno: report[0],
+        name: report[1],
+        school: report[2],
 
+        grade: report[3],
+        class: report[4],
+        year: report[5],
+        termno: report[6],
+        sub1: report[7],
+        sub2: report[8],
+        sub3: report[9],
+        sub4: report[10],
+        sub5: report[11],
+        sub6: report[12],
+        sub7: report[13],
+        sub8: report[14],
+        sub9: report[15],
+        totalmarks: report[16],
+        position: report[17],
     })
-            .then(function(docRef) {
-                alert("student added successfully");
+        .then(function(docRef) {
+                alert("report added successfully");
                 // console.log("Document written with ID: ", docRef.id);
             })
             .catch(function(error) {

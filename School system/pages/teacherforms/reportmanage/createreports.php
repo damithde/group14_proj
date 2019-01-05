@@ -8,7 +8,11 @@
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-database.js"></script>
-
+    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-storage.js"></script>
+    <script src="../../../firebase models/db.js"></script>
+    <script src="../../../firebase models/reports.js"></script>
+    <script src="../../../firebase models/admin.js"></script>
+    <script src="../../../firebase models/login.js"></script>
 
 
     <section class="content-wrapper">
@@ -26,7 +30,7 @@
                     <h3 class="box-title">Create Report</h3>
                 </div><!-- /.box-header -->
                 <!-- form start -->
-                    <form role="form">
+                    <form role="form" action="createreports.php" method="POST">
                     <div class="box-body">
                         <div class="form-group">
                             <label  >Registration Number:</label>
@@ -42,14 +46,13 @@
                         </div>
                         <div class="form-group">
                             <label  >School:</label>
-                            <input type="text" class="form-control" id="stuSchool" placeholder="Enter school">
+                            <input type="text" class="form-control" id="stuSchool" disabled >
 
                         </div>
                     <div class="form-group">
                         <div class="col-md-6">
-                            <div id="studentMediumTxt" class="form-group">
                                 <label  >Select Grade:</label>
-                                <select class="form-control">
+                                <select class="form-control" id="stuGrade">
                                     <option value="6">Grade 6</option>
                                     <option value="7">Grade 7</option>
                                     <option value="8">Grade 8</option>
@@ -59,13 +62,13 @@
                                     <option value="12">Grade 12</option>
                                 </select>
                             </div>
-                        </div>
+
                     </div>
                     <div class="form-group">
                         <div class="col-md-6">
-                            <div id="studentMediumTxt" class="form-group">
+
                                 <label  >Select Class:</label>
-                                <select class="form-control">
+                                <select class="form-control" id="stuClass">
                                     <option value="sinhala">All</option>
                                     <option value="english">A</option>
                                     <option value="tamil">B</option>
@@ -78,12 +81,13 @@
                                 </select>
                             </div>
                         </div>
-                    </div>
+
                     <div class="form-group">
+
                         <div class="col-md-6">
-                            <div id="studentMediumTxt" class="form-group">
+
                                 <label  >Select Year:</label>
-                                <select class="form-control">
+                                <select class="form-control" id="stuYear">
                                     <option value="6">2019</option>
                                     <option value="7">2018</option>
                                     <option value="8">2017</option>
@@ -93,21 +97,24 @@
                                     <option value="1">2013</option>
                                 </select>
                             </div>
-                        </div>
+
+
                     </div>
                     <div class="form-group">
                         <div class="col-md-6">
-                            <div id="studentMediumTxt" class="form-group">
+
                                 <label  >Term Test No:</label>
-                                <select class="form-control">
-                                    <option value="1">1</option>
+                                <select class="form-control" id="stuTestNo">
+
+                                      <option value="1">1</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>
 
+
                                 </select>
-                            </div>
                         </div>
-                    </div>
+
+
                 </div>
 
                         <div class="box-body">
@@ -159,27 +166,60 @@
                         </div>
 
 
+                            <div class="box-footer">
+                                <button type="button" class="btn btn-primary" onclick="datasubmissionrepo()" >submit</button>
+                            </div>
 
+                        </form>
+                </div>
+                </div>
+            </div><!-- /.box -->
 
-
-
-
-                        </div>
-                        </div>
-                </form>
-            </div>
         </div>
+
+        </div>
+
+    </section>
+    </section>
+
+    <script>
+
+ getschool("stuSchool");
+        function datasubmissionrepo() {
+
+            var stdRegNo = document.getElementById("studentRegNo").value;
+            var stdName = document.getElementById("studentLNameTxt").value;
+
+            var stdSchool = document.getElementById("stuSchool").value;
+            var stdGrade = document.getElementById("stuGrade").value;
+            var stdClass = document.getElementById("stuClass").value;
+            var stdYear = document.getElementById("stuYear").value;
+            var stdTestNo = document.getElementById("stuTestNo").value;
+            var stdSub1 = document.getElementById("studentSubject1Txt").value;
+            var stdSub2 = document.getElementById("studentSubject2Txt").value;
+            var stdSub3 = document.getElementById("studentSubject3Txt").value;
+            var stdSub4 = document.getElementById("studentSubject4Txt").value;
+            var stdSub5 = document.getElementById("studentSubject5Txt").value;
+            var stdSub6 = document.getElementById("studentSubject6Txt").value;
+            var stdSub7 = document.getElementById("studentSubject7Txt").value;
+            var stdSub8 = document.getElementById("studentSubject8Txt").value;
+            var stdSub9 = document.getElementById("studentSubject9Txt").value;
+            var stdTotal = document.getElementById("studentTotalTxt").value;
+            var stdPosition = document.getElementById("studentPositionTxt").value;
+
+            var report = [stdRegNo, stdName, stdSchool,stdGrade,stdClass,stdYear, stdTestNo, stdSub1, stdSub2, stdSub3, stdSub4, stdSub5, stdSub6, stdSub7, stdSub8, stdSub9, stdTotal, stdPosition];
+            addreport(report);
+        }
+    </script>
+<script>
+
+</script>
 
 <!--        parent details-->
 
 
 
-                </form>
-            </div><!-- /.box -->
-        </div>
-    </div>
-    <div>
-    </div>
+
 
         <body class="skin-blue">
         <div class="wrapper">
@@ -439,7 +479,7 @@
 
 
                         <div class="box-footer">
-                            <button type="button" class="btn btn-primary" onclick="datasubmission()" >Submit</button>
+                            <button type="button" class="btn btn-primary"  >Submit</button>
                         </div>
                         </form>
                     </div><!-- /.box -->
@@ -456,41 +496,13 @@
 
 
 
-<script src="../../../firebase models/db.js"></script>
-<script src="../../../firebase models/reports.js"></script>
-    <script src="../../../firebase models/admin.js"></script>
-    <script src="../../../firebase models/login.js"></script>
-<script>
-    getschool("stuSchool");
-    getreports("studentRegNo","stuClass","stuGrade","stuYear","stuTestNo");
-    function datasubmission() {
-        var stdRegNo = document.getElementById("studentRegNo").value;
-        var stdName = document.getElementById("studentLNameTxt").value;
-        var stdSchool = document.getElementById("stuSchool").value;
-        var stdClass = document.getElementById("stuClass").value;
-        var stdGrade = document.getElementById("stuGrade").value;
-        var stdYear = document.getElementById("stuYear").value;
-        var stdTestNo = document.getElementById("stuTestNo").value;
-        var stdSub1 = document.getElementById("studentSubject1Txt").value;
-        var stdSub2 = document.getElementById("studentSubject2Txt").value;
-        var stdSub3 = document.getElementById("studentSubject3Txt").value;
-        var stdSub4 = document.getElementById("studentSubject4Txt").value;
-        var stdSub5 = document.getElementById("studentSubject5Txt").value;
-        var stdSub6 = document.getElementById("studentSubject6Txt").value;
-        var stdSub7 = document.getElementById("studentSubject7Txt").value;
-        var stdSub8 = document.getElementById("studentSubject8Txt").value;
-        var stdSub9 = document.getElementById("studentSubject9Txt").value;
-        var stdTotal = document.getElementById("studentTotalTxt").value;
-        var stdPosition = document.getElementById("studentPositionTxt").value;
 
-        var student = [stdRegNo, stdName, stdSchool, stdClass, stdGrade, stdTestNo, stdAdNo, stdYear, stdSub1, stdSub2, stdSub3, stdSub4, stdSub5, stdSub6, stdSub7, stdSub8, stdSub9, stdTotal, stdPosition];
-        addreport(student);
-    }
 
     <script src="../../../firebase models/db.js"></script>
     <script src="../../../firebase models/results.js"></script>
-</script>
+
 <script>
+
 getschool(reposchool);
 var studentClass = document.getElementById("studentClassesTxt").value;
 var stdSubjects = document.getElementById("studentSubjectsTxt").value;

@@ -8,6 +8,7 @@
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-database.js"></script>
+<script src="../../../firebase models/reports.js"></script>
 
 <section class="content-wrapper">
     <div class="content-header">
@@ -287,7 +288,7 @@
                                                                                     <div class="col-md-8">
                                                                                         <div id="studentMediumTxt" class="form-group">
                                                                                             <label  >Select Year:</label>
-                                                                                            <select class="form-control">
+                                                                                            <select class="form-control" id="studentyear">
                                                                                                 <option value="6">2019</option>
                                                                                                 <option value="7">2018</option>
                                                                                                 <option value="8">2017</option>
@@ -303,7 +304,7 @@
                                                                             <div class="col-md-8">
                                                                                 <div id="studentMediumTxt" class="form-group">
                                                                                     <label  >Select Grade:</label>
-                                                                                    <select class="form-control">
+                                                                                    <select class="form-control" id="studentgrade">
                                                                                         <option value="6">Grade 6</option>
                                                                                         <option value="7">Grade 7</option>
                                                                                         <option value="8">Grade 8</option>
@@ -319,7 +320,7 @@
                                                                             <div class="col-md-8">
                                                                                 <div id="studentMediumTxt" class="form-group">
                                                                                     <label  >Select Class:</label>
-                                                                                    <select class="form-control">
+                                                                                    <select class="form-control" id="studentclass">
                                                                                         <option value="sinhala">All</option>
                                                                                         <option value="english">A</option>
                                                                                         <option value="tamil">B</option>
@@ -337,7 +338,7 @@
                                                                             <div class="col-md-8">
                                                                                 <div id="studentMediumTxt" class="form-group">
                                                                                     <label  >Term Test No:</label>
-                                                                                    <select class="form-control">
+                                                                                    <select class="form-control" id="studenttest">
                                                                                         <option value="1">1</option>
                                                                                         <option value="2">2</option>
                                                                                         <option value="3">3</option>
@@ -365,7 +366,7 @@
                                                                         <div class="form-group">
                                                                             <div class="col-md-8">
                                                                                 <div id="studentMediumTxt" class="form-group">
-                                                                                    <button style="width:150px" type="submit" class="btn btn-primary">Search</button>
+                                                                                    <button style="width:150px" type="submit" class="btn btn-primary" onclick="getreports()"> Search</button>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
@@ -386,15 +387,23 @@
                                                                                     <label class="text-muted" for="exampleInputEmail1">Name:</label>
                                                                                 </div>
                                                                                 <div class="form-group">
+                                                                                    <label class="text-muted" for="exampleInputEmail1">School:</label>
+                                                                                </div>
+                                                                                <div class="form-group">
+                                                                                    <label class="text-muted" for="exampleInputEmail1">Grade:</label>
+                                                                                </div>
+                                                                                <div class="form-group">
                                                                                     <label class="text-muted" for="exampleInputEmail1">Class:</label>
                                                                                 </div>
 
                                                                                 <div class="form-group">
-                                                                                    <label class="text-muted" for="exampleInputEmail1">Term Test:</label>
-                                                                                </div>
-                                                                                <div class="form-group">
                                                                                     <label class="text-muted" for="exampleInputEmail1">Year:</label>
                                                                                 </div>
+
+                                                                                <div class="form-group">
+                                                                                    <label class="text-muted" for="exampleInputEmail1">Test No:</label>
+                                                                                </div>
+
 
 
                                                                                 <div class="form-group">
@@ -450,15 +459,22 @@
                                                                             <div class="form-group">
                                                                                 <label id="stuNameLbl">-</label>
                                                                             </div>
+                                                                        <div class="form-group">
+                                                                            <label id="stuSchoolLbl">-</label>
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                            <label id="stuGradeLbl">-</label>
+                                                                        </div>
                                                                             <div class="form-group">
                                                                                 <label id="stuClassLbl">-</label>
                                                                             </div>
+                                                                        <div class="form-group">
+                                                                            <label id="studentYearLbl">-</label>
+                                                                        </div>
                                                                             <div class="form-group">
                                                                                 <label id="studentTermTestNoLbl">-</label>
                                                                             </div>
-                                                                            <div class="form-group">
-                                                                                <label id="studentYearLbl">-</label>
-                                                                            </div>
+
 
 
                                                                             <div class="form-group">
@@ -612,6 +628,10 @@
 
 
 
+
+
+
+
 <?php
     $dataPoints = array(
         array("label"=>"55-65", "y"=>64.02),
@@ -666,7 +686,9 @@
 
 
 <script>
-    var studentNameLbl
+
+
+        var studentNameLbl
     var studentGenderLbl
     var studentBdyLbl
     var studentReligionLbl
@@ -686,7 +708,7 @@
 
 
 
-    document.getElementById('studentNameLbl').innerHTML = studentNameLbl;
+    document.getElementById('studentNameLbl').innerHTML =studentNameLbl ;
     document.getElementById('studentGenderLbl').innerHTML = studentGenderLbl;
     document.getElementById('studentBdyLbl').innerHTML = studentBdyLbl;
     document.getElementById('studentReligionLbl').innerHTML = studentReligionLbl;
@@ -706,9 +728,21 @@
 </script>
     <script>
 
+        function getreports(){
 
+        }
+        var output;
+
+
+        db.collection("terms").where("schoolid","==",school).where("grade","==",grade).where("class","==",cls).where("year","==",year).where("testno","==",term).where("studentreg","==",reg)
+            .get()
+            .then(function(querySnapshot) {
+                querySnapshot.forEach(function(doc) {
+                    output=doc.data();
     var studentAdmissionNoLbl
     var stuNameLbl
+    var stuSchoolLbl
+    var stuGradeLbl
     var stuClassLbl
     var studentTermTestNoLbl
     var studentYearLbl
@@ -726,23 +760,28 @@
     var studentTotalMarksLbl
     var studentPositionLbl
 
-    document.getElementById('studentAdmissionNoLbl').innerHTML=studentAdmissionNoLbl;
-    document.getElementById('stuNameLbl').innerHTML=stuNameLbl;
-    document.getElementById('stuClassLbl').innerHTML=stuClassLbl;
-    document.getElementById('studentTermTestNoLbl').innerHTML=studentTermTestNoLbl;
-    document.getElementById('studentYearLbl').innerHTML=studentYearLbl;
-    document.getElementById('studentPositionLbl').innerHTML=studentPositionLbl;
-    document.getElementById('studentSubject1Lbl').innerHTML=studentSubject1Lbl;
-    document.getElementById('studentSubject2Lbl').innerHTML=studentSubject2Lbl;
-    document.getElementById('studentSubject3Lbl').innerHTML=studentSubject3Lbl;
-    document.getElementById('studentSubject4Lbl').innerHTML=studentSubject4Lbl;
-    document.getElementById('studentSubject5Lbl').innerHTML=studentSubject5Lbl;
-    document.getElementById('studentSubject6Lbl').innerHTML=studentSubject6Lbl;
-    document.getElementById('studentSubject7Lbl').innerHTML=studentSubject7Lbl;
-    document.getElementById('studentSubject8Lbl').innerHTML=studentSubject8Lbl;
-    document.getElementById('studentSubject9Lbl').innerHTML=studentSubject9Lbl;
-    document.getElementById('studentTotalMarksLbl').innerHTML=studentTotalMarksLbl;
-    document.getElementById('studentPositionLbl').innerHTML=studentPositionLbl;
+    document.getElementById('studentAdmissionNoLbl').innerHTML=output.regno;
+    document.getElementById('stuNameLbl').innerHTML=output.name;
+    document.getElementById('stuSchoolLbl').innerHTML=output.school;
+    document.getElementById('stuGradeLbl').innerHTML=output.grade;
+    document.getElementById('stuClassLbl').innerHTML=output.class;
+    document.getElementById('studentTermTestNoLbl').innerHTML=output.termno
+    document.getElementById('studentYearLbl').innerHTML=output.year;
+
+    document.getElementById('studentSubject1Lbl').innerHTML=output.sub1;
+    document.getElementById('studentSubject2Lbl').innerHTML=output.sub2;
+    document.getElementById('studentSubject3Lbl').innerHTML=output.sub3;
+    document.getElementById('studentSubject4Lbl').innerHTML=output.sub4;
+    document.getElementById('studentSubject5Lbl').innerHTML=output.sub5;
+    document.getElementById('studentSubject6Lbl').innerHTML=output.sub6;
+    document.getElementById('studentSubject7Lbl').innerHTML=output.sub7;
+    document.getElementById('studentSubject8Lbl').innerHTML=output.sub8;
+    document.getElementById('studentSubject9Lbl').innerHTML=output.sub9;
+    document.getElementById('studentTotalMarksLbl').innerHTML=output.totalmarks;
+    document.getElementById('studentPositionLbl').innerHTML=output.position;
+                .catch(function(error) {
+                        console.log("Error getting documents: ", error);
+                    });
 
 </script>
         <script>
