@@ -30,7 +30,7 @@
 
 
 function addreport(student) {
-    
+    console.log("Document written with ID");
     db.collection("reports").doc(student[0]).set({
         regno: student[0],
         name: student[1],

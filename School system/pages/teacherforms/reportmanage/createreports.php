@@ -48,7 +48,7 @@
                         </div>
                         <div class="form-group">
                             <label  >School:</label>
-                            <input type="text" class="form-control" id="stuSchool" disabled >
+                            <input type="text" class="form-control" id="stuSchool"  >
 
                         </div>
                     <div class="form-group">
@@ -185,13 +185,12 @@
     </section>
 
     <script>
+        getschool("stuSchool");
 
- getschool("stuSchool");
         function datasubmissionrepo() {
 
             var stdRegNo = document.getElementById("studentRegNo").value;
             var stdName = document.getElementById("studentLNameTxt").value;
-
             var stdSchool = document.getElementById("stuSchool").value;
             var stdGrade = document.getElementById("stuGrade").value;
             var stdClass = document.getElementById("stuClass").value;
@@ -208,19 +207,13 @@
             var stdSub9 = document.getElementById("studentSubject9Txt").value;
             var stdTotal = document.getElementById("studentTotalTxt").value;
             var stdPosition = document.getElementById("studentPositionTxt").value;
-
+                    
             var report = [stdRegNo, stdName, stdSchool,stdGrade,stdClass,stdYear, stdTestNo, stdSub1, stdSub2, stdSub3, stdSub4, stdSub5, stdSub6, stdSub7, stdSub8, stdSub9, stdTotal, stdPosition];
-            addreport(report);
+            addreport(student);
         }
     </script>
-<script>
-
-</script>
 
 <!--        parent details-->
-
-
-
 
 
         <body class="skin-blue">
@@ -485,7 +478,7 @@
 
 
 <script>
-    getschool("stuSchool");
+    
     //getreports(studentRegNo,stuClass,stuGrade,stuYear,stuTestNo);
     function datasubmission() {
         var stdRegNo = document.getElementById("studentRegNo").value;
@@ -507,7 +500,7 @@
         var stdTotal = document.getElementById("studentTotalTxt").value;
         var stdPosition = document.getElementById("studentPositionTxt").value;
 
-        var student = ["stdRegNo", "stdName", "stdSchool", "stdClass", "stdGrade", "stdTestNo", "stdAdNo", "stdYear", "stdSub1", "stdSub2", "stdSub3", "stdSub4", "stdSub5", "stdSub6", "stdSub7", "stdSub8", "stdSub9", "stdTotal", "stdPosition"];
+        var student = [stdRegNo, "stdName", "stdSchool", "stdClass", "stdGrade", "stdTestNo", "stdAdNo", "stdYear", "stdSub1", "stdSub2", "stdSub3", "stdSub4", "stdSub5", "stdSub6", "stdSub7", "stdSub8", "stdSub9", "stdTotal", "stdPosition"];
         addreport(student);
     }
 
