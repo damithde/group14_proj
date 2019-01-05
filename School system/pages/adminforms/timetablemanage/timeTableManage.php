@@ -263,6 +263,28 @@
 				var teacherView18 = document.getElementById("teacherView18").value;				
                 addTimeSlot(classNo,classTeacher,timeView18,subjectView18,teacherView18,mon);
         
+                var tu="tuesday";
+        
+                var timeView2 = document.getElementById("timeView2").value;       /*second colum first slot*/
+				var subjectView2 = document.getElementById("subjectView2").value;
+				var teacherView2 = document.getElementById("teacherView2").value;				
+                addTimeSlot(classNo,classTeacher,timeView2,subjectView2,teacherView2,tu);
+        
+                var timeView22 = document.getElementById("timeView22").value;       /*second colum second slot*/
+				var subjectView22 = document.getElementById("subjectView22").value;
+				var teacherView22 = document.getElementById("teacherView22").value;				
+                addTimeSlot(classNo,classTeacher,timeView22,subjectView22,teacherView22,tu);
+        
+                var timeView23 = document.getElementById("timeView23").value;       /*second colum third slot*/
+				var subjectView23 = document.getElementById("subjectView23").value;
+				var teacherView23 = document.getElementById("teacherView23").value;				
+                addTimeSlot(classNo,classTeacher,timeView23,subjectView23,teacherView23,tu);
+        
+                var timeView24 = document.getElementById("timeView24").value;       /*second colum fourth slot*/
+				var subjectView24 = document.getElementById("subjectView24").value;
+				var teacherView24 = document.getElementById("teacherView24").value;				
+                addTimeSlot(classNo,classTeacher,timeView24,subjectView24,teacherView24,tu);
+        
                 
         
                 
