@@ -178,5 +178,71 @@
     document.getElementById('totStudentsNo').style.width = "90%";
 
     document.getElementById('totStudents').innerHTML = totStudents;
+
+
+
+
+function gettotaalstudents(){
+    
+    var output,count;
+    count=0;
+    db.collection("students")
+    .get()
+    .then(function(querySnapshot) {
+        querySnapshot.forEach(function(doc) {
+            output=doc.data();
+            count++;
+            
+           //console.log(doc.id, " => ", doc.data());
+        });
+        document.getElementById("totStudents").innerHTML=count;
+    })
+    
+    .catch(function(error) {
+        console.log("Error getting documents: ", error);
+    });
+}
+
+
+function gettotalteachers(){
+    
+    var output,count;
+    count=0;
+    db.collection("teachers")
+    .get()
+    .then(function(querySnapshot) {
+        querySnapshot.forEach(function(doc) {
+            output=doc.data();
+            count++;
+            
+           //console.log(doc.id, " => ", doc.data());
+        });
+        document.getElementById("totTeachers").innerHTML=count;
+    })
+    .catch(function(error) {
+        console.log("Error getting documents: ", error);
+    });
+}
+
+function gettotalnotifications(){
+    
+    var output,count;
+    count=0;
+    db.collection("notification")
+    .get()
+    .then(function(querySnapshot) {
+        querySnapshot.forEach(function(doc) {
+            output=doc.data();
+            count++;
+            
+           //console.log(doc.id, " => ", doc.data());
+        });
+        document.getElementById("totNoOfNotifaications").innerHTML=count;
+    })
+    .catch(function(error) {
+        console.log("Error getting documents: ", error);
+    });
+}
+
 </script>
 
