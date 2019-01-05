@@ -4,16 +4,17 @@
 <?php include_once('../admincommon/script.php'); ?>
 
 <head>
-    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-database.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-storage.js"></script>
-    <script src="../../../firebase models/db.js"></script>
-    <script src="../../../firebase models/student.js"></script>
-    <script src="../../../firebase models/admin.js"></script>
-    <script src="../../../firebase models/login.js"></script>
-    <script src="../../../firebase models/fileupload.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-storage.js"></script>
+<script src="../../../firebase models/db.js"></script>
+<script src="../../../firebase models/student.js"></script>
+<script src="../../../firebase models/admin.js"></script>
+<script src="../../../firebase models/login.js"></script>
+<script src="../../../firebase models/fileupload.js"></script>
 </head>
 
 
@@ -38,7 +39,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                             <div class="col-md-8">
-                                                <div id="studentMediumTxt" class="form-group">
+                                                <div  class="form-group">
                                                     <label  >Exam Year:</label>
                                                     <select id ="examYearTxt" class="form-control">
                                                         <option value="6">2019</option>
@@ -74,7 +75,7 @@
                                             <div class="col-md-8">
                                                 <div id="classTxt" class="form-group">
                                                     <label  >Exam Class:</label>
-                                                    <select class="form-control">
+                                                    <select id="classTxt" class="form-control">
                                                         <option value="sinhala">All</option>
                                                         <option value="english">A</option>
                                                         <option value="tamil">B</option>
@@ -86,6 +87,15 @@
                                                         <option value="tamil">H</option>
                                                     </select>
                                                 </div>
+                                                
+
+                                                </div>
+                                                    <input type="hidden" id="schoolid" value="abc">
+                                                <div >
+
+
+
+
                                             </div>
                                         </div>
                                 </div>
@@ -117,9 +127,9 @@
 
                                         <div class="form-group">
                                             <div class="col-md-8">
-                                                <div id="studentMediumTxt" class="form-group">
+                                                <div  class="form-group">
                                                     <label id = "subjectTxt" >Subject:</label>
-                                                    <select class="form-control">
+                                                    <select id="subjectTxt" class="form-control">
                                                         <option value="sinhala">Sinhala</option>
                                                         <option value="english">English</option>
                                                         <option value="tamil">Math</option>
@@ -132,7 +142,7 @@
                                         <div class="form-group">
                                             <div class="col-md-8">
                                                 <div id="studentMediumTxt" class="form-group">
-                                                <button style="width:150px" type="button" class="btn btn-primary">Load Student List</button>
+                                                <button style="width:150px" onclick="addexam()" type="button" class="btn btn-primary">Load Student List</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -168,6 +178,7 @@
                                 </div>
                                 </div>
                             </div>
+                            
 
                         </div>  
                     </form>
@@ -182,20 +193,108 @@
 </div>
 </body>
 
+<script>
+    getschool("stuschool");
+    function addexam(){
+        var school=document.getElementById("schoolid").value;
+        var year = "2014";//document.getElementById("examYearTxt").value;
+        var grade = "8";//document.getElementById("gradeTxt").value;
+        var class = "A";//document.getElementById("classTxt").value;
+        var date = "2019-08-08";document.getElementById("examDateTxt").value;
+        var subject = "Test";//document.getElementById("subjectTxt").value;
+        var examId =year+subject;
+        var exam=[year,grade,class,date,subject,examId];
+        addexam(exam);
+
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <script>
+    function addexam(){
+        var school=document.getElementById("schoolid").value;
+        var year = "2014";//document.getElementById("examYearTxt").value;
+        var grade = "8";//document.getElementById("gradeTxt").value;
+        var class = "A";//document.getElementById("classTxt").value;
+        var date = "2019-08-08";document.getElementById("examDateTxt").value;
+        var subject = "Test";//document.getElementById("subjectTxt").value;
+        var examId =year+subject;
+        db.collection("exam").add({
+            examId:examId,
+            year:time,
+            grade:grade,
+            class: class,
+            date:date,
+            subject: subject
 
-    getschool("stuschool");
-    function datasubmission(){
-        var studentMediumTxt = document.getElementById("studentMediumTxt").value;
-        var gradeTxt = document.getElementById("gradeTxt").value;
-        var classTxt = document.getElementById("classTxt").value;
-        var studentMediumTxt = document.getElementById("studentMediumTxt").value;
-        var subjectTxt = document.getElementById("subjectTxt").value;
-        // var examresult= [studentMediumTxt,gradeTxt,classTxt,studentMediumTxt,subjectTxt,subjectTxt];
-        addresult(regno,result);
-        addsubjects(subject,regno);
+        })
+        .then(function(docRef) {
+            alert("Notification sent successfully");
+        // console.log("Document written with ID: ", docRef.id);
+        })
+        .catch(function(error) {
+            alert("Error adding document: ", error);
+        });
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // getschool("stuschool");
+    // function addexam(examId){
+    //     var year = "2014";//document.getElementById("examYearTxt").value;
+    //     var grade = "8";//document.getElementById("gradeTxt").value;
+    //     var class = "A";//document.getElementById("classTxt").value;
+    //     var date = "2019-08-08";document.getElementById("examDateTxt").value;
+    //     var subject = "Test";//document.getElementById("subjectTxt").value;
+    //     var examId =year+subject;
+         
+    // }
+    // var exam=[year,grade,class,date,subject,examId];
+    // addexam(exam);
+
+    
 </script>
 
 <?php include_once('../admincommon/footer.php'); ?>

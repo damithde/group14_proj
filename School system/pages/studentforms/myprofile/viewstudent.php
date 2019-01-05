@@ -257,7 +257,7 @@
     getstudentsfromreg("11111");
     function getstudentsfromreg(reg){
         var output;
-        db.collection("students").where("schoolid","==",school).where("regno","==",reg)
+        db.collection("students").where("schoolid","==","qkuiesu9vt9GAfiSOP0A").where("regno","==",reg)
         .get()
         .then(function(querySnapshot) {
             querySnapshot.forEach(function(doc) {
