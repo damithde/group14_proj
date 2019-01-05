@@ -9,21 +9,13 @@
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-database.js"></script>
-<<<<<<< HEAD
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-storage.js"></script>
 <script src="../../../firebase models/db.js"></script>
 <script src="../../../firebase models/reports.js"></script>
 <script src="../../../firebase models/admin.js"></script>
 <script src="../../../firebase models/login.js"></script>
 </head>
-=======
-    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-storage.js"></script>
-    <script src="../../../firebase models/db.js"></script>
-    <script src="../../../firebase models/reports.js"></script>
-    <script src="../../../firebase models/admin.js"></script>
-    <script src="../../../firebase models/login.js"></script>
->>>>>>> 64bfaf17babccdbf2b9924fb393c677fe8ffdc93
-
+ 
 
     <section class="content-wrapper">
 
@@ -217,8 +209,8 @@
             var stdTotal = document.getElementById("studentTotalTxt").value;
             var stdPosition = document.getElementById("studentPositionTxt").value;
 
-            var student = [stdRegNo, stdName, stdSchool,stdGrade,stdClass,stdYear, stdTestNo, stdSub1, stdSub2, stdSub3, stdSub4, stdSub5, stdSub6, stdSub7, stdSub8, stdSub9, stdTotal, stdPosition];
-            addreport(student);
+            var report = [stdRegNo, stdName, stdSchool,stdGrade,stdClass,stdYear, stdTestNo, stdSub1, stdSub2, stdSub3, stdSub4, stdSub5, stdSub6, stdSub7, stdSub8, stdSub9, stdTotal, stdPosition];
+            addreport(report);
         }
     </script>
 <script>
@@ -506,7 +498,6 @@
 </html>
 
 
-<<<<<<< HEAD
 <script>
     getschool("stuSchool");
     //getreports(studentRegNo,stuClass,stuGrade,stuYear,stuTestNo);
@@ -543,22 +534,17 @@
 // var stdMark = document.getElementById("studentMarkTxt").value;
 // var results=[studentClass,stdSubjects,stdMark];
 //addresult(stdAdmissionNo,stdMark)
-=======
 
 
-
-    <script src="../../../firebase models/db.js"></script>
-    <script src="../../../firebase models/results.js"></script>
 
 <script>
 
-getschool(reposchool);
-var studentClass = document.getElementById("studentClassesTxt").value;
-var stdSubjects = document.getElementById("studentSubjectsTxt").value;
-var stdMark = document.getElementById("studentMarkTxt").value;
-var results=[studentClass,stdSubjects,stdMark];
-addresult(stdAdmissionNo,stdMark)
->>>>>>> 64bfaf17babccdbf2b9924fb393c677fe8ffdc93
+// getschool(reposchool);
+// var studentClass = document.getElementById("studentClassesTxt").value;
+// var stdSubjects = document.getElementById("studentSubjectsTxt").value;
+// var stdMark = document.getElementById("studentMarkTxt").value;
+// var results=[studentClass,stdSubjects,stdMark];
+// addresult(stdAdmissionNo,stdMark)
 
 </script>
 
