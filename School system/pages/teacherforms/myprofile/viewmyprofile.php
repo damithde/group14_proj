@@ -59,10 +59,12 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
+
+                                           <div class="col-md-6">
                                         <!--Lable names-->
 
                                                 <!--Lable names-->
+
 
                                             <div class="form-group">
                                                 <label class="text-muted" for="exampleInputEmail1">Teacher ID:</label>
@@ -75,6 +77,9 @@
                                             </div>
                                             <div class="form-group">
                                                 <label class="text-muted" for="exampleInputEmail1">Last name:</label>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="text-muted" for="exampleInputEmail1">Name With Initials :</label>
                                             </div>
 
                                                 <div class="form-group">
@@ -89,6 +94,13 @@
                                                 <div class="form-group">
                                                     <label class="text-muted" for="exampleInputEmail1">Admission Date:</label>
                                                 </div>
+
+                                            <div class="form-group">
+                                                <label class="text-muted" for="exampleInputEmail1">Grade:</label>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="text-muted" for="exampleInputEmail1">Class:</label>
+                                            </div>
 
                                                 <div class="form-group">
                                                     <label class="text-muted" for="exampleInputEmail1">Address:</label>
@@ -113,6 +125,10 @@
                                         <label id="teacherLastNameLbl">-</label>
                                     </div>
                                     <div class="form-group">
+                                        <label id="teacherIniNameLbl">-</label>
+                                    </div>
+
+                                    <div class="form-group">
                                         <label id="teacherGenderLbl">-</label>
                                     </div>
                                     <div class="form-group">
@@ -124,7 +140,12 @@
                                     <div class="form-group">
                                         <label id="teacherAdmissionLbl">-</label>
                                     </div>
-
+                                    <div class="form-group">
+                                        <label id="teacherGradeLbl">-</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label id="teacherClassLbl">-</label>
+                                    </div>
 
                                     <div class="form-group">
                                         <label id="teacherAddressLbl">-</label>
@@ -231,22 +252,27 @@
             var teacherFirstNameLbl
             var teacherMiddleNameLbl
             var teacherLastNameLbl
+            var teacherIniNameLbl
             var teacherGenderLbl
             var teacherBdyLbl
             var teacherEmailLbl
             var teacherAdmissionLbl
+            var teacherGradeLbl
+            var teacherClassLbl
             var teacherAddressLbl
             var teacherPhoneLbl
 
             document.getElementById('teacherIDLbl').innerHTML = teacherIDLbl;
             document.getElementById('teacherFirstNameLbl').innerHTML = teacherFirstNameLbl;
             document.getElementById('teacherMiddleNameLbl').innerHTML = teacherMiddleNameLbl;
-
             document.getElementById('teacherLastNameLbl').innerHTML = teacherLastNameLbl;
+            document.getElementById('teacherIniNameLbl').innerHTML = teacherIniNameLbl;
             document.getElementById('teacherGenderLbl').innerHTML = teacherGenderLbl;
             document.getElementById('teacherBdyLbl').innerHTML = teacherBdyLbl;
             document.getElementById('teacherEmailLbl').innerHTML = teacherEmailLbl;
             document.getElementById('teacherAdmissionLbl').innerHTML = teacherAdmissionLbl;
+            document.getElementById('teacherGradeLbl').innerHTML = teacherGradeLbl;
+            document.getElementById('teacherClassLbl').innerHTML = teacherClassLbl;
             document.getElementById('teacherAddressLbl').innerHTML = teacherAddressLbl;
             document.getElementById('teacherPhoneLbl').innerHTML = teacherPhoneLbl;
 

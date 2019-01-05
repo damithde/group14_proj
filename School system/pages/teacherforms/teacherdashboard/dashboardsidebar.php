@@ -18,7 +18,7 @@
 
             <li><a  href="../attendancemanage/attendance.php"><i class="fa fa-user"></i> <span>View Attendance</span> </a></li>
 
-            <li><a  href="../techermessagebox/messagebox.php"><i class="fa fa-home"></i> <span>Send notice</span> </a></li>
+            <li><a  href="../techermessagebox/messagebox.php"><i class="fa fa glyphicon-envelope"></i> <span>Email</span> </a></li>
 
 
             <li><a  href="../myprofile/viewmyprofile.php"><i class="fa fa-certificate"></i> <span>My Profile</span> </a></li>
