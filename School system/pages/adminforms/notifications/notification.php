@@ -51,7 +51,7 @@ getschool("schoolid");
                     </form>
                 </div><!-- /.box -->
             </div>
-            <input type="hidden" id="schoolid" value="">
+            <input type="hidden" id="schoolid" value="abc">
 
             <div >
                     <div class="box box-primary">
@@ -68,11 +68,6 @@ getschool("schoolid");
                                 <ul class="products-list product-list-in-box" id="list">
                                     <li class="item">
             
-                                            <h5>Atten : CS Group I : SCS 1209 – Object Oriented Programming <span class="label label-warning pull-right">Attachment</span></h5>
-                                            <span class="product-description">
-                                                  Please note that there will be an additional lecture of the above Subject on 21st September, 2018 (Friday)<br>
-                                                from 1.00 p.m.  to 3.00 p.m. at W002 Lecture room, UCSC.Lecturer In-charge 20.09.2018
-                                            </span>
                                        
                                     </li><!-- /.item -->
                                     
@@ -141,25 +136,19 @@ function addnotification(){
 function loadnotification(){
     var output;
     var school=document.getElementById("schoolid").value;
-    db.collection("notification").where("school","==",school)
+    db.collection("notification").where("schooIId","==",school)
     .get()
     .then(function(querySnapshot) {
         var i=0;
         querySnapshot.forEach(function(doc) {
 
             output=doc.data();
-            output.title;
-            output.time;
-            output.schooIId;
-            output.publisher;
-            output.date;
-            output.content;
-            output.attachment;
+            
             el = document.createElement('li');
             el.id = 'l'+i;
             document.getElementById('list').appendChild(el);
            
-            var iDiv = document.createElement('h5');
+            var iDiv = document.createElement('h4');
             iDiv.id = 'block'+i;
             iDiv.innerHTML= output.title;
             el.appendChild(iDiv);
