@@ -150,14 +150,14 @@
                                                 <th>Student Name</th>
                                                 <th>Result</th>
                                             </tr>
-                                            <tr>
-                                                <td>
+                                            <tr id = "datarow">
+                                                <td id = "admissionNoLbl">
                                                     1600254
                                                 </td>
-                                                <td>
+                                                <td id = "nameLbl">
                                                     -
                                                 </td>
-                                                <td>
+                                                <td id = "resultLbl">
                                                     <input style ="width:500px" id="result" type="text" name="q" class="form-control" placeholder="Result"/>
                                                 </td>
                                                 
@@ -192,8 +192,9 @@
         var classTxt = document.getElementById("classTxt").value;
         var studentMediumTxt = document.getElementById("studentMediumTxt").value;
         var subjectTxt = document.getElementById("subjectTxt").value;
-        var examresult= [studentMediumTxt,gradeTxt,classTxt,studentMediumTxt,subjectTxt,subjectTxt];
-        addexamresult(examresult);
+        // var examresult= [studentMediumTxt,gradeTxt,classTxt,studentMediumTxt,subjectTxt,subjectTxt];
+        addresult(regno,result);
+        addsubjects(subject,regno);
     }
 </script>
 

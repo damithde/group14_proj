@@ -175,6 +175,102 @@
 </div>
 </body>
 
+<script>
+    getschool("schoolid");
+    setTimeout(p ,1500);
+
+    
+
+
+
+
+
+    function p(){
+        $("#classlist").empty();
+        db.collection("schools").where("id","==",school)
+        .get()
+        .then(function(querySnapshot) {
+            querySnapshot.forEach(function(doc) {
+                db.collection("schools").doc(doc.id).collection("grades").where("grade","==",grade)
+                .get()
+                .then(function(querySnapshot) {
+                    querySnapshot.forEach(function(doc) {
+                        var classes=doc.data().classes;
+                        classes.forEach(function(cls){
+                            var sel = document.getElementById("classlist");
+                            var opt = document.createElement("option");
+                            opt.value = cls;
+                            opt.text = cls;
+                            sel.add(opt);
+                                
+                        })
+                        console.log(doc.id, " => ", classes);
+                        if((grade==10) || (grade==12) ||(grade==11) || (grade==13)){
+                            document.getElementById("subjectselection").style.display = 'block';
+                            var i=0;
+                            var subs=doc.data().subjects;
+                            subs.forEach(function(sub){
+                                var tableref=document.getElementById('s');
+                                var newCheckbox = document.createElement("input");
+                                newCheckbox.type = "checkbox";
+                                newCheckbox.name = "subject"+i;
+                                newCheckbox.value = sub;
+                                //document.getElementById("subjectselection").appendChild(newCheckbox);
+                                var row=tableref.insertRow(-1);
+                                row.insertCell(0).appendChild(newCheckbox);
+                                //var label = document.createElement('label');
+                               // label.htmlFor = sub;
+                               // label.appendChild(document.createTextNode(sub));
+                                row.insertCell(1).innerHTML=sub ;
+                                i++;
+
+                               // document.getElementById("subjectselection").appendChild(label);
+                                //document.getElementById("subjectselection").appendChild(document.createElement("br"));
+
+                             })
+                        }
+                        else{
+                            document.getElementById("subjectselection").style.display = 'none';
+                        }
+                    });
+                })
+                .catch(function(error) {
+                    console.log("Error getting documents: ", error);
+                });
+            
+            });
+        })
+        .catch(function(error) {
+            console.log("Error getting documents: ", error);
+        });
+    
+    }
+
+    function promote(){
+        var school=document.getElementById("schoolid").value;
+        var tograde=document.getElementById("idgrade").value;
+        var toclass=document.getElementById("classlist").value;
+        var idlist=(document.getElementById("studentidTxt").value).split(',');
+        var sublist=GetCellValues();
+        var year=document.getElementById("year").value;
+        promotestudent(idlist,tograde,toclass,year,sublist,school);
+    }
+
+
+
+    function GetCellValues() {
+    var table = document.getElementById('s');
+    var sublist=[];
+    for (var r = 0, n = table.rows.length; r < n; r++) {    
+            var check=$('input:checkbox[name=subject'+r+']').is(':checked');
+            if(check==true)
+                sublist.push($('input:checkbox[name=subject'+r+']').val());
+        
+    }
+    return sublist;
+    }
+</script>
+
 
 <?php include_once('../admincommon/footer.php'); ?>
 

@@ -17,18 +17,17 @@
 
                 <div class="box box-primary">
                     <div class="box-header with-border">
-                        <h3 class="box-title">Certificates</h3>
+                        <h3 class="box-title">Term Test </h3>
                     </div><!-- /.box-header -->
                     <div class="box-body">
                         <div class="table-responsive">
                             <table class="table no-margin">
                                 <thead>
                                 <tr>
-                                    <th>Title</th>
-                                    <th>Request Date</th>
-                                    <th>Issued Date</th>
-                                    <th>Certified By</th>
-                                    <th>Reason</th>
+                                    <th>Subject</th>
+                                    <th>Term 1</th>
+                                    <th>Term 2</th>
+                                    <th>Term 3</th>
                                 </tr>
                                 </thead>
                                 <tbody>
