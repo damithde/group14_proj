@@ -4,16 +4,17 @@
 <?php include_once('../studentcommon/script.php'); ?>
 
 <head>
-    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-database.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-storage.js"></script>
-    <script src="../../../firebase models/db.js"></script>
-    <script src="../../../firebase models/student.js"></script>
-    <script src="../../../firebase models/admin.js"></script>
-    <script src="../../../firebase models/login.js"></script>
-    <script src="../../../firebase models/fileupload.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-storage.js"></script>
+<script src="../../../firebase models/db.js"></script>
+<script src="../../../firebase models/student.js"></script>
+<script src="../../../firebase models/admin.js"></script>
+<script src="../../../firebase models/exam.js"></script>
+<script src="../../../firebase models/login.js"></script>
+<script src="../../../firebase models/fileupload.js"></script>
 </head>
 
 <body>
@@ -216,6 +217,13 @@
                                                 <div class="form-group">
                                                     <label id="parentPhoneLbl">-</label>
                                                 </div>
+                                                <div class="form-group">
+                                            <div class="col-md-8">
+                                                <div id="studentMediumTxt" class="form-group">
+                                                <button style="width:150px" onclick="getstudentsfromreg('1')" type="button" class="btn btn-primary">Load Student List</button>
+                                                </div>
+                                            </div>
+                                        </div>
                                             </div>
                                         </div>
                                     </div>
@@ -231,7 +239,7 @@
 
 
 <script>
-    getschool("stuschool");
+    // getschool("stuschool");
     var studentRegNo 
 
 
@@ -254,10 +262,11 @@
     var parentOccupationLbl
     var parentEmailLbl
     var parentPhoneLbl
-    getstudentsfromreg("11111");
+
+    // getstudentsfromreg("11111");
     function getstudentsfromreg(reg){
         var output;
-        db.collection("students").where("schoolid","==","qkuiesu9vt9GAfiSOP0A").where("regno","==",reg)
+        db.collection("students").where("schoolid","==","abc").where("regno","==",reg)
         .get()
         .then(function(querySnapshot) {
             querySnapshot.forEach(function(doc) {
@@ -268,15 +277,15 @@
                 document.getElementById('studentlNameLbl').innerHTML = output.Lname;
                 // document.getElementById('studentiNameLbl').innerHTML = output.Iname;
                 // document.getElementById('studentGenderLbl').innerHTML = output.fname;
-                document.getElementById('studentBdyLbl').innerHTML = output.dob;
-                document.getElementById('studentReligionLbl').innerHTML = output.religion;
-                document.getElementById('studentEmailLbl').innerHTML = output.email;
-                document.getElementById('studentAdtLbl').innerHTML = output.fname;
-                document.getElementById('studentMediumLbl').innerHTML = output.fname;
-                document.getElementById('studentClassLbl').innerHTML = output.fname;
-                document.getElementById('studentSectionLbl').innerHTML = output.grade;
-                document.getElementById('studentAddressLbl').innerHTML = output.address;
-                document.getElementById('studentPhoneLbl').innerHTML = output.contact;
+                // document.getElementById('studentBdyLbl').innerHTML = output.dob;
+                // document.getElementById('studentReligionLbl').innerHTML = output.religion;
+                // document.getElementById('studentEmailLbl').innerHTML = output.email;
+                // document.getElementById('studentAdtLbl').innerHTML = output.fname;
+                // document.getElementById('studentMediumLbl').innerHTML = output.fname;
+                // document.getElementById('studentClassLbl').innerHTML = output.fname;
+                // document.getElementById('studentSectionLbl').innerHTML = output.grade;
+                // document.getElementById('studentAddressLbl').innerHTML = output.address;
+                // document.getElementById('studentPhoneLbl').innerHTML = output.contact;
 
                 // document.getElementById('parentNameLbl').innerHTML = output.fname;
                 // document.getElementById('parentOccupationLbl').innerHTML = output.fname;
