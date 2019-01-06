@@ -1,6 +1,7 @@
-function getClassTimeTable(){
+//var clzNo="12M3";
+function getClassTimeTable(clzNo){
     var output;
-    db.collection("timetable").where("classNo","==","12M3")
+    db.collection("timetable").where("classNo","==",clzNo)
     .get()
     .then(function(querySnapshot) {
         querySnapshot.forEach(function(doc) {
@@ -17,7 +18,27 @@ function getClassTimeTable(){
     
     
     
-    alert("get time table sucess fully ",output);
+    //alert("get time table sucess fully ",output);
     return output;
+}
+
+
+function getTimeSlot(timeLine,dayLine,subCode,lecCode){
+    
+    var output;
+    db.collection("timetable").where("time","==",timeLine).where("date","==",dayLine)
+    .get()
+    .then(function(querySnapshot) {
+        querySnapshot.forEach(function(doc) {
+            output=doc.data();
+            document.getElementById(subCode).value = output.subjectCode;
+            document.getElementById(lecCode).value = output.regNo;
+           
+        });
+    })
+    .catch(function(error) {
+        console.log("Error getting documents: ", error);
+    });
+    
 }
 
