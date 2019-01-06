@@ -15,7 +15,7 @@
 <section class="content-wrapper">
     <section class="content-header">
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-6">
             <!-- general form elements -->
             <div class="box box-primary">
                 <div class="box-header with-border">
@@ -25,7 +25,7 @@
                 <form role="form">
                     <div class="box-body">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-12">
                             <div class="form-group">
                                 <label  >School:</label>
                                 <select id="schoolist">
@@ -57,45 +57,9 @@
                             <button style="width:170px" type="button" onclick="createaccount()" class="btn btn-primary">Create Admin</button>
                         </div>
                     </div>
+                    
 
-                    <hr>
-                        <div class="row">
-                                <div class="col-md-10">
-                                <div class="form-group">
-                                <h4 class="box-title">School Details</h4>
-                                    <table id="studentResultsTable" class="table table-bordered">
-                                        <tbody>
-                                            <tr>
-                                                <th>School Id</th>
-                                                <th>School Name</th>
-                                                <th>Location</th>
-                                                <th>Principal</th>
-                                                <th>Contact</th>
-                                            </tr>
-                                            <tr id = "datarow">
-                                                <td id = "schoolId">
-                                                    -
-                                                </td>
-                                                <td id = "schoolName">
-                                                    -
-                                                </td>
-                                                <td id = "location">
-                                                    -
-                                                </td>
-                                                <td id = "principal">
-                                                    -
-                                                </td>
-                                                <td id = "contact">
-                                                    -
-                                                </td>
-                                                
-                                            </tr>
-                                            
-                                        </tbody>
-                                    </table>
-                                </div>
-                                </div>
-                            </div>
+                    
                         
                         
                     </div><!-- /.box-body -->
@@ -104,9 +68,73 @@
 
                     </div>
                 </form>
+
+                
             </div><!-- /.box -->
+
+            
         </div>
-        <div class="col-md-6" id="subjectselection">
+
+        <div class="col-md-12">
+            <!-- general form elements -->
+            <div class="box box-primary">
+                <div class="box-header with-border">
+                    <h3 class="box-title">School Details</h3>
+                </div><!-- /.box-header -->
+                <!-- form start -->
+                <form role="form">
+                    <div class="box-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label  >School:</label>
+                                <select id="schoolist">
+
+                                    </select>
+                                </div>
+                        <div class="form-group">
+                            <label  >Admin Name:</label>
+                            <input type="text" class="form-control" id="adminNameTxt" placeholder="Enter Admin Name">
+                        </div>
+                        <div class="form-group">
+                                <label  >Admin NIC:</label>
+                                <input type="text" class="form-control" id="adminnic" placeholder="Enter Admin NIC">
+                            </div>
+                        <div class="form-group">
+                            <label  >Designation :</label>
+                            <input type="text" class="form-control" id="adminDesignationTxt" placeholder="Enter Admin Designation">
+                        </div>
+                        <div class="form-group">
+                            <label  >Email:</label>
+                            <input type="email" class="form-control" id="adminEmailTxt" placeholder="Enter Admin Email">
+                        </div>
+                        <div class="form-group">
+                            <label  >Password :</label>
+                            <input type="password" class="form-control" id="adminPasswordTxt" placeholder="Enter Password">
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-8"></div>
+                            <button style="width:170px" type="button" onclick="createaccount()" class="btn btn-primary">Create Admin</button>
+                        </div>
+                    </div>
+                    
+
+                    
+                        
+                        
+                    </div><!-- /.box-body -->
+
+                    <div class="box-footer">
+
+                    </div>
+                </form>
+
+                
+            </div><!-- /.box -->
+
+            
+        </div>
+        <!-- <div class="col-md-6" id="subjectselection">
                 <div class="box box-primary">
                         <div class="box-header with-border">
                 <label><h4 class="box-title">Admins </h6></label><br>
@@ -121,7 +149,8 @@
                     </tr>
                     </table>
                     </div>  
-            </div>
+            </div> -->
+        
 
 
     </div>
