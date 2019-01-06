@@ -446,7 +446,7 @@
     
     
     
-    function addTimeSlot(classNo,classTeacher,timeView,subjectView,teacherView,date){
+    function addTimeSlot(classNo,classTeacher,timeView,subjectView,teacherView,date,school="mal2017"){
                 
 
         //timeTableList=[classNot,classTeachert,timeView1t,subjectView1t,teacherView1t,datet];
@@ -457,7 +457,8 @@
             date:date,
             time:timeView,
             subjectCode:subjectView,
-            regno:teacherView
+            regno:teacherView,
+            schoolId:school
 
 
 
