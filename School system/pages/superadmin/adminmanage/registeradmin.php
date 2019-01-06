@@ -57,6 +57,7 @@
                             <button style="width:170px" type="button" onclick="createaccount()" class="btn btn-primary">Create Admin</button>
                         </div>
                     </div>
+                    
 
                     
                         
@@ -67,7 +68,71 @@
 
                     </div>
                 </form>
+
+                
             </div><!-- /.box -->
+
+            
+        </div>
+
+        <div class="col-md-12">
+            <!-- general form elements -->
+            <div class="box box-primary">
+                <div class="box-header with-border">
+                    <h3 class="box-title">School Details</h3>
+                </div><!-- /.box-header -->
+                <!-- form start -->
+                <form role="form">
+                    <div class="box-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label  >School:</label>
+                                <select id="schoolist">
+
+                                    </select>
+                                </div>
+                        <div class="form-group">
+                            <label  >Admin Name:</label>
+                            <input type="text" class="form-control" id="adminNameTxt" placeholder="Enter Admin Name">
+                        </div>
+                        <div class="form-group">
+                                <label  >Admin NIC:</label>
+                                <input type="text" class="form-control" id="adminnic" placeholder="Enter Admin NIC">
+                            </div>
+                        <div class="form-group">
+                            <label  >Designation :</label>
+                            <input type="text" class="form-control" id="adminDesignationTxt" placeholder="Enter Admin Designation">
+                        </div>
+                        <div class="form-group">
+                            <label  >Email:</label>
+                            <input type="email" class="form-control" id="adminEmailTxt" placeholder="Enter Admin Email">
+                        </div>
+                        <div class="form-group">
+                            <label  >Password :</label>
+                            <input type="password" class="form-control" id="adminPasswordTxt" placeholder="Enter Password">
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-8"></div>
+                            <button style="width:170px" type="button" onclick="createaccount()" class="btn btn-primary">Create Admin</button>
+                        </div>
+                    </div>
+                    
+
+                    
+                        
+                        
+                    </div><!-- /.box-body -->
+
+                    <div class="box-footer">
+
+                    </div>
+                </form>
+
+                
+            </div><!-- /.box -->
+
+            
         </div>
         <!-- <div class="col-md-6" id="subjectselection">
                 <div class="box box-primary">
@@ -85,6 +150,7 @@
                     </table>
                     </div>  
             </div> -->
+        
 
 
     </div>
