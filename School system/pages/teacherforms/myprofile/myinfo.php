@@ -1,3 +1,4 @@
+
 <?php include_once('../teachercommon/head.php'); ?>
 <?php include_once('../teachercommon/header.php'); ?>
 <?php include_once('../teachercommon/sidebar.php'); ?>
@@ -28,7 +29,7 @@
 
                 <!--                student details-->
 
-                
+
                     <div class="box-header with-border">
                         <h3 class="box-title">Teacher Details</h3>
                     </div><!-- /.box-header -->
@@ -164,121 +165,39 @@
                             </div>
                         </div>
                     </div>
-
-
-
-
-                                <div class="col-md-12">
-                                </div>
-    <!--                guardian details-->
-    <div class="box box-primary">
-        <div class="box-header  with-border">
-            <h3 class="box-title">Application For Leave </h3>
-        </div><!-- /.box-header -->
-        <!-- form start -->
-        <form role="form">
-            <div class="box-body">
-                <div class="form-group">
-                    <label for="exampleInputEmail1">School ID:1101</label>
-
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Name:</label>
-                    <input type="text" class="form-control" id="parentNameTxt" placeholder="Enter Name">
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Teacher ID:</label>
-                    <input type="text" class="form-control" id="parentNameTxt" placeholder="Enter Teacher ID">
-                </div>
-
-
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Number Of Leave days:</label>
-                    <input type="text" class="form-control" id="parentNameTxt" placeholder="Enter No Of days">
-                </div>
-                <div class="form-group">
-                    <label>Date Of Commencing leave:</label>
-                    <div class="input-group">
-                        <div class="input-group-addon">
-                            <i class="fa fa-calendar"></i>
-                        </div>
-                        <input type="date" class="form-control pull-right" id="date"/>
-                    </div><!-- /.input group -->
-                </div>
-
-                <div class="form-group">
-                    <label>Date Of Assuming duties:</label>
-                    <div class="input-group">
-                        <div class="input-group-addon">
-                            <i class="fa fa-calendar"></i>
-                        </div>
-                        <input type="date" class="form-control pull-right" id="date"/>
-                    </div><!-- /.input group -->
-                </div>
-                <div class="form-group">
-
-                    <div id="studentMediumTxt" class="form-group">
-                        <label  >Leave Type:</label>
-                        <select class="form-control">
-                            <option value="1">Sick</option>
-                            <option value="2">Casual</option>
-                            <option value="3">Other</option>
-
-                        </select>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Reasons For Leave:</label>
-                    <input type="text" class="form-control" id="parentNameTxt" placeholder="Enter Reason">
-                </div>
-                <div class="box-footer">
-                    <button type="submit" class="btn btn-primary">Send</button>
-                </div>
-
-        </form>
-    </div><!-- /.box -->
-    </div>
-    </div>
-    <div>
-    </div>
-
-
-
-</section>
-</section>
+        </section>
+    </section>
     <script>
-            var teacherIDLbl
-            var teacherFirstNameLbl
-            var teacherMiddleNameLbl
-            var teacherLastNameLbl
-            var teacherIniNameLbl
-            var teacherGenderLbl
-            var teacherBdyLbl
-            var teacherEmailLbl
-            var teacherAdmissionLbl
-            var teacherGradeLbl
-            var teacherClassLbl
-            var teacherAddressLbl
-            var teacherPhoneLbl
+        var teacherIDLbl
+        var teacherFirstNameLbl
+        var teacherMiddleNameLbl
+        var teacherLastNameLbl
+        var teacherIniNameLbl
+        var teacherGenderLbl
+        var teacherBdyLbl
+        var teacherEmailLbl
+        var teacherAdmissionLbl
+        var teacherGradeLbl
+        var teacherClassLbl
+        var teacherAddressLbl
+        var teacherPhoneLbl
 
-            document.getElementById('teacherIDLbl').innerHTML = teacherIDLbl;
-            document.getElementById('teacherFirstNameLbl').innerHTML = teacherFirstNameLbl;
-            document.getElementById('teacherMiddleNameLbl').innerHTML = teacherMiddleNameLbl;
-            document.getElementById('teacherLastNameLbl').innerHTML = teacherLastNameLbl;
-            document.getElementById('teacherIniNameLbl').innerHTML = teacherIniNameLbl;
-            document.getElementById('teacherGenderLbl').innerHTML = teacherGenderLbl;
-            document.getElementById('teacherBdyLbl').innerHTML = teacherBdyLbl;
-            document.getElementById('teacherEmailLbl').innerHTML = teacherEmailLbl;
-            document.getElementById('teacherAdmissionLbl').innerHTML = teacherAdmissionLbl;
-            document.getElementById('teacherGradeLbl').innerHTML = teacherGradeLbl;
-            document.getElementById('teacherClassLbl').innerHTML = teacherClassLbl;
-            document.getElementById('teacherAddressLbl').innerHTML = teacherAddressLbl;
-            document.getElementById('teacherPhoneLbl').innerHTML = teacherPhoneLbl;
+        document.getElementById('teacherIDLbl').innerHTML = teacherIDLbl;
+        document.getElementById('teacherFirstNameLbl').innerHTML = teacherFirstNameLbl;
+        document.getElementById('teacherMiddleNameLbl').innerHTML = teacherMiddleNameLbl;
+        document.getElementById('teacherLastNameLbl').innerHTML = teacherLastNameLbl;
+        document.getElementById('teacherIniNameLbl').innerHTML = teacherIniNameLbl;
+        document.getElementById('teacherGenderLbl').innerHTML = teacherGenderLbl;
+        document.getElementById('teacherBdyLbl').innerHTML = teacherBdyLbl;
+        document.getElementById('teacherEmailLbl').innerHTML = teacherEmailLbl;
+        document.getElementById('teacherAdmissionLbl').innerHTML = teacherAdmissionLbl;
+        document.getElementById('teacherGradeLbl').innerHTML = teacherGradeLbl;
+        document.getElementById('teacherClassLbl').innerHTML = teacherClassLbl;
+        document.getElementById('teacherAddressLbl').innerHTML = teacherAddressLbl;
+        document.getElementById('teacherPhoneLbl').innerHTML = teacherPhoneLbl;
 
 
 
 
     </script>
 <?php include_once('../teachercommon/footer.php'); ?>
-

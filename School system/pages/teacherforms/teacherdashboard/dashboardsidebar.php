@@ -21,9 +21,39 @@
             <li><a  href="../techermessagebox/messagebox.php"><i class="fa fa glyphicon-envelope"></i> <span>Email</span> </a></li>
 
 
-            <li><a  href="../myprofile/viewmyprofile.php"><i class="fa fa-certificate"></i> <span>My Profile</span> </a></li>
-            <li><a  href="../studentprofile/viewstu.php"><i class="fa fa-certificate"></i> <span>Student Profile</span> </a></li>
-            <li><a  href="../reportmanage/createreports.php"><i class="fa fa-certificate"></i> <span>Manage Results</span> </a></li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-users"></i> <span>My Profile</span> <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <ul class="treeview-menu">
+                <li class="active"><a href="../myprofile/myinfo.php"><i class="fa fa-folder-open-o"></i> My Details</a></li>
+                <li><a href="../myprofile/myleave.php"><i class="fa fa-folder-open-o"></i>Leave Request</a></li>
+
+
+            </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-users"></i> <span>Student Profile</span> <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <ul class="treeview-menu">
+                    <li class="active"><a href="../studentprofile/viewstudents.php"><i class="fa fa-folder-open-o"></i> View Student</a></li>
+                    <li><a href="../reportmanage/viewreport.php"><i class="fa fa-folder-open-o"></i>View Reports</a></li>
+                    <li><a href="../studentprofile/results.php"><i class="fa fa-folder-open-o"></i> View Results</a></li>
+
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-users"></i> <span>Manage Results</span> <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <ul class="treeview-menu">
+                    <li class="active"><a href="../reportmanage/addreport.php"><i class="fa fa-folder-open-o"></i>Add Report</a></li>
+                    <li><a href="../reportmanage/addresults.php"><i class="fa fa-folder-open-o"></i>Add Result</a></li>
+
+
+                </ul>
+            </li>
 
         </ul>
     </section>

@@ -115,7 +115,13 @@
 
                                             <!--Lable names-->
                                             <div class="form-group">
-                                                <label class="text-muted"  >Name:</label>
+                                                <label class="text-muted"  > First Name:</label>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="text-muted"  > Middle Name:</label>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="text-muted"  > Last Name:</label>
                                             </div>
                                             <div class="form-group">
                                                 <label class="text-muted"  >Gender:</label>
@@ -154,8 +160,14 @@
 
                                         <div class="col-md-6">
                                     <div class="form-group">
-                                        <label id="studentNameLbl">-</label>
+                                        <label id="studentFNameLbl">-</label>
                                     </div>
+                                            <div class="form-group">
+                                                <label id="studentMNameLbl">-</label>
+                                            </div>
+                                            <div class="form-group">
+                                                <label id="studentLNameLbl">-</label>
+                                            </div>
                                     <div class="form-group">
                                         <label id="studentGenderLbl">-</label>
                                     </div>
@@ -526,169 +538,274 @@
                                                     </div><!-- /.box -->
 
 
-
-                                    <div class="box box-primary">
-                <div class="box-header with-border">
-
-                    <h3 class="box-title">Exam Results</h3>
-                </div><!-- /.box-header -->
-                <div class="box-body">
-                    <div class="form-group">
-                        <div class="col-md-8">
-                            <div id="studentMediumTxt" class="form-group">
-                                <label  >Select Grade:</label>
-                                <select class="form-control">
-                                    <option value="6">Grade 6</option>
-                                    <option value="7">Grade 7</option>
-                                    <option value="8">Grade 8</option>
-                                    <option value="9">Grade 9</option>
-                                    <option value="10">Grade 10</option>
-                                    <option value="11">Grade 11</option>
-                                    <option value="12">Grade 12</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <div class="col-md-8">
-                            <div id="studentMediumTxt" class="form-group">
-                                <label  >Select Class:</label>
-                                <select class="form-control">
-                                    <option value="sinhala">All</option>
-                                    <option value="english">A</option>
-                                    <option value="tamil">B</option>
-                                    <option value="english">C</option>
-                                    <option value="tamil">D</option>
-                                    <option value="english">E</option>
-                                    <option value="tamil">F</option>
-                                    <option value="english">G</option>
-                                    <option value="tamil">H</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-md-8">
-                            <div id="studentMediumTxt" class="form-group">
-                                <label  >Select Subject :</label>
-                                <select class="form-control">
-                                    <option value="1">Mathematics</option>
-                                    <option value="2">English</option>
-                                    <option value="3">Sinhala</option>
-                                    <option value="4">Science</option>
-                                    <option value="5">History</option>
-                                    <option value="6">Buddhism</option>
-
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-10">
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Student Details Details:</label>
-                                <table class="table table-bordered">
-                                    <tbody>
-                                    <tr>
-                                        <th>Registration No</th>
-                                        <th>Marks</th>
-
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="../studentmanage/viewstudent.php">1600254</a>
-                                        </td>
-                                        <td>
-                                            -
-                                        </td>
+                                                                     <body class="skin-blue">
+                                                                     <div class="wrapper">
 
 
-                                    </tr>
+                                                                                 <!--                Exam results-->
 
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
+                                                                         <div class="box box-primary">
 
-                </div>
+                                                                             <section class="content-header">
+                                                                                     <div class="box-header  with-border">
+                                                                                         <h3 class="box-title">Exam Results</h3>
+                                                                                     </div><!-- /.box-header -->
+                                                                                     <!-- form start -->
+                                                                                     <div class="col-md-4">
 
-                                        </form>
+                                                                                     </div>
+                                                                                     <form role="form">
+                                                                                         <div class="box-body">
+
+                                                                                             <div class="row">
+                                                                                                 <div class="col-md-6">
+                                                                                                     <div class="form-group">
+                                                                                                         <div class="col-md-8">
+
+                                                                                                             <div id="studentMediumTxt" class="form-group">
+                                                                                                                 <label  >Select Term:</label>
+                                                                                                                 <select class="form-control">
+                                                                                                                     <option value="1">1</option>
+                                                                                                                     <option value="2">2</option>
+                                                                                                                     <option value="3">3</option>
+                                                                                                                 </select>
+                                                                                                             </div>
+                                                                                                         </div>
+                                                                                                     </div>
+
+                                                                                                     <div class="form-group">
+                                                                                                         <div class="col-md-8">
+                                                                                                             <div id="studentMediumTxt" class="form-group">
+                                                                                                                 <label  >Select Grade:</label>
+                                                                                                                 <select class="form-control">
+                                                                                                                     <option value="6">Grade 6</option>
+                                                                                                                     <option value="7">Grade 7</option>
+                                                                                                                     <option value="8">Grade 8</option>
+                                                                                                                     <option value="9">Grade 9</option>
+                                                                                                                     <option value="10">Grade 10</option>
+                                                                                                                     <option value="11">Grade 11</option>
+                                                                                                                     <option value="12">Grade 12</option>
+                                                                                                                 </select>
+                                                                                                             </div>
+                                                                                                         </div>
+                                                                                                     </div>
+
+                                                                                                     <div class="form-group">
+                                                                                                         <div class="col-md-8">
+                                                                                                             <div id="studentMediumTxt" class="form-group">
+                                                                                                                 <label  >Select Class:</label>
+                                                                                                                 <select class="form-control">
+                                                                                                                     <option value="sinhala">All</option>
+                                                                                                                     <option value="english">A</option>
+                                                                                                                     <option value="tamil">B</option>
+                                                                                                                     <option value="english">C</option>
+                                                                                                                     <option value="tamil">D</option>
+                                                                                                                     <option value="english">E</option>
+                                                                                                                     <option value="tamil">F</option>
+                                                                                                                     <option value="english">G</option>
+                                                                                                                     <option value="tamil">H</option>
+                                                                                                                 </select>
+                                                                                                             </div>
+                                                                                                         </div>
+                                                                                                     </div>
+                                                                                                 </div>
+
+                                                                                                 <div class="col-md-6">
+                                                                                                     <div class="form-group">
+                                                                                                         <div class="col-md-8">
+                                                                                                             <div id="studentMediumTxt" class="form-group">
+                                                                                                                 <label class="text-muted">Search by Exam ID</label>
+                                                                                                                 <div class="input-group">
+                                                                                                                     <input id="lNameSearch" type="text" name="q" class="form-control" placeholder="Search by Admission No"/>
+                                                                                                                     <span class="input-group-addon">
+                                                                                                               <input type="checkbox">
+                                                                                                                    </span>
+                                                                                                                 </div>
+                                                                                                             </div>
+                                                                                                         </div>
+                                                                                                     </div>
+
+                                                                                                     <div class="form-group">
+                                                                                                         <div class="col-md-8">
+                                                                                                             <div id="studentMediumTxt" class="form-group">
+                                                                                                                 <label class="text-muted">Search by Exam Date</label>
+                                                                                                                 <div class="input-group">
+                                                                                                                     <input id="lNameSearch" type="date" name="q" class="form-control" placeholder="Search by First Name"/>
+                                                                                                                     <span class="input-group-addon">
+                                                                                                              <input type="checkbox">
+                                                                                                                  </span>
+                                                                                                                 </div>
+                                                                                                             </div>
+                                                                                                         </div>
+                                                                                                     </div>
+
+                                                                                                     <div class="form-group">
+                                                                                                         <div class="col-md-8">
+                                                                                                             <div id="studentMediumTxt" class="form-group">
+                                                                                                                 <label class="text-muted">Search by Subject:</label>
+                                                                                                                 <div class="input-group">
+                                                                                                                     <input id="lNameSearch" type="text" name="q" class="form-control" placeholder="Search by Last Name"/>
+                                                                                                                     <span class="input-group-addon">
+                                                                                                                          <input type="checkbox">
+                                                                                                                          </span>
+                                                                                                                 </div>
+                                                                                                             </div>
+                                                                                                         </div>
+                                                                                                     </div>
+                                                                                                     <div class="form-group">
+                                                                                                         <div class="col-md-8">
+                                                                                                             <div id="studentMediumTxt" class="form-group">
+                                                                                                                 <button style="width:150px" type="button" class="btn btn-primary">Search</button>
+                                                                                                             </div>
+                                                                                                         </div>
+                                                                                                     </div>
+                                                                                                 </div>
+                                                                                             </div>
+                                                                                             <hr>
+                                                                                             <div class="row">
+                                                                                                 <div class="col-md-10">
+                                                                                                     <div class="form-group">
+                                                                                                         <label for="exampleInputEmail1">Student Details Details:</label>
+                                                                                                         <table class="table table-bordered">
+                                                                                                             <tbody>
+                                                                                                             <tr>
+                                                                                                                 <th>Exam Id</th>
+                                                                                                                 <th>Exam Name</th>
+                                                                                                                 <th>Date</th>
+                                                                                                                 <th>Results</th>
+                                                                                                             </tr>
+                                                                                                             <tr>
+                                                                                                                 <td>
+                                                                                                                     <a href="../studentmanage/viewstudent.php">1600254</a>
+                                                                                                                 </td>
+                                                                                                                 <td>
+                                                                                                                     -
+                                                                                                                 </td>
+                                                                                                                 <td>
+                                                                                                                     -
+                                                                                                                 </td>
+                                                                                                                 <td>
+                                                                                                                     -
+                                                                                                                 </td>
+
+                                                                                                             </tr>
+
+                                                                                                             </tbody>
+                                                                                                         </table>
+                                                                                                     </div>
+                                                                                                 </div>
+                                                                                             </div>
+
+                                                                                         </div>
+
+
+                                                                                     </form>
+                                                                                     <div class="box-footer">
+
+                                                                                     </div>
+                                                                                 </div>
+                                                                                 <!-- /.box -->
+
+
+                                                                     </section>
+                                                                     </div>
+                                                                     </div>
+                                                                     </body>
 
 
 
-                                    </div>
-
-                                                                 </div>
-
-
-
-
-
-
-
-
-
-
-
-<?php
-    $dataPoints = array(
-        array("label"=>"55-65", "y"=>64.02),
-        array("label"=>"75-100", "y"=>12.55),
-        array("label"=>"0-35", "y"=>8.47),
-        array("label"=>"35-55", "y"=>6.08),
-        array("label"=>"65-75", "y"=>4.29),
-
-    )
-
-    ?>
-
-
-        <script>
-            window.onload = function() {
-
-
-                var chart = new CanvasJS.Chart("chartContainer", {
-                    animationEnabled: true,
-                    title: {
-                        text: "English"
-                    },
-
-                    data: [{
-                        type: "pie",
-                        yValueFormatString: "#,##0.00\"%\"",
-                        indexLabel: "{label} ({y})",
-                        dataPoints: <?php echo json_encode($dataPoints, JSON_NUMERIC_CHECK); ?>
-                    }]
-                });
-                chart.render();
-
-            }
-        </script>
-                                                 </div>
-    </div>
-    </head>
-    <body>
-    <div id="chartContainer" style="height: 370px; width: 100%;"></div>
-    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-    </body>
-    </html>
 
 </section>
 </section>
+<script>
+    getschool("schoolid");
+    setTimeout(p ,1500);
 
-    </section>
 
 
-    <section >
+    function p(){
+$("#classlist").empty();
+db.collection("schools").where("id","==",school)
+.get()
+.then(function(querySnapshot) {
+querySnapshot.forEach(function(doc) {
+db.collection("schools").doc(doc.id).collection("grades").where("grade","==",grade)
+.get()
+.then(function(querySnapshot) {
+querySnapshot.forEach(function(doc) {
+var classes=doc.data().classes;
+classes.forEach(function(cls){
+var sel = document.getElementById("classlist");
+var opt = document.createElement("option");
+opt.value = cls;
+opt.text = cls;
+sel.add(opt);
+
+})
+console.log(doc.id, " => ", classes);
+if((grade==10) || (grade==12) ||(grade==11) || (grade==13)){
+document.getElementById("subjectselection").style.display = 'block';
+var i=0;
+var subs=doc.data().subjects;
+subs.forEach(function(sub){
+var tableref=document.getElementById('s');
+var newCheckbox = document.createElement("input");
+newCheckbox.type = "checkbox";
+newCheckbox.name = "subject"+i;
+newCheckbox.value = sub;
+//document.getElementById("subjectselection").appendChild(newCheckbox);
+var row=tableref.insertRow(-1);
+row.insertCell(0).appendChild(newCheckbox);
+//var label = document.createElement('label');
+// label.htmlFor = sub;
+// label.appendChild(document.createTextNode(sub));
+row.insertCell(1).innerHTML=sub ;
+i++;
+
+// document.getElementById("subjectselection").appendChild(label);
+//document.getElementById("subjectselection").appendChild(document.createElement("br"));
+
+})
+}
+else{
+document.getElementById("subjectselection").style.display = 'none';
+}
+});
+})
+.catch(function(error) {
+console.log("Error getting documents: ", error);
+});
+
+});
+})
+.catch(function(error) {
+console.log("Error getting documents: ", error);
+});
+
+}
+    function GetCellValues() {
+        var table = document.getElementById('s');
+        var sublist=[];
+        for (var r = 0, n = table.rows.length; r < n; r++) {
+            var check=$('input:checkbox[name=subject'+r+']').is(':checked');
+            if(check==true)
+                sublist.push($('input:checkbox[name=subject'+r+']').val());
+
+        }
+        return sublist;
+    }
+</script>
+
+
 
 
 
 <script>
 
 
-        var studentNameLbl
+        var studentFNameLbl
+        var studentMNameLbl
+        var studentLNameLbl
     var studentGenderLbl
     var studentBdyLbl
     var studentReligionLbl
@@ -708,13 +825,15 @@
 
 
 
-    document.getElementById('studentNameLbl').innerHTML =studentNameLbl ;
+    document.getElementById('studentFNameLbl').innerHTML =output.Fname ;
+        document.getElementById('studentMNameLbl').innerHTML =output.Mname ;
+        document.getElementById('studentLNameLbl').innerHTML =output.Lname ;
     document.getElementById('studentGenderLbl').innerHTML = studentGenderLbl;
-    document.getElementById('studentBdyLbl').innerHTML = studentBdyLbl;
-    document.getElementById('studentReligionLbl').innerHTML = studentReligionLbl;
-    document.getElementById('studentEmailLbl').innerHTML = studentEmailLbl;
-    document.getElementById('studentAdtLbl').innerHTML = studentAdtLbl;
-    document.getElementById('studentMediumLbl').innerHTML = studentMediumLbl;
+    document.getElementById('studentBdyLbl').innerHTML = output.dob;
+    document.getElementById('studentReligionLbl').innerHTML = output.religion;
+    document.getElementById('studentEmailLbl').innerHTML = output.email;
+    document.getElementById('studentAdtLbl').innerHTML = ;
+    document.getElementById('studentMediumLbl').innerHTML = studentMed;
     document.getElementById('studentClassLbl').innerHTML = studentClassLbl;
     document.getElementById('studentSectionLbl').innerHTML = studentSectionLbl;
     document.getElementById('studentAddressLbl').innerHTML = studentAddressLbl;
