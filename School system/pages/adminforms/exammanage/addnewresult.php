@@ -219,40 +219,57 @@
 
 
 
-    getstudents();
-    function getstudents(){
-        var table = document.getElementById("studentResultsTable");
-        var row = table.insertRow(-1);
-        var output={};
+    // getstudents();
+    // function getstudents(){
+    //     var table = document.getElementById("studentResultsTable");
+    //     var row = table.insertRow(-1);
+    //     var output={};
 
 
 
-        db.collection("students")
+    //     db.collection("students")
+    //     .get()
+    //     .then(function(querySnapshot) {
+    //         querySnapshot.forEach(function(doc) {
+    //             output[doc.id]=doc.data();
+    //             //document.write(output.Fname);
+    //             document.getElementById("result").innerHtML=output[0];
+    //             // '<tr>'
+    //             // var cell1 = row.insertCell(0);
+    //             // var cell2 = row.insertCell(1);
+    //             // var cell3 = row.insertCell(2);
+    //             // cell1.innerHTML = '<td>-</td>';
+    //             // cell2.innerHTML = '<td>-</td>';
+    //             // cell3.innerHTML = '<td><input style ="width:500px" id="result" type="text" name="q" class="form-control" placeholder="Result"/></td>';
+    //             // document.getElementById("result").value=output.Fname;
+    //             // "<br>"
+    //             // '</tr>'
+    //             // doc.data() is never undefined for query doc snapshots
+    //             //console.log(doc.id, " => ", doc.data());
+    //         });
+    //     })
+    //     .catch(function(error) {
+    //         console.log("Error getting documents: ", error);
+    //     });
+    //     return output;
+    // }
+
+    function getstudents(school,grade,cls){
+        var output;
+        db.collection("students").where("school","==",school).where("grade","==",grade).where("class","==",cls)
         .get()
         .then(function(querySnapshot) {
             querySnapshot.forEach(function(doc) {
-                output[doc.id]=doc.data();
-                //document.write(output.Fname);
-                document.getElementById("result").innerHtML=output[0];
-                // '<tr>'
-                // var cell1 = row.insertCell(0);
-                // var cell2 = row.insertCell(1);
-                // var cell3 = row.insertCell(2);
-                // cell1.innerHTML = '<td>-</td>';
-                // cell2.innerHTML = '<td>-</td>';
-                // cell3.innerHTML = '<td><input style ="width:500px" id="result" type="text" name="q" class="form-control" placeholder="Result"/></td>';
-                // document.getElementById("result").value=output.Fname;
-                // "<br>"
-                // '</tr>'
+                output=doc.data();
                 // doc.data() is never undefined for query doc snapshots
                 //console.log(doc.id, " => ", doc.data());
             });
         })
         .catch(function(error) {
             console.log("Error getting documents: ", error);
-        });
-        return output;
+        });  
     }
+
 </script>
 
 
