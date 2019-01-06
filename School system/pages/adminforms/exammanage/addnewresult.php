@@ -41,7 +41,7 @@
                                             <div class="col-md-8">
                                                 <div  class="form-group">
                                                     <label  >Exam Term:</label>
-                                                    <select id ="examYearTxt" class="form-control">
+                                                    <select id ="termTxt" class="form-control">
                                                         <option value="1">1</option>
                                                         <option value="2">2</option>
                                                         <option value="3">3</option>
@@ -72,7 +72,7 @@
                                                 <div class="form-group">
                                                     <label  >Exam Class:</label>
                                                     <select id="classTxt" class="form-control">
-                                                        <option value="sinhala">All</option>
+                                                        <!-- <option value="sinhala">All</option>
                                                         <option value="english">A</option>
                                                         <option value="tamil">B</option>
                                                         <option value="english">C</option>
@@ -80,7 +80,7 @@
                                                         <option value="english">E</option>
                                                         <option value="tamil">F</option>
                                                         <option value="english">G</option>
-                                                        <option value="tamil">H</option>
+                                                        <option value="tamil">H</option> -->
                                                     </select>
                                                 </div>
                                                 
@@ -193,15 +193,95 @@
     // getschool("stuschool");
     function add1(){
         // var school = document.getElementById("schoolid").value;
-        var year = document.getElementById("examYearTxt").value;
+        var term = document.getElementById("termTxt").value;
         var grade =document.getElementById("gradeTxt").value;
         var class1 = document.getElementById("classTxt").value;
         var date = document.getElementById('examDateTxt').value;
         var subject = document.getElementById("subjectTxt").value;
-        var examId = year+subject;
-        var exam=[examId,class1,date,grade,subject,year];
+        var examId = term+date+subject;
+        var exam=[examId,class1,date,grade,subject,term];
         addexam(exam);
 
+    }
+</script>
+
+<script>
+    // getschool("abc");
+    setTimeout(p ,1500);
+    function p(){
+        var grade=document.getElementById("gradeTxt").value;
+        var school="abc";//document.getElementById("schoolid").value;
+        $("#classlist").empty();
+        db.collection("schools").where("id","==",school)
+        .get()
+        .then(function(querySnapshot) {
+            querySnapshot.forEach(function(doc) {
+                db.collection("schools").doc(doc.id).collection("grades").where("grade","==",grade)
+                .get()
+                .then(function(querySnapshot) {
+                    querySnapshot.forEach(function(doc) {
+                        var classes=doc.data().classes;
+                        classes.forEach(function(cls){
+                            var sel = document.getElementById("classTxt");
+                            var opt = document.createElement("option");
+                            opt.value = cls;
+                            opt.text = cls;
+                            sel.add(opt);
+                                
+                        })
+                        console.log(doc.id, " => ", classes);
+                        if((grade=='Grade 6') || (grade==12) ||(grade==11) || (grade==13)){
+                            document.getElementById("subjectTxt").style.display = 'block';
+                            var i=0;
+                            var subs=doc.data().subjects;
+                            subs.forEach(function(sub){
+                                var tableref=document.getElementById('s');
+                                var newCheckbox = document.createElement("input");
+                                newCheckbox.type = "checkbox";
+                                newCheckbox.name = "subject"+i;
+                                newCheckbox.value = sub;
+                                //document.getElementById("subjectselection").appendChild(newCheckbox);
+                                var row=tableref.insertRow(-1);
+                                row.insertCell(0).appendChild(newCheckbox);
+                                //var label = document.createElement('label');
+                               // label.htmlFor = sub;
+                               // label.appendChild(document.createTextNode(sub));
+                                row.insertCell(1).innerHTML=sub ;
+                                i++;
+
+                               // document.getElementById("subjectselection").appendChild(label);
+                                //document.getElementById("subjectselection").appendChild(document.createElement("br"));
+
+                             })
+                        }
+                        else{
+                            document.getElementById("subjectTxt").style.display = 'none';
+                        }
+                    });
+                })
+                .catch(function(error) {
+                    console.log("Error getting documents: ", error);
+                });
+            
+            });
+        })
+        .catch(function(error) {
+            console.log("Error getting documents: ", error);
+        });
+    
+    }
+
+
+    function GetCellValues() {
+    var table = document.getElementById('s');
+    var sublist=[];
+    for (var r = 0, n = table.rows.length; r < n; r++) {    
+            var check=$('input:checkbox[name=subject'+r+']').is(':checked');
+            if(check==true)
+                sublist.push($('input:checkbox[name=subject'+r+']').val());
+        
+    }
+    return sublist;
     }
 </script>
 

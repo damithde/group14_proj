@@ -22,11 +22,27 @@
                     </div><!-- /.box-header -->
                     <br>
                     
+                    
 
                     <!-- form start -->
                     <form role="form">
                         <div class="box-body">
                         <!--Lable field-->
+
+                            <div class="row">
+                            <div class="col-md-6">
+                            <div id="studentMediumTxt" class="form-group">
+                        <div class="input-group">
+                            <input id="lNameSearch" type="text" name="q" class="form-control" placeholder="Search by Admission No"/>
+                            <span class="input-group-addon">
+                                <input type="checkbox">
+                            </span>
+                        </div>
+                    </div></div>
+                            </div>
+
+
+
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="row">

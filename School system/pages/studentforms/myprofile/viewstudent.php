@@ -219,9 +219,9 @@
                                                 </div>
                                                 <div class="form-group">
                                             <div class="col-md-8">
-                                                <div id="studentMediumTxt" class="form-group">
+                                                <!-- <div id="studentMediumTxt" class="form-group">
                                                 <button style="width:150px" onclick="getstudentsfromreg('1')" type="button" class="btn btn-primary">Load Student List</button>
-                                                </div>
+                                                </div> -->
                                             </div>
                                         </div>
                                             </div>
@@ -237,61 +237,37 @@
 
 </body>
 
-
 <script>
-    // getschool("stuschool");
-    var studentRegNo 
-
-
-
-    var studentfNameLbl
-    var studentmNameLbl
-    var studentlNameLbl
-    var studentiNameLbl
-    var studentGenderLbl
-    var studentBdyLbl
-    var studentReligionLbl
-    var studentEmailLbl
-    var studentAdtLbl
-    var studentMediumLbl
-    var studentClassLbl
-    var studentSectionLbl
-    var studentAddressLbl
-    var studentPhoneLbl
-    var parentNameLbl
-    var parentOccupationLbl
-    var parentEmailLbl
-    var parentPhoneLbl
-
-    // getstudentsfromreg("11111");
+    
+    var school ="abc";
+    getstudentsfromreg('1');
     function getstudentsfromreg(reg){
         var output;
-        db.collection("students").where("schoolid","==","abc").where("regno","==",reg)
+        db.collection("students").where("school","==",school).where("regno","==",reg)
         .get()
         .then(function(querySnapshot) {
             querySnapshot.forEach(function(doc) {
                 output=doc.data();
-
                 document.getElementById('studentfNameLbl').innerHTML = output.Fname;
                 document.getElementById('studentmNameLbl').innerHTML = output.Mname;
                 document.getElementById('studentlNameLbl').innerHTML = output.Lname;
-                // document.getElementById('studentiNameLbl').innerHTML = output.Iname;
-                // document.getElementById('studentGenderLbl').innerHTML = output.fname;
-                // document.getElementById('studentBdyLbl').innerHTML = output.dob;
-                // document.getElementById('studentReligionLbl').innerHTML = output.religion;
-                // document.getElementById('studentEmailLbl').innerHTML = output.email;
-                // document.getElementById('studentAdtLbl').innerHTML = output.fname;
-                // document.getElementById('studentMediumLbl').innerHTML = output.fname;
-                // document.getElementById('studentClassLbl').innerHTML = output.fname;
-                // document.getElementById('studentSectionLbl').innerHTML = output.grade;
-                // document.getElementById('studentAddressLbl').innerHTML = output.address;
-                // document.getElementById('studentPhoneLbl').innerHTML = output.contact;
 
-                // document.getElementById('parentNameLbl').innerHTML = output.fname;
-                // document.getElementById('parentOccupationLbl').innerHTML = output.fname;
-                // document.getElementById('parentEmailLbl').innerHTML = output.fname;
-                // document.getElementById('parentPhoneLbl').innerHTML = output.fname;
+                document.getElementById('studentiNameLbl').innerHTML = output.Iname;
+                document.getElementById('studentGenderLbl').innerHTML = output.fname;
+                document.getElementById('studentBdyLbl').innerHTML = output.dob;
+                document.getElementById('studentReligionLbl').innerHTML = output.religion;
+                document.getElementById('studentEmailLbl').innerHTML = output.email;
+                document.getElementById('studentAdtLbl').innerHTML = output.fname;
+                document.getElementById('studentMediumLbl').innerHTML = output.fname;
+                document.getElementById('studentClassLbl').innerHTML = output.fname;
+                document.getElementById('studentSectionLbl').innerHTML = output.grade;
+                document.getElementById('studentAddressLbl').innerHTML = output.address;
+                document.getElementById('studentPhoneLbl').innerHTML = output.contact;
 
+                document.getElementById('parentNameLbl').innerHTML = output.parent.name;
+                document.getElementById('parentOccupationLbl').innerHTML = output.parent.occupation;
+                document.getElementById('parentEmailLbl').innerHTML = output.parent.email;
+                document.getElementById('parentPhoneLbl').innerHTML = output.parent.Econtact;
             //console.log(doc.id, " => ", doc.data());
             });
         })
@@ -299,7 +275,6 @@
             console.log("Error getting documents: ", error);
         });
     }
-    
 </script>
 
 <?php include_once('../studentcommon/footer.php'); ?>
