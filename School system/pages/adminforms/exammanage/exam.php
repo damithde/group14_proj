@@ -174,13 +174,7 @@
 <script>
     getschool("schoolid");
     setTimeout(p ,1500);
-
-
-
-
-
-
-
+    var school ="abc";
     function p(){
         $("#classlist").empty();
         db.collection("schools").where("id","==",school)
