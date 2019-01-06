@@ -80,7 +80,7 @@ function getuserdata(){
 
 }
 
-function createuser(email,password,type,regno,school){
+function createuser(email,password,type,regno,school,NameTxt=null,DesignationTxt=null,EmailTxt=null){
     firebase.auth().createUserWithEmailAndPassword(email, password).then(function(){
         var user = firebase.auth().currentUser;
         var token=user.uid;//put this token in the user doc and relavent doc
@@ -116,7 +116,11 @@ function createuser(email,password,type,regno,school){
             db.collection("users").doc(regno).set({
                 school:school,
                 type:"a",
-                userid:token
+                regno:regno,
+                userid:token,
+                adminname:NameTxt,
+                adminDesignation:DesignationTxt,
+                email:EmailTxt
             })
             .then(function(docRef) {
              console.log("Document written with ID: ", docRef.id);

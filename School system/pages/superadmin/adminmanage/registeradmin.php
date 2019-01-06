@@ -32,15 +32,15 @@
                                 </div>
                         <div class="form-group">
                             <label  >Admin Name:</label>
-                            <input type="input" class="form-control" id="adminNameTxt" placeholder="Enter Admin Name">
+                            <input type="text" class="form-control" id="adminNameTxt" placeholder="Enter Admin Name">
                         </div>
                         <div class="form-group">
                                 <label  >Admin NIC:</label>
-                                <input type="input" class="form-control" id="adminnic" placeholder="Enter Admin NIC">
+                                <input type="text" class="form-control" id="adminnic" placeholder="Enter Admin NIC">
                             </div>
                         <div class="form-group">
                             <label  >Designation :</label>
-                            <input type="input" class="form-control" id="adminDesignationTxt" placeholder="Enter Admin Designation">
+                            <input type="text" class="form-control" id="adminDesignationTxt" placeholder="Enter Admin Designation">
                         </div>
                         <div class="form-group">
                             <label  >Email:</label>
@@ -52,7 +52,7 @@
                         </div>
                         <div class="form-group">
                             <div class="col-md-8"></div>
-                            <button style="width:170px" type="submit" class="btn btn-primary">Create Admin</button>
+                            <button style="width:170px" type="button" onclick="createaccount()" class="btn btn-primary">Create Admin</button>
                         </div>
                         
                     </div><!-- /.box-body -->
@@ -64,14 +64,20 @@
             </div><!-- /.box -->
         </div>
         <div class="col-md-6" id="subjectselection">
+                <div class="box box-primary">
+                        <div class="box-header with-border">
                 <label><h4 class="box-title">Admins </h6></label><br>
-                    <table id="s">
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
+                    </div>
+                    <table id="s" style="width:100%">
+                    <tr>
+                        <th>School</th>
+                        <th>Admin name</th>
+                        <th>Admin email</th>
+                        <th>Admin ID</th>
+                        <th>Admin designation</th>
+                    </tr>
                     </table>
+                    </div>  
             </div>
 
 
@@ -79,10 +85,11 @@
     <div>
     </div>
     </section>
+    
 </section>
 
 <script>
-
+getadmins();
 function createaccount() {
     var adminNameTxt = document.getElementById("adminNameTxt").value;
     var adminDesignationTxt = document.getElementById("adminDesignationTxt").value;
@@ -90,23 +97,10 @@ function createaccount() {
     var adminPasswordTxt = document.getElementById("adminPasswordTxt").value;
     var regno = document.getElementById("adminnic").value;
     var school=document.getElementById("schoolist").value;
-    createuser(adminEmailTxt,adminPasswordTxt,"admin",regno,school);
-    
-    db.collection("users").doc(regno).set({
-        adminname:adminNameTxt,
-        adminDesignation:adminDesignationTxt,
-        email:adminEmailTxt,
-  
-    })
-    .then(function(docRef) {
-        alert("student added successfully");
-       // console.log("Document written with ID: ", docRef.id);
-    })
-    .catch(function(error) {
-        alert("Error adding document: ", error);
-    });
+    createuser(adminEmailTxt,adminPasswordTxt,"admin",regno,school,adminNameTxt,adminDesignationTxt,adminEmailTxt);
 
 
+    getadmins();
 
 }
  
@@ -128,14 +122,25 @@ function createaccount() {
 
 
 function getadmins() {
+    var x = document.getElementById("s").rows.length;
+    for (let index = 0; index < x-1; index++) {
+        document.getElementById("s").deleteRow(index);
+        
+    }
+
     db.collection("users").where("type","==","a")
     .get()
     .then(function(querySnapshot) {
         querySnapshot.forEach(function(doc) {
+            var tableref=document.getElementById('s');
             var admin=doc.data();
-            
             var row=tableref.insertRow(-1);
-            row.insertCell(1).innerHTML=admin.school ;
+            row.insertCell(0).innerHTML=admin.school ;
+            row.insertCell(1).innerHTML=admin.adminname ;
+            row.insertCell(2).innerHTML=admin.email ;
+            row.insertCell(3).innerHTML=admin.regno ;
+            row.insertCell(4).innerHTML=admin.adminDesignation ;
+
                     
     })
 })
