@@ -112,6 +112,20 @@ function createuser(email,password,type,regno,school){
                 alert("Error adding document: ", error);
             });
         }
+        else if (type=='admin'){
+            db.collection("users").doc(regno).set({
+                school:school,
+                type:"a",
+                userid:token
+            })
+            .then(function(docRef) {
+             console.log("Document written with ID: ", docRef.id);
+            })
+            .catch(function(error) {
+                alert("Error adding document: ", error);
+            });
+        }
+        
         verifyemail();   
     })
     .catch(function(error) {

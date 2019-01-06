@@ -2,13 +2,16 @@
 <?php include_once('../admincommon/header.php'); ?>
 <?php include_once('../admincommon/sidebar.php'); ?>
 <?php include_once('../admincommon/script.php'); ?>
-<head></head>
+<head>
 
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-database.js"></script>
-
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-storage.js"></script>
+<script src="../../../firebase models/db.js"></script>
+<script src="../../../firebase models/login.js"></script>
+</head>
 <section class="content-wrapper">
     <section class="content-header">
     <div class="row">
@@ -21,6 +24,12 @@
                 <!-- form start -->
                 <form role="form">
                     <div class="box-body">
+                            <div class="form-group">
+                                    <label  >School:</label>
+                                    <select id="schoolist">
+
+                                    </select>
+                                </div>
                         <div class="form-group">
                             <label  >Admin Name:</label>
                             <input type="input" class="form-control" id="adminNameTxt" placeholder="Enter Admin Name">
@@ -58,15 +67,30 @@
     </section>
 </section>
 
-
-<script src="../../../firebase models/db.js"></script>
-<script src="../../../firebase models/student.js"></script>
 <script>
+
+function createaccount(params) {
     var adminNameTxt = document.getElementById("adminNameTxt").value;
     var adminDesignationTxt = document.getElementById("adminDesignationTxt").value;
     var adminEmailTxt = document.getElementById("adminEmailTxt").value;
     var adminPasswordTxt = document.getElementById("adminPasswordTxt").value;
-    
+    createuser(adminEmailTxt,adminPasswordTxt,"admin","null",school);
+}
+ 
+    db.collection("schools")
+    .get()
+    .then(function(querySnapshot) {
+        querySnapshot.forEach(function(doc) {
+            var school=doc.data().schoolid;
+            
+                var sel = document.getElementById("schoolist");
+                var opt = document.createElement("option");
+                opt.value = school;
+                opt.text = school;
+                sel.add(opt);
+                    
+    })
+})
 
 </script>
 
