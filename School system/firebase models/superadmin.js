@@ -1,10 +1,10 @@
-function createschool(params) {
+function createschool(school) {
     db.collection("schools").doc(school[0]).set({
         schoolid: school[0],
         Name: school[1],
         location: school[2],
         contact: school[3],
-        dob: school[4],
+        principal: school[4],
    
     })
     .then(function(docRef) {

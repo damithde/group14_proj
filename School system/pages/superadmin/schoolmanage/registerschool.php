@@ -8,7 +8,9 @@
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-database.js"></script>
-
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-storage.js"></script>
+<script src="../../../firebase models/db.js"></script>
+<script src="../../../firebase models/superadmin.js"></script>
 <section class="content-wrapper">
     <section class="content-header">
     <div class="row">
@@ -26,12 +28,24 @@
                             <input type="input" class="form-control" id="schoolNameTxt" placeholder="Enter School Name">
                         </div>
                         <div class="form-group">
+                            <label  >School ID:</label>
+                            <input type="input" class="form-control" id="schoolIdTxt" placeholder="Enter School Name">
+                        </div>
+                        <div class="form-group">
                             <label  >Location :</label>
                             <input type="input" class="form-control" id="schoolLocationTxt" placeholder="Enter School Location">
                         </div>
                         <div class="form-group">
+                            <label  >School Principal:</label>
+                            <input type="input" class="form-control" id="schoolprincipal" placeholder="Enter School Name">
+                        </div>
+                        <div class="form-group">
+                                <label  >Contact :</label>
+                                <input type="input" class="form-control" id="schoolcontact" placeholder="Enter School Location">
+                            </div>
+                        <div class="form-group">
                             <div class="col-md-8"></div>
-                            <button style="width:170px" type="submit" class="btn btn-primary">Register</button>
+                            <button style="width:170px" type="button" onclick="addschool() " class="btn btn-primary">Register</button>
                         </div>
                         
                     </div><!-- /.box-body -->
@@ -50,13 +64,21 @@
     </section>
 </section>
 
-
-<script src="../../../firebase models/db.js"></script>
-<script src="../../../firebase models/student.js"></script>
 <script>
-    var stdFName = document.getElementById("schoolNameTxt").value;
-    var stdLName = document.getElementById("schoolLocationTxt").value;
+
+function addschool() {
     
+    var school = document.getElementById("schoolNameTxt").value;
+    var sid = document.getElementById("schoolIdTxt").value;
+    var schoolprincipal = document.getElementById("schoolprincipal").value;
+    var schoollocation = document.getElementById("schoolLocationTxt").value;
+    var contact = document.getElementById("schoolcontact").value;
+    var school=[sid,school,schoollocation,contact,schoolprincipal];
+    createschool(school);
+
+
+}
+
 
 </script>
 
