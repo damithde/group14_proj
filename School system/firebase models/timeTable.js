@@ -5,6 +5,7 @@ function getClassTimeTable(){
     .then(function(querySnapshot) {
         querySnapshot.forEach(function(doc) {
             output=doc.data();
+            document.getElementById('classNo').value = output.classNo;
             document.getElementById('classTeacher').value = output.classTeacher;//document.getElementById("mytext").value = "My value";
            
         });
