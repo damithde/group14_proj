@@ -24,32 +24,76 @@
                 <!-- form start -->
                 <form role="form">
                     <div class="box-body">
+                    <div class="row">
+                        <div class="col-md-6">
                             <div class="form-group">
-                                    <label  >School:</label>
-                                    <select id="schoolist">
+                                <label  >School:</label>
+                                <select id="schoolist">
 
-                                    </select>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label  >Admin Name:</label>
+                                <input type="input" class="form-control" id="adminNameTxt" placeholder="Enter Admin Name">
+                            </div>
+                            <div class="form-group">
+                                <label  >Designation :</label>
+                                <input type="input" class="form-control" id="adminDesignationTxt" placeholder="Enter Admin Designation">
+                            </div>
+                            <div class="form-group">
+                                <label  >Email:</label>
+                                <input type="email" class="form-control" id="adminEmailTxt" placeholder="Enter Admin Email">
+                            </div>
+                            <div class="form-group">
+                                <label  >Password :</label>
+                                <input type="password" class="form-control" id="adminPasswordTxt" placeholder="Enter Password">
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-8"></div>
+                                <button style="width:170px" type="submit" class="btn btn-primary">Create Admin</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr>
+                        <div class="row">
+                                <div class="col-md-10">
+                                <div class="form-group">
+                                <h4 class="box-title">School Details</h4>
+                                    <table id="studentResultsTable" class="table table-bordered">
+                                        <tbody>
+                                            <tr>
+                                                <th>School Id</th>
+                                                <th>School Name</th>
+                                                <th>Location</th>
+                                                <th>Principal</th>
+                                                <th>Contact</th>
+                                            </tr>
+                                            <tr id = "datarow">
+                                                <td id = "schoolId">
+                                                    -
+                                                </td>
+                                                <td id = "schoolName">
+                                                    -
+                                                </td>
+                                                <td id = "location">
+                                                    -
+                                                </td>
+                                                <td id = "principal">
+                                                    -
+                                                </td>
+                                                <td id = "contact">
+                                                    -
+                                                </td>
+                                                
+                                            </tr>
+                                            
+                                        </tbody>
+                                    </table>
                                 </div>
-                        <div class="form-group">
-                            <label  >Admin Name:</label>
-                            <input type="input" class="form-control" id="adminNameTxt" placeholder="Enter Admin Name">
-                        </div>
-                        <div class="form-group">
-                            <label  >Designation :</label>
-                            <input type="input" class="form-control" id="adminDesignationTxt" placeholder="Enter Admin Designation">
-                        </div>
-                        <div class="form-group">
-                            <label  >Email:</label>
-                            <input type="email" class="form-control" id="adminEmailTxt" placeholder="Enter Admin Email">
-                        </div>
-                        <div class="form-group">
-                            <label  >Password :</label>
-                            <input type="password" class="form-control" id="adminPasswordTxt" placeholder="Enter Password">
-                        </div>
-                        <div class="form-group">
-                            <div class="col-md-8"></div>
-                            <button style="width:170px" type="submit" class="btn btn-primary">Create Admin</button>
-                        </div>
+                                </div>
+                            </div>
+                        
                         
                     </div><!-- /.box-body -->
 
