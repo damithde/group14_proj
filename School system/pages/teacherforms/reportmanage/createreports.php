@@ -500,7 +500,7 @@
         var stdTotal = document.getElementById("studentTotalTxt").value;
         var stdPosition = document.getElementById("studentPositionTxt").value;
 
-        var student = [stdRegNo, "stdName", "stdSchool", "stdClass", "stdGrade", "stdTestNo", "stdAdNo", "stdYear", "stdSub1", "stdSub2", "stdSub3", "stdSub4", "stdSub5", "stdSub6", "stdSub7", "stdSub8", "stdSub9", "stdTotal", "stdPosition"];
+        var student = [stdRegNo, stdName, stdSchool, stdClass, stdGrade, stdTestNo, stdAdNo, stdYear, stdSub1, stdSub2, stdSub3, stdSub4, stdSub5, stdSub6, stdSub7, stdSub8, stdSub9, stdTotal, stdPosition];
         addreport(student);
     }
 
