@@ -141,15 +141,15 @@
                         </div><!-- /.box-header -->
                         <div class="box-body">
                             <div class="progress">
-                                <div id = "studentcount" class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-                                    Present Students 4000
-                                    <span id ="studentpresent" class="sr-only">40% Complete (success)</span>
+                                <div id = "studentcount" class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+                                    Present Students 
+                                    <span id ="studentpresent" class="sr-only">0%</span>
                                 </div>
                             </div>
                             <div class="progress">
                                 <div id = "teachercount" class="progress-bar progress-bar-red" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
                                     Present Teachers 100
-                                    <span id ="teacherpresent" class="sr-only">70% Complete</span>
+                                    <span id ="teacherpresent" class="sr-only">0% </span>
                                 </div>
                             </div>
                         </div><!-- /.box-body -->
@@ -176,6 +176,7 @@
     gettotaalstudents();
     gettotalteachers();
     gettotalnotifications();
+    getstudentspresent();
     
     
 function loadnotification(){
@@ -271,6 +272,29 @@ function gettotalnotifications(){
            //console.log(doc.id, " => ", doc.data());
         });
         document.getElementById("totNoOfNotifaications").innerHTML=count;
+    })
+    .catch(function(error) {
+        console.log("Error getting documents: ", error);
+    });
+}
+
+
+function getstudentspresent(){
+    var school=document.getElementById("schoolid").value;
+    var output,count;
+    count=0;
+    db.collection("attendance").where("school","==",school).where("present","==",true)
+    .get()
+    .then(function(querySnapshot) {
+        querySnapshot.forEach(function(doc) {
+            output=doc.data();
+            count++;
+            
+           //console.log(doc.id, " => ", doc.data());
+        });
+        var ts=document.getElementById("totStudents").innerHTML
+        document.getElementById("studentcount").style.width=(count*100/parseInt(ts, 10))+"%";
+       // document.getElementById("studentcount").setAttribute("style","width:100%");
     })
     .catch(function(error) {
         console.log("Error getting documents: ", error);
