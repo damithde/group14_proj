@@ -5,7 +5,7 @@ function getClassTimeTable(){
     .then(function(querySnapshot) {
         querySnapshot.forEach(function(doc) {
             output=doc.data();
-            document.getElementById('classTeacher').value = "Manjitha teshara";//document.getElementById("mytext").value = "My value";
+            document.getElementById('classTeacher').value = output.classTeacher;//document.getElementById("mytext").value = "My value";
            
         });
     })
