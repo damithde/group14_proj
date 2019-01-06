@@ -25,7 +25,7 @@
 
                                 <div class="info-box-content">
                                     <span class="info-box-text">Total Students</span>
-                                    <span id="totStudents" class="info-box-number">41,410</span>
+                                    <span id="totStudents" class="info-box-number">0</span>
 
                                     <div class="progress">
                                     <div class="progress-bar" style="width: 70%"></div>
@@ -45,7 +45,7 @@
 
                                 <div class="info-box-content">
                                     <span class="info-box-text">Total Teachers</span>
-                                    <span id ="totTeachers" class="info-box-number">41,410</span> 
+                                    <span id ="totTeachers" class="info-box-number">0</span> 
 
                                     <div class="progress">
                                     <div id ="totTeachersNo" class="progress-bar" ></div>
@@ -65,7 +65,7 @@
 
                                 <div class="info-box-content">
                                     <span class="info-box-text">Number of Notifications</span>
-                                    <span id ="totNoOfNotifaications" class="info-box-number">41,410</span>
+                                    <span id ="totNoOfNotifaications" class="info-box-number">0</span>
 
                                     <div class="progress">
                                     <div class="progress-bar" style="width: 70%"></div>
@@ -82,7 +82,7 @@
 
                                 <div class="info-box-content">
                                     <span class="info-box-text">Non Acadamic Staff Total</span>
-                                    <span id="totNonAcadamicStaff" class="info-box-number">41,410</span>
+                                    <span id="totNonAcadamicStaff" class="info-box-number">1</span>
 
                                     <div class="progress">
                                     <div class="progress-bar" style="width: 70%"></div>
@@ -261,7 +261,7 @@ function gettotalnotifications(){
     var school=document.getElementById("schoolid").value;
     var output,count;
     count=0;
-    db.collection("notification").where("school","==",school)
+    db.collection("notification").where("schooIId","==",school)
     .get()
     .then(function(querySnapshot) {
         querySnapshot.forEach(function(doc) {
