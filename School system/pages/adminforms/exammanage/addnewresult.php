@@ -224,12 +224,16 @@
         var table = document.getElementById("studentResultsTable");
         var row = table.insertRow(-1);
         var output={};
+
+
+
         db.collection("students")
         .get()
         .then(function(querySnapshot) {
             querySnapshot.forEach(function(doc) {
                 output[doc.id]=doc.data();
-                document.write(output.Fname);
+                //document.write(output.Fname);
+                document.getElementById("result").innerHtML=output[0];
                 // '<tr>'
                 // var cell1 = row.insertCell(0);
                 // var cell2 = row.insertCell(1);
