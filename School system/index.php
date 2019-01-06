@@ -59,15 +59,13 @@
                     <button id="sign" onclick="login()" type="submit"  class="btn btn-primary btn-block btn-flat">Sign In</button>
                 </div><!-- /.col -->
                 </div><!-- /.col -->
-                <div class="col-xs-4">
-                    <button id="sign" onclick="getstudentcount()" type="submit"  class="btn btn-primary btn-block btn-flat">test</button>
-                </div><!-- /.col -->
-                
-            </div>
-            <div class="row" style="margin-left: 1%">
+                <div class="row" style="margin-left: 1%">
                     <a href="signup.php">Sign Up</a>
                    
                 </div><!-- /.col -->
+                
+            </div>
+            
     </div>
     
 </div>
