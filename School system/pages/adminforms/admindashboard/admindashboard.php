@@ -2,13 +2,21 @@
 <?php include_once('../admincommon/header.php'); ?>
 <?php include_once('../admincommon/sidebar.php'); ?>
 <?php include_once('../admincommon/script.php'); ?> 
-<script src="../../../firebase models/login.js"></script>
+
+<head>
+    
+
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-database.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-storage.js"></script>
     <script src="../../../firebase models/db.js"></script>
+    <script src="../../../firebase models/login.js"></script>
+    <script src="../../../firebase models/admin.js">
+    </script>
+    <script>getschool("schoolid");</script>
+</head>
 <body class="skin-blue">
 <div class="wrapper">
 <section class="content-wrapper">
@@ -168,11 +176,13 @@
 <?php include_once('../admincommon/footer.php'); ?>
 
 <script>
+    
     loadnotification();
     gettotaalstudents();
     gettotalteachers();
     gettotalnotifications();
     var x=getstudentspresent();
+    
     
     
 function loadnotification(){

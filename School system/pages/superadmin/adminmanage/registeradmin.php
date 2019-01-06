@@ -52,7 +52,7 @@
                         </div>
                         <div class="form-group">
                             <div class="col-md-8"></div>
-                            <button style="width:170px" type="submit" class="btn btn-primary">Create Admin</button>
+                            <button style="width:170px" type="button" onclick="createaccount()" class="btn btn-primary">Create Admin</button>
                         </div>
                         
                     </div><!-- /.box-body -->
@@ -120,7 +120,7 @@ function createaccount() {
 
 function getadmins() {
     var x = document.getElementById("s").rows.length;
-    for (let index = 0; index < x-1; index++) {
+    for (let index = 0; index < x-2; index++) {
         document.getElementById("s").deleteRow(index);
         
     }

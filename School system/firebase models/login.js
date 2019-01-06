@@ -123,7 +123,7 @@ function createuser(email,password,type,regno,school,NameTxt=null,DesignationTxt
                 email:EmailTxt
             })
             .then(function(docRef) {
-             console.log("Document written with ID: ", docRef.id);
+              alert("Admin added");
             })
             .catch(function(error) {
                 alert("Error adding document: ", error);
@@ -135,8 +135,9 @@ function createuser(email,password,type,regno,school,NameTxt=null,DesignationTxt
     .catch(function(error) {
         var errorCode = error.code;
         var errorMessage = error.message;
-        alert('Error occured',errorMessage);
         console.log(errorMessage);
+        alert('Error occured',errorMessage);
+        
       });
 
 }
