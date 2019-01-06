@@ -119,10 +119,10 @@ function createaccount() {
 
 
 function getadmins() {
-    var x = document.getElementById("s").rows.length;
-    for (let index = 0; index < x-2; index++) {
-        document.getElementById("s").deleteRow(index);
-        
+    var rowCount = document.getElementById("s").rows.length;
+    
+    for (var x=rowCount-1; x>0; x--) {
+        document.getElementById("s").deleteRow(x);
     }
 
     db.collection("users").where("type","==","a")
