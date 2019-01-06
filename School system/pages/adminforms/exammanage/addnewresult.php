@@ -84,13 +84,9 @@
                                                     </select>
                                                 </div>
                                                 
-
                                                 </div>
                                                     <input type="hidden" id="schoolid" value="abc">
                                                 <div >
-
-
-
 
                                             </div>
                                         </div>
@@ -141,6 +137,11 @@
                                                 <button style="width:150px" onclick="add1()" type="button" class="btn btn-primary">Load Student List</button>
                                                 </div>
                                             </div>
+                                            <div class="col-md-8">
+                                                <div id="studentMediumTxt" class="form-group">
+                                                <button style="width:150px" onclick="myFunction()" type="button" class="btn btn-primary">Tst</button>
+                                                </div>
+                                            </div>
                                         </div>
                                 </div>
                             </div>
@@ -149,7 +150,7 @@
                                 <div class="col-md-10">
                                 <div class="form-group">
                                 <h4 class="box-title">Student Details</h4>
-                                    <table class="table table-bordered">
+                                    <table id="studentResultsTable" class="table table-bordered">
                                         <tbody>
                                             <tr>
                                                 <th>Admission No</th>
@@ -174,13 +175,10 @@
                                 </div>
                                 </div>
                             </div>
-                            
-
-                        </div>  
+                        </div> 
+                        
                     </form>
-                    <div class="box-footer">
-
-                    </div>
+                    
                 </div><!-- /.box -->
 
 
@@ -188,6 +186,8 @@
 </section>
 </div>
 </body>
+<?php include_once('../admincommon/footer.php'); ?>
+
 
 <script>
     // getschool("stuschool");
@@ -206,85 +206,51 @@
 </script>
 
 <script>
-    // getschool("abc");
-    setTimeout(p ,1500);
-    function p(){
-        var grade=document.getElementById("gradeTxt").value;
-        var school="abc";//document.getElementById("schoolid").value;
-        $("#classlist").empty();
-        db.collection("schools").where("id","==",school)
+    // function myFunction() {
+    // var table = document.getElementById("studentResultsTable");
+    // var row = table.insertRow(-1);
+    // var cell1 = row.insertCell(0);
+    // var cell2 = row.insertCell(1);
+    // var cell3 = row.insertCell(2);
+    // cell1.innerHTML = '<td>-</td>';
+    // cell2.innerHTML = '<td>-</td>';
+    // cell3.innerHTML = '<td><input style ="width:500px" id="result" type="text" name="q" class="form-control" placeholder="Result"/></td>';
+    // }
+
+
+
+    getstudents();
+    function getstudents(){
+        var table = document.getElementById("studentResultsTable");
+        var row = table.insertRow(-1);
+        var output={};
+        db.collection("students")
         .get()
         .then(function(querySnapshot) {
             querySnapshot.forEach(function(doc) {
-                db.collection("schools").doc(doc.id).collection("grades").where("grade","==",grade)
-                .get()
-                .then(function(querySnapshot) {
-                    querySnapshot.forEach(function(doc) {
-                        var classes=doc.data().classes;
-                        classes.forEach(function(cls){
-                            var sel = document.getElementById("classTxt");
-                            var opt = document.createElement("option");
-                            opt.value = cls;
-                            opt.text = cls;
-                            sel.add(opt);
-                                
-                        })
-                        console.log(doc.id, " => ", classes);
-                        if((grade=='Grade 6') || (grade==12) ||(grade==11) || (grade==13)){
-                            document.getElementById("subjectTxt").style.display = 'block';
-                            var i=0;
-                            var subs=doc.data().subjects;
-                            subs.forEach(function(sub){
-                                var tableref=document.getElementById('s');
-                                var newCheckbox = document.createElement("input");
-                                newCheckbox.type = "checkbox";
-                                newCheckbox.name = "subject"+i;
-                                newCheckbox.value = sub;
-                                //document.getElementById("subjectselection").appendChild(newCheckbox);
-                                var row=tableref.insertRow(-1);
-                                row.insertCell(0).appendChild(newCheckbox);
-                                //var label = document.createElement('label');
-                               // label.htmlFor = sub;
-                               // label.appendChild(document.createTextNode(sub));
-                                row.insertCell(1).innerHTML=sub ;
-                                i++;
-
-                               // document.getElementById("subjectselection").appendChild(label);
-                                //document.getElementById("subjectselection").appendChild(document.createElement("br"));
-
-                             })
-                        }
-                        else{
-                            document.getElementById("subjectTxt").style.display = 'none';
-                        }
-                    });
-                })
-                .catch(function(error) {
-                    console.log("Error getting documents: ", error);
-                });
-            
+                output[doc.id]=doc.data();
+                document.write(output.Fname);
+                // '<tr>'
+                // var cell1 = row.insertCell(0);
+                // var cell2 = row.insertCell(1);
+                // var cell3 = row.insertCell(2);
+                // cell1.innerHTML = '<td>-</td>';
+                // cell2.innerHTML = '<td>-</td>';
+                // cell3.innerHTML = '<td><input style ="width:500px" id="result" type="text" name="q" class="form-control" placeholder="Result"/></td>';
+                // document.getElementById("result").value=output.Fname;
+                // "<br>"
+                // '</tr>'
+                // doc.data() is never undefined for query doc snapshots
+                //console.log(doc.id, " => ", doc.data());
             });
         })
         .catch(function(error) {
             console.log("Error getting documents: ", error);
         });
-    
-    }
-
-
-    function GetCellValues() {
-    var table = document.getElementById('s');
-    var sublist=[];
-    for (var r = 0, n = table.rows.length; r < n; r++) {    
-            var check=$('input:checkbox[name=subject'+r+']').is(':checked');
-            if(check==true)
-                sublist.push($('input:checkbox[name=subject'+r+']').val());
-        
-    }
-    return sublist;
+        return output;
     }
 </script>
 
-<?php include_once('../admincommon/footer.php'); ?>
+
 
 

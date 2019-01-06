@@ -14,7 +14,7 @@
 <section class="content-wrapper">
     <section class="content-header">
     <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-12">
             <!-- general form elements -->
             <div class="box box-primary">
                 <div class="box-header with-border">
@@ -23,7 +23,9 @@
                 <!-- form start -->
                 <form role="form">
                     <div class="box-body">
-                        <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-6">
+                            <div class="form-group">
                             <label  >School Name:</label>
                             <input type="input" class="form-control" id="schoolNameTxt" placeholder="Enter School Name">
                         </div>
@@ -47,6 +49,47 @@
                             <div class="col-md-8"></div>
                             <button style="width:170px" type="button" onclick="addschool() " class="btn btn-primary">Register</button>
                         </div>
+                            </div>
+                        </div>
+                        
+<hr>
+                        <div class="row">
+                                <div class="col-md-10">
+                                <div class="form-group">
+                                <h4 class="box-title">Student Details</h4>
+                                    <table id="studentResultsTable" class="table table-bordered">
+                                        <tbody>
+                                            <tr>
+                                                <th>School Id</th>
+                                                <th>School Name</th>
+                                                <th>Location</th>
+                                                <th>Principal</th>
+                                                <th>Contact</th>
+                                            </tr>
+                                            <tr id = "datarow">
+                                                <td id = "schoolId">
+                                                    -
+                                                </td>
+                                                <td id = "schoolName">
+                                                    -
+                                                </td>
+                                                <td id = "location">
+                                                    -
+                                                </td>
+                                                <td id = "principal">
+                                                    -
+                                                </td>
+                                                <td id = "contact">
+                                                    -
+                                                </td>
+                                                
+                                            </tr>
+                                            
+                                        </tbody>
+                                    </table>
+                                </div>
+                                </div>
+                            </div>
                         
                     </div><!-- /.box-body -->
 
@@ -80,6 +123,24 @@ function addschool() {
 }
 
 
+</script>
+
+
+<script>
+    function addrow() {
+        var table = document.getElementById("studentResultsTable");
+        var row = table.insertRow(-1);
+        var cell1 = row.insertCell(0);
+        var cell2 = row.insertCell(1);
+        var cell3 = row.insertCell(2);
+        var cell4 = row.insertCell(3);
+        var cell5 = row.insertCell(4);
+        cell1.innerHTML = '<td>-</td>';
+        cell2.innerHTML = '<td>-</td>';
+        cell3.innerHTML = '<td>-</td>';
+        cell4.innerHTML = '<td>-</td>';
+        cell5.innerHTML = '<td>-</td>';
+    }
 </script>
 
 <?php include_once('../admincommon/footer.php'); ?>
