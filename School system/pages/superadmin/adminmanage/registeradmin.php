@@ -103,6 +103,16 @@
                 </form>
             </div><!-- /.box -->
         </div>
+        <div class="col-md-6" id="subjectselection">
+                <label><h4 class="box-title">Admins </h6></label><br>
+                    <table id="s">
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </table>
+            </div>
 
 
     </div>
@@ -113,12 +123,31 @@
 
 <script>
 
-function createaccount(params) {
+function createaccount() {
     var adminNameTxt = document.getElementById("adminNameTxt").value;
     var adminDesignationTxt = document.getElementById("adminDesignationTxt").value;
     var adminEmailTxt = document.getElementById("adminEmailTxt").value;
     var adminPasswordTxt = document.getElementById("adminPasswordTxt").value;
-    createuser(adminEmailTxt,adminPasswordTxt,"admin","null",school);
+    var regno = document.getElementById("adminnic").value;
+    var school=document.getElementById("schoolist").value;
+    createuser(adminEmailTxt,adminPasswordTxt,"admin",regno,school);
+    
+    db.collection("users").doc(regno).set({
+        adminname:adminNameTxt,
+        adminDesignation:adminDesignationTxt,
+        email:adminEmailTxt,
+  
+    })
+    .then(function(docRef) {
+        alert("student added successfully");
+       // console.log("Document written with ID: ", docRef.id);
+    })
+    .catch(function(error) {
+        alert("Error adding document: ", error);
+    });
+
+
+
 }
  
     db.collection("schools")
@@ -135,6 +164,22 @@ function createaccount(params) {
                     
     })
 })
+
+
+
+function getadmins() {
+    db.collection("users").where("type","==","a")
+    .get()
+    .then(function(querySnapshot) {
+        querySnapshot.forEach(function(doc) {
+            var admin=doc.data();
+            
+            var row=tableref.insertRow(-1);
+            row.insertCell(1).innerHTML=admin.school ;
+                    
+    })
+})
+}
 
 </script>
 
