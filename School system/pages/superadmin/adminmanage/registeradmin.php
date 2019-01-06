@@ -15,7 +15,7 @@
 <section class="content-wrapper">
     <section class="content-header">
     <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-12">
             <!-- general form elements -->
             <div class="box box-primary">
                 <div class="box-header with-border">
@@ -104,7 +104,6 @@
             </div><!-- /.box -->
         </div>
         <div class="col-md-6" id="subjectselection">
-                <label><h4 class="box-title">Admins </h6></label><br>
                     <table id="s">
                         <th></th>
                         <th></th>
