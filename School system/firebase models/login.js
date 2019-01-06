@@ -60,7 +60,7 @@ function getuserdata(){
         querySnapshot.forEach(function(doc) {
 
             // doc.data() is never undefined for query doc snapshots
-            //console.log(doc.data().type);   
+            console.log(doc.data().school);   
             if  ((doc.data().type)=='a'){
                 window.location.replace("pages/adminforms/admindashboard/admindashboard.php");
             }

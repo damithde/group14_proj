@@ -218,6 +218,34 @@
     .catch(function(error) {
         console.log("Error getting documents: ", error);
     });
+
+
+    var rowCount = document.getElementById("s").rows.length;
+    
+    for (var x=rowCount-1; x>0; x--) {
+        document.getElementById("s").deleteRow(x);
+    }
+
+    db.collection("students").where("school","==",school)
+    .get()
+    .then(function(querySnapshot) {
+        querySnapshot.forEach(function(doc) {
+            var tableref=document.getElementById('s');
+            var admin=doc.data();
+            var row=tableref.insertRow(-1);
+            row.insertCell(0).innerHTML=admin.regno ;
+            row.insertCell(1).innerHTML=admin.adminname ;
+            row.insertCell(2).innerHTML=admin.email ;
+            row.insertCell(3).innerHTML=admin.regno ;
+            row.insertCell(4).innerHTML=admin.adminDesignation ;
+            row.insertCell(4).innerHTML=admin.adminDesignation ;
+
+                    
+    })
+})
+
+
+
 }
 
 

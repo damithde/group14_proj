@@ -1,5 +1,5 @@
 function addteacher(teacher){
-    db.collection("teachers").doc(teacher[0]).set({
+    db.collection("teachers").doc(teacher[9]).set({
         Fname: teacher[0],
         Mname: teacher[1],
         Lname: teacher[2],
