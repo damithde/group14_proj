@@ -41,7 +41,7 @@
                                                 
                                                 <div  class="form-group">
                                                     <label  >Select Year:</label>
-                                                    <select class="form-control" id="studentyear">
+                                                    <select class="form-control" id="studentyear" onchange=" loadgrades()" >
                                                         <option value="2019">2019</option>
                                                         <option value="2018">2018</option>
                                                         <option value="2017">2017</option>
@@ -55,7 +55,7 @@
                                             <div class="col-md-8">
                                                 <div  class="form-group">
                                                     <label  >Select Grade:</label>
-                                                    <select class="form-control" id="studentgrade" >
+                                                    <select class="form-control" id="studentgrade" onchange="loadclasses()">
                                                         <option value="6">Grade 6</option>
                                                         <option value="7">Grade 7</option>
                                                         <option value="8">Grade 8</option>
@@ -72,15 +72,8 @@
                                             <div class="col-md-8">
                                                 <div  class="form-group">
                                                     <label  >Select Class:</label>
-                                                    <select class="form-control" id="studentclass" onchange="getstudents()">
-                                                        <option value="A">A</option>
-                                                        <option value="B">B</option>
-                                                        <option value="C">C</option>
-                                                        <option value="D">D</option>
-                                                        <option value="E">E</option>
-                                                        <option value="F">F</option>
-                                                        <option value="G">G</option>
-                                                        <option value="H">H</option>
+                                                    <select class="form-control" id="classlist" onchange="getstudents()">
+                                                     
                                                     </select>
                                                 </div>
                                             </div>
@@ -148,22 +141,13 @@
                                             <tr>
                                                 <th>Admission No</th>
                                                 <th>Name</th>
+                                                <th>Contact</th>
+                                                <th>Reg no.</th>
+                                                <th>Grade</th>
                                                 <th>Class</th>
-                                                <th>Address</th>
                                             </tr>
                                             <tr>
-                                                <td>
-                                                    <a href="../studentmanage/viewstudent.php">1600254</a>
-                                                </td>
-                                                <td>
-                                                    -
-                                                </td>
-                                                <td>
-                                                    -
-                                                </td>
-                                                <td>
-                                                    -
-                                                </td>
+        
                                                 
                                             </tr>
                                             
@@ -194,21 +178,28 @@
     function getstudents(){
     var year = document.getElementById("studentyear").value;
     var grade = document.getElementById("studentgrade").value;
-    var cls = grade+document.getElementById("studentclass").value;
+    var cls = grade+document.getElementById("classlist").value;
     var school=document.getElementById("schoolid").value;
     var output;
+    var rowCount = document.getElementById("s").rows.length;
+    
+    // for (var x=rowCount-1; x>0; x--) {
+    //     document.getElementById("s").deleteRow(x);
+    // }
     console.log(cls,school);
     db.collection("students").where("school","==",school).where("grade","==",grade).where("class","==",cls)
     .get()
     .then(function(querySnapshot) {
         querySnapshot.forEach(function(doc) {
-            output=doc.data();
             var tableref=document.getElementById('s');
-            var a = document.createElement('input');
-            a.type="button"
-            a.href = '../studentmanage/viewstudent.php';    
+            var admin=doc.data();
             var row=tableref.insertRow(-1);
-            row.insertCell(0).appendChild(a);
+            row.insertCell(0).innerHTML=admin.regno;
+            row.insertCell(1).innerHTML=admin.Fname+" "+ admin.Lname;
+            row.insertCell(2).innerHTML=admin.contact;
+            row.insertCell(3).innerHTML=admin.regno;
+            row.insertCell(4).innerHTML=admin.grade;
+            row.insertCell(4).innerHTML=admin.class;
             
             
             
@@ -220,34 +211,62 @@
     });
 
 
-    var rowCount = document.getElementById("s").rows.length;
-    
-    for (var x=rowCount-1; x>0; x--) {
-        document.getElementById("s").deleteRow(x);
-    }
-
-    db.collection("students").where("school","==",school)
-    .get()
-    .then(function(querySnapshot) {
-        querySnapshot.forEach(function(doc) {
-            var tableref=document.getElementById('s');
-            var admin=doc.data();
-            var row=tableref.insertRow(-1);
-            row.insertCell(0).innerHTML=admin.regno ;
-            row.insertCell(1).innerHTML=admin.adminname ;
-            row.insertCell(2).innerHTML=admin.email ;
-            row.insertCell(3).innerHTML=admin.regno ;
-            row.insertCell(4).innerHTML=admin.adminDesignation ;
-            row.insertCell(4).innerHTML=admin.adminDesignation ;
-
-                    
-    })
-})
-
-
-
 }
 
+function loadclasses() {
+    var school=document.getElementById("schoolid").value;
+    var grade = document.getElementById("studentgrade").value;
+    db.collection("schools").where("id","==",school)
+        .get()
+        .then(function(querySnapshot) {
+            querySnapshot.forEach(function(doc) {
+                db.collection("schools").doc(doc.id).collection("grades").where("grade","==",grade)
+                .get()
+                .then(function(querySnapshot) {
+                    querySnapshot.forEach(function(doc) {
+                        var classes=doc.data().classes;
+                        classes.forEach(function(cls){
+                            var sel = document.getElementById("classlist");
+                            var opt = document.createElement("option");
+                            opt.value = cls;
+                            opt.text = cls;
+                            sel.add(opt);
+                                
+                        })
+                        console.log(doc.id, " => ", classes);
+                })
+            })
+        })
+    })
+}
+
+
+function loadgrades() {
+    var school=document.getElementById("schoolid").value;
+    
+    db.collection("schools").where("id","==",school)
+        .get()
+        .then(function(querySnapshot) {
+            querySnapshot.forEach(function(doc) {
+                db.collection("schools").doc(doc.id).collection("grades")
+                .get()
+                .then(function(querySnapshot) {
+                    querySnapshot.forEach(function(doc) {
+                        var classes=doc.data().grade;
+                        classes.forEach(function(cls){
+                            var sel = document.getElementById("studentgrade");
+                            var opt = document.createElement("option");
+                            opt.value = cls;
+                            opt.text = cls;
+                            sel.add(opt);
+                                
+                        })
+                        console.log(doc.id, " => ", classes);
+                })
+            })
+        })
+    })
+}
 
 
 
