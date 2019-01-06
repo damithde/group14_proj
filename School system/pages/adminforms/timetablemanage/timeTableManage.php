@@ -14,7 +14,7 @@
 <script src="../../../firebase models/timeTable.js"></script>
 <script src="../../../firebase models/admin.js"></script>
 <script src="../../../firebase models/login.js"></script>
-<script src="../../../firebase models/fileupload.js"></script>
+
 </head>
 
 <body class="skin-blue">
@@ -191,6 +191,8 @@
         </div><!-- /.box -->
     </section>
 </section>
+<input type="hidden" id="schoolid" value="">
+
 </div>
 <?php include_once('../admincommon/footer.php'); ?>
     
@@ -217,7 +219,7 @@
 <!--    <input type="hidden" id="myInput" value="W3Schools">-->
 
 <script>
-    
+    getschool("schoolid");
     function addTimeTable(){
                
                 var classNo=document.getElementById("classNo").value;
@@ -434,21 +436,16 @@
 				var teacherView58 = document.getElementById("teacherView58").value;				
                 addTimeSlot(classNo,classTeacher,timeView18,subjectView58,teacherView58,fri);
         
-        
-                
-                
-        
-                
-        
+
                 alert("Time Table sent successfully");
         
-    
    
     }
     
     
-    
-    function addTimeSlot(classNo,classTeacher,timeView,subjectView,teacherView,date,school="mal2017"){
+
+    var sid=document.getElementById("schoolid").value;
+    function addTimeSlot(classNo,classTeacher,timeView,subjectView,teacherView,date,sid){
                 
 
         //timeTableList=[classNot,classTeachert,timeView1t,subjectView1t,teacherView1t,datet];
@@ -476,9 +473,10 @@
    
     function searchTable(){
         
-        var clz = document.getElementById("classNo").value;   
+        var clz = document.getElementById("classNo").value;  
+        var x=document.getElementById("schoolid").value; 
         
-        getClassTimeTable(clz);
+        getClassTimeTable(clz,x);
         
         
     }
