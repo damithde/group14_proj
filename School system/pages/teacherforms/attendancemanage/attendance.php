@@ -21,7 +21,7 @@
                     <div class="form-group">
                         <div class="col-md-3"
                     <div id="studentMediumTxt" class="form-group">
-                        <label  >Select Grade:</label>
+                        <label  >Grade:</label>
                         <select class="form-control">
                             <option value="6">Grade 6</option>
                             <option value="7">Grade 7</option>
@@ -39,7 +39,7 @@
                         <div class="col-md-3"
 
                         <div id="studentMediumTxt" class="form-group">
-                            <label  >Select Class:</label>
+                            <label  >Class:</label>
                             <select class="form-control">
                                 <option value="sinhala">All</option>
                                 <option value="english">A</option>
