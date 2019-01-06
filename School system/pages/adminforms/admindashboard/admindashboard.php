@@ -142,16 +142,12 @@
                         <div class="box-body">
                             <div class="progress">
                                 <div id = "studentcount" class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width:0%">
-                                    Present Students 
+                                    Present Students:
                                     <span id ="studentpresent" class="sr-only">0%</span>
                                 </div>
+                                <label id="c"></label>
                             </div>
-                            <div class="progress">
-                                <div id = "teachercount" class="progress-bar progress-bar-red" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
-                                    Present Teachers 100
-                                    <span id ="teacherpresent" class="sr-only">0% </span>
-                                </div>
-                            </div>
+   
                         </div><!-- /.box-body -->
                     </div><!-- /.box -->
                 </div>
@@ -176,7 +172,7 @@
     gettotaalstudents();
     gettotalteachers();
     gettotalnotifications();
-    getstudentspresent();
+    var x=getstudentspresent();
     
     
 function loadnotification(){
@@ -294,12 +290,39 @@ function getstudentspresent(){
         });
         var ts=document.getElementById("totStudents").innerHTML
         document.getElementById("studentcount").style.width=(count*100/parseInt(ts, 10))+"%";
+        return count;
        // document.getElementById("studentcount").setAttribute("style","width:100%");
     })
     .catch(function(error) {
         console.log("Error getting documents: ", error);
     });
 }
+
+
+function getstudentspresent(){
+    var school=document.getElementById("schoolid").value;
+    var output,count;
+    count=0;
+    db.collection("attendance").where("school","==",school).where("present","==",true)
+    .get()
+    .then(function(querySnapshot) {
+        querySnapshot.forEach(function(doc) {
+            output=doc.data();
+            count++;
+            
+           //console.log(doc.id, " => ", doc.data());
+        });
+        var ts=document.getElementById("totStudents").innerHTML;
+        document.getElementById("studentcount").style.width=(count*100/parseInt(ts, 10))+"%";
+        document.getElementById("c").innerHTML=": "+count;
+    })
+    .catch(function(error) {
+        console.log("Error getting documents: ", error);
+    });
+}
+
+
+
 
     
 </script>
