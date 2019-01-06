@@ -11,7 +11,7 @@
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-database.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-storage.js"></script>
 <script src="../../../firebase models/db.js"></script>
-<script src="../../../firebase%20models/timeTable.js"></script>
+<script src="../../../firebase models/timeTable.js"></script>
 <script src="../../../firebase models/admin.js"></script>
 <script src="../../../firebase models/login.js"></script>
 <script src="../../../firebase models/fileupload.js"></script>
@@ -170,7 +170,7 @@
                         <tr><td></td>
                             <td></td>
                             <td></td>
-                            <td><button id="search" type="button" class="btn btn-primary">Search</button></td>
+                            <td><button id="search" type="button" class="btn btn-primary" onclick="getClassTimeTable()">Search</button></td>
                             <td><button id="add" type="button" class="btn btn-primary" onclick="addTimeTable()">Add</button></td>
                             <td><button id="delete" type="button" class="btn btn-primary">Delete</button></td>
                           
