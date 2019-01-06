@@ -165,13 +165,13 @@ function promotestudentspecial(idlist,tograde,toclass,year,subjects){
     
 
 
-function getstudents(){
-    var output={};
-    db.collection("students")
+function getstudents(school,grade,cls){
+    var output;
+    db.collection("students").where("school","==",school).where("grade","==",grade).where("class","==",cls)
     .get()
     .then(function(querySnapshot) {
         querySnapshot.forEach(function(doc) {
-            output[doc.id]=doc.data();
+            output=doc.data();
             // doc.data() is never undefined for query doc snapshots
             //console.log(doc.id, " => ", doc.data());
         });
@@ -179,6 +179,6 @@ function getstudents(){
     .catch(function(error) {
         console.log("Error getting documents: ", error);
     });
-    return output;
+    
 }
 
