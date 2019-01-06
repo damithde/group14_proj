@@ -56,7 +56,7 @@
                         <div class="row">
                                 <div class="col-md-10">
                                 <div class="form-group">
-                                <h4 class="box-title">Student Details</h4>
+                                <h4 class="box-title">School Details</h4>
                                     <table id="studentResultsTable" class="table table-bordered">
                                         <tbody>
                                             <tr>

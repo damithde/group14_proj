@@ -10,7 +10,13 @@
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-storage.js"></script>
+<script src="../../../firebase models/db.js"></script>
+<script src="../../../firebase models/teacher.js"></script>
+<script src="../../../firebase models/admin.js"></script>
 
+<script src="../../../firebase models/login.js"></script>
+<script src="../../../firebase models/fileupload.js"></script>
 
 <section class="content-wrapper">
     <section class="content-header">
@@ -168,6 +174,14 @@
         </section>
     </section>
     <script>
+        var school ="abc";
+        getteachers(){
+        var output={};
+        db.collection("teachers")
+            .get()
+            .then(function(querySnapshot) {
+                querySnapshot.forEach(function(doc) {
+                    output[doc.id]=doc.data();
         var teacherIDLbl
         var teacherFirstNameLbl
         var teacherMiddleNameLbl
@@ -182,18 +196,18 @@
         var teacherAddressLbl
         var teacherPhoneLbl
 
-        document.getElementById('teacherIDLbl').innerHTML = teacherIDLbl;
-        document.getElementById('teacherFirstNameLbl').innerHTML = teacherFirstNameLbl;
-        document.getElementById('teacherMiddleNameLbl').innerHTML = teacherMiddleNameLbl;
-        document.getElementById('teacherLastNameLbl').innerHTML = teacherLastNameLbl;
-        document.getElementById('teacherIniNameLbl').innerHTML = teacherIniNameLbl;
-        document.getElementById('teacherGenderLbl').innerHTML = teacherGenderLbl;
-        document.getElementById('teacherBdyLbl').innerHTML = teacherBdyLbl;
-        document.getElementById('teacherEmailLbl').innerHTML = teacherEmailLbl;
-        document.getElementById('teacherAdmissionLbl').innerHTML = teacherAdmissionLbl;
-        document.getElementById('teacherGradeLbl').innerHTML = teacherGradeLbl;
-        document.getElementById('teacherClassLbl').innerHTML = teacherClassLbl;
-        document.getElementById('teacherAddressLbl').innerHTML = teacherAddressLbl;
+
+        document.getElementById('teacherFirstNameLbl').innerHTML = output.Fname;
+        document.getElementById('teacherMiddleNameLbl').innerHTML = output.Mname;
+        document.getElementById('teacherLastNameLbl').innerHTML = output.Lname;
+        document.getElementById('teacherIniNameLbl').innerHTML = output;
+        document.getElementById('teacherGenderLbl').innerHTML = output.Gender;
+        document.getElementById('teacherBdyLbl').innerHTML = output.dob;
+        document.getElementById('teacherEmailLbl').innerHTML = output.email;
+        document.getElementById('teacherAdmissionLbl').innerHTML = ;
+        document.getElementById('teacherGradeLbl').innerHTML = output.grade;
+        document.getElementById('teacherClassLbl').innerHTML = output.class;
+        document.getElementById('teacherAddressLbl').innerHTML = output.ad;
         document.getElementById('teacherPhoneLbl').innerHTML = teacherPhoneLbl;
 
 

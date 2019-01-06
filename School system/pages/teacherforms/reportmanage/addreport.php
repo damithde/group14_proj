@@ -13,7 +13,7 @@
     <script src="../../../firebase models/db.js"></script>
     <script src="../../../firebase models/reports.js"></script>
     <script src="../../../firebase models/admin.js"></script>
-
+    <script src="../../../firebase models/login.js"></script>
 </head>
 
 
@@ -48,7 +48,7 @@
                             </div>
                             <div class="form-group">
                                 <label  >School:</label>
-                                <input type="text" class="form-control" id="stuSchool"  >
+                                <input type="text" class="form-control" id="stuSchool" disabled  >
 
                             </div>
                             <div class="form-group">
@@ -208,7 +208,7 @@
         var stdTotal = document.getElementById("studentTotalTxt").value;
         var stdPosition = document.getElementById("studentPositionTxt").value;
 
-        var report = [stdRegNo, stdName, stdSchool,stdGrade,stdClass,stdYear, stdTestNo, stdSub1, stdSub2, stdSub3, stdSub4, stdSub5, stdSub6, stdSub7, stdSub8, stdSub9, stdTotal, stdPosition];
+        var student = [stdRegNo, stdName, stdSchool,stdGrade,stdClass,stdYear, stdTestNo, stdSub1, stdSub2, stdSub3, stdSub4, stdSub5, stdSub6, stdSub7, stdSub8, stdSub9, stdTotal, stdPosition];
         addreport(student);
     }
 </script>
