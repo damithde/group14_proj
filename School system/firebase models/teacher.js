@@ -15,7 +15,7 @@ function addteacher(teacher){
 
     })
     .then(function(docRef) {
-     console.log("Document written with ID: ", docRef.id);
+     console.log("Document written ");
     })
     .catch(function(error) {
         console.error("Error adding document: ", error);

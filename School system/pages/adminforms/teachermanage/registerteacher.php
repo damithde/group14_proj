@@ -30,25 +30,25 @@
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">First Name:</label>
-                                <input  onkeyup="prvName()"  class="form-control" id="teacherFNameTxt" placeholder="Enter First Name">
+                                <input   class="form-control" id="teacherFNameTxt" placeholder="Enter First Name">
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Middle Name:</label>
-                                <input  onkeyup="prvName()"  class="form-control" id="teacherMNameTxt" placeholder="Enter Middle Name">
+                                <input    class="form-control" id="teacherMNameTxt" placeholder="Enter Middle Name">
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Last Name:</label>
-                                <input  onkeyup="prvName()"  class="form-control" id="teacherLNameTxt" placeholder="Enter Last Name">
+                                <input    class="form-control" id="teacherLNameTxt" placeholder="Enter Last Name">
                             </div>
                             
                             <div class="form-group">
                                 <label >Gender:</label>
                                 <div class="row">
                                     <div class="col-md-4">
-                                        <input onkeyup="prvGender()" type="radio" name="x"   id="gm" class="form-check-input" value="Male" checked > Male
+                                        <input  type="radio" name="x"   id="gm" class="form-check-input" value="Male" checked > Male
                                     </div>
                                     <div class="col-md-4">
-                                        <input onkeyup="prvGender()" type="radio" name="x"  id="gf" class="form-check-input" value="Female">  Female
+                                        <input  type="radio" name="x"  id="gf" class="form-check-input" value="Female">  Female
                                     </div>
                                 </div>
                             </div>
@@ -63,11 +63,11 @@
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Email:</label>
-                                <input onkeyup="prvEmail()"  class="form-control" id="teacherEmailText" placeholder="Enter Email">
+                                <input   class="form-control" id="teacherEmailText" placeholder="Enter Email">
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Registration No:</label>
-                                <input onkeyup="prvRegNo()" type="email" class="form-control" id="teacherRegNoTxt" placeholder="Enter Registration No">
+                                <input  type="email" class="form-control" id="teacherRegNoTxt" placeholder="Enter Registration No">
                             </div>
                             <div class="form-group">
                                 <label >School:</label>
@@ -100,13 +100,13 @@
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Address:</label>
-                                <textarea onkeyup="prvaddress()" class="form-control" id="teacherAddressTxt" rows="3" placeholder="Enter Address"></textarea>
+                                <textarea  class="form-control" id="teacherAddressTxt" rows="3" placeholder="Enter Address"></textarea>
                             </div>
                             <div class="input-group">
                                 <div class="input-group-addon">
                                     <i class="fa fa-phone"></i>
                                 </div>
-                                <input onkeyup="prvPhoneNo()" id="teacherTelNoTxt" type="text" class="form-control" >
+                                <input  id="teacherTelNoTxt" type="text" class="form-control" >
                                 </div>
                             <div class="form-group">
                                 <label for="exampleInputFile">Select Photo</label>
@@ -297,107 +297,7 @@ function loadclasses() {
 }
 
 </script>
-<script>
-    function prvName() {
-        var tchrName = document.getElementById("teacherFNameTxt").value;
-        if (tchrName === "") {
-            document.getElementById('previewName').innerHTML = "-";
-        }else{
-            document.getElementById('previewName').innerHTML = tchrName;
-        }
-        
-    }
-</script>
-<script>
-    function prvGender() {
-        var tchrGender = document.getElementById("input[name=parent]:checked").value;
-        if (tchrGender === "") {
-            document.getElementById('previewGender').innerHTML = "-";
-        }else{
-            document.getElementById('previewGender').innerHTML = tchrGender;
-        }
-    }
-</script>
-<script>
-    function prvDOB() {
-        var tchrDOB = document.getElementById("teacherDOBTxt").value;
-        if (tchrDOB === "") {
-            document.getElementById('previewDOB').innerHTML = "-";
-        }else{
-            document.getElementById('previewDOB').innerHTML = tchrDOB;
-        }
-    }
-</script>
-<script>
-    function prvEmail() {
-        var tchrEmail = document.getElementById("teacherEmailText").value;
-        if (tchrEmail === "") {
-            document.getElementById('previewEmail').innerHTML = "-";
-        }else{
-            document.getElementById('previewEmail').innerHTML = tchrEmail;
-        }
-    }
-</script>
-<script>
-    function prvSchool() {
-        var tchrSchool = document.getElementById("teacherSchoolText").value;
-        if (tchrSchool === "") {
-            document.getElementById('previewSchool').innerHTML = "-";
-        }else{
-            document.getElementById('previewSchool').innerHTML = tchrSchool;
-        }
-    }
-</script>
-<script>
-    function prvGrade() {
-        var tchrGrade = document.getElementById("teacherGradeText").value;
-        if (tchrGrade === "") {
-            document.getElementById('previewGrade').innerHTML = "-";
-        }else{
-            document.getElementById('previewGrade').innerHTML = tchrGrade;
-        }
-    }
-</script>
-<script>
-    function prvClass() {
-        var tchrClass = document.getElementById("teacherClassText").value;
-        if (tchrClass === "") {
-            document.getElementById('previewClass').innerHTML = "-";
-        }else{
-            document.getElementById('previewClass').innerHTML = tchrClass;
-        }
-    }
-</script>
-<script>
-    function prvRegNo() {
-        var tchrReg = document.getElementById("teacherRegNoTxt").value;
-        if (tchrReg === "") {
-            document.getElementById('previewRegNo').innerHTML = "-";
-        }else{
-            document.getElementById('previewRegNo').innerHTML = tchrReg;
-        }
-    }
-</script>
-<script>
-    function prvAddress() {
-        var tchrAddress = document.getElementById("teacherAddressTxt").value;
-        if (tchrAddress === "") {
-            document.getElementById('previewAddress').innerHTML = "-";
-        }else{
-            document.getElementById('previewAddress').innerHTML = tchrAddress;
-        } 
-    }
-</script>
-<script>
-    function prvPhoneNo() {
-        var tchrTel = document.getElementById("teacherTelNoTxt").value;
-        if (tchrTel === "") {
-            document.getElementById('previewPhoneNo').innerHTML = "-";
-        }else{
-            document.getElementById('previewPhoneNo').innerHTML = tchrTel;
-        } 
-    }
-</script>
+
 
 
 
