@@ -29,7 +29,7 @@
                     <div class="col-md-4">
 
                     </div>
-                    <form role="form">
+                    <form role="form" >
                         <div class="box-body">
 
 
@@ -86,9 +86,9 @@
                                                 <div id="studentMediumTxt" class="form-group">
                                                     <label class="text-muted">Search by Admission No</label>
                                                     <div class="input-group">
-                                                        <input id="lNameSearch" type="text" name="q" class="form-control" placeholder="Search by Admission No"/>
+                                                        <input id="idSearch" type="text" name="q" class="form-control" placeholder="Search by Admission No"/>
                                                         <span class="input-group-addon">
-                                                            <input type="checkbox">
+                                                            <input type="checkbox" >
                                                         </span>
                                                     </div>
                                                 </div>
@@ -100,9 +100,9 @@
                                                 <div id="studentMediumTxt" class="form-group">
                                                     <label class="text-muted">Search by First Name</label>
                                                     <div class="input-group">
-                                                        <input id="lNameSearch" type="text" name="q" class="form-control" placeholder="Search by First Name"/>
+                                                        <input id="FNameSearch" type="text" name="q" class="form-control" placeholder="Search by First Name"/>
                                                         <span class="input-group-addon">
-                                                            <input type="checkbox">
+                                                            <input type="checkbox" >
                                                         </span>
                                                     </div>
                                                 </div>
@@ -116,7 +116,7 @@
                                                     <div class="input-group">
                                                         <input id="lNameSearch" type="text" name="q" class="form-control" placeholder="Search by Last Name"/>
                                                         <span class="input-group-addon">
-                                                            <input type="checkbox">
+                                                            <input type="checkbox" >
                                                         </span>
                                                     </div>
                                                 </div>
@@ -269,8 +269,9 @@ function loadgrades() {
 }
 
 
-
-
+function search(params) {
+    
+}
 
 
 </script>
