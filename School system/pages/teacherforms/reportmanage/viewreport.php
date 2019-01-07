@@ -112,7 +112,7 @@
 
 
                                                         <div class="box-footer">
-                                                            <button type="button" class="btn btn-primary" onclick="getreports('161','Grade 8','All','2019','2')" >search</button>
+                                                            <button type="button" class="btn btn-primary" onclick="getreports(reg,cls,grade,year,term)" >search</button>
                                                         </div>
 
 
@@ -284,16 +284,21 @@
                         </form>
                     </div><!-- /.box -->
                     <script>
-                        var school="abc";
-                        getreports('161','Grade 8','All','2019','2');
+                        getschool("schoolid");
+                        function getreports(reg,cls,grade,year,term){
+                        var year = document.getElementById("studentyear").value;
+                        var grade = document.getElementById("studentgrade").value;
+                        var cls = document.getElementById("studentclass").value;
+                        var school=document.getElementById("schoolid").value;
+                            var term=document.getElementById("studenttest").value;
+                            var reg=document.getElementById("studentRegNo").value;
 
-                        function getreports(studentRegNo,studentclass,studentgrade,studentyear,studenttest){
 
 
-                        var output;
+                            var output;
 
 
-                        db.collection("reports").where("school","==",school).where("grade","==",studentgrade).where("class","==",studentclass).where("year","==",studentyear).where("testno","==",studenttest).where("studentreg","==",studentRegNo)
+                        db.collection("reports").where("school","==",school).where("grade","==",grade).where("class","==",cls).where("year","==",year).where("testno","==",term).where("studentreg","==",reg)
                             .get()
                             .then(function(querySnapshot) {
                                 querySnapshot.forEach(function(doc) {

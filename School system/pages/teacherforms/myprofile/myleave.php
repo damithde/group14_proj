@@ -14,7 +14,7 @@
     <script src="../../../firebase models/leave.js"></script>
     <script src="../../../firebase models/admin.js"></script>
     <script src="../../../firebase models/login.js"></script>
-    <script src="../../../firebase models/fileupload.js"></script>
+
 
 <section class="content-wrapper">
     <section class="content-header">
@@ -41,7 +41,9 @@
                                             <h3 class="box-title">Application For Leave </h3>
                                         </div><!-- /.box-header -->
                                         <!-- form start -->
-                                        <form role="form">
+                                        <form role="form" >
+
+                                        
                                             <div class="form-group">
                                                 <label for="exampleInputEmail1">School:</label>
 
@@ -98,7 +100,8 @@
                                                     <input type="text" class="form-control" id="reasonTxt" placeholder="Enter Reason">
                                                 </div>
                                                 <div class="box-footer">
-                                                    <button type="button" class="btn btn-primary" onclick="datasubmission1()" >Send</button>
+
+                                                    <button type="button" class="btn btn-primary" onclick="datasubmissionleave()" >Send</button>
                                                 </div>
 
                                         </form>
@@ -113,9 +116,9 @@
         </section>
     </section>
     <script>
-        getschool("schoolTxt");
 
-        function datasubmission1(){
+
+        function datasubmissionleave(){
             var school=document.getElementById("schoolTxt").value;
 
 
@@ -131,7 +134,7 @@
 
 
             var leave= [school,TeName,TeId,TeLdays,Testart,Teend,Tetype,Tereason];
-            addleave(leave)
+            addleave(leave);
         }
 
 
