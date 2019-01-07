@@ -34,7 +34,7 @@
 <body class="login-page">
 <div class="login-box">
     <div class="login-logo">
-        <a href="../../index.php"><b>W</b>elcome</a>
+        <a href="../../index.php"><b>S</b>tudent management and performance tracker</a>
     </div><!-- /.login-logo -->
     <div class="login-box-body">
         <p class="login-box-msg">Sign in to start your session</p>

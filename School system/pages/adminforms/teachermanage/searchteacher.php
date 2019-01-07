@@ -3,8 +3,17 @@
 <?php include_once('../admincommon/header.php'); ?>
 <?php include_once('../admincommon/sidebar.php'); ?>
 <?php include_once('../admincommon/script.php'); ?>
-
-
+<html>
+    <head>
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-storage.js"></script>
+<script src="../../../firebase models/db.js"></script>
+<script src="../../../firebase models/admin.js"></script>
+<script src="../../../firebase models/student.js"></script>
+    </head>
 <section class="content-wrapper">
     <section class="content-header">
 <!--        main row-->
@@ -20,7 +29,7 @@
                     <div class="col-md-4">
 
                     </div>
-                    <form role="form">
+                    <form role="form" >
                         <div class="box-body">
 
 
@@ -29,16 +38,14 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                             <div class="col-md-8">
-                                                <div id="studentMediumTxt" class="form-group">
+                                                
+                                                <div  class="form-group">
                                                     <label  >Select Year:</label>
-                                                    <select class="form-control">
-                                                        <option value="6">2019</option>
-                                                        <option value="7">2018</option>
-                                                        <option value="8">2017</option>
-                                                        <option value="9">2016</option>
-                                                        <option value="10">2015</option>
-                                                        <option value="11">2014</option>
-                                                        <option value="1">2013</option>
+                                                    <select class="form-control" id="studentyear" onchange=" loadgrades()" >
+                                                        <option value="2019">2019</option>
+                                                        <option value="2018">2018</option>
+                                                        <option value="2017">2017</option>
+                            
                                                     </select>
                                                 </div>
                                             </div>
@@ -46,50 +53,27 @@
 
                                         <div class="form-group">
                                             <div class="col-md-8">
-                                                <div id="studentMediumTxt" class="form-group">
+                                                <div  class="form-group">
                                                     <label  >Select Grade:</label>
-                                                    <select class="form-control">
-                                                        <option value="6">Grade 6</option>
-                                                        <option value="7">Grade 7</option>
-                                                        <option value="8">Grade 8</option>
-                                                        <option value="9">Grade 9</option>
-                                                        <option value="10">Grade 10</option>
-                                                        <option value="11">Grade 11</option>
-                                                        <option value="12">Grade 12</option>
+                                                    <select class="form-control" id="studentgrade" onchange="getstudents()">
+                                                  
                                                     </select>
                                                 </div>
                                             </div>
                                         </div>
 
-                                        <div class="form-group">
-                                            <div class="col-md-8">
-                                                <div id="studentMediumTxt" class="form-group">
-                                                    <label  >Select Class:</label>
-                                                    <select class="form-control">
-                                                        <option value="sinhala">All</option>
-                                                        <option value="english">A</option>
-                                                        <option value="tamil">B</option>
-                                                        <option value="english">C</option>
-                                                        <option value="tamil">D</option>
-                                                        <option value="english">E</option>
-                                                        <option value="tamil">F</option>
-                                                        <option value="english">G</option>
-                                                        <option value="tamil">H</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
+                                   
                                 </div>
                                 
                                 <div class="col-md-6">
                                     <div class="form-group">
                                             <div class="col-md-8">
                                                 <div id="studentMediumTxt" class="form-group">
-                                                    <label class="text-muted">Search by NIC</label>
+                                                    <label class="text-muted">Search by Admission No</label>
                                                     <div class="input-group">
-                                                        <input id="lNameSearch" type="text" name="q" class="form-control" placeholder="Search by NIC"/>
+                                                        <input id="idSearch" type="text" name="q" class="form-control" placeholder="Search by Admission No"/>
                                                         <span class="input-group-addon">
-                                                            <input type="checkbox">
+                                                            <input id="ids" type="checkbox" >
                                                         </span>
                                                     </div>
                                                 </div>
@@ -101,9 +85,9 @@
                                                 <div id="studentMediumTxt" class="form-group">
                                                     <label class="text-muted">Search by First Name</label>
                                                     <div class="input-group">
-                                                        <input id="lNameSearch" type="text" name="q" class="form-control" placeholder="Search by First Name"/>
+                                                        <input id="FNameSearch" type="text" name="q" class="form-control" placeholder="Search by First Name"/>
                                                         <span class="input-group-addon">
-                                                            <input type="checkbox">
+                                                            <input id="fs" type="checkbox" >
                                                         </span>
                                                     </div>
                                                 </div>
@@ -117,7 +101,7 @@
                                                     <div class="input-group">
                                                         <input id="lNameSearch" type="text" name="q" class="form-control" placeholder="Search by Last Name"/>
                                                         <span class="input-group-addon">
-                                                            <input type="checkbox">
+                                                            <input id="ls" type="checkbox" >
                                                         </span>
                                                     </div>
                                                 </div>
@@ -132,32 +116,23 @@
                                         </div>
                                 </div>
                             </div>
-<hr>
+                        <hr>
                             <div class="row">
-                                <div class="col-md-12">
+                                <div class="col-md-10">
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">Student Details Details:</label>
-                                    <table class="table table-bordered">
+                                    <table class="table table-bordered" id="s">
                                         <tbody>
                                             <tr>
-                                                <th>Registration No</th>
+                                                <th>Admission No</th>
                                                 <th>Name</th>
-                                                <th>Grade and Class</th>
-                                                <th>Contact No</th>
+                                                <th>Contact</th>
+                                                <th>Reg no.</th>
+                                                <th>Grade</th>
+                                                <th>Class</th>
                                             </tr>
                                             <tr>
-                                                <td>
-                                                    <a href="../teachermanage/viewteacher.php">1600254</a>
-                                                </td>
-                                                <td>
-                                                    -
-                                                </td>
-                                                <td>
-                                                    -
-                                                </td>
-                                                <td>
-                                                    -
-                                                </td>
+        
                                                 
                                             </tr>
                                             
@@ -170,7 +145,7 @@
                         </div>  
                     </form>
                     <div class="box-footer">
-
+                            <input type="hidden" id="schoolid" value="blank">
                     </div>
                 </div><!-- /.box -->
             </div>
@@ -181,9 +156,137 @@
 </section>
 
 <script>
-    var stdFName = document.getElementById("studentIdText").value;
-    var stdLName = document.getElementById("studentNameTxt").value;
-    var stdLName = document.getElementById("messageTxt").value;
+    getschool("schoolid");
+
+    
+
+function getstudents(){
+    var year = document.getElementById("studentyear").value;
+    var grade = document.getElementById("studentgrade").value;
+    $("#s tr").remove();
+    var school=document.getElementById("schoolid").value;
+    var output;
+    var rowCount = document.getElementById("s").rows.length;
+    
+    // for (var x=rowCount-1; x>0; x--) {
+    //     document.getElementById("s").deleteRow(x);
+    // }
+    
+    db.collection("teachers").where("school","==",school).where("grade","==",grade)
+    .get()
+    .then(function(querySnapshot) {
+        querySnapshot.forEach(function(doc) {
+            var tableref=document.getElementById('s');
+            var admin=doc.data();
+            var row=tableref.insertRow(-1);
+            row.insertCell(0).innerHTML=admin.regno;
+            row.insertCell(1).innerHTML=admin.Fname+" "+ admin.Lname;
+            row.insertCell(2).innerHTML=admin.contact;
+            row.insertCell(3).innerHTML=admin.regno;
+            row.insertCell(4).innerHTML=admin.grade;
+            row.insertCell(4).innerHTML=admin.class;
+            
+            
+            
+           //console.log(doc.id, " => ", doc.data());
+        });
+    })
+    .catch(function(error) {
+        console.log("Error getting documents: ", error);
+    });
+
+
+}
+
+
+
+function loadgrades() {
+    var school=document.getElementById("schoolid").value;
+    $("#teacherClassText").empty();
+    db.collection("schools").where("id","==",school)
+        .get()
+        .then(function(querySnapshot) {
+            querySnapshot.forEach(function(doc) {
+                db.collection("schools").doc(doc.id).collection("grades")
+                .get()
+                .then(function(querySnapshot) {
+                    querySnapshot.forEach(function(doc) {
+                        var classes=doc.data().grade;
+                            var sel = document.getElementById("studentgrade");
+                            var opt = document.createElement("option");
+                            opt.value = classes;
+                            opt.text = classes;
+                            sel.add(opt);
+                                
+        
+                        console.log(doc.id, " => ", classes);
+                })
+            })
+        })
+    })
+}
+
+
+function search(params) {
+    var school=document.getElementById("schoolid").value;
+    var id =document.getElementById("ids").checked;
+    var fs =document.getElementById("fs").checked;
+    var ls =document.getElementById("ls").checked;
+    var idval =document.getElementById("idSearch").value;
+    var fname =document.getElementById("FNameSearch").value;
+    var lname =document.getElementById("lNameSearch").value;
+
+    if(id==true){
+        var output;
+        db.collection("teachers").where("school","==",school).where("regno","==",idval)
+        .get()
+        .then(function(querySnapshot) {
+            querySnapshot.forEach(function(doc) {
+                var tableref=document.getElementById('s');
+            var admin=doc.data();
+            var row=tableref.insertRow(-1);
+            row.insertCell(0).innerHTML=admin.regno;
+            row.insertCell(1).innerHTML=admin.Fname+" "+ admin.Lname;
+            row.insertCell(2).innerHTML=admin.contact;
+            row.insertCell(3).innerHTML=admin.regno;
+            row.insertCell(4).innerHTML=admin.grade;
+            row.insertCell(4).innerHTML=admin.class;
+            });
+        })
+        .catch(function(error) {
+            console.log("Error getting documents: ", error);
+        });
+        return;
+
+    }
+    else if((fs==true)&&(ls==true)){
+        db.collection("teachers").where("school","==",school).where("fname","==",fname).where("lname","==",lname)
+        .get()
+        .then(function(querySnapshot) {
+            querySnapshot.forEach(function(doc) {
+                var tableref=document.getElementById('s');
+            var admin=doc.data();
+            var row=tableref.insertRow(-1);
+            row.insertCell(0).innerHTML=admin.regno;
+            row.insertCell(1).innerHTML=admin.Fname+" "+ admin.Lname;
+            row.insertCell(2).innerHTML=admin.contact;
+            row.insertCell(3).innerHTML=admin.regno;
+            row.insertCell(4).innerHTML=admin.grade;
+            row.insertCell(4).innerHTML=admin.class;
+            });
+        })
+        .catch(function(error) {
+            console.log("Error getting documents: ", error);
+        });
+        return;
+    }
+    else if(ls=true){
+
+    }
+
+}
+
+
 </script>
 
 <?php include_once('../admincommon/footer.php'); ?>

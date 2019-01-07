@@ -176,7 +176,7 @@ function getstudents(){
     var school=document.getElementById("schoolid").value;
     var output;
     var rowCount = document.getElementById("s").rows.length;
-    
+    $("#s tr").remove();
     // for (var x=rowCount-1; x>0; x--) {
     //     document.getElementById("s").deleteRow(x);
     // }
@@ -208,6 +208,7 @@ function getstudents(){
 }
 
 function loadclasses() {
+    $("#teacherClassText").empty();
     var school=document.getElementById("schoolid").value;
     var grade = document.getElementById("studentgrade").value;
     db.collection("schools").where("id","==",school)
@@ -237,7 +238,7 @@ function loadclasses() {
 
 function loadgrades() {
     var school=document.getElementById("schoolid").value;
-    
+    $("#teacherClassText").empty();
     db.collection("schools").where("id","==",school)
         .get()
         .then(function(querySnapshot) {
