@@ -71,11 +71,11 @@ function addreport(student) {
 
 function getreports(Regno,Class,Grade,Year,Term) {
     var output = {};
-    db.collection("terms").where("school", "==",School ).where("regno", "==", Regno).where("class", "==", Class).where("grade", "==", Grade).where("year", "==", Year).where("termno", "==", Term)
+    db.collection("reports").where("school", "==",School ).where("regno", "==", Regno).where("class", "==", Class).where("grade", "==", Grade).where("year", "==", Year).where("termno", "==", Term)
         .get()
         .then(function (querySnapshot) {
             querySnapshot.forEach(function (doc) {
-                output[doc.id] = doc.data();
+                output = doc.data();
                 //console.log(doc.id, " => ", doc.data());
 
             });

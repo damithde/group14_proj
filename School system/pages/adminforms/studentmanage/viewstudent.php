@@ -3,10 +3,19 @@
 <?php include_once('../admincommon/sidebar.php'); ?>
 <?php include_once('../admincommon/script.php'); ?>
 
+<head>
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-storage.js"></script>
+<script src="../../../firebase models/db.js"></script>
+<script src="../../../firebase models/student.js"></script>
+<script src="../../../firebase models/admin.js"></script>
+<script src="../../../firebase models/exam.js"></script>
+<script src="../../../firebase models/login.js"></script>
+<script src="../../../firebase models/fileupload.js"></script>
+</head>
 
 <body>
 <section class="content-wrapper">
@@ -30,15 +39,19 @@
                         <!--Lable field-->
 
                             <div class="row">
-                            <div class="col-md-6">
-                            <div id="studentMediumTxt" class="form-group">
-                        <div class="input-group">
-                            <input id="lNameSearch" type="text" name="q" class="form-control" placeholder="Search by Admission No"/>
-                            <span class="input-group-addon">
-                                <input type="checkbox">
-                            </span>
-                        </div>
-                    </div></div>
+                                <div class="col-md-3"></div>
+                                <div class="col-md-8">
+                                    <div  class="form-group">
+                                        <div class="input-group">
+                                            <input id="idSearchTxt" type="text" name="q" class="form-control" placeholder="Search...">
+                                            <span class="input-group-btn">   
+                                                <button onclick="searchStudent()" type="button" name="search" class="btn btn-flat"><!---class="btn btn-flat"-->
+                                                <i class="fa fa-search"></i>
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </div>                
+                                </div>
                             </div>
 
 
@@ -400,7 +413,7 @@
 </body>
 
 
-<script>
+<!-- <script>
 
 
     var studentfNameLbl
@@ -441,6 +454,49 @@
     document.getElementById('parentEmailLbl').innerHTML = parentEmailLbl;
     document.getElementById('parentPhoneLbl').innerHTML = parentPhoneLbl;
     
-</script>
+</script> -->
 
 <?php include_once('../admincommon/footer.php'); ?>
+
+<script>
+    
+    function searchStudent(){
+        var reg = document.getElementById("idSearchTxt").value;
+        var school ="abc";
+        getstudentsfromreg(reg);
+        function getstudentsfromreg(reg){
+            var output;
+            db.collection("students").where("school","==",school).where("regno","==",reg)
+            .get()
+            .then(function(querySnapshot) {
+                querySnapshot.forEach(function(doc) {
+                    output=doc.data();
+                    document.getElementById('studentfNameLbl').innerHTML = output.Fname;
+                    document.getElementById('studentmNameLbl').innerHTML = output.Mname;
+                    document.getElementById('studentlNameLbl').innerHTML = output.Lname;
+
+                    document.getElementById('studentiNameLbl').innerHTML = output.Iname;
+                    document.getElementById('studentGenderLbl').innerHTML = output.fname;
+                    document.getElementById('studentBdyLbl').innerHTML = output.dob;
+                    document.getElementById('studentReligionLbl').innerHTML = output.religion;
+                    document.getElementById('studentEmailLbl').innerHTML = output.email;
+                    document.getElementById('studentAdtLbl').innerHTML = output.fname;
+                    document.getElementById('studentMediumLbl').innerHTML = output.fname;
+                    document.getElementById('studentClassLbl').innerHTML = output.fname;
+                    document.getElementById('studentSectionLbl').innerHTML = output.grade;
+                    document.getElementById('studentAddressLbl').innerHTML = output.address;
+                    document.getElementById('studentPhoneLbl').innerHTML = output.contact;
+
+                    document.getElementById('parentNameLbl').innerHTML = output.parent.name;
+                    document.getElementById('parentOccupationLbl').innerHTML = output.parent.occupation;
+                    document.getElementById('parentEmailLbl').innerHTML = output.parent.email;
+                    document.getElementById('parentPhoneLbl').innerHTML = output.parent.Econtact;
+                //console.log(doc.id, " => ", doc.data());
+                });
+            })
+            .catch(function(error) {
+                console.log("Error getting documents: ", error);
+            });
+        }
+    }
+</script>
