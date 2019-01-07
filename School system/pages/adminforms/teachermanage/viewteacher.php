@@ -3,6 +3,20 @@
 <?php include_once('../admincommon/sidebar.php'); ?>
 <?php include_once('../admincommon/script.php'); ?>
 
+<head>
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-storage.js"></script>
+<script src="../../../firebase models/db.js"></script>
+<script src="../../../firebase models/student.js"></script>
+<script src="../../../firebase models/admin.js"></script>
+<script src="../../../firebase models/exam.js"></script>
+<script src="../../../firebase models/login.js"></script>
+<script src="../../../firebase models/fileupload.js"></script>
+</head>
+
 <body>
 <section class="content-wrapper">
     <section class="content-header">
@@ -15,6 +29,22 @@
                     </div><!-- /.box-header -->
                     <form role="form">
                         <div class="box-body">
+
+                        <div class="row">
+                                <div class="col-md-3"></div>
+                                <div class="col-md-8">
+                                    <div  class="form-group">
+                                        <div class="input-group">
+                                            <input id="idSearchTxt" type="text" name="q" class="form-control" placeholder="Search...">
+                                            <span class="input-group-btn">   
+                                                <button onclick="searchTeachers()" type="button" name="search" class="btn btn-flat"><!---class="btn btn-flat"-->
+                                                <i class="fa fa-search"></i>
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </div>                
+                                </div>
+                            </div>
                     <div class="row">
                         <div class="col-md-6">
                             <div class="row">
@@ -141,43 +171,38 @@
 <?php include_once('../admincommon/footer.php'); ?>
 
 
-
-<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
-<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-auth.js"></script>
-<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-database.js"></script>
-
 <script>
-
-    var addmissionSearch
-    var fNameSearch
-    var lNameSearch
-
-    var teacherfNameTxt
-    var teachermNameTxt
-    var teacherlNameTxt
-    var teacheriNameTxt
-    var teacherGenderTxt
-    var teacherBDYTxt
-    var teacherEmailTxt
-    var admissionDateTxt
-    var teacherClassTxt
-    var teacherGradeTxt
-    var teacheraddressTxt
-    var teacherTelTxt 
     
-    document.getElementById("teacherfNameTxt").innerHTML = teacherfNameTxt;
-    document.getElementById("teachermNameTxt").innerHTML = teachermNameTxt;
-    document.getElementById("teacherlNameTxt").innerHTML = teacherlNameTxt;
-    document.getElementById("teacheriNameTxt").innerHTML = teacheriNameTxt;
-    // document.querySelector('teacherGenderTxt').innerHTML = teacherGenderTxt;
-    document.querySelector('teacherBDYTxt').innerHTML = teacherBDYTxt;
-    document.getElementById("teacherEmailTxt").innerHTML = teacherEmailTxt;
-    document.getElementById("admissionDateTxt").innerHTML = admissionDateTxt;
-    document.getElementById("teacherClassTxt").innerHTML = teacherClassTxt;
-    document.getElementById("teacherGradeTxt").innerHTML = teacherGradeTxt;
-    document.getElementById("teacheraddressTxt").innerHTML = teacheraddressTxt;
-    document.getElementById("teacherTelTxt").innerHTML = teacherTelTxt;
+    function searchTeachers(){
+        var reg = document.getElementById("idSearchTxt").value;
+        var school ="abc";
+        searchteacher(reg);
+        function searchteacher(reg){
+            var output;
+            db.collection("teachers").where("school","==",school).where("regno","==",reg)
+            .get()
+            .then(function(querySnapshot) {
+                querySnapshot.forEach(function(doc) {
+                    output=doc.data();
+                    document.getElementById("teacherfNameTxt").innerHTML = output.Fname;
+                    document.getElementById("teachermNameTxt").innerHTML = output.Mname;
+                    document.getElementById("teacherlNameTxt").innerHTML = output.Lname;
+                    document.getElementById("teacheriNameTxt").innerHTML = output.Iname;
+                    document.getElementById('teacherGenderTxt').innerHTML = output.Gender;
+                    document.getElementById('teacherBDYTxt').innerHTML = output.bdy;
+                    document.getElementById("teacherEmailTxt").innerHTML = output.email;
+                    document.getElementById("admissionDateTxt").innerHTML = output.add;
+                    document.getElementById("teacherClassTxt").innerHTML = output.class;
+                    document.getElementById("teacherGradeTxt").innerHTML = output.grade;
+                    document.getElementById("teacheraddressTxt").innerHTML = output.address;
+                    document.getElementById("teacherTelTxt").innerHTML = output.contact;
 
-    
+                //console.log(doc.id, " => ", doc.data());
+                });
+            })
+            .catch(function(error) {
+                console.log("Error getting documents: ", error);
+            });
+        }
+    }
 </script>
