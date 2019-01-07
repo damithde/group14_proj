@@ -9,6 +9,12 @@
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-storage.js"></script>
+<script src="../../../firebase models/db.js"></script>
+<script src="../../../firebase models/reports.js"></script>
+<script src="../../../firebase models/admin.js"></script>
+
+<script src="../../../firebase models/login.js"></script>
 
 <section class="content-wrapper">
     <section class="content-header">
@@ -20,6 +26,7 @@
                         <div class="box-header with-border">
                             <h3 class="box-title">Student Report</h3>
                         </div><!-- /.box-header -->
+                        <form role="form" action="viewreport.php" method="POST">
                         <br>
 
                         <form role="form">
@@ -35,13 +42,13 @@
                                                 <div id="studentMediumTxt" class="form-group">
                                                     <label  >Select Year:</label>
                                                     <select class="form-control" id="studentyear">
-                                                        <option value="6">2019</option>
-                                                        <option value="7">2018</option>
-                                                        <option value="8">2017</option>
-                                                        <option value="9">2016</option>
-                                                        <option value="10">2015</option>
-                                                        <option value="11">2014</option>
-                                                        <option value="1">2013</option>
+                                                        <option value="2019">2019</option>
+                                                        <option value="2018">2018</option>
+                                                        <option value="2017">2017</option>
+                                                        <option value="2016">2016</option>
+                                                        <option value="2015">2015</option>
+                                                        <option value="2014">2014</option>
+                                                        <option value="2013">2013</option>
                                                     </select>
                                                 </div>
                                             </div>
@@ -51,13 +58,13 @@
                                                 <div id="studentMediumTxt" class="form-group">
                                                     <label  >Select Grade:</label>
                                                     <select class="form-control" id="studentgrade">
-                                                        <option value="6">Grade 6</option>
-                                                        <option value="7">Grade 7</option>
-                                                        <option value="8">Grade 8</option>
-                                                        <option value="9">Grade 9</option>
-                                                        <option value="10">Grade 10</option>
-                                                        <option value="11">Grade 11</option>
-                                                        <option value="12">Grade 12</option>
+                                                        <option value=" Grade 6">Grade 6</option>
+                                                        <option value=" Grade 7">Grade 7</option>
+                                                        <option value="Grade 8">Grade 8</option>
+                                                        <option value="Grade 9">Grade 9</option>
+                                                        <option value="Grade 10">Grade 10</option>
+                                                        <option value="Grade 11">Grade 11</option>
+                                                        <option value="Grade 12">Grade 12</option>
                                                     </select>
                                                 </div>
                                             </div>
@@ -67,15 +74,15 @@
                                                 <div id="studentMediumTxt" class="form-group">
                                                     <label  >Select Class:</label>
                                                     <select class="form-control" id="studentclass">
-                                                        <option value="sinhala">All</option>
-                                                        <option value="english">A</option>
-                                                        <option value="tamil">B</option>
-                                                        <option value="english">C</option>
-                                                        <option value="tamil">D</option>
-                                                        <option value="english">E</option>
-                                                        <option value="tamil">F</option>
-                                                        <option value="english">G</option>
-                                                        <option value="tamil">H</option>
+                                                        <option value="All">All</option>
+                                                        <option value="A">A</option>
+                                                        <option value="B">B</option>
+                                                        <option value="C">C</option>
+                                                        <option value="D">D</option>
+                                                        <option value="E">E</option>
+                                                        <option value="F">F</option>
+                                                        <option value="G">G</option>
+                                                        <option value="H">H</option>
                                                     </select>
                                                 </div>
                                             </div>
@@ -97,25 +104,20 @@
                                             </div>
                                             <div class="form-group">
 
-                                                <div id="studentMediumTxt" class="form-group">
-                                                    <label class="text-muted"> Enter Registration Number</label>
-                                                    <div class="input-group">
-                                                        <input id="lNameSearch" type="text" name="q" class="form-control" placeholder="Enter Register Number"/>
-                                                        <span class="input-group-addon">
-                                                            <input type="checkbox">
-                                                        </span>
+                                                <div class="box-body">
+                                                    <div class="form-group">
+                                                        <label  >Registration Number:</label>
+                                                        <input type="text" class="form-control" id="studentRegNo" placeholder="Enter Admission Number">
                                                     </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="col-md-8">
-                                            <div id="studentMediumTxt" class="form-group">
-                                                <button style="width:150px" type="submit" class="btn btn-primary" onclick="getreports()"> Search</button>
-                                            </div>
-                                        </div>
-                                    </div>
+
+
+                                                        <div class="box-footer">
+                                                            <button type="button" class="btn btn-primary" onclick="getreports('161','Grade 8','All','2019','2')" >search</button>
+                                                        </div>
+
+
+
+
 
 
                                     <div class="col-md-6">
@@ -171,7 +173,7 @@
                                                     <label class="text-muted" for="exampleInputEmail1">Subject6:</label>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label class="text-muted" for="exampleInputEmail1">Subject7::</label>
+                                                    <label class="text-muted" for="exampleInputEmail1">Subject7:</label>
                                                 </div>
 
                                                 <div class="form-group">
@@ -186,18 +188,25 @@
                                                 <div class="form-group">
                                                     <label class="text-muted" for="exampleInputEmail1">Position:</label>
                                                 </div>
-
-
-
-
                                             </div>
                                         </div>
+
+
+
+
+
+
                                     </div>
 
 
 
 
-                                    <div class="col-md-6">
+
+
+
+
+
+<div class="col-md-6">
 
                                         <div class="form-group">
                                             <label id="studentAdmissionNoLbl">-</label>
@@ -259,6 +268,10 @@
                                     </div>
                                 </div>
                             </div>
+    </section>
+</section>
+
+
 
 
 
@@ -271,18 +284,21 @@
                         </form>
                     </div><!-- /.box -->
                     <script>
+                        var school="abc";
+                        getreports('161','Grade 8','All','2019','2');
 
-                        function getreports(){
+                        function getreports(studentRegNo,studentclass,studentgrade,studentyear,studenttest){
 
-                        }
+
                         var output;
 
 
-                        db.collection("terms").where("schoolid","==",school).where("grade","==",grade).where("class","==",cls).where("year","==",year).where("testno","==",term).where("studentreg","==",reg)
+                        db.collection("reports").where("school","==",school).where("grade","==",studentgrade).where("class","==",studentclass).where("year","==",studentyear).where("testno","==",studenttest).where("studentreg","==",studentRegNo)
                             .get()
                             .then(function(querySnapshot) {
                                 querySnapshot.forEach(function(doc) {
-                                    output=doc.data();
+
+                                    output = doc.data();
                                     var studentAdmissionNoLbl
                                     var stuNameLbl
                                     var stuSchoolLbl
@@ -304,13 +320,19 @@
                                     var studentTotalMarksLbl
                                     var studentPositionLbl
 
+
+
+
+
                                     document.getElementById('studentAdmissionNoLbl').innerHTML=output.regno;
                                     document.getElementById('stuNameLbl').innerHTML=output.name;
                                     document.getElementById('stuSchoolLbl').innerHTML=output.school;
-                                    document.getElementById('stuGradeLbl').innerHTML=output.grade;
+
                                     document.getElementById('stuClassLbl').innerHTML=output.class;
-                                    document.getElementById('studentTermTestNoLbl').innerHTML=output.termno
+                                    document.getElementById('stuGradeLbl').innerHTML=output.grade;
                                     document.getElementById('studentYearLbl').innerHTML=output.year;
+
+                                    document.getElementById('studentTermTestNoLbl').innerHTML=output.termno;
 
                                     document.getElementById('studentSubject1Lbl').innerHTML=output.sub1;
                                     document.getElementById('studentSubject2Lbl').innerHTML=output.sub2;
@@ -323,9 +345,14 @@
                                     document.getElementById('studentSubject9Lbl').innerHTML=output.sub9;
                                     document.getElementById('studentTotalMarksLbl').innerHTML=output.totalmarks;
                                     document.getElementById('studentPositionLbl').innerHTML=output.position;
+                                });
+                            })
                                 .catch(function(error) {
                                         console.log("Error getting documents: ", error);
                                     });
+                                    }
+                                    </script>
+
 
                         <?php include_once('../teachercommon/footer.php'); ?>
 
