@@ -20,7 +20,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js"></script>
-
+    <script >getschool("school")</script>
 
 </head>
 
@@ -68,19 +68,9 @@
                                     <div class="row">
                                         <div class="col-md-6">
                                                 <div >
-                                                    <img src="../../../dist/img/user_100x128.png" alt="User Image">
+                                                    <img id ="profilepic" style="width:100px; height:128px;" src="../../../dist/img/user_100x128.png" alt="User Image">
                                                 </div>
-                                            <div class="form-group">
-                                                <div class="col-md-2">
-                                                    <label><a href="../teachermanage/registerteacher.php"><i class="fa fa-edit"></i></a></label>
-                                                </div>
-                                                <div class="col-md-2">
-                                                    <label><a href="../teachermanage/registerteacher.php"><i class="fa  fa-print"></i></a></label>
-                                                </div>
-                                                <div class="col-md-2">
-                                                    <label><a href="../teachermanage/registerteacher.php"><i class="fa fa-download"></i></a></label>
-                                                </div>
-                                            </div>
+                                            
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
@@ -199,9 +189,7 @@
                                 <thead>
                                 <tr>
                                     <th>Title</th>
-                                    <th>Request Date</th>
-                                    <th>Issued Date</th>
-                                    <th>Certified By</th>
+                                    <th>Link</th>
                                     <th>Reason</th>
                                 </tr>
                                 </thead>
@@ -213,27 +201,7 @@
                                     <td>4</td>
                                     <td><span class="label label-warning">57</span></td>
                                 </tr>
-                                <tr>
-                                    <td><a href="pages/examples/invoice.html">Math in class</a></td>
-                                    <td>2012/02/02</td>
-                                    <td>Math</td>
-                                    <td>4</td>
-                                    <td><span class="label label-danger">10</span></td>
-                                </tr>
-                                <tr>
-                                    <td><a href="pages/examples/invoice.html">Math in class</a></td>
-                                    <td>2012/02/02</td>
-                                    <td>Math</td>
-                                    <td>4</td>
-                                    <td><span class="label label-info">70</span></td>
-                                </tr>
-                                <tr>
-                                    <td><a href="pages/examples/invoice.html">Math in class</a></td>
-                                    <td>2012/02/02</td>
-                                    <td>Math</td>
-                                    <td>4</td>
-                                    <td><span class="label label-success">85</span></td>
-                                </tr>
+                                
                                 </tbody>
                             </table>
                         </div><!-- /.table-responsive -->
@@ -255,24 +223,13 @@
                             <!-- form start -->
                             <form role="form">
                                 <div class="box-body">
-                                    <div class="form-group">
-                                        <label >Guardian type:</label>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="row">
-                                            <div class="col-md-4">
-                                                <input type="radio"  name="parent"  id="father" class="form-check-input" value="Father" > Father
-                                            </div>
-                                            <div class="col-md-4">
-                                                <input type="radio"  name="parent" id="mother" class="form-check-input" value="Mother">  Mother
-                                            </div>
-                                            <div class="col-md-4">
-                                                <input type="radio"  name="parent" id="guardian" class="form-check-input" value="Guardian">  Guardian
-                                            </div>
-                                        </div>
-                                    </div>
+                                    
+                                    
                                     <div class="row">
                                         <div class="col-md-3">
+                                            <div class="form-group">
+                                                <label class="text-muted"  >Parent:</label>
+                                            </div>
                                             <div class="form-group">
                                                 <label class="text-muted"  >Name:</label>
                                             </div>
@@ -289,6 +246,9 @@
 
                                         <div class="col-md-8">
                                             <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label  id="parentTypeLbl">-</label>
+                                                </div>
                                                 <div class="form-group">
                                                     <label  id="parentNameLbl">-</label>
                                                 </div>
@@ -320,7 +280,7 @@
                         </div>
                     </div>
 
-
+                    <input id="school" class="hidden"/>
                 </div>
         </section>
 </section>
@@ -378,7 +338,7 @@
     
     function searchStudent(){
         var reg = document.getElementById("idSearchTxt").value;
-        var school ="abc";
+        var school =document.getElementById("school").value;//"abc";
         getstudentsfromreg(reg);
         function getstudentsfromreg(reg){
             var output;
@@ -390,7 +350,7 @@
                     document.getElementById('studentfNameLbl').innerHTML = output.Fname;
                     document.getElementById('studentmNameLbl').innerHTML = output.Mname;
                     document.getElementById('studentlNameLbl').innerHTML = output.Lname;
-
+                    document.getElementById('profilepic').src = output.profileimg;
                     document.getElementById('studentiNameLbl').innerHTML = output.Iname;
                     document.getElementById('studentGenderLbl').innerHTML = output.fname;
                     document.getElementById('studentBdyLbl').innerHTML = output.dob;
@@ -402,7 +362,7 @@
                     document.getElementById('studentSectionLbl').innerHTML = output.grade;
                     document.getElementById('studentAddressLbl').innerHTML = output.address;
                     document.getElementById('studentPhoneLbl').innerHTML = output.contact;
-
+                    document.getElementById('parentTypeLbl').innerHTML = output.parent.parent;
                     document.getElementById('parentNameLbl').innerHTML = output.parent.name;
                     document.getElementById('parentOccupationLbl').innerHTML = output.parent.occupation;
                     document.getElementById('parentEmailLbl').innerHTML = output.parent.email;
