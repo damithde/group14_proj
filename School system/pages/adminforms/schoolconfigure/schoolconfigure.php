@@ -56,7 +56,7 @@
                                                         <div class="input-group-addon">
                                                             <i class="fa fa-calendar"></i>
                                                         </div>
-                                                        <input type="date" class="form-control pull-right" id="date"/>
+                                                        <input type="date" class="form-control pull-right" id="date1"/>
                                                     </div>
                                                 </td>
                                                 <td>
@@ -156,77 +156,77 @@
                                             <tr>
                                                 <td>Grade 6</td>
                                                 <td>
-                                                    <input type="input" class="form-control" id="studentFNameTxt" >
+                                                    <input type="input" class="form-control" id="g6class" >
                                                 </td>
                                                 <td>
                                                     <div class="input-group">
-                                                        <input style="width:350px" type="text" class="form-control">
+                                                        <input style="width:350px" type="text" id="g6subjects" class="form-control">
                                                     </div>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>Grade 7</td>
                                                 <td>
-                                                    <input type="input" class="form-control" id="studentFNameTxt" >
+                                                    <input type="input" class="form-control" id="g7class" >
                                                 </td>
                                                 <td>
                                                     <div class="input-group">
-                                                        <input style="width:350px" type="text" class="form-control">
+                                                        <input style="width:350px" type="text" id="g7subjects" class="form-control">
                                                     </div>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>Grade 8</td>
                                                 <td>
-                                                    <input type="input" class="form-control" id="studentFNameTxt" >
+                                                    <input type="input" class="form-control" id="g8class" >
                                                 </td>
                                                 <td>
                                                     <div class="input-group">
-                                                        <input style="width:350px" type="text" class="form-control">
+                                                        <input style="width:350px" type="text" id="g8subjects" class="form-control">
                                                     </div>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>Grade 9</td>
                                                 <td>
-                                                    <input type="input" class="form-control" id="studentFNameTxt" >
+                                                    <input type="input" class="form-control" id="g9class" >
                                                 </td>
                                                 <td>
                                                     <div class="input-group">
-                                                        <input style="width:350px" type="text" class="form-control">
+                                                        <input style="width:350px" type="text" id="g9subjects" class="form-control">
                                                     </div>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>Grade 10</td>
                                                 <td>
-                                                    <input type="input" class="form-control" id="studentFNameTxt" >
+                                                    <input type="input" class="form-control" id="g10class" >
                                                 </td>
                                                 <td>
                                                     <div class="input-group">
-                                                        <input style="width:350px" type="text" class="form-control">
+                                                        <input style="width:350px" type="text" id="g10subjects" class="form-control">
                                                     </div>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>Grade 11</td>
                                                 <td>
-                                                    <input type="input" class="form-control" id="studentFNameTxt" >
+                                                    <input type="input" class="form-control" id="g11class" >
                                                 </td>
                                                 <td>
                                                     <div class="input-group">
-                                                        <input style="width:350px" type="text" class="form-control">
+                                                        <input style="width:350px" type="text" id="g11subjects" class="form-control">
                                                     </div>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>Grade 12</td>
                                                 <td>
-                                                    <input type="input" class="form-control" id="studentFNameTxt" >
+                                                    <input type="input" class="form-control" id="g12class" >
                                                 </td>
                                                 <td>
                                                     <div class="input-group">
-                                                        <input style="width:350px" type="text" class="form-control">
+                                                        <input style="width:350px" type="text" id="g12subjects" class="form-control">
                                                     </div>
                                                 </td>
                                             </tr>
