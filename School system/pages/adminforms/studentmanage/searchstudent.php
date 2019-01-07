@@ -169,10 +169,10 @@
 
     
 
-    function getstudents(){
+function getstudents(){
     var year = document.getElementById("studentyear").value;
     var grade = document.getElementById("studentgrade").value;
-    var cls = grade+document.getElementById("classlist").value;
+    var cls = document.getElementById("classlist").value;
     var school=document.getElementById("schoolid").value;
     var output;
     var rowCount = document.getElementById("s").rows.length;
