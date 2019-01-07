@@ -285,10 +285,25 @@ function gettotalnotifications(){
 
 
 function getstudentspresent(){
+    var today = new Date();
+    var dd = today.getDate();
+    var mm = today.getMonth() + 1; //January is 0!
+    var yyyy = today.getFullYear();
+
+    if (dd < 10) {
+    dd = '0' + dd;
+    }
+
+    if (mm < 10) {
+    mm = '0' + mm;
+    }
+
+    today =  yyyy+'-'+mm+'-'+dd;
+    console.log(today);
     var school=document.getElementById("schoolid").value;
     var output,count;
     count=0;
-    db.collection("attendance").where("school","==",school).where("present","==",true).where("date","==","")
+    db.collection("attendance").where("school","==",school).where("present","==",true).where("date","==",today)
     .get()
     .then(function(querySnapshot) {
         querySnapshot.forEach(function(doc) {
@@ -299,7 +314,7 @@ function getstudentspresent(){
         });
         var ts=document.getElementById("totStudents").innerHTML
         document.getElementById("studentcount").style.width=(count*100/parseInt(ts, 10))+"%";
-        return count;
+        document.getElementById("c").innerHTML=": "+count;
        // document.getElementById("studentcount").setAttribute("style","width:100%");
     })
     .catch(function(error) {
@@ -308,27 +323,7 @@ function getstudentspresent(){
 }
 
 
-function getstudentspresent(){
-    var school=document.getElementById("schoolid").value;
-    var output,count;
-    count=0;
-    db.collection("attendance").where("school","==",school).where("present","==",true)
-    .get()
-    .then(function(querySnapshot) {
-        querySnapshot.forEach(function(doc) {
-            output=doc.data();
-            count++;
-            
-           //console.log(doc.id, " => ", doc.data());
-        });
-        var ts=document.getElementById("totStudents").innerHTML;
-        document.getElementById("studentcount").style.width=(count*100/parseInt(ts, 10))+"%";
-        document.getElementById("c").innerHTML=": "+count;
-    })
-    .catch(function(error) {
-        console.log("Error getting documents: ", error);
-    });
-}
+
 
 
 
