@@ -255,20 +255,20 @@
 </section>
 
 <script>
-    var g6class
-    var g6subject
-    var g7class
-    var g7subject
-    var g8class
-    var g8subject
-    var g9class
-    var g9subject
-    var g10class
-    var g10subject
-    var g11class
-    var g11subject
-    var g12class
-    var g12subject
+    var g6class = document.getElementById("g6class").value;
+    var g6subjects = document.getElementById("g6subjects").value;
+    var g7class = document.getElementById("g7class").value;
+    var g7subjects = document.getElementById("g7subjects").value;
+    var g8class = document.getElementById("g8class").value;
+    var g8subjects = document.getElementById("g8subjects").value;
+    var g9class = document.getElementById("g9class").value;
+    var g9subjects = document.getElementById("g9subjects").value;
+    var g10class = document.getElementById("g10class").value;
+    var g10subjects = document.getElementById("g10subjects").value;
+    var g11class = document.getElementById("g11class").value;
+    var g11subjects = document.getElementById("g11subjects").value;
+    var g12class = document.getElementById("g12class").value;
+    var g12subjects = document.getElementById("g12subjects").value;
 </script>
 
 <?php include_once('../admincommon/footer.php'); ?>
