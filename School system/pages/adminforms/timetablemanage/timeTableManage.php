@@ -470,7 +470,7 @@
             alert("Error adding document: ", error);
         });
 }
-   
+   //hello
     function searchTable(){
         
         var clz = document.getElementById("classNo").value;  
