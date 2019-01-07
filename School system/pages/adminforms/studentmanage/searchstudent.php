@@ -88,7 +88,7 @@
                                                     <div class="input-group">
                                                         <input id="idSearch" type="text" name="q" class="form-control" placeholder="Search by Admission No"/>
                                                         <span class="input-group-addon">
-                                                            <input type="checkbox" >
+                                                            <input id="ids" type="checkbox" >
                                                         </span>
                                                     </div>
                                                 </div>
@@ -102,7 +102,7 @@
                                                     <div class="input-group">
                                                         <input id="FNameSearch" type="text" name="q" class="form-control" placeholder="Search by First Name"/>
                                                         <span class="input-group-addon">
-                                                            <input type="checkbox" >
+                                                            <input id="fs" type="checkbox" >
                                                         </span>
                                                     </div>
                                                 </div>
@@ -116,7 +116,7 @@
                                                     <div class="input-group">
                                                         <input id="lNameSearch" type="text" name="q" class="form-control" placeholder="Search by Last Name"/>
                                                         <span class="input-group-addon">
-                                                            <input type="checkbox" >
+                                                            <input id="ls" type="checkbox" >
                                                         </span>
                                                     </div>
                                                 </div>
@@ -270,7 +270,62 @@ function loadgrades() {
 
 
 function search(params) {
-    
+    var school=document.getElementById("schoolid").value;
+    var id =document.getElementById("ids").checked;
+    var fs =document.getElementById("fs").checked;
+    var ls =document.getElementById("ls").checked;
+    var idval =document.getElementById("idSearch").value;
+    var fname =document.getElementById("FNameSearch").value;
+    var lname =document.getElementById("lNameSearch").value;
+
+    if(id==true){
+        var output;
+        db.collection("students").where("school","==",school).where("regno","==",idval)
+        .get()
+        .then(function(querySnapshot) {
+            querySnapshot.forEach(function(doc) {
+                var tableref=document.getElementById('s');
+            var admin=doc.data();
+            var row=tableref.insertRow(-1);
+            row.insertCell(0).innerHTML=admin.regno;
+            row.insertCell(1).innerHTML=admin.Fname+" "+ admin.Lname;
+            row.insertCell(2).innerHTML=admin.contact;
+            row.insertCell(3).innerHTML=admin.regno;
+            row.insertCell(4).innerHTML=admin.grade;
+            row.insertCell(4).innerHTML=admin.class;
+            });
+        })
+        .catch(function(error) {
+            console.log("Error getting documents: ", error);
+        });
+        return;
+
+    }
+    else if((fs==true)&&(ls==true)){
+        db.collection("students").where("school","==",school).where("fname","==",fname).where("lname","==",lname)
+        .get()
+        .then(function(querySnapshot) {
+            querySnapshot.forEach(function(doc) {
+                var tableref=document.getElementById('s');
+            var admin=doc.data();
+            var row=tableref.insertRow(-1);
+            row.insertCell(0).innerHTML=admin.regno;
+            row.insertCell(1).innerHTML=admin.Fname+" "+ admin.Lname;
+            row.insertCell(2).innerHTML=admin.contact;
+            row.insertCell(3).innerHTML=admin.regno;
+            row.insertCell(4).innerHTML=admin.grade;
+            row.insertCell(4).innerHTML=admin.class;
+            });
+        })
+        .catch(function(error) {
+            console.log("Error getting documents: ", error);
+        });
+        return;
+    }
+    else if(ls=true){
+
+    }
+
 }
 
 
