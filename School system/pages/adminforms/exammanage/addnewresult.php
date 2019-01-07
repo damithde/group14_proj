@@ -180,7 +180,7 @@
                     </form>
                     
                 </div><!-- /.box -->
-
+<input type="hidden" id="stuschool">
 
     </section>
 </section>
