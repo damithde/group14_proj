@@ -289,7 +289,7 @@ function getstudentspresent(){
     var school=document.getElementById("schoolid").value;
     var output,count;
     count=0;
-    db.collection("attendance").where("school","==",school).where("present","==",true)
+    db.collection("attendance").where("school","==",school).where("present","==",true).where("date","==","")
     .get()
     .then(function(querySnapshot) {
         querySnapshot.forEach(function(doc) {

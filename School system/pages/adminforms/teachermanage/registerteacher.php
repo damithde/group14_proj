@@ -75,7 +75,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Grade:</label>
-                                <select onkeyup="prvGrade()" id="teacherGradeText" class="form-control">
+                                <select  id="teacherGradeText" onchange="loadclasses()" class="form-control">
                                 <option value="6">6</option>
                                 <option value="7">7</option>
                                 <option value="8">8</option>
@@ -87,15 +87,15 @@
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Class:</label>
-                                <select onkeyup="prvClass()" id="teacherClassText" class="form-control">
-                                <option value="6">A</option>
+                                <select  id="teacherClassText" class="form-control">
+                                <!-- <option value="6">A</option>
                                 <option value="7">B</option>
                                 <option value="8">C</option>
                                 <option value="9">D</option>
                                 <option value="10">E</option>
                                 <option value="11">F</option>
                                 <option value="12">G</option>
-                                <option value="12">H</option>
+                                <option value="12">H</option> -->
                                 </select>
                             </div>
                             <div class="form-group">
@@ -234,7 +234,7 @@
             </div>
         </div>
         <div>
-            <input type="hidden" id="schoolid" value="">
+            <input type="hidden" id="schoolid" value="abc">
         </div>
     </section>
 </section>
@@ -268,7 +268,35 @@ function regiteacher(){
     // // alert("You pre   ssed a key inside the input field");
     // }
 
+function loadclasses() {
+    var school=document.getElementById("schoolid").value;
+    var grade = document.getElementById("teacherGradeText").value;
+    console.log(grade,school);
+    $("#teacherClassText").empty();
+    db.collection("schools").where("schoolid","==",school)
+        .get()
+        .then(function(querySnapshot) {
+            querySnapshot.forEach(function(doc) {
+                db.collection("schools").doc(doc.id).collection("grades").where("grade","==",grade)
+                .get()
+                .then(function(querySnapshot) {
+                    querySnapshot.forEach(function(doc) {
+                        var classes=doc.data().classes;
+                        classes.forEach(function(cls){
+                            var sel = document.getElementById("teacherClassText");
+                            var opt = document.createElement("option");
+                            opt.value = cls;
+                            opt.text = cls;
+                            sel.add(opt);
 
+                                
+                        })
+                        console.log(doc.id, " => ", classes);
+                })
+            })
+        })
+    })
+}
 
 </script>
 <script>

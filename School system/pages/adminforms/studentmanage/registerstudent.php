@@ -206,7 +206,8 @@
 function loadclasses() {
     var school=document.getElementById("stuschool").value;
     var grade = document.getElementById("studentGradeTxt").value;
-    db.collection("schools").where("id","==",school)
+    $("#studentClassTxt").empty();
+    db.collection("schools").where("schoolid","==",school)
         .get()
         .then(function(querySnapshot) {
             querySnapshot.forEach(function(doc) {
@@ -234,8 +235,8 @@ function loadclasses() {
 function loadgrades() {
     var school=document.getElementById("stuschool").value;
     console.log(school);
-    
-    db.collection("schools").where("id","==",school)
+    $("#studentGradeTxt").empty();
+    db.collection("schools").where("schoolid","==",school)
         .get()
         .then(function(querySnapshot) {
             querySnapshot.forEach(function(doc) {
