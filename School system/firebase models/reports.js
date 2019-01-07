@@ -66,24 +66,27 @@ function addreport(student) {
         grade: student[4],
         year: student[5],
         termno: student[6],
+
     })
 }
 
-function getreports(Regno,Class,Grade,Year,Term) {
-    var output = {};
-    db.collection("reports").where("school", "==",School ).where("regno", "==", Regno).where("class", "==", Class).where("grade", "==", Grade).where("year", "==", Year).where("termno", "==", Term)
-        .get()
-        .then(function (querySnapshot) {
-            querySnapshot.forEach(function (doc) {
-                output = doc.data();
-                //console.log(doc.id, " => ", doc.data());
 
+    function getreports(reg){
+        var output={};
+        db.collection("students").where("school","==",school).where("regno","==",reg)
+            .get()
+            .then(function(querySnapshot) {
+                querySnapshot.forEach(function(doc) {
+                    output[doc.id]=doc.data();
+                    //console.log(" => ", doc.data());
+                });
+            })
+            .catch(function(error) {
+                console.log("Error getting documents: ", error);
             });
-        })
-        .catch(function (error) {
-            console.log("Error getting documents: ", error);
-        });
-    return output;
+        return output;
+
+
 
 }
 function updatestudent(regno,student,parent) {

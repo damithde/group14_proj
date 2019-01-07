@@ -354,7 +354,7 @@
     
 </script> -->
 
-<?php include_once('../admincommon/footer.php'); ?>
+<?php include_once('../teachercommon/footer.php'); ?>
 
 <script>
     

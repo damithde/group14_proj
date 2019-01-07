@@ -26,7 +26,7 @@
                         <div class="box-header with-border">
                             <h3 class="box-title">Student Report</h3>
                         </div><!-- /.box-header -->
-                        <form role="form" action="viewreport.php" method="POST">
+
                         <br>
 
                         <form role="form">
@@ -38,82 +38,24 @@
                                         </div>
 
                                         <div class="form-group">
-                                            <div class="col-md-8">
-                                                <div id="studentMediumTxt" class="form-group">
-                                                    <label  >Select Year:</label>
-                                                    <select class="form-control" id="studentyear">
-                                                        <option value="2019">2019</option>
-                                                        <option value="2018">2018</option>
-                                                        <option value="2017">2017</option>
-                                                        <option value="2016">2016</option>
-                                                        <option value="2015">2015</option>
-                                                        <option value="2014">2014</option>
-                                                        <option value="2013">2013</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="col-md-8">
-                                                <div id="studentMediumTxt" class="form-group">
-                                                    <label  >Select Grade:</label>
-                                                    <select class="form-control" id="studentgrade">
-                                                        <option value=" Grade 6">Grade 6</option>
-                                                        <option value=" Grade 7">Grade 7</option>
-                                                        <option value="Grade 8">Grade 8</option>
-                                                        <option value="Grade 9">Grade 9</option>
-                                                        <option value="Grade 10">Grade 10</option>
-                                                        <option value="Grade 11">Grade 11</option>
-                                                        <option value="Grade 12">Grade 12</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="col-md-8">
-                                                <div id="studentMediumTxt" class="form-group">
-                                                    <label  >Select Class:</label>
-                                                    <select class="form-control" id="studentclass">
-                                                        <option value="All">All</option>
-                                                        <option value="A">A</option>
-                                                        <option value="B">B</option>
-                                                        <option value="C">C</option>
-                                                        <option value="D">D</option>
-                                                        <option value="E">E</option>
-                                                        <option value="F">F</option>
-                                                        <option value="G">G</option>
-                                                        <option value="H">H</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="col-md-8">
-                                                <div id="studentMediumTxt" class="form-group">
-                                                    <label  >Term Test No:</label>
-                                                    <select class="form-control" id="studenttest">
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
 
-                                                    </select>
-                                                </div>
-                                            </div>
 
-                                            <div class="col-md-6">
-                                            </div>
-                                            <div class="form-group">
 
-                                                <div class="box-body">
-                                                    <div class="form-group">
-                                                        <label  >Registration Number:</label>
-                                                        <input type="text" class="form-control" id="studentRegNo" placeholder="Enter Admission Number">
+
+
+                                                <div class="col-md-16">
+                                                        <div  class="form-group">
+                                                            <div class="input-group">
+                                                                <input id="idSearchTxt" type="text" name="q" class="form-control" placeholder="Search...">
+                                                                <span class="input-group-btn">
+                                                <button onclick=" searchreport()" type="button" name="search" class="btn btn-flat"><!---class="btn btn-flat"-->
+                                                <i class="fa fa-search"></i>
+                                                </button>
+                                            </span>
+                                                            </div>
+                                                        </div>
                                                     </div>
 
-
-                                                        <div class="box-footer">
-                                                            <button type="button" class="btn btn-primary" onclick="getreports(reg,cls,grade,year,term)" >search</button>
-                                                        </div>
 
 
 
@@ -125,11 +67,7 @@
                                         <div class="col-md-6">
 
                                             <!--Lable names-->
-                                            <div class="form-group">
 
-                                                <div class="form-group">
-                                                    <label class="text-muted" for="exampleInputEmail1">Registration Number:</label>
-                                                </div>
 
                                                 <div class="form-group">
                                                     <label class="text-muted" for="exampleInputEmail1">Name:</label>
@@ -208,9 +146,7 @@
 
 <div class="col-md-6">
 
-                                        <div class="form-group">
-                                            <label id="studentAdmissionNoLbl">-</label>
-                                        </div>
+
                                         <div class="form-group">
                                             <label id="stuNameLbl">-</label>
                                         </div>
@@ -284,52 +220,25 @@
                         </form>
                     </div><!-- /.box -->
                     <script>
-                        getschool("schoolid");
-                        function getreports(reg,cls,grade,year,term){
-                        var year = document.getElementById("studentyear").value;
-                        var grade = document.getElementById("studentgrade").value;
-                        var cls = document.getElementById("studentclass").value;
-                        var school=document.getElementById("schoolid").value;
-                            var term=document.getElementById("studenttest").value;
-                            var reg=document.getElementById("studentRegNo").value;
-
-
-
-                            var output;
-
-
-                        db.collection("reports").where("school","==",school).where("grade","==",grade).where("class","==",cls).where("year","==",year).where("testno","==",term).where("studentreg","==",reg)
-                            .get()
-                            .then(function(querySnapshot) {
-                                querySnapshot.forEach(function(doc) {
-
-                                    output = doc.data();
-                                    var studentAdmissionNoLbl
-                                    var stuNameLbl
-                                    var stuSchoolLbl
-                                    var stuGradeLbl
-                                    var stuClassLbl
-                                    var studentTermTestNoLbl
-                                    var studentYearLbl
-
-
-                                    var studentSubject1Lbl
-                                    var studentSubject2Lbl
-                                    var studentSubject3Lbl
-                                    var studentSubject4Lbl
-                                    var studentSubject5Lbl
-                                    var studentSubject6Lbl
-                                    var studentSubject7Lbl
-                                    var studentSubject8Lbl
-                                    var studentSubject9Lbl
-                                    var studentTotalMarksLbl
-                                    var studentPositionLbl
+                        function searchreport(){
+                            var regno = document.getElementById("idSearchTxt").value;
+                            var school ="abc";
+                            getreports(regno);
+                            function getreports(regno){
+                                var output;
+                                db.collection("reports").where("school","==",school).where("regno","==",regno)
+                                    .get()
+                                    .then(function(querySnapshot) {
+                                        querySnapshot.forEach(function(doc) {
+                                            output=doc.data();
 
 
 
 
 
-                                    document.getElementById('studentAdmissionNoLbl').innerHTML=output.regno;
+
+
+
                                     document.getElementById('stuNameLbl').innerHTML=output.name;
                                     document.getElementById('stuSchoolLbl').innerHTML=output.school;
 
@@ -356,8 +265,9 @@
                                         console.log("Error getting documents: ", error);
                                     });
                                     }
+                        }
                                     </script>
 
 
-                        <?php include_once('../teachercommon/footer.php'); ?>
+
 
