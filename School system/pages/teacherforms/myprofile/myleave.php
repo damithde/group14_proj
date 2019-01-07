@@ -41,18 +41,19 @@
                                             <h3 class="box-title">Application For Leave </h3>
                                         </div><!-- /.box-header -->
                                         <!-- form start -->
+
                                         <form role="form" >
 
-                                        
+
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail1">Name:</label>
+                                                    <input type="text" class="form-control" id="nameTxt" placeholder="Enter Name">
+                                                </div>
                                             <div class="form-group">
                                                 <label for="exampleInputEmail1">School:</label>
 
                                                 <input type="text" class="form-control" id="schoolTxt"  disabled>
                                             </div>
-                                                <div class="form-group">
-                                                    <label for="exampleInputEmail1">Name:</label>
-                                                    <input type="text" class="form-control" id="nameTxt" placeholder="Enter Name">
-                                                </div>
                                                 <div class="form-group">
                                                     <label for="exampleInputEmail1">Teacher ID:</label>
                                                     <input type="text" class="form-control" id="TidTxt" placeholder="Enter Teacher ID">
@@ -116,13 +117,14 @@
         </section>
     </section>
     <script>
-
+        getschool("schoolTxt");
 
         function datasubmissionleave(){
-            var school=document.getElementById("schoolTxt").value;
+
 
 
             var TeName = document.getElementById("nameTxt").value;
+            var schools=document.getElementById("schoolTxt").value;
 
             var TeId = document.getElementById("TidTxt").value;
             var TeLdays = document.getElementById('ldayTxt').value;
@@ -133,8 +135,9 @@
             var Tereason = document.getElementById("reasonTxt").value;
 
 
-            var leave= [school,TeName,TeId,TeLdays,Testart,Teend,Tetype,Tereason];
+            var leave= [TeName,schools,TeId,TeLdays,Testart,Teend,Tetype,Tereason];
             addleave(leave);
+
         }
 
 

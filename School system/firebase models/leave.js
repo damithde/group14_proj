@@ -1,7 +1,8 @@
 function addleave(leave){
     db.collection("leaves").doc(leave[0]).set({
-            schools:leave[0],
-        name: leave[1],
+
+        name: leave[0],
+        schools:leave[1],
         TeachId: leave[2],
         Ldays: leave[3],
         startdate: leave[4],
