@@ -41,7 +41,7 @@
                                     <div class="row">
                                         <div class="col-md-6">
                                                 <div >
-                                                    <img id= "profilepic" style="width:100px; height:128px;"src="../../../dist/img/user_100x128.png" alt="User Image">
+                                                    <img id= "profilepic" style="width:100px; height:128px;" src="../../../dist/img/user_100x128.png" alt="User Image">
                                                 </div>
                                             
                                         </div>
