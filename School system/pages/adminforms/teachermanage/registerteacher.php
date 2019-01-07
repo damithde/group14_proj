@@ -135,9 +135,7 @@
                         <div class="col-md-4">
                         <div class="col-md-6">
                                             <!-- Profile picture -->
-                                            <div >
-                                                <img src="../../../dist/img/user_100x128.png" alt="User Image">
-                                            </div>
+                                            
                                             
                                         </div>
                         </div>
