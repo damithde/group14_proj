@@ -102,7 +102,7 @@
                         <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
                     </div>
                     <div class="form-group has-feedback">
-                        <input id="teacherPassword" type="text" class="form-control" placeholder="Password"/>
+                        <input id="teacherPassword" type="password" class="form-control" placeholder="Password"/>
                         <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
                     </div>
                     
@@ -144,28 +144,33 @@
 <!-- iCheck -->
 <script src="plugins/iCheck/icheck.min.js" type="text/javascript"></script>
 
-<script type="text/javascript">
 
-</script>
 
 <script>
+    
+
+    function addstudent(){
     var stdAdNo = document.getElementById("admissionNoTxt").value;
     var school = document.getElementById("studentNameTxt").value;
     var stdParEmail = document.getElementById("studentParentNameTxt").value;
     var stdEmail = document.getElementById("studentEmailTxt").value;
+    var type = document.querySelector('input[name=optionsRadios]:checked').value;
+    var stdPass = document.getElementById("studentPassword").value;
+    
+        console.log("1");
+        verifystudent(stdAdNo,school,stdEmail,stdParEmail,stdPass);
+    }
+    function addteacher(){
+        
+    var school = document.getElementById("studentNameTxt").value;
     var tchrRegNo = document.getElementById("teacherRegistrationNoTxt").value;
     var tchrName = document.getElementById("teacherNameTxt").value;
     var tchrNIC = document.getElementById("teacherNicTxt").value;
     var tchrEmail = document.getElementById("teacherEmailTxt").value;
     var type = document.querySelector('input[name=optionsRadios]:checked').value;
-    var stdPass = document.getElementById("studentPassword").value;
     var tchrPass = document.getElementById("teacherPassword").value;
-    
-
-    function addstudent(){
-        verifystudent(stdAdNo,school,stdEmail,stdParEmail,stdPass);
-    }
-    function addteacher(){
+        console.log("1");
+        console.log(tchrRegNo,school,tchrEmail,tchrNIC,tchrPass);
         verifyteacher(tchrRegNo,school,tchrEmail,tchrNIC,tchrPass);
     }
     function verifystudent(stdAdNo,school,stdEmail,stdParEmail,stdPass) {
@@ -175,6 +180,7 @@
             querySnapshot.forEach(function(doc) {
                 var output=doc.data();
                 if((output.email==stdEmail)&&(output.parent.email==stdParEmail)){//add school 
+                    console.log("validaed");
                     createuser(stdEmail,stdPass,"student",stdAdNo,school);
                     alertify.alert('Hello student Your Account was created sucessfully,\n Please confirm your email!').setHeader('<em> Almost Done </em> ')
                     .set('onok', function(closeEvent){ alertify.success('Redirecting..');setTimeout(function() { window.location.replace("index.php"); }, 200)} );
@@ -197,7 +203,8 @@
         .then(function(querySnapshot) {
             querySnapshot.forEach(function(doc) {
                 var output=doc.data();
-                if((output.email==tchrEmail)&&(output.nic==tchrNIC)){
+                if(output.email==tchrEmail){
+                    console.log("validaed");
                     createuser(tchrEmail,tchrPass,"teacher",tchrRegNo,school);
                     alertify.alert('Hello Teacher Your Account was created sucessfully,\n Please confirm your email!').setHeader('<em> Almost Done </em> ')
                     .set('onok', function(closeEvent){ alertify.success('Redirecting..');setTimeout(function() { window.location.replace("index.php"); }, 200)} );
