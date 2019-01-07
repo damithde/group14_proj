@@ -88,7 +88,7 @@
                                 <span class="info-box-icon"><i class="fa fa-users"></i></span>
 
                                 <div class="info-box-content">
-                                    <span class="info-box-text">Non Acadamic Staff Total</span>
+                                    <span class="info-box-text">No of Leaves</span>
                                     <span id="totNonAcadamicStaff" class="info-box-number">1</span>
 
                                     <div class="progress">
