@@ -45,10 +45,10 @@
                                 <label >Gender:</label>
                                 <div class="row">
                                     <div class="col-md-4">
-                                        <input onkeyup="prvGender()" type="radio"   id="gm" class="form-check-input" value="Male" checked > Male
+                                        <input onkeyup="prvGender()" type="radio" name="x"   id="gm" class="form-check-input" value="Male" checked > Male
                                     </div>
                                     <div class="col-md-4">
-                                        <input onkeyup="prvGender()" type="radio"  id="gf" class="form-check-input" value="Female">  Female
+                                        <input onkeyup="prvGender()" type="radio" name="x"  id="gf" class="form-check-input" value="Female">  Female
                                     </div>
                                 </div>
                             </div>
