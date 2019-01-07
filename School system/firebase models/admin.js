@@ -25,6 +25,26 @@ function getschool(tagname) {
     
 }
 
+function saveconfig(grade,classes,subjects,schoolid){
+    db.collection("schools").doc(schoolid).collection("grades").add({
+       classes:classes,
+       grade:grade,
+       subjects:subjects
+      
+
+    })
+    .then(function(docRef) {
+        console.log("student added successfully");
+       // console.log("Document written with ID: ", docRef.id);
+    })
+    .catch(function(error) {
+        alert("Error adding document: ", error);
+    });
+}
+
+
+
+
 
 function getstudentcount() {
     var user = firebase.auth().currentUser;

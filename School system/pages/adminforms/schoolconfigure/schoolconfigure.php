@@ -4,6 +4,17 @@
 <?php include_once('../admincommon/script.php'); ?>
 
 
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-storage.js"></script>
+<script src="../../../firebase models/db.js"></script>
+<script src="../../../firebase models/student.js"></script>
+<script src="../../../firebase models/admin.js"></script>
+<script src="../../../firebase models/login.js"></script>
+
+
 <section class="content-wrapper">
     <section class="content-header">
 <!--        main row-->
@@ -150,7 +161,7 @@
                                         <tbody>
                                             <tr>
                                                 <th>Grade</th>
-                                                <th>No Of Classes</th>
+                                                <th>Classes</th>
                                                 <th>Subjects</th>
                                             </tr>
                                             <tr>
@@ -237,7 +248,7 @@
                                 <div class="form-group">
                                     <div class="col-md-10"></div>
                                     <div class="col-md-2">
-                                        <button type="button" class="btn btn-primary"  style="width:130px">Publish</button>
+                                        <button type="button" class="btn btn-primary" onclick="saveing()"  style="width:130px">Save Config</button>
                                     </div>
                                 </div>
                             </div>
@@ -252,23 +263,43 @@
         <div>
         </div>
     </section>
+    <input type="hidden" id="schoolid" value="MH">
 </section>
 
 <script>
-    var g6class = document.getElementById("g6class").value;
-    var g6subjects = document.getElementById("g6subjects").value;
-    var g7class = document.getElementById("g7class").value;
-    var g7subjects = document.getElementById("g7subjects").value;
-    var g8class = document.getElementById("g8class").value;
-    var g8subjects = document.getElementById("g8subjects").value;
-    var g9class = document.getElementById("g9class").value;
-    var g9subjects = document.getElementById("g9subjects").value;
-    var g10class = document.getElementById("g10class").value;
-    var g10subjects = document.getElementById("g10subjects").value;
-    var g11class = document.getElementById("g11class").value;
-    var g11subjects = document.getElementById("g11subjects").value;
-    var g12class = document.getElementById("g12class").value;
-    var g12subjects = document.getElementById("g12subjects").value;
+//getschool("schoolid");
+function saveing(){
+    var school = document.getElementById("schoolid").value;
+    var g6class = document.getElementById("g6class").value.split(',');
+    var g6subjects = document.getElementById("g6subjects").value.split(',');
+    var g7class = document.getElementById("g7class").value.split(',');
+    var g7subjects = document.getElementById("g7subjects").value.split(',');
+    var g8class = document.getElementById("g8class").value.split(',');
+    var g8subjects = document.getElementById("g8subjects").value.split(',');
+    var g9class = document.getElementById("g9class").value.split(',');
+    var g9subjects = document.getElementById("g9subjects").value.split(',');
+    var g10class = document.getElementById("g10class").value.split(',');
+    var g10subjects = document.getElementById("g10subjects").value.split(',');
+    var g11class = document.getElementById("g11class").value.split(',');
+    var g11subjects = document.getElementById("g11subjects").value.split(',');
+    var g12class = document.getElementById("g12class").value.split(',');
+    var g12subjects = document.getElementById("g12subjects").value.split(',');
+    saveconfig("6",g6class,g6subjects,school);
+    saveconfig("7",g7class,g7subjects,school);
+    saveconfig("8",g8class,g8subjects,school);
+    saveconfig("9",g9class,g9subjects,school);
+    saveconfig("10",g10class,g10subjects,school);
+    saveconfig("11",g11class,g11subjects,school);
+    saveconfig("12",g12class,g12subjects,school);
+    alert("details saved sucessfully");
+ 
+
+
+
+
+
+
+}
 </script>
 
 <?php include_once('../admincommon/footer.php'); ?>
