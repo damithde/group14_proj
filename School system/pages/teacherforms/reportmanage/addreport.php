@@ -43,7 +43,7 @@
 
                             <div class="form-group">
                                 <label  >Name:</label>
-                                <input type="text" class="form-control" id="studentLNameTxt" placeholder="Enter  Name">
+                                <input type="text" class="form-control" id="studentNameTxt" placeholder="Enter  Name">
 
                             </div>
                             <div class="form-group">
@@ -55,13 +55,13 @@
                                 <div class="col-md-6">
                                     <label  >Select Grade:</label>
                                     <select class="form-control" id="stuGrade">
-                                        <option value="6">Grade 6</option>
-                                        <option value="7">Grade 7</option>
-                                        <option value="8">Grade 8</option>
-                                        <option value="9">Grade 9</option>
-                                        <option value="10">Grade 10</option>
-                                        <option value="11">Grade 11</option>
-                                        <option value="12">Grade 12</option>
+                                        <option value=" Grade 6">Grade 6</option>
+                                        <option value=" Grade 7">Grade 7</option>
+                                        <option value="Grade 8">Grade 8</option>
+                                        <option value=" Grade 9">Grade 9</option>
+                                        <option value="Grade 10">Grade 10</option>
+                                        <option value=" Grade 11">Grade 11</option>
+                                        <option value="Grade 12">Grade 12</option>
                                     </select>
                                 </div>
 
@@ -71,15 +71,15 @@
 
                                     <label  >Select Class:</label>
                                     <select class="form-control" id="stuClass">
-                                        <option value="sinhala">All</option>
-                                        <option value="english">A</option>
-                                        <option value="tamil">B</option>
-                                        <option value="english">C</option>
-                                        <option value="tamil">D</option>
-                                        <option value="english">E</option>
-                                        <option value="tamil">F</option>
-                                        <option value="english">G</option>
-                                        <option value="tamil">H</option>
+                                        <option value="All">All</option>
+                                        <option value="A">A</option>
+                                        <option value="B">B</option>
+                                        <option value="C">C</option>
+                                        <option value="D">D</option>
+                                        <option value="E">E</option>
+                                        <option value="F">F</option>
+                                        <option value="G">G</option>
+                                        <option value="H">H</option>
                                     </select>
                                 </div>
                             </div>
@@ -90,13 +90,13 @@
 
                                     <label  >Select Year:</label>
                                     <select class="form-control" id="stuYear">
-                                        <option value="6">2019</option>
-                                        <option value="7">2018</option>
-                                        <option value="8">2017</option>
-                                        <option value="9">2016</option>
-                                        <option value="10">2015</option>
-                                        <option value="11">2014</option>
-                                        <option value="1">2013</option>
+                                        <option value="2019">2019</option>
+                                        <option value="2018">2018</option>
+                                        <option value="2017">2017</option>
+                                        <option value="2016">2016</option>
+                                        <option value="2015">2015</option>
+                                        <option value="2014">2014</option>
+                                        <option value="2013">2013</option>
                                     </select>
                                 </div>
 
@@ -190,7 +190,7 @@
     function datasubmissionrepo() {
 
         var stdRegNo = document.getElementById("studentRegNo").value;
-        var stdName = document.getElementById("studentLNameTxt").value;
+        var stdName = document.getElementById("studentNameTxt").value;
         var stdSchool = document.getElementById("stuSchool").value;
         var stdGrade = document.getElementById("stuGrade").value;
         var stdClass = document.getElementById("stuClass").value;
