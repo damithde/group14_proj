@@ -191,7 +191,7 @@
         </div><!-- /.box -->
     </section>
 </section>
-<input type="hidden" id="schoolid" value="">
+<input type="hidden" id="schoolid" value="mal2017">
 
 </div>
 <?php include_once('../admincommon/footer.php'); ?>
