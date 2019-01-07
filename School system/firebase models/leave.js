@@ -1,5 +1,5 @@
 function addleave(leave){
-    console.log("absbj");
+    //console.log("absbj");
     db.collection("leaves").add({
         schools:leave[0],
         name: leave[1],
