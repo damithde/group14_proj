@@ -76,7 +76,7 @@
     </section>
 </section>
 </div>
-
+<!-- //comment -->
 </body>
 <?php include_once('dashboardfooter.php'); ?>
 

@@ -4,17 +4,24 @@
 <?php include_once('../admincommon/script.php'); ?>
 
 <head>
-<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
-<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-auth.js"></script>
-<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-database.js"></script>
-<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-storage.js"></script>
-<script src="../../../firebase models/db.js"></script>
-<script src="../../../firebase models/student.js"></script>
-<script src="../../../firebase models/admin.js"></script>
-<script src="../../../firebase models/exam.js"></script>
-<script src="../../../firebase models/login.js"></script>
-<script src="../../../firebase models/fileupload.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-storage.js"></script>
+    <script src="../../../firebase models/db.js"></script>
+    <script src="../../../firebase models/student.js"></script>
+    <script src="../../../firebase models/admin.js"></script>
+    <script src="../../../firebase models/exam.js"></script>
+    <script src="../../../firebase models/login.js"></script>
+    <script src="../../../firebase models/fileupload.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js"></script>
+
+
 </head>
 
 <body>
@@ -302,105 +309,14 @@
                     </div>
 
                     <div>
-                         <!-- LINE CHART -->
                         <div class="box box-info">
                             <div class="box-header with-border">
                             <h3 class="box-title">Progress of AVG mark</h3>
                             </div>
                             <div class="box-body chart-responsive">
-                                <div class="chart" id="line-chart" style="height: 300px;">
-                                    <svg height="300" version="1.1" width="509.5" xmlns="http://www.w3.org/100/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="overflow: hidden; position: relative; left: -0.5px; top: -0.700012px;">
-                                        <desc>Created with Raphaël 2.2.0</desc>
-                                        <defs></defs>
-                                        <text style="text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" x="53.5" y="261" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" font-weight="normal">
-                                            <tspan dy="4">0</tspan>
-                                        </text>
-                                        <path style="" fill="none" stroke="#aaaaaa" d="M66,261H484.5" stroke-width="0.5"></path>
-                                        <text style="text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" x="53.5" y="202" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" font-weight="normal">
-                                            <tspan dy="4">5,000</tspan>
-                                        </text>
-                                        <path style="" fill="none" stroke="#aaaaaa" d="M66,202H484.5" stroke-width="0.5"></path>
-                                        <text style="text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" x="53.5" y="143" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" font-weight="normal">
-                                            <tspan dy="4">10,000</tspan>
-                                        </text>
-                                        <path style="" fill="none" stroke="#aaaaaa" d="M66,143H484.5" stroke-width="0.5"></path>
-                                        <text style="text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" x="53.5" y="84" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" font-weight="normal">
-                                            <tspan dy="4">15,000</tspan>
-                                        </text>
-                                        <path style="" fill="none" stroke="#aaaaaa" d="M66,84H484.5" stroke-width="0.5"></path>
-                                        <text style="text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" x="53.5" y="25" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" font-weight="normal">
-                                            <tspan dy="4">20,000</tspan>
-                                        </text>
-                                        <path style="" fill="none" stroke="#aaaaaa" d="M66,25H484.5" stroke-width="0.5"></path>
-                                        <text style="text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" x="407.7156743620899" y="273.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" font-weight="normal" transform="matrix(1,0,0,1,0,7)">
-                                            <tspan dy="4">2013</tspan>
-                                        </text>
-                                        <text style="text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" x="221.60267314702307" y="273.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" font-weight="normal" transform="matrix(1,0,0,1,0,7)">
-                                        <tspan dy="4">2012</tspan>
-                                        </text>
-                                        <path style="" fill="none" stroke="#3c8dbc" d="M66,229.5412C77.69562575941677,229.2108,101.0868772782503,231.53245,112.78250303766707,228.2196C124.47812879708384,224.90675000000002,147.86938031591737,204.50514644808743,159.56500607533414,203.0384C171.13350546780072,201.58759644808742,194.2705042527339,219.34895,205.83900364520048,216.5494C217.40750303766706,213.74984999999998,240.54450182260024,183.43358661202186,252.11300121506682,180.642C263.80862697448356,177.81973661202184,287.1998784933171,191.15875,298.8955042527339,194.094C310.59113001215064,197.02925,333.9823815309842,218.06921420765028,345.67800729040096,204.124C357.24650668286756,190.33036420765026,380.3835054678007,91.8402361878453,391.9520048602673,83.1386C403.3933778857837,74.53258618784531,426.27612393681653,125.20556758241757,437.7174969623329,134.89339999999999C449.4131227217497,144.79651758241758,472.80437424058323,154.85015,484.5,161.50240000000002" stroke-width="3"></path>
-                                        <circle cx="66" cy="229.5412" r="4" fill="#3c8dbc" stroke="#ffffff" style="" stroke-width="1"></circle>
-                                        <circle cx="112.78250303766707" cy="228.2196" r="4" fill="#3c8dbc" stroke="#ffffff" style="" stroke-width="1"></circle>
-                                        <circle cx="159.56500607533414" cy="203.0384" r="4" fill="#3c8dbc" stroke="#ffffff" style="" stroke-width="1"></circle>
-                                        <circle cx="205.83900364520048" cy="216.5494" r="4" fill="#3c8dbc" stroke="#ffffff" style="" stroke-width="1"></circle>
-                                        <circle cx="252.11300121506682" cy="180.642" r="4" fill="#3c8dbc" stroke="#ffffff" style="" stroke-width="1"></circle>
-                                        <circle cx="298.8955042527339" cy="194.094" r="4" fill="#3c8dbc" stroke="#ffffff" style="" stroke-width="1"></circle>
-                                        <circle cx="345.67800729040096" cy="204.124" r="4" fill="#3c8dbc" stroke="#ffffff" style="" stroke-width="1"></circle>
-                                        <circle cx="391.9520048602673" cy="83.1386" r="4" fill="#3c8dbc" stroke="#ffffff" style="" stroke-width="1"></circle>
-                                        <circle cx="437.7174969623329" cy="134.89339999999999" r="4" fill="#3c8dbc" stroke="#ffffff" style="" stroke-width="1"></circle>
-                                        <circle cx="484.5" cy="161.50240000000002" r="4" fill="#3c8dbc" stroke="#ffffff" style="" stroke-width="1"></circle>
-                                    </svg>
-                                        <div class="morris-hover morris-default-style" style="left: 22.5px; top: 162px; display: none;">
-                                            <div class="morris-hover-row-label">2011 Q1</div>
-                                            <div class="morris-hover-point" style="color: #3c8dbc">
-                                                Item 1:
-                                                2,666
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- /.box-body -->
+                            <canvas id="myChart" width="400" height="400"></canvas>
                             </div>
                         <!-- /.box -->
-                        </div>
-                    </div>
-
-                    <div>
-                        <div class="box box-info">
-                            <div class="box-header with-border">
-                                <h3 class="box-title">Delete Student</h3>
-                            </div>
-                                <div class="box-body">
-                                    <div class="form-group">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <Label style="color:#F26268">
-                                                    You are about to permanetly delete this student and all student contents.
-                                                    You will not be able to recover this contents from database.<br><br>
-                                                </label>
-                                                </div>
-                                            </div>
-                                        <div class="row">
-                                            
-                                            <div class="col-md-8">
-                                                <div class="form-group">
-                                                    <Label style="color:red"><b>THIS OPERATION CAN NOT BE UNDONE.</b></label>
-                                                    <input type="Email" class="form-control" id="parentEmail" placeholder="Enter Student ID">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-8"></div>
-                                            <div class="col-md-4">
-                                            <a href="javascript::;" class="btn btn-sm btn-default btn-flat pull-right" style="color:#F26268">Confirm and Delete</a>
-                                            </div>
-                                        </div>
-                                        
-                                    </div>
-                                </div>
-                                <div class="box-footer">
-                                </div>
-                            </div>
                         </div>
                     </div>
 
@@ -498,5 +414,75 @@
                 console.log("Error getting documents: ", error);
             });
         }
+    }
+</script>
+
+<script>
+    function createGraph(dataset){
+        var ctx = document.getElementById("myChart").getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ["2014", "2015", "2016", "2017", "2018", "2019"],
+                datasets: [{
+                    // label: '# of Votes',
+                    //data: [65.56, 19.25, 37.25, 54.20, 62.56, 73.56],
+                    data:dataset,
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255,99,132,1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero:true
+                        }
+                    }]
+                }
+            }
+        });
+    }
+</script>
+
+<script>
+    var School ="abc";
+    getreports("11","6","sinhala","11","1");
+    function getreports(Regno,Class,Grade,Year,Term) {
+        var output = {};
+        db.collection("reports").where("school", "==",School ).where("regno", "==", Regno).where("class", "==", Class).where("grade", "==", Grade).where("year", "==", Year).where("termno", "==", Term)
+            .get()
+            .then(function (querySnapshot) {
+                querySnapshot.forEach(function (doc) {
+                    output = doc.data();
+                    var dataset = [output.sub1,output.sub2,output.sub3,
+                                    output.sub4,output.sub5,output.sub6,
+                                    output.sub7,output.sub8,output.sub9];
+                    createGraph(dataset);
+
+                    //console.log(doc.id, " => ", doc.data());
+
+                });
+            })
+            .catch(function (error) {
+                console.log("Error getting documents: ", error);
+            });
+        return output;
+
     }
 </script>
