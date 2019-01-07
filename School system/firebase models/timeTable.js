@@ -28,7 +28,7 @@ function getClassTimeTable(clzNo,school){
         getTimeSlot("10.50-11.30",d2,'subjectView25','teacherView25',clzNo,school);
         getTimeSlot("11.30-12.10",d2,'subjectView26','teacherView26',clzNo,school);
         getTimeSlot("12.10-12.50",d2,'subjectView27','teacherView27',clzNo,school);
-        getTimeSlot("12.50-13.30",d2,'subjectView28','teacherView28',clzNo),school;
+        getTimeSlot("12.50-13.30",d2,'subjectView28','teacherView28',clzNo),school);
         
         var d3="wednesday";
         getTimeSlot("07.50-08.30",d3,'subjectView3','teacherView3',clzNo,school);//subjectVie
