@@ -82,9 +82,9 @@
                                                 </div>
                                                 <div class="form-group">
 
-                                                    <div id="typeTxt" class="form-group">
+                                                    <div  class="form-group">
                                                         <label  >Leave Type:</label>
-                                                        <select class="form-control">
+                                                        <select class="form-control" id="typeTxt">
                                                             <option value="1">Sick</option>
                                                             <option value="2">Casual</option>
                                                             <option value="3">Other</option>
@@ -116,22 +116,18 @@
         getschool("schoolTxt");
 
         function datasubmission1(){
+            
             var school=document.getElementById("schoolTxt").value;
-
-
             var TeName = document.getElementById("nameTxt").value;
-
             var TeId = document.getElementById("TidTxt").value;
             var TeLdays = document.getElementById('ldayTxt').value;
             var Testart = document.getElementById('startdate').value;
             var Teend = document.getElementById('enddate').value;
-
             var Tetype = document.getElementById("typeTxt").value;
             var Tereason = document.getElementById("reasonTxt").value;
 
-
             var leave= [school,TeName,TeId,TeLdays,Testart,Teend,Tetype,Tereason];
-            addleave(leave)
+            addleave(leave);
         }
 
 
