@@ -234,6 +234,12 @@
                                         </tbody>
                                     </table>
                                 </div>
+                                <div class="form-group">
+                                    <div class="col-md-10"></div>
+                                    <div class="col-md-2">
+                                        <button type="button" class="btn btn-primary"  style="width:130px">Publish</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>  
                     </form>
