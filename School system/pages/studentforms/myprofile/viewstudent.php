@@ -214,7 +214,7 @@
 <script>
     
     var school ="abc";
-    getstudentsfromreg('1');
+    getstudentsfromreg('213');
     function getstudentsfromreg(reg){
         var output;
         db.collection("students").where("school","==",school).where("regno","==",reg)
