@@ -31,11 +31,31 @@
                     </div><!-- /.box-header -->
                     <br>
                     
+                    
 
                     <!-- form start -->
                     <form role="form">
                         <div class="box-body">
                         <!--Lable field-->
+
+                            <div class="row">
+                                <div class="col-md-3"></div>
+                                <div class="col-md-8">
+                                    <div  class="form-group">
+                                        <div class="input-group">
+                                            <input id="idSearchTxt" type="text" name="q" class="form-control" placeholder="Search...">
+                                            <span class="input-group-btn">   
+                                                <button onclick="searchStudent()" type="button" name="search" class="btn btn-flat"><!---class="btn btn-flat"-->
+                                                <i class="fa fa-search"></i>
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </div>                
+                                </div>
+                            </div>
+
+
+
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="row">
@@ -145,7 +165,12 @@
                                     <div class="form-group">
                                         <label id="studentPhoneLbl">-</label>
                                     </div>
-                                    
+                                    <div class="form-group">
+                                        <div> 
+                                            
+                                        </div>
+                                        <a href="../studentmanage/editstudent.php" class="btn btn-sm btn-default btn-flat pull-right">Edit details</a>
+                                    </div><!-- /.box-footer -->
                                 </div>
 
                             </div>
@@ -157,7 +182,59 @@
 
 
 
-                
+                <div class="box box-primary">
+                    <div class="box-header with-border">
+                        <h3 class="box-title">Certificates</h3>
+                    </div><!-- /.box-header -->
+                    <div class="box-body">
+                        <div class="table-responsive">
+                            <table class="table no-margin">
+                                <thead>
+                                <tr>
+                                    <th>Title</th>
+                                    <th>Request Date</th>
+                                    <th>Issued Date</th>
+                                    <th>Certified By</th>
+                                    <th>Reason</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td><a href="pages/examples/invoice.html">Math in class</a></td>
+                                    <td>2012/02/02</td>
+                                    <td>Math</td>
+                                    <td>4</td>
+                                    <td><span class="label label-warning">57</span></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="pages/examples/invoice.html">Math in class</a></td>
+                                    <td>2012/02/02</td>
+                                    <td>Math</td>
+                                    <td>4</td>
+                                    <td><span class="label label-danger">10</span></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="pages/examples/invoice.html">Math in class</a></td>
+                                    <td>2012/02/02</td>
+                                    <td>Math</td>
+                                    <td>4</td>
+                                    <td><span class="label label-info">70</span></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="pages/examples/invoice.html">Math in class</a></td>
+                                    <td>2012/02/02</td>
+                                    <td>Math</td>
+                                    <td>4</td>
+                                    <td><span class="label label-success">85</span></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div><!-- /.table-responsive -->
+                    </div><!-- /.box-body -->
+                    <div class="box-footer clearfix">
+                        <!-- <a href="javascript::;" class="btn btn-sm btn-default btn-flat pull-right">View All Exams</a> -->
+                    </div><!-- /.box-footer -->
+                </div><!-- /.box -->
                 
 
                 </div>
@@ -217,64 +294,107 @@
                                                 <div class="form-group">
                                                     <label id="parentPhoneLbl">-</label>
                                                 </div>
-                                                <div class="form-group">
-                                            <div class="col-md-8">
-                                                <!-- <div id="studentMediumTxt" class="form-group">
-                                                <button style="width:150px" onclick="getstudentsfromreg('1')" type="button" class="btn btn-primary">Load Student List</button>
-                                                </div> -->
-                                            </div>
-                                        </div>
                                             </div>
                                         </div>
                                     </div>
                             </form>
                         </div><!-- /.box -->
                     </div>
-                </div>
+
+                    <div>
+                         <!-- LINE CHART -->
+
         </section>
 </section>
 
 
 </body>
 
+
+<!-- <script>
+
+
+    var studentfNameLbl
+    var studentmNameLbl
+    var studentlNameLbl
+    var studentiNameLbl
+    var studentGenderLbl
+    var studentBdyLbl
+    var studentReligionLbl
+    var studentEmailLbl
+    var studentAdtLbl
+    var studentMediumLbl
+    var studentClassLbl
+    var studentSectionLbl
+    var studentAddressLbl
+    var studentPhoneLbl
+    var parentNameLbl
+    var parentOccupationLbl
+    var parentEmailLbl
+    var parentPhoneLbl
+
+    document.getElementById('studentfNameLbl').innerHTML = studentfNameLbl;
+    document.getElementById('studentmNameLbl').innerHTML = studentmNameLbl;
+    document.getElementById('studentlNameLbl').innerHTML = studentlNameLbl;
+    document.getElementById('studentiNameLbl').innerHTML = studentiNameLbl;
+    document.getElementById('studentGenderLbl').innerHTML = studentGenderLbl;
+    document.getElementById('studentBdyLbl').innerHTML = studentBdyLbl;
+    document.getElementById('studentReligionLbl').innerHTML = studentReligionLbl;
+    document.getElementById('studentEmailLbl').innerHTML = studentEmailLbl;
+    document.getElementById('studentAdtLbl').innerHTML = studentAdtLbl;
+    document.getElementById('studentMediumLbl').innerHTML = studentMediumLbl;
+    document.getElementById('studentClassLbl').innerHTML = studentClassLbl;
+    document.getElementById('studentSectionLbl').innerHTML = studentSectionLbl;
+    document.getElementById('studentAddressLbl').innerHTML = studentAddressLbl;
+    document.getElementById('studentPhoneLbl').innerHTML = studentPhoneLbl;
+    document.getElementById('parentNameLbl').innerHTML = parentNameLbl;
+    document.getElementById('parentOccupationLbl').innerHTML = parentOccupationLbl;
+    document.getElementById('parentEmailLbl').innerHTML = parentEmailLbl;
+    document.getElementById('parentPhoneLbl').innerHTML = parentPhoneLbl;
+    
+</script> -->
+
+<?php include_once('../admincommon/footer.php'); ?>
+
 <script>
     
-    var school ="abc";
-    getstudentsfromreg('1');
-    function getstudentsfromreg(reg){
-        var output;
-        db.collection("students").where("school","==",school).where("regno","==",reg)
-        .get()
-        .then(function(querySnapshot) {
-            querySnapshot.forEach(function(doc) {
-                output=doc.data();
-                document.getElementById('studentfNameLbl').innerHTML = output.Fname;
-                document.getElementById('studentmNameLbl').innerHTML = output.Mname;
-                document.getElementById('studentlNameLbl').innerHTML = output.Lname;
+    function searchStudent(){
+        var reg = document.getElementById("idSearchTxt").value;
+        var school ="abc";
+        getstudentsfromreg(reg);
+        function getstudentsfromreg(reg){
+            var output;
+            db.collection("students").where("school","==",school).where("regno","==",reg)
+            .get()
+            .then(function(querySnapshot) {
+                querySnapshot.forEach(function(doc) {
+                    output=doc.data();
+                    document.getElementById('studentfNameLbl').innerHTML = output.Fname;
+                    document.getElementById('studentmNameLbl').innerHTML = output.Mname;
+                    document.getElementById('studentlNameLbl').innerHTML = output.Lname;
 
-                document.getElementById('studentiNameLbl').innerHTML = output.Iname;
-                document.getElementById('studentGenderLbl').innerHTML = output.fname;
-                document.getElementById('studentBdyLbl').innerHTML = output.dob;
-                document.getElementById('studentReligionLbl').innerHTML = output.religion;
-                document.getElementById('studentEmailLbl').innerHTML = output.email;
-                document.getElementById('studentAdtLbl').innerHTML = output.fname;
-                document.getElementById('studentMediumLbl').innerHTML = output.fname;
-                document.getElementById('studentClassLbl').innerHTML = output.fname;
-                document.getElementById('studentSectionLbl').innerHTML = output.grade;
-                document.getElementById('studentAddressLbl').innerHTML = output.address;
-                document.getElementById('studentPhoneLbl').innerHTML = output.contact;
+                    document.getElementById('studentiNameLbl').innerHTML = output.Iname;
+                    document.getElementById('studentGenderLbl').innerHTML = output.fname;
+                    document.getElementById('studentBdyLbl').innerHTML = output.dob;
+                    document.getElementById('studentReligionLbl').innerHTML = output.religion;
+                    document.getElementById('studentEmailLbl').innerHTML = output.email;
+                    document.getElementById('studentAdtLbl').innerHTML = output.fname;
+                    document.getElementById('studentMediumLbl').innerHTML = output.fname;
+                    document.getElementById('studentClassLbl').innerHTML = output.fname;
+                    document.getElementById('studentSectionLbl').innerHTML = output.grade;
+                    document.getElementById('studentAddressLbl').innerHTML = output.address;
+                    document.getElementById('studentPhoneLbl').innerHTML = output.contact;
 
-                document.getElementById('parentNameLbl').innerHTML = output.parent.name;
-                document.getElementById('parentOccupationLbl').innerHTML = output.parent.occupation;
-                document.getElementById('parentEmailLbl').innerHTML = output.parent.email;
-                document.getElementById('parentPhoneLbl').innerHTML = output.parent.Econtact;
-            //console.log(doc.id, " => ", doc.data());
+                    document.getElementById('parentNameLbl').innerHTML = output.parent.name;
+                    document.getElementById('parentOccupationLbl').innerHTML = output.parent.occupation;
+                    document.getElementById('parentEmailLbl').innerHTML = output.parent.email;
+                    document.getElementById('parentPhoneLbl').innerHTML = output.parent.Econtact;
+                //console.log(doc.id, " => ", doc.data());
+                });
+            })
+            .catch(function(error) {
+                console.log("Error getting documents: ", error);
             });
-        })
-        .catch(function(error) {
-            console.log("Error getting documents: ", error);
-        });
+        }
     }
 </script>
-
-<?php include_once('../teachercommon/footer.php'); ?>

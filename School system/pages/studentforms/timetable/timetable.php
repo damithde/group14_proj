@@ -396,7 +396,85 @@
 </script> -->
 
 <script>
-    function getTimeSlot(timeLine,dayLine,subCode,lecCode,classNoCk,school){
+getClassTimeTable("2019/10","abc");
+function getClassTimeTable(clzNo,school){
+    var output;
+    db.collection("timetable").where("classNo","==",clzNo).where("schoolId","==",school)
+    .get()
+    .then(function(querySnapshot) {
+        querySnapshot.forEach(function(doc) {
+            output=doc.data();
+            //document.getElementById('classNo').value = output.classNo;
+            // document.getElementById('classTeacher').value = output.classTeacher;//document.getElementById("mytext").value = "My value";
+            
+            /******************************/
+            var d1="monday";
+        getTimeSlot("07.50-08.30",d1,'mon1',clzNo,school);//subjectVie
+        getTimeSlot("08.30-09.10",d1,'mon2',clzNo,school);
+        getTimeSlot("09.10-09.50",d1,'mon3',clzNo,school);
+        getTimeSlot("09.50-10.30",d1,'mon4',clzNo,school);
+        getTimeSlot("10.50-11.30",d1,'mon5',clzNo,school);
+        getTimeSlot("11.30-12.10",d1,'mon6',clzNo,school);
+        getTimeSlot("12.10-12.50",d1,'mon7',clzNo,school);
+        getTimeSlot("12.50-13.30",d1,'mon8',clzNo,school);
+        
+        var d2="tuesday";
+        getTimeSlot("07.50-08.30",d2,'tue1',clzNo,school);//subjectVie
+        getTimeSlot("08.30-09.10",d2,'tue2',clzNo,school);
+        getTimeSlot("09.10-09.50",d2,'tue3',clzNo,school);
+        getTimeSlot("09.50-10.30",d2,'tue4',clzNo,school);
+        getTimeSlot("10.50-11.30",d2,'tue5',clzNo,school);
+        getTimeSlot("11.30-12.10",d2,'tue6',clzNo,school);
+        getTimeSlot("12.10-12.50",d2,'tue7',clzNo,school);
+        getTimeSlot("12.50-13.30",d2,'tue8',clzNo,school);
+        
+        var d3="wednesday";
+        getTimeSlot("07.50-08.30",d3,'wen1',clzNo,school);//subjectVie
+        getTimeSlot("08.30-09.10",d3,'wen2',clzNo,school);
+        getTimeSlot("09.10-09.50",d3,'wen3',clzNo,school);
+        getTimeSlot("09.50-10.30",d3,'wen4',clzNo,school);
+        getTimeSlot("10.50-11.30",d3,'wen5',clzNo,school);
+        getTimeSlot("11.30-12.10",d3,'wen6',clzNo,school);
+        getTimeSlot("12.10-12.50",d3,'wen7',clzNo,school);
+        getTimeSlot("12.50-13.30",d3,'wen8',clzNo,school);
+        
+        var d4="thursday";
+        getTimeSlot("07.50-08.30",d4,'thr1',clzNo,school);//subjectVie
+        getTimeSlot("08.30-09.10",d4,'thr2',clzNo,school);
+        getTimeSlot("09.10-09.50",d4,'thr3',clzNo,school);
+        getTimeSlot("09.50-10.30",d4,'thr4',clzNo,school);
+        getTimeSlot("10.50-11.30",d4,'thr5',clzNo,school);
+        getTimeSlot("11.30-12.10",d4,'thr6',clzNo,school);
+        getTimeSlot("12.10-12.50",d4,'thr7',clzNo,school);
+        getTimeSlot("12.50-13.30",d4,'thr8',clzNo,school);
+        
+        var d5="friday";
+        getTimeSlot("07.50-08.30",d5,'fri1',clzNo,school);//subjectVie
+        getTimeSlot("08.30-09.10",d5,'fri2',clzNo,school);
+        getTimeSlot("09.10-09.50",d5,'fri3',clzNo,school);
+        getTimeSlot("09.50-10.30",d5,'fri4',clzNo,school);
+        getTimeSlot("10.50-11.30",d5,'fri5',clzNo,school);
+        getTimeSlot("11.30-12.10",d5,'fri6',clzNo,school);
+        getTimeSlot("12.10-12.50",d5,'fri7',clzNo,school);
+        getTimeSlot("12.50-13.30",d5,'fri8',clzNo,school);
+            /*****************************/
+           
+        });
+    })
+    .catch(function(error) {
+        console.log("Error getting documents: ", error);
+    });
+   
+    
+    
+    
+    //alert("get time table sucess fully ",output);
+    return output;
+}
+</script>
+
+<script>
+    function getTimeSlot(timeLine,dayLine,subCode,classNoCk,school){
         
         var output;
         db.collection("timetable").where("classNo","==",classNoCk).where("time","==",timeLine).where("date","==",dayLine).where("schoolId","==",school)
@@ -405,7 +483,7 @@
             querySnapshot.forEach(function(doc) {
                 output=doc.data();
                 document.getElementById(subCode).value = output.subjectCode;
-                document.getElementById(lecCode).value = output.regno;
+                //document.getElementById(lecCode).value = output.regno;
             
             });
         })
@@ -415,4 +493,6 @@
         
     }                               
 </script>
+
+
 

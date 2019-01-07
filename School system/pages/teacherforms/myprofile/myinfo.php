@@ -1,217 +1,206 @@
-
 <?php include_once('../teachercommon/head.php'); ?>
 <?php include_once('../teachercommon/header.php'); ?>
 <?php include_once('../teachercommon/sidebar.php'); ?>
 <?php include_once('../teachercommon/script.php'); ?>
 
-
-
+<head>
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-database.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-storage.js"></script>
 <script src="../../../firebase models/db.js"></script>
-<script src="../../../firebase models/teacher.js"></script>
+<script src="../../../firebase models/student.js"></script>
 <script src="../../../firebase models/admin.js"></script>
-
+<script src="../../../firebase models/exam.js"></script>
 <script src="../../../firebase models/login.js"></script>
 <script src="../../../firebase models/fileupload.js"></script>
+</head>
 
+<body>
 <section class="content-wrapper">
     <section class="content-header">
-        <section class="content-header">
-            <div class="row">
-                <div class="col-md-9">
-                    <div class="box box-primary">
-                        <div class="box-header with-border">
-                            <div >
-                                <div class="row">
-                                    <!-- ./col -->
+        <div class="row">
+            <div class="col-md-12">
 
-
-
-                                    <!--            left side panel-->
-
-                <!--                student details-->
-
-
+                <div class="box box-primary">
                     <div class="box-header with-border">
                         <h3 class="box-title">Teacher Details</h3>
                     </div><!-- /.box-header -->
-
-                    <!-- form start -->
                     <form role="form">
                         <div class="box-body">
-                        <!--Lable field-->
+
+                        <div class="row">
+                                <div class="col-md-3"></div>
+                                <div class="col-md-8">
+                                    <div  class="form-group">
+                                        <div class="input-group">
+                                            <input id="idSearchTxt" type="text" name="q" class="form-control" placeholder="Search...">
+                                            <span class="input-group-btn">   
+                                                <button onclick="searchTeachers()" type="button" name="search" class="btn btn-flat"><!---class="btn btn-flat"-->
+                                                <i class="fa fa-search"></i>
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </div>                
+                                </div>
+                            </div>
+                    <div class="row">
+                        <div class="col-md-6">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <div class="row">
-                                        <div class="col-md-2">
-                                        </div>
-                                        <div class="col-md-4">
+                                    <div>
                                         <!-- Profile picture -->
-                                            <div >
-                                                <img src="../../../dist/img/user_100x128.png" alt="User Image">
+                                        <div >
+                                            <img src="../../../dist/img/user_100x128.png" alt="User Image">
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-md-2">
+                                                <label><a href="../teachermanage/registerteacher.php"><i class="fa fa-edit"></i></a></label>
                                             </div>
-                                            <div class="form-group">
-                                                <div class="col-md-2">
-                                                    <label><a href="../teachermanage/registerteacher.php"><i class="fa fa-edit"></i></a></label>
-                                                </div>
-                                                <div class="col-md-2">
-                                                    <label><a href="../teachermanage/registerteacher.php"><i class="fa  fa-print"></i></a></label>
-                                                </div>
-                                                <div class="col-md-2">
-                                                    <label><a href="../teachermanage/registerteacher.php"><i class="fa fa-download"></i></a></label>
-                                                </div>
+                                            <div class="col-md-2">
+                                                <label><a href="../teachermanage/registerteacher.php"><i class="fa  fa-print"></i></a></label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <label><a href="../teachermanage/registerteacher.php"><i class="fa fa-download"></i></a></label>
                                             </div>
                                         </div>
-
-                                           <div class="col-md-6">
-                                        <!--Lable names-->
-
-                                                <!--Lable names-->
-
-
-                                            <div class="form-group">
-                                                <label class="text-muted" for="exampleInputEmail1">Teacher ID:</label>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="text-muted" for="exampleInputEmail1">First name:</label>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="text-muted" for="exampleInputEmail1">Middle name:</label>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="text-muted" for="exampleInputEmail1">Last name:</label>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="text-muted" for="exampleInputEmail1">Name With Initials :</label>
-                                            </div>
-
-                                                <div class="form-group">
-                                                    <label class="text-muted" for="exampleInputEmail1">Gender:</label>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label class="text-muted" for="exampleInputEmail1">Date Of Birth:</label>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label class="text-muted" >Email:</label>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label class="text-muted" for="exampleInputEmail1">Admission Date:</label>
-                                                </div>
-
-                                            <div class="form-group">
-                                                <label class="text-muted" for="exampleInputEmail1">Grade:</label>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="text-muted" for="exampleInputEmail1">Class:</label>
-                                            </div>
-
-                                                <div class="form-group">
-                                                    <label class="text-muted" for="exampleInputEmail1">Address:</label>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label class="text-muted" for="exampleInputEmail1">Phone:</label>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    </div>
                                 </div>
                                 <div class="col-md-6">
+                                    <!--Lable names-->
                                     <div class="form-group">
-                                        <label id="teacherIDLbl">-</label>
+                                        <label class="text-muted"  >First Name:</label>
                                     </div>
                                     <div class="form-group">
-                                        <label id="teacherFirstNameLbl">-</label>
+                                        <label class="text-muted"  >Middle Name:</label>
                                     </div>
                                     <div class="form-group">
-                                        <label id="teacherMiddleNameLbl">-</label>
+                                        <label class="text-muted"  >Last Name:</label>
                                     </div>
                                     <div class="form-group">
-                                        <label id="teacherLastNameLbl">-</label>
+                                        <label class="text-muted"  >Name with Initials:</label>
                                     </div>
                                     <div class="form-group">
-                                        <label id="teacherIniNameLbl">-</label>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label id="teacherGenderLbl">-</label>
+                                        <label class="text-muted"  >Gender:</label>
                                     </div>
                                     <div class="form-group">
-                                        <label id="teacherBdyLbl">-</label>
+                                        <label class="text-muted"  >Date Of Birth:</label>
                                     </div>
                                     <div class="form-group">
-                                        <label id="teacherEmailLbl">-</label>
+                                        <label class="text-muted" >Email:</label>
                                     </div>
                                     <div class="form-group">
-                                        <label id="teacherAdmissionLbl">-</label>
+                                        <label class="text-muted"  >Admission Date:</label>
                                     </div>
                                     <div class="form-group">
-                                        <label id="teacherGradeLbl">-</label>
+                                        <label class="text-muted"  >Grade:</label>
                                     </div>
                                     <div class="form-group">
-                                        <label id="teacherClassLbl">-</label>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label id="teacherAddressLbl">-</label>
+                                        <label class="text-muted"  >Class:</label>
                                     </div>
                                     <div class="form-group">
-                                        <label id="teacherPhoneLbl">-</label>
+                                        <label class="text-muted"  >Address:</label>
                                     </div>
-
+                                    <div class="form-group">
+                                        <label class="text-muted"  >Phone:</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="text-muted"  >Current Status:</label>
+                                    </div>
                                 </div>
-
-
-                            </div>
-                        </div><!-- /.box-body -->
-
-                    </div>
                             </div>
                         </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label id = "teacherfNameTxt">-</label>
+                            </div>
+                            <div class="form-group">
+                                <label id = "teachermNameTxt">-</label>
+                            </div>
+                            <div class="form-group">
+                                <label id = "teacherlNameTxt">-</label>
+                            </div>
+                            <div class="form-group">
+                                <label id = "teacheriNameTxt">-</label>
+                            </div>
+                            <div class="form-group">
+                                <label id = "teacherGenderTxt">-</label>
+                            </div>
+                            <div class="form-group">
+                                <label id="teacherBDYTxt">-</label>
+                            </div>
+                            <div class="form-group">
+                                <label id ="teacherEmailTxt">-</label>
+                            </div>
+                            <div class="form-group">
+                                <label id="admissionDateTxt">-</label>
+                            </div>
+                            <div class="form-group">
+                                <label id="teacherClassTxt">-</label>
+                            </div>
+                            <div class="form-group">
+                                <label id="teacherGradeTxt">-</label>
+                            </div>
+                            <div class="form-group">
+                                <label id="teacheraddressTxt">-</label>
+                            </div>
+                            <div class="form-group">
+                                <label id="teacherTelTxt">-</label>
+                            </div>
+                            <div class="form-group">
+                                <div> 
+                                    
+
+                        </div>
                     </div>
-        </section>
+                    <div class="box-footer">
+                    </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </section>
-    <script>
+</section>
+</body>
+
+<?php include_once('../teachercommon/footer.php'); ?>
+
+
+<script>
+    
+    function searchTeachers(){
+        var reg = document.getElementById("idSearchTxt").value;
         var school ="abc";
-        getteachers(){
-        var output={};
-        db.collection("teachers")
+        searchteacher(reg);
+        function searchteacher(reg){
+            var output;
+            db.collection("teachers").where("school","==",school).where("regno","==",reg)
             .get()
             .then(function(querySnapshot) {
                 querySnapshot.forEach(function(doc) {
-                    output[doc.id]=doc.data();
-        var teacherIDLbl
-        var teacherFirstNameLbl
-        var teacherMiddleNameLbl
-        var teacherLastNameLbl
-        var teacherIniNameLbl
-        var teacherGenderLbl
-        var teacherBdyLbl
-        var teacherEmailLbl
-        var teacherAdmissionLbl
-        var teacherGradeLbl
-        var teacherClassLbl
-        var teacherAddressLbl
-        var teacherPhoneLbl
+                    output=doc.data();
+                    document.getElementById("teacherfNameTxt").innerHTML = output.Fname;
+                    document.getElementById("teachermNameTxt").innerHTML = output.Mname;
+                    document.getElementById("teacherlNameTxt").innerHTML = output.Lname;
+                    document.getElementById("teacheriNameTxt").innerHTML = output.Iname;
+                    document.getElementById('teacherGenderTxt').innerHTML = output.Gender;
+                    document.getElementById('teacherBDYTxt').innerHTML = output.bdy;
+                    document.getElementById("teacherEmailTxt").innerHTML = output.email;
+                    document.getElementById("admissionDateTxt").innerHTML = output.add;
+                    document.getElementById("teacherClassTxt").innerHTML = output.class;
+                    document.getElementById("teacherGradeTxt").innerHTML = output.grade;
+                    document.getElementById("teacheraddressTxt").innerHTML = output.address;
+                    document.getElementById("teacherTelTxt").innerHTML = output.contact;
 
-
-        document.getElementById('teacherFirstNameLbl').innerHTML = output.Fname;
-        document.getElementById('teacherMiddleNameLbl').innerHTML = output.Mname;
-        document.getElementById('teacherLastNameLbl').innerHTML = output.Lname;
-        document.getElementById('teacherIniNameLbl').innerHTML = output;
-        document.getElementById('teacherGenderLbl').innerHTML = output.Gender;
-        document.getElementById('teacherBdyLbl').innerHTML = output.dob;
-        document.getElementById('teacherEmailLbl').innerHTML = output.email;
-        document.getElementById('teacherAdmissionLbl').innerHTML = ;
-        document.getElementById('teacherGradeLbl').innerHTML = output.grade;
-        document.getElementById('teacherClassLbl').innerHTML = output.class;
-        document.getElementById('teacherAddressLbl').innerHTML = output.ad;
-        document.getElementById('teacherPhoneLbl').innerHTML = teacherPhoneLbl;
-
-
-
-
-    </script>
-<?php include_once('../teachercommon/footer.php'); ?>
+                //console.log(doc.id, " => ", doc.data());
+                });
+            })
+            .catch(function(error) {
+                console.log("Error getting documents: ", error);
+            });
+        }
+    }
+</script>
