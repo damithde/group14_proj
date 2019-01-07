@@ -119,7 +119,7 @@
     <script>
         getschool("schoolTxt");
 
-        function datasubmission1(){
+        function datasubmissionleave(){
             
             var school=document.getElementById("schoolTxt").value;
             var TeName = document.getElementById("nameTxt").value;
