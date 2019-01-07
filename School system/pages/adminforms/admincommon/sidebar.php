@@ -2,7 +2,7 @@
     <!-- sidebar: style can be found in sidebar.less -->
     <section class="sidebar">
         <!-- Sidebar user panel -->
-        <div class="user-panel">
+        <!-- <div class="user-panel">
             <div class="pull-left image">
                 <img src="../../../dist/img/s0005.png" class="img-circle" alt="User Image" />
             </div>
@@ -11,9 +11,9 @@
 
                 <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
             </div>
-        </div>
+        </div> -->
         <ul class="sidebar-menu">
-            <li class="header">MAIN NAVIGATION</li>
+            <!-- <li class="header">MAIN NAVIGATION</li> -->
             <li><a  href="../admindashboard/admindashboard.php"><i class="fa fa-home"></i> <span>Home</span> </a></li>
 
             <li>
@@ -39,7 +39,7 @@
                     <li><a href="../teachermanage/searchteacher.php"><i class="fa fa-folder-open-o"></i> Search Teacher</a></li>
                 </ul>
             </li>
-            <li><a href="../calendarmanage/calendar.php"><i class="fa fa-calendar"></i> <span>Calendar</span></a></li>
+            <!-- <li><a href="../calendarmanage/calendar.php"><i class="fa fa-calendar"></i> <span>Calendar</span></a></li> -->
             
             <li>
                 <a href="#">
