@@ -1,4 +1,5 @@
 function addteacher(teacher){
+    var x= teacher[7]+ teacher[8];
     db.collection("teachers").doc(teacher[9]).set({
         Fname: teacher[0],
         Mname: teacher[1],
@@ -11,7 +12,8 @@ function addteacher(teacher){
         class: teacher[8],
         regno: teacher[9],
         contact: teacher[10],
-        address: teacher[11]
+        address: teacher[11],
+        classid:x
 
     })
     .then(function(docRef) {

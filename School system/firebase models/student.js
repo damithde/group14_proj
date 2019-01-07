@@ -1,4 +1,5 @@
 function addstudent(student,parent){
+    var x= student[8]+student[9];
     db.collection("students").doc(student[0]).set({
         regno: student[0],
         Fname: student[1],
@@ -16,6 +17,7 @@ function addstudent(student,parent){
         profileimg:student[11],
         stuid:student[12],
         medium:student[14],
+        classid:x,
         parent: parent
 
     })
