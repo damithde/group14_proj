@@ -21,6 +21,20 @@
                     <!-- form start -->
                     <form role="form">
                         <div class="box-body">
+                        <div class="row">
+                                <div class="col-md-8">
+                                    <div  class="form-group">
+                                        <div class="input-group">
+                                            <input id="idSearchTxt" type="text" name="q" class="form-control" placeholder="Search...">
+                                            <span class="input-group-btn">   
+                                                <button onclick="searchTeacher()" type="button" name="search" class="btn btn-flat"><!---class="btn btn-flat"-->
+                                                <i class="fa fa-search"></i>
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </div>                
+                                </div>
+                            </div>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">First Name:</label>
                                 <input  onkeyup="prvName()"  class="form-control" id="teacherNameTxt" placeholder="Enter First Name">

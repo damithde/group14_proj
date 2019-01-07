@@ -190,7 +190,7 @@
 
 
 <script>
-    // getschool("stuschool");
+    getschool("stuschool");
     function add1(){
         // var school = document.getElementById("schoolid").value;
         var term = document.getElementById("termTxt").value;
