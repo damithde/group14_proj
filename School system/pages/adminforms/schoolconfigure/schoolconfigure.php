@@ -255,9 +255,20 @@
 </section>
 
 <script>
-    var stdFName = document.getElementById("studentIdText").value;
-    var stdLName = document.getElementById("studentNameTxt").value;
-    var stdLName = document.getElementById("messageTxt").value;
+    var g6class
+    var g6subject
+    var g7class
+    var g7subject
+    var g8class
+    var g8subject
+    var g9class
+    var g9subject
+    var g10class
+    var g10subject
+    var g11class
+    var g11subject
+    var g12class
+    var g12subject
 </script>
 
 <?php include_once('../admincommon/footer.php'); ?>

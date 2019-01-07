@@ -1,7 +1,7 @@
-<?php include_once('../admincommon/head.php'); ?>
-<?php include_once('../admincommon/header.php'); ?>
-<?php include_once('../admincommon/sidebar.php'); ?>
-<?php include_once('../admincommon/script.php'); ?>
+<?php include_once('../studentcommon/head.php'); ?>
+<?php include_once('../studentcommon/header.php'); ?>
+<?php include_once('../studentcommon/sidebar.php'); ?>
+<?php include_once('../studentcommon/script.php'); ?>
 
 <head>
     <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-app.js"></script>
@@ -39,66 +39,68 @@
                         </thead>
                         <tbody>
                         <tr>
-                            <td>Subject 1</td>
-                            <td>Subject 1</td>
-                            <td>Subject 1</td>
-                            <td>Subject 1</td>
-                            <td>Subject 1</td>
-                            <td>Subject 1</td>
+                            <td id=tim1>Subject 1</td>
+                            <td id="mon1">Subject 1</td>
+                            <td id="tue1">Subject 1</td>
+                            <td id="wen1">Subject 1</td>
+                            <td id="thr1">Subject 1</td>
+                            <td id="fri1">Subject 1</td>
                         </tr>
                         <tr>
-                            <td>Subject 1</td>
-                            <td>Subject 1</td>
-                            <td>Subject 1</td>
-                            <td>Subject 1</td>
-                            <td>Subject 1</td>
-                            <td>Subject 1</td>
+                            <td id=tim2>Subject 2</td>
+                            <td id="mon2">Subject 2</td>
+                            <td id="tue2">Subject 2</td>
+                            <td id="wen2">Subject 2</td>
+                            <td id="thr2">Subject 2</td>
+                            <td id="fri2">Subject 2</td>
                         </tr>
                         <tr>
-                            <td>Subject 1</td>
-                            <td>Subject 1</td>
-                            <td>Subject 1</td>
-                            <td>Subject 1</td>
-                            <td>Subject 1</td>
-                            <td>Subject 1</td>
+                            <td id=tim3>Subject 3</td>
+                            <td id="mon3">Subject 3</td>
+                            <td id="tue3">Subject 3</td>
+                            <td id="wen3">Subject 3</td>
+                            <td id="thr3">Subject 3</td>
+                            <td id="fri3">Subject 3</td>
                         </tr>
                         <tr>
-                            <td>Subject 1</td>
-                            <td>Subject 1</td>
-                            <td>Subject 1</td>
-                            <td>Subject 1</td>
-                            <td>Subject 1</td>
-                            <td>Subject 1</td>
+                            <td id=tim4>Subject 4</td>
+                            <td id="mon4">Subject 4</td>
+                            <td id="tue4">Subject 4</td>
+                            <td id="wen4">Subject 4</td>
+                            <td id="thr4">Subject 4</td>
+                            <td id="fri4">Subject 4</td>
                         </tr>
                         <tr>
-                            <td>Subject 1</td>
-                            <td>Subject 1</td>
-                            <td>Subject 1</td>
-                            <td>Subject 1</td>
-                            <td>Subject 1</td>
+                            <td id=tim5>Subject 5</td>
+                            <td id="mon5">Subject 5</td>
+                            <td id="tue5">Subject 5</td>
+                            <td id="wen5">Subject 5</td>
+                            <td id="thr5">Subject 5</td>
+                            <td id="fri5">Subject 5</td>
                         </tr>
                         <tr>
-                            <td>Subject 1</td>
-                            <td>Subject 1</td>
-                            <td>Subject 1</td>
-                            <td>Subject 1</td>
-                            <td>Subject 1</td>
+                            <td id=tim6>Subject 6</td>
+                            <td id="mon6">Subject 6</td>
+                            <td id="tue6">Subject 6</td>
+                            <td id="wen6">Subject 6</td>
+                            <td id="thr6">Subject 6</td>
+                            <td id="fri6">Subject 6</td>
                         </tr>
                         <tr>
-                            <td>Subject 1</td>
-                            <td>Subject 1</td>
-                            <td>Subject 1</td>
-                            <td>Subject 1</td>
-                            <td>Subject 1</td>
-                            <td>Subject 1</td>
+                            <td id=tim7>Subject 7</td>
+                            <td id="mon7">Subject 7</td>
+                            <td id="tue7">Subject 7</td>
+                            <td id="wen7">Subject 7</td>
+                            <td id="thr7">Subject 7</td>
+                            <td id="fri7">Subject 7</td>
                         </tr>
                         <tr>
-                            <td>Subject 1</td>
-                            <td>Subject 1</td>
-                            <td>Subject 1</td>
-                            <td>Subject 1</td>
-                            <td>Subject 1</td>
-                            <td>Subject 1</td>
+                            <td id=tim8>Subject 8</td>
+                            <td id="mon8">Subject 8</td>
+                            <td id="tue8">Subject 8</td>
+                            <td id="wen8">Subject 8</td>
+                            <td id="thr8">Subject 8</td>
+                            <td id="fri8">Subject 8</td>
                         </tr>
                         </tbody>
                     </table>
@@ -115,7 +117,7 @@
 </body>
 
 
-<script>
+<!-- <script>
     getschool("schoolid");
     function addTimeTable(){
                
@@ -391,7 +393,26 @@
     }
     
     
+</script> -->
+
+<script>
+    function getTimeSlot(timeLine,dayLine,subCode,lecCode,classNoCk,school){
+        
+        var output;
+        db.collection("timetable").where("classNo","==",classNoCk).where("time","==",timeLine).where("date","==",dayLine).where("schoolId","==",school)
+        .get()
+        .then(function(querySnapshot) {
+            querySnapshot.forEach(function(doc) {
+                output=doc.data();
+                document.getElementById(subCode).value = output.subjectCode;
+                document.getElementById(lecCode).value = output.regno;
+            
+            });
+        })
+        .catch(function(error) {
+            console.log("Error getting documents: ", error);
+        });
+        
+    }                               
 </script>
-
-
 
