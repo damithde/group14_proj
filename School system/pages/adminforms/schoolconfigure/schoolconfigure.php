@@ -21,7 +21,7 @@
                     </div>
                     <form role="form">
                         <div class="box-body">
-                            <div class="row">
+                            <!-- <div class="row">
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">No of terms per year:</label>
@@ -32,7 +32,7 @@
                                         </select>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
 
                             <div class="row">
                                 <div class="col-md-10">
@@ -91,6 +91,28 @@
                                                     </div>
                                                 </td>
                                             </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>
+                                                    <input type="input" class="form-control" id="studentFNameTxt" >
+                                                </td>
+                                                <td>
+                                                    <div class="input-group">
+                                                        <div class="input-group-addon">
+                                                            <i class="fa fa-calendar"></i>
+                                                        </div>
+                                                        <input type="date" class="form-control pull-right" id="date"/>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="input-group">
+                                                        <div class="input-group-addon">
+                                                            <i class="fa fa-calendar"></i>
+                                                        </div>
+                                                        <input type="date" class="form-control pull-right" id="date"/>
+                                                    </div>
+                                                </td>
+                                            </tr>
                                         </tbody>
                                     </table>
                                 </div>
@@ -127,19 +149,11 @@
                                     <table class="table table-bordered">
                                         <tbody>
                                             <tr>
-                                                <th>Is Fixed</th>
                                                 <th>Grade</th>
-                                                <th>No Of Subjects</th>
+                                                <th>No Of Classes</th>
                                                 <th>Subjects</th>
                                             </tr>
                                             <tr>
-                                                <td>
-                                                    <div class="input-group">
-                                                        <span>
-                                                            <input type="checkbox" class="icheckbox_flat-green checked">
-                                                        </span>
-                                                    </div>
-                                                </td>
                                                 <td>Grade 6</td>
                                                 <td>
                                                     <input type="input" class="form-control" id="studentFNameTxt" >
@@ -148,62 +162,20 @@
                                                     <div class="input-group">
                                                         <input style="width:350px" type="text" class="form-control">
                                                     </div>
-
-                                                    <div class="input-group">
-                                                        <input style="width:350px" type="text" class="form-control">
-                                                    </div>
-
-                                                    <div class="input-group">
-                                                        <input style="width:350px" type="text" class="form-control">
-                                                    </div>
-
-                                                    <div class="input-group">
-                                                        <input style="width:350px" type="text" class="form-control">
-                                                    </div>
                                                 </td>
-                                                
                                             </tr>
-
                                             <tr>
-                                                <td>
-                                                    <div class="input-group">
-                                                        <span>
-                                                            <input type="checkbox" class="icheckbox_flat-green checked">
-                                                        </span>
-                                                    </div>
-                                                </td>
                                                 <td>Grade 7</td>
                                                 <td>
                                                     <input type="input" class="form-control" id="studentFNameTxt" >
                                                 </td>
                                                 <td>
-                                                <div class="input-group">
-                                                        <input style="width:350px" type="text" class="form-control">
-                                                    </div>
-
-                                                    <div class="input-group">
-                                                        <input style="width:350px" type="text" class="form-control">
-                                                    </div>
-
-                                                    <div class="input-group">
-                                                        <input style="width:350px" type="text" class="form-control">
-                                                    </div>
-
                                                     <div class="input-group">
                                                         <input style="width:350px" type="text" class="form-control">
                                                     </div>
                                                 </td>
-                                                
                                             </tr>
-
                                             <tr>
-                                                <td>
-                                                    <div class="input-group">
-                                                        <span>
-                                                            <input type="checkbox" class="icheckbox_flat-green checked">
-                                                        </span>
-                                                    </div>
-                                                </td>
                                                 <td>Grade 8</td>
                                                 <td>
                                                     <input type="input" class="form-control" id="studentFNameTxt" >
@@ -212,30 +184,9 @@
                                                     <div class="input-group">
                                                         <input style="width:350px" type="text" class="form-control">
                                                     </div>
-
-                                                    <div class="input-group">
-                                                        <input style="width:350px" type="text" class="form-control">
-                                                    </div>
-
-                                                    <div class="input-group">
-                                                        <input style="width:350px" type="text" class="form-control">
-                                                    </div>
-
-                                                    <div class="input-group">
-                                                        <input style="width:350px" type="text" class="form-control">
-                                                    </div>
                                                 </td>
-                                                
                                             </tr>
-
                                             <tr>
-                                                <td>
-                                                    <div class="input-group">
-                                                        <span>
-                                                            <input type="checkbox" class="icheckbox_flat-green checked">
-                                                        </span>
-                                                    </div>
-                                                </td>
                                                 <td>Grade 9</td>
                                                 <td>
                                                     <input type="input" class="form-control" id="studentFNameTxt" >
@@ -244,58 +195,42 @@
                                                     <div class="input-group">
                                                         <input style="width:350px" type="text" class="form-control">
                                                     </div>
-
-                                                    <div class="input-group">
-                                                        <input style="width:350px" type="text" class="form-control">
-                                                    </div>
-
-                                                    <div class="input-group">
-                                                        <input style="width:350px" type="text" class="form-control">
-                                                    </div>
-
-                                                    <div class="input-group">
-                                                        <input style="width:350px" type="text" class="form-control">
-                                                    </div>
                                                 </td>
-                                                
                                             </tr>
-
                                             <tr>
-                                                <td>
-                                                    <div class="input-group">
-                                                        <span>
-                                                            <input type="checkbox" class="icheckbox_flat-green checked">
-                                                        </span>
-                                                    </div>
-                                                </td>
                                                 <td>Grade 10</td>
                                                 <td>
                                                     <input type="input" class="form-control" id="studentFNameTxt" >
                                                 </td>
                                                 <td>
                                                     <div class="input-group">
-                                                        <span class="input-group-addon">
-                                                            <input type="checkbox">
-                                                        </span>
-                                                        <input style="width:305px" type="text" class="form-control">
-                                                    </div>
-
-                                                    <div class="input-group">
-                                                        <span class="input-group-addon">
-                                                            <input type="checkbox">
-                                                        </span>
-                                                        <input style="width:305px" type="text" class="form-control">
-                                                    </div>
-
-                                                    <div class="input-group">
-                                                        <span class="input-group-addon">
-                                                            <input type="checkbox">
-                                                        </span>
-                                                        <input style="width:305px" type="text" class="form-control">
+                                                        <input style="width:350px" type="text" class="form-control">
                                                     </div>
                                                 </td>
-                                                
                                             </tr>
+                                            <tr>
+                                                <td>Grade 11</td>
+                                                <td>
+                                                    <input type="input" class="form-control" id="studentFNameTxt" >
+                                                </td>
+                                                <td>
+                                                    <div class="input-group">
+                                                        <input style="width:350px" type="text" class="form-control">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Grade 12</td>
+                                                <td>
+                                                    <input type="input" class="form-control" id="studentFNameTxt" >
+                                                </td>
+                                                <td>
+                                                    <div class="input-group">
+                                                        <input style="width:350px" type="text" class="form-control">
+                                                    </div>
+                                                </td>
+                                            </tr>
+
                                         </tbody>
                                     </table>
                                 </div>
