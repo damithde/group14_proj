@@ -87,29 +87,24 @@
                         <div class="form-group">
                             <label  >Medium:</label>
                             <!-- <input type="input" class="form-control" id="studentGradeTxt" placeholder="Enter Grade"> -->
-                            <select class="form-control"  id="studentMediumTxt">
+                            <select class="form-control"  id="studentMediumTxt" onchange="loadgrades()">
                             <option value="sinhala">Sinhala</option>
                             <option value="english">English </option>
                             <option value="tamil">Tamil</option>
                             </select>
                         </div>
-                        <div class="form-group">
-                            <label >Class:</label>
-                            <input type="text" class="form-control" id="studentClassTxt" placeholder="Enter Class">
-                        </div>
+                       
                         <div class="form-group">
                             <label  >Grade:</label>
                             <!-- <input type="input" class="form-control" id="studentGradeTxt" placeholder="Enter Grade"> -->
-                            <select class="form-control" id="studentGradeTxt" >
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
-                            <option value="10">10</option>
-                            <option value="11">11</option>
-                            <option value="12">12</option>
+                            <select class="form-control" id="studentGradeTxt" onchange="loadclasses()" >
+                  
                             </select>
                         </div>
+                        <div class="form-group">
+                                <label >Class:</label>
+                                <select type="text" class="form-control" id="studentClassTxt" ></select>
+                            </div>
                         <div class="form-group">
                             <label  >Address:</label>
                             <textarea class="form-control" id="studentAddressTxt" rows="3" placeholder="Enter Address"></textarea>
@@ -206,6 +201,64 @@
 <script>
     getschool("stuschool");
     uploadstudentpic("students");
+    
+
+function loadclasses() {
+    var school=document.getElementById("stuschool").value;
+    var grade = document.getElementById("studentGradeTxt").value;
+    db.collection("schools").where("id","==",school)
+        .get()
+        .then(function(querySnapshot) {
+            querySnapshot.forEach(function(doc) {
+                db.collection("schools").doc(doc.id).collection("grades").where("grade","==",grade)
+                .get()
+                .then(function(querySnapshot) {
+                    querySnapshot.forEach(function(doc) {
+                        var classes=doc.data().classes;
+                        classes.forEach(function(cls){
+                            var sel = document.getElementById("studentClassTxt");
+                            var opt = document.createElement("option");
+                            opt.value = cls;
+                            opt.text = cls;
+                            sel.add(opt);
+                                
+                        })
+                        console.log(doc.id, " => ", classes);
+                })
+            })
+        })
+    })
+}
+
+
+function loadgrades() {
+    var school=document.getElementById("stuschool").value;
+    console.log(school);
+    
+    db.collection("schools").where("id","==",school)
+        .get()
+        .then(function(querySnapshot) {
+            querySnapshot.forEach(function(doc) {
+                db.collection("schools").doc(doc.id).collection("grades")
+                .get()
+                .then(function(querySnapshot) {
+                    querySnapshot.forEach(function(doc) {
+                        var classes=doc.data().grade;
+                            var sel = document.getElementById("studentGradeTxt");
+                            var opt = document.createElement("option");
+                            opt.value = classes;
+                            opt.text = classes;
+                            sel.add(opt);    
+        
+                        console.log(doc.id, " => ", classes);
+                })
+            })
+        })
+    })
+}
+
+
+
     function datasubmission(){
         var school=document.getElementById("stuschool").value;    
         //set auto generated student id

@@ -56,13 +56,7 @@
                                                 <div  class="form-group">
                                                     <label  >Select Grade:</label>
                                                     <select class="form-control" id="studentgrade" onchange="loadclasses()">
-                                                        <option value="6">Grade 6</option>
-                                                        <option value="7">Grade 7</option>
-                                                        <option value="8">Grade 8</option>
-                                                        <option value="9">Grade 9</option>
-                                                        <option value="10">Grade 10</option>
-                                                        <option value="11">Grade 11</option>
-                                                        <option value="12">Grade 12</option>
+                                                  
                                                     </select>
                                                 </div>
                                             </div>
@@ -253,14 +247,13 @@ function loadgrades() {
                 .then(function(querySnapshot) {
                     querySnapshot.forEach(function(doc) {
                         var classes=doc.data().grade;
-                        classes.forEach(function(cls){
                             var sel = document.getElementById("studentgrade");
                             var opt = document.createElement("option");
-                            opt.value = cls;
-                            opt.text = cls;
+                            opt.value = classes;
+                            opt.text = classes;
                             sel.add(opt);
                                 
-                        })
+        
                         console.log(doc.id, " => ", classes);
                 })
             })
