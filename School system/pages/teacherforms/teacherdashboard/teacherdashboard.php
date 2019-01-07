@@ -78,7 +78,7 @@
 </div>
 
 </body>
-<?php include_once('../studentcommon/footer.php'); ?>
+<?php include_once('dashboardfooter.php'); ?>
 
 <script>
     
