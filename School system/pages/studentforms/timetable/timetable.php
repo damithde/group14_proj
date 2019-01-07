@@ -40,70 +40,70 @@
                         <tbody>
                         <tr>
                             <td id=tim1>07.50-08.30</td>
-                            <td id="mon1">Subject 1</td>
-                            <td id="tue1">Subject 1</td>
-                            <td id="wen1">Subject 1</td>
-                            <td id="thr1">Subject 1</td>
-                            <td id="fri1">Subject 1</td>
+                            <td id="mon1">-</td>
+                            <td id="tue1">-</td>
+                            <td id="wen1">-</td>
+                            <td id="thr1">-</td>
+                            <td id="fri1">-</td>
                         </tr>
                         <tr>
                             <td id=tim2>08.30-09.10</td>
-                            <td id="mon2">Subject 2</td>
-                            <td id="tue2">Subject 2</td>
-                            <td id="wen2">Subject 2</td>
-                            <td id="thr2">Subject 2</td>
-                            <td id="fri2">Subject 2</td>
+                            <td id="mon2">-</td>
+                            <td id="tue2">-</td>
+                            <td id="wen2">-</td>
+                            <td id="thr2">-</td>
+                            <td id="fri2">-</td>
                         </tr>
                         <tr>
                             <td id=tim3>09.10-09.50</td>
-                            <td id="mon3">Subject 3</td>
-                            <td id="tue3">Subject 3</td>
-                            <td id="wen3">Subject 3</td>
-                            <td id="thr3">Subject 3</td>
-                            <td id="fri3">Subject 3</td>
+                            <td id="mon3">-</td>
+                            <td id="tue3">-</td>
+                            <td id="wen3">-</td>
+                            <td id="thr3">-</td>
+                            <td id="fri3">-</td>
                         </tr>
                         <tr>
                             <td id=tim4>09.50-10.30</td>
-                            <td id="mon4">Subject 4</td>
-                            <td id="tue4">Subject 4</td>
-                            <td id="wen4">Subject 4</td>
-                            <td id="thr4">Subject 4</td>
-                            <td id="fri4">Subject 4</td>
+                            <td id="mon4">-</td>
+                            <td id="tue4">-</td>
+                            <td id="wen4">-</td>
+                            <td id="thr4">-</td>
+                            <td id="fri4">-</td>
                         </tr>
                         <td>
                             <h2>INTERVAL</h2>
                         </td>
                         <tr>
                             <td id=tim5>10.50-11.30</td>
-                            <td id="mon5">Subject 5</td>
-                            <td id="tue5">Subject 5</td>
-                            <td id="wen5">Subject 5</td>
-                            <td id="thr5">Subject 5</td>
-                            <td id="fri5">Subject 5</td>
+                            <td id="mon5">-</td>
+                            <td id="tue5">-</td>
+                            <td id="wen5">-</td>
+                            <td id="thr5">-</td>
+                            <td id="fri5">-</td>
                         </tr>
                         <tr>
                             <td id=tim6>11.30-12.10</td>
-                            <td id="mon6">Subject 6</td>
-                            <td id="tue6">Subject 6</td>
-                            <td id="wen6">Subject 6</td>
-                            <td id="thr6">Subject 6</td>
-                            <td id="fri6">Subject 6</td>
+                            <td id="mon6">-</td>
+                            <td id="tue6">-</td>
+                            <td id="wen6">-</td>
+                            <td id="thr6">-</td>
+                            <td id="fri6">-</td>
                         </tr>
                         <tr>
                             <td id=tim7>12.10-12.50</td>
-                            <td id="mon7">Subject 7</td>
-                            <td id="tue7">Subject 7</td>
-                            <td id="wen7">Subject 7</td>
-                            <td id="thr7">Subject 7</td>
-                            <td id="fri7">Subject 7</td>
+                            <td id="mon7">-</td>
+                            <td id="tue7">-</td>
+                            <td id="wen7">-</td>
+                            <td id="thr7">-</td>
+                            <td id="fri7">-</td>
                         </tr>
                         <tr>
                             <td id=tim8>12.50-13.30</td>
-                            <td id="mon8">Subject 8</td>
-                            <td id="tue8">Subject 8</td>
-                            <td id="wen8">Subject 8</td>
-                            <td id="thr8">Subject 8</td>
-                            <td id="fri8">Subject 8</td>
+                            <td id="mon8">-</td>
+                            <td id="tue8">-</td>
+                            <td id="wen8">-</td>
+                            <td id="thr8">-</td>
+                            <td id="fri8">-</td>
                         </tr>
                         </tbody>
                     </table>

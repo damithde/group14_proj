@@ -41,19 +41,9 @@
                                     <div class="row">
                                         <div class="col-md-6">
                                                 <div >
-                                                    <img src="../../../dist/img/user_100x128.png" alt="User Image">
+                                                    <img id= "profilepic" style="width:100px; height:128px;"src="../../../dist/img/user_100x128.png" alt="User Image">
                                                 </div>
-                                            <div class="form-group">
-                                                <div class="col-md-2">
-                                                    <label><a href="../teachermanage/registerteacher.php"><i class="fa fa-edit"></i></a></label>
-                                                </div>
-                                                <div class="col-md-2">
-                                                    <label><a href="../teachermanage/registerteacher.php"><i class="fa  fa-print"></i></a></label>
-                                                </div>
-                                                <div class="col-md-2">
-                                                    <label><a href="../teachermanage/registerteacher.php"><i class="fa fa-download"></i></a></label>
-                                                </div>
-                                            </div>
+                                            
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
@@ -144,22 +134,14 @@
                                     </div>
                                     <div class="form-group">
                                         <label id="studentPhoneLbl">-</label>
-                                    </div>
-                                    
+                                    </div> 
                                 </div>
-
                             </div>
                         </div><!-- /.box-body -->
                         <div class="box-footer">
                         </div>
                     </form>
                 </div><!-- /.box -->
-
-
-
-                
-                
-
                 </div>
 
                 <div class="col-md-6 ">
@@ -171,24 +153,13 @@
                             <!-- form start -->
                             <form role="form">
                                 <div class="box-body">
-                                    <div class="form-group">
-                                        <label >Guardian type:</label>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="row">
-                                            <div class="col-md-4">
-                                                <input type="radio"  name="parent"  id="father" class="form-check-input" value="Father" > Father
-                                            </div>
-                                            <div class="col-md-4">
-                                                <input type="radio"  name="parent" id="mother" class="form-check-input" value="Mother">  Mother
-                                            </div>
-                                            <div class="col-md-4">
-                                                <input type="radio"  name="parent" id="guardian" class="form-check-input" value="Guardian">  Guardian
-                                            </div>
-                                        </div>
-                                    </div>
+                                   
+                                    
                                     <div class="row">
                                         <div class="col-md-3">
+                                            <div class="form-group">
+                                                <label class="text-muted"  >Guardian :</label>
+                                            </div>
                                             <div class="form-group">
                                                 <label class="text-muted"  >Name:</label>
                                             </div>
@@ -205,6 +176,9 @@
 
                                         <div class="col-md-8">
                                             <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label  id="parentTypeLbl">-</label>
+                                                </div>
                                                 <div class="form-group">
                                                     <label  id="parentNameLbl">-</label>
                                                 </div>
@@ -252,8 +226,8 @@
                 document.getElementById('studentmNameLbl').innerHTML = output.Mname;
                 document.getElementById('studentlNameLbl').innerHTML = output.Lname;
 
-                document.getElementById('studentiNameLbl').innerHTML = output.Iname;
-                document.getElementById('studentGenderLbl').innerHTML = output.fname;
+                document.getElementById('studentiNameLbl').innerHTML = "D.D.Silva";//output.Iname;
+                document.getElementById('studentGenderLbl').innerHTML = "Male";//output.gender;
                 document.getElementById('studentBdyLbl').innerHTML = output.dob;
                 document.getElementById('studentReligionLbl').innerHTML = output.religion;
                 document.getElementById('studentEmailLbl').innerHTML = output.email;
@@ -263,11 +237,13 @@
                 document.getElementById('studentSectionLbl').innerHTML = output.grade;
                 document.getElementById('studentAddressLbl').innerHTML = output.address;
                 document.getElementById('studentPhoneLbl').innerHTML = output.contact;
-
+                document.getElementById('parentTypeLbl').innerHTML = output.parent.parent;
                 document.getElementById('parentNameLbl').innerHTML = output.parent.name;
                 document.getElementById('parentOccupationLbl').innerHTML = output.parent.occupation;
                 document.getElementById('parentEmailLbl').innerHTML = output.parent.email;
                 document.getElementById('parentPhoneLbl').innerHTML = output.parent.Econtact;
+                document.getElementById('profilepic').src = output.profileimg;
+                
             //console.log(doc.id, " => ", doc.data());
             });
         })

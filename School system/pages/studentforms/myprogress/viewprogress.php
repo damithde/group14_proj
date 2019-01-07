@@ -12,16 +12,17 @@
     <script src="../../../firebase models/timeTable.js"></script>
     <script src="../../../firebase models/admin.js"></script>
     <script src="../../../firebase models/login.js"></script>
-</head>
-<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
-<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-auth.js"></script>
-<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-database.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js"></script>
+</head>
+
 
 <body>
 <section class="content-wrapper">
