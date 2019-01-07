@@ -3,12 +3,20 @@
 <?php include_once('../studentcommon/sidebar.php'); ?>
 <?php include_once('../studentcommon/script.php'); ?> 
 <script src="../../../firebase models/login.js"></script>
-<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-app.js"></script>
+
+<head>
+    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-database.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-storage.js"></script>
     <script src="../../../firebase models/db.js"></script>
+    <script src="../../../firebase models/login.js"></script>
+    <script src="../../../firebase models/admin.js">
+    </script>
+    <script>getschool("schoolid");</script>
+</head>
+
 <body class="skin-blue">
 <div class="wrapper">
 <section class="content-wrapper">
@@ -16,159 +24,102 @@
     <div class="row">
         <div class="col-md-9">
             <div class="box box-primary">
-                <div class="box-header with-border">
-
-                        <div class="row">
-                            <div class="col-md-6 col-sm-6 col-12">
-                                <div class="info-box bg-green">
-                                <span class="info-box-icon"><i class="fa fa-users"></i></span>
-
-                                <div class="info-box-content">
-                                    <span class="info-box-text">Total Students</span>
-                                    <span id="totStudents" class="info-box-number">41,410</span>
-
-                                    <div class="progress">
-                                    <div class="progress-bar" style="width: 70%"></div>
-                                    </div>
-                                    <!-- <span class="progress-description">
-                                    70% Increase in 30 Days
-                                    </span> -->
+                
+            <div >
+                    <div class="box box-primary">
+                            <div class="box-header with-border">
+                                <div class="fa fa-bullhorn">
+                                    <h3 class="box-title">School Notifications And Notices</h3>
                                 </div>
-                                <!-- /.info-box-content -->
+                                <div class="box-tools pull-right">
+                        <!--            <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>-->
+                        <!--            <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>-->
                                 </div>
-                                <!-- /.info-box -->
-                            </div>
-                            <!-- /.col -->
-                            <div class="col-md-6 col-sm-6 col-12">
-                                <div class="info-box bg-blue">
-                                <span class="info-box-icon"><i class="fa fa-users"></i></span>
-
-                                <div class="info-box-content">
-                                    <span class="info-box-text">Total Teachers</span>
-                                    <span id ="totTeachers" class="info-box-number">41,410</span> 
-
-                                    <div class="progress">
-                                    <div id ="totTeachersNo" class="progress-bar" ></div>
-                                    </div>
-                                </div>
-                                <!-- /.info-box-content -->
-                                </div>
-                                <!-- /.info-box -->
-                            </div>
-                            <!-- /.col -->
-                        </div>
-
-                        <div class="row">
-                            <div class="col-md-6 col-sm-6 col-12">
-                                <div class="info-box bg-orange">
-                                <span class="info-box-icon"><i class="fa fa-envelope-square"></i></span>
-
-                                <div class="info-box-content">
-                                    <span class="info-box-text">Number of Notifications</span>
-                                    <span id ="totNoOfNotifaications" class="info-box-number">41,410</span>
-
-                                    <div class="progress">
-                                    <div class="progress-bar" style="width: 70%"></div>
-                                    </div>
-                                </div>
-                                <!-- /.info-box-content -->
-                                </div>
-                                <!-- /.info-box -->
-                            </div>
-                            <!-- /.col -->
-                            <div class="col-md-6 col-sm-6 col-12">
-                                <div class="info-box bg-red">
-                                <span class="info-box-icon"><i class="fa fa-users"></i></span>
-
-                                <div class="info-box-content">
-                                    <span class="info-box-text">Non Acadamic Staff Total</span>
-                                    <span id="totNonAcadamicStaff" class="info-box-number">41,410</span>
-
-                                    <div class="progress">
-                                    <div class="progress-bar" style="width: 70%"></div>
-                                    </div>
-                                </div>
-                                <!-- /.info-box-content -->
-                                </div>
-                                <!-- /.info-box -->
-                            </div>
-                            <!-- /.col -->
-                        </div>
-                        <div class="row">   
-                        </div>
-                        </div>
+                            </div><!-- /.box-header -->
+                            <div id="noti" class="box-body">
+                                <ul class="products-list product-list-in-box" id="list">
+                                    <li class="item">
+            
+                                       
+                                    </li><!-- /.item -->
+                                    
+                                    </ul>
+                            </div><!-- /.box-body -->
+                            <div class="box-footer text-center">
+                                <!-- <a href="javascript::;" class="uppercase">View All Notifications</a> -->
+                            </div><!-- /.box-footer -->
+                        </div><!-- /.box -->
                 </div>
-                <div>
-                    <?php include_once('dashboardnotificationPanel.php'); ?>
+
+
+
+                
+            </div>
+        </div>
+        <div class="col-md-3">
+            <!-- Calendar -->
+            <div class="small-box bg-aqua">
+                <div class="inner">
+                    <?php include_once('dashboardcalendar.php'); ?>
                 </div>
             </div>
-            <div class="col-md-3">
-                <!-- Calendar -->
-                <div class="small-box bg-aqua">
-                    <div class="inner">
-                        <?php include_once('dashboardcalendar.php'); ?>
-                    </div>
-                </div>
+        </div>
 
-                <div >
-                    <div class="box box-solid">
-                        <div class="box-header with-border">
-                            <h3 class="box-title">Attendance Details</h3>
-                        </div><!-- /.box-header -->
-                        <div class="box-body">
-                            <div class="progress">
-                                <div id = "studentcount" class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-                                    Present Students 4000
-                                    <span id ="studentpresent" class="sr-only">40% Complete (success)</span>
-                                </div>
-                            </div>
-                            <div class="progress">
-                                <div id = "teachercount" class="progress-bar progress-bar-red" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
-                                    Present Teachers 100
-                                    <span id ="teacherpresent" class="sr-only">70% Complete</span>
-                                </div>
-                            </div>
-                        </div><!-- /.box-body -->
-                    </div><!-- /.box -->
-                </div>
+                
 
 
                 <!--                        Notification Panel-->
 
-
+                <input type="hidden" id="schoolid" value="abc">
             </div>
         </div>
     </section>
 </section>
 </div>
+
 </body>
-
-
-<?php include_once('../admincommon/footer.php'); ?>
+<?php include_once('../studentcommon/footer.php'); ?>
 
 <script>
-    var studentcount = "";
-    var studentpresent;
-    var teachercount;
-    var teacherpresent;
-    document.getElementById('studentcount').innerHTML = studentcount;
-    // document.getElementById('studentpresent').innerHTML = studentpresent;
-    document.getElementById('teachercount').innerHTML = teachercount;
-    // document.getElementById('teacherpresent').innerHTML = teacherpresent;
     
+    loadnotification();   
+    
+    
+function loadnotification(){
+    var output;
+    var school=document.getElementById("schoolid").value;
+    db.collection("notification").where("schooIId","==",school)
+    .get()
+    .then(function(querySnapshot) {
+        var i=0;
+        querySnapshot.forEach(function(doc) {
 
-    var totNonAcadamicStaff;
-    var totNoOfNotifaications; 
-    var totTeachers;
-    var totStudents;
-    var totTeachersNo ="width: 90%";
+            output=doc.data();
+            
+            el = document.createElement('li');
+            el.id = 'l'+i;
+            document.getElementById('list').appendChild(el);
+           
+            var iDiv = document.createElement('h4');
+            iDiv.id = 'block'+i;
+            iDiv.innerHTML= output.title;
+            el.appendChild(iDiv);
 
-    document.getElementById('totNonAcadamicStaff').innerHTML = totNonAcadamicStaff;
-    document.getElementById('totNoOfNotifaications').innerHTML = totNoOfNotifaications;
-    document.getElementById('totTeachers').innerHTML = totTeachers;
-    document.getElementById('totStudentsNo').style.width = "90%";
+            var nSpan = document.createElement('span')
+            nSpan.innerHTML = output.content;
+            el.appendChild(nSpan);
 
-    document.getElementById('totStudents').innerHTML = totStudents;
+            var h = document.createElement('hr')
+            el.appendChild(h);
+            
+            i++;
+           //console.log(doc.id, " => ", doc.data());
+        });
+    })
+    .catch(function(error) {
+        console.log("Error getting documents: ", error);
+    });
+}
 
 
 
