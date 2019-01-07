@@ -267,7 +267,7 @@
 </section>
 
 <script>
-//getschool("schoolid");
+getschool("schoolid");
 function saveing(){
     var school = document.getElementById("schoolid").value;
     var g6class = document.getElementById("g6class").value.split(',');
