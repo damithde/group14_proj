@@ -73,7 +73,7 @@
                                 </div>
                                 <div class="col-md-6" id="subjectselection">
                                     <label><h4 class="box-title">Subject Selection</h6></label><br>
-                                        <table id="s">
+                                        <table id="s" style="width: 100%" >
 
                                         </table>
                                 </div>
@@ -104,7 +104,7 @@
     </section>
 </section>
 </body>
-<input type="text" id="schoolid" value="blank" >
+<input type="text" id="schoolid" value="abc" >
 </html>
 
 
@@ -114,16 +114,20 @@
     function p(){
         var grade=document.getElementById("idgrade").value;
         var school=document.getElementById("schoolid").value;
+        console.log(grade);
         $("#classlist").empty();
-        db.collection("schools").where("id","==",school)
+        $("#s tr").remove();
+        db.collection("schools").where("schoolid","==",school)
         .get()
         .then(function(querySnapshot) {
             querySnapshot.forEach(function(doc) {
                 db.collection("schools").doc(doc.id).collection("grades").where("grade","==",grade)
                 .get()
                 .then(function(querySnapshot) {
+                    
                     querySnapshot.forEach(function(doc) {
                         var classes=doc.data().classes;
+                        console.log(classes);
                         classes.forEach(function(cls){
                             var sel = document.getElementById("classlist");
                             var opt = document.createElement("option");
@@ -133,7 +137,7 @@
                                 
                         })
                         console.log(doc.id, " => ", classes);
-                        if((grade==10) || (grade==12) ||(grade==11) || (grade==13)){
+                        if((grade==10) || (grade==12) || (grade==11) || (grade==13)){
                             document.getElementById("subjectselection").style.display = 'block';
                             var i=0;
                             var subs=doc.data().subjects;
