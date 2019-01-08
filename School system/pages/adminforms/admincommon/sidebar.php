@@ -57,7 +57,7 @@
                     <i class="fa  fa-table "></i> <span>Time Table</span> <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
-                    <li class="active"><a href="../timetablemanage/timetable.php"><i class="fa fa-folder-open-o"></i> View Time Table</a></li>
+                    <!-- <li class="active"><a href="../timetablemanage/timetable.php"><i class="fa fa-folder-open-o"></i> View Time Table</a></li> -->
                     <li><a href="../timetablemanage/timeTableManage.php"><i class="fa fa-folder-open-o"></i> Manage Time Table</a></li>
                 </ul>
             </li>

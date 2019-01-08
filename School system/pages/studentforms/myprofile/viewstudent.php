@@ -55,9 +55,9 @@
                                             <div class="form-group">
                                                 <label class="text-muted"  >Last Name:</label>
                                             </div>
-                                            <div class="form-group">
+                                            <!-- <div class="form-group">
                                                 <label class="text-muted"  >Name Initials:</label>
-                                            </div>
+                                            </div> -->
                                             <div class="form-group">
                                                 <label class="text-muted"  >Gender:</label>
                                             </div>
@@ -70,9 +70,9 @@
                                             <div class="form-group">
                                                 <label class="text-muted" >Email:</label>
                                             </div>
-                                            <div class="form-group">
+                                            <!-- <div class="form-group">
                                                 <label class="text-muted"  >Admission Date:</label>
-                                            </div>
+                                            </div> -->
                                             <div class="form-group">
                                                 <label class="text-muted"  >Medium:</label>
                                             </div>
@@ -102,9 +102,9 @@
                                     <div class="form-group">
                                         <label id="studentlNameLbl">-</label>
                                     </div>
-                                    <div class="form-group">
+                                    <!-- <div class="form-group">
                                         <label id="studentiNameLbl">-</label>
-                                    </div>
+                                    </div> -->
                                     <div class="form-group">
                                         <label id="studentGenderLbl">-</label>
                                     </div>
@@ -117,9 +117,9 @@
                                     <div class="form-group">
                                         <label id="studentEmailLbl">-</label>
                                     </div>
-                                    <div class="form-group">
+                                    <!-- <div class="form-group">
                                         <label id="studentAdtLbl">-</label>
-                                    </div>
+                                    </div> -->
                                     <div class="form-group">
                                         <label id="studentMediumLbl">-</label>
                                     </div>
@@ -226,14 +226,14 @@
                 document.getElementById('studentmNameLbl').innerHTML = output.Mname;
                 document.getElementById('studentlNameLbl').innerHTML = output.Lname;
 
-                document.getElementById('studentiNameLbl').innerHTML = "D.D.Silva";//output.Iname;
+                // document.getElementById('studentiNameLbl').innerHTML = "D.D.Silva";//output.Iname;
                 document.getElementById('studentGenderLbl').innerHTML = "Male";//output.gender;
                 document.getElementById('studentBdyLbl').innerHTML = output.dob;
                 document.getElementById('studentReligionLbl').innerHTML = output.religion;
                 document.getElementById('studentEmailLbl').innerHTML = output.email;
-                document.getElementById('studentAdtLbl').innerHTML = output.fname;
-                document.getElementById('studentMediumLbl').innerHTML = output.fname;
-                document.getElementById('studentClassLbl').innerHTML = output.fname;
+                // document.getElementById('studentAdtLbl').innerHTML = output.fname;
+                document.getElementById('studentMediumLbl').innerHTML = output.medium;
+                document.getElementById('studentClassLbl').innerHTML = output.class;
                 document.getElementById('studentSectionLbl').innerHTML = output.grade;
                 document.getElementById('studentAddressLbl').innerHTML = output.address;
                 document.getElementById('studentPhoneLbl').innerHTML = output.contact;
