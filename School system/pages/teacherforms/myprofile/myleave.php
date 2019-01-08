@@ -20,51 +20,44 @@
     <section class="content-header">
         <section class="content-header">
             <div class="row">
-                <div class="col-md-9">
-
-                            <div >
-                                <div class="row">
-                                    <!-- ./col -->
+                <div class="col-md-8">
 
 
 
-                                    <!--            left side panel-->
 
-                                    <!--                student details-->
-
-
-                                    <div class="box-header with-border">
-                                    </div>
-                                    <!--                guardian details-->
-                                    <div class="box box-primary">
+                    <div class="box box-primary">
                                         <div class="box-header  with-border">
                                             <h3 class="box-title">Application For Leave </h3>
                                         </div><!-- /.box-header -->
                                         <!-- form start -->
 
                                         <form role="form" >
-
-
-                                                <div class="form-group">
-                                                    <label for="exampleInputEmail1">Name:</label>
-                                                    <input type="text" class="form-control" id="nameTxt" placeholder="Enter Name">
-                                                </div>
+                                            <div class="box-body">
                                             <div class="form-group">
+
+                                            <label for="exampleInputEmail1">Name:</label>
+                                                    <input type="text" class="form-control" id="nameTxt" placeholder="Enter Name">
+                                            </div>
+                                            <div class="form-group">
+
                                                 <label for="exampleInputEmail1">School:</label>
 
                                                 <input type="text" class="form-control" id="schoolTxt"  disabled>
                                             </div>
                                                 <div class="form-group">
+
                                                     <label for="exampleInputEmail1">Teacher ID:</label>
                                                     <input type="text" class="form-control" id="TidTxt" placeholder="Enter Teacher ID">
                                                 </div>
 
 
                                                 <div class="form-group">
+
                                                     <label for="exampleInputEmail1">Number Of Leave days:</label>
                                                     <input type="text" class="form-control" id="ldayTxt" placeholder="Enter No Of days">
                                                 </div>
                                                 <div class="form-group">
+
                                                     <label>Date Of Commencing leave:</label>
                                                     <div class="input-group">
                                                         <div class="input-group-addon">
@@ -75,6 +68,7 @@
                                                 </div>
 
                                                 <div class="form-group">
+
                                                     <label>Date Of Assuming duties:</label>
                                                     <div class="input-group">
                                                         <div class="input-group-addon">
@@ -83,9 +77,10 @@
                                                         <input type="date" class="form-control pull-right" id="enddate"/>
                                                     </div><!-- /.input group -->
                                                 </div>
-                                                <div class="form-group">
+
 
                                                     <div  class="form-group">
+
                                                         <label  >Leave Type:</label>
                                                         <select class="form-control" id="typeTxt">
                                                             <option value="1">Sick</option>
@@ -94,23 +89,31 @@
 
                                                         </select>
                                                     </div>
-                                                </div>
+
 
                                                 <div class="form-group">
+
                                                     <label for="exampleInputEmail1">Reasons For Leave:</label>
                                                     <input type="text" class="form-control" id="reasonTxt" placeholder="Enter Reason">
                                                 </div>
-                                                <div class="box-footer">
+
+
+
 
                                                     <button type="button" class="btn btn-primary" onclick="datasubmissionleave()" >Send</button>
-                                                </div>
+
+
+                                                    </div>
 
                                         </form>
                                     </div><!-- /.box -->
-                                </div>
+
                             </div>
-                            <div>
+                    </form>
                             </div>
+                </div>
+            </div>
+
 
 
 
