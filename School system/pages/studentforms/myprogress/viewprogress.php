@@ -50,31 +50,59 @@
                                 <tbody>
                                 <tr>
                                     <td>Maths</td>
-                                    <td>2012/02/02</td>
-                                    <td>Math</td>
-                                    <td>4</td>
-                                    <td><span class="label label-warning">57</span></td>
+                                    <td>89</td>
+                                    <td>62</td>
+                                    <td>80</td>
+                                    <td>72.33</td>
                                 </tr>
                                 <tr>
                                     <td>Sinhala</td>
-                                    <td>2012/02/02</td>
-                                    <td>Math</td>
-                                    <td>4</td>
-                                    <td><span class="label label-danger">10</span></td>
+                                    <td>71</td>
+                                    <td>72</td>
+                                    <td>84</td>
+                                    <td>70.23</td>
                                 </tr>
                                 <tr>
                                     <td>English</td>
-                                    <td>2012/02/02</td>
-                                    <td>Math</td>
-                                    <td>4</td>
-                                    <td><span class="label label-info">70</span></td>
+                                    <td>41</td>
+                                    <td>62</td>
+                                    <td>57</td>
+                                    <td>65.23</td>
                                 </tr>
                                 <tr>
                                     <td>Tamil</td>
-                                    <td>2012/02/02</td>
-                                    <td>Math</td>
-                                    <td>4</td>
-                                    <td><span class="label label-success">85</span></td>
+                                    <td>56</td>
+                                    <td>45</td>
+                                    <td>41</td>
+                                    <td>56.23</td>
+                                </tr>
+                                <tr>
+                                    <td>Art</td>
+                                    <td>89</td>
+                                    <td>62</td>
+                                    <td>80</td>
+                                    <td>72.33</td>
+                                </tr>
+                                <tr>
+                                    <td>Health</td>
+                                    <td>71</td>
+                                    <td>72</td>
+                                    <td>84</td>
+                                    <td>70.23</td>
+                                </tr>
+                                <tr>
+                                    <td>Technology</td>
+                                    <td>41</td>
+                                    <td>62</td>
+                                    <td>57</td>
+                                    <td>65.23</td>
+                                </tr>
+                                <tr>
+                                    <td>Science</td>
+                                    <td>56</td>
+                                    <td>45</td>
+                                    <td>41</td>
+                                    <td>56.23</td>
                                 </tr>
                                 </tbody>
                             </table>
@@ -137,7 +165,7 @@
             data: {
                 labels: ["2014", "2015", "2016", "2017", "2018", "2019"],
                 datasets: [{
-                    // label: '# of Votes',
+                    label: '# AVG of Years',
                     //data: [65.56, 19.25, 37.25, 54.20, 62.56, 73.56],
                     data:dataset,
                     backgroundColor: [
