@@ -195,11 +195,9 @@
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td><a href="pages/examples/invoice.html">Math in class</a></td>
-                                    <td>2012/02/02</td>
-                                    <td>Math</td>
-                                    <td>4</td>
-                                    <td><span class="label label-warning">57</span></td>
+                                    <td id="certiTitle">-</td>
+                                    <td ><img id ="certiLink" style="width:50px; height:50px;" src="../../../dist/img/user_100x128.png" alt="certificate"></td>
+                                    <td id="certiReason">-</td>
                                 </tr>
                                 
                                 </tbody>
@@ -367,6 +365,14 @@
                     document.getElementById('parentOccupationLbl').innerHTML = output.parent.occupation;
                     document.getElementById('parentEmailLbl').innerHTML = output.parent.email;
                     document.getElementById('parentPhoneLbl').innerHTML = output.parent.Econtact;
+
+
+
+                    
+                    document.getElementById('certiTitle').innerHTML = "Prize";//output.parent.Econtact;
+                    document.getElementById('certiLink').src = "https://firebasestorage.googleapis.com/v0/b/group-project-14.appspot.com/o/certificates%2F1_3dBhLw8lz0zzI93_CYbU0Q.jpeg?alt=media&token=bcfaaddb-9a6f-449b-a487-09f3ef2b2abb";//output.parent.Econtact;
+                    document.getElementById('certiReason').innerHTML = "prize for english";//output.parent.Econtact;
+
                 //console.log(doc.id, " => ", doc.data());
                 });
             })
@@ -374,6 +380,7 @@
                 console.log("Error getting documents: ", error);
             });
         }
+        getreports("11","6","sinhala","11","1");
     }
 </script>
 
@@ -385,7 +392,7 @@
             data: {
                 labels: ["2014", "2015", "2016", "2017", "2018", "2019"],
                 datasets: [{
-                    // label: '# of Votes',
+                    label: '# marks for year',
                     //data: [65.56, 19.25, 37.25, 54.20, 62.56, 73.56],
                     data:dataset,
                     backgroundColor: [
@@ -422,7 +429,7 @@
 
 <script>
     var School ="abc";
-    getreports("11","6","sinhala","11","1");
+    // getreports("11","6","sinhala","11","1");
     function getreports(Regno,Class,Grade,Year,Term) {
         var output = {};
         db.collection("reports").where("school", "==",School ).where("regno", "==", Regno).where("class", "==", Class).where("grade", "==", Grade).where("year", "==", Year).where("termno", "==", Term)
