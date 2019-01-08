@@ -85,9 +85,9 @@
                                             <!-- <div class="form-group">
                                                 <label class="text-muted"  >Name Initials:</label>
                                             </div> -->
-                                            <div class="form-group">
+                                            <!-- <div class="form-group">
                                                 <label class="text-muted"  >Gender:</label>
-                                            </div>
+                                            </div> -->
                                             <div class="form-group">
                                                 <label class="text-muted"  >Date Of Birth:</label>
                                             </div>
@@ -132,9 +132,9 @@
                                     <!-- <div class="form-group">
                                         <label id="studentiNameLbl">-</label>
                                     </div> -->
-                                    <div class="form-group">
+                                    <!-- <div class="form-group">
                                         <label id="studentGenderLbl">-</label>
-                                    </div>
+                                    </div> -->
                                     <div class="form-group">
                                         <label id="studentBdyLbl">-</label>
                                     </div>
@@ -350,7 +350,7 @@
                     document.getElementById('studentlNameLbl').innerHTML = output.Lname;
                     document.getElementById('profilepic').src = output.profileimg;
                    // document.getElementById('studentiNameLbl').innerHTML = output.Iname;
-                    document.getElementById('studentGenderLbl').innerHTML = output.gender;
+                    //document.getElementById('studentGenderLbl').innerHTML = output.gender;
                     document.getElementById('studentBdyLbl').innerHTML = output.dob;
                     document.getElementById('studentReligionLbl').innerHTML = output.religion;
                     document.getElementById('studentEmailLbl').innerHTML = output.email;
