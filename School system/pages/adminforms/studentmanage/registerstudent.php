@@ -33,7 +33,7 @@
                         </div>
                         <div class="form-group">
                             <label  >First Name:</label>
-                            <input type="text" class="form-control" id="studentFNameTxt" placeholder="Enter First Name">
+                            <input type="text" class="form-control" id="studentFNameTxt" placeholder="Enter First Name" >
                         </div>
                         <div class="form-group">
                             <label  >Middle Name:</label>
@@ -206,8 +206,7 @@
 function loadclasses() {
     var school=document.getElementById("stuschool").value;
     var grade = document.getElementById("studentGradeTxt").value;
-    $("#studentClassTxt").empty();
-    db.collection("schools").where("schoolid","==",school)
+    db.collection("schools").where("id","==",school)
         .get()
         .then(function(querySnapshot) {
             querySnapshot.forEach(function(doc) {
@@ -235,8 +234,8 @@ function loadclasses() {
 function loadgrades() {
     var school=document.getElementById("stuschool").value;
     console.log(school);
-    $("#studentGradeTxt").empty();
-    db.collection("schools").where("schoolid","==",school)
+    
+    db.collection("schools").where("id","==",school)
         .get()
         .then(function(querySnapshot) {
             querySnapshot.forEach(function(doc) {

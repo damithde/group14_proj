@@ -4,7 +4,7 @@ function addexam(exam){
         class:exam[1],
         subject:exam[4],
         date:exam[2],
-        year:exam[5]
+        term:exam[5]
     })
     .then(function(docRef) {
         alert("exam added successfully");

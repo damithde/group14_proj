@@ -25,7 +25,7 @@
                     <div class="box-body">
                         <div class="row">
                             <div class="col-md-6">
-                            <div class="form-group">
+                        <div class="form-group">
                             <label  >School Name:</label>
                             <input type="input" class="form-control" id="schoolNameTxt" placeholder="Enter School Name">
                         </div>
@@ -57,7 +57,7 @@
                                 <div class="col-md-10">
                                 <div class="form-group">
                                 <h4 class="box-title">School Details</h4>
-                                    <table id="s" class="table table-bordered">
+                                    <table id="studentResultsTable" class="table table-bordered">
                                         <tbody>
                                             <tr>
                                                 <th>School Id</th>
@@ -108,33 +108,6 @@
 </section>
 
 <script>
- getschools();
-function getschools() {
-    var rowCount = document.getElementById("s").rows.length;
-    
-    for (var x=rowCount-1; x>0; x--) {
-        document.getElementById("s").deleteRow(x);
-    }
-
-    db.collection("schools")
-    .get()
-    .then(function(querySnapshot) {
-        querySnapshot.forEach(function(doc) {
-            var tableref=document.getElementById('s');
-            var admin=doc.data();
-            var row=tableref.insertRow(-1);
-            row.insertCell(0).innerHTML=admin.Name ;
-            row.insertCell(1).innerHTML=admin.contact ;
-            row.insertCell(2).innerHTML=admin.location ;
-            row.insertCell(3).innerHTML=admin.principal ;
-            row.insertCell(4).innerHTML=admin.schoolid ;
-
-                    
-    })
-})
-}
-
-
 
 function addschool() {
     
