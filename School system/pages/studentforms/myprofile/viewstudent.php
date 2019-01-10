@@ -55,12 +55,7 @@
                                             <div class="form-group">
                                                 <label class="text-muted"  >Last Name:</label>
                                             </div>
-                                            <!-- <div class="form-group">
-                                                <label class="text-muted"  >Name Initials:</label>
-                                            </div> -->
-                                            <div class="form-group">
-                                                <label class="text-muted"  >Gender:</label>
-                                            </div>
+                                   
                                             <div class="form-group">
                                                 <label class="text-muted"  >Date Of Birth:</label>
                                             </div>
@@ -70,9 +65,7 @@
                                             <div class="form-group">
                                                 <label class="text-muted" >Email:</label>
                                             </div>
-                                            <!-- <div class="form-group">
-                                                <label class="text-muted"  >Admission Date:</label>
-                                            </div> -->
+                                            
                                             <div class="form-group">
                                                 <label class="text-muted"  >Medium:</label>
                                             </div>
@@ -102,12 +95,7 @@
                                     <div class="form-group">
                                         <label id="studentlNameLbl">-</label>
                                     </div>
-                                    <!-- <div class="form-group">
-                                        <label id="studentiNameLbl">-</label>
-                                    </div> -->
-                                    <div class="form-group">
-                                        <label id="studentGenderLbl">-</label>
-                                    </div>
+  
                                     <div class="form-group">
                                         <label id="studentBdyLbl">-</label>
                                     </div>
@@ -117,9 +105,7 @@
                                     <div class="form-group">
                                         <label id="studentEmailLbl">-</label>
                                     </div>
-                                    <!-- <div class="form-group">
-                                        <label id="studentAdtLbl">-</label>
-                                    </div> -->
+             
                                     <div class="form-group">
                                         <label id="studentMediumLbl">-</label>
                                     </div>
@@ -193,9 +179,9 @@
                                                 </div>
                                                 <div class="form-group">
                                             <div class="col-md-8">
-                                                <!-- <div id="studentMediumTxt" class="form-group">
-                                                <button style="width:150px" onclick="getstudentsfromreg('1')" type="button" class="btn btn-primary">Load Student List</button>
-                                                </div> -->
+                                               
+                                                <input type="hidden" id="stdregno">
+                                                <input type="hidden" id="stuschool" value="ab">
                                             </div>
                                         </div>
                                             </div>
@@ -212,10 +198,19 @@
 </body>
 
 <script>
+    getstudent("stdregno");
+    getschool("stuschool");
+    var school =document.getElementById("stuschool").value;
+    var regno =document.getElementById("stdregno").value;
     
-    var school ="abc";
-    getstudentsfromreg('213');
-    function getstudentsfromreg(reg){
+    setTimeout(getstudentsfromreg, 1500);
+
+    
+    console.log("asasasa",regno);
+
+    function getstudentsfromreg(){
+        console.log("asasasa",school);
+        var reg =document.getElementById("stdregno").value;
         var output;
         db.collection("students").where("school","==",school).where("regno","==",reg)
         .get()
@@ -225,13 +220,9 @@
                 document.getElementById('studentfNameLbl').innerHTML = output.Fname;
                 document.getElementById('studentmNameLbl').innerHTML = output.Mname;
                 document.getElementById('studentlNameLbl').innerHTML = output.Lname;
-
-                // document.getElementById('studentiNameLbl').innerHTML = "D.D.Silva";//output.Iname;
-                document.getElementById('studentGenderLbl').innerHTML = "Male";//output.gender;
                 document.getElementById('studentBdyLbl').innerHTML = output.dob;
                 document.getElementById('studentReligionLbl').innerHTML = output.religion;
                 document.getElementById('studentEmailLbl').innerHTML = output.email;
-                // document.getElementById('studentAdtLbl').innerHTML = output.fname;
                 document.getElementById('studentMediumLbl').innerHTML = output.medium;
                 document.getElementById('studentClassLbl').innerHTML = output.class;
                 document.getElementById('studentSectionLbl').innerHTML = output.grade;

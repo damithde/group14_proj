@@ -22,8 +22,8 @@
                     <!-- User Account: style can be found in dropdown.less -->
                     <li class="dropdown user user-menu">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            <img src="../../../dist/img/s0005.png" class="user-image" alt="User Image"/>
-                            <span class="hidden-xs">Admin</span>
+                        <label class="fa fa-user"></label>
+                            <span class="hidden-xs">Student</span>
                         </a>
                         <ul class="dropdown-menu">
                             <!-- User image -->

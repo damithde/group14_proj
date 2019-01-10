@@ -149,3 +149,29 @@ function getteachercount() {
 }
 
 
+function getstudent(tagname) {
+    var userid;
+    //console.log("hello");
+    firebase.auth().onAuthStateChanged(function(user) {
+        if (user) {
+            userid=user.uid;  
+           // console.log(userid);
+            db.collection("users").where("userid","==",userid)
+            .get()
+            .then(function(querySnapshot) {
+                querySnapshot.forEach(function(doc) {
+                    var output=doc.data();
+                    // doc.data() is never undefined for query doc snapshots
+                    //console.log(output.school);
+                    document.getElementById(tagname).value=output.regno;
+                    console.log(document.getElementById(tagname).value);
+                });
+                
+            })
+            .catch(function(error) {
+                console.log("Error getting documents: ", error);
+            });       
+        }  
+    });
+    
+}

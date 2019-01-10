@@ -48,7 +48,7 @@
                 <ul class="treeview-menu">
                     <li class="active"><a href="../exammanage/exam.php"><i class="fa fa-folder-open-o"></i> View Results</a></li>
                     <li><a href="../exammanage/addnewresult.php"><i class="fa fa-folder-open-o"></i> Add New Results</a></li>
-                    <li><a href="../exammanage/manageresults.php"><i class="fa fa-folder-open-o"></i> Manage Results</a></li>
+                    <!-- <li><a href="../exammanage/manageresults.php"><i class="fa fa-folder-open-o"></i> Manage Results</a></li> -->
                 </ul>
             </li>
 
